@@ -2226,14 +2226,14 @@
                 ]
             },
             "properties": {
-                "name": "Waterloo Ward 5",
+                "Name": "Waterloo Ward 5",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#f9a825",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "5",
-                "Nominees2014": "3",
+                "Ward Number": "5",
+                "# of Nominees in 2014": "3",
                 "Municipality": "Waterloo"
             }
         },
@@ -3267,14 +3267,14 @@
                 ]
             },
             "properties": {
-                "name": "Waterloo Ward 1",
+                "Name": "Waterloo Ward 1",
                 "stroke": "#c2185b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#c2185b",
                 "fill-opacity": 0.5882352941176471,
-                "WardNumber": "1",
-                "Nominees2014": "1",
+                "Ward Number": "1",
+                "# of Nominees in 2014": "1",
                 "Municipality": "Waterloo"
             }
         },
@@ -5633,14 +5633,14 @@
                 ]
             },
             "properties": {
-                "name": "Waterloo Ward 7",
+                "Name": "Waterloo Ward 7",
                 "stroke": "#c2185b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#c2185b",
                 "fill-opacity": 0.5882352941176471,
-                "WardNumber": "7",
-                "Nominees2014": "1",
+                "Ward Number": "7",
+                "# of Nominees in 2014": "1",
                 "Municipality": "Waterloo"
             }
         },
@@ -8634,14 +8634,14 @@
                 ]
             },
             "properties": {
-                "name": "Waterloo Ward 4",
+                "Name": "Waterloo Ward 4",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#f9a825",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "4",
-                "Nominees2014": "3",
+                "Ward Number": "4",
+                "# of Nominees in 2014": "3",
                 "Municipality": "Waterloo"
             }
         },
@@ -10405,14 +10405,14 @@
                 ]
             },
             "properties": {
-                "name": "Waterloo Ward 3",
+                "Name": "Waterloo Ward 3",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#afb42b",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "3",
-                "Nominees2014": "4",
+                "Ward Number": "3",
+                "# of Nominees in 2014": "4",
                 "Municipality": "Waterloo"
             }
         },
@@ -11726,14 +11726,14 @@
                 ]
             },
             "properties": {
-                "name": "Waterloo Ward 2",
+                "Name": "Waterloo Ward 2",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#afb42b",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "2",
-                "Nominees2014": "4",
+                "Ward Number": "2",
+                "# of Nominees in 2014": "4",
                 "Municipality": "Waterloo"
             }
         },
@@ -14817,14 +14817,14 @@
                 ]
             },
             "properties": {
-                "name": "Waterloo Ward 6",
+                "Name": "Waterloo Ward 6",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#ff5252",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "6",
-                "Nominees2014": "2",
+                "Ward Number": "6",
+                "# of Nominees in 2014": "2",
                 "Municipality": "Waterloo"
             }
         },
@@ -16063,14 +16063,14 @@
                 ]
             },
             "properties": {
-                "name": "Cambridge Ward 2",
+                "Name": "Cambridge Ward 2",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#afb42b",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "2",
-                "Nominees2014": "4",
+                "Ward Number": "2",
+                "# of Nominees in 2014": "4",
                 "Municipality": "Cambridge"
             }
         },
@@ -17394,14 +17394,14 @@
                 ]
             },
             "properties": {
-                "name": "Cambridge Ward 5",
+                "Name": "Cambridge Ward 5",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#f9a825",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "5",
-                "Nominees2014": "3",
+                "Ward Number": "5",
+                "# of Nominees in 2014": "3",
                 "Municipality": "Cambridge"
             }
         },
@@ -18675,14 +18675,14 @@
                 ]
             },
             "properties": {
-                "name": "Cambridge Ward 3",
+                "Name": "Cambridge Ward 3",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#558b2f",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "3",
-                "Nominees2014": "6",
+                "Ward Number": "3",
+                "# of Nominees in 2014": "6",
                 "Municipality": "Cambridge"
             }
         },
@@ -22426,14 +22426,14 @@
                 ]
             },
             "properties": {
-                "name": "Cambridge Ward 1",
+                "Name": "Cambridge Ward 1",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#afb42b",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "1",
-                "Nominees2014": "4",
+                "Ward Number": "1",
+                "# of Nominees in 2014": "4",
                 "Municipality": "Cambridge"
             }
         },
@@ -24392,14 +24392,14 @@
                 ]
             },
             "properties": {
-                "name": "Cambridge Ward 6",
+                "Name": "Cambridge Ward 6",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#afb42b",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "6",
-                "Nominees2014": "4",
+                "Ward Number": "6",
+                "# of Nominees in 2014": "4",
                 "Municipality": "Cambridge"
             }
         },
@@ -26378,14 +26378,14 @@
                 ]
             },
             "properties": {
-                "name": "Cambridge Ward 7",
+                "Name": "Cambridge Ward 7",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#ff5252",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "7",
-                "Nominees2014": "2",
+                "Ward Number": "7",
+                "# of Nominees in 2014": "2",
                 "Municipality": "Cambridge"
             }
         },
@@ -27869,14 +27869,14 @@
                 ]
             },
             "properties": {
-                "name": "Cambridge Ward 8",
+                "Name": "Cambridge Ward 8",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#558b2f",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "8",
-                "Nominees2014": "5",
+                "Ward Number": "8",
+                "# of Nominees in 2014": "5",
                 "Municipality": "Cambridge"
             }
         },
@@ -29590,14 +29590,14 @@
                 ]
             },
             "properties": {
-                "name": "Cambridge Ward 4",
+                "Name": "Cambridge Ward 4",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#558b2f",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "4",
-                "Nominees2014": "6",
+                "Ward Number": "4",
+                "# of Nominees in 2014": "6",
                 "Municipality": "Cambridge"
             }
         },
@@ -30031,14 +30031,14 @@
                 ]
             },
             "properties": {
-                "name": "North Dumfries Ward 2",
+                "Name": "North Dumfries Ward 2",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#f9a825",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "2",
-                "Nominees2014": "3",
+                "Ward Number": "2",
+                "# of Nominees in 2014": "3",
                 "Municipality": "North Dumfries"
             }
         },
@@ -31777,14 +31777,14 @@
                 ]
             },
             "properties": {
-                "name": "North Dumfries Ward 3",
+                "Name": "North Dumfries Ward 3",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#ff5252",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "3",
-                "Nominees2014": "2",
+                "Ward Number": "3",
+                "# of Nominees in 2014": "2",
                 "Municipality": "North Dumfries"
             }
         },
@@ -34423,14 +34423,14 @@
                 ]
             },
             "properties": {
-                "name": "North Dumfries Ward 4",
+                "Name": "North Dumfries Ward 4",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#ff5252",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "4",
-                "Nominees2014": "2",
+                "Ward Number": "4",
+                "# of Nominees in 2014": "2",
                 "Municipality": "North Dumfries"
             }
         },
@@ -35749,14 +35749,14 @@
                 ]
             },
             "properties": {
-                "name": "Wilmot Ward 1",
+                "Name": "Wilmot Ward 1",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#ff5252",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "1",
-                "Nominees2014": "2",
+                "Ward Number": "1",
+                "# of Nominees in 2014": "2",
                 "Municipality": "Wilmot"
             }
         },
@@ -36250,14 +36250,14 @@
                 ]
             },
             "properties": {
-                "name": "Wilmot Ward 3",
+                "Name": "Wilmot Ward 3",
                 "stroke": "#c2185b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#c2185b",
                 "fill-opacity": 0.5882352941176471,
-                "WardNumber": "3",
-                "Nominees2014": "1",
+                "Ward Number": "3",
+                "# of Nominees in 2014": "1",
                 "Municipality": "Wilmot"
             }
         },
@@ -36831,14 +36831,14 @@
                 ]
             },
             "properties": {
-                "name": "Wilmot Ward 4",
+                "Name": "Wilmot Ward 4",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#f9a825",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "4",
-                "Nominees2014": "3",
+                "Ward Number": "4",
+                "# of Nominees in 2014": "3",
                 "Municipality": "Wilmot"
             }
         },
@@ -38192,14 +38192,14 @@
                 ]
             },
             "properties": {
-                "name": "Wilmot Ward 2",
+                "Name": "Wilmot Ward 2",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#ff5252",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "2",
-                "Nominees2014": "2",
+                "Ward Number": "2",
+                "# of Nominees in 2014": "2",
                 "Municipality": "Wilmot"
             }
         },
@@ -38798,14 +38798,14 @@
                 ]
             },
             "properties": {
-                "name": "Wellesley Ward 1",
+                "Name": "Wellesley Ward 1",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#ff5252",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "1",
-                "Nominees2014": "2",
+                "Ward Number": "1",
+                "# of Nominees in 2014": "2",
                 "Municipality": "Wellesley"
             }
         },
@@ -39559,14 +39559,14 @@
                 ]
             },
             "properties": {
-                "name": "Wellesley Ward 2",
+                "Name": "Wellesley Ward 2",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#ff5252",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "2",
-                "Nominees2014": "2",
+                "Ward Number": "2",
+                "# of Nominees in 2014": "2",
                 "Municipality": "Wellesley"
             }
         },
@@ -40390,14 +40390,14 @@
                 ]
             },
             "properties": {
-                "name": "Wellesley Ward 3",
+                "Name": "Wellesley Ward 3",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#ff5252",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "3",
-                "Nominees2014": "2",
+                "Ward Number": "3",
+                "# of Nominees in 2014": "2",
                 "Municipality": "Wellesley"
             }
         },
@@ -40851,14 +40851,14 @@
                 ]
             },
             "properties": {
-                "name": "Wellesley Ward 4",
+                "Name": "Wellesley Ward 4",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#afb42b",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "4",
-                "Nominees2014": "4",
+                "Ward Number": "4",
+                "# of Nominees in 2014": "4",
                 "Municipality": "Wellesley"
             }
         },
@@ -41994,14 +41994,14 @@
                 ]
             },
             "properties": {
-                "name": "Woolwich Ward 2",
+                "Name": "Woolwich Ward 2",
                 "stroke": "#c2185b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#c2185b",
                 "fill-opacity": 0.5882352941176471,
-                "WardNumber": "2",
-                "Nominees2014": "1",
+                "Ward Number": "2",
+                "# of Nominees in 2014": "1",
                 "Municipality": "Woolwich"
             }
         },
@@ -42425,14 +42425,14 @@
                 ]
             },
             "properties": {
-                "name": "Woolwich Ward 1",
+                "Name": "Woolwich Ward 1",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#558b2f",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "1",
-                "Nominees2014": "6",
+                "Ward Number": "1",
+                "# of Nominees in 2014": "6",
                 "Municipality": "Woolwich"
             }
         },
@@ -46086,14 +46086,14 @@
                 ]
             },
             "properties": {
-                "name": "Woolwich Ward 3",
+                "Name": "Woolwich Ward 3",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#afb42b",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "3",
-                "Nominees2014": "4",
+                "Ward Number": "3",
+                "# of Nominees in 2014": "4",
                 "Municipality": "Woolwich"
             }
         },
@@ -47987,14 +47987,14 @@
                 ]
             },
             "properties": {
-                "name": "Kitchener Ward 1",
+                "Name": "Kitchener Ward 1",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#afb42b",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "1",
-                "Nominees2014": "4",
+                "Ward Number": "1",
+                "# of Nominees in 2014": "4",
                 "Municipality": "Kitchener"
             }
         },
@@ -49013,14 +49013,14 @@
                 ]
             },
             "properties": {
-                "name": "Kitchener Ward 2",
+                "Name": "Kitchener Ward 2",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#558b2f",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "2",
-                "Nominees2014": "6",
+                "Ward Number": "2",
+                "# of Nominees in 2014": "6",
                 "Municipality": "Kitchener"
             }
         },
@@ -50354,14 +50354,14 @@
                 ]
             },
             "properties": {
-                "name": "Kitchener Ward 3",
+                "Name": "Kitchener Ward 3",
                 "stroke": "#c2185b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#c2185b",
                 "fill-opacity": 0.5882352941176471,
-                "WardNumber": "3",
-                "Nominees2014": "1",
+                "Ward Number": "3",
+                "# of Nominees in 2014": "1",
                 "Municipality": "Kitchener"
             }
         },
@@ -51390,14 +51390,14 @@
                 ]
             },
             "properties": {
-                "name": "Kitchener Ward 4",
+                "Name": "Kitchener Ward 4",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#f9a825",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "4",
-                "Nominees2014": "3",
+                "Ward Number": "4",
+                "# of Nominees in 2014": "3",
                 "Municipality": "Kitchener"
             }
         },
@@ -52526,14 +52526,14 @@
                 ]
             },
             "properties": {
-                "name": "Kitchener Ward 5",
+                "Name": "Kitchener Ward 5",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#afb42b",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "5",
-                "Nominees2014": "4",
+                "Ward Number": "5",
+                "# of Nominees in 2014": "4",
                 "Municipality": "Kitchener"
             }
         },
@@ -53097,14 +53097,14 @@
                 ]
             },
             "properties": {
-                "name": "Kitchener Ward 6",
+                "Name": "Kitchener Ward 6",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#558b2f",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "6",
-                "Nominees2014": "5",
+                "Ward Number": "6",
+                "# of Nominees in 2014": "5",
                 "Municipality": "Kitchener"
             }
         },
@@ -53883,14 +53883,14 @@
                 ]
             },
             "properties": {
-                "name": "Kitchener Ward 7",
+                "Name": "Kitchener Ward 7",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#f9a825",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "7",
-                "Nominees2014": "3",
+                "Ward Number": "7",
+                "# of Nominees in 2014": "3",
                 "Municipality": "Kitchener"
             }
         },
@@ -55599,14 +55599,14 @@
                 ]
             },
             "properties": {
-                "name": "Kitchener Ward 8",
+                "Name": "Kitchener Ward 8",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#f9a825",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "8",
-                "Nominees2014": "3",
+                "Ward Number": "8",
+                "# of Nominees in 2014": "3",
                 "Municipality": "Kitchener"
             }
         },
@@ -56875,16 +56875,15 @@
                 ]
             },
             "properties": {
-                "name": "Kitchener Ward 9",
+                "Name": "Kitchener Ward 9",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#558b2f",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "9",
-                "Nominees2014": "5",
-                "Municipality": "Kitchener",
-                "Test": "<a href=\"http://civictechwr.org/WRvotes/\" target=\"_blank\">This is a link!</a>"
+                "Ward Number": "9",
+                "# of Nominees in 2014": "5",
+                "Municipality": "Kitchener"
             }
         },
         {
@@ -58082,14 +58081,14 @@
                 ]
             },
             "properties": {
-                "name": "Kitchener Ward 10",
+                "Name": "Kitchener Ward 10",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#afb42b",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "10",
-                "Nominees2014": "4",
+                "Ward Number": "10",
+                "# of Nominees in 2014": "4",
                 "Municipality": "Kitchener"
             }
         },
@@ -58543,14 +58542,14 @@
                 ]
             },
             "properties": {
-                "name": "North Dumfries Ward 1",
+                "Name": "North Dumfries Ward 1",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
                 "fill": "#f9a825",
                 "fill-opacity": 0.2980392156862745,
-                "WardNumber": "1",
-                "Nominees2014": "3",
+                "Ward Number": "1",
+                "# of Nominees in 2014": "3",
                 "Municipality": "North Dumfries"
             }
         }
