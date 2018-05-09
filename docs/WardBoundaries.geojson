@@ -2227,13 +2227,6 @@
             },
             "properties": {
                 "name": "Waterloo Ward 5",
-                "styleUrl": "#poly-F9A825-1200-76",
-                "styleHash": "-f2a254e",
-                "styleMapHash": {
-                    "normal": "#poly-F9A825-1200-76-normal",
-                    "highlight": "#poly-F9A825-1200-76-highlight"
-                },
-                "description": "WardNumber: 5<br>Nominees2014: 3<br>Municipality: Waterloo",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -3275,13 +3268,6 @@
             },
             "properties": {
                 "name": "Waterloo Ward 1",
-                "styleUrl": "#poly-C2185B-1200-150",
-                "styleHash": "-4720f97",
-                "styleMapHash": {
-                    "normal": "#poly-C2185B-1200-150-normal",
-                    "highlight": "#poly-C2185B-1200-150-highlight"
-                },
-                "description": "WardNumber: 1<br>Nominees2014: 1<br>Municipality: Waterloo",
                 "stroke": "#c2185b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -5648,13 +5634,6 @@
             },
             "properties": {
                 "name": "Waterloo Ward 7",
-                "styleUrl": "#poly-C2185B-1200-150",
-                "styleHash": "-4720f97",
-                "styleMapHash": {
-                    "normal": "#poly-C2185B-1200-150-normal",
-                    "highlight": "#poly-C2185B-1200-150-highlight"
-                },
-                "description": "WardNumber: 7<br>Nominees2014: 1<br>Municipality: Waterloo",
                 "stroke": "#c2185b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -8656,13 +8635,6 @@
             },
             "properties": {
                 "name": "Waterloo Ward 4",
-                "styleUrl": "#poly-F9A825-1200-76",
-                "styleHash": "-f2a254e",
-                "styleMapHash": {
-                    "normal": "#poly-F9A825-1200-76-normal",
-                    "highlight": "#poly-F9A825-1200-76-highlight"
-                },
-                "description": "WardNumber: 4<br>Nominees2014: 3<br>Municipality: Waterloo",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -10434,13 +10406,6 @@
             },
             "properties": {
                 "name": "Waterloo Ward 3",
-                "styleUrl": "#poly-AFB42B-1200-76",
-                "styleHash": "18e7c0cc",
-                "styleMapHash": {
-                    "normal": "#poly-AFB42B-1200-76-normal",
-                    "highlight": "#poly-AFB42B-1200-76-highlight"
-                },
-                "description": "WardNumber: 3<br>Nominees2014: 4<br>Municipality: Waterloo",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -11762,13 +11727,6 @@
             },
             "properties": {
                 "name": "Waterloo Ward 2",
-                "styleUrl": "#poly-AFB42B-1200-76",
-                "styleHash": "18e7c0cc",
-                "styleMapHash": {
-                    "normal": "#poly-AFB42B-1200-76-normal",
-                    "highlight": "#poly-AFB42B-1200-76-highlight"
-                },
-                "description": "WardNumber: 2<br>Nominees2014: 4<br>Municipality: Waterloo",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -14860,13 +14818,6 @@
             },
             "properties": {
                 "name": "Waterloo Ward 6",
-                "styleUrl": "#poly-FF5252-1200-76",
-                "styleHash": "-20739881",
-                "styleMapHash": {
-                    "normal": "#poly-FF5252-1200-76-normal",
-                    "highlight": "#poly-FF5252-1200-76-highlight"
-                },
-                "description": "WardNumber: 6<br>Nominees2014: 2<br>Municipality: Waterloo",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -16113,13 +16064,6 @@
             },
             "properties": {
                 "name": "Cambridge Ward 2",
-                "styleUrl": "#poly-AFB42B-1200-76",
-                "styleHash": "18e7c0cc",
-                "styleMapHash": {
-                    "normal": "#poly-AFB42B-1200-76-normal",
-                    "highlight": "#poly-AFB42B-1200-76-highlight"
-                },
-                "description": "WardNumber: 2<br>Nominees2014: 4<br>Municipality: Cambridge",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -17451,13 +17395,6 @@
             },
             "properties": {
                 "name": "Cambridge Ward 5",
-                "styleUrl": "#poly-F9A825-1200-76",
-                "styleHash": "-f2a254e",
-                "styleMapHash": {
-                    "normal": "#poly-F9A825-1200-76-normal",
-                    "highlight": "#poly-F9A825-1200-76-highlight"
-                },
-                "description": "WardNumber: 5<br>Nominees2014: 3<br>Municipality: Cambridge",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -18739,13 +18676,6 @@
             },
             "properties": {
                 "name": "Cambridge Ward 3",
-                "styleUrl": "#poly-558B2F-1200-76",
-                "styleHash": "-64c868bd",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-1200-76-normal",
-                    "highlight": "#poly-558B2F-1200-76-highlight"
-                },
-                "description": "WardNumber: 3<br>Nominees2014: 6<br>Municipality: Cambridge",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -22497,13 +22427,6 @@
             },
             "properties": {
                 "name": "Cambridge Ward 1",
-                "styleUrl": "#poly-AFB42B-1200-76",
-                "styleHash": "18e7c0cc",
-                "styleMapHash": {
-                    "normal": "#poly-AFB42B-1200-76-normal",
-                    "highlight": "#poly-AFB42B-1200-76-highlight"
-                },
-                "description": "WardNumber: 1<br>Nominees2014: 4<br>Municipality: Cambridge",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -24470,13 +24393,6 @@
             },
             "properties": {
                 "name": "Cambridge Ward 6",
-                "styleUrl": "#poly-AFB42B-1200-76",
-                "styleHash": "18e7c0cc",
-                "styleMapHash": {
-                    "normal": "#poly-AFB42B-1200-76-normal",
-                    "highlight": "#poly-AFB42B-1200-76-highlight"
-                },
-                "description": "WardNumber: 6<br>Nominees2014: 4<br>Municipality: Cambridge",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -26463,13 +26379,6 @@
             },
             "properties": {
                 "name": "Cambridge Ward 7",
-                "styleUrl": "#poly-FF5252-1200-76",
-                "styleHash": "-20739881",
-                "styleMapHash": {
-                    "normal": "#poly-FF5252-1200-76-normal",
-                    "highlight": "#poly-FF5252-1200-76-highlight"
-                },
-                "description": "WardNumber: 7<br>Nominees2014: 2<br>Municipality: Cambridge",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -27961,13 +27870,6 @@
             },
             "properties": {
                 "name": "Cambridge Ward 8",
-                "styleUrl": "#poly-558B2F-1200-76",
-                "styleHash": "-64c868bd",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-1200-76-normal",
-                    "highlight": "#poly-558B2F-1200-76-highlight"
-                },
-                "description": "WardNumber: 8<br>Nominees2014: 5<br>Municipality: Cambridge",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -29689,13 +29591,6 @@
             },
             "properties": {
                 "name": "Cambridge Ward 4",
-                "styleUrl": "#poly-558B2F-1200-76",
-                "styleHash": "-64c868bd",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-1200-76-normal",
-                    "highlight": "#poly-558B2F-1200-76-highlight"
-                },
-                "description": "WardNumber: 4<br>Nominees2014: 6<br>Municipality: Cambridge",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -30137,13 +30032,6 @@
             },
             "properties": {
                 "name": "North Dumfries Ward 2",
-                "styleUrl": "#poly-F9A825-1200-76",
-                "styleHash": "-f2a254e",
-                "styleMapHash": {
-                    "normal": "#poly-F9A825-1200-76-normal",
-                    "highlight": "#poly-F9A825-1200-76-highlight"
-                },
-                "description": "WardNumber: 2<br>Nominees2014: 3<br>Municipality: North Dumfries",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -31890,13 +31778,6 @@
             },
             "properties": {
                 "name": "North Dumfries Ward 3",
-                "styleUrl": "#poly-FF5252-1200-76",
-                "styleHash": "-20739881",
-                "styleMapHash": {
-                    "normal": "#poly-FF5252-1200-76-normal",
-                    "highlight": "#poly-FF5252-1200-76-highlight"
-                },
-                "description": "WardNumber: 3<br>Nominees2014: 2<br>Municipality: North Dumfries",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -34543,13 +34424,6 @@
             },
             "properties": {
                 "name": "North Dumfries Ward 4",
-                "styleUrl": "#poly-FF5252-1200-76",
-                "styleHash": "-20739881",
-                "styleMapHash": {
-                    "normal": "#poly-FF5252-1200-76-normal",
-                    "highlight": "#poly-FF5252-1200-76-highlight"
-                },
-                "description": "WardNumber: 4<br>Nominees2014: 2<br>Municipality: North Dumfries",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -35876,13 +35750,6 @@
             },
             "properties": {
                 "name": "Wilmot Ward 1",
-                "styleUrl": "#poly-FF5252-1200-76",
-                "styleHash": "-20739881",
-                "styleMapHash": {
-                    "normal": "#poly-FF5252-1200-76-normal",
-                    "highlight": "#poly-FF5252-1200-76-highlight"
-                },
-                "description": "WardNumber: 1<br>Nominees2014: 2<br>Municipality: Wilmot",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -36384,13 +36251,6 @@
             },
             "properties": {
                 "name": "Wilmot Ward 3",
-                "styleUrl": "#poly-C2185B-1200-150",
-                "styleHash": "-4720f97",
-                "styleMapHash": {
-                    "normal": "#poly-C2185B-1200-150-normal",
-                    "highlight": "#poly-C2185B-1200-150-highlight"
-                },
-                "description": "WardNumber: 3<br>Nominees2014: 1<br>Municipality: Wilmot",
                 "stroke": "#c2185b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -36972,13 +36832,6 @@
             },
             "properties": {
                 "name": "Wilmot Ward 4",
-                "styleUrl": "#poly-F9A825-1200-76",
-                "styleHash": "-f2a254e",
-                "styleMapHash": {
-                    "normal": "#poly-F9A825-1200-76-normal",
-                    "highlight": "#poly-F9A825-1200-76-highlight"
-                },
-                "description": "WardNumber: 4<br>Nominees2014: 3<br>Municipality: Wilmot",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -38340,13 +38193,6 @@
             },
             "properties": {
                 "name": "Wilmot Ward 2",
-                "styleUrl": "#poly-FF5252-1200-76",
-                "styleHash": "-20739881",
-                "styleMapHash": {
-                    "normal": "#poly-FF5252-1200-76-normal",
-                    "highlight": "#poly-FF5252-1200-76-highlight"
-                },
-                "description": "WardNumber: 2<br>Nominees2014: 2<br>Municipality: Wilmot",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -38953,13 +38799,6 @@
             },
             "properties": {
                 "name": "Wellesley Ward 1",
-                "styleUrl": "#poly-FF5252-1200-76",
-                "styleHash": "-20739881",
-                "styleMapHash": {
-                    "normal": "#poly-FF5252-1200-76-normal",
-                    "highlight": "#poly-FF5252-1200-76-highlight"
-                },
-                "description": "WardNumber: 1<br>Nominees2014: 2<br>Municipality: Wellesley",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -39721,13 +39560,6 @@
             },
             "properties": {
                 "name": "Wellesley Ward 2",
-                "styleUrl": "#poly-FF5252-1200-76",
-                "styleHash": "-20739881",
-                "styleMapHash": {
-                    "normal": "#poly-FF5252-1200-76-normal",
-                    "highlight": "#poly-FF5252-1200-76-highlight"
-                },
-                "description": "WardNumber: 2<br>Nominees2014: 2<br>Municipality: Wellesley",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -40559,13 +40391,6 @@
             },
             "properties": {
                 "name": "Wellesley Ward 3",
-                "styleUrl": "#poly-FF5252-1200-76",
-                "styleHash": "-20739881",
-                "styleMapHash": {
-                    "normal": "#poly-FF5252-1200-76-normal",
-                    "highlight": "#poly-FF5252-1200-76-highlight"
-                },
-                "description": "WardNumber: 3<br>Nominees2014: 2<br>Municipality: Wellesley",
                 "stroke": "#ff5252",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -41027,13 +40852,6 @@
             },
             "properties": {
                 "name": "Wellesley Ward 4",
-                "styleUrl": "#poly-AFB42B-1200-76",
-                "styleHash": "18e7c0cc",
-                "styleMapHash": {
-                    "normal": "#poly-AFB42B-1200-76-normal",
-                    "highlight": "#poly-AFB42B-1200-76-highlight"
-                },
-                "description": "WardNumber: 4<br>Nominees2014: 4<br>Municipality: Wellesley",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -42177,13 +41995,6 @@
             },
             "properties": {
                 "name": "Woolwich Ward 2",
-                "styleUrl": "#poly-C2185B-1200-150",
-                "styleHash": "-4720f97",
-                "styleMapHash": {
-                    "normal": "#poly-C2185B-1200-150-normal",
-                    "highlight": "#poly-C2185B-1200-150-highlight"
-                },
-                "description": "WardNumber: 2<br>Nominees2014: 1<br>Municipality: Woolwich",
                 "stroke": "#c2185b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -42615,13 +42426,6 @@
             },
             "properties": {
                 "name": "Woolwich Ward 1",
-                "styleUrl": "#poly-558B2F-1200-76",
-                "styleHash": "-64c868bd",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-1200-76-normal",
-                    "highlight": "#poly-558B2F-1200-76-highlight"
-                },
-                "description": "WardNumber: 1<br>Nominees2014: 6<br>Municipality: Woolwich",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -46283,13 +46087,6 @@
             },
             "properties": {
                 "name": "Woolwich Ward 3",
-                "styleUrl": "#poly-AFB42B-1200-76",
-                "styleHash": "18e7c0cc",
-                "styleMapHash": {
-                    "normal": "#poly-AFB42B-1200-76-normal",
-                    "highlight": "#poly-AFB42B-1200-76-highlight"
-                },
-                "description": "WardNumber: 3<br>Nominees2014: 4<br>Municipality: Woolwich",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -48191,13 +47988,6 @@
             },
             "properties": {
                 "name": "Kitchener Ward 1",
-                "styleUrl": "#poly-AFB42B-1200-76",
-                "styleHash": "18e7c0cc",
-                "styleMapHash": {
-                    "normal": "#poly-AFB42B-1200-76-normal",
-                    "highlight": "#poly-AFB42B-1200-76-highlight"
-                },
-                "description": "WardNumber: 1<br>Nominees2014: 4<br>Municipality: Kitchener",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -49224,13 +49014,6 @@
             },
             "properties": {
                 "name": "Kitchener Ward 2",
-                "styleUrl": "#poly-558B2F-1200-76",
-                "styleHash": "-64c868bd",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-1200-76-normal",
-                    "highlight": "#poly-558B2F-1200-76-highlight"
-                },
-                "description": "WardNumber: 2<br>Nominees2014: 6<br>Municipality: Kitchener",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -50572,13 +50355,6 @@
             },
             "properties": {
                 "name": "Kitchener Ward 3",
-                "styleUrl": "#poly-C2185B-1200-150",
-                "styleHash": "-4720f97",
-                "styleMapHash": {
-                    "normal": "#poly-C2185B-1200-150-normal",
-                    "highlight": "#poly-C2185B-1200-150-highlight"
-                },
-                "description": "WardNumber: 3<br>Nominees2014: 1<br>Municipality: Kitchener",
                 "stroke": "#c2185b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -51615,13 +51391,6 @@
             },
             "properties": {
                 "name": "Kitchener Ward 4",
-                "styleUrl": "#poly-F9A825-1200-76",
-                "styleHash": "-f2a254e",
-                "styleMapHash": {
-                    "normal": "#poly-F9A825-1200-76-normal",
-                    "highlight": "#poly-F9A825-1200-76-highlight"
-                },
-                "description": "WardNumber: 4<br>Nominees2014: 3<br>Municipality: Kitchener",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -52758,13 +52527,6 @@
             },
             "properties": {
                 "name": "Kitchener Ward 5",
-                "styleUrl": "#poly-AFB42B-1200-76",
-                "styleHash": "18e7c0cc",
-                "styleMapHash": {
-                    "normal": "#poly-AFB42B-1200-76-normal",
-                    "highlight": "#poly-AFB42B-1200-76-highlight"
-                },
-                "description": "WardNumber: 5<br>Nominees2014: 4<br>Municipality: Kitchener",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -53336,13 +53098,6 @@
             },
             "properties": {
                 "name": "Kitchener Ward 6",
-                "styleUrl": "#poly-558B2F-1200-76",
-                "styleHash": "-64c868bd",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-1200-76-normal",
-                    "highlight": "#poly-558B2F-1200-76-highlight"
-                },
-                "description": "WardNumber: 6<br>Nominees2014: 5<br>Municipality: Kitchener",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -54129,13 +53884,6 @@
             },
             "properties": {
                 "name": "Kitchener Ward 7",
-                "styleUrl": "#poly-F9A825-1200-76",
-                "styleHash": "-f2a254e",
-                "styleMapHash": {
-                    "normal": "#poly-F9A825-1200-76-normal",
-                    "highlight": "#poly-F9A825-1200-76-highlight"
-                },
-                "description": "WardNumber: 7<br>Nominees2014: 3<br>Municipality: Kitchener",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -55852,13 +55600,6 @@
             },
             "properties": {
                 "name": "Kitchener Ward 8",
-                "styleUrl": "#poly-F9A825-1200-76",
-                "styleHash": "-f2a254e",
-                "styleMapHash": {
-                    "normal": "#poly-F9A825-1200-76-normal",
-                    "highlight": "#poly-F9A825-1200-76-highlight"
-                },
-                "description": "WardNumber: 8<br>Nominees2014: 3<br>Municipality: Kitchener",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -57135,13 +56876,6 @@
             },
             "properties": {
                 "name": "Kitchener Ward 9",
-                "styleUrl": "#poly-558B2F-1200-76",
-                "styleHash": "-64c868bd",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-1200-76-normal",
-                    "highlight": "#poly-558B2F-1200-76-highlight"
-                },
-                "description": "WardNumber: 9<br>Nominees2014: 5<br>Municipality: Kitchener",
                 "stroke": "#558b2f",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -58349,13 +58083,6 @@
             },
             "properties": {
                 "name": "Kitchener Ward 10",
-                "styleUrl": "#poly-AFB42B-1200-76",
-                "styleHash": "18e7c0cc",
-                "styleMapHash": {
-                    "normal": "#poly-AFB42B-1200-76-normal",
-                    "highlight": "#poly-AFB42B-1200-76-highlight"
-                },
-                "description": "WardNumber: 10<br>Nominees2014: 4<br>Municipality: Kitchener",
                 "stroke": "#afb42b",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
@@ -58817,13 +58544,6 @@
             },
             "properties": {
                 "name": "North Dumfries Ward 1",
-                "styleUrl": "#poly-F9A825-1200-76",
-                "styleHash": "-f2a254e",
-                "styleMapHash": {
-                    "normal": "#poly-F9A825-1200-76-normal",
-                    "highlight": "#poly-F9A825-1200-76-highlight"
-                },
-                "description": "WardNumber: 1<br>Nominees2014: 3<br>Municipality: North Dumfries",
                 "stroke": "#f9a825",
                 "stroke-opacity": 1,
                 "stroke-width": 1.2,
