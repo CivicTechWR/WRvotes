@@ -57149,7 +57149,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "WardNumber": "9",
                 "Nominees2014": "5",
-                "Municipality": "Kitchener"
+                "Municipality": "Kitchener",
+                "Test": "<a href=\"http://civictechwr.org/WRvotes/\" target=\"_blank\">This is a link!</a>"
             }
         },
         {
