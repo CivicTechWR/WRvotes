@@ -1,2 +1,2 @@
 In the 2014 Municipal election, some Waterloo Region wards had a single candidate. The map on the right shows the 2014 ward boundaries. Each ward is coloured based on the number of candidates that ran for council in the 2014 election, ranging from red (a single candidate!) to various shades of green for 4 or more candidates.
-<script src="https://embed.github.com/view/geojson/CivicTechWR/WRvotes/blob/master/docs/WardBoundaries.geojson"></script>
+<script src="https://embed.github.com/view/geojson/CivicTechWR/WRvotes/master/docs/WardBoundaries.geojson"></script>
