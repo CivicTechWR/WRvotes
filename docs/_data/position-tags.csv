@@ -1,0 +1,61 @@
+PositionUniqueName,WardMunicipality,PositionDesc,NumberToElect
+Regional-Chair,N/A,Waterloo Regional Chair,1
+Regional-Kitchener,N/A,Regional Council - Kitchener,4
+Regional-Waterloo,N/A,Regional Council - Waterloo,2
+Regional-Cambridge,N/A,Regional Council - Cambridge,2
+Waterloo-Mayor,N/A,City of Waterloo - Mayor,1
+Waterloo-Ward-01,Waterloo,City of Waterloo - Ward 1,1
+Waterloo-Ward-02,Waterloo,City of Waterloo - Ward 2,1
+Waterloo-Ward-03,Waterloo,City of Waterloo - Ward 3,1
+Waterloo-Ward-04,Waterloo,City of Waterloo - Ward 4,1
+Waterloo-Ward-05,Waterloo,City of Waterloo - Ward 5,1
+Waterloo-Ward-06,Waterloo,City of Waterloo - Ward 6,1
+Waterloo-Ward-07,Waterloo,City of Waterloo - Ward 7,1
+Cambridge-Mayor,N/A,City of Cambridge - Mayor,1
+Cambridge-Ward-01,Cambridge,City of Cambridge - Ward 1,1
+Cambridge-Ward-02,Cambridge,City of Cambridge - Ward 2,1
+Cambridge-Ward-03,Cambridge,City of Cambridge - Ward 3,1
+Cambridge-Ward-04,Cambridge,City of Cambridge - Ward 4,1
+Cambridge-Ward-05,Cambridge,City of Cambridge - Ward 5,1
+Cambridge-Ward-06,Cambridge,City of Cambridge - Ward 6,1
+Cambridge-Ward-07,Cambridge,City of Cambridge - Ward 7,1
+Cambridge-Ward-08,Cambridge,City of Cambridge - Ward 8,1
+Kitchener-Mayor,N/A,City of Kitchener - Mayor,1
+Kitchener-Ward-01,Kitchener,City of Kitchener - Ward 1,1
+Kitchener-Ward-02,Kitchener,City of Kitchener - Ward 2,1
+Kitchener-Ward-03,Kitchener,City of Kitchener - Ward 3,1
+Kitchener-Ward-04,Kitchener,City of Kitchener - Ward 4,1
+Kitchener-Ward-05,Kitchener,City of Kitchener - Ward 5,1
+Kitchener-Ward-06,Kitchener,City of Kitchener - Ward 6,1
+Kitchener-Ward-07,Kitchener,City of Kitchener - Ward 7,1
+Kitchener-Ward-08,Kitchener,City of Kitchener - Ward 8,1
+Kitchener-Ward-09,Kitchener,City of Kitchener - Ward 9,1
+Kitchener-Ward-10,Kitchener,City of Kitchener - Ward 10,1
+NorthDumfries-Mayor,N/A,Township of North Dumfries - Mayor,1
+NorthDumfries-Ward-01,NorthDumfries,Township of North Dumfries - Ward 1,1
+NorthDumfries-Ward-02,NorthDumfries,Township of North Dumfries - Ward 2,1
+NorthDumfries-Ward-03,NorthDumfries,Township of North Dumfries - Ward 3,1
+NorthDumfries-Ward-04,NorthDumfries,Township of North Dumfries - Ward 4,1
+Wilmot-Mayor,N/A,Township of Wilmot - Mayor,1
+Wilmot-Ward-01,Wilmot,Township of Wilmot - Ward 1,1
+Wilmot-Ward-02,Wilmot,Township of Wilmot - Ward 2,1
+Wilmot-Ward-03,Wilmot,Township of Wilmot - Ward 3,1
+Wilmot-Ward-04,Wilmot,Township of Wilmot - Ward 4,1
+Wellesley-Mayor,N/A,Township of Wellesley - Mayor,1
+Wellesley-Ward-01,Wellesley,Township of Wellesley - Ward 1,1
+Wellesley-Ward-02,Wellesley,Township of Wellesley - Ward 2,1
+Wellesley-Ward-03,Wellesley,Township of Wellesley - Ward 3,1
+Wellesley-Ward-04,Wellesley,Township of Wellesley - Ward 4,1
+Woolwich-Mayor,N/A,Township of Woolwich - Mayor,1
+Woolwich-Ward-01,Woolwich,Township of Woolwich - Ward 1,1
+Woolwich-Ward-02,Woolwich,Township of Woolwich - Ward 2,1
+Woolwich-Ward-03,Woolwich,Township of Woolwich - Ward 3,1
+SchoolBoard-Public-English-Cambridge-NorthDumfries,N/A,Waterloo Region District School Board Trustee (English Public) - Cambridge/North Dumfries,3
+SchoolBoard-Public-English-Kitchener,N/A,Waterloo Region District School Board Trustee (English Public) - Kitchener,4
+SchoolBoard-Public-English-Waterloo-Wilmot,N/A,Waterloo Region District School Board Trustee (English Public) - Waterloo/Wilmot,3
+SchoolBoard-Public-English-Woolwich-Wellesley,N/A,Waterloo Region District School Board Trustee (English Public) - Woolwich/Wellesley,1
+SchoolBoard-Catholic-English-Waterloo-Wellesley-Woolwich,N/A,Waterloo Catholic District School Board Trustee (English Catholic) - Waterloo/Wellesley/Woolwich,2
+SchoolBoard-Catholic-English-Kitchener-Wilmot,N/A,Waterloo Catholic District School Board Trustee (English Catholic) - Kitchener/Wilmot,4
+SchoolBoard-Catholic-English-Cambridge-NorthDumfries,N/A,Waterloo Catholic District School Board Trustee (English Catholic) - Cambridge/North Dumfries,3
+SchoolBoard-Public-French,N/A,Conseil scolaire Viamonde (French Public) - Membre du Counseil pour Huron/Middlesex/Perth/Waterloo/Wellington,1
+SchoolBoard-Catholic-French,N/A,Conseil scolaire de district catholique Centre-Sud (French Catholic) - Membre du Counseil pour Waterloo/Brant/Haldimand/Norfolk,1
