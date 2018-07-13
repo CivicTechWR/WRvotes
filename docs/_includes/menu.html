@@ -5,11 +5,11 @@ From: https://christianspecht.de/2014/06/18/building-a-pseudo-dynamic-tree-menu-
 {% assign navurl = page.url | remove: '.html' %}
 <div id="main-menu">
   <ul>
-    {% for item in site.data.site-config.menu-layout %}
+    {%- for item in site.data.site-config.menu-layout %}
       <li><a href="{{ item.url }}" 
-          {%- if item.url == navurl %}class="current"{% endif -%}>
+          {%- if item.url == navurl %} class="current"{% endif -%}>
           {{- item.text -}}
       </a></li>
-    {% endfor %}
+    {% endfor -%}
   </ul>
 </div>
