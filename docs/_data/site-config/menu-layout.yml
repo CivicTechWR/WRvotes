@@ -2,8 +2,7 @@
 # This may not be the best approach. See: 
 # https://thinkshout.com/blog/2014/12/creating-dynamic-menus-in-jekyll/
 
-- main:
-  - text: Look Up Your Ward
-    url: / 
-  - text: About Us
-    url: /about
+- text: Look Up Your Ward
+  url: / 
+- text: About Us
+  url: /about
