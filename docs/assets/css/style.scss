@@ -13,9 +13,12 @@
 
 #main-menu ul {
   list-style-type: none;
-  white-space: nowrap; /* Keep menu items from breaking across lines */
+  /* Keep menu items from breaking across lines */
+  white-space: nowrap; 
 }
 
-#main-meny li {
-  display: inline;
+#main-menu li {
+  display: inline-block;
+  padding-left: 5em;
+  padding-right: 5em;
 }
