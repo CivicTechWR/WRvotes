@@ -1,15 +1,15 @@
 {% comment %}
 From: https://christianspecht.de/2014/06/18/building-a-pseudo-dynamic-tree-menu-with-jekyll/
 {% endcomment %}
-<!-- Menu, attempt 07 -->
+<!-- Menu, attempt 09 -->
 {% assign navurl = page.url | remove '.html' %}
 <p>Nav url is: {{ navurl }}</p>
 <div id="main-menu">
   <ul>
     {% for item in site.data.site-config.menu-layout %}
       <li><a href="{{ item.url }}" 
-          {% if item.url == navurl %}class="current"{% endif %}>
-          {{ item.text }}
+          {%- if item.url == navurl %}class="current"{% endif -%}>
+          {{- item.text -}}
       </a></li>
     {% endfor %}
   </ul>
