@@ -1,0 +1,17 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+#menu-top a { 
+  color:#fff;
+} 
+
+#menu-top a.current { 
+  text-decoration: underline;
+}
+
+#menu-top ul {
+  display: inline;
+  list-style-type: none;
+}
