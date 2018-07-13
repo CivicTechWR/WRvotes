@@ -2,8 +2,8 @@
 From: https://christianspecht.de/2014/06/18/building-a-pseudo-dynamic-tree-menu-with-jekyll/
 {% endcomment %}
 <!-- Menu, attempt 06 -->
-{% assign navurl = page.url %}
-<p>Page url is: {{ page.url }}</p>
+{% assign navurl = page.url | remove '.html' %}
+<p>Nav url is: {{ navurl }}</p>
 <div id="main-menu">
   <ul>
     {% for item in site.data.site-config.menu-layout %}
