@@ -12,6 +12,10 @@
 }
 
 #main-menu ul {
-  display: inline;
   list-style-type: none;
+  white-space: nowrap; /* Keep menu items from breaking across lines */
+}
+
+#main-meny li {
+  display: inline;
 }
