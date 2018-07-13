@@ -3,15 +3,15 @@
 
 @import "{{ site.theme }}";
 
-#menu-top a { 
+#main-menu a { 
   color:#fff;
 } 
 
-#menu-top a.current { 
+#main-menu a.current { 
   text-decoration: underline;
 }
 
-#menu-top ul {
+#main-menu ul {
   display: inline;
   list-style-type: none;
 }
