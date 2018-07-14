@@ -1,11 +1,13 @@
 ---
 title: Some Title
 ---
+Attempt: 01
+
 Title: {{ page.title }} 
 
 URL: {{ page.url }}
 
-{% assign ward-name = page.url | match_regex: '(.)"\.html' %}
+{% assign ward-name = page.url | match_regex: '^(?:.+)/(.+)\.(?:.+)$' %}
 
 Ward Name: {{ ward-name }}
 
