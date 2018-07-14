@@ -1,7 +1,7 @@
 ---
 title: Some Title
 ---
-Attempt: 07
+Attempt: 09
 
 Title: {{ page.title }} 
 
@@ -12,7 +12,7 @@ Try to eat up all leading slashes. Don't allow periods in
 ward names, and ignore everything after the period. 
 {% endcomment %}
 {% assign ward-name = page.url | match_regex: '^(?:.+)\/(.+)\.(?:.+)$' %}
-{% assign ward-explore = page.url | replace: '.html', '' | split '/' %}
+{% assign ward-explore = page.url | replace: '.html', '' | split: '/' %}
 
 Ward Name: {{ ward-name }}
 
