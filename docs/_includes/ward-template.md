@@ -1,30 +1,20 @@
+{%- comment %} 
+Try to eat up all leading slashes and the trailing .html . 
+This is gross but it works.
+{% endcomment %}
+{% assign ward-id = page.url | replace: '.html', '' | split: '/' -%}
+{% assign ward-info = site.data.site-data.position-tags |
+where:"PositionUniqueName",ward-id %}
 ---
-title: Some Title
+title: {{ ward-desc.PositionDesc }}
 ---
-Attempt: 09
+Attempt: 10
 
 Title: {{ page.title }} 
 
 URL: {{ page.url }}
 
-{% comment %} 
-Try to eat up all leading slashes. Don't allow periods in 
-ward names, and ignore everything after the period. 
-{% endcomment %}
-{% assign ward-name = page.url | match_regex: '^(?:.+)\/(.+)\.(?:.+)$' %}
-{% assign ward-explore = page.url | replace: '.html', '' | split: '/' %}
-
-Ward Name: {{ ward-name }}
-
-Ward Exploration: {{ ward-explore.last }}
-
-Path: {{ page.path }} 
-
-ID: {{ page.id }}
-
-Categories: {{ page.categories }}
-
-All posts in Wards: {{ site.categories.ward }}
+Ward ID: {{ ward-id }}
 
 ## All positions: 
 
