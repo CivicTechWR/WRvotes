@@ -21,9 +21,8 @@ Ward Info: {{ ward-info }}
 
 ## Running in this Ward
 
-{% assign these-nominees = site.data.site-data.nominees |
-sort: 'Last_Name','Given_Names'
-%}
+{% assign these-nominees = site.data.site-data.nominees 
+  | where:"PositionUniqueName",ward-id %}
 
 {% for nominee in these-nominees %}
 - {% if nominee.Website -%}
