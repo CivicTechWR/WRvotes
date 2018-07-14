@@ -4,13 +4,13 @@ This is gross but it works.
 {% endcomment %}
 {% assign ward-id = page.url | replace: '.html', '' | split: '/' | last -%}
 {% assign ward-info = site.data.site-data.position-tags |
-where:"PositionUniqueName",ward-id | first %}
+where:"PositionUniqueName",ward-id | first -%}
 ---
 title: {{ ward-info.PositionDesc }}
 ---
 Moo moo.
 
-Attempt: 13
+Attempt: 14
 
 Title: {{ page.title }} 
 
