@@ -1,7 +1,7 @@
 ---
 ---
 
-Attempt: 23
+Attempt: 24
 
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -11,10 +11,12 @@ This is gross but it works.
 {% assign ward-info = site.data.site-data.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
 
+Ward Info: {{ ward-info }}
+
 ## Running in this Ward
 
 {% assign races = site.data.site-data.municipality-map |
-where:ward-info.WardMunicipality,"Name" %}
+where:"Name",ward-info.WardMunicipality %}
 {% assign race-array = races | split: ',' %}
 
 Races: {{ races }} 
