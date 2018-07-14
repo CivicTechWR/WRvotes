@@ -17,12 +17,14 @@ Ward Info: {{ ward-info }}
 
 {% assign races = site.data.site-data.municipality-map |
 where:"Name",ward-info.WardMunicipality %}
-{% assign race-array = races.Races | split: ',' %}
+{% assign races-unsplit = races.Races %}
+{% assign races-split = races.Races | split: ',' %}
 
 Races: {{ races }} 
-Race Array: {{ race-array }}
 
-{% for race in race-array -%}
+Race Array: {{ races-split }}
+
+{% for race in races-split -%}
   {% if race == "_SELF" %}
     {% assign race = ward-id %}
   {% endif %}
