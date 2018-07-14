@@ -1,7 +1,7 @@
 ---
 ---
 
-Attempt: 22
+Attempt: 23
 
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -16,6 +16,9 @@ where:"PositionUniqueName",ward-id | first -%}
 {% assign races = site.data.site-data.municipality-map |
 where:ward-info.WardMunicipality,"Name" %}
 {% assign race-array = races | split: ',' %}
+
+Races: {{ races }} 
+Race Array: {{ race-array }}
 
 {% for race in race-array -%}
   {% if race == "_SELF" %}
