@@ -1,9 +1,8 @@
 ---
 title: !DYNAMIC_TITLE!
 ---
-Moo moo.
 
-Attempt: 15
+Attempt: 17
 
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -13,7 +12,7 @@ This is gross but it works.
 {% assign ward-info = site.data.site-data.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
 
-{{ page.title | replace: '!DYNAMIC_TITLE',ward-info.PositionDesc }}
+{{ page.title | replace: '!DYNAMIC_TITLE!',ward-info.PositionDesc }}
 
 
 Title: {{ page.title }} 
