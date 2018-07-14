@@ -1,7 +1,7 @@
 ---
 ---
 
-Attempt: 21
+Attempt: 22
 
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -23,8 +23,7 @@ Ward Info: {{ ward-info }}
 
 {% assign these-nominees = site.data.site-data.nominees 
   | where:"PositionUniqueName",ward-id %}
-{% assign sorted-nominees = these-nominees | sort: "Last_Name",
-"Given_Names" %}
+{% assign sorted-nominees = these-nominees | sort: "Last_Name" %}
 
 {% for nominee in sorted-nominees %}
 - {% if nominee.Website -%}
