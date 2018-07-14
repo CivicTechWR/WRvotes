@@ -1,7 +1,7 @@
 ---
 ---
 
-Attempt: 27
+Attempt: 28
 
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -15,12 +15,12 @@ Ward Info: {{ ward-info }}
 
 ## Running in this Ward
 
-{% assign races = site.data.site-data.municipality-map |
+{% assign municipal-info = site.data.site-data.municipality-map |
 where:"Name",ward-info.WardMunicipality %}
-{% assign races-unsplit = races.Races %}
+{% assign races-unsplit = municipal-info.Races %}
 {% assign races-split = races-unsplit | split: ',' %}
 
-Races: {{ races }} 
+Municipal-info: {{ municipal-info }} 
 
 Races.races: {{ races.Races }}
 
