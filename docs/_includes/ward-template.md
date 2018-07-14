@@ -1,7 +1,7 @@
 ---
 ---
 
-Attempt: 31
+Attempt: 32
 
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -13,24 +13,13 @@ where:"PositionUniqueName",ward-id | first -%}
 
 Ward Info: {{ ward-info }}
 
-Ward Info Name: {{ ward-info.PositionDesc }}
-
 ## Running in this Ward
 
 {% assign municipal-info = site.data.site-data.municipality-map |
 where:"Name",ward-info.WardMunicipality | first %}
-{% assign races-unsplit = municipal-info.Races %}
-{% assign races-split = races-unsplit | split: ',' %}
+{% assign races-split = municipal-info.Races | split: ',' %}
 
 Municipal-info: {{ municipal-info }} 
-
-Municipal-info.Races: {{ municipal-info.Races }}
-
-Municipality Type: {{ municipal-info.MunicipalityType }}
-
-Races.races: {{ races.Races }}
-
-Races Unsplit: {{ races-unsplit }}
 
 Race Array: {{ races-split }}
 
@@ -40,9 +29,9 @@ Race Array: {{ races-split }}
   {% endif %}
   
   {% assign race-info = site.data.site-data.position-tags |
-  where:"PositionUniqueName",race -%}
+  where:"PositionUniqueName",race | first -%}
 
-  ### {{ race-info.PositionDesc -}}
+### {{ race-info.PositionDesc -}}
   
   {% assign these-nominees = site.data.site-data.nominees 
     | where:"PositionUniqueName",race %}
