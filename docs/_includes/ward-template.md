@@ -2,19 +2,23 @@
 Try to eat up all leading slashes and the trailing .html . 
 This is gross but it works.
 {% endcomment %}
-{% assign ward-id = page.url | replace: '.html', '' | split: '/' -%}
+{% assign ward-id = page.url | replace: '.html', '' | split: '/' | last -%}
 {% assign ward-info = site.data.site-data.position-tags |
 where:"PositionUniqueName",ward-id | first %}
 ---
-title: {{ ward-desc.PositionDesc }}
+title: {{ ward-info.PositionDesc }}
 ---
-Attempt: 11
+Moo moo.
+
+Attempt: 13
 
 Title: {{ page.title }} 
 
 URL: {{ page.url }}
 
 Ward ID: {{ ward-id }}
+
+Ward Info: {{ ward-info }}
 
 ## All positions: 
 
