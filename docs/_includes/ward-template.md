@@ -22,6 +22,6 @@ All posts in Wards: {{ site.categories.ward }}
 ## All nominees: 
 
 {% for nominee in site.data.site-data.nominees %}
-- {{ nominee.Given_Name }} {{ nominee.Last_Name }} : 
+- {{ nominee.Given_Names }} {{ nominee.Last_Name }} : 
   {{- nominee.PositionUniqueName }}
 {% endfor %}
