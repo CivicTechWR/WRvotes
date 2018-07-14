@@ -5,6 +5,10 @@ Title: {{ page.title }}
 
 URL: {{ page.url }}
 
+{% assign ward-name = page.url | match_regex: '(.)"\.html' %}
+
+Ward Name: {{ ward-name }}
+
 Path: {{ page.path }} 
 
 ID: {{ page.id }}
