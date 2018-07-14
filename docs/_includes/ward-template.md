@@ -21,7 +21,7 @@ Ward Info: {{ ward-info }}
 
 ## Running in this Ward
 
-{% for nominee in site.data.site-data.nominees 
+{% for nominee in site.data.site-data.nominees |
 where:"PositionUniqueName",ward-id | sort: 'Last_Name','Given_Names'
 %}
 - {% if nominee.Website -%}
