@@ -1,4 +1,3 @@
-{%- comment %} 
 ---
 title: !DYNAMIC_TITLE!
 ---
@@ -6,6 +5,7 @@ Moo moo.
 
 Attempt: 15
 
+{% comment %}
 Try to eat up all leading slashes and the trailing .html . 
 This is gross but it works.
 {% endcomment %}
