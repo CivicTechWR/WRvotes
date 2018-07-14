@@ -1,16 +1,20 @@
 {%- comment %} 
+---
+title: !DYNAMIC_TITLE!
+---
+Moo moo.
+
+Attempt: 15
+
 Try to eat up all leading slashes and the trailing .html . 
 This is gross but it works.
 {% endcomment %}
 {% assign ward-id = page.url | replace: '.html', '' | split: '/' | last -%}
 {% assign ward-info = site.data.site-data.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
----
-title: {{ ward-info.PositionDesc }}
----
-Moo moo.
 
-Attempt: 14
+{{ page.title | replace: '!DYNAMIC_TITLE',ward-info.PositionDesc }}
+
 
 Title: {{ page.title }} 
 
