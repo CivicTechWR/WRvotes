@@ -13,6 +13,8 @@ where:"PositionUniqueName",ward-id | first -%}
 
 Ward Info: {{ ward-info }}
 
+Ward Info Name: {{ ward-info.PositionDesc }}
+
 ## Running in this Ward
 
 {% assign municipal-info = site.data.site-data.municipality-map |
