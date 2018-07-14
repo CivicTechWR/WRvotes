@@ -1,13 +1,17 @@
 ---
 title: Some Title
 ---
-Attempt: 01
+Attempt: 02
 
 Title: {{ page.title }} 
 
 URL: {{ page.url }}
 
-{% assign ward-name = page.url | match_regex: '^(?:.+)/(.+)\.(?:.+)$' %}
+{% comment %} 
+Try to eat up all leading slashes. Don't allow periods in 
+ward names, and ignore everything after the period. 
+{% endcomment %}
+{% assign ward-name = page.url | match_regex: '^(?:.+)\/(.+)\.(?:.+)$' %}
 
 Ward Name: {{ ward-name }}
 
