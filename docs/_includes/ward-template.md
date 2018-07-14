@@ -1,7 +1,7 @@
 ---
 ---
 
-Attempt: 30
+Attempt: 31
 
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -23,6 +23,8 @@ where:"Name",ward-info.WardMunicipality %}
 Municipal-info: {{ municipal-info }} 
 
 Municipal-info.Races: {{ municipal-info.Races }}
+
+Municipality Type: {{ municipal-info.MunicipalityType }}
 
 Races.races: {{ races.Races }}
 
