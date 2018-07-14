@@ -1,7 +1,7 @@
 ---
 title: Some Title
 ---
-Attempt: 06
+Attempt: 07
 
 Title: {{ page.title }} 
 
@@ -16,7 +16,7 @@ ward names, and ignore everything after the period.
 
 Ward Name: {{ ward-name }}
 
-Ward Exploration: {{ ward-explore }}
+Ward Exploration: {{ ward-explore.last }}
 
 Path: {{ page.path }} 
 
