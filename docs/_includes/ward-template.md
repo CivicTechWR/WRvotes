@@ -1,7 +1,7 @@
 ---
 ---
 
-Attempt: 28
+Attempt: 30
 
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -21,6 +21,8 @@ where:"Name",ward-info.WardMunicipality %}
 {% assign races-split = races-unsplit | split: ',' %}
 
 Municipal-info: {{ municipal-info }} 
+
+Municipal-info.Races: {{ municipal-info.Races }}
 
 Races.races: {{ races.Races }}
 
