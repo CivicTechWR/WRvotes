@@ -1,0 +1,8 @@
+Name,MunicipalityType,Races
+Cambridge,City,"Regional-Chair,Regional-Cambridge,Cambridge-Mayor,_SELF,SchoolBoard-Public-English-Cambridge-NorthDumfries,SchoolBoard-Catholic-English-Cambridge-NorthDumfries,SchoolBoard-Public-French,SchoolBoard-Catholic-French"
+NorthDumfries,Township,"Regional-Chair,NorthDumfries-Mayor,_SELF,SchoolBoard-Public-English-Cambridge-NorthDumfries,SchoolBoard-Catholic-English-Cambridge-NorthDumfries,SchoolBoard-Public-French,SchoolBoard-Catholic-French"
+Kitchener,City,"Regional-Chair,Regional-Kitchener,Kitchener-Mayor,_SELF,SchoolBoard-Public-English-Kitchener,SchoolBoard-Catholic-English-Kitchener-Wilmot,SchoolBoard-Public-French,SchoolBoard-Catholic-French"
+Waterloo,City,"Regional-Chair,Regional-Waterloo,Waterloo-Mayor,_SELF,SchoolBoard-Public-English-Waterloo-Wilmot,SchoolBoard-Catholic-English-Waterloo-Wellesley-Woolwich,SchoolBoard-Public-French,SchoolBoard-Catholic-French"
+Wellesley,Township,"Regional-Chair,Wellesley-Mayor,_SELF,SchoolBoard-Public-English-Woolwich-Wellesley,SchoolBoard-Catholic-English-Waterloo-Wellesley-Woolwich,SchoolBoard-Public-French,SchoolBoard-Catholic-French"
+Wilmot,Township,"Regional-Chair,Wilmot-Mayor,_SELF,SchoolBoard-Public-English-Waterloo-Wilmot,SchoolBoard-Catholic-English-Kitchener-Wilmot,SchoolBoard-Public-French,SchoolBoard-Catholic-French"
+Woolwich,Township,"Regional-Chair,Woolwich-Mayor,_SELF,SchoolBoard-Public-English-Woolwich-Wellesley,SchoolBoard-Catholic-English-Waterloo-Wellesley-Woolwich,SchoolBoard-Public-French,SchoolBoard-Catholic-French"

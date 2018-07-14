@@ -11,27 +11,36 @@ This is gross but it works.
 {% assign ward-info = site.data.site-data.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
 
-Title: {{ page.title }} 
-
-URL: {{ page.url }}
-
-Ward ID: {{ ward-id }}
-
-Ward Info: {{ ward-info }}
-
 ## Running in this Ward
 
-{% assign these-nominees = site.data.site-data.nominees 
-  | where:"PositionUniqueName",ward-id %}
-{% assign sorted-nominees = these-nominees | sort: "Last_Name" %}
+{% assign races = site.data.site-data.municipality-map |
+where:ward-info.WardMunicipality,"Name" %}
+{% assign race-array = races | split: ',' %}
 
-{% for nominee in sorted-nominees %}
-- {% if nominee.Website -%}
-  [{{ nominee.Given_Names }} 
-    {{ nominee.Last_Name }}]({{ nominee.Website }})
-  {%- else -%}
-    {{ nominee.Given_Names}} {{ nominee.Last_Name }}
-  {%- endif -%}
+{% for race in race-array -%}
+  {% if race == "_SELF" %}
+    {% assign race = ward-id %}
+  {% endif %}
+  
+  {% assign race-info = site.data.site-data.position-tags |
+  where:"PositionUniqueName",race -%}
+
+  ### {{ race-info.PositionDesc -}}
+  
+
+  {% assign these-nominees = site.data.site-data.nominees 
+    | where:"PositionUniqueName",race %}
+  {% assign sorted-nominees = these-nominees | sort: "Last_Name" %}
+
+  {% for nominee in sorted-nominees -%}
+  - {% if nominee.Website -%}
+    [{{ nominee.Given_Names }} 
+      {{ nominee.Last_Name }}]({{ nominee.Website }})
+    {%- else -%}
+      {{ nominee.Given_Names}} {{ nominee.Last_Name }}
+    {%- endif -%}
+  {% endfor %}
+
 {% endfor %}
 
 
