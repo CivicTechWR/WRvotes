@@ -18,7 +18,7 @@ Ward Info Name: {{ ward-info.PositionDesc }}
 ## Running in this Ward
 
 {% assign municipal-info = site.data.site-data.municipality-map |
-where:"Name",ward-info.WardMunicipality %}
+where:"Name",ward-info.WardMunicipality | first %}
 {% assign races-unsplit = municipal-info.Races %}
 {% assign races-split = races-unsplit | split: ',' %}
 
