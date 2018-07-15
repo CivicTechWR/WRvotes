@@ -10,9 +10,11 @@ This is gross but it works.
 {% assign ward-id = page.url | replace: '.html', '' | split: '/' | last -%}
 {% assign ward-info = site.data.site-data.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
-
+<p>
 Ward Info: {{ ward-info }}
-
+</p><p>
+Site URL: {{ site.url }}
+</p>
 <h2>Who is Running?</h2>
 
 {% assign municipal-info = site.data.site-data.municipality-map |
