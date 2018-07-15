@@ -1,1 +1,0 @@
-../_includes/ward-template.md
