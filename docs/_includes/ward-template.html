@@ -42,8 +42,8 @@ Race Array: {{ races-split }}
   {% for nominee in sorted-nominees %}
     <li>
     {% if nominee.Website -%}
-    [{{ nominee.Given_Names }} 
-      {{ nominee.Last_Name }}]({{ nominee.Website }})
+    <a href="{{ nominee.Website}}">[{{ nominee.Given_Names }} 
+      {{ nominee.Last_Name }}</a>
     {%- else -%}
       {{ nominee.Given_Names}} {{ nominee.Last_Name }}
     {%- endif -%}
