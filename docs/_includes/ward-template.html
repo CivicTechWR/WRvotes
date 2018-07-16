@@ -2,7 +2,7 @@
 layout: "default"
 ---
 <p>
-Attempt: 44
+Attempt: 47
 </p>
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -34,15 +34,28 @@ where:"Name",ward-info.WardMunicipality | first %}
   {% assign these-nominees = site.data.site-data.nominees 
     | where:"PositionUniqueName",race-id %}
   {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
-  <p>Sorted nominees size: "{{sorted-nominees.size}}"</p>
 
   {% if sorted-nominees.size > 0 %}
     <ul>
     {% for nominee in sorted-nominees %}
       <li>
       {% if nominee.Website -%}
-      <a href="{{ nominee.Website}}">{{ nominee.Given_Names }} 
-        {{ nominee.Last_Name }}</a>
+        {% comment %}
+        Assume @name means Twitter.
+        This should probably be its own function.
+        Or we should prohibit this!
+        {% endcomment %}
+
+        {% if '@' == nominee.Website | slice: 0 %}
+
+          {% assign website-url = nominee.Website 
+            | replace_first '@','https://twitter.com/' %} 
+        {% else %}
+          {% assign website-url = nominee.Website %}
+        {% endif %}
+
+        <a href="{{ website-url }}">{{ nominee.Given_Names }} 
+          {{ nominee.Last_Name }}</a>
       {%- else -%}
         {{ nominee.Given_Names}} {{ nominee.Last_Name }}
       {%- endif -%}
