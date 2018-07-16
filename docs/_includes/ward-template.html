@@ -2,7 +2,7 @@
 layout: "default"
 ---
 <p>
-Attempt: 48
+Attempt: 49
 </p>
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -46,10 +46,13 @@ where:"Name",ward-info.WardMunicipality | first %}
         Or we should prohibit this!
         {% endcomment %}
 
-        {% if nominee.Website | slice: 0 == '@' %}
+        {% assign first-char-website = nominee.Website 
+          | slice: 0 }}
+        <p>first-char-website: {{ first-char-website }}</p>
+        {% if first-char-website == '@' %}
 
           {% assign website-url = nominee.Website 
-            | replace_first '@','https://twitter.com/' %} 
+            | replace_first: '@','https://twitter.com/' %} 
         {% else %}
           {% assign website-url = nominee.Website %}
         {% endif %}
