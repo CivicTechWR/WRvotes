@@ -13,10 +13,6 @@ This is gross but it works.
 where:"PositionUniqueName",ward-id | first -%}
 <p>
 Ward Info: {{ ward-info }}
-</p><p>
-Site URL: {{ site.url }}
-</p><p>
-Site BaseURL: {{ site.baseurl }}
 </p>
 <h2>Who is Running?</h2>
 
@@ -28,7 +24,8 @@ Municipal-info: {{ municipal-info }}
 </p><p>
 Race Array: {{ races-split }}
 </p><p>
-{% for race in races-split -%}
+{% for race in races-split %}
+  <p>Race: {{ race }}</p>
   {% if race == "_SELF" %}
     {% assign race = ward-id %}
   {% endif %}
