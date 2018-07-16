@@ -2,7 +2,7 @@
 layout: "default"
 ---
 <p>
-Attempt: 40
+Attempt: 41
 </p>
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -35,18 +35,25 @@ where:"Name",ward-info.WardMunicipality | first %}
     | where:"PositionUniqueName",race-id %}
   {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
 
-  <ul>
-  {% for nominee in sorted-nominees %}
-    <li>
-    {% if nominee.Website -%}
-    <a href="{{ nominee.Website}}">{{ nominee.Given_Names }} 
-      {{ nominee.Last_Name }}</a>
-    {%- else -%}
-      {{ nominee.Given_Names}} {{ nominee.Last_Name }}
-    {%- endif -%}
-    </li>
-  {% endfor %}
-  </ul>
+  {% if sorted-nominees %}
+    <ul>
+    {% for nominee in sorted-nominees %}
+      <li>
+      {% if nominee.Website -%}
+      <a href="{{ nominee.Website}}">{{ nominee.Given_Names }} 
+        {{ nominee.Last_Name }}</a>
+      {%- else -%}
+        {{ nominee.Given_Names}} {{ nominee.Last_Name }}
+      {%- endif -%}
+      </li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>
+    Whoops! Nobody appears to be running for this position!
+    Has democracy failed or are our records out of date?
+    </p>
+  {% endif %}
 
 {% endfor %}
 
