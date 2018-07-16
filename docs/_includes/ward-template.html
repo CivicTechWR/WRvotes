@@ -2,7 +2,7 @@
 layout: "default"
 ---
 <p>
-Attempt: 50
+Attempt: 51
 </p>
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -41,14 +41,13 @@ where:"Name",ward-info.WardMunicipality | first %}
       <li>
       {% if nominee.Website -%}
         {% comment %}
-        Assume @name means Twitter.
+        Assume @name means Twitter and not Instagram.
         This should probably be its own function.
         Or we should prohibit this!
         {% endcomment %}
 
         {% assign first-char-website = nominee.Website 
           | slice: 0 %}
-        <p>first-char-website: {{ first-char-website }}</p>
         {% if first-char-website == '@' %}
 
           {% assign website-url = nominee.Website 
