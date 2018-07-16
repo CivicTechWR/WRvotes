@@ -26,7 +26,11 @@ where:"Name",ward-info.WardMunicipality | first %}
   {% assign race-info = site.data.internal.position-tags |
   where:"PositionUniqueName",race-id | first -%}
 
-<h3>{{ race-info.PositionDesc }}</h3>
+<h3>{{ race-info.PositionDesc }}
+{%- if race-info.NumberToElect > 1 -%}
+  (Elect {{ race-info.NumberToElect }})
+{%- endif -%}
+</h3>
 
   {% assign these-nominees = site.data.sync.nominees 
     | where:"PositionUniqueName",race-id %}
