@@ -55,20 +55,3 @@ Race Array: {{ races-split }}
 {% endfor %}
 
 
-<h2>All positions</h2>
-
-<ul>
-{% for position in site.data.site-data.position-tags %}
-  <li>{{ position.PositionUniqueName }} : {{ position.PositionDesc }}</li>
-{% endfor %}
-</ul>
-
-
-<h2>All nominees</h2>
-
-<ul>
-{% for nominee in site.data.site-data.nominees %}
-  <li>{{ nominee.Given_Names }} {{ nominee.Last_Name }} : 
-  {{- nominee.PositionUniqueName }}</li>
-{% endfor %}
-</ul>
