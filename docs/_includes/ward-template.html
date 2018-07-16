@@ -9,13 +9,13 @@ Try to eat up all leading slashes and the trailing .html .
 This is gross but it works.
 {% endcomment %}
 {% assign ward-id = page.url | replace: '.html', '' | split: '/' | last -%}
-{% assign ward-info = site.data.site-data.position-tags |
+{% assign ward-info = site.data.internal.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
 
 
 <h2>Who is Running?</h2>
 
-{% assign municipal-info = site.data.site-data.municipality-map |
+{% assign municipal-info = site.data.internal.municipality-map |
 where:"Name",ward-info.WardMunicipality | first %}
 {% assign races-split = municipal-info.Races | split: ',' %}
 
@@ -26,12 +26,12 @@ where:"Name",ward-info.WardMunicipality | first %}
     {% assign race-id = race %}
   {% endif %}
 
-  {% assign race-info = site.data.site-data.position-tags |
+  {% assign race-info = site.data.internal.position-tags |
   where:"PositionUniqueName",race-id | first -%}
 
 <h3>{{ race-info.PositionDesc }}</h3>
 
-  {% assign these-nominees = site.data.site-data.nominees 
+  {% assign these-nominees = site.data.sync.nominees 
     | where:"PositionUniqueName",race-id %}
   {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
 
