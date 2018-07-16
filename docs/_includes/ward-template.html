@@ -2,7 +2,7 @@
 layout: "default"
 ---
 <p>
-Attempt: 36
+Attempt: 37
 </p>
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -21,22 +21,22 @@ where:"Name",ward-info.WardMunicipality | first %}
 <p>
 Municipal-info: {{ municipal-info }} 
 </p><p>
-Race Array: {{ races-split }}
-</p><p>
 {% for race in races-split %}
   {% if race == "_SELF" %}
     <p>Ha! Found _SELF</p>
-    {% assign race = ward-id %}
+    {% assign race-id = ward-id %}
+  {% else %}
+    {% assign race-id = race %}
   {% endif %}
   
   {% assign race-info = site.data.site-data.position-tags |
-  where:"PositionUniqueName",race | first -%}
+  where:"PositionUniqueName",race-id | first -%}
 
 <h3>{{ race-info.PositionDesc }}</h3>
 
   
   {% assign these-nominees = site.data.site-data.nominees 
-    | where:"PositionUniqueName",race %}
+    | where:"PositionUniqueName",race-id %}
   {% assign sorted-nominees = these-nominees | sort: "Last_Name" %}
 
   <ul>
