@@ -27,8 +27,8 @@ where:"Name",ward-info.WardMunicipality | first %}
   where:"PositionUniqueName",race-id | first -%}
 
 <h3>{{ race-info.PositionDesc }}
-{%- if race-info.NumberToElect != "1" -%}
-  (Elect {{ race-info.NumberToElect }})
+{%- if race-info.NumberToElect != "1" %}
+  <small>(Elect {{ race-info.NumberToElect }})</small>
 {%- endif -%}
 </h3>
 
