@@ -2,7 +2,7 @@
 layout: "default"
 ---
 <p>
-Attempt: 39
+Attempt: 40
 </p>
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -31,10 +31,9 @@ where:"Name",ward-info.WardMunicipality | first %}
 
 <h3>{{ race-info.PositionDesc }}</h3>
 
-  
   {% assign these-nominees = site.data.site-data.nominees 
     | where:"PositionUniqueName",race-id %}
-  {% assign sorted-nominees = these-nominees | sort: "Last_Name" %}
+  {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
 
   <ul>
   {% for nominee in sorted-nominees %}
