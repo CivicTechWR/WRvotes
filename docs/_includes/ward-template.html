@@ -10,7 +10,7 @@ This is gross but it works.
 where:"PositionUniqueName",ward-id | first -%}
 
 
-<h2>Who is Running in {{ ward-info.PositionDesc }}?</h2>
+<h2>Who is Running Within {{ ward-info.PositionDesc }}?</h2>
 
 {% assign municipal-info = site.data.internal.municipality-map |
 where:"Name",ward-info.WardMunicipality | first %}
