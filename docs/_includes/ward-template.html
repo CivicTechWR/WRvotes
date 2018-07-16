@@ -35,9 +35,8 @@ where:"Name",ward-info.WardMunicipality | first %}
     | where:"PositionUniqueName",race-id %}
   {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
   <p>Sorted nominees size: "{{sorted-nominees.size}}"</p>
-  <p>Sorted nominees length: "{{sorted-nominees.length}}"</p>
 
-  {% if sorted-nominees %}
+  {% if sorted-nominees.size > 0 %}
     <ul>
     {% for nominee in sorted-nominees %}
       <li>
