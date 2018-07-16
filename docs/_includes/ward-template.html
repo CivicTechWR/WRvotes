@@ -2,7 +2,7 @@
 layout: "default"
 ---
 <p>
-Attempt: 41
+Attempt: 42
 </p>
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -35,7 +35,7 @@ where:"Name",ward-info.WardMunicipality | first %}
     | where:"PositionUniqueName",race-id %}
   {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
 
-  {% if sorted-nominees %}
+  {% if these-nominees %}
     <ul>
     {% for nominee in sorted-nominees %}
       <li>
