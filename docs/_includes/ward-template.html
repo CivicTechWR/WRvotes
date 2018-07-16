@@ -2,7 +2,7 @@
 layout: "default"
 ---
 <p>
-Attempt: 37
+Attempt: 38
 </p>
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -28,6 +28,8 @@ Municipal-info: {{ municipal-info }}
   {% else %}
     {% assign race-id = race %}
   {% endif %}
+
+  <p>Race ID: {{ race-id }}</p>
   
   {% assign race-info = site.data.site-data.position-tags |
   where:"PositionUniqueName",race-id | first -%}
