@@ -2,7 +2,7 @@
 layout: "default"
 ---
 <p>
-Attempt: 35
+Attempt: 36
 </p>
 {% comment %}
 Try to eat up all leading slashes and the trailing .html . 
@@ -11,9 +11,8 @@ This is gross but it works.
 {% assign ward-id = page.url | replace: '.html', '' | split: '/' | last -%}
 {% assign ward-info = site.data.site-data.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
-<p>
-Ward Info: {{ ward-info }}
-</p>
+
+
 <h2>Who is Running?</h2>
 
 {% assign municipal-info = site.data.site-data.municipality-map |
@@ -25,8 +24,8 @@ Municipal-info: {{ municipal-info }}
 Race Array: {{ races-split }}
 </p><p>
 {% for race in races-split %}
-  <p>Race: {{ race }}</p>
   {% if race == "_SELF" %}
+    <p>Ha! Found _SELF</p>
     {% assign race = ward-id %}
   {% endif %}
   
@@ -56,7 +55,7 @@ Race Array: {{ races-split }}
 {% endfor %}
 
 
-<h3>All positions</h3>
+<h2>All positions</h2>
 
 <ul>
 {% for position in site.data.site-data.position-tags %}
@@ -65,7 +64,7 @@ Race Array: {{ races-split }}
 </ul>
 
 
-<h3>All nominees</h3>
+<h2>All nominees</h2>
 
 <ul>
 {% for nominee in site.data.site-data.nominees %}
