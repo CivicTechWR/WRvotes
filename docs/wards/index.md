@@ -13,7 +13,7 @@ If you would prefer a more graphical approach, use the [Ward Map](/).
 {% for municipality in site.data.internal.municipality-map %}
   <h2>{{municipality.MunicipalityType}} of {{municipality.Name}}</h2>
 
-  {% assign wards-unsorted = site.data.position-tags 
+  {% assign wards-unsorted = site.data.internal.position-tags 
     | where: "WardMunicipality",municipality.Name %}
   {% assign wards-sorted = wards-unsorted | sort: "PositionUniqueName" %}
 
