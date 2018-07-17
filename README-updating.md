@@ -48,3 +48,15 @@ Adding Menu Entries
 There are two steps. First, create your new page file in the `ocs`
 directory. Then update `_data/internal/menu-layout.yml` . Spacing
 is important, so follow the examples.
+
+
+Changing the Map
+----------------
+
+The map is in GeoJSON format. Github pages has the ability to display
+the map directly (but I think it lacks other features, such as street
+address lookup). 
+
+The original source comes from the Open Data portal. It is then
+modified in a GeoJSON editor -- Todd suggests geojson.io, but Google
+"My Maps" can also work.
