@@ -2235,7 +2235,7 @@
                 "Ward Number": "5",
                 "# of Nominees in 2014": "3",
                 "Municipality": "Waterloo",
-                "2018 Election Information": "[2018 Election Information]({{site.url}}/wards/Waterloo-Ward-05)"
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-05\">2018 Election Information</a>"
             }
         },
         {
@@ -3276,7 +3276,8 @@
                 "fill-opacity": 0.5882352941176471,
                 "Ward Number": "1",
                 "# of Nominees in 2014": "1",
-                "Municipality": "Waterloo"
+                "Municipality": "Waterloo",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-01\">2018 Election Information</a>"
             }
         },
         {
@@ -5643,7 +5644,7 @@
                 "Ward Number": "7",
                 "# of Nominees in 2014": "1",
                 "Municipality": "Waterloo",
-                "2018 Election Information": "<a href=\"http://civictechwr.org/WRvotes/waterloo/7\" target=\"_blank\">2018 Election Information</a>"
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-07\">2018 Election Information</a>"
             }
         },
         {
@@ -8644,7 +8645,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "4",
                 "# of Nominees in 2014": "3",
-                "Municipality": "Waterloo"
+                "Municipality": "Waterloo",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-04\">2018 Election Information</a>"
             }
         },
         {
@@ -10415,7 +10417,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "3",
                 "# of Nominees in 2014": "4",
-                "Municipality": "Waterloo"
+                "Municipality": "Waterloo",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-03\">2018 Election Information</a>"
             }
         },
         {
@@ -11736,7 +11739,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "2",
                 "# of Nominees in 2014": "4",
-                "Municipality": "Waterloo"
+                "Municipality": "Waterloo",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-02\">2018 Election Information</a>"
             }
         },
         {
@@ -14827,7 +14831,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "6",
                 "# of Nominees in 2014": "2",
-                "Municipality": "Waterloo"
+                "Municipality": "Waterloo",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-06\">2018 Election Information</a>"
             }
         },
         {
@@ -16073,7 +16078,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "2",
                 "# of Nominees in 2014": "4",
-                "Municipality": "Cambridge"
+                "Municipality": "Cambridge",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-02\">2018 Election Information</a>"
             }
         },
         {
@@ -17404,7 +17410,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "5",
                 "# of Nominees in 2014": "3",
-                "Municipality": "Cambridge"
+                "Municipality": "Cambridge",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-05\">2018 Election Information</a>"
             }
         },
         {
@@ -18685,7 +18692,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "3",
                 "# of Nominees in 2014": "6",
-                "Municipality": "Cambridge"
+                "Municipality": "Cambridge",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-03\">2018 Election Information</a>"
             }
         },
         {
@@ -22436,7 +22444,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "1",
                 "# of Nominees in 2014": "4",
-                "Municipality": "Cambridge"
+                "Municipality": "Cambridge",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-01\">2018 Election Information</a>"
             }
         },
         {
@@ -24402,7 +24411,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "6",
                 "# of Nominees in 2014": "4",
-                "Municipality": "Cambridge"
+                "Municipality": "Cambridge",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-06\">2018 Election Information</a>"
             }
         },
         {
@@ -26388,7 +26398,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "7",
                 "# of Nominees in 2014": "2",
-                "Municipality": "Cambridge"
+                "Municipality": "Cambridge",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-07\">2018 Election Information</a>"
             }
         },
         {
@@ -27879,7 +27890,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "8",
                 "# of Nominees in 2014": "5",
-                "Municipality": "Cambridge"
+                "Municipality": "Cambridge",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-08\">2018 Election Information</a>"
             }
         },
         {
@@ -29600,7 +29612,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "4",
                 "# of Nominees in 2014": "6",
-                "Municipality": "Cambridge"
+                "Municipality": "Cambridge",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-04\">2018 Election Information</a>"
             }
         },
         {
@@ -30041,7 +30054,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "2",
                 "# of Nominees in 2014": "3",
-                "Municipality": "North Dumfries"
+                "Municipality": "North Dumfries",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/NorthDumfries-Ward-02\">2018 Election Information</a>"
             }
         },
         {
@@ -31787,7 +31801,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "3",
                 "# of Nominees in 2014": "2",
-                "Municipality": "North Dumfries"
+                "Municipality": "North Dumfries",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/NorthDumfries-Ward-03\">2018 Election Information</a>"
             }
         },
         {
@@ -34433,7 +34448,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "4",
                 "# of Nominees in 2014": "2",
-                "Municipality": "North Dumfries"
+                "Municipality": "North Dumfries",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/NorthDumfries-Ward-04\">2018 Election Information</a>"
             }
         },
         {
@@ -35759,7 +35775,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "1",
                 "# of Nominees in 2014": "2",
-                "Municipality": "Wilmot"
+                "Municipality": "Wilmot",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wilmot-Ward-01\">2018 Election Information</a>"
             }
         },
         {
@@ -36260,7 +36277,8 @@
                 "fill-opacity": 0.5882352941176471,
                 "Ward Number": "3",
                 "# of Nominees in 2014": "1",
-                "Municipality": "Wilmot"
+                "Municipality": "Wilmot",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wilmot-Ward-03\">2018 Election Information</a>"
             }
         },
         {
@@ -36841,7 +36859,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "4",
                 "# of Nominees in 2014": "3",
-                "Municipality": "Wilmot"
+                "Municipality": "Wilmot",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wilmot-Ward-04\">2018 Election Information</a>"
             }
         },
         {
@@ -38202,7 +38221,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "2",
                 "# of Nominees in 2014": "2",
-                "Municipality": "Wilmot"
+                "Municipality": "Wilmot",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wilmot-Ward-02\">2018 Election Information</a>"
             }
         },
         {
@@ -38808,7 +38828,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "1",
                 "# of Nominees in 2014": "2",
-                "Municipality": "Wellesley"
+                "Municipality": "Wellesley",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wellesley-Ward-01\">2018 Election Information</a>"
             }
         },
         {
@@ -39569,7 +39590,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "2",
                 "# of Nominees in 2014": "2",
-                "Municipality": "Wellesley"
+                "Municipality": "Wellesley",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wellesley-Ward-02\">2018 Election Information</a>"
             }
         },
         {
@@ -40400,7 +40422,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "3",
                 "# of Nominees in 2014": "2",
-                "Municipality": "Wellesley"
+                "Municipality": "Wellesley",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wellesley-Ward-03\">2018 Election Information</a>"
             }
         },
         {
@@ -40861,7 +40884,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "4",
                 "# of Nominees in 2014": "4",
-                "Municipality": "Wellesley"
+                "Municipality": "Wellesley",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wellesley-Ward-04\">2018 Election Information</a>"
             }
         },
         {
@@ -42004,7 +42028,8 @@
                 "fill-opacity": 0.5882352941176471,
                 "Ward Number": "2",
                 "# of Nominees in 2014": "1",
-                "Municipality": "Woolwich"
+                "Municipality": "Woolwich",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Woolwich-Ward-02\">2018 Election Information</a>"
             }
         },
         {
@@ -42435,7 +42460,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "1",
                 "# of Nominees in 2014": "6",
-                "Municipality": "Woolwich"
+                "Municipality": "Woolwich",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Woolwich-Ward-01\">2018 Election Information</a>"
             }
         },
         {
@@ -46096,7 +46122,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "3",
                 "# of Nominees in 2014": "4",
-                "Municipality": "Woolwich"
+                "Municipality": "Woolwich",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Woolwich-Ward-03\">2018 Election Information</a>"
             }
         },
         {
@@ -47997,7 +48024,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "1",
                 "# of Nominees in 2014": "4",
-                "Municipality": "Kitchener"
+                "Municipality": "Kitchener",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-01\">2018 Election Information</a>"
             }
         },
         {
@@ -49023,7 +49051,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "2",
                 "# of Nominees in 2014": "6",
-                "Municipality": "Kitchener"
+                "Municipality": "Kitchener",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-02\">2018 Election Information</a>"
             }
         },
         {
@@ -50364,7 +50393,8 @@
                 "fill-opacity": 0.5882352941176471,
                 "Ward Number": "3",
                 "# of Nominees in 2014": "1",
-                "Municipality": "Kitchener"
+                "Municipality": "Kitchener",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-03\">2018 Election Information</a>"
             }
         },
         {
@@ -51400,7 +51430,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "4",
                 "# of Nominees in 2014": "3",
-                "Municipality": "Kitchener"
+                "Municipality": "Kitchener",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-04\">2018 Election Information</a>"
             }
         },
         {
@@ -52536,7 +52567,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "5",
                 "# of Nominees in 2014": "4",
-                "Municipality": "Kitchener"
+                "Municipality": "Kitchener",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-05\">2018 Election Information</a>"
             }
         },
         {
@@ -53107,7 +53139,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "6",
                 "# of Nominees in 2014": "5",
-                "Municipality": "Kitchener"
+                "Municipality": "Kitchener",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-06\">2018 Election Information</a>"
             }
         },
         {
@@ -53893,7 +53926,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "7",
                 "# of Nominees in 2014": "3",
-                "Municipality": "Kitchener"
+                "Municipality": "Kitchener",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-07\">2018 Election Information</a>"
             }
         },
         {
@@ -55609,7 +55643,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "8",
                 "# of Nominees in 2014": "3",
-                "Municipality": "Kitchener"
+                "Municipality": "Kitchener",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-08\">2018 Election Information</a>"
             }
         },
         {
@@ -56885,7 +56920,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "9",
                 "# of Nominees in 2014": "5",
-                "Municipality": "Kitchener"
+                "Municipality": "Kitchener",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-09\">2018 Election Information</a>"
             }
         },
         {
@@ -58091,7 +58127,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "10",
                 "# of Nominees in 2014": "4",
-                "Municipality": "Kitchener"
+                "Municipality": "Kitchener",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-10\">2018 Election Information</a>"
             }
         },
         {
@@ -58552,7 +58589,8 @@
                 "fill-opacity": 0.2980392156862745,
                 "Ward Number": "1",
                 "# of Nominees in 2014": "3",
-                "Municipality": "North Dumfries"
+                "Municipality": "North Dumfries",
+                "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/NorthDumfries-Ward-01\">2018 Election Information</a>"
             }
         }
     ]
