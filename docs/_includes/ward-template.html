@@ -23,10 +23,7 @@ where:"Name",ward-info.WardMunicipality | first %}
     {% assign race-id = race %}
   {% endif %}
 
-  {% assign race-info = site.data.internal.position-tags |
-  where:"PositionUniqueName",race-id | first -%}
-
-  {% include list-nominees.html race-info=race-info %}
+  {% include list-nominees.html race-id=race-id %}
 
 
 {% endfor %}

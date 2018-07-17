@@ -1,7 +1,12 @@
-<h3>{{ include.race-info.PositionDesc }}</h3>
 
-  {%- if include.race-info.NumberToElect != "1" %}
-    <p><strong>(Elect {{ include.race-info.NumberToElect }})</strong></p>
+  {% assign race-info = site.data.internal.position-tags |
+  where:"PositionUniqueName",include.race-id | first -%}
+
+
+<h3>{{ race-info.PositionDesc }}</h3>
+
+  {%- if race-info.NumberToElect != "1" %}
+    <p><strong>(Elect {{ race-info.NumberToElect }})</strong></p>
   {%- endif -%}
 
   {% assign these-nominees = site.data.sync.nominees 
