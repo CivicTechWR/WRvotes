@@ -1,11 +1,14 @@
 ---
 layout: "default"
 ---
+<h1>Candidates and Positions</h1>
 
-# Candidates and Positions
+<p>Attempt 01</p>
 
+<p>
 Below are all the positions up for election in Waterloo Region, and
 the people who are running for them. 
+</p>
 
 {% for position in site.data.internal.position-tags %}
   {% include list-nominees.html race-id=position.PositionUniqueName %}
