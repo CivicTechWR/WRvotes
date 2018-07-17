@@ -10,7 +10,7 @@
   {%- endif -%}
 
   {% assign these-nominees = site.data.sync.nominees 
-    | where:"PositionUniqueName",race-id %}
+    | where:"PositionUniqueName",include.race-id %}
   {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
 
   {% if sorted-nominees.size > 0 %}
