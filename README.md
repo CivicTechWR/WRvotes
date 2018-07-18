@@ -4,7 +4,7 @@ This repository is published to https://www.waterlooregionvotes.org
 
 ## Why?
 
-As a citizen, it can be a lot of work to try to figure out who's going to be on the ballot for municipal elections. You need to check the regional site, your local ward, and try to figure out which list of school board trustees applies to you. Each municipality in the region is on a different page. The sites are all linked from wrvotes.com, but it's still a lot of back and forth, and the municipal sites do not list all candidate meetings.
+As a citizen in Waterloo Rrgion, it can be a lot of work to try to figure out who's going to be on the ballot for municipal elections. You need to check the regional site, your local ward, and then try to figure out which list of school board trustees applies to you. Each municipality in the region is on a different page. The sites are all linked from wrvotes.com, but it's still a lot of back and forth, and the municipal sites do not list all candidate meetings. Getting to the ballot box fully informed isn't easy. We want to make it easier.
 
 ## Goals
 
