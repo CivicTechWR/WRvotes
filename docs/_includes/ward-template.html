@@ -25,6 +25,17 @@ where:"Name",ward-info.WardMunicipality | first %}
 
   {% include list-nominees.html race-id=race-id %}
 
+  {% assign events-list = site.data.sync.events 
+    | where_exp:"PositionIDList", "PositionIDList contains race-id" %}
+
+  {% if events-list.size > 0 %}
+
+  <h4>Events for {{ ward-info.PositionDesc }}</h4>
+
+  {% else %}
+    <p>No events for {{ race-id }}</p>
+  {% endif %}
+
 
 {% endfor %}
 
