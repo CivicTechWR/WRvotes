@@ -1,0 +1,38 @@
+  {% assign events-list = site.data.sync.events 
+    | where_exp:"ev", "ev.PositionIDList contains include.race-id" %}
+    
+  {% comment %}
+    I think this should not miss any events. site.time
+    is in UTC, which messes things up. But I am only 
+    including the date in date-now, and DateTimeStart includes
+    the time as well, so should always be "bigger" if the 
+    date component is the same. 
+  {% endcomment %}
+  {% assign date-now = site.time | date: "%F" %}
+  {% assign events-filtered = events-list 
+    | where_exp:"ev", "ev.DateTimeStart >= date-now" %}
+
+  {% if events-filtered.size > 0 %}
+
+    {% assign events-sorted = events-filtered | sort: "DateTimeStart" %}
+
+    <h4>Upcoming Events</h4>
+    
+    <ul>
+    {% for event in events-sorted %}
+
+      <li>{{ event.DateTimeStart | date: "%a, %b %-d, %l:%M%P" }}:
+      {% if event.URL %}
+        <a href="{{ event.URL }}">{{ event.Title }}</a>
+      {% else %}
+        <strong>{{ event.Title }}</strong>
+      {% endif -%}
+
+      {% if event.Location %}
+        , {{ event.Location }}
+      {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+    
+  {% endif %}
