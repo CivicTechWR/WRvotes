@@ -12,9 +12,9 @@ where:"PositionUniqueName",ward-id | first -%}
 
 <h2>Who is Running? {{ ward-info.PositionDesc }}</h2>
 
-<p>Attempt 07</p>
+<p>Attempt 08</p>
 
-<p>Time now? {{ now }}</p>
+<p>Time now? {{ site.time }}</p>
 
 {% assign municipal-info = site.data.internal.municipality-map |
 where:"Name",ward-info.WardMunicipality | first %}
