@@ -12,7 +12,7 @@ where:"PositionUniqueName",ward-id | first -%}
 
 <h2>Who is Running? {{ ward-info.PositionDesc }}</h2>
 
-<p>Attempt 03</p>
+<p>Attempt 04</p>
 
 {% assign municipal-info = site.data.internal.municipality-map |
 where:"Name",ward-info.WardMunicipality | first %}
@@ -28,9 +28,14 @@ where:"Name",ward-info.WardMunicipality | first %}
   {% include list-nominees.html race-id=race-id %}
 
   {% assign events-list = site.data.sync.events 
-    | where_exp:"PositionIDList", "PositionIDList contains race-id" %}
+    | where_exp:"ev", "ev.PositionIDList contains race-id" %}
 
   <p>Events list: {{ events-list }}</p>
+
+  {% assign events-list-test = site.data.sync.events 
+    | where_exp:"ev", "ev.PositionIDList contains Regional-Chair" %}
+
+  <p>Events list test: {{ events-list-test }}</p>
 
   <!-- Need to filter out events in the past. Suck! -->
 
@@ -38,7 +43,7 @@ where:"Name",ward-info.WardMunicipality | first %}
 
     {% assign events-sorted = events-list | sort: "DateTimeStart" %}
 
-    <h4>Events for {{ ward-info.PositionDesc }}</h4>
+    <h4>Upcoming Events</h4>
     
     <ul>
     {% for event in events-sorted %}
