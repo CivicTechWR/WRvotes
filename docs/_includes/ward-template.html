@@ -12,7 +12,7 @@ where:"PositionUniqueName",ward-id | first -%}
 
 <h2>Who is Running? {{ ward-info.PositionDesc }}</h2>
 
-<p>Attempt 02</p>
+<p>Attempt 03</p>
 
 {% assign municipal-info = site.data.internal.municipality-map |
 where:"Name",ward-info.WardMunicipality | first %}
@@ -28,7 +28,7 @@ where:"Name",ward-info.WardMunicipality | first %}
   {% include list-nominees.html race-id=race-id %}
 
   {% assign events-list = site.data.sync.events 
-    | where_exp:"PositionIDList", "PositionIDList contains {{ race-id }}" %}
+    | where_exp:"PositionIDList", "PositionIDList contains race-id" %}
 
   <p>Events list: {{ events-list }}</p>
 
