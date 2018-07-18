@@ -31,12 +31,20 @@ where:"Name",ward-info.WardMunicipality | first %}
 
   {% assign events-list = site.data.sync.events 
     | where_exp:"ev", "ev.PositionIDList contains race-id" %}
+    
+  {% comment %}
+    This will be a bit broken because of timezones, but 
+    I am hoping that it won't matter much?
+    No. It totally will. Suck.
+  {% endcomment %}
+  {% assign events-filtered = events-list 
+    | where_exp:"ev", "ev.DateTimeStart > site.time" %}
 
   <!-- Need to filter out events in the past. Suck! -->
 
-  {% if events-list.size > 0 %}
+  {% if events-filtered.size > 0 %}
 
-    {% assign events-sorted = events-list | sort: "DateTimeStart" %}
+    {% assign events-sorted = events-filtered | sort: "DateTimeStart" %}
 
     <h4>Upcoming Events</h4>
     
