@@ -12,7 +12,7 @@ where:"PositionUniqueName",ward-id | first -%}
 
 <h2>Who is Running? {{ ward-info.PositionDesc }}</h2>
 
-<p>Attempt 01</p>
+<p>Attempt 02</p>
 
 {% assign municipal-info = site.data.internal.municipality-map |
 where:"Name",ward-info.WardMunicipality | first %}
@@ -36,7 +36,7 @@ where:"Name",ward-info.WardMunicipality | first %}
 
   {% if events-list.size > 0 %}
 
-    {% assign events-sorted = events-list | sort "DateTimeStart" %}
+    {% assign events-sorted = events-list | sort: "DateTimeStart" %}
 
     <h4>Events for {{ ward-info.PositionDesc }}</h4>
     
@@ -55,7 +55,6 @@ where:"Name",ward-info.WardMunicipality | first %}
     {% endfor %}
     </ul>
     
-
   {% else %}
     <p>No events for {{ race-id }}</p>
   {% endif %}
