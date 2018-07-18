@@ -13,14 +13,14 @@ Encourage greater municipal election participation through candidacy, campaign v
 ## What are we trying to build?
 1.  Identify wards with low historic (2014) candidate participation
     -  *Why?* Help people identify where they should get active as candidates, before nominations close (May 1-July 27)
-    -  *What to answer:*  How do I run?
+    -  Answer the question of *How do I run?*  by providing basic campaigning resources for potential candidates.
 2.  Consolidated & easy to navigate access to basic candidate information
     - who
     - where
     - links to websites, emails, phone #s
 3.  Inform the community on debates/all candidate meetings for their wards
 4.  Get out the vote on October 22
-    - *How?*
+    - *How?* 
 
 ## How can I help?
 See the [Wiki](https://github.com/CivicTechWR/WRvotes/wiki), [Issues list](https://github.com/CivicTechWR/WRvotes/issues), or join the #project_region_vote channel on our slack space: https://civictechwrslack.herokuapp.com/. 
