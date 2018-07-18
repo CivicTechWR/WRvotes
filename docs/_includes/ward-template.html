@@ -12,7 +12,9 @@ where:"PositionUniqueName",ward-id | first -%}
 
 <h2>Who is Running? {{ ward-info.PositionDesc }}</h2>
 
-<p>Attempt 04</p>
+<p>Attempt 05</p>
+
+<p>Time now? {{ 'now' }}</p>
 
 {% assign municipal-info = site.data.internal.municipality-map |
 where:"Name",ward-info.WardMunicipality | first %}
@@ -30,13 +32,6 @@ where:"Name",ward-info.WardMunicipality | first %}
   {% assign events-list = site.data.sync.events 
     | where_exp:"ev", "ev.PositionIDList contains race-id" %}
 
-  <p>Events list: {{ events-list }}</p>
-
-  {% assign events-list-test = site.data.sync.events 
-    | where_exp:"ev", "ev.PositionIDList contains Regional-Chair" %}
-
-  <p>Events list test: {{ events-list-test }}</p>
-
   <!-- Need to filter out events in the past. Suck! -->
 
   {% if events-list.size > 0 %}
@@ -48,14 +43,16 @@ where:"Name",ward-info.WardMunicipality | first %}
     <ul>
     {% for event in events-sorted %}
 
-      <li>{{ event.DateTimeStart | date: "%a, %b %-d, %I:%M%p" }}:
+      <li>{{ event.DateTimeStart | date: "%a, %b %-d, %l:%M%P" }}:
       {% if event.URL %}
         <a href="{{ event.URL }}">{{ event.Title }}</a>
       {% else %}
-        {{ event.Title }}
-      {% endif %}
+        <strong>{{ event.Title }}</strong>
+      {% endif -%}
 
-      , {{ event.Location }}
+      {% if event.Location %}
+        , {{ event.Location }}
+      {% endif %}
       </li>
     {% endfor %}
     </ul>
