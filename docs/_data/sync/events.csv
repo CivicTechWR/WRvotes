@@ -1,9 +1,9 @@
-DateTimeStart,Title,Location,PositionIDList,URL,Notes
-2018-09-12T18:30,Kitchener Mayor All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Kitchener-Mayor,,Organized by The Working Centre.
-2018-09-19T18:30,Regional Chair All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Regional-Chair,,Organized by The Working Centre.
-2018-09-26T18:30,Kitchener Ward 9 All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Kitchener-Ward-09,,Organized by The Working Centre.
-2018-10-03T18:30,Kitchener Ward 10 All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Kitchener-Ward-10,,Organized by The Working Centre.
-2018-10-10T18:30,Kitchener Regional Council All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Regional-Kitchener,,Organized by The Working Centre.
-2018-10-19T18:30,"DUMMY Regional Chair All-Candidates Meeting","Queen Street Commons, 43 Queen Street S, Kitchener",Regional-Chair,https://www.theworkingcentre.org,Organized by The Working Centre.
-2018-06-19T18:30,"PAST Regional Chair All-Candidates Meeting","Queen Street Commons, 43 Queen Street S, Kitchener",Regional-Chair,https://www.theworkingcentre.org,Organized by The Working Centre.
-2018-07-18T01:30,"TODAY Regional Chair All-Candidates Meeting","Queen Street Commons, 43 Queen Street S, Kitchener",Regional-Chair,https://www.theworkingcentre.org,Organized by The Working Centre.
+RowID,DateTimeStart,Title,Location,PositionIDList,URL,Notes
+1,2018-09-12T18:30,Kitchener Mayor All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Kitchener-Mayor,,Organized by The Working Centre.
+2,2018-09-19T18:30,Regional Chair All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Regional-Chair,,Organized by The Working Centre.
+3,2018-09-26T18:30,Kitchener Ward 9 All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Kitchener-Ward-09,,Organized by The Working Centre.
+4,2018-10-03T18:30,Kitchener Ward 10 All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Kitchener-Ward-10,,Organized by The Working Centre.
+5,2018-10-10T18:30,Kitchener Regional Council All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Regional-Kitchener,,Organized by The Working Centre.
+6,2018-10-19T18:30,DUMMY Regional Chair All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Regional-Chair,https://www.theworkingcentre.org,Organized by The Working Centre.
+7,2018-06-19T18:30,PAST Regional Chair All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Regional-Chair,https://www.theworkingcentre.org,Organized by The Working Centre.
+8,2018-07-19T01:30,TODAY Regional Chair All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Regional-Chair,https://www.theworkingcentre.org,Organized by The Working Centre.
