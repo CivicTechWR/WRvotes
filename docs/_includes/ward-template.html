@@ -27,6 +27,28 @@ where:"Name",ward-info.WardMunicipality | first %}
 
   {% include list-events.html race-id=race-id %}
 
+  {% assign news-list-sorted = 
+    ((site.data.sync.media 
+    | where_exp:"item" "item.PositionIDList contains race-id")
+    | sort: "PubDate") 
+    | reverse %}
+
+  {% if news-list-sorted.size > 0 %}
+
+    <h4>News Items</h4>
+
+    <ul>
+    {% for item in news-list-sorted %}
+      
+      <li><a href="{{ item.URL }}">{{ item.Title }}</a>
+      {{ item.Publication }}, {{ item.PubDate }}
+      </li>
+
+    {% endfor %}
+    </ul>
+
+  {% endif %}
+
 
 {% endfor %}
 
