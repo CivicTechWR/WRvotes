@@ -1,4 +1,4 @@
-    {% assign item-list-sorted = (item-list | sort: "PubDate")      | reverse %}
+    {% assign item-list-sorted = (template.item-list | sort: "PubDate")      | reverse %}
 
     <ul>
     {% for item in item-list-sorted %}
