@@ -36,10 +36,10 @@ where:"Name",ward-info.WardMunicipality | first %}
 
   {% for media-item in media-list %}
 
-    {% unless media.item = 'Y' %}
+    {% unless media-item.IsComparison == 'Y' %}
       {% assign news-list = news-list | push: media-item %}
     {% else %}
-      {% assign survey-list | push: media-item %}
+      {% assign survey-list = survey-list | push: media-item %}
     {% endif %}
 
   {% endfor %}
