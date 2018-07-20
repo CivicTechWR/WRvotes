@@ -1,0 +1,12 @@
+    {% assign item-list-sorted = (item-list | sort: "PubDate")      | reverse %}
+
+    <ul>
+    {% for item in item-list-sorted %}
+      
+      <li><a href="{{ item.URL }}">{{ item.Title }}</a>,
+      {{ item.Publication }}, 
+      {{ item.PubDate | date: "%B %-d, %Y" }}.
+      </li>
+
+    {% endfor %}
+    </ul>
