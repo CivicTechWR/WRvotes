@@ -37,7 +37,7 @@ where:"Name",ward-info.WardMunicipality | first %}
   {% assign survey-list = site.empty-array %}
 
   {% for media-item in media-list %}
-    {% unless media-item.IsComparison == 'Y' %}
+    {% unless media-item and media-item.IsComparison == 'Y' %}
       {% assign news-list = news-list | push: media-item %}
     {% else %}
       {% assign survey-list = survey-list | push: media-item %}
