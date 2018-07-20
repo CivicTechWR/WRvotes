@@ -33,7 +33,6 @@ where:"Name",ward-info.WardMunicipality | first %}
 
   <p><strong>Media List:</strong> {{ media-list }}</p>
 
-{% comment %}
   {% assign news-list = site.empty-array %}
   {% assign survey-list = site.empty-array %}
 
@@ -43,7 +42,7 @@ where:"Name",ward-info.WardMunicipality | first %}
       {% assign news-list = news-list | push: media-item %}
     {% else %}
       {% assign survey-list = survey-list | push: media-item %}
-    {% endif %}
+    {% endunless %}
 
   {% endfor %}
 
@@ -58,8 +57,6 @@ where:"Name",ward-info.WardMunicipality | first %}
 
     {% include list-media-items.html item-list=news-list %}
   {% endif %}
-
-{% endcomment %}
 
 {% endfor %}
 
