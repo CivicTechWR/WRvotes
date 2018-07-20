@@ -31,6 +31,9 @@ where:"Name",ward-info.WardMunicipality | first %}
     | where_exp:"item", "item.PositionIDList contains race-id"
     %}
 
+  <p><strong>Media List:</strong> {{ media-list }}</p>
+
+{% comment %}
   {% assign news-list = site.empty-array %}
   {% assign survey-list = site.empty-array %}
 
@@ -51,12 +54,12 @@ where:"Name",ward-info.WardMunicipality | first %}
   {% endif %}
 
   {% if news-list.size > 0 %}
-
     <h4>News Items</h4>
 
     {% include list-media-items.html item-list=news-list %}
     
   {% endif %}
+{% endcomment %}
 
 {% endfor %}
 
