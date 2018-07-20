@@ -32,8 +32,7 @@ where:"Name",ward-info.WardMunicipality | first %}
     %}
 
   {% if news-list.size > 0 %}
-    {% assign news-list-sorted-fwd = news-list | sort: "PubDate" %}
-    {% assign news-list-sorted = news-list-sorted | reverse %}
+    {% assign news-list-sorted = (news-list | sort: "PubDate")      | reverse %}
 
     <h4>News Items</h4>
 
