@@ -39,8 +39,9 @@ where:"Name",ward-info.WardMunicipality | first %}
     <ul>
     {% for item in news-list-sorted %}
       
-      <li><a href="{{ item.URL }}">{{ item.Title }}</a>
-      {{ item.Publication }}, {{ item.PubDate }}.
+      <li><a href="{{ item.URL }}">{{ item.Title }}</a>,
+      {{ item.Publication }}, 
+      {{ item.PubDate | date: "%b %-d, %Y" }}.
       </li>
 
     {% endfor %}
