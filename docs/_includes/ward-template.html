@@ -33,30 +33,6 @@ where:"Name",ward-info.WardMunicipality | first %}
 
   <p><strong>Media List:</strong> {{ media-list }}</p>
 
-  {% assign news-list = site.empty-array %}
-  {% assign survey-list = site.empty-array %}
-
-  {% for media-item in media-list %}
-
-    {% unless media-item.IsComparison == 'Y' %}
-      {% assign news-list = news-list | push: media-item %}
-    {% else %}
-      {% assign survey-list = survey-list | push: media-item %}
-    {% endunless %}
-
-  {% endfor %}
-
-  {% if survey-list.size > 0 %}
-    <h4>Questionnaires and Meeting Recordings</h4>
-
-    {% include list-media-items.html item-list=survey-list %}
-  {% endif %}
-
-  {% if news-list.size > 0 %}
-    <h4>News Items</h4>
-
-    {% include list-media-items.html item-list=news-list %}
-  {% endif %}
 
 {% endfor %}
 
