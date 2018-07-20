@@ -27,9 +27,8 @@ where:"Name",ward-info.WardMunicipality | first %}
 
   {% include list-events.html race-id=race-id %}
 
-  {% assign news-list = 
-    site.data.sync.media 
-    | where_exp:"item" "item.PositionIDList contains race-id"
+  {% assign news-list = site.data.sync.media 
+    | where_exp:"item", "item.PositionIDList contains race-id"
     %}
 
   {% if news-list.size > 0 %}
