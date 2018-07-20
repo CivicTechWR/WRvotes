@@ -44,6 +44,7 @@ There are two subfolders in the `_data` folder:
   doc, maybe something else). Changes made within the repo might be
   blown away, so be careful!
 
+
 Updating Candidate Info
 -----------------------
 
@@ -74,6 +75,21 @@ associated with a municipality (a township or one of the three
 cities). In Waterloo Region a ward is sufficient to identify all the
 races in that region. 
 
+Adding Media Entries
+--------------------
+
+There are two kinds of media. One is news items, which are of interest
+to people exploring deep into the election.
+
+One is called "Questionnaires and Recorded Meetings" which is intended
+to serve as side-by-side comparisons of candidates. These are the
+resources that people hoping to make up their minds in a hurry should
+use.
+
+In `media.csv` these two types are distinguished by the `IsComparison`
+field. If this field is set to 'Y' then the entry will be included in
+"Questionnaires and Recorded Meetings". Otherwise it is a regular
+news item. 
 
 Adding Menu Entries
 -------------------
