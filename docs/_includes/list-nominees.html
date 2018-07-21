@@ -39,6 +39,10 @@
       {%- else -%}
         {{ nominee.Given_Names}} {{ nominee.Last_Name }}
       {%- endif -%}
+
+      {%- if nominee.Phone1 -%}
+        , {{ nominee.Phone1 }}
+      {%- endif - %}
       </li>
     {% endfor %}
     </ul>
