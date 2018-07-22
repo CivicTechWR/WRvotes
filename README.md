@@ -25,4 +25,4 @@ Encourage greater municipal election participation through candidacy, campaign v
 ## How can I help?
 See the [Wiki](https://github.com/CivicTechWR/WRvotes/wiki), [Issues list](https://github.com/CivicTechWR/WRvotes/issues), or join the #project_region_vote channel on our slack space: https://civictechwrslack.herokuapp.com/. 
 
-Or come to one of (our meetups)[https://www.meetup.com/CivicTechWR/]!
+Or come to one of [our meetups](https://www.meetup.com/CivicTechWR/)!
