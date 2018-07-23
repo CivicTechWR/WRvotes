@@ -36,7 +36,7 @@ where:"Name",ward-info.WardMunicipality | first %}
     {% assign race-id = race %}
   {% endif %}
 
-  <div class="race-wrapper">
+  <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
 
     {% include list-nominees.html race-id=race-id %}
 
