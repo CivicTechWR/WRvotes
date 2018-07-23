@@ -37,5 +37,25 @@ href="./wards/">information page for your ward</a>.
 </div>
 
 <div class="event-wrapper" id="event-wrapper-past">
+  <!-- Yay! Copy and paste! Who needs DRY? --> 
+
+  {% assign events-past = all-events  
+    | where_exp:"ev", "ev.DateTimeStart < date-now" %}
+
+  {% if events-past.size > 0 %}
+    {% assign events-sorted = (events-past | sort: "DateTimeStart") | reverse %}
+     
+    <ul class="togglable events-past" id="events-past-list">
+      {% for event in events-sorted %}
+        {% include list-event-item.html event=event %}
+      {% endfor %}
+    </ul>
+
+  {% else %}
+    <p>
+    Whoops! There appear to be no past events. 
+    </p>
+  {% endif %}
+
 </div>
 
