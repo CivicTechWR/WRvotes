@@ -6,8 +6,8 @@ layout: default
 This listing includes both upcoming and past events, including events
 specific to individual candidates (meet and greets, etc) and general
 information events. You can get a more specific listing of
-all-candidates meetings relevant to your area on the [information page
-for your ward](./wards/index).
+all-candidates meetings relevant to your area on the <a
+href="./wards/index/">information page for your ward</a>.
 </p>
 
 {% assign all-events = site.data.sync.events %}
@@ -17,7 +17,7 @@ for your ward](./wards/index).
 <div class="event-wrapper" id="event-wrapper-upcoming">
 <h2 class="inline">Upcoming Events</h2>
 
-  {% assign events-upcoming = events-list 
+  {% assign events-upcoming = all-events  
     | where_exp:"ev", "ev.DateTimeStart >= date-now" %}
 
   {% if events-upcoming.size > 0 %}
@@ -30,7 +30,9 @@ for your ward](./wards/index).
     </ul>
 
   {% else %}
+    <p>
     Whoops! There appear to be no upcoming events. 
+    </p>
   {% endif %}
 </div>
 
