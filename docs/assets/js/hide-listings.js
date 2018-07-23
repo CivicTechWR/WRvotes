@@ -11,7 +11,7 @@ $( document ).ready(function() {
   function get_description( id ) { 
     var desc = "Results";
 
-    if ($(id).hasClass("race-wrapper")) { 
+    if ($(id).hasClass("candidate-list")) { 
       desc = "Candidate Listing";
     } else if ($(id).hasClass("event-list")) { 
       desc = "Events";
