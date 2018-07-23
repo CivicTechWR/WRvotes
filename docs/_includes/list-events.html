@@ -9,8 +9,9 @@
     date component is the same. 
   {% endcomment %}
   {% assign date-now = site.time | date: "%F" %}
-  {% assign events-filtered = events-list 
-    | where_exp:"ev", "ev.DateTimeStart >= date-now" %}
+  {% assign events-filtered = (events-list 
+    | where_exp:"ev", "ev.DateTimeStart >= date-now")
+    | where_exp:"ev", "ev.ForMultipleCandidates == 'Y'" %}
 
   {% if events-filtered.size > 0 %}
 
