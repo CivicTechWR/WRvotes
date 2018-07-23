@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<h1>Events</h1>
+
+<p>
+This listing includes both upcoming and past events, including events
+specific to individual candidates (meet and greets, etc) and general
+information events. You can get a more specific listing of
+all-candidates meetings relevant to your area on the [information page
+for your ward](./wards/index).
+</p>
+
+{% assign all-events = site.data.sync.events %}
+{% assign date-now = site.time | date: "%F" %}
+
+
+<div class="event-wrapper" id="event-wrapper-upcoming">
+<h2 class="inline">Upcoming Events</h2>
+
+  {% assign events-upcoming = events-list 
+    | where_exp:"ev", "ev.DateTimeStart >= date-now" %}
+
+  {% if events-upcoming.size > 0 %}
+    {% assign events-sorted = events-upcoming | sort: "DateTimeStart" %}
+     
+    <ul class="togglable events-upcoming" id="events-upcoming-list">
+      {% for event in events-sorted %}
+        {% include="list-event-item.html" event=event %}
+      {% endfor %}
+    </ul>
+
+  {% else %}
+    Whoops! There appear to be no upcoming events. 
+  {% endif %}
+</div>
+
+<div class="event-wrapper" id="event-wrapper-past">
+</div>
+
+
