@@ -3,7 +3,8 @@
   where:"PositionUniqueName",include.race-id | first -%}
 
 
-<h3>{{ race-info.PositionDesc }}</h3>
+<h2 class="inline">{{ race-info.PositionDesc }}</h2>
+<div class="togglable candidate-list" id="{{ include.race-id | slugify }}" >
 
   {%- if race-info.NumberToElect != "1" %}
     <p><strong>(Elect {{ race-info.NumberToElect }})</strong></p>
@@ -46,9 +47,16 @@
       </li>
     {% endfor %}
     </ul>
+
   {% else %}
     <p>
     Whoops! Nobody appears to be running for this position!
     Has democracy failed or are our records out of date?
     </p>
   {% endif %}
+
+  {% include list-events.html race-id=include.race-id %}
+
+  {% include list-media.html race-id=include.race-id %}
+
+</div>

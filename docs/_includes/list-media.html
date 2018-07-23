@@ -1,0 +1,34 @@
+  {% assign media-list = site.data.sync.media 
+    | where_exp:"item", "item.PositionIDList contains include.race-id"
+    %}
+
+  {% assign news-list = site.empty-array %}
+  {% assign survey-list = site.empty-array %}
+
+  {% for media-item in media-list %}
+    {% unless media-item and media-item.IsComparison == 'Y' %}
+      {% assign news-list = news-list | push: media-item %}
+    {% else %}
+      {% assign survey-list = survey-list | push: media-item %}
+    {% endunless %}
+
+  {% endfor %}
+
+  {% if survey-list.size > 0 %}
+    <div class="spacer">
+      <h3 class="inline">Questionnaires and 
+         Meeting Recordings</h3>
+
+      {% include list-media-items.html item-list=survey-list
+        race-id=include.race-id type="survey" %}
+    </div>
+  {% endif %}
+
+  {% if news-list.size > 0 %}
+    <div class="spacer">
+      <h3 class="inline">News Items</h3>
+
+      {% include list-media-items.html item-list=news-list 
+        race-id=include.race-id type="news" %}
+    </div>
+  {% endif %}

@@ -10,7 +10,20 @@ This is gross but it works.
 where:"PositionUniqueName",ward-id | first -%}
 
 
-<h2>Who is Running? {{ ward-info.PositionDesc }}</h2>
+<h1>Who is Running? {{ ward-info.PositionDesc }}</h1>
+
+<p>
+<strong>About School Boards:</strong> There are four school boards in
+this region. Each voter is assigned to a particular school board (by
+default the Public English one) depending on how they registered to
+the municipal voters list.
+</p><p>
+<strong>About Events:</strong> This page focuses on all-candidates
+meetings for different races. There are other kinds of events not
+listed here, such as candidate town halls, municipal information
+sessions, and advance voting dates. See the Events page for a more
+complete listing.
+</p>
 
 {% assign municipal-info = site.data.internal.municipality-map |
 where:"Name",ward-info.WardMunicipality | first %}
@@ -23,38 +36,14 @@ where:"Name",ward-info.WardMunicipality | first %}
     {% assign race-id = race %}
   {% endif %}
 
-  {% include list-nominees.html race-id=race-id %}
+  <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
 
-  {% include list-events.html race-id=race-id %}
+    {% include list-nominees.html race-id=race-id %}
 
-  {% assign media-list = site.data.sync.media 
-    | where_exp:"item", "item.PositionIDList contains race-id"
-    %}
-
-  {% assign news-list = site.empty-array %}
-  {% assign survey-list = site.empty-array %}
-
-  {% for media-item in media-list %}
-    {% unless media-item and media-item.IsComparison == 'Y' %}
-      {% assign news-list = news-list | push: media-item %}
-    {% else %}
-      {% assign survey-list = survey-list | push: media-item %}
-    {% endunless %}
-
-  {% endfor %}
-
-  {% if survey-list.size > 0 %}
-    <h4>Questionnaires and Meeting Recordings</h4>
-
-    {% include list-media-items.html item-list=survey-list %}
-  {% endif %}
-
-  {% if news-list.size > 0 %}
-    <h4>News Items</h4>
-
-    {% include list-media-items.html item-list=news-list %}
-  {% endif %}
+  </div>
 
 {% endfor %}
 
+<script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
 
