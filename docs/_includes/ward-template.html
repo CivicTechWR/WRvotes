@@ -12,6 +12,19 @@ where:"PositionUniqueName",ward-id | first -%}
 
 <h1>Who is Running? {{ ward-info.PositionDesc }}</h1>
 
+<p>
+<strong>About School Boards:</strong> There are four school boards in
+this region. Each voter is assigned to a particular school board (by
+default the Public English one) depending on how they registered to
+the municipal voters list.
+</p><p>
+<strong>About Events:</strong> This page focuses on all-candidates
+meetings for different races. There are other kinds of events not
+listed here, such as candidate town halls, municipal information
+sessions, and advance voting dates. See the Events page for a more
+complete listing.
+</p>
+
 {% assign municipal-info = site.data.internal.municipality-map |
 where:"Name",ward-info.WardMunicipality | first %}
 {% assign races-split = municipal-info.Races | split: ',' %}
