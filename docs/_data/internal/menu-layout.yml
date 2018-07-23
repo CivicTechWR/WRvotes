@@ -6,5 +6,7 @@
   url: / 
 - text: List of Wards
   url: /wards
+- text: Events
+  url: /events
 - text: About Us
   url: /about
