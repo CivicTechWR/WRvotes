@@ -22,7 +22,7 @@
       <ul id="{{ include.race-id | slugify }}-events"
          class="togglable event-list">
       {% for event in events-sorted %}
-        {% include="list-event-item.html" event=event %}
+        {% include list-event-item.html event=event %}
       {% endfor %}
       </ul>
     </div>
