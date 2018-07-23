@@ -19,7 +19,7 @@
     <div class="spacer">
       <h3 class="inline">Upcoming All-Candidates Events</h3>
       
-      <ul id="{{ template.race-id | slugify}}-events"
+      <ul id="{{ include.race-id | slugify }}-events"
          class="togglable event-list">
       {% for event in events-sorted %}
 
