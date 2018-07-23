@@ -12,7 +12,7 @@ $( document ).ready(function() {
     var desc = "Results";
 
     if ($(id).hasClass("candidate-list")) { 
-      desc = "Candidate Listing";
+      desc = "This Listing";
     } else if ($(id).hasClass("event-list")) { 
       desc = "Events";
     } else if ($(id).hasClass("survey-list")) { 
