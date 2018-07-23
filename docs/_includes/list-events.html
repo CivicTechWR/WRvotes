@@ -22,18 +22,7 @@
       <ul id="{{ include.race-id | slugify }}-events"
          class="togglable event-list">
       {% for event in events-sorted %}
-
-        <li>{{ event.DateTimeStart | date: "%a, %b %-d, %l:%M%P" }}:
-        {% if event.URL %}
-          <a href="{{ event.URL }}">{{ event.Title }}</a>
-        {% else %}
-          <strong>{{ event.Title }}</strong>
-        {% endif -%}
-
-        {% if event.Location %}
-          , {{ event.Location }}
-        {% endif %}
-        </li>
+        {% include="list-event-item.html" event=event %}
       {% endfor %}
       </ul>
     </div>
