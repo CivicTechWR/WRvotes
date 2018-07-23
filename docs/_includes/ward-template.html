@@ -10,7 +10,7 @@ This is gross but it works.
 where:"PositionUniqueName",ward-id | first -%}
 
 
-<h2>Who is Running? {{ ward-info.PositionDesc }}</h2>
+<h1>Who is Running? {{ ward-info.PositionDesc }}</h1>
 
 {% assign municipal-info = site.data.internal.municipality-map |
 where:"Name",ward-info.WardMunicipality | first %}
@@ -23,11 +23,11 @@ where:"Name",ward-info.WardMunicipality | first %}
     {% assign race-id = race %}
   {% endif %}
 
-  {% include list-nominees.html race-id=race-id %}
+  <div class="race-wrapper">
 
-  {% include list-events.html race-id=race-id %}
+    {% include list-nominees.html race-id=race-id %}
 
-  {% include list-media.html race-id=race-id %}
+  </div>
 
 {% endfor %}
 

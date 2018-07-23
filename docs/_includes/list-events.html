@@ -16,23 +16,26 @@
 
     {% assign events-sorted = events-filtered | sort: "DateTimeStart" %}
 
-    <h4>Upcoming All-Candidates Events</h4>
-    
-    <ul>
-    {% for event in events-sorted %}
+    <div class="spacer">
+      <h3 class="inline">Upcoming All-Candidates Events</h3>
+      
+      <ul id="{{ template.race-id | slugify}}-events"
+         class="togglable event-list">
+      {% for event in events-sorted %}
 
-      <li>{{ event.DateTimeStart | date: "%a, %b %-d, %l:%M%P" }}:
-      {% if event.URL %}
-        <a href="{{ event.URL }}">{{ event.Title }}</a>
-      {% else %}
-        <strong>{{ event.Title }}</strong>
-      {% endif -%}
+        <li>{{ event.DateTimeStart | date: "%a, %b %-d, %l:%M%P" }}:
+        {% if event.URL %}
+          <a href="{{ event.URL }}">{{ event.Title }}</a>
+        {% else %}
+          <strong>{{ event.Title }}</strong>
+        {% endif -%}
 
-      {% if event.Location %}
-        , {{ event.Location }}
-      {% endif %}
-      </li>
-    {% endfor %}
-    </ul>
+        {% if event.Location %}
+          , {{ event.Location }}
+        {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
     
   {% endif %}

@@ -1,6 +1,7 @@
     {% assign item-list-sorted = (include.item-list | sort: "PubDate")      | reverse %}
 
-    <ul>
+    <ul id="{{ include.race-id }}-{{ include.type }}"
+        class="togglable {{ include.type }}-list">
     {% for item in item-list-sorted %}
       
       <li><a href="{{ item.URL }}">{{ item.Title }}</a>,

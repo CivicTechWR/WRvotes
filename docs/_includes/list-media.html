@@ -15,13 +15,20 @@
   {% endfor %}
 
   {% if survey-list.size > 0 %}
-    <h4>Questionnaires and Meeting Recordings</h4>
+    <div class="spacer">
+      <h3 class="inline">Questionnaires and 
+         Meeting Recordings</h3>
 
-    {% include list-media-items.html item-list=survey-list %}
+      {% include list-media-items.html item-list=survey-list
+        race-id=include.race-id type="survey" %}
+    </div>
   {% endif %}
 
   {% if news-list.size > 0 %}
-    <h4>News Items</h4>
+    <div class="spacer">
+      <h3 class="inline">News Items</h3>
 
-    {% include list-media-items.html item-list=news-list %}
+      {% include list-media-items.html item-list=news-list 
+        race-id=include.race-id type="news" %}
+    </div>
   {% endif %}
