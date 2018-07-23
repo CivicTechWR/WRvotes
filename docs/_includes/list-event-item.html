@@ -1,4 +1,9 @@
         <li>{{ include.event.DateTimeStart | date: "%a, %b %-d, %l:%M%P" }}:
+        {% if include.event.CancelledOrRescheduled == 'Cancelled' %}
+          <strong>CANCELLED: </strong>
+        {% elsif include.event.CancelledOrRescheduled == 'Rescheduled' %}
+          <strong>RESCHEDULED: </strong>
+        {% endif %}
         {% if include.event.URL %}
           <a href="{{ include.event.URL }}">{{ include.event.Title }}</a>
         {% else %}
