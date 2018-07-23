@@ -27,33 +27,7 @@ where:"Name",ward-info.WardMunicipality | first %}
 
   {% include list-events.html race-id=race-id %}
 
-  {% assign media-list = site.data.sync.media 
-    | where_exp:"item", "item.PositionIDList contains race-id"
-    %}
-
-  {% assign news-list = site.empty-array %}
-  {% assign survey-list = site.empty-array %}
-
-  {% for media-item in media-list %}
-    {% unless media-item and media-item.IsComparison == 'Y' %}
-      {% assign news-list = news-list | push: media-item %}
-    {% else %}
-      {% assign survey-list = survey-list | push: media-item %}
-    {% endunless %}
-
-  {% endfor %}
-
-  {% if survey-list.size > 0 %}
-    <h4>Questionnaires and Meeting Recordings</h4>
-
-    {% include list-media-items.html item-list=survey-list %}
-  {% endif %}
-
-  {% if news-list.size > 0 %}
-    <h4>News Items</h4>
-
-    {% include list-media-items.html item-list=news-list %}
-  {% endif %}
+  {% include list-media.html race-id=race-id %}
 
 {% endfor %}
 
