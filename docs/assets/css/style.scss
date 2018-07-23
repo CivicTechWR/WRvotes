@@ -24,3 +24,22 @@
   padding-right: 2.5em;
 }
 
+/* Make buttons inline with their headings */
+button.toggle-button { 
+  float: right;
+}
+
+h2.inline, h3.inline {
+  display: inline;
+}
+
+/* Stop buttons from crashing into each other */
+div.spacer { 
+  display: block;
+  min-height: 2em;
+}
+
+/* Add space between races */
+div.race-wrapper { 
+  margin-bottom: 3em;
+}
