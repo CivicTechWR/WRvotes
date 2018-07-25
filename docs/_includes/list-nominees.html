@@ -46,16 +46,15 @@
       {%- endif -%}
 
       {%- if nominee.Email -%}
-        , {% assign email-user = {{ nominee.Email | split:'@' | first
-        }}
-          {% assign email-domain = {{ nominee.Email | split:'@' | last
-          }}
-          {{ email-domain }} and {{ email-user }}
+        , 
+        {% assign email-user =  nominee.Email | split:'@' | first %}
+        {% assign email-domain =  nominee.Email | split:'@' | last %}
+        {{ email-domain }} and {{ email-user }}
       {%- endif -%}
 
       {%- if nominee.Twitter -%}
-        <a href="{{ nominee.Twitter 
-          | replace_first: '@', 'https://twitter.com/' }}">{{
+        <a href="{{ nominee.Twitter | 
+          replace_first: '@', 'https://twitter.com/' }}">{{
           nominee.Twitter }}</a>
       {%- endif -%}
       </li>
