@@ -109,3 +109,19 @@ address lookup).
 The original source comes from the Open Data portal. It is then
 modified in a GeoJSON editor -- Todd suggests geojson.io, but Google
 "My Maps" can also work.
+
+Collapsing Sections with Buttons
+--------------------------------
+
+If you add a class `togglable` to a `div` or `ul` or any other
+element, and you include the `hide-listings.js` in your page, then
+buttons will show up to hide and unhide that element. 
+
+- You may need additional `div` elements to prevent the page from
+  looking gross when elements get hidden.
+- Your element should contain a unique ID on the page.
+- Your element may include other classes. All classes except
+  `togglable` will be added to the button, for easy styling. 
+- There is code in the javascript which changes the labels of the
+  button, depending on which classes are included for the button. If
+  no classes match the word "Results" is used.
