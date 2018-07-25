@@ -46,5 +46,10 @@ div.race-wrapper {
 
 /* Make footer more appealing visually. */
 div.footer-columns { 
-  column-width: 10em;
+  column-count: 2;
+}
+
+/* Make columns line up better */
+div.footer-columns p { 
+  margin: 0 0 10px 0;
 }
