@@ -1,9 +1,32 @@
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+  <footer class="inner">
+
+    <div class="footer-columns">
+
+    <p>
+    Sitemap
+    </p><p>
+    All nominees on one page
+    </p><p>
+    Information for candidates
+    </p><p>
+    Embedded calendar
+    <p>
+    Follow <a
+    href="https://twitter.com/civictechwr">@civictechwr</a> 
+    on Twitter.
+    </p>
+
     </div>
+
+    
+    <p>Notice a mistake? See missing information? Please contact
+    us!</p>
+
+    {% if site.github.is_project_page %}
+    <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+    {% endif %}
+    <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+  </footer>
+</div>
