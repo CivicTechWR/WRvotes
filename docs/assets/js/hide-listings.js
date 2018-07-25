@@ -61,8 +61,6 @@ $( document ).ready(function() {
     // "show" or "hide" prepended.
     var div_description = get_description( target );
 
-    $("#debug-messages").html("<p>target is: " + target
-                              + "</p>")
     if ($(target).hasClass('hidden')) {
       $(target).removeClass('hidden');
       $(target).text("Hide " + div_description); 
