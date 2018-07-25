@@ -46,12 +46,13 @@ div.race-wrapper {
 
 /* Make footer more appealing visually. */
 div.footer-columns { 
-  column-count: 2;
+  column-count: 3;
+  font-size: smaller;
 }
 
 /* Make columns line up better */
 div.footer-columns p { 
-  margin: 0 0 10px 0;
+  margin: 0 0 0.5ex 0;
 }
 
 /* Email obfuscation, stolen from CivicTechWR page. */
