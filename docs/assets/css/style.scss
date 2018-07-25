@@ -43,3 +43,23 @@ div.spacer {
 div.race-wrapper { 
   margin-bottom: 3em;
 }
+
+/* Make footer more appealing visually. */
+div.footer-columns { 
+  column-count: 2;
+}
+
+/* Make columns line up better */
+div.footer-columns p { 
+  margin: 0 0 10px 0;
+}
+
+/* Email obfuscation, stolen from CivicTechWR page. */
+my-email::after {
+  content: attr(data-domain);
+}
+
+my-email::before {
+  content: attr(data-user) "\0040";
+}
+

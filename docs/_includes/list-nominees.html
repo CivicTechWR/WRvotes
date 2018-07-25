@@ -43,7 +43,22 @@
 
       {%- if nominee.Phone1 -%}
         , {{ nominee.Phone1 }}
-      {%- endif - %}
+      {%- endif -%}
+
+      {%- if nominee.Email -%}
+        , 
+        {% assign email-user =  nominee.Email | split:'@' | first %}
+        {% assign email-domain =  nominee.Email | split:'@' | last %}
+        <my-email data-domain={{ email-domain }} 
+                  data-user={{ email-user }}></my-email>
+      {%- endif -%}
+
+      {%- if nominee.Twitter -%}
+        , 
+        <a href="{{ nominee.Twitter | 
+          replace_first: '@', 'https://twitter.com/' }}">{{
+          nominee.Twitter }}</a>
+      {%- endif -%}
       </li>
     {% endfor %}
     </ul>
@@ -55,8 +70,12 @@
     </p>
   {% endif %}
 
-  {% include list-events.html race-id=include.race-id %}
+  {% unless page.hide-details %}
 
-  {% include list-media.html race-id=include.race-id %}
+    {% include list-events.html race-id=include.race-id %}
+
+    {% include list-media.html race-id=include.race-id %}
+
+  {% endunless %}
 
 </div>
