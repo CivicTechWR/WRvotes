@@ -31,7 +31,8 @@ contacts to use this site, especially if they are not engaged in
 municipal politics already. 
 
 Improve the content! Are we missing information about candidates, events,
-questionnaires or news coverage? Contact us [HOW?] and submit them to
+questionnaires or news coverage? Contact us at
+civictechwr.wrvotes@gmail.com and submit them to
 the site.
 
 
