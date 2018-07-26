@@ -46,11 +46,7 @@
       {%- endif -%}
 
       {%- if nominee.Email -%}
-        , 
-        {% assign email-user =  nominee.Email | split:'@' | first %}
-        {% assign email-domain =  nominee.Email | split:'@' | last %}
-        <my-email data-domain={{ email-domain }} 
-                  data-user={{ email-user }}></my-email>
+        , {{ nominee.Email }} 
       {%- endif -%}
 
       {%- if nominee.Twitter -%}
