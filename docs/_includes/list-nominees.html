@@ -4,7 +4,7 @@
 
 
 <h2 class="inline">{{ race-info.PositionDesc }}</h2>
-<div class="togglable candidate-list" id="{{ include.race-id | slugify }}" >
+<div class="candidate-list" id="{{ include.race-id | slugify }}" >
 
   {%- if race-info.NumberToElect != "1" %}
     <p><strong>(Elect {{ race-info.NumberToElect }})</strong></p>
