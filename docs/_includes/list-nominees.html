@@ -3,8 +3,8 @@
   where:"PositionUniqueName",include.race-id | first -%}
 
 
-<h2 class="inline">{{ race-info.PositionDesc }}</h2>
-<div class="togglable candidate-list" id="{{ include.race-id | slugify }}" >
+<h3 class="inline">{{ race-info.PositionDesc }}</h3>
+<div class="candidate-list" id="{{ include.race-id | slugify }}" >
 
   {%- if race-info.NumberToElect != "1" %}
     <p><strong>(Elect {{ race-info.NumberToElect }})</strong></p>
@@ -46,11 +46,7 @@
       {%- endif -%}
 
       {%- if nominee.Email -%}
-        , 
-        {% assign email-user =  nominee.Email | split:'@' | first %}
-        {% assign email-domain =  nominee.Email | split:'@' | last %}
-        <my-email data-domain={{ email-domain }} 
-                  data-user={{ email-user }}></my-email>
+        , {{ nominee.Email }} 
       {%- endif -%}
 
       {%- if nominee.Twitter -%}
