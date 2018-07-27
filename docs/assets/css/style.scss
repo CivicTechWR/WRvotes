@@ -33,9 +33,12 @@ button.toggle-button {
 button.toggle-button { 
   color: white;
   background-color: black;
-  border: 2em solid black;
+  border: 0.2em solid black;
   font-size: smaller;
   border-radius: 15%;
+
+  /* Push button down a touch */
+  margin-top: 0.2em;
 } 
 
 button.toggle-button:hover { 
