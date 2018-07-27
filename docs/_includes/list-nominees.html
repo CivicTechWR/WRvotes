@@ -3,7 +3,7 @@
   where:"PositionUniqueName",include.race-id | first -%}
 
 
-<h2 class="inline">{{ race-info.PositionDesc }}</h2>
+<h3 class="inline">{{ race-info.PositionDesc }}</h3>
 <div class="candidate-list" id="{{ include.race-id | slugify }}" >
 
   {%- if race-info.NumberToElect != "1" %}
