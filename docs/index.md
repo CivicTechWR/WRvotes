@@ -15,6 +15,6 @@ listing](./wards/).
 <script src="https://embed.github.com/view/geojson/CivicTechWR/WRvotes/master/docs/_data/sync/WardBoundaries.geojson"></script>
 
 
-Is this entire process too confusing? Check out our resource
-pages.
+Is this entire process too confusing? Check out our [resource
+pages](./resources).
 
