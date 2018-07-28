@@ -13,10 +13,10 @@ to access the site via <https://civictechwr.github.io/WRvotes>.
 Data for this site comes via a poor-man's database constructed via CSV
 files: 
 
-- [nominees.csv](../_data/sync/nominees.csv)
-- [media.csv](../_data/sync/media.csv)
-- [events.csv](../_data/sync/events.csv)
-- [position-tags.csv](../_data/internal/position-tags.csv)
+- [nominees.csv]({% link _data/sync/nominees.csv %})
+- [media.csv]({% link _data/sync/media.csv %})
+- [events.csv]({% link _data/sync/events.csv %})
+- [position-tags.csv]({% link _data/internal/position-tags.csv %})
 
 Use `README-updating.md` on the Github site for information about the
 structure of these files. 
