@@ -27,7 +27,26 @@ button.toggle-button {
   float: right;
 }
 
-h2.inline, h3.inline {
+/* Style buttons to be less ugly */
+button.toggle-button { 
+  color: black;
+  background-color: white;
+  border: 0.2em solid black;
+  font-size: smaller;
+  border-radius: 15%;
+
+  /* Push button down a touch */
+  margin-top: 0.2em;
+} 
+
+button.toggle-button:hover { 
+  color: white;
+  background-color: black;
+} 
+
+
+
+h2.inline, h3.inline, h4.inline {
   display: inline;
 }
 
