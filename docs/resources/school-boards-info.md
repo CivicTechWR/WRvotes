@@ -52,8 +52,7 @@ In our candidate listings we list nominees for all four school boards.
 Pay attention only to the school board that applies to you.
 
 
-### I don't have kids in school. May I still vote for public school
-trustees?
+### I don't have kids in school. May I still vote for public school trustees?
 
 Yes. All eligible electors may vote for trustees in their assigned
 school board. 
