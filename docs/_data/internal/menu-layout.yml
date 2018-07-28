@@ -2,10 +2,8 @@
 # This may not be the best approach. See: 
 # https://thinkshout.com/blog/2014/12/creating-dynamic-menus-in-jekyll/
 
-- text: Ward Map
-  url: / 
-- text: List of Wards
-  url: /wards/
+- text: Home
+  url: /
 - text: Resources
   url: /resources/
 - text: Events
