@@ -9,10 +9,11 @@ information link.
 There you will find information about candidates nominated
 for different positions in your area collected on one page. 
 
-<script src="https://embed.github.com/view/geojson/CivicTechWR/WRvotes/master/docs/_data/sync/WardBoundaries.geojson"></script>
-
 Alternatively, you can find a page for your ward in our [Ward
 listing](./wards/). 
+
+<script src="https://embed.github.com/view/geojson/CivicTechWR/WRvotes/master/docs/_data/sync/WardBoundaries.geojson"></script>
+
 
 Is this entire process too confusing? Check out our resource
 pages.
