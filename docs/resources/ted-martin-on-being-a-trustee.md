@@ -119,12 +119,12 @@ Let’s look at Board Policy 2005, which is titled Parent Support.
 
 The Policy consists of but two paragraphs: one that recognizes that
 parents or guardians of students may feel they need support in some
-cases and the other explaining that **Trustees will facilitate the
+cases and the other explaining that *Trustees will facilitate the
 communication process between the parent and the appropriate staff and
 provide information and direction. Trustees shall direct the parent or
 guardian to the processes that should be followed in resolving any
 concerns or to the appropriate person or step in the process, but
-shall not act as a representative of the parent or guardian.**
+shall not act as a representative of the parent or guardian.*
 
 Administrative Procedure 1410, also titled Parent Support, is the
 staff procedure developed to implement Board Policy 2005. It is two
