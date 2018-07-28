@@ -1,14 +1,6 @@
 RowID,DateTimeStart,Title,Location,ForMultipleCandidates,CancelledOrRescheduled,PositionIDList,URL,Notes
-1,2018-09-12T18:30,Kitchener Mayor All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Kitchener-Mayor,,Organized by The Working Centre.
-2,2018-09-19T18:30,Regional Chair All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Regional-Chair,,Organized by The Working Centre.
-3,2018-09-26T18:30,Kitchener Ward 9 All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Kitchener-Ward-09,,Organized by The Working Centre.
-4,2018-10-03T18:30,Kitchener Ward 10 All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Kitchener-Ward-10,,Organized by The Working Centre.
-5,2018-10-10T18:30,Kitchener Regional Council All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Regional-Kitchener,,Organized by The Working Centre.
-6,2018-10-19T18:30,DUMMY Regional Chair All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Y,Cancelled,Regional-Chair,https://www.theworkingcentre.org,Organized by The Working Centre.
-7,2018-06-19T18:30,PAST Regional Chair All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Regional-Chair,https://www.theworkingcentre.org,Organized by The Working Centre.
-8,2018-07-19T01:30,TODAY Regional Chair All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Regional-Chair,https://www.theworkingcentre.org,Organized by The Working Centre.
+2,2018-10-10T18:30,Regional Chair All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Regional-Chair,https://www.theworkingcentre.org/election2018,Organized by The Working Centre.
 9,2018-09-10 18:00,City of Cambridge Voter Information Session,"Cambridge City Hall (Bowman Room), 50 Dickson Street, Cambridge, Ontario",,,"Regional-Chair, Regional-Cambridge, Cambridge-Mayor, Cambridge-Ward-01, Cambridge-Ward-02, Cambridge-Ward-03, Cambridge-Ward-04, Cambridge-Ward-05, Cambridge-Ward-06, Cambridge-Ward-07, SchoolBoard-Public-English-Cambridge-NorthDumfries, SchoolBoard-Catholic-English-Cambridge-NorthDumfries, SchoolBoard-Catholic-French, SchoolBoard-Public-French",https://www.cambridge.ca/en/your-city/information-for-voters.aspx,
-10,2018-10-19T18:30,DUMMY Regional Chair All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Y,Rescheduled,Regional-Chair,https://www.theworkingcentre.org,Organized by The Working Centre.
 11,2018-08-01 18:30,Rob Deutschmann Town Hall: Wellesley,"Wellesley Recreation Complex, Wellesley",,,Regional-Chair,https://www.robforchair.ca/town-hall-meetings/,
 12,2018-08-08 18:30,Rob Deutschmann Town Hall: Woolwich,"Lions Club Hall, 41 South Street W, Elmira",,,Regional-Chair,https://www.robforchair.ca/town-hall-meetings/,
 13,2018-08-22 18:30,Rob Deutschmann Town Hall: Wilmot,"Wilmot Community Centre, Wayne Roth Meeting Room, New Hamburg",,,Regional-Chair,https://www.robforchair.ca/town-hall-meetings/,
