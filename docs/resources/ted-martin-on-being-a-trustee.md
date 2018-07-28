@@ -5,7 +5,7 @@ title: Ted Martin: On Being a Trustee
 Ted Martin: On Being a Trustee
 ------------------------------
 
-Former Waterloo Region District School Board trustee Ted Martin
+Waterloo Region District School Board trustee Ted Martin
 gave us permission to republish the text of a speech he gave in 2014.
 It is a good overview of what motivated Martin to become a trustee and
 what the job entails.
