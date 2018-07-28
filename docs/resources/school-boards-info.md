@@ -26,7 +26,9 @@ For a more in-depth explanation, see the [What Do Trustees
 Do?](http://elections.ontarioschooltrustees.org/WhatDoTrusteesDo/SchoolBoardTrustees.aspx)
 page on ontarioschooltrustees.org
 
-[Link to Ted Martin speech]
+For a more personal take on the duties of a school board trustee, see
+the transcript of [this speech by Ted
+Martin](./ted-martin-on-being-a-trustee).
 
 
 ### There are so many school board positions listed! What do I vote for?

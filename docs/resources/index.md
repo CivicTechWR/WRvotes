@@ -10,4 +10,4 @@ election works. A good place to start is the "Information for Voters"
 page. 
 
 
-- [Information About School Board Elections](./about-school-boards)
+- [Information About School Board Elections](./school-boards-info)
