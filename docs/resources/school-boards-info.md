@@ -36,7 +36,7 @@ There are four school boards in Waterloo Region:
 - English Public (the Waterloo Region District School Board)
 - English Catholic (the Waterloo Catholic District School Board)
 - French Public (Conseil scolaire Viamonde)
-- French Catholic (Conseil scolair de district catholique Centre-Sud)
+- French Catholic (Conseil scolaire catholique MonAvenir)
 
 When you register to vote you are associated with a school board. By
 default you are registered to vote in the English Public system.
