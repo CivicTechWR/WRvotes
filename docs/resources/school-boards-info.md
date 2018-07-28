@@ -2,8 +2,10 @@
 title: Information About School Board Elections
 ---
 
-What is Even Happening?
------------------------
+Information About School Board Elections
+----------------------------------------
+
+### What is Even Happening?
 
 In addition to voting for members of municipal government, you may
 cast ballots for **school board trustees**. 
@@ -12,9 +14,9 @@ Depending on which school board you are registered for, you might
 elect anywhere from one to four representatives for your school board. 
 
 
-What is a school board trustee? What do they do?
-------------------------------------------------
+### What are school board trustees? What do they do?
 
+School board trustees are elected representatives from the community. 
 School board trustees set
 policy for their school board via policies, provide oversight of the
 board's Director of Education, and serve as community advocates for
@@ -27,8 +29,7 @@ page on ontarioschooltrustees.org
 [Link to Ted Martin speech]
 
 
-There are so many school board positions listed! What do I vote for?
-----------------------------------------------------------
+### There are so many school board positions listed! What do I vote for?
 
 There are four school boards in Waterloo Region: 
 
@@ -49,15 +50,13 @@ In our candidate listings we list nominees for all four school boards.
 Pay attention only to the school board that applies to you.
 
 
-I don't have kids in school. May I still vote for public school
+### I don't have kids in school. May I still vote for public school
 trustees?
-----------------------------------------------------------
 
 Yes. All eligible electors may vote for trustees in their assigned
 school board. 
 
 
-May I change what school board I vote for?
-------------------------------------------
+### May I change what school board I vote for?
 
 [Probably?]
