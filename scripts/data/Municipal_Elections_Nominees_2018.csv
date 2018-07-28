@@ -1,122 +1,206 @@
-﻿Date_Filed,Nominated_Office,Municipality,Ward,Last_Name,Given_Names,Unit1,Street_Num_1,Street_Name1,City/Town1,Province1,Postal_Code1,Unit2,Street_Num_2,Street_Name2,City/Town2,Province2,Postal_Code2_,Phone1,Phone2,Email,OBJECTID
-5/1/2018,City Councillor,Waterloo,5,Vasic,Jen,,10,Bluevale Street North,Waterloo,ON,N2J 3R3,,,,,,,519-504-5831,,jenvasic@gmail.com,1
-5/1/2018,Public School Trustee,Cambridge & North Dumfries,,Herring,Jayne,,31,Rich Avenue,Cambridge,ON,N1R 2A4,,,,,,,519-240-3613,519-622-3719,jayneherring9@gmail.com,2
-5/1/2018,WRDSB Trustee,Woolwich,Woolwich-Wellesley,Meissner,Karen,,188,William Street,Elmira,ON,N3B 0C2,,,,,,,519-591-2825,,info@greenapplephotography.ca,3
-5/1/2018,Mayor,Woolwich,,Shantz,Sandy,,14,Nuthatch Place,Elmira,ON,N3B 3G5,,,,,,,519-669-8981,519-588-0941,sshantz@golden.net,4
-5/1/2018,Councillor,Waterloo,1,Hanmer,Sandra,,469,Kingsford Place,Waterloo,ON,N2T 1K9,,,,,,,519-574-0061,,sandra@hanmer.ca,5
-5/2/2018,Councillor,Wilmot,3,Mackenzie,Sharon Marie,,60,Wagler Avenue,Baden,ON,N3A 4K8,,,,,,,519-584-5926,519-634-1133,shazmack@rogers.com,6
-5/2/2018,Mayor,Waterloo,,Jaworsky,Dave,,490,Beckwith Court,Waterloo,ON,N2T 2H1,,,,,,,519-746-8643,,jaworsky2018@gmail.com,7
-5/2/2018,Mayor,North Dumfries,,Foxton,Sue,,20,Cooper Street,Ary,ON,N0B 1E0,,,,,,,519-632-7130,,susan.foxton@outlook.com,8
-5/2/2018,Regional Councillor,Waterloo,Waterloo,Oberholtzer,Bob,1708,225,Harvard Place,Waterloo,ON,N2J 4H4,,,,,,,519-884-7620,,,9
-5/2/2018,Regional Councillor,Waterloo,Kitchener,Clarke,Elizabeth,,90,Greenbrook Drive,Kitchener,ON,N2M 4J6,,,,,,,519-501-3387,,e-clarke@live.ca,10
-5/3/2018,Regional Councillor,Waterloo,Cambridge,Kiefer,Karl,,1729,Briarwood,Cambridge,ON,N3H 5A6,,,,,,,,,,11
-5/2/2018,Councillor,Woolwich,1,McMillan,Scott,,28,Hampton Place,Elmira,ON,N3B 1L7,,,,,,,226-972-0100,,mcmillan.scott.ca@gmail.com,12
-5/3/2018,Councillor,Woolwich,3,Martin,Murray,,11,Weberlyn Cres,Conestogo,ON,N0B 1N0,,,,,,,519-664-1493,519-616-1130,mgmartin@hotmail.ca,13
-5/2/2018,Councillor,Waterloo,7,McKenzie,Devon,,146,Candlewood Cres,Waterloo,ON,N2L 5J4,,,,,,,519-841-7536,mckenzie@livemusicbookings.com,,14
-5/2/2018,Councillor,Kitchener,4,Michaud,Christine,21,30,Green Valley Drive,Kitchener,ON,,,,,,,,226-338-2933,,christinemichaud@rogers.com,15
-5/1/2018,Councillor,Kitchener,9,Chapman,Debbie,,45,Strange Street,Kitchener,ON,,,,,,,,519-575-3624,,debchapman@execulink.com,16
-5/3/2018,Councillor,Kitchener,9,Bowman,Melissa,,35,Highland Road,Kitchener,ON,,,,,,,,519-603-7572,519-584-7742,dtkmelissa@gmail.com,17
-5/4/2018,Councillor,Kitchener,8,Johnston,Margaret,,44,Katherine Cres,Kitchener,ON,,,,,,,,519-501-3387,226-898-6751,margaret.anne.johnston@rogers.com,18
-5/7/2018,Councillor,Cambridge,4,Price,Gary,204,10,George Street South,Cambridge,ON,N1S 2N4,,,,,,,,,,19
-5/7/2018,Mayor,Waterloo,,Steiss,Kelly,,688,Jacob Lane,Waterloo,ON,N2V 2A7,,,,,,,226-232-6258,,kellyisteiss@outlook.com,20
-5/7/2018,Councillor,Woolwich,1,Merlihan,Patrick,,34,Second Street,Woolwich,ON,N3B 1h2,,,,,,,519-669-3833,226-789-3833,pmerlihan@rogers.com,21
-5/7/2018,Councillor,Waterloo,4,Freeman,"Diane, Lynn",,289,Normandy Avenue,Waterloo,ON,N2K 1X6,,,,,,,519-885-7208,,diane@dianefreeman.ca,22
-5/7/2018,Councillor,North Dumfries,3,McCreery,Margaret,,15,Welsh Drive,North Dumfries,ON,N0B 1E0,RR3,15,Welsh Drive,Ayr,ON,N0B 1E0,519-632-8807,519-572-2695,cabinfever15@rogers.com,23
-5/7/2018,Councillor,Woolwich,1,Herteis,Julie-Anne,,51,South Parkwood Boulevard,Elmira,ON,N3B 3L1,,,,,,,519-568-1209,,jaherteis@live.com,24
-5/9/2018,Councillor,Woolwich,3,Shantz,Larry,,34,McAllister Drive,Woolwich,ON,N0B 1K0,,,,,,,519-576-8559,,lrshantz@gmail.com,25
-5/9/2108,Councillor,Waterloo,1,McCarthy,Adam,,615,Westfield Drive,Waterloo,ON,N2T 2P2,,,,,,,519-747-1406,519-743-8265,adam_conny@rogers.com,26
-5/9/2018,Regional Councillor,Waterloo,Waterloo,Erb,Jim,,377,Westridge Drive,Waterloo,ON,N2L 5Y1,,,,,,,519-746-6218,,jimerb@gmail.com,27
-5/10/2018,Regional Chair,Waterloo,Chair,dAilly,Jan,,32,Academy Cr,Waterloo,ON,N2L 5H7,,,,,,,519-884-9170,,jan@dailly.ca,28
-5/9/2018,Councillor,Wilmot,2,Gordijk,Cheryl Lynn,,16,Amberdale Way,Wilmot,ON,N3C 0C1,,,,,,,519-573-8161,519-342-4916,cherylgordijk@gmail.com,29
-5/11/2018,Regional Councillor,Waterloo,Waterloo,Mitchell,Jane,,604,Dogwood Lane,Waterloo,ON,N2L 4X9,,,,,,,519-886-9626,,janemitchell@bell.net,30
-5/11/2018,Councillor,Waterloo,7,Said,Rami,105,45,Caroline Street North,Waterloo,ON,N2L 2Y6,,,,,,,,,,31
-5/11/2018,Catholic School Board Trustee,Waterloo,,Conway,Bill,,135,Carolinian Lane,Cambridge,ON,N1S 5B8,,,,,,,519-241-9574,,billconway@rogers.com,32
-5/14/2018,Catholic School Board Trustee,Cambridge & North Dumfries,,Price,Wendy,,147,Fairlake Drive,Cambridge,ON,N1S 4Z3,,,,,,,519-623-0052,,wendyprice1959@gmail.com,33
-5/14/2018,Catholic School Board Trustee,Cambridge,,da Silva,Manuel,,55,Beaverbrook Cres,Cambridge,ON,N1P 1G0,,,,,,,519-622-3039,416-984-4116,mfedasilva@gmail.com,34
-5/15/2018,Regional Chair,Waterloo,,Redman,Karen,,245,Simeon street,Waterloo,ON,N2H 1T2,,,,,,,,,redman4chair@gmail.com,35
-5/11/2018,Mayor,Kitchener,,Vrbanovic,Berry,,123,Shuh Avenue,Kitchener,ON,,,,,,,,519-896-0938,,berryv@outlook.ca,36
-5/14/2018,Councillor,Kitchener,2,Arangath,Suresh,,47,Red Clover Cres.,Kitchener,ON,,,,,,,,226-868-1842,,sarangath@gmail.com,37
-5/16/2018,Councillor,North Dumfries,1,Rolleman,Rodney,,45,Piper Street,North Dumfries,ON,N0B 1E0,,,,,,,519-589-6003,519-632-8404,rod@schooltee.com,38
-5/16/2018,Mayor,Wilmot,,Armstrong,Les,,15A,Foell Street,Baden,ON,N3A 2V3,,,,,,,,,,39
-5/16/2018,Regional Councillor,Waterloo,Kitchener,Williams,Kari,,20,Crosby Drive,Kitchener,ON,N2B 2K7,,,,,,,519-744-2486,,kari.mai.williams@gmail.com,40
-5/16/2018,Mayor,Wellesley,,Nowak,Joe,,6,Village Road RR#1,Wellesley,ON,N0B 2T0,,,,,,,,,,41
-5/17/2018,Regional Councillor,Waterloo,Kitchener,Hiller,Tom,,121,DeKay street,Kitchener,ON,N2H 3T7,,,,,,,519578-0783,,tjh.hiller@gmail.com,42
-5/16/2018,Councillor,Kitchener,2,Brusse,Regan Sunshine,6,168,Fairway Road North,Kitchener,ON,,,,,,,,226-789-3299,,sunshine4ward2@gmail.com,43
-5/17/2018,Councillor,Kitchener,3,Gazzola,John,,121,Uplands Drive,Kitchener,ON,,,,,,,,519-744-0807,,johngazzola.com,44
-5/16/2018,Councillor,Kitchener,5,Pandya,Sonal,,161,Max Becker Drive,Kitchener,ON,,,,,,,,519-954-4529,519-504-9837,sadasukh0728@gmail.com,45
-5/18/2018,Councillor,Kitchener,8,Janecki,Zyg,,205,Lakeside Drive,Kitchener,ON,,,,,,,,,,,46
-5/23/2018,Councillor,Cambridge,6,Adshade,Shannon,,136,Fairlake Drive,Cambridge,ON,N1S 4Z3,,,,,,,519-622-5475,519-589-5475,shannonadshade@rogers.com,47
-5/25/2018,Councillor,Wilmot,4,Gerber,Jeff,,283,Hamilton Road,New Hamburg,ON,N3A 2H7,,,,,,,519-662-6658,,jeff@jeffgerber.ca,48
-5/24/2018,Mayor,Wellesley,,Wheaton,Bernia,,11,Campbell Place,Wellesley,ON,N0B 2T0,,,,,,,226-228-8283,,bernia.wheaton@gmail.com,49
-5/28/2018,Councillor,Wellesley,3,Van der Maas,Peter,,37,Lawrence Street,Wellesley,ON,N0B 2T0,,,,,,,519-656-3474,,vandermaas14@gmail.com,50
-5/29/2018,Councillor,Wellesley,4,Smit,Carl,,44,Ottawa Avenue,St. Clements,ON ,N0B 2M0,,,,,,,,,csmit@rogers.com,51
-5/29/2018,French Public School Board Trustee,Waterloo,,Trudel,Denis J,,74,Kipling Ave,London,ON,,,,,,,,519-494-1789,,denistrudel1789@gmail.com,52
-6/4/2018,Councillor,Cambridge,1,Hiebert,Kevin,,111,Newport Drive,Cambridge,ON,N3H 5P9,,,,,,,519722-9492,,mrkevinhiebert@gmail.com,53
-6/5/2018,Mayor,Cambridge,,Craig,Doug,3,347,George Street North,Cambridge,ON,N1S 4X4,,,,,,,519-658-9451,,buddycraig318@gmail.com,54
-6/5/2018,Councillor,Wellesley,1,Wagner,Shelley Ann,PO Box 89,1005,Geddes Street,Hawkesville,ON,N0B 1X0,,,,,,,519-699-5814,,shelleywagne7@hotmail.com,55
-6/7/2018,Councillor,Cambridge,3,Mann,Michael,,537,Argyle St. S,Cambridge,ON,N3H 1R6,,,,,,,519-653-1684,519-616-3615,mm361@bell.blackberry.net,56
-6/8/2018,Councillor,Wellesley,3,Barker,Joyce,,44,Lawrence Street,Wellesley,ON,N0B 2T0,,,,,,,519-572-0900,,joycebarker04@gmail.com,57
-6/11/2018,Councillor,Cambridge,,Shaver,Jeffrey,,1785,Daleview Cres,Cambridge,ON,N3H 4R4,,,,,,,519-653-8975,,jeffreyryanshaver@gmail.com,58
-6/11/2018,Councillor,Waterloo,3,Vieth,Angela,,528,Twin Oaks Cr,Waterloo,ON,N2L 4R8,,,,,,,519-886-5435,,angela@angelavieth.ca,59
-6/4/2018,Catholic School Board Trustee,Kitchener,,Schmalz,Brian,,242,Dumfries Avenue,Kitchener,ON ,,,,,,,,519-743-5457,519-897-1468,bmschmalz@gmail.com,60
-6/12/2018,Councillor,Cambridge,5,Wolf,Pam,,23,Lansdowne Road  North,Cambridge,ON,N1S 2S7,,,,,,,519-622-8154,519-212-0571,pam-wolf@rogers.com,61
-6/13/2018,Regional Councillor,Cambridge,Cambridge,Jowett,Helen Green,103,200,Jamieson Parkway,Cambridge,ON,N3C 4B5,,,,,,,519-240-7575,519-654-9388,,62
-6/14/2018,Councillor,North Dumfries,2,Ostner,Derrick,,29,Piper Street,North Dumfries,ON,N0B 1E0,,,,,,,,,d.ostner@bellnet.ca,63
-6/14/2018,Councillor,Waterloo,1,Parent,Robert,,75,Thornbush Crescent,Waterloo,ON,N2T 1A9,,,,,,,519-725-2309,,robparentward1@gmail.com,64
-6/12/2018,Councillor,Kitchener,1,Davey,Scott,,70,Tecumseh Cres,Kitchener,ON,,,,,,,,519-489-9056,,scottdavey@gmail.com,65
-6/18/2018,Catholic School Board Trustee,Waterloo,,Van Alphen,Melanie,,14,Meadow Heights Dr,West Montrose,ON,N0B 2V0,,,,,,,226-972-1482,,melmvan@gmail.com,66
-6/18/2018,Councillor,Waterloo,7,Parsons,Carol,1212,20,Barrel Yards Blvd,Waterloo,ON,N2L 0C3,,,,,,,519-504-0763,,carol@carolparsons.ca,67
-6/20/2018,Regional Councillor,Waterloo,Kitchener,Martin,Ted,,74,Moore Avenue,Kitchener,ON,N2H 3S5,,,,,,,519-744-9490,,tgmartin13@gmail.com,68
-6/20/2018,Councillor,Cambridge,7,Moneiro,Francesco (Frank),,1623,Fairview Road,Cambridge,ON,N3h 4N8,,,,,,,519-654-6389,519-653-4572,frankmonteiro35@gmail.com,69
-6/19/2018,Councillor,Kitchener,10,Meier,Peter,710,175,Queen Street North,Kitchener,ON,,,,,,,,519-239-7273,,pnpmeier@yahoo.ca,70
-6/21/2018,Councillor,Waterloo,2,Bodaly,Royce,,619,Columbia Forest Blvd,Waterloo,ON,N2V 2K7,,,,,,,226-338-6068,,royce@roycebodaly.ca,71
-6/21/2018,Councillor,Cambridge,4,Liggett,Jan,,22,Main Street,Cambridge,ON,N1R 1W8,,,,,,,519-623-5016,,jkliggett@rogers.com,72
-6/22/2018,Councillor,Waterloo,2,Moore,Janice,,526,Rheinland Place,Waterloo,ON,N2V 2M9,,,,,,,519-580-5647,,janie.moore9315@gmail.com,73
-6/22/2018,Mayor,Cambridge,,Carter,Randy,,17,Crombie Street,Cambridge,ON,N1S 1S3,,,,,,,226-924-5673,,,74
-6/25/2018,WRDSB Trustee,Waterloo,,Cassels,Jonathan,,32,Thornbush Crescent,Waterloo,ON,N2T 1B2,,,,,,,519-722-4881,,cassels.jonathan@gmail.com,75
-6/25/2018,WRDSB Trustee,Cambridge,,Waterfall,Courtney,,58,Dolman Court,Cambridge,ON,N1S 4G4,,,,,,,519-841-2574,,courtneywaterfall@hotmail.com,76
-6/28/2018,WRCSB Trustee,Woolwich,,Gravelle,Jeanne,,12,Chancellor Drive,Heidelberg,ON,N0B 2M1,,,,,,,519-505-7074,,jeannemgravelle@gmail.com,77
-6/28/2018,Councillor,Cambridge,5,Kirby,Bill,,232,Sunset Blvd,Cambridge,ON,N1S 4M5,,,,,,,226-201-1816,,votebillkirby@gmail.com,78
-7/3/2018,WRDSB Trustee,Waterloo,,Donovan,Matthew,603,225,Harvard Place,Waterloo,ON,N2J 4H4,,,,,,,519-278-5657,,donovan.j.matthew@gmail.com,79
-7/3/2018,Councillor,Cambridge,8,Ermeta,Nicholas,59,235,Saginaw Parkway,Cambridge,ON,N1T 1X4,,,,,,,519-716-1690,,,80
-7/4/2018,Regional Councillor,Kitchener,Kitchener,Lorentz,Geoff,,20,Juniper Crescent,Kitchener,ON ,N2M 4M4,,,,,,,,,geoff.lorentz@rogers.com,81
-7/5/2018,Regional Chair,Waterloo,,Deutschmann,Robert Karl,,25,Main Street,Ayr,ON,N0B 1E0,,,,,,,,,,82
-7/9/2018,Regional Councillor,Kitchener,Kitchener,Hall,Mary,,493,Manchester Road,Kitchener,ON,N2B 1A7,,,,,,,519-589-2455,,marhall@sympatico.ca,83
-7/10/2018,Councillor,Waterloo,6,Henry,Jeff,502,375,King Street North,Waterloo,ON,N2J 4L6,,,,,,,,,jeff@jeffhenry.ca,84
-7/10/2018,WRDSB Trustee,Waterloo,,Woodcock,Kathleen,,49,Pinemeadow Cres,Waterloo,ON,N2T 1A6,,,,,,,226-647-6023,226-929-3101,kstewardson55@gmail.com,85
-7/12/2018,Councillor,Waterloo,1,Lei,Xei (Leia),,684,Beechwood Drive,Waterloo,ON,N2T 2N7,,,,,,,519-729-2368,,leilei.xlei@gmail.com,86
-7/13/2018,Mayor,North Dumfries,,Harrison,Martin,,1174,Brantford Highway,North Dumfries,ON,N1R 6S6,,,,,,,519-622-1214,519-716-7023,martin@cambridgecrane.com,87
-7/16/2018,Councillor,Cambridge,6,Ditner,Kurt L,,146,Grand Ave South,Cambridge,ON,N1S 2M4,,,,,,,519-240-4697,,kditner@gmail.com,88
-7/16/2018,Councillor,Waterloo,5,Whaley,Mark,,258,Willowdale Place,Waterloo,ON,N2J 3M4,,,,,,,,,,89
-7/16/2018,Mayor,Waterloo,,Kolednak,Chris,1208B,300,Regina Street North,Waterloo,ON,N2J 4H2,,,,,,,519-722-4776,,votechrisk@gmail.com,90
-7/16/2018,Councillor,Cambridge,1,OHagan,Ryan Terence,2,62,Queen Street North,Cambridge,ON,N3C 1G1,,,,,,,519-615-0391,,ryan@ryan.ohagan.com,91
-7/17/2018,WRDSB Trustee,Waterloo,,Campbell,Eian,,140,Wheatland Drive,Cambridge,ON,N1P 1E2,,,,,,,519-624-7116,,campbellfamily40@gmail.com,92
-7/17/2018,Mayor,Cambridge,,Mcgarry,Kathryn,,56,Cambridge Street,Cambridge,ON,N1R 8A3,,,,,,,519-716-2557,519-622-3218,ryn.mcgarry@gmail.com,93
-7/17/2018,Councillor,Woolwich,2,Betts,Kevin,,2,University Ave East,Elmira,ON,N3B 2E8,,,,,,,519-505-3059,,kevpb@live.ca,94
-7/18/2018,Councillor,Cambridge,1,Vanclief,Clifford,3,30,Brook Street,Cambridge,ON,N1R 4C1,,,,,,,519-841-2953,519-249-1473,clifford@hubbicycleshop.com,95
-7/18/2018,Councillor,Cambridge,6,Renco,Peter,,76,Glenmorris St,Cambridge,ON,N1S 2Y5,,,,,,,519-239-9936,,prenco74@gmail.com,96
-7/19/2018,WRDSB Trustee,Waterloo,,Bai,Zhengwei,,498,Clair Creek Blvd,Waterloo,ON,N2T 1S2,,,,,,,226-808-9558,519-888-8728,baizw2000@gmail.com,97
-7/19/2018,WRDSB Trustee,North Dumfries,,Schneider,William,,1807,Cheese Factory Road,Branchton,ON,N0B 1L0,,,,,,,519-740-1513,,wgsohn39@gmail.com,98
-7/19/2018,Councillor,Cambridge,2,Lajeunesse,Janice Noreen,,12,Thomas Street,Cambridge,ON,N3C 3P4,,,,,,,519-716-9626,,janice.lajuinesse@gmail.com,99
-6/28/2018,Councillor,Kitchener,2,Schnider,Dave,,55,Oldfeild Drive,Kitchener,ON,,,,,,,,,,daveschniderward2@gmail.com,100
-7/16/2018,Councillor,Kitchener,2,Vanderpool,Fitzroy,11,70,Morgan Ave,Kitchener,ON,,,,,,,,519-577-7910,,fitzthewhip1@hotmail.com,101
-7/9/2018,Councillor,kitchener,4,Geary,Juliie Batista,,288,Steepleridge Street,Kitchener,ON,,,,,,,,519-590-1147,,m.j.geary@rogers.com,102
-7/4/2018,Councillor,Kitchener,5,Ahmad,Aizad,,909,Windflower Place,Kitchener,ON,,,,,,,,519-404-0783,647-292-8786,aizad423@gmail.com,103
-6/25/2018,Councillor,Kitchener,6,Singh,Paul,,329,Edgewater Cres,Kitchener,ON,,,,,,,,519-721-3272,,paulsinghward6@gmail.com,104
-7/4/2018,Councillor,Kitchener,7,Ioannidis,Bil,,330,Hidden Creek Drive,Kitchener,ON,,,,,,,,519-579-5398,,bil.ioannidis1@gmail.com,105
-7/13/2018,Councillor,Kitchener,8,Baskin,James Raymond,,20,Inadale CRt,Kitchener,ON,,,,,,,,519-954-8784,519-496-5295,raybaskin13@gmail.com,106
-7/10/2018,Councillor,Kitchener,9,Stark,Susan,,125,Hickson Drive,Kitchener,ON,,,,,,,,519-895-3869,519-573-5554,susanastark@gmail.com,107
-7/19/2018,Councillor,Kitchener,9,Strohack,Steve,,192,Kent Ave,Kitchener,ON,,,,,,,,226-972-2251,,ward9strohack@gmail.com,108
-7/9/2018,Councillor,Kitchener,10,Marsh,Sarah,,80,Louisa St,Kitchener,ON,,,,,,,,519-807-8006,,sarah@sarahmarsh.ca,109
-7/16/2018,WRDSB Trustee,Kitchener,,Estoesta,Samantha Marie Oliveira,,188,Breithaupt Street,Kitchener,ON,,,,,,,,226-929-3050,,samantha.estoesta@gmail.com,110
-7/11/2018,WRDSB Trustee,Kitchener,,Guo,Xiaoming,,234,Countrystone Cres,Kitchener,ON,,,,,,,,519-585-0119,,guo_simon@yhoo.ca,111
-6/26/2018,WRDSB Trustee,Kitchener,,Hutzal,Brent,,34,Paige Street,Kitchener,ON,,,,,,,,519-998-6016,,brent.hutzal@gmail.com,112
-7/4/2018,WRDSB Trustee,Kitchener,,Kuhn,David,2002,1,Cedarwoods Cres,Kitchener,ON,,,,,,,,519-893-0433,,david@davidkuhn.ca,113
-7/17/2018,WRDSB Trustee,Kitchener,,Smith,Kathi,,28,Ahrens Street,Kitchener,ON,,,,,,,,519-578-1547,,smithkathi@sympatico.ca,114
-7/16/2018,WRDSB Trustee,Kitchener,,Tremble,Laurie,,67,Gregg Crt,Kitchener,ON,,,,,,,,519-503-1051,,tremblefortrustee@gmail.com,115
-7/10/2018,WRDSB Trustee,Kitchener,,Waddell,Natalie,,363,Steepleridge Street,Kitchener,ON,,,,,,,,519-896-7213,416-629-7309,natalie@nataliewaddell.ca,116
-7/6/2018,WRDSB Trustee,Kitchener,,Weston,Joanne,,309,Pine Valley Drive,Kitchener,ON,,,,,,,,519-574-2572,,joanneweston2018@gmail.com,117
-7/18/2018,WRCSB Trustee,Kitchener,,Lannan,Michael David,,58,Driftwood Place,Kitchener,ON,,,,,,,,519-571-8560,519-743-2100,mdlfamilylaw@gmail.com,118
-6/25/2018,WRCSB French Trustee,Kitchener,,Petit-Pas, Dorothee,,87,Balmoral Drive,Brantford,ON,,,,,,,,519-756-7749,519-865-1354,petitpas.dorothee@yahoo.ca,119
-7/19/2018,Councillor,North Dumfries,4,Ward,Dawna,,115,Hilltop Drive,Ayr,ON,N0B 1E0,,,,,,,519-632-5278,,dawnaward4@gmail.com,120
-7/19/2018,Councillor,North Dumfries,4,Ritchie,Neil Martin,,36,Jane Street,North Dumfries,ON,N0B 1E0,,,,,,,226-929-6348,,neilritchie4ward4@gmail.com,121
+﻿Date_Filed,Nominated_Office,Municipality,Ward,Last_Name,Given_Names,Unit1,Street_Num_1,Street_Name1,City/Town1,Province1,Postal_Code1,Unit2,Street_Num_2,Street_Name2,City/Town2,Province2,Postal_Code2_,Phone1,Phone2,Email,Social_Media,OBJECTID
+5/1/2018,Councillor,Waterloo,5,Vasic,Jen,,10,Bluevale Street North,Waterloo,ON,N2J 3R3,,,,,,,519-504-5831,,jenvasic@gmail.com,,1
+5/1/2018,Public School Trustee,Cambridge & North Dumfries,,Herring,Jayne,,31,Rich Avenue,Cambridge,ON,N1R 2A4,,,,,,,519-240-3613,519-622-3719,jayneherring9@gmail.com,jayneherring.ca,2
+5/1/2018,WRDSB Trustee,Woolwich,Woolwich-Wellesley,Meissner,Karen,,188,William Street,Elmira,ON,N3B 0C2,,,,,,,519-591-2825,,info@greenapplephotography.ca,,3
+5/1/2018,Mayor,Woolwich,,Shantz,Sandy,,14,Nuthatch Place,Elmira,ON,N3B 3G5,,,,,,,519-669-8981,519-588-0941,sshantz@golden.net,,4
+5/1/2018,Councillor,Waterloo,1,Hanmer,Sandra,,469,Kingsford Place,Waterloo,ON,N2T 1K9,,,,,,,519-574-0061,,sandra@hanmer.ca,,5
+5/2/2018,Councillor,Wilmot,3,Mackenzie,Sharon Marie,,60,Wagler Avenue,Baden,ON,N3A 4K8,,,,,,,519-584-5926,519-634-1133,shazmack@rogers.com,,6
+5/2/2018,Mayor,Waterloo,,Jaworsky,Dave,,490,Beckwith Court,Waterloo,ON,N2T 2H1,,,,,,,519-746-8643,,jaworsky2018@gmail.com,,7
+5/2/2018,Mayor,North Dumfries,,Foxton,Sue,,20,Cooper Street,Ary,ON,N0B 1E0,,,,,,,519-632-7130,,susan.foxton@outlook.com,,8
+5/2/2018,Regional Councillor,Waterloo,Waterloo,Oberholtzer,Bob,1708,225,Harvard Place,Waterloo,ON,N2J 4H4,,,,,,,519-884-7620,,,,9
+5/2/2018,Regional Councillor,Waterloo,Kitchener,Clarke,Elizabeth,,90,Greenbrook Drive,Kitchener,ON,N2M 4J6,,,,,,,519-501-3387,,e-clarke@live.ca,,10
+5/3/2018,Regional Councillor,Waterloo,Cambridge,Kiefer,Karl,,1729,Briarwood,Cambridge,ON,N3H 5A6,,,,,,,,,,,11
+5/2/2018,Councillor,Woolwich,1,McMillan,Scott,,28,Hampton Place,Elmira,ON,N3B 1L7,,,,,,,226-972-0100,,mcmillan.scott.ca@gmail.com,,12
+5/3/2018,Councillor,Woolwich,3,Martin,Murray,,11,Weberlyn Cres,Conestogo,ON,N0B 1N0,,,,,,,519-664-1493,519-616-1130,mgmartin@hotmail.ca,,13
+5/2/2018,Councillor,Waterloo,7,McKenzie,Devon,,146,Candlewood Cres,Waterloo,ON,N2L 5J4,,,,,,,519-841-7536,mckenzie@livemusicbookings.com,,,14
+5/2/2018,Councillor,Kitchener,4,Michaud,Christine,21,30,Green Valley Drive,Kitchener,ON,N2P 1G8,,,,,,,226-338-2933,,christinemichaud@rogers.com,christine4citycouncil.ca,15
+5/1/2018,Councillor,Kitchener,9,Chapman,Debbie,,45,Strange Street,Kitchener,ON,N2G 1R7,,,,,,,519-575-3624,,debchapman@execulink.com,www.debiechapman.ca,16
+5/3/2018,Councillor,Kitchener,9,Bowman,Melissa,,35,Highland Road,Kitchener,ON,N2M 3S1,,,,,,,519-603-7572,519-584-7742,dtkmelissa@gmail.com,www.melissabowmanward9.ca,17
+5/4/2018,Councillor,Kitchener,8,Johnston,Margaret,,44,Katherine Cres,Kitchener,ON,N2M 2K1,,,,,,,519-501-3387,226-898-6751,margaret.anne.johnston@rogers.com,www.margaretjohnston.ca,18
+5/7/2018,Councillor,Cambridge,4,Price,Gary,204,10,George Street South,Cambridge,ON,N1S 2N4,,,,,,,,,,,19
+5/7/2018,Mayor,Waterloo,,Steiss,Kelly,,688,Jacob Lane,Waterloo,ON,N2V 2A7,,,,,,,226-232-6258,,kellyisteiss@outlook.com,,20
+5/7/2018,Councillor,Woolwich,1,Merlihan,Patrick,,34,Second Street,Woolwich,ON,N3B 1h2,,,,,,,519-669-3833,226-789-3833,pmerlihan@rogers.com,www.merlihan.com,21
+5/7/2018,Councillor,Waterloo,4,Freeman,"Diane, Lynn",,289,Normandy Avenue,Waterloo,ON,N2K 1X6,,,,,,,519-885-7208,,diane@dianefreeman.ca,,22
+5/7/2018,Councillor,North Dumfries,3,McCreery,Margaret,,15,Welsh Drive,North Dumfries,ON,N0B 1E0,RR3,15,Welsh Drive,Ayr,ON,N0B 1E0,519-632-8807,519-572-2695,margaret@mccreeryw3.com,www.mccreeryw3.com,23
+5/7/2018,Councillor,Woolwich,1,Herteis,Julie-Anne,,51,South Parkwood Boulevard,Elmira,ON,N3B 3L1,,,,,,,519-568-1209,,jaherteis@live.com,,24
+5/9/2018,Councillor,Woolwich,3,Shantz,Larry,,34,McAllister Drive,Woolwich,ON,N0B 1K0,,,,,,,519-576-8559,,lrshantz@gmail.com,www.larryshantz.ca,25
+5/9/2108,Councillor,Waterloo,1,McCarthy,Adam,,615,Westfield Drive,Waterloo,ON,N2T 2P2,,,,,,,519-747-1406,519-743-8265,adam_conny@rogers.com,,26
+5/9/2018,Regional Councillor,Waterloo,Waterloo,Erb,Jim,,377,Westridge Drive,Waterloo,ON,N2L 5Y1,,,,,,,519-746-6218,,jimerb@gmail.com,,27
+5/10/2018,Regional Chair,Waterloo,Chair,dAilly,Jan,,32,Academy Cr,Waterloo,ON,N2L 5H7,,,,,,,519-884-9170,,jan@dailly.ca,,28
+5/9/2018,Councillor,Wilmot,2,Gordijk,Cheryl Lynn,,16,Amberdale Way,Wilmot,ON,N3C 0C1,,,,,,,519-573-8161,519-342-4916,cherylgordijk@gmail.com,www.votecheryl.com,29
+5/11/2018,Regional Councillor,Waterloo,Waterloo,Mitchell,Jane,,604,Dogwood Lane,Waterloo,ON,N2L 4X9,,,,,,,519-886-9626,,janemitchell@bell.net,,30
+5/11/2018,Councillor,Waterloo,7,Said,Rami,105,45,Caroline Street North,Waterloo,ON,N2L 2Y6,,,,,,,,,,,31
+5/11/2018,Catholic School Board Trustee,Waterloo,,Conway,Bill,,135,Carolinian Lane,Cambridge,ON,N1S 5B8,,,,,,,519-241-9574,,billconway@rogers.com,Twitter: @bkconwayConway,32
+5/14/2018,Catholic School Board Trustee,Cambridge & North Dumfries,,Price,Wendy,,147,Fairlake Drive,Cambridge,ON,N1S 4Z3,,,,,,,519-623-0052,,wendyprice1959@gmail.com,,33
+5/14/2018,Catholic School Board Trustee,Cambridge,,da Silva,Manuel,,55,Beaverbrook Cres,Cambridge,ON,N1P 1G0,,,,,,,519-622-3039,416-984-4116,mfedasilva@gmail.com,,34
+5/15/2018,Regional Chair,Waterloo,,Redman,Karen,,245,Simeon street,Waterloo,ON,N2H 1T2,,,,,,,,,redman4chair@gmail.com,,35
+5/11/2018,Mayor,Kitchener,,Vrbanovic,Berry,,123,Shuh Avenue,Kitchener,ON,N2A 1H4,,,,,,,519-896-0938,,berryv@outlook.ca,,36
+5/14/2018,Councillor,Kitchener,2,Arangath,Suresh,,47,Red Clover Cres.,Kitchener,ON,N2E 4G8,,,,,,,226-868-1842,,sarangath@gmail.com,electsuresharangath.ca,37
+5/16/2018,Councillor,North Dumfries,1,Rolleman,Rodney,,45,Piper Street,North Dumfries,ON,N0B 1E0,,,,,,,519-589-6003,519-632-8404,rod@schooltee.com,,38
+5/16/2018,Mayor,Wilmot,,Armstrong,Les,,15A,Foell Street,Baden,ON,N3A 2V3,,,,,,,,,,,39
+5/16/2018,Regional Councillor,Waterloo,Kitchener,Williams,Kari,,20,Crosby Drive,Kitchener,ON,N2B 2K7,,,,,,,519-744-2486,,kari.mai.williams@gmail.com,,40
+5/16/2018,Mayor,Wellesley,,Nowak,Joe,,6,Village Road RR#1,Wellesley,ON,N0B 2T0,,,,,,,,,,,41
+5/17/2018,Regional Councillor,Waterloo,Kitchener,Hiller,Tom,,121,DeKay street,Kitchener,ON,N2H 3T7,,,,,,,519578-0783,,tjh.hiller@gmail.com,,42
+5/16/2018,Councillor,Kitchener,2,Brusse,Regan Sunshine,6,168,Fairway Road North,Kitchener,ON,N2A 2N6,,,,,,,226-789-3299,,sunshine4ward2@gmail.com,regansunshinebruss.ca,43
+5/17/2018,Councillor,Kitchener,3,Gazzola,John,,121,Uplands Drive,Kitchener,ON,N2M 4X3,,,,,,,519-744-0807,,johngazzola.com,johngazzola.com,44
+5/16/2018,Councillor,Kitchener,5,Pandya,Sonal,,161,Max Becker Drive,Kitchener,ON,N2E 4G1,,,,,,,519-954-4529,519-504-9837,sadasukh0728@gmail.com,,45
+5/18/2018,Councillor,Kitchener,8,Janecki,Zyg,,205,Lakeside Drive,Kitchener,ON,N2M 4C7,,,,,,,519-579-4052,226-750-3053,zyg.janecki@rogers.com,zygjanecki.com,46
+5/23/2018,Councillor,Cambridge,6,Adshade,Shannon,,136,Fairlake Drive,Cambridge,ON,N1S 4Z3,,,,,,,519-622-5475,519-589-5475,shannonadshade@rogers.com,shannonadshade.com,47
+5/25/2018,Councillor,Wilmot,4,Gerber,Jeff,,283,Hamilton Road,New Hamburg,ON,N3A 2H7,,,,,,,519-662-6658,,jeff@jeffgerber.ca,,48
+5/24/2018,Mayor,Wellesley,,Wheaton,Bernia,,11,Campbell Place,Wellesley,ON,N0B 2T0,,,,,,,226-228-8283,,bernia.wheaton@gmail.com,,49
+5/28/2018,Councillor,Wellesley,3,Van der Maas,Peter,,37,Lawrence Street,Wellesley,ON,N0B 2T0,,,,,,,519-656-3474,,vandermaas14@gmail.com,,50
+5/29/2018,Councillor,Wellesley,4,Smit,Carl,,44,Ottawa Avenue,St. Clements,ON ,N0B 2M0,,,,,,,,,csmit@rogers.com,,51
+5/29/2018,French Public School Board Trustee,Waterloo,,Trudel,Denis J,,74,Kipling Ave,London,ON,N5V 1K2,,,,,,,519-494-1789,,denistrudel1789@gmail.com,,52
+6/4/2018,Councillor,Cambridge,1,Hiebert,Kevin,,111,Newport Drive,Cambridge,ON,N3H 5P9,,,,,,,519722-9492,,mrkevinhiebert@gmail.com,www.hiebert4council.com,53
+6/5/2018,Mayor,Cambridge,,Craig,Doug,3,347,George Street North,Cambridge,ON,N1S 4X4,,,,,,,519-658-9451,,buddycraig318@gmail.com,,54
+6/5/2018,Councillor,Wellesley,1,Wagner,Shelley Ann,PO Box 89,1005,Geddes Street,Hawkesville,ON,N0B 1X0,,,,,,,519-699-5814,,shelleywagne7@hotmail.com,,55
+6/7/2018,Councillor,Cambridge,3,Mann,Michael,,537,Argyle St. S,Cambridge,ON,N3H 1R6,,,,,,,519-653-1684,519-616-3615,mm361@bell.blackberry.net,,56
+6/8/2018,Councillor,Wellesley,3,Barker,Joyce,,44,Lawrence Street,Wellesley,ON,N0B 2T0,,,,,,,519-572-0900,,joycebarker04@gmail.com,,57
+6/11/2018,Councillor,Cambridge,,Shaver,Jeffrey,,1785,Daleview Cres,Cambridge,ON,N3H 4R4,,,,,,,519-653-8975,,jeffreyryanshaver@gmail.com,,58
+6/11/2018,Councillor,Waterloo,3,Vieth,Angela,,528,Twin Oaks Cr,Waterloo,ON,N2L 4R8,,,,,,,519-886-5435,,angela@angelavieth.ca,,59
+6/4/2018,Catholic School Board Trustee,Kitchener,,Schmalz,Brian,,242,Dumfries Avenue,Kitchener,ON ,N2H 2E8,,,,,,,519-743-5457,519-897-1468,bmschmalz@gmail.com,,60
+6/12/2018,Councillor,Cambridge,5,Wolf,Pam,,23,Lansdowne Road  North,Cambridge,ON,N1S 2S7,,,,,,,519-622-8154,519-212-0571,pam-wolf@rogers.com,,61
+6/13/2018,Regional Councillor,Cambridge,Cambridge,Jowett,Helen Green,103,200,Jamieson Parkway,Cambridge,ON,N3C 4B5,,,,,,,519-240-7575,519-654-9388,,,62
+6/14/2018,Councillor,North Dumfries,2,Ostner,Derrick,,29,Piper Street,North Dumfries,ON,N0B 1E0,,,,,,,,,d.ostner@bellnet.ca,,63
+6/14/2018,Councillor,Waterloo,1,Parent,Robert,,75,Thornbush Crescent,Waterloo,ON,N2T 1A9,,,,,,,519-725-2309,,robparentward1@gmail.com,,64
+6/12/2018,Councillor,Kitchener,1,Davey,Scott,,70,Tecumseh Cres,Kitchener,ON,N2B 2T4,,,,,,,519-489-9056,,scottdavey@gmail.com,www.scottdavey.info,65
+6/18/2018,Catholic School Board Trustee,Waterloo,,Van Alphen,Melanie,,14,Meadow Heights Dr,West Montrose,ON,N0B 2V0,,,,,,,226-972-1482,,melmvan@gmail.com,,66
+6/18/2018,Councillor,Waterloo,7,Parsons,Carol,1212,20,Barrel Yards Blvd,Waterloo,ON,N2L 0C3,,,,,,,519-504-0763,,carol@carolparsons.ca,,67
+6/20/2018,Regional Councillor,Waterloo,Kitchener,Martin,Ted,,74,Moore Avenue,Kitchener,ON,N2H 3S5,,,,,,,519-744-9490,,tgmartin13@gmail.com,,68
+6/20/2018,Councillor,Cambridge,7,Monteiro,Francesco (Frank),,1623,Fairview Road,Cambridge,ON,N3H 4N8,,,,,,,519-654-6389,519-653-4572,frankmonteiro35@gmail.com,,69
+6/19/2018,Councillor,Kitchener,10,Meier,Peter,710,175,Queen Street North,Kitchener,ON,N2H 2H9,,,,,,,519-239-7273,,pnpmeier@yahoo.ca,petermeier.ca,70
+6/21/2018,Councillor,Waterloo,2,Bodaly,Royce,,619,Columbia Forest Blvd,Waterloo,ON,N2V 2K7,,,,,,,226-338-6068,,royce@roycebodaly.ca,,71
+6/21/2018,Councillor,Cambridge,4,Liggett,Jan,,22,Main Street,Cambridge,ON,N1R 1W8,,,,,,,519-623-5016,,jkliggett@rogers.com,,72
+6/22/2018,Councillor,Waterloo,2,Moore,Janice,,526,Rheinland Place,Waterloo,ON,N2V 2M9,,,,,,,519-580-5647,,janie.moore9315@gmail.com,,73
+6/22/2018,Mayor,Cambridge,,Carter,Randy,,17,Crombie Street,Cambridge,ON,N1S 1S3,,,,,,,226-924-5673,,,,74
+6/25/2018,WRDSB Trustee,Waterloo,,Cassels,Jonathan,,32,Thornbush Crescent,Waterloo,ON,N2T 1B2,,,,,,,519-722-4881,,cassels.jonathan@gmail.com,,75
+6/25/2018,WRDSB Trustee,Cambridge,,Waterfall,Courtney,,58,Dolman Court,Cambridge,ON,N1S 4G4,,,,,,,519-841-2574,,courtneywaterfall@hotmail.com,Twitter:@ courtwaterfall,76
+6/28/2018,WRCSB Trustee,Woolwich,,Gravelle,Jeanne,,12,Chancellor Drive,Heidelberg,ON,N0B 2M1,,,,,,,519-505-7074,,jeannemgravelle@gmail.com,,77
+6/28/2018,Councillor,Cambridge,5,Kirby,Bill,,232,Sunset Blvd,Cambridge,ON,N1S 4M5,,,,,,,226-201-1816,,votebillkirby@gmail.com,,78
+7/3/2018,WRDSB Trustee,Waterloo,,Donovan,Matthew,603,225,Harvard Place,Waterloo,ON,N2J 4H4,,,,,,,519-278-5657,,donovan.j.matthew@gmail.com,,79
+7/3/2018,Councillor,Cambridge,8,Ermeta,Nicholas,59,235,Saginaw Parkway,Cambridge,ON,N1T 1X4,,,,,,,519-716-1690,,,,80
+7/4/2018,Regional Councillor,Kitchener,Kitchener,Lorentz,Geoff,,20,Juniper Crescent,Kitchener,ON ,N2M 4M4,,,,,,,,,geoff.lorentz@rogers.com,,81
+7/5/2018,Regional Chair,Waterloo,,Deutschmann,Robert Karl,,25,Main Street,Ayr,ON,N0B 1E0,,,,,,,,,,,82
+7/9/2018,Regional Councillor,Kitchener,Kitchener,Hall,Mary,,493,Manchester Road,Kitchener,ON,N2B 1A7,,,,,,,519-589-2455,,marhall@sympatico.ca,,83
+7/10/2018,Councillor,Waterloo,6,Henry,Jeff,502,375,King Street North,Waterloo,ON,N2J 4L6,,,,,,,,,jeff@jeffhenry.ca,,84
+7/10/2018,WRDSB Trustee,Waterloo,,Woodcock,Kathleen,,49,Pinemeadow Cres,Waterloo,ON,N2T 1A6,,,,,,,226-647-6023,226-929-3101,kstewardson55@gmail.com,,85
+7/12/2018,Councillor,Waterloo,1,Lei,Xei (Leia),,684,Beechwood Drive,Waterloo,ON,N2T 2N7,,,,,,,519-729-2368,,leilei.xlei@gmail.com,,86
+7/13/2018,Mayor,North Dumfries,,Harrison,Martin,,1174,Brantford Highway,North Dumfries,ON,N1R 6S6,,,,,,,519-622-1214,519-716-7023,martin@cambridgecrane.com,www.martinharrison.ca,87
+7/16/2018,Councillor,Cambridge,6,Ditner,Kurt L,,146,Grand Ave South,Cambridge,ON,N1S 2M4,,,,,,,519-240-4697,,kditner@gmail.com,,88
+7/16/2018,Councillor,Waterloo,5,Whaley,Mark,,258,Willowdale Place,Waterloo,ON,N2J 3M4,,,,,,,,,,,89
+7/16/2018,Mayor,Waterloo,,Kolednak,Chris,1208B,300,Regina Street North,Waterloo,ON,N2J 4H2,,,,,,,519-722-4776,,votechrisk@gmail.com,,90
+7/16/2018,Councillor,Cambridge,1,OHagan,Ryan Terence,2,62,Queen Street North,Cambridge,ON,N3C 1G1,,,,,,,519-615-0391,,ryan@ryan.ohagan.com,www.ryan-ohagan.com,91
+7/17/2018,WRDSB Trustee,Waterloo,,Campbell,Eian,,140,Wheatland Drive,Cambridge,ON,N1P 1E2,,,,,,,519-624-7116,,campbellfamily40@gmail.com,Twitter: @CampbellEian,92
+7/17/2018,Mayor,Cambridge,,Mcgarry,Kathryn,,56,Cambridge Street,Cambridge,ON,N1R 8A3,,,,,,,519-716-2557,519-622-3218,ryn.mcgarry@gmail.com,Twitter: @Kathryn_McGarry,93
+7/17/2018,Councillor,Woolwich,2,Betts,Kevin,,2,University Ave East,Elmira,ON,N3B 2E8,,,,,,,519-505-3059,,kevpb@live.ca,,94
+7/18/2018,Councillor,Cambridge,1,Vanclief,Clifford,3,30,Brook Street,Cambridge,ON,N1R 4C1,,,,,,,519-841-2953,519-249-1473,clifford@hubbicycleshop.com,,95
+7/18/2018,Councillor,Cambridge,6,Renco,Peter,,76,Glenmorris St,Cambridge,ON,N1S 2Y5,,,,,,,519-239-9936,,prenco74@gmail.com,www.facebook.com/peter.renco.1,96
+7/19/2018,WRDSB Trustee,Waterloo,,Bai,Zhengwei,,498,Clair Creek Blvd,Waterloo,ON,N2T 1S2,,,,,,,226-808-9558,519-888-8728,baizw2000@gmail.com,,97
+7/19/2018,WRDSB Trustee,North Dumfries,,Schneider,William,,1807,Cheese Factory Road,Branchton,ON,N0B 1L0,,,,,,,519-740-1513,,wgsohn39@gmail.com,,98
+7/19/2018,Councillor,Cambridge,2,Lajeunesse,Janice Noreen,,12,Thomas Street,Cambridge,ON,N3C 3P4,,,,,,,519-716-9626,,janice.lajuinesse@gmail.com,Twitter: @JanLajeunesse,99
+6/28/2018,Councillor,Kitchener,2,Schnider,Dave,,55,Oldfeild Drive,Kitchener,ON,N2A 3P3,,,,,,,,,daveschniderward2@gmail.com,daveschnider.com,100
+7/16/2018,Councillor,Kitchener,2,Vanderpool,Fitzroy,11,70,Morgan Ave,Kitchener,ON,N2A 2M2,,,,,,,519-577-7910,,fitzthewhip1@hotmail.com,,101
+7/9/2018,Councillor,kitchener,4,Geary,Juliie Batista,,288,Steepleridge Street,Kitchener,ON,N2P 0B4,,,,,,,519-590-1147,,m.j.geary@rogers.com,,102
+7/4/2018,Councillor,Kitchener,5,Ahmad,Aizad,,909,Windflower Place,Kitchener,ON,N2E 4B3,,,,,,,519-404-0783,647-292-8786,aizad423@gmail.com,,103
+6/25/2018,Councillor,Kitchener,6,Singh,Paul,,329,Edgewater Cres,Kitchener,ON,N2A 4M3,,,,,,,519-721-3272,,paulsinghward6@gmail.com,,104
+7/4/2018,Councillor,Kitchener,7,Ioannidis,Bil,,330,Hidden Creek Drive,Kitchener,ON,N2N 3N3,,,,,,,519-579-5398,,bil.ioannidis1@gmail.com,,105
+7/13/2018,Councillor,Kitchener,8,Baskin,James Raymond,,20,Inadale CRt,Kitchener,ON,N2M 2Z8,,,,,,,519-954-8784,519-496-5295,raybaskin13@gmail.com,jamesraybaskin.com,106
+7/10/2018,Councillor,Kitchener,9,Stark,Susan,,125,Hickson Drive,Kitchener,ON,N2B 2H8,,,,,,,519-895-3869,519-573-5554,susanastark@gmail.com,,107
+7/19/2018,Councillor,Kitchener,9,Strohack,Steve,,192,Kent Ave,Kitchener,ON,N2G 3R4,,,,,,,226-972-2251,,ward9strohack@gmail.com,,108
+7/9/2018,Councillor,Kitchener,10,Marsh,Sarah,,80,Louisa St,Kitchener,ON,N2H 5M1,,,,,,,519-807-8006,,sarah@sarahmarsh.ca,,109
+7/16/2018,WRDSB Trustee,Kitchener,,Estoesta,Samantha Marie Oliveira,,188,Breithaupt Street,Kitchener,ON,N2H 5H4,,,,,,,226-929-3050,,samantha.estoesta@gmail.com,,110
+7/11/2018,WRDSB Trustee,Kitchener,,Guo,Xiaoming,,234,Countrystone Cres,Kitchener,ON,N2N 3S1,,,,,,,519-585-0119,,guo_simon@yhoo.ca,facebook.com/VoteXiaomingForWaterloo/,111
+6/26/2018,WRDSB Trustee,Kitchener,,Hutzal,Brent,,34,Paige Street,Kitchener,ON,N2K 4P5,,,,,,,519-998-6016,,brent.hutzal@gmail.com,brent4trustee.ca,112
+7/4/2018,WRDSB Trustee,Kitchener,,Kuhn,David,2002,1,Cedarwoods Cres,Kitchener,ON,N2C 2L8,,,,,,,519-893-0433,,david@davidkuhn.ca,davidkuhn.ca,113
+7/17/2018,WRDSB Trustee,Kitchener,,Smith,Kathi,Unit B,28,Ahrens Street,Kitchener,ON,N2H 4B7,,,,,,,519-578-1547,,smithkathi@sympatico.ca,kathismth.ca,114
+7/16/2018,WRDSB Trustee,Kitchener,,Tremble,Laurie,,67,Gregg Crt,Kitchener,ON,N2A 4B9,,,,,,,519-503-1051,,tremblefortrustee@gmail.com,,115
+7/10/2018,WRDSB Trustee,Kitchener,,Waddell,Natalie,,363,Steepleridge Street,Kitchener,ON,N2P 2X4,,,,,,,519-896-7213,416-629-7309,natalie@nataliewaddell.ca,,116
+7/6/2018,WRDSB Trustee,Kitchener,,Weston,Joanne,,309,Pine Valley Drive,Kitchener,ON,N2P 2V5,,,,,,,519-574-2572,,joanneweston2018@gmail.com,joanneweston.ca,117
+7/18/2018,WRCSB Trustee,Kitchener,,Lannan,Michael David,,58,Driftwood Place,Kitchener,ON,N2N 1W3,,,,,,,519-571-8560,519-743-2100,mdlfamilylaw@gmail.com,lannanforschoolboard.ca,118
+6/25/2018,WRCSB French Trustee,Kitchener,,Petit-Pas,Dorothee,,87,Balmoral Drive,Brantford,ON,N3R 5C2,,,,,,,519-756-7749,519-865-1354,petitpas.dorothee@yahoo.ca,,119
+7/19/2018,Councillor,North Dumfries,4,Ward,Dawna,,115,Hilltop Drive,Ayr,ON,N0B 1E0,,,,,,,519-632-5278,,dawnaward4@gmail.com,,120
+7/19/2018,Councillor,North Dumfries,4,Ritchie,Neil Martin,,36,Jane Street,North Dumfries,ON,N0B 1E0,,,,,,,226-929-6348,,neilritchie4ward4@gmail.com,,121
+7/19/2018,Councillor,Cambridge,7,Coles,Ryan,17,101,Franklin Blvd,Cambridge,ON,N1R 7Y1,,,,,,,519-807-4139,519-249-9204,treecamps@gmail.com,youtube.com/c/treecamps,122
+7/20/2018,WRDSB Trustee,Waterloo,,Piatowski,Scott,,210,Rodney Street,Waterloo,ON,N2J 1G5,,,,,,,519-577-2554,,scott.piatowski@gmail.com,,123
+7/20/2018,Regional Councillor,Kitchener,Kitchener,Galloway,Tom,,160,Radcliffe Drive,Kitchener,ON,N2E 1Y5,,,,,,,519-578-2112,,tomjgalloway14@gmail.com,,124
+7/20/2018,Councillor,Cambridge,3,Hipel,Tracy,,562,Grand Valley Drive,Kitchener,ON,N3H 2S1,,,,,,,519-653-3293,,hipel4ward3preston@gmail.com,,125
+7/19/2018,Councillor,Kitchener,5,Galloway-Sealock,Kelly,,115,Eliza Avenue,Kitchener,ON,N2E 0C5,,,,,,,519-954-5130,,kelly.galloway.sealock@gmail.com,,126
+7/20/2018,WRDSB Trustee,Waterloo,,Erb,Jason,712,55,William Street East,Waterloo,ON,N2J 4Z1,,,,,,,519-722-5945,,jasonefortrustee@gmail.com,,127
+6/29/2018,Councillor,Cambridge,2,Devine,Mike,,23,Alpine Street,Cambridge,ON,N3C 2T2,,,,,,,519-573-7992,,devine.mk@gmail.com,,128
+7/20/2018,Councillor,Kitchener,3,Solanki,Paras,,110,Eden Oak Trail,Kitchener,ON,N2A 0G1,,,,,,,519-584-4974,,paraskwc@gmail.com,,129
+7/23/2018,Councillor,Woolwich,2,Schwindt,Eric,,5328,Arthur Street North,Woolwich,ON,N3B 2Z1,,,,,,,519-669-7698,519-272-3441,eschwindt@rogers.com,,130
+7/23/2018,Mayor,Kitchener,,Sookram,Narine Dat,,119,Frey Cres,Kitchener,ON,N2E 4K9,,,,,,,519-589-4485,,electnarinesookram@gmail.com,narinesookram.com,131
+7/23/2018,WRDSB Trustee,Cambridge,,Whetham,Crystal,,1798,King Street East,Cambridge,ON,N3H 3R8,,,,,,,226-755-1616,,crystalwhetham85@gmail.com,,132
+7/23/2018,Councillor,Cambridge,1,Reid,Donna,,183,Scott Road,Cambridge,ON,N3C 3K6,,,,,,,519-249-0993,,donnaereid@rogers.com,,133
+7/23/2018,Councillor,North Dumfries,4,Gillespie,Pamela,,1043,Brantford Highway,Cambridge,ON,N1R 5S6,,,,,,,519-622-2294,519-222-1227,pam.gillespie@bell.net,,134
+7/24/2018,Councillor,Waterloo,2,Tan,Xin,,671,Munich Circle,Waterloo,ON,N2V 2L6,,,,,,,519-886-0721,,xtanforw2@gmail.com,,135
+7/23/2018,Councillor,Kitchener,4,Hiller,Wes,,141,Old Carriage Drive,Kitchener,ON,N2P 1H5,,,,,,,519-500-8302,,wesroberthill@gmail.com,,136
+7/23/2018,Councillor,Kitchener,5,Fuentes,Andes,Unit B,226,Jessica Cres,Kitchener,ON,N2R 0C5,,,,,,,,,,andresfuentes.ca,137
+7/24/2018,Councillor,Kitchener,9,Driver,Tia Rebecca,,217,Glen Road,Kitchener,ON,N2M 3G3,,,,,,,519-998-4823,,driverward9@gmail.com,,138
+7/24/2018,WRDSB Trustee,Kitchener,,Khan,Rehman-Ullah,,96,Edwin Street,Kitchener,ON,N2H 4N9,,,,,,,416-710-5608,,ourchildrenmatter@aalaaconseil.ca,aalaaconseil.ca,139
+7/24/2018,Councillor,Waterloo,2,McCarthy,John Arthur,,398,Gladstone Blvd,Waterloo,ON,N2T 2J4,,,,,,,519-589-1007,519-888-9917,janeandjohnmccarthy@yahoo.ca,,140
+7/24/2018,Councillor,Cambridge,1,Crystal ,Peter,,327,Newport Drive,Cambridge,ON,N3H 5S8,,,,,,,519-841-7653,,pcrystal@rogers.com,,141
+7/24/2018,Regional Councillor,Kitchener,Kitchener,House,Jason,C17,12,Holborn Drive,Kitchener,ON,N2A 0A4,,,,,,,519-880-6117,,jasonhouse2018@gmail.com,jasonhouse.ca,142
+7/24/2018,Regional Councillor,Cambridge,Cambridge,Brunette,Rob,,34,Fairgreen close,Cambridge,ON,N1T 1T6,,,,,,,,,,,143
+7/24/2018,WRCSB Trustee,Kitchener,,Reitzel,Greg,,107,Arnold Street,New Hamburg,ON,N3A 2C6,,,,,,,519-662-3714,,greggreitzel@hotmail.com,,144
+7/19/2018,Councillor,Wilmot,1,Hallman,Angie,,1669,Pinehill ,Wilmot,ON,N3A 2Z7,,,,,,,519-696-3719,,ahallmanrmt@cwisp.ca,,145
+7/6/2018,Councillor,Wilmot,1,Junker,Al,P.O. Box 235,27,Mill Street,New Dundee,ON,N0B 2E0,,,,,,,519-696-3922,,awjtaj27@gmail.com,,146
+6/25/2018,Councillor,Wilmot,3,Badrinarayan,Kris,,52,Kropf Drive,Baden,ON,N3A 4S3,,,,,,,416-277-0969,,kris@krishnakb.ca,www.krishnakb.ca,147
+7/20/2018,Councillor,Wilmot,3,Fisher,Barry,,178,Snyders Road East,Baden,ON,N3A 2V6,,,,,,,519-634-8916,,badenoutlook@hotmail.com,,148
+6/29/2018,Councillor,Wilmot,4,Martin,Steven,,231,Peel Street,New Hamburg,ON,N3A 1E7,,231,Peel Street,New Hamburg,ON,N3A 1E7,519-662-9923,,mail@stevenmartin.ca,,149
+6/4/2018,Councillor,Wilmot,4,Murray,Mark,,74,Nithview Drive,Wilmot,ON,N3A 2H3,,,,,,,519-575-1429,,mark@murraysclothing.ca,,150
+7/19/2018,Councillor,Wilmot,4,Pfenning,Jennifer,,1044,Christner Road,Wilmot,ON,N3A 3K6,,,,,,,519-502-2582,,jenn4wilmot@gmail.com,,151
+7/24/2018,Councillor,Wellesley,2,Witmer,Mark,,149,Laurence Street,Wellesley,ON,N0B 2T0,,,,,,,519-496-1215,,mwplum@execulink.com,,152
+7/24/2018,Councillor,Wellesley,2,Neher,Herb,,2579,Hutchison road,Wellesley,ON,N0K 1L0,,,,,,,519-699-4618,,,,153
+7/25/2018,Regional Councillor,Kitchener,,Harris ,Michael D.,,924,Armenian Court,Kitchener,ON,N2P 2Y5,,,,,,,,,michael@michaeldharris.ca,,154
+7/26/2018,Regional Councillor,Waterloo,,Strickland,Sean,,538,Chancery Lane,Waterloo,ON,N2T 2N4,,,,,,,519-725-4640,,sean@seanstrickland.com,,155
+7/26/2018,Councillor,Cambridge,2,Kimsto,Jaanus,,117,Hungerford Road,Cambridge,ON,n3C 2P7,,,,,,,519-222-0238,519-658-5985,jaanuskimsto@hotmail.com,,156
+7/26/2018,Councillor,Cambridge,8,Johnson,Carla,,107,Green Bank Drive,Cambridge,ON,N1T 2B5,,,,,,,519-623-4142,519-242-8874,carla@carlajohnson.ca,http://carlajohnson.ca/,157
+7/26/2018,Mayor,Wilmot,,Jordan,John,,2791,Bleams Road,New Hamburg,ON,N3A 3J3,,,,,,,519-279-4774,,john@johnjordan.ca,,158
+7/25/2018,Councillor,Woolwich,2,Redekop,Fred,,4,Ernst Street,Elmira,ON,N3B 1K5,,,,,,,519-669-4562,519-580-9568,fred.redekop@gmail.com,,159
+7/26/2018,Councillor,Wellesley,3,Kingsbury,Grant,,146,Gerber Meadows,Wellesley,ON,N0B 2T0,,,,,,,519-505-1926,grantbk@yahoo.ca,,,160
+7/25/2018,Councillor,Waterloo,6,Campbell,Oliver,,477,Westvale Drive,Waterloo,ON,N2T 1T1,,,,,,,226-868-1075,,olivercampbell.ward6@gmail.com,,161
+7/25/2018,Councillor,Cambridge,4,Friest,Edwin,,248,Macatee Place,Cambridge,ON,n1R 7M9,Lower Apt. B,248,Macatee Place,Cambridge,ON,N1R 7M9,226-339-1407,,eddie.friest@hotmail.com,www.facebook.com/Edwin-Friest-for-Cambridge-Councillor-Ward-4,162
+7/25/2018,WRCSB Trustee,Cambridge,,Quigley,Brian,,13,Shadywood Lane,Cambridge,ON,N1R 5S2,,,,,,,519-716-6912,519-239-0925,bcquigley@sympatico.ca,,163
+7/25/2018,Councillor,Cambridge,7,Cody,Connie,,59,Carlos Crt,Cambridge,ON,N1R 8H4,,,,,,,,,ccody@ward7@gmail.com,https://sites.google.com/view/conniecody4council,164
+7/25/2018,WRDSB Trustee,Cambridge,,Watson,Cindy,,8,Arthur White Ave,Cambridge,ON,N1R 4N3,,8,Arthur White Ave,Cambridge,ON,N1R 4N3,519-622-6178,519-503-0927,watsoncindy@hotmail.com,https://www.facebook.com/cindywatsontrustee/,165
+7/25/2018,Councillor,Cambridge,2,Richardson,Jeff,,104,Calvin Court,Cambridge,ON,N3C 4J4,,,,,,,519-221-1480,,richardson4ward2@gmail.com,https://twitter.com/search?q=%40Richardson4w2&src=typd&lang=en,166
+7/25/2018,Councillor,Cambridge,8,Bartlett,Kenneth,,194,Park Ave,Cambridge,ON,n1S 3Z3,,,,,,,519-221-0714,,barlett_64@hotmail.com,,167
+7/25/2018,Councillor,Waterloo,4,Yin,Liangan,,781,Chesapeake Drive,Waterloo,ON,N2K 4G3,,,,,,,226-476-066,,yinlianganlyin@gmail.com,,168
+7/23/2018,Councillor,Waterloo,6,Hodgins,William,104,401,Hazel Street,Waterloo,ON,N2L 3P7,,,,,,,519-504-7291,,whodgins2018@gmail.com,,169
+7/26/2018,Councillor,Wellesley,3,Morris,Philip,,46,Nithbank Road,Wellesley,ON,N0B 2T0,,,,,,,226-201-1914,,phjamo@hotmail.com,,170
+7/26/2018,WRDSB Trustee,Waterloo,,Kozub,Martha,1401,191,King Street North,Waterloo,ON,N2J 1R1,1401,191,King Street North,Waterloo,ON,N2J 1R1,519-497-4099,,kozub.martha@gmail.com,,171
+7/25/2018,Councillor,Kitchener,1,Khatoon,Asia,,96,Edwin Street,Kitchener,ON,N2H 4N9,,,,,,,519-721-2905,,ouchildrenmatter@aalaaconseil.ca,aalaaconseil.ca,172
+7/25/2018,Councillor,Kitchener,3,Howe,James,,26,Chelsea Road,Kitchener,ON,N2B 1H6,,,,,,,519-589-9597,,james.howe@rogers.com,jameshowe.ca,173
+7/26/2018,Councillor,Kitchener,4,Sidhu,Sasha,,924,Foxbrook Crt,Kitchener,ON,N2P 2W1,,,,,,,519-575-3939,416-625-2158,sashasidhu2@gmail.com,,174
+7/26/2018,Councillor,Kitchener,9,Molto,Philip,,157,Glen Road,Kitchener,ON,N2M 3G3,,,,,,,226-220-1714,,philip.molto@gmail.com,,175
+7/26/2018,WRDSB Trustee,Kitchener,,Hendry,John,,24,Eliza Avenue,Kitchener,ON,N2E 0C1,,24,Eliza Avenue,Kitchener,ON,N2E 0C1,519-885-0414,,john@johnhendry.ca,,176
+7/26/2018,WRDSB Trustee,Waterloo,,Millar,Carol,,199,Driftwood Place,Kitchener,ON,N2N 1W1,,199,Driftwood Place,Kitchener,ON,N2N 1W1,519-579-0365,,cmillar0365@rogers.com,,177
+7/26/2018,Councillor,Waterloo,7,Sproule,Elizabeth,,268,Mary Street,Waterloo,ON,N2J 1S6,,,,,,,226-972-9391,,elizabethsprouleward7@gmail.com,,178
+7/26/2018,Third Party Registration,Cambridge,"Yes, Cambridge!",Sommerville,Sharon,,34,Aberdeen Road,Kitchener,ON,N2M 2Y5,,,,,,,519-721-9661,519-208-7929,sharonsommerville@gmail.com,,179
+7/26/2018,Councillor,Cambridge,2,Brown,Jay Edward,,61,Queen Street West,Cambridge,ON,N3C 1G2,,,,,,,519-221-156,,jb1970@live.ca,,180
+7/26/2018,Councillor,Cambridge,7,Botelho,Cody Allen,,16,Athlone Road,Cambridge,ON,N1R 1H8,,,,,,,,,,,181
+7/26/2018,Councillor,Cambridge,,Bercrowski,Patricia,,240,Schlueter Street,Cambridge,ON,N3H 4B5,,,,,,,519-841-8908,519-277-9300,patriciabercowski50@gmail.com,,182
+7/26/2018,Councillor,North Dumfries,2,Harrison,Sheila,,1174,Brantford Highway,North Dumfries,ON,N1R 5S6,,1174,Brantford Highway,North Dumfries,ON,N1R 5S6,519-716-7022,519-622-1214,,,183
+7/26/2018,WRDSB Trustee,Cambridge,,Didexzek,John J. ,,279,Arthur Fach Drive,Cambridge,ON,N1T 2G3,,279,Arthur Fach Drive,Cambridge,ON,N1T 2G3,226-989-1194,,johngolfer@sympatico.ca,,184
+7/27/2018,Regional Chair,Waterloo,,Aissa,Jay,,453,Knightsbridge Crt,Waterloo,ON,N2T 2G5,,,,,,,519-747-3970,,jay@jayfencing.com,,185
+7/27/2018,Regional Councillor,Cambridge,Cambridge,Florence,John,6-101,250,Dundas Street South,Cambridge,ON,N1R 8A8,,,,,,,226-755-2382,,JohnFlorenceNOW@gmail.com,,186
+7/27/2018,Mayor,Cambridge,,Tucci,Ben,118B,19,Thorne Street,Cambridge,ON,N1R 1S3,,,,,,,519-841-1917,,tucci.ben@gmail.com,,187
+7/27/2018,Councillor,Cambridge,5,Wagner,Brett,,124,Churchill Drive,Cambridge,ON,N1S 1S2,,,,,,,226-791-2502,,brett.wagner.web@gmail.com,,188
+7/27/2018,Councillor,Waterloo,1,Neufeld,Rainer,,517,Westvale Drive,Waterloo,ON,N2T 2B6,,,,,,,519-888-7110,,rainern@remax.net,,189
+7/27/2018,Regional Councillor,Waterloo,Waterloo,Zubi,Beisan,4,216,King Street South,Waterloo,ON,N2J 1R3,,,,,,,226-789-9824,,vote@beisan.ca,beisan.ca,190
+7/27/2018,Regional Councillor,Kitchener,Kitchener,Mazhar,Fauzia,,220,Carrige Way South,Waterloo,ON,N2G 0L6,205,259,King Street West,Kitchener,ON,N2G 1B1,519-576-5059,,fauziamahar65@gmail.com,,191
+7/27/2018,Councillor,Wilmot,3,Fung,Elliot,,205,Schneller Drive,Baden,ON,N3A 2K9,,,,,,,226-339-3587,,elliotgfung@gmail.com,,192
+7/27/2018,Mayor,Kitchener,,Steinman,Myron Daniel,C3,170,Cherry Street,Kitchener,ON,N2G 5A1,,,,,,,,,,,193
+7/27/2018,Councillor,Kitchener,1,Drasdo,Marcus,1,159,Palmer Ave,Kitchener,ON,N2G 3P5,,,,,,,519-635-6424,,marcus@osvisual.com,marcusdrasdo.com,194
+7/26/2018,Councillor,Kitchener,1,Stretch,Stephanie,1,118,Young Street,Kitchener,ON,N2H 4Z4,,,,,,,519-277-4477,,steph.e.stretch@gmail.com,,195
+7/27/2018,Councillor,Kitchener,3,Souiliere,Robert,51,35,Linden Ave,Kitchener,ON,N2G 4T6,,,,,,,226-606-7589,,rsouilier@gmail.com,,196
+7/27/2018,Councillor,Kitchener,4,Carbray,Florence,7,900,Doon Village Road,Kitchener,ON,N2P 1A4,,,,,,,519-748-1821,519-589-96337,carbrayward4@gmail.com,florencecarbray.ca,197
+7/27/2018,Councillor,Kitchener,6,Grover,Narendra,,119,Donnenwerth Drive,Kitchener,ON,N2E 4C9,,,,,,,226-600-7309,,dr.nkgrover@gmail.com,,198
+7/27/2018,Councillor,Kitchener,7,Domagala,Hanna,,619,Westheights Drive,Kitchener,ON,N2N 1R2,,,,,,,,,,hannadomagla.ca,199
+7/26/2018,Councillor,Kitchener,7,Patel,Dharmesh,14,28,Doon Mills Drive,Kitchener,ON,N2P 2W9,,,,,,,905-595-6493,647-376-6493,dhshpatel@yahoo.com,,200
+7/27/2018,WRCSB Trustee,Kitchener,,Weiler,Tracey,,107,Kestrel Street,Kitchener,ON,N2K 4K1,,,,,,,519-504-1274,,tracey@traceyweiler.com,traceyweiler.com,201
+7/27/2018,WRDSB Trustee,Cambridge,,Alli,Kemesha,8,1195,King Street East,Cambridge,ON,N3H 5N5,,,,,,,416-825-0012,,kemesha.alli@gmail.com,,202
+7/27/2018,Mayor,kitchener,,Marek,Jiri,,29,Yellow Birch Drive,Kitchener,ON,N2N 2M1,,,,,,,,,,,203
+7/27/2018,Councillor,North Dumfries,3,Clarke,John,,1195,Shouldice Side Road,North Dumfries,ON,N1R 5S5,,,,,,,905-512-5120,,johnc361947@yahoo.ca,,204
+7/27/2018,Councillor,North Dumfries,3,Cabral,Paul H,,1243,Roseville road,North Dumfries,ON,N1R 5S3,,,,,,,2264442556,,PHC@sympatico.ca,,205
