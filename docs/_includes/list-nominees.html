@@ -18,7 +18,10 @@
     <ul>
     {% for nominee in sorted-nominees %}
       <li>
-      {% if nominee.Website -%}
+      {% if nominee.Withdrawn -%}
+        <strong>WITHDRAWN: </strong>
+      {%- endif -%}
+      {%- if nominee.Website -%}
         {% comment %}
         Assume @name means Twitter and not Instagram.
         This should probably be its own function.
