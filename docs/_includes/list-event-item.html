@@ -7,9 +7,9 @@
         {{ include.event.DateTimeStart | date: "%a, %b %-d, %l:%M%P" }}:
         {% if include.event.URL -%}
           <a href="{{ include.event.URL }}">{{ include.event.Title }}</a>
-        {% else -%}
+        {%- else -%}
           <strong>{{ include.event.Title }}</strong>
-        {% endif -%}
+        {%- endif -%}
 
         {%- if include.event.Location -%}
           , {{ include.event.Location }}
