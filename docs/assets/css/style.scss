@@ -3,6 +3,8 @@
 
 @import "{{ site.theme }}";
 
+
+/* ---------- MAIN MENU STYLING --------- */
 #main-menu a { 
   color:#fff;
 } 
@@ -21,6 +23,9 @@
   padding-left: 2.5em;
   padding-right: 2.5em;
 }
+
+
+/* ----------- COLLAPSABLE LISTS --------- */
 
 /* Make buttons inline with their headings */
 button.toggle-button { 
@@ -45,7 +50,6 @@ button.toggle-button:hover {
 } 
 
 
-
 h2.inline, h3.inline, h4.inline {
   display: inline;
 }
@@ -61,6 +65,15 @@ div.race-wrapper {
   margin-bottom: 3em;
 }
 
+/* Move continuation UL elements up so they look 
+ * like they merged with the previous lists.
+ */
+ul.continue { 
+  margin-top: -15px;
+}
+
+/* ------------ FOOTER STYLING ----------- */
+
 /* Make footer more appealing visually. */
 div.footer-columns { 
   column-count: 3;
@@ -72,6 +85,9 @@ div.footer-columns p {
   margin: 0 0 0.5ex 0;
 }
 
+
+/* ---------- EMAIL OBFUSCATION ----------- */
+
 /* Email obfuscation, stolen from CivicTechWR page. */
 my-email::after {
   content: attr(data-domain);
@@ -81,6 +97,7 @@ my-email::before {
   content: attr(data-user) "\0040";
 }
 
+/* --------- FRONT PAGE ------------- */
 
 /* Make big bold text */
 p.bigtext { 
