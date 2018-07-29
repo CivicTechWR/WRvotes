@@ -5,3 +5,9 @@ show_downloads: false
 
 empty-array: []
 
+num_teasers_events_multi_candidates: 3
+num_teasers_events_specific: 0
+num_teasers_events_generic: 5
+num_teasers_news: 2
+num_teasers_surveys: 2
+
