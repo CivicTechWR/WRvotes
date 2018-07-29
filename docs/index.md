@@ -1,7 +1,7 @@
 
 <p class="bigtext">What? Another election?!</p>
 
-Yep. On **October 22** there will be a municipal election in Waterloo
+Yep. On **October 22, 2018** there will be a municipal election in Waterloo
 region. 
 
 Municipal elections can be confusing.
@@ -24,7 +24,7 @@ quickly.
 Also, check 
 out our [resource pages](./resources). They contain lots of good
 background information about the election. If you don't know what is
-going on, or why you should care, you will find some answers here. 
+going on, or why you should care, you will find answers here. 
 
 
 <script src="https://embed.github.com/view/geojson/CivicTechWR/WRvotes/master/docs/_data/sync/WardBoundaries.geojson"></script>
