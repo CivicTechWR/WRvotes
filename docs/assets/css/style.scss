@@ -54,6 +54,11 @@ h2.inline, h3.inline, h4.inline {
   display: inline;
 }
 
+/* h4 and h3 do not look sufficiently different. */
+h4, h4.inline { 
+  font-size: smaller;
+} 
+
 /* Stop buttons from crashing into each other */
 div.spacer { 
   display: block;
@@ -104,3 +109,5 @@ p.bigtext {
   text-align: center;
   font-size: x-large;
 } 
+
+
