@@ -18,7 +18,7 @@
        | where:"PositionUniqueName",ward-id -%}
     {%- if ward-info-list.size > 0 -%}
       {%- assign ward-info = ward-info-list | first -%}
-      <title>{{ ward-info.PositionDesc }} | {{ site-title }}</title>
+      <title>{{ ward-info.PositionDesc }} | {{ site.title }}</title>
     {%- else -%} 
       <title>{{ site.title }} | boo!</title>
     {%- endif -%}
