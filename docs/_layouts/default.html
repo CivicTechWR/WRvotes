@@ -14,9 +14,10 @@
       
     {% assign ward-id = page.url | replace: '.html', '' 
        | split: '/' | last -%}
-    {% assign ward-info = site.data.internal.position-tags 
-       | where:"PositionUniqueName",ward-id | first -%}
-    {%- if ward-info -%}
+    {% assign ward-info-list = site.data.internal.position-tags 
+       | where:"PositionUniqueName",ward-id -%}
+    {%- if ward-info-list.size > 0 -%}
+      {%- assign ward-info = ward-info-list | first -%}
       <title>{{ ward-info.PositionDesc }} | {{ site-title }}</title>
     {%- else -%} 
       <title>{{ site.title }} | boo!</title>
