@@ -9,9 +9,18 @@
 
 {% seo title=false %}
   {% if page.title -%}
-    <title>{{ page.title }} | {{ site.title }} | yay!</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
   {%- else -%}
-    <title>{{ site.title }} | boo!</title>
+      
+    {% assign ward-id = page.url | replace: '.html', '' 
+       | split: '/' | last -%}
+    {% assign ward-info = site.data.internal.position-tags 
+       | where:"PositionUniqueName",ward-id | first -%}
+    {%- if ward-info -%}
+      <title>{{ ward-info.PositionDesc }} | {{ site-title }}</title>
+    {%- else -%} 
+      <title>{{ site.title }} | boo!</title>
+    {%- endif -%}
   {%- endif -%}
   </head>
 
