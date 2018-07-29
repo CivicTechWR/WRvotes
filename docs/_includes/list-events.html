@@ -23,25 +23,13 @@
       header="Upcoming All-Candidates Events"
       teaser-limit=site.teaser_limit_events_multi_candidate 
       race-id=include.race-id %}
-    
   {% endif %}
 
   {% if events-other.size > 0 %}
-
-    {% assign events-sorted = events-other
-      | sort: "DateTimeStart" %}
-
-    <div class="spacer">
-      <h4 class="inline">Other Events</h4>
-      
-      <ul id="{{ include.race-id | slugify }}-events"
-         class="togglable event-list">
-      {% for event in events-sorted %}
-        {% include list-event-item.html event=event %}
-      {% endfor %}
-      </ul>
-    </div>
-
-    
+    {% include list-event-block.html
+      event-list=events-other
+      header="Other Events"
+      teaser-limit=site.teaser_limit_events_specific
+      race-id=include.race-id %}
   {% endif %}
 
