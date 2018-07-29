@@ -14,7 +14,8 @@
         {% include list-event-item.html event=event %}
 
         {% assign item-count = item-count | plus:1 %}
-        {% if item-count == include.teaser-limit %}
+        {% if item-count == include.teaser-limit 
+              and include.event-list.size > include.teaser-limit %}
           </ul>
           <ul id="{{ include.race-id | slugify }}-{{ include.header | slugify }}-events-toggle"
              class="togglable event-list continue">
