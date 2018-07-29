@@ -1,0 +1,13 @@
+    {% assign events-sorted = include.event-list 
+      | sort: "DateTimeStart" %}
+
+    <div class="spacer">
+      <h4 class="inline">{{ include.header }}</h4>
+      
+      <ul id="{{ include.race-id | slugify }}-events"
+         class="togglable event-list">
+      {% for event in events-sorted %}
+        {% include list-event-item.html event=event %}
+      {% endfor %}
+      </ul>
+    </div>
