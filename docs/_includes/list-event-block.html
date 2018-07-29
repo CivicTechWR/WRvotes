@@ -5,7 +5,7 @@
       <h4 class="inline">{{ include.header }}</h4>
       
       {% assign item-count = 0 %}
-      <ul id="{{ include.race-id | slugify }}{{ include.header | slugify}}-events"
+      <ul id="{{ include.race-id | slugify }}-{{ include.header | slugify}}-events"
          class="event-list {% if include.teaser-limit == 0 -%}
          togglable
          {%- endif -%}
@@ -13,10 +13,10 @@
       {% for event in events-sorted %}
         {% include list-event-item.html event=event %}
 
-        {% increment item-count %}
+        {% assign item-count = item-count | plus:1 %}
         {% if item-count == include.teaser-limit %}
           </ul>
-          <ul id="{{ include.race-id | slugify }}{{ include.header | slugify }}-events-toggle"
+          <ul id="{{ include.race-id | slugify }}-{{ include.header | slugify }}-events-toggle"
              class="togglable event-list continue">
         {% endif %}
 
