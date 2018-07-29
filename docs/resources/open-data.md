@@ -10,7 +10,7 @@ The source code for this site is hosted on Github:
 Even if the waterlooregionvotes.org domain expires, you should be able
 to access the site via <https://civictechwr.github.io/WRvotes>.
 
-Data for this site comes via a poor-man's database constructed via CSV
+Data for this site comes via a poor-person's database constructed via CSV
 files: 
 
 - [nominees.csv](https://github.com/CivicTechWR/WRvotes/blob/master/docs/_data/sync/nominees.csv)
