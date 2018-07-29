@@ -18,7 +18,7 @@
     <ul>
     {% for nominee in sorted-nominees %}
       <li>
-      {% if nominee.Withdrawn -%}
+      {% if nominee.Withdrawn == 'Y' -%}
         <strong>WITHDRAWN: </strong>
       {%- endif -%}
       {%- if nominee.Website -%}
@@ -44,7 +44,7 @@
         {{ nominee.Given_Names}} {{ nominee.Last_Name }}
       {%- endif -%}
 
-      {%- unless nominee.Withdrawn -%}
+      {%- unless nominee.Withdrawn == 'Y' -%}
         {%- if nominee.Phone1 -%}
           , {{ nominee.Phone1 }}
         {%- endif -%}
