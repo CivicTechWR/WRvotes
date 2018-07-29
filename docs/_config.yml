@@ -5,8 +5,8 @@ show_downloads: false
 
 empty-array: []
 
-teaser_limit_events_multi_candidates: 3
-teaser_limit_events_specific: 0
+teaser_limit_events_multi_candidate: 3
+teaser_limit_events_specific: 2
 teaser_limit_events_generic: 5
 teaser_limit_news: 2
 teaser_limit_surveys: 2
