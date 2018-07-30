@@ -90,6 +90,15 @@ div.footer-columns p {
   margin: 0 0 0.5ex 0;
 }
 
+/* Don't underline links unless they are highlighted */
+div.footer-columns a { 
+  text-decoration: none;
+} 
+
+div.footer-columns a:hover { 
+  text-decoration: underline;
+}
+
 
 /* ---------- EMAIL OBFUSCATION ----------- */
 
