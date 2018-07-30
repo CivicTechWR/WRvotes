@@ -1,4 +1,6 @@
-
+---
+title: Home
+---
 <p class="bigtext">What? Another election?!</p>
 
 Yep. On **October 22, 2018** there will be a municipal election in Waterloo
