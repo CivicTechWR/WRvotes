@@ -4,14 +4,27 @@
     {% assign item-list-sorted = (include.item-list | sort: "PubDate")
       | reverse %}
 
+    {% assign item-count = 0 %}
+
+
     <ul id="{{ include.race-id | slugify }}-{{ include.type }}"
-        class="togglable {{ include.type }}-list">
+        class="{{ include.type }}-list {% if include.teaser-limit == 0 -%}
+        togglable
+        {%- endif -%}">
     {% for item in item-list-sorted %}
       
       <li><a href="{{ item.URL }}">{{ item.Title }}</a>,
       {{ item.Publication }}, 
       {{ item.PubDate | date: "%B %-d, %Y" }}.
       </li>
+
+      {% assign item-count = item-count | plus:1 %}
+      {% if item-count == include.teaser-limit
+            and include.item-list.size > include.teaser-limit %}
+        </ul>
+        <ul id="{{ include.race-id | slugify }}-{{ include.type }}-toggle"
+           class="togglable {{ include-type }}-list continue">
+      {% endif %}
 
     {% endfor %}
     </ul>

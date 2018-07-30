@@ -8,6 +8,6 @@ empty-array: []
 teaser_limit_events_multi_candidate: 7
 teaser_limit_events_specific: 2
 teaser_limit_events_generic: 5
-teaser_limit_news: 2
+teaser_limit_news: 1
 teaser_limit_surveys: 5
 
