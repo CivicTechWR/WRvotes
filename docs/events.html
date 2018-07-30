@@ -22,10 +22,10 @@ tuned!
   | where_exp:"ev", "ev.DateTimeStart >= date-now" %}
 
 {% assign events-referendum = events-upcoming
-  | where_exp:"ev", "ev.PositionIDList contains "Cambridge-Referendum" %}
+  | where_exp:"ev", "ev.PositionIDList contains 'Cambridge-Referendum'" %}
 
 {% assign events-info = events-upcoming
-  | where_exp:"ev", "ev.PositionIDList contains "Election-Info" %}
+  | where_exp:"ev", "ev.PositionIDList contains 'Election-Info'" %}
 
 
 
