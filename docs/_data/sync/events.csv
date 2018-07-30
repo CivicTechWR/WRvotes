@@ -1,6 +1,6 @@
 RowID,DateTimeStart,Title,Location,ForMultipleCandidates,CancelledOrRescheduled,PositionIDList,URL,Notes
 2,2018-10-10T18:30,Regional Chair All-Candidates Meeting,"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Regional-Chair,https://www.theworkingcentre.org/election2018,Organized by The Working Centre.
-9,2018-09-10 18:00,City of Cambridge Voter Information Session,"Cambridge City Hall (Bowman Room), 50 Dickson Street, Cambridge, Ontario",,,"Regional-Chair, Regional-Cambridge, Cambridge-Mayor, Cambridge-Ward-01, Cambridge-Ward-02, Cambridge-Ward-03, Cambridge-Ward-04, Cambridge-Ward-05, Cambridge-Ward-06, Cambridge-Ward-07, SchoolBoard-Public-English-Cambridge-NorthDumfries, SchoolBoard-Catholic-English-Cambridge-NorthDumfries, SchoolBoard-Catholic-French, SchoolBoard-Public-French",https://www.cambridge.ca/en/your-city/information-for-voters.aspx,
+9,2018-09-10 18:00,City of Cambridge Voter Information Session,"Cambridge City Hall (Bowman Room), 50 Dickson Street, Cambridge, Ontario",,,Election-Info,https://www.cambridge.ca/en/your-city/information-for-voters.aspx,
 11,2018-08-01 18:30,Rob Deutschmann Town Hall: Wellesley,"Wellesley Recreation Complex, Wellesley",,,Regional-Chair,https://www.robforchair.ca/town-hall-meetings/,
 12,2018-08-08 18:30,Rob Deutschmann Town Hall: Woolwich,"Lions Club Hall, 41 South Street W, Elmira",,,Regional-Chair,https://www.robforchair.ca/town-hall-meetings/,
 13,2018-08-22 18:30,Rob Deutschmann Town Hall: Wilmot,"Wilmot Community Centre, Wayne Roth Meeting Room, New Hamburg",,,Regional-Chair,https://www.robforchair.ca/town-hall-meetings/,
@@ -12,8 +12,8 @@ RowID,DateTimeStart,Title,Location,ForMultipleCandidates,CancelledOrRescheduled,
 19,2018-10-03 18:30,Rob Deutschmann Town Hall: Waterloo,"RIM Park, Room 104, 2001 University Avenue E, Waterloo",,,Regional-Chair,https://www.robforchair.ca/town-hall-meetings/,
 20,2018-10-10 18:30,Rob Deutschmann Town Hall: Cambridge,"Preston Memorial Auditorium, 1458 Hamilton Street, Cambridge",,,Regional-Chair,https://www.robforchair.ca/town-hall-meetings/,
 21,2018-10-17 18:30,Rob Deutschmann Town Hall: Kitchener,"Lion's Arena, 20 Rittenhouse Road, Kitchener",,,Regional-Chair,https://www.robforchair.ca/town-hall-meetings/,
-22,2018-08-14 18:00,Communitech Summer School: Civics 101,"Communitech Hub, 151 Charles Street West, Kitchener",,,"Regional-Chair, Regional-Cambridge, Cambridge-Mayor, Cambridge-Ward-01, Cambridge-Ward-02, Cambridge-Ward-03, Cambridge-Ward-04, Cambridge-Ward-05, Cambridge-Ward-06, Cambridge-Ward-07, SchoolBoard-Public-English-Cambridge-NorthDumfries, SchoolBoard-Catholic-English-Cambridge-NorthDumfries, SchoolBoard-Catholic-French, SchoolBoard-Public-French",https://www.eventbrite.ca/e/communitech-summer-school-civics-101-tickets-47990534982,
-23,2018-08-05 14:00,Peter Meier Meet & Greet,Tim Horton's Ottawa Street (Eastwood Plaza),,,Kitchener-Ward-10,http://petermeier.ca/lets-connect/,
-24,2018-08-12 14:00,Peter Meier Meet & Greet,Smile Tiger Coffee Roasters,,,Kitchener-Ward-10,http://petermeier.ca/lets-connect/,
-25,2018-08-14 14:00,Peter Meier Meet & Greet,Nova Era Bakery,,,Kitchener-Ward-10,http://petermeier.ca/lets-connect/,
-26,2018-09-26 19:00,Kitchener Ward 9 All Candidates Debate,Victoria Park Pavillion,Y,,Kitchener-Ward-09,https://www.facebook.com/CherryParkNeighbourhood/posts/2284547724894154,Mail questions to: cpna@execulink.com
+22,2018-08-14 18:00,Communitech Summer School: Civics 101,"Communitech Hub, 151 Charles Street West, Kitchener",,,Election-Info,https://www.eventbrite.ca/e/communitech-summer-school-civics-101-tickets-47990534982,
+23,2018-08-05 14:00,Peter Meier Meet & Greet,"Tim Horton's Ottawa Street (Eastwood Plaza), Kitchener",,,Kitchener-Ward-10,http://petermeier.ca/lets-connect/,
+24,2018-08-12 14:00,Peter Meier Meet & Greet,"Smile Tiger Coffee Roasters, Kitchener",,,Kitchener-Ward-10,http://petermeier.ca/lets-connect/,
+25,2018-08-14 14:00,Peter Meier Meet & Greet,"Nova Era Bakery, Kitchener",,,Kitchener-Ward-10,http://petermeier.ca/lets-connect/,
+26,2018-09-26 19:00,Kitchener Ward 9 All Candidates Debate,"Victoria Park Pavilion, Victoria Park, Kitchener",Y,,Kitchener-Ward-09,https://www.facebook.com/CherryParkNeighbourhood/posts/2284547724894154,Mail questions to: cpna@execulink.com
