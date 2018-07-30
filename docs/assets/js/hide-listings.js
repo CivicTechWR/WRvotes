@@ -70,7 +70,7 @@ $( document ).ready(function() {
   // Insert buttons everywhere!
   $(".togglable").each( add_button_to_parent );
 
-  $(".togglable").each( toggle_listing ("#" + this.id )); 
+  // $(".togglable").each( toggle_listing ("#" + this.id )); 
 
   $(".toggle-button").on("click", 
     toggle_listing ("#" + e.target.id ));
