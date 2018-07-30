@@ -42,7 +42,7 @@ $( document ).ready(function() {
              + 'class="toggle-button test'
              + ' ' + classes_to_add 
              + '">'
-             + 'More '
+             + 'Init '
              + get_description( '#' + target )
              + '</button>';
     $(this).parent().prepend(retval);
@@ -72,7 +72,8 @@ $( document ).ready(function() {
 
   // $(".togglable").each( toggle_listing ("#" + this.id )); 
 
-  $(".toggle-button").on("click", 
-    toggle_listing ("#" + e.target.id ));
+  $(".toggle-button").on("click", function (e) { 
+      toggle_listing ("#" + e.target.id );
+  });
 
 });
