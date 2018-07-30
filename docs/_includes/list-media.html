@@ -15,20 +15,21 @@
   {% endfor %}
 
   {% if survey-list.size > 0 %}
-    <div class="spacer">
-      <h4 class="inline">Questionnaires and 
-         Meeting Recordings</h4>
 
-      {% include list-media-items.html item-list=survey-list
-        race-id=include.race-id type="survey" %}
-    </div>
+    {% include list-media-items.html 
+      item-list=survey-list
+      race-id=include.race-id 
+      type="survey" 
+      heading="Questionnaires and Meeting Recordings" 
+      teaser-limit=site.teaser_limit_surveys %}
   {% endif %}
 
   {% if news-list.size > 0 %}
-    <div class="spacer">
-      <h4 class="inline">News Items</h4>
 
-      {% include list-media-items.html item-list=news-list 
-        race-id=include.race-id type="news" %}
-    </div>
+    {% include list-media-items.html 
+      item-list=news-list 
+      race-id=include.race-id 
+      type="news" 
+      heading="News Items"
+      teaser-limit=site.teaser_limit_news %}
   {% endif %}
