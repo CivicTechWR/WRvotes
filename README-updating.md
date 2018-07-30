@@ -17,6 +17,10 @@ site. They have the following properties:
 - Tags should be unique across the site. Each tag should refer to one
   race uniquely.
 
+Positions for ward councils in each municipality are special. They are
+associated with a municipality (a township or one of the three
+cities). In Waterloo Region a ward is sufficient to identify all the
+races in that region. 
 
 Time and Date formats
 ---------------------
@@ -59,21 +63,6 @@ tags are entered (but there ought to be).
 When a candidate has been added correctly to this file, the candidate
 lists on the website should be auto-updated. 
 
-TODO: Include email addresses and phone numbers for the candidates. 
-
-
-Position Tags
--------------
-
-Every candidate running for office has a position. Every position has
-an associated tag, which must be one of the tags in
-`_data/internal/position-tags.csv` . If you want to add a new
-position, you must update this CSV file. 
-
-Positions for ward councils in each municipality are special. They are
-associated with a municipality (a township or one of the three
-cities). In Waterloo Region a ward is sufficient to identify all the
-races in that region. 
 
 Adding Media Entries
 --------------------
@@ -125,3 +114,7 @@ buttons will show up to hide and unhide that element.
 - There is code in the javascript which changes the labels of the
   button, depending on which classes are included for the button. If
   no classes match the word "Results" is used.
+- All togglable entries are set to collapsed by default
+- Many lists will show some entries when collapsed. There is special
+  code to sneakily generate multiple `ul` tags for this: see
+  `_includes/list-event-block.html` for an example.
