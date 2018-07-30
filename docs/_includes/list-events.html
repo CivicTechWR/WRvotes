@@ -9,23 +9,27 @@
     date component is the same. 
   {% endcomment %}
   {% assign date-now = site.time | date: "%F" %}
-  {% assign events-filtered = (events-list 
-    | where_exp:"ev", "ev.DateTimeStart >= date-now")
+  {% assign events-upcoming = (events-list 
+    | where_exp:"ev", "ev.DateTimeStart >= date-now") %}
+  {% assign events-multicandidate = events-upcoming
     | where_exp:"ev", "ev.ForMultipleCandidates == 'Y'" %}
+  {% assign events-other = events-upcoming
+    | where_exp:"ev", "ev.ForMultipleCandidates != 'Y'" %}
 
-  {% if events-filtered.size > 0 %}
 
-    {% assign events-sorted = events-filtered | sort: "DateTimeStart" %}
-
-    <div class="spacer">
-      <h4 class="inline">Upcoming All-Candidates Events</h4>
-      
-      <ul id="{{ include.race-id | slugify }}-events"
-         class="togglable event-list">
-      {% for event in events-sorted %}
-        {% include list-event-item.html event=event %}
-      {% endfor %}
-      </ul>
-    </div>
-    
+  {% if events-multicandidate.size > 0 %}
+    {% include list-event-block.html
+      event-list=events-multicandidate
+      header="Upcoming All-Candidates Events"
+      teaser-limit=site.teaser_limit_events_multi_candidate 
+      race-id=include.race-id %}
   {% endif %}
+
+  {% if events-other.size > 0 %}
+    {% include list-event-block.html
+      event-list=events-other
+      header="Other Events"
+      teaser-limit=site.teaser_limit_events_specific
+      race-id=include.race-id %}
+  {% endif %}
+

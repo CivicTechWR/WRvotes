@@ -7,7 +7,22 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-{% seo %}
+{% seo title=false %}
+  {% if page.title -%}
+    <title>{{ page.title }} | {{ site.title }}</title>
+  {%- else -%}
+      
+    {% assign ward-id = page.url | replace: '.html', '' 
+       | split: '/' | last -%}
+    {% assign ward-info-list = site.data.internal.position-tags 
+       | where:"PositionUniqueName",ward-id -%}
+    {%- if ward-info-list.size > 0 -%}
+      {%- assign ward-info = ward-info-list | first -%}
+      <title>{{ ward-info.PositionDesc }} | {{ site.title }}</title>
+    {%- else -%} 
+      <title>{{ site.title }} | boo! no title!</title>
+    {%- endif -%}
+  {%- endif -%}
   </head>
 
   <body>
