@@ -1,8 +1,16 @@
     {% assign events-sorted = include.event-list 
       | sort: "DateTimeStart" %}
 
+    {% if include.reverse-sort %}
+      {% assign events-sorted = events-sorted | reverse %}
+    {% endif %}
+
     <div class="spacer">
-      <h4 class="inline">{{ include.header }}</h4>
+      {% if include.big-header %}
+        <h2 class="inline">{{ include.header }}</h2>
+      {% else %}
+        <h4 class="inline">{{ include.header }}</h4>
+      {% endif %}
       
       {% assign item-count = 0 %}
       <ul id="{{ include.race-id | slugify }}-{{ include.header | slugify}}-events"
@@ -11,7 +19,25 @@
          {%- endif -%}
        ">
       {% for event in events-sorted %}
-        {% include list-event-item.html event=event %}
+
+        <li>
+        {% if event.CancelledOrRescheduled == 'Cancelled' %}
+          <strong>CANCELLED: </strong>
+        {% elsif event.CancelledOrRescheduled == 'Rescheduled' %}
+          <strong>RESCHEDULED: </strong>
+        {% endif %}
+        {{ event.DateTimeStart | date: "%a, %b %-d, %l:%M%P" }}:
+        {% if event.URL -%}
+          <a href="{{ event.URL }}">{{ event.Title }}</a>
+        {%- else -%}
+          <strong>{{ event.Title }}</strong>
+        {%- endif -%}
+
+        {%- if event.Location -%}
+          , {{ event.Location }}
+        {%- endif -%}
+        </li>
+
 
         {% assign item-count = item-count | plus:1 %}
         {% if item-count == include.teaser-limit 

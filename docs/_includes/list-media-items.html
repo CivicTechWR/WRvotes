@@ -1,6 +1,7 @@
 
  <div class="spacer">
     <h4 class="inline">{{ include.header }}</h4>
+
     {% assign item-list-sorted = (include.item-list | sort: "PubDate")
       | reverse %}
 

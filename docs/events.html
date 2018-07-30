@@ -19,24 +19,18 @@ tuned!
 
 
 <div class="event-wrapper" id="event-wrapper-upcoming">
-  <h2 class="inline">Upcoming Events</h2>
 
   {% assign events-upcoming = all-events  
     | where_exp:"ev", "ev.DateTimeStart >= date-now" %}
 
   {% if events-upcoming.size > 0 %}
-    {% assign events-sorted = events-upcoming | sort: "DateTimeStart" %}
-     
-    <ul class="togglable events-upcoming" id="events-upcoming-list">
-      {% for event in events-sorted %}
-        {% include list-event-item.html event=event %}
-      {% endfor %}
-    </ul>
 
-  {% else %}
-    <p>
-    Whoops! There appear to be no upcoming events. 
-    </p>
+    {% include list-event-block.html
+      event-list=events-upcoming
+      header="Upcoming Events"
+      teaser-limit=site.teaser_limit_events_multi_candidate
+      race-id=include.race-id 
+      big-header=true %}
   {% endif %}
 </div>
 
