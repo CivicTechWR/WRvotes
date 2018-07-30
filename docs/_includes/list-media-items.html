@@ -9,8 +9,8 @@
 
     <ul id="{{ include.race-id | slugify }}-{{ include.type }}"
         class="{{ include.type }}-list {% if include.teaser-limit == 0 -%}
-        togglable
-        {%- endif -%}">
+        togglable{%- endif -%}">
+
     {% for item in item-list-sorted %}
       
       <li><a href="{{ item.URL }}">{{ item.Title }}</a>,
@@ -23,7 +23,7 @@
             and include.item-list.size > include.teaser-limit %}
         </ul>
         <ul id="{{ include.race-id | slugify }}-{{ include.type }}-toggle"
-           class="togglable {{ include-type }}-list continue">
+           class="togglable {{ include.type }}-list continue">
       {% endif %}
 
     {% endfor %}
