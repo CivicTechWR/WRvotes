@@ -24,7 +24,6 @@ $( document ).ready(function() {
     return desc;
   } // get_description  
 
-  //$.fn.add_button_to_parent = function () { 
   function add_button_to_parent ( ) { 
     var target =  $(this).attr('id');
     var classes = $(this).attr('class').split(/\s+/);
@@ -43,33 +42,37 @@ $( document ).ready(function() {
              + 'class="toggle-button test'
              + ' ' + classes_to_add 
              + '">'
-             + 'Hide '
+             + 'More '
              + get_description( '#' + target )
              + '</button>';
     $(this).parent().prepend(retval);
   };
+
+  function toggle_listing ( target ) { 
+
+    // How the buttons should be labelled, with 
+    // "More" or "Fewer" prepended.
+    var div_description = get_description( target );
+
+    if ($(target).hasClass('hidden')) {
+      $(target).removeClass('hidden');
+      $(target).text("Fewer " + div_description); 
+      $(target + " ~ .togglable").show();
+    } else {
+      $(target).addClass('hidden');
+      $(target).text("More " + div_description);
+      $(target + " ~ .togglable").hide();
+    }
+  }; // end toggle_listing
 
   /* ----- INIT CODE ------ */
 
   // Insert buttons everywhere!
   $(".togglable").each( add_button_to_parent );
 
-  $(".toggle-button").on("click", function(e) {
-    var target = "#" + e.target.id;
+  $(".togglable").each( toggle_listing ("#" + this.id )); 
 
-    // How the buttons should be labelled, with 
-    // "show" or "hide" prepended.
-    var div_description = get_description( target );
-
-    if ($(target).hasClass('hidden')) {
-      $(target).removeClass('hidden');
-      $(target).text("Hide " + div_description); 
-      $(target + " ~ .togglable").show();
-    } else {
-      $(target).addClass('hidden');
-      $(target).text("Show " + div_description);
-      $(target + " ~ .togglable").hide();
-    }
-  });
+  $(".toggle-button").on("click", 
+    toggle_listing ("#" + e.target.id ));
 
 });
