@@ -25,6 +25,26 @@ tuned!
 {% assign target-tags = site.data.internal.position-tags
   | where_exp:"pos", "pos.NumberToElect == '0'" %}
 
+{% for virtual-tag in target-tags %}
+
+  {% assign events-pos = events-upcoming 
+    | where_exp:"ev", "ev.PositionIDList contains
+    virtual-tag.PositionUniqueName" %}
+
+  {% if events-pos.size > 0 %}
+    <div class="event-wrapper" id="event-wrapper-{{ 
+      virtual-tag.PositionUniqueName | slugify }}">
+
+      {% include list-event-block.html
+        event-list=events-pos
+        header=virtual-tag.PositionDesc
+        teaser-limit=site.teaser_limit_events_generic
+        race-id=include.race-id 
+        big-header=true %}
+      </div>
+  {% endif %}
+
+{% endfor %}
 
 {% assign events-referendum = events-upcoming
   | where_exp:"ev", "ev.PositionIDList contains 'Cambridge-Referendum'" %}
