@@ -23,7 +23,7 @@ tuned!
 
 
 {% assign target-tags = site.data.internal.position-tags
-  | where_exp:"pos", "pos.NumberToElect = '0'" %}
+  | where_exp:"pos", "pos.NumberToElect == '0'" %}
 
 {% for virtual-tag in target-tags %}
 
@@ -34,6 +34,7 @@ tuned!
   {% if events-pos.size > 0 %}
     <div class="event-wrapper" id="event-wrapper-{{ 
       virtual-tag.PositionUniqueName | slugify }}">
+
       {% include list-event-block.html
         event-list=events-pos
         header=virtual-tag.PositionDesc
