@@ -2,6 +2,8 @@ theme: jekyll-theme-slate
 title: Waterloo Region Votes
 description: An Information Hub for the 2018 Municipal Election
 show_downloads: false
+plugins:
+  - jekyll-sitemap
 
 empty-array: []
 
@@ -10,4 +12,5 @@ teaser_limit_events_specific: 2
 teaser_limit_events_generic: 5
 teaser_limit_news: 1
 teaser_limit_surveys: 5
+
 
