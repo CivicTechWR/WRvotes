@@ -82,7 +82,14 @@ ul.continue {
 /* Make footer more appealing visually. */
 div.footer-columns { 
   column-count: 3;
-  font-size: smaller;
+}
+
+div.footer { 
+  font-size: smaller; 
+}
+
+p.bigger { 
+  font-size: bigger;
 }
 
 /* Make columns line up better */
@@ -91,13 +98,15 @@ div.footer-columns p {
 }
 
 /* Don't underline links unless they are highlighted */
-div.footer-columns a { 
+div.footer a { 
   text-decoration: none;
 } 
 
-div.footer-columns a:hover { 
+div.footer a:hover { 
   text-decoration: underline;
 }
+
+
 
 
 /* ---------- EMAIL OBFUSCATION ----------- */
