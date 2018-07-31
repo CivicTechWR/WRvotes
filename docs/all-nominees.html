@@ -11,7 +11,5 @@ the people who are running for them.
 </p>
 
 {% for position in site.data.internal.position-tags %}
-  {% if position.NumberToElect > 0 %}
     {% include list-nominees.html race-id=position.PositionUniqueName %}
-  {% endif %}
 {% endfor %}
