@@ -9,11 +9,15 @@
   {% assign these-nominees = site.data.sync.nominees 
     | where:"PositionUniqueName",include.race-id %}
   {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
+
+  {% assign valid-nominees = these-nominees 
+    | where_exp:"nom", "nom.Withdrawn != 'Y'" %}
   {% assign num-to-elect = race-info.NumberToElect | plus: 0 %}
-  {%- if num-to-elect == 1 and sorted-nominees.size == 1 -%}
+
+  {%- if num-to-elect == 1 and valid-nominees.size == 1 -%}
     <p><strong>(This position is acclaimed.)</strong></p>
-  {% elsif num-to-elect == sorted-nominees.size %}
-    <p><strong>(These {{ sorted-nominees.size }} positions are
+  {% elsif num-to-elect == valid-nominees.size %}
+    <p><strong>(These {{ num-to-elect }} positions are
     acclaimed.)</strong></p>
   {%- elsif num-to-elect != 1 %}
     <p><strong>(Elect {{ num-to-elect }})</strong></p>
