@@ -4,15 +4,21 @@ title: Site Map
 
 <h2>Site Map</h2>
 
-<ul>
-  {% for item in site.html_pages %}
+<p>This site map does not include ward pages. For those, see the
+<a href="{{ site.baseurl }}/wards">ward listing</a>.
 
+<h3>Non-Ward Pages</h3>
+<ul>
+  
+  {% for item in site.html_pages %}
+   
+    {%- if item.title -%}
     <li><a href="{{ item.url | absolute_url }}">
-      {%- if item.title -%}
         {{ item.title }}
-      {%- else -%}
-        {{ item.name }} 
-      {%- endif -%}</a></li>
+    </a></li>
+    {% endif %}
 
   {% endfor %}
+
+
 </ul>
