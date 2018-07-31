@@ -98,11 +98,11 @@ div.footer-columns p {
 }
 
 /* Don't underline links unless they are highlighted */
-div.footer a { 
+div.footer-columns a { 
   text-decoration: none;
 } 
 
-div.footer a:hover { 
+div.footer-columns a:hover { 
   text-decoration: underline;
 }
 
