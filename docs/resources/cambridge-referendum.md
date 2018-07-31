@@ -4,6 +4,7 @@ title: Cambridge Referendum on Ranked Ballots
 
 Cambridge Referendum on Ranked Ballots 
 --------------------------------------
+{:.no_toc}
 
 * table of contents
 {:toc}

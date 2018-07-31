@@ -4,6 +4,7 @@ title: Information About School Board Elections
 
 Information About School Board Elections
 ----------------------------------------
+{:.no_toc}
 
 * table of contents
 {:toc}
