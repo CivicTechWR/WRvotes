@@ -2,13 +2,17 @@
 title: Site Map
 ---
 
-Site Map
---------
+<h2>Site Map</h2>
 
 <ul>
-  {% for item in site.pages %}
+  {% for item in site.html_pages %}
 
-    <li>{{ item }}</li>
+    <li><a href="{{ item.url | absolute_url }}">
+      {%- if item.title -%}
+        {{ item.title }}
+      {%- else -%}
+        {{ item.name }} 
+      {%- endif -%}</a></li>
 
   {% endfor %}
 </ul>
