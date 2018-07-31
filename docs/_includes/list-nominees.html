@@ -6,13 +6,19 @@
 <h3 class="inline">{{ race-info.PositionDesc }}</h3>
 <div class="candidate-list" id="{{ include.race-id | slugify }}" >
 
-  {%- if race-info.NumberToElect != "1" %}
-    <p><strong>(Elect {{ race-info.NumberToElect }})</strong></p>
-  {%- endif -%}
-
   {% assign these-nominees = site.data.sync.nominees 
     | where:"PositionUniqueName",include.race-id %}
   {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
+
+  {%- if race-info.NumberToElect == "1" and
+         sorted-nominees.size == 1 -%}
+    <p><strong>(This position is acclaimed.)</strong></p>
+  {% elsif race-info.NumberToElect == sorted-nominees.size %}
+    <p><strong>(These {{ sorted-nominees.size }} positions are
+    acclaimed.)</strong></p>
+  {%- elsif race-info.NumberToElect != "1" %}
+    <p><strong>(Elect {{ race-info.NumberToElect }})</strong></p>
+  {%- endif -%}
 
   {% if sorted-nominees.size > 0 %}
     <ul>
