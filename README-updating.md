@@ -127,5 +127,4 @@ The code is fairly abstract. Most of the site-specific customization
 is in the CSV files and in `_config.yml` . Here are exceptions where
 things that are local to Waterloo Region are hardcoded: 
 
-- In `events.html` there are two sections for general information and
-  the Cambridge referendum. Maybe these should be stripped out.
+(None that I found so far?)
