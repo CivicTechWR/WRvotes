@@ -26,7 +26,7 @@
     <p class="bigger">
     Share this page on social media: 
     <a href="http://www.facebook.com/sharer.php?u={{ 
-    site.baseurl | url_encode }}{{ page.url | url_encode}}" 
+    (page.url | absolute_url) | url_encode }}" 
     target="_blank"><span>Facebook</span></a> 
     - 
     <a
