@@ -1,32 +1,56 @@
 ---
 ---
 <!-- FOOTER  -->
-<div id="footer_wrap" class="outer">
+<div id="footer_wrap" class="outer footer">
   <footer class="inner">
 
-    <div class="footer-columns">
-      <p> 
-      Sitemap
-      </p><p>
-      <a href="/all-nominees">All nominees on one page</a>
-      </p><p>
-      <a href="/wards/">All wards on one page</a>
-      </p><p>
-      <a href="/resources/open-data">Open data</a>
-      </p><p>
-      Twitter: <a
-      href="https://twitter.com/civictechwr">@civictechwr</a>
-      </p>
-    </div>
+    <p class="bigger sharing">
+    Share this page on social media: 
+    <a href="http://www.facebook.com/sharer.php?u={{ 
+    (page.url | absolute_url) | url_encode }}" 
+    target="_blank">
+    <img src="{{ site.baseurl }}/assets/icons/24x24/facebook.png" 
+    alt="Facebook"/></a> 
+
+    <a
+    href="http://twitter.com/home?status=Get+municipal+election+info:+{{ 
+    (page.url | absolute_url) | url_encode }}" 
+    target="_blank">
+    <img src="{{ site.baseurl }}/assets/icons/24x24/twitter.png" 
+    alt="Twitter"/></a> 
+
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ 
+    (page.url | absolute_url) | url_encode }}"  
+    target="_blank">
+    <img src="{{ site.baseurl }}/assets/icons/24x24/linkedin.png" 
+    alt="LinkedIn"/></a> 
+    </p>
 
     <hr/>
+    <div class="footer-columns">
+      <p> 
+      <a href="{{ site.baseurl }}/all-nominees">All nominees on one page</a>
+      </p><p>
+      <a href="{{ site.baseurl }}/wards/">All wards on one page</a>
+      </p><p>
+      <a href="{{ site.baseurl }}/sitemap">Site Map</a>
+      </p><p>
+      <a href="{{ site.baseurl }}/resources/open-data">Open data</a>
+      </p><p>
+      Twitter: <a href="https://twitter.com/civictechwr">@civictechwr</a>
+      </p>
+    </div>
+    <hr/>
+
+
+
     <p class="bigger">Are we missing information?
     Did we make a mistake?
     Please let us know: civictechwr.wrvotes@gmail.com .
     </p>
 
     {% if site.github.is_project_page %}
-    <p class="copyright">{{ site.title | default:
+    <p class="copyright smaller">{{ site.title | default:
     site.github.repository_name }} maintained by <a href="{{
     site.github.owner_url }}">{{ site.github.owner_name }}</a>.
     {% endif %}

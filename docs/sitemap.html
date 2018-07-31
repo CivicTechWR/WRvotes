@@ -1,0 +1,27 @@
+---
+title: Site Map
+layout: default
+---
+
+<h2>Site Map</h2>
+
+<p>This site map does not include ward pages. For those, see the
+<a href="{{ site.baseurl }}/wards">ward listing</a>.
+
+<h3>Non-Ward Pages</h3>
+<ul>
+
+  {% assign sorted-pages = site.html_pages | sort: "url" %}
+  
+  {% for item in sorted-pages %}
+   
+    {%- if item.title -%}
+    <li><a href="{{ item.url | absolute_url }}">
+        {{ item.title }}
+    </a></li>
+    {% endif %}
+
+  {% endfor %}
+
+
+</ul>

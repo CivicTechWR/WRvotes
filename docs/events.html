@@ -21,36 +21,30 @@ tuned!
 {% assign events-upcoming = all-events  
   | where_exp:"ev", "ev.DateTimeStart >= date-now" %}
 
-{% assign events-referendum = events-upcoming
-  | where_exp:"ev", "ev.PositionIDList contains 'Cambridge-Referendum'" %}
 
-{% assign events-info = events-upcoming
-  | where_exp:"ev", "ev.PositionIDList contains 'Election-Info'" %}
+{% assign target-tags = site.data.internal.position-tags
+  | where_exp:"pos", "pos.NumberToElect == '0'" %}
 
+{% for virtual-tag in target-tags %}
 
+  {% assign events-pos = events-upcoming 
+    | where_exp:"ev", "ev.PositionIDList contains
+    virtual-tag.PositionUniqueName" %}
 
-{% if events-info.size > 0 %}
-  <div class="event-wrapper" id="event-wrapper-info">
-    {% include list-event-block.html
-      event-list=events-info
-      header="General Election Information Events"
-      teaser-limit=site.teaser_limit_events_generic
-      race-id=include.race-id 
-      big-header=true %}
-    </div>
-{% endif %}
+  {% if events-pos.size > 0 %}
+    <div class="event-wrapper" id="event-wrapper-{{ 
+      virtual-tag.PositionUniqueName | slugify }}">
 
+      {% include list-event-block.html
+        event-list=events-pos
+        header=virtual-tag.PositionDesc
+        teaser-limit=site.teaser_limit_events_generic
+        race-id=include.race-id 
+        big-header=true %}
+      </div>
+  {% endif %}
 
-{% if events-referendum.size > 0 %}
-  <div class="event-wrapper" id="event-wrapper-referendum">
-    {% include list-event-block.html
-      event-list=events-referendum
-      header="Cambridge Ranked Ballot Referendum Events"
-      teaser-limit=site.teaser_limit_events_generic
-      race-id=include.race-id 
-      big-header=true %}
-    </div>
-{% endif %}
+{% endfor %}
 
 
 {% if events-upcoming.size > 0 %}
