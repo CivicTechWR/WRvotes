@@ -14,8 +14,7 @@
       </p><p>
       <a href="{{ site.baseurl }}/resources/open-data">Open data</a>
       </p><p>
-      Twitter: <a
-      href="https://twitter.com/civictechwr">@civictechwr</a>
+      Twitter: <a href="https://twitter.com/civictechwr">@civictechwr</a>
       </p>
     </div>
 
@@ -25,14 +24,26 @@
     Please let us know: civictechwr.wrvotes@gmail.com .
     </p>
     <p class="bigger">
+    Share this page on social media: 
+    <a href="http://www.facebook.com/sharer.php?u={{ 
+    site.baseurl | url_encode }}{{ page.url | url_encode}}" 
+    target="_blank"><span>Facebook</span></a> 
     - 
+    <a
+    href="http://twitter.com/home?status=Get+municipal+election+info:+{{ 
+    (page.url | absolute_url) | url_encode }}" 
+    target="_blank"><span>Twitter</span></a>
+    - 
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ 
+    (page.url | absolute_url) | url_encode }}"  
+    target="_blank"><span>LinkedIn</span></a>
     </p>
 
     {% if site.github.is_project_page %}
-    <p class="copyright smaller">{{ site.title | default:
+    <p class="copyright">{{ site.title | default:
     site.github.repository_name }} maintained by <a href="{{
     site.github.owner_url }}">{{ site.github.owner_name }}</a>.
-    {% endif %
+    {% endif %}
     Published with <a href="https://pages.github.com">GitHub Pages</a></p>
   </footer>
 </div>
