@@ -8,7 +8,7 @@ Cambridge Referendum on Ranked Ballots
 * table of contents
 {:toc}
 
-### What is Even Happening?
+### What is even happening?
 
 In addition to electing candidates, voters in Cambridge will be asked
 to vote on the following referendum question: 

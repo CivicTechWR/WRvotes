@@ -5,7 +5,10 @@ title: Information About School Board Elections
 Information About School Board Elections
 ----------------------------------------
 
-### What is Even Happening?
+* table of contents
+{:toc}
+
+### What is even happening?
 
 In addition to voting for members of municipal government, you may
 cast ballots for **school board trustees**. 
