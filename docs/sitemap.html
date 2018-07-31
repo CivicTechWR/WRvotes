@@ -10,8 +10,10 @@ layout: default
 
 <h3>Non-Ward Pages</h3>
 <ul>
+
+  {% assign sorted-pages = site.html_pages | sort: "url" %}
   
-  {% for item in site.html_pages %}
+  {% for item in sorted-pages %}
    
     {%- if item.title -%}
     <li><a href="{{ item.url | absolute_url }}">
