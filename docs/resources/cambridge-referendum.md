@@ -5,6 +5,8 @@ title: Cambridge Referendum on Ranked Ballots
 Cambridge Referendum on Ranked Ballots 
 --------------------------------------
 
+* table of contents
+{:toc}
 
 ### What is Even Happening?
 
@@ -46,10 +48,11 @@ trustees) will continue to be elected using the existing system.
 If the referendum does not pass then the voting system in Cambridge
 remains the same.  
 
-### Under what conditions does the referendum pass
+### Under what conditions does the referendum pass?
 
 In order for the referendum to pass, the voter turnout for the
-referendum must exceed 50%, and a majority of those casting ballots
+referendum must exceed 50%, **and** a majority of those casting
+ballots in the referendum
 must vote yes. 
 
 For context, in 2014 the voter turnout in Cambridge [was 29.89
