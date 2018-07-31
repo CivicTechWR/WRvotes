@@ -5,7 +5,6 @@ title: Cambridge Referendum on Ranked Ballots
 Cambridge Referendum on Ranked Ballots 
 --------------------------------------
 
-{:toc}
 
 ### What is Even Happening?
 
