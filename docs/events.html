@@ -28,10 +28,12 @@ tuned!
 {% for virtual-tag in target-tags %}
 
   {% assign events-pos = events-upcoming 
-    | where_exp:"ev", "ev.PositionIDList contains virtual-tag %}
+    | where_exp:"ev", "ev.PositionIDList contains
+    virtual-tag.PositionUniqueName" %}
 
   {% if events-pos.size > 0 %}
-    <div class="event-wrapper" id="event-wrapper-info">
+    <div class="event-wrapper" id="event-wrapper-{{ 
+      virtual-tag.PositionUniqueName | slugify }}">
       {% include list-event-block.html
         event-list=events-pos
         header=virtual-tag.PositionDesc
