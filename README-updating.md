@@ -118,3 +118,14 @@ buttons will show up to hide and unhide that element.
 - Many lists will show some entries when collapsed. There is special
   code to sneakily generate multiple `ul` tags for this: see
   `_includes/list-event-block.html` for an example.
+
+
+Adapting This Code for Your Municipality/Election
+-------------------------------------------------
+
+The code is fairly abstract. Most of the site-specific customization
+is in the CSV files and in `_config.yml` . Here are exceptions where
+things that are local to Waterloo Region are hardcoded: 
+
+- In `events.html` there are two sections for general information and
+  the Cambridge referendum. Maybe these should be stripped out.
