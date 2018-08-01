@@ -1,9 +1,7 @@
 Date
 
 Kristina Taylor
-
 https://waterlooregionvotes.org
-
 civictechwr.wrvotes@gmail.com 
 
 ## Have Your Say! Municipal Voting Made Easy by CivicTechWR 
@@ -16,7 +14,7 @@ Parks, garbage collection, safe injection sites, shelters, bike lanes, are only 
 
 *“This is an amazing tool to find out what candidates think on issues I’m concerned about”* said (someone who read our website). *“I didn’t realise there are so many people I can vote for to have a say in what is happening in my city.”*
 
-The municipal election is October 22nd. Have your say and vote!
+### The municipal election is October 22nd. Have your say and vote!
 https://waterlooregionvotes.org
 civictechwr.wrvotes@gmail.com 
 
