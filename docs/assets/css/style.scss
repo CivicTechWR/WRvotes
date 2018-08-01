@@ -82,7 +82,14 @@ ul.continue {
 /* Make footer more appealing visually. */
 div.footer-columns { 
   column-count: 3;
-  font-size: smaller;
+}
+
+div.footer { 
+  font-size: smaller; 
+}
+
+p.bigger { 
+  font-size: larger;
 }
 
 /* Make columns line up better */
@@ -97,6 +104,11 @@ div.footer-columns a {
 
 div.footer-columns a:hover { 
   text-decoration: underline;
+}
+
+p.sharing a { 
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 
