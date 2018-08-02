@@ -1,0 +1,23 @@
+---
+layout: default
+title: All News
+---
+<h1>All News</h1>
+<p>
+This listing includes every news item across all positions. It mixes
+up news items with surveys.
+</p>
+
+
+{% assign media-list = site.data.sync.media %}
+
+{% if media-list.size > 0 %}
+    {% include list-media-items.html
+      item-list=media-list
+      race-id="news"
+      type="news"
+      header="News Items, Surveys, and Recordings"
+      teaser-limit=site.teaser_limit_surveys 
+      big-header=true %}
+{% endif %}
+
