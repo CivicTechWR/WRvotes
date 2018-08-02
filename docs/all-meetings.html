@@ -1,0 +1,49 @@
+---
+layout: default
+title: All All-Candidates Meetings
+---
+<h1>All All-Candidates Meetings</h1>
+<p>
+This listing includes every all-candidates meeting we know about,
+across all positions, every survey, and every meeting recording.
+</p>
+
+{% assign all-events = site.data.sync.events %}
+{% assign date-now = site.time | date: "%F" %}
+
+{% assign events-upcoming = all-events  
+  | where_exp:"ev", "ev.DateTimeStart >= date-now" %}
+
+{% assign events-allcandidates = events-upcoming
+    | where_exp:"ev", "ev.ForMultipleCandidates == 'Y'" %}
+
+{% if events-allcandidates.size > 0 %}
+  <div class="event-wrapper" id="event-wrapper-allcandidates">
+
+    {% include list-event-block.html
+      event-list=events-pos
+      header="Every All-Candidates Meeting"
+      teaser-limit=site.teaser_limit_events_generic
+      race-id="all-candidates"
+      big-header=true %}
+    </div>
+{% endif %}
+
+
+{% assign media-list = site.data.sync.media
+    | where_exp:"item", "item.IsComparison == 'Y'" %}
+
+{% if media-list.size > 0 %}
+    {% include list-media-items.html
+      item-list=media-list
+      race-id="surveys"
+      type="survey"
+      header="Questionnaires and Meeting Recordings"
+      teaser-limit=site.teaser_limit_surveys 
+      big-header=true %}
+{% endif %}
+
+
+<script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
+
