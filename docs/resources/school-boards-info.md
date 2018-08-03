@@ -64,4 +64,5 @@ school board.
 
 ### May I change what school board I vote for?
 
-[Probably?]
+If you are eligible to support a different school board, you may do so
+by changing your information on the voter list.

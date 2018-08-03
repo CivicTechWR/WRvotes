@@ -60,7 +60,11 @@ For context, in 2014 the voter turnout in Cambridge [was 29.89
 percent](http://www.cbc.ca/news/canada/kitchener-waterloo/voter-turnout-in-waterloo-region-stagnant-overall-1.2815625). 
 Regardless of how many voters choose to support ranked ballots in the
 referendum, if the voter turnout is less than 50%, the referendum
-fails. 
+fails. City officials might take the results into account, but are not
+obligated to.
 
-[Find evidence of this in Ontario ministry]
+For more information, see the [Questions on the
+Ballot](http://www.mah.gov.on.ca/Page18734.aspx#questions) section of
+the Ontario 2018 Voters' Guide.
+
 
