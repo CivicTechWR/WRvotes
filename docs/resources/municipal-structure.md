@@ -1,8 +1,8 @@
 ---
-title: How Municipal Governments Work
+title: Municipal Govermment Overview 
 ---
 
-How Municipal Governments Work
+Municipal Government Overview
 ----------------------
 {:.no_toc}
 
