@@ -8,7 +8,7 @@ https://waterlooregionvotes.org
 
 Municipal elections generally have low voter turn out and **CivicTechWR** is working to change that! A dedicated group of local volunteers have come together to make **https://waterlooregionvotes.org**, a one stop voting information spot. With this helpful website, it will be easy to get engaged with the Waterloo Region municipal election.
 
-Often people don’t vote municipally because they don’t know where to go to find information on the candidates or don’t know how municipal governance affects their daily lives. The reality is, *municipal government has more impact on how the cities are shaped, than provincial or federal governments do.
+Often people don’t vote municipally because they don’t know where to go to find information on the candidates or don’t know how municipal governance affects their daily lives. The reality is *municipal government has more impact on how the cities are shaped, than provincial or federal governments do.
 
 Parks, garbage collection, safe injection sites, shelters, bike lanes, are only a few of the matters managed by municipal government. There is no more need to become overwhelmed with the amount of information or the complexities of voting municipally. **CivicTechWR** has done all the work for you! We have compiled candidate listings, websites, event listings, news articles, contact information, anything we could get our hands on, and put it in one, easy to navigate website: **https://waterlooregionvotes.org**. All you have to do is click to learn everything you need to know to make an informed decision.
 
