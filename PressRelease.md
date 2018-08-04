@@ -18,6 +18,8 @@ Parks, garbage collection, safe injection sites, shelters, bike lanes, are only 
 https://waterlooregionvotes.org
 [civictechwr.wrvotes@gmail.com](mailto:civictechwr.wrvotes@gmail.com)
 
-Co-founded by Kristina Taylor, Doug Akers, and Christian Snyder in September 2017, CivicTechWR is an inclusive multi-disciplinary group that aims to empower people to work together, exchange ideas and tools to improve the live of the residents in and around Waterloo Region through civic technology. To learn more go to: https://civictechwr.org/ or find us on Meetup at: https://www.meetup.com/CivicTechWR/. If you have any question about Waterloo Region Votes or other projects in the works, please email us at: [civictechwr@gmail.com](mailto:civictechwr@gmail.com).
+### About CivicTechWR
+
+Co-founded by Kristina Taylor, Doug Akers, and Christian Snyder in September 2017, CivicTech Waterloo Region is an inclusive multi-disciplinary group that aims to empower people to work together, exchange ideas and tools to improve the live of the residents in and around Waterloo Region through civic technology. To learn more go to: https://civictechwr.org/ or find us on Meetup at: https://www.meetup.com/CivicTechWR/. If you have any question about Waterloo Region Votes or other projects in the works, please email us at: [civictechwr@gmail.com](mailto:civictechwr@gmail.com).
 
 **Stay curious!**
