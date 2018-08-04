@@ -33,12 +33,11 @@ councillors varies from municipality to municipality.
 Not including school boards, voters will be able to cast votes for the
 following positions municipally: 
 
-- One vote for a regional chair.
-- One vote for the mayor of their area municipality.
-- One vote for a ward councillor (except in Wilmot Ward 4, which has
-  two seats).
-- For votes within the cities, either two or four votes for regional
-  councillors. 
+- regional chair.
+- the mayor of their area municipality
+- ward councillor(s)
+- for votes within the cities, regional
+  councillors 
 
 
 ### Is the Regional Chair like the Premier or the Prime Minister of Waterloo Region?
