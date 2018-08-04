@@ -78,6 +78,13 @@ page](https://www.regionofwaterloo.ca/en/regional-government/elections.aspx)
 
 ### Why should I care?
 
+### What parties are running in this election?
+
+Unlike provincial or federal politics, candidates in our municipality
+do not run under party banners. This is good because it means less
+partisan politics and polarization, but bad because each candiate must
+be evaluated on their individual merits. 
+
 ### Do I have to vote for every position?
 
 No. You may refrain from voting for some positions if you wish; your
@@ -117,5 +124,21 @@ Spending an hour watching or listening to one all-candidates meeting can help yo
 
 Alternatively, you can follow one or two races by reading the campaign literature (in printed form or on the Internet) from the contenders, and choosing the candidates that match your views most closely. 
 
+### How do I follow what is going on during the election?
 
-[Add more FAQs here]
+Local newspapers provide lots of media coverage. 
+
+On Twitter you can track the
+[#wrvotes](https://twitter.com/hashtag/wrvotes) and 
+[#wrpoli](https://twitter.com/hashtag/wrpoli) hashtags. 
+
+### What other groups are working on election information?
+
+The Region of Waterloo links to election information for the different
+municipalities at <https://wrvotes.com> . 
+
+[Waterloo Support committee]
+
+[Womens running]
+
+[Equal Voice]
