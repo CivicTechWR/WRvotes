@@ -84,13 +84,6 @@ See the "Post-secondary" section on the [Region of Waterloo elections
 page](https://www.regionofwaterloo.ca/en/regional-government/elections.aspx)
 
 
-### What parties are running in this election?
-
-Unlike provincial or federal politics, candidates in our municipality
-do not run under party banners. This is good because it means less
-partisan politics and polarization, but bad because each candiate must
-be evaluated on their individual merits. 
-
 ### Do I have to vote for every position?
 
 No. You may refrain from voting for some positions if you wish; your
@@ -99,6 +92,21 @@ vote will count for the positions you did vote for.
 Similarly, if a position elects more than one representative (for
 example, there are four Kitchener Regional Council representatives)
 then you are not obligated to cast four votes for that position.
+
+### What is voter turnout like for municipal elections?
+
+Voter turnout tends to be significantly lower than for provincial or
+federal elections. The CBC [published a
+summary](http://www.cbc.ca/news/canada/kitchener-waterloo/voter-turnout-in-waterloo-region-stagnant-overall-1.2815625)
+of turnout rates for Waterloo Region. In 2014, they ranged from a low
+of 29.3% in Wellesley township to 40.6% in Wilmot township.
+
+### What parties are running in this election?
+
+Unlike provincial or federal politics, candidates in our municipality
+do not run under party banners. This is good because it means less
+partisan politics and polarization, but bad because each candiate must
+be evaluated on their individual merits. 
 
 ### I don't feel informed enough to vote. Where do I start?
 
@@ -162,6 +170,12 @@ On Twitter you can track the
 [#wrvotes](https://twitter.com/hashtag/wrvotes) and 
 [#wrpoli](https://twitter.com/hashtag/wrpoli) hashtags. 
 
+There is an active discussion about the 2018 municipal elections on the
+[Waterloo Region Connected
+forums](http://www.waterlooregionconnected.com/forumdisplay.php?fid=34).
+
+
+
 ### I want to organize an all-candidates meeting. What do I do?
 
 If there are not enough all-candidates meetings for the positions that
@@ -200,3 +214,10 @@ credit the campaign school for inspiring them to run for office. They
 have a Twitter account here:
 [@wrwomenrun](https://twitter.com/wrwomenrun).
 
+
+### I don't trust your candidate listings. Where can I find the real ones?
+
+Official candidate listing pages are listed on <https://wrvotes.com> .
+For convenience, here they are again: 
+
+-  
