@@ -198,5 +198,5 @@ School](https://learnhowtorun.com) held workshops on how to run for
 political office. Several election candidates during this election
 credit the campaign school for inspiring them to run for office. They
 have a Twitter account here:
-[https://twitter.com/wrwomenrun](@wrwomenrun). 
+[@wrwomenrun](https://twitter.com/wrwomenrun).
 
