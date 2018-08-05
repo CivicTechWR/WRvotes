@@ -220,4 +220,18 @@ have a Twitter account here:
 Official candidate listing pages are listed on <https://wrvotes.com> .
 For convenience, here they are again: 
 
--  
+- [Region of
+  Waterloo](https://www.regionofwaterloo.ca/en/regional-government/2018-regional-candidate-listing.aspx)
+- [City of
+  Cambridge](https://www.cambridge.ca/en/your-city/certified-candidates.aspx)
+- [City of Kitchener](https://www.kitchener.ca/en/city-services/list-of-candidates.aspx)
+- [Township of North
+  Dumfries](https://www.northdumfries.ca/en/township-services/elections-2018.aspx)
+- [City of
+  Waterloo](https://www.waterloo.ca/en/government/electioncandidates.asp)
+- [Township of
+  Wellesley](https://www.wellesley.ca/en/township-services/list-of-candidates.aspx)
+- [Township of
+  Wilmot](https://www.wilmot.ca/en/township-office/registered-candidates.aspx)
+- [Township of
+  Woolwich](https://www.woolwich.ca/en/township-services/list-of-candidates.aspx)
