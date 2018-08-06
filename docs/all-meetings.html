@@ -30,7 +30,7 @@ across all positions, every survey, and every meeting recording.
 
 
 {% assign media-list = site.data.sync.media
-    | where_exp:"item", "item.IsComparison == 'Y'" %}
+    | where_exp:"item", "item.ComparisonOrOpinion == 'Comparison'" %}
 
 {% if media-list.size > 0 %}
     {% include list-media-items.html
