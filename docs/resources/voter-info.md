@@ -101,6 +101,10 @@ summary](http://www.cbc.ca/news/canada/kitchener-waterloo/voter-turnout-in-water
 of turnout rates for Waterloo Region. In 2014, they ranged from a low
 of 29.3% in Wellesley township to 40.6% in Wilmot township.
 
+These rates are significantly lower than municipal election rates
+throughout Canada, as [reported by Statistics
+Canada](https://www150.statcan.gc.ca/n1/pub/89-640-x/2009001/tab/tab3-1-eng.htm). 
+
 ### What parties are running in this election?
 
 Unlike provincial or federal politics, candidates in our municipality
