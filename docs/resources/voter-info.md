@@ -107,10 +107,10 @@ Canada](https://www150.statcan.gc.ca/n1/pub/89-640-x/2009001/tab/tab3-1-eng.htm)
 
 ### What parties are running in this election?
 
-Unlike provincial or federal politics, candidates in our municipality
-do not run under party banners. This is good because it means less
-partisan politics and polarization, but bad because each candiate must
-be evaluated on their individual merits. 
+Unlike provincial or federal politics, municipal candidates in our
+municipality do not run under party banners. This is good because it
+means less partisan politics and polarization, but bad because
+candidates must be evaluated on their individual merits. 
 
 ### I don't feel informed enough to vote. Where do I start?
 
