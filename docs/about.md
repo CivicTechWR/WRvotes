@@ -39,6 +39,7 @@ We currently could really use help with:
 - Monitoring local news media
 - Monitoring Facebook and Twitter for election-related news and events
 - Tracking down candidate information (especially websites)
+- Contacting neighbourhood associations and other local groups
 - Helping with promotion 
 
 
