@@ -33,7 +33,13 @@ municipal politics already.
 Improve the content! Are we missing information about candidates, events,
 questionnaires or news coverage? Contact us at
 civictechwr.wrvotes@gmail.com and submit them to
-the site.
+the site. Crowdsourcing resources helps improve the site for everyone.
+We currently could really use help with: 
+
+- Monitoring local news media
+- Monitoring Facebook and Twitter for election-related news and events
+- Tracking down candidate information (especially websites)
+- Helping with promotion 
 
 
 ## Who is Responsible for This?
@@ -42,4 +48,5 @@ This site is a project of [CivicTechWR](https://civictechwr.org), a
 local group that attempts to improve the lives of residents in
 Waterloo Region through civic technology. 
 
-
+You can join us! Come to one of our meetups at
+<https://meetup.com/CivicTechWR/> to get involved. 
