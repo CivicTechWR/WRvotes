@@ -16,6 +16,7 @@
 
   {%- if num-to-elect == 1 and valid-nominees.size == 1 -%}
     <p><strong>(This position is acclaimed.)</strong></p>
+  {% elsif num-to-elect == 0 %}
   {% elsif num-to-elect == valid-nominees.size %}
     <p><strong>(These {{ num-to-elect }} positions are
     acclaimed.)</strong></p>
