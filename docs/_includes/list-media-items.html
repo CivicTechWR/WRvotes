@@ -19,7 +19,11 @@
 
     {% for item in item-list-sorted %}
       
-      <li><a href="{{ item.URL }}">{{ item.Title }}</a>,
+      <li>
+      {%- if item.ComparisonOrOpinion == "Opinion" -%}
+        (Opinion)
+      {% endif -%}
+      <a href="{{ item.URL }}">{{ item.Title }}</a>,
       {{ item.Publication }}, 
       {{ item.PubDate | date: "%B %-d, %Y" }}.
       </li>
