@@ -24,7 +24,7 @@
     <p><strong>(Elect {{ num-to-elect }})</strong></p>
   {%- endif -%}
 
-  {% if sorted-nominees.size > 0 %}
+  {% if sorted-nominees.size > 0 or num-to-elect == 0 %}
     <ul>
     {% for nominee in sorted-nominees %}
       <li>
