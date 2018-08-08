@@ -75,7 +75,7 @@ municipality. [HOW? FOR ALL MUNICIPALITIES?]
 - [Wellesley](https://forms.wellesley.ca/Application-to-Amend-Voters-List)
 
 
-### I am a student. May I vote?
+### I am a student. Do I get to vote?
 
 Yes. Depending on where your home address is, you may be eligible to
 vote twice! 
@@ -84,7 +84,7 @@ See the "Post-secondary" section on the [Region of Waterloo elections
 page](https://www.regionofwaterloo.ca/en/regional-government/elections.aspx)
 
 
-### Do I have to vote for every position?
+### There are a lot of positions to vote for! Do I have to vote for all of them?
 
 No. You may refrain from voting for some positions if you wish; your
 vote will count for the positions you did vote for. 
@@ -93,7 +93,7 @@ Similarly, if a position elects more than one representative (for
 example, there are four Kitchener Regional Council representatives)
 then you are not obligated to cast four votes for that position.
 
-### What is voter turnout like for municipal elections?
+### How high is voter turnout in municipal elections?
 
 Voter turnout tends to be significantly lower than for provincial or
 federal elections. The CBC [published a
@@ -108,9 +108,10 @@ Canada](https://www150.statcan.gc.ca/n1/pub/89-640-x/2009001/tab/tab3-1-eng.htm)
 ### What parties are running in this election?
 
 Unlike provincial or federal politics, municipal candidates in our
-municipality do not run under party banners. This is good because it
-means less partisan politics and polarization, but bad because
-candidates must be evaluated on their individual merits. 
+municipality do not run under party banners. 
+
+This has the advantage of potentially reducing partisanship, but it
+means that candidates must be evaluated on their individual merits.
 
 ### I don't feel informed enough to vote. Where do I start?
 
