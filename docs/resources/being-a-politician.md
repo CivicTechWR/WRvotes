@@ -19,6 +19,9 @@ had put together in the past:
 - Kitchener ward Councillor Sarah Marsh [podcast
   interview](https://soundcloud.com/theglobalshuffle/city-councillor-sarah-marsh-learnings-in-the-nonpartisan-level-of-govt)
 
+If you have other accounts, or if you are/were a sitting politician
+and would like to add your experiences, contact us.
+
 * table of contents
 {:toc}
 
