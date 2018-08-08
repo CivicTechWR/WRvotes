@@ -30,7 +30,26 @@ page](http://www.mah.gov.on.ca/Page11122.aspx).
 
 ### What is a ranked ballot? 
 
-[Fill some pithy thing about numbering candidates here]
+Under the system we use now, you indicate one candidate for each
+position that is to be filled. For example, there is one mayor in
+Wilmot, so you would indicate your preferred nominee, and the nominee
+with the most votes win. Similarly, there are two available ward
+councillor seats for Wilmot Ward 4, so you would indicate up to two
+nominees there. Then the two nominees with the highest number of votes
+win the two seats.
+
+In a ranked ballot, you may indicate more than one candidate even if
+there is only one position to be filled. You do this by ranking
+candidates, from your most preferred to the last one you would
+tolerate. You must give every candidate a different ranking, but you
+may rank as many or as few candidates as you wish. This works the same
+regardless of whether there is one or many positions to be filled. 
+
+There are then different mechanisms to award seats to nominees based
+upon these rankings. You can see [a
+demonstration](http://www.mah.gov.on.ca/Page11122.aspx) of how votes
+would be counted on the Ministry of Municipal Affairs and Housing site.
+
 
 ### What happens if the referendum passes?
 
