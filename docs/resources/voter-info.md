@@ -174,6 +174,14 @@ On Twitter you can track the
 [#wrvotes](https://twitter.com/hashtag/wrvotes) and 
 [#wrpoli](https://twitter.com/hashtag/wrpoli) hashtags. 
 
+In addition there are some lists of candidate Twitter feeds that you
+can follow: 
+
+- Public school trustee feeds by @jpkitchener:
+  <https://twitter.com/jpkitchener/lists/wrdsb-trustee-candidates>
+- Overall nominees by @anitsirKTaylor: 
+  <https://twitter.com/anitsirKTaylor/lists/wrvotes-2018>
+
 There is an active discussion about the 2018 municipal elections on the
 [Waterloo Region Connected
 forums](http://www.waterlooregionconnected.com/forumdisplay.php?fid=34).
