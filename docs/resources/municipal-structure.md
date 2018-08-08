@@ -68,6 +68,7 @@ include:
 - Waste collection
 - Grand River Transit (and Light Rail)
 - Public health
+- Libraries in the townships
 
 Some of the prominent roles played by the area municipalities include: 
 
