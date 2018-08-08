@@ -47,7 +47,7 @@ regardless of whether there is one or many positions to be filled.
 
 There are then different mechanisms to award seats to nominees based
 upon these rankings. You can see [a
-demonstration](http://www.mah.gov.on.ca/Page11122.aspx) of how votes
+demonstration](http://www.mah.gov.on.ca/Page11118.aspx) of how votes
 would be counted on the Ministry of Municipal Affairs and Housing site.
 
 
