@@ -10,6 +10,8 @@ import csv, json
 import argparse, sys, os
 import requests
 import pprint
+from google.oauth2 import service_account
+import googleapiclient.discovery
 
 # '/home/pnijjar/watcamp/python_rss/gcal_helpers/config.py'
 # See: http://www.karoltomala.com/blog/?p=622
@@ -83,6 +85,26 @@ def load_config(configfile=None):
     # For test harness
     return config
             
+# ------------------------------
+def load_csv_dicts():
+    """ Load CSV files. Yay copy and paste.
+    """
+    with open(config.EVENTS_CSV, encoding='utf-8-sig') as events_csv:
+        reader_events = csv.DictReader(events_csv)
+
+        for row in reader_events:
+            # Make a key that will be unique but is easily 
+            # sorted by start date.
+            new_key = "{}--{}".format(row['DateTimeStart'],
+                                      row['RowID'],
+                                      )
+            events_dict[new_key] = row
+
+    with open(config.POSITIONS_CSV, encoding='utf-8-sig') as positions_csv:
+        reader_events = csv.DictReader(positions_csv)
+
+        for row in reader_events:
+            positions_dict[row['PositionUniqueName']] = row
 
 # ===== MAIN PROGRAM =======
 
@@ -92,31 +114,15 @@ load_config()
 with open(config.SERVICE_CREDENTIALS) as f:
     calendar_bot = json.load(f)
 
-print("Email is {}".format(calendar_bot['client_email']))
+load_csv_dicts()
 
-# ---- Load Events ----
-with open(config.EVENTS_CSV, encoding='utf-8-sig') as events_csv:
-    reader_events = csv.DictReader(events_csv)
 
-    for row in reader_events:
-        # Make a key that will be unique but is easily 
-        # sorted by start date.
-        new_key = "{}--{}".format(row['DateTimeStart'],
-                                  row['RowID'],
-                                  )
-        events_dict[new_key] = row
-
-with open(config.POSITIONS_CSV, encoding='utf-8-sig') as positions_csv:
-    reader_events = csv.DictReader(positions_csv)
-
-    for row in reader_events:
-        positions_dict[row['PositionUniqueName']] = row
 
 #pprint.pprint(positions_dict)
 
 #pprint.pprint(events_dict)
-for k in sorted(events_dict.keys()):
-    print("{} : {}".format(
-        k,
-        events_dict[k]['Title'],
-        ))
+#for k in sorted(events_dict.keys()):
+#    print("{} : {}".format(
+#        k,
+#        events_dict[k]['Title'],
+#        ))
