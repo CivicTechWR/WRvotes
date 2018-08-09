@@ -83,6 +83,19 @@ marked as an opinion piece. Otherwise it is a regular news item.
 
 Note that capitals count!
 
+Adding Event Entries
+--------------------
+
+Each event has a RowID. This must be distinct from all other rows.
+They do not need to be in increasing order, but it does not hurt. 
+
+Removing Event Entries
+----------------------
+
+You probably do not want to delete an event from events.csv, or the
+Google Calendar will not reflect the change. Instead, marked the
+"CancelledOrRescheduled" field to "Cancelled". 
+
 Adding Menu Entries
 -------------------
 
