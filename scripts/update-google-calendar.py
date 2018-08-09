@@ -8,6 +8,7 @@ Paul "Worthless" Nijjar, 2018-08-08
 
 import csv, json
 import argparse, sys, os
+import requests
 
 # '/home/pnijjar/watcamp/python_rss/gcal_helpers/config.py'
 # See: http://www.karoltomala.com/blog/?p=622
@@ -15,6 +16,8 @@ DEFAULT_CONFIG_SOURCEFILE = os.path.join(
     os.getcwd(),
     'update-google-calendar.config.py',
     )
+
+events_dict = {}
 
 # ------------------------------
 def load_config(configfile=None):
@@ -83,9 +86,17 @@ def load_config(configfile=None):
 
 load_config()
 
-
-#---- Get credentials -----
+# ---- Get credentials -----
 with open(config.SERVICE_CREDENTIALS) as f:
     calendar_bot = json.load(f)
 
 print("Email is {}".format(calendar_bot['client_email']))
+
+# ---- Load Events ----
+with open(config.EVENTS_CSV, encoding='utf-8-sig') as events_csv:
+    reader_events = csv.DictReader(events_csv)
+
+    for row in reader_events:
+        events_dict[row['RowID']] = row
+        print(row['Title'], row['RowID'])
+ 
