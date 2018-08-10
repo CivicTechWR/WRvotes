@@ -210,10 +210,29 @@ def sync_calendar(cal, include_all=False):
             ev['URL'],
             ev['URL'],
             )
-        desc += '<p>{}</p><p>Tags: {}</p>'.format(
+        desc += '<p>{}</p>'.format(
             ev['Notes'],
-            ev['PositionIDList'],
             )
+
+
+        position_list = ev['PositionIDList'].split(",")
+        
+        if len(position_list) == 1:
+            desc += '<p>For position: {}'.format(
+                positions_dict[position_list[0].strip()]
+                              ['PositionDesc'])
+            desc += '</p>'
+                
+
+        elif len(position_list) > 1:
+            desc += '<p>For positions:<ul>'
+            for pos in position_list:
+                p_key = pos.strip()
+                desc += '<li>{}</li>'.format(
+                   positions_dict[p_key]['PositionDesc'],
+                   )
+            desc += "</ul></p>"
+            
 
         bodydict = {
             'start':{
