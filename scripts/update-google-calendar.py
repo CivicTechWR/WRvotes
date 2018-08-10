@@ -106,6 +106,24 @@ def load_csv_dicts():
         for row in reader_events:
             positions_dict[row['PositionUniqueName']] = row
 
+
+# ------------------------------
+def connect_to_calendar():
+    # From: https://developers.google.com/api-client-library/python/auth/service-accounts
+    SCOPES=['https://www.googleapis.com/auth/calendar']
+
+    credentials = service_account.Credentials.from_service_account_file(
+        config.SERVICE_CREDENTIALS,
+        scopes=SCOPES,
+        )
+
+    cal_object = googleapiclient.discovery.build(
+        'calendar',
+        'v3',
+        credentials=credentials,
+        )
+    return cal_object
+
 # ===== MAIN PROGRAM =======
 
 load_config()
@@ -116,7 +134,13 @@ with open(config.SERVICE_CREDENTIALS) as f:
 
 load_csv_dicts()
 
+cal = connect_to_calendar()
 
+response = cal.events().list(
+    calendarId=config.CALENDAR_ID,
+    orderBy='updated').execute()
+
+pprint.pprint(response)
 
 #pprint.pprint(positions_dict)
 
