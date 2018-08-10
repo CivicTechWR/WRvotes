@@ -16,6 +16,7 @@ tuned!
 {% if site.google_calendar_id -%}
   <h2>Embedded Calendar</h2>
   
+<iframe src="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 
 {%- endif %}
