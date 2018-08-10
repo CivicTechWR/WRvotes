@@ -12,6 +12,15 @@ href="./wards/">information page for your ward</a>.
 </p><p>
 These events will also be also synchronized to a Google Calendar. Stay
 tuned!
+</p><p>
+{% if site.google_calendar_id -%}
+  <h2>Embedded Calendar</h2>
+  
+
+
+{%- endif %}
+
+
 </p>
 
 {% assign all-events = site.data.sync.events %}
