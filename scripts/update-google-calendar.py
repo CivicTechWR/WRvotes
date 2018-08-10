@@ -128,10 +128,6 @@ def connect_to_calendar():
 
 load_config()
 
-# ---- Get credentials -----
-with open(config.SERVICE_CREDENTIALS) as f:
-    calendar_bot = json.load(f)
-
 load_csv_dicts()
 
 cal = connect_to_calendar()
