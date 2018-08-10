@@ -12,6 +12,17 @@ href="./wards/">information page for your ward</a>.
 </p><p>
 These events will also be also synchronized to a Google Calendar. Stay
 tuned!
+</p><p>
+{% if site.google_calendar_id -%}
+  <h2>Embedded Calendar</h2>
+  
+<div class="embedContainer">
+  <iframe src="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+{%- endif %}
+
+
 </p>
 
 {% assign all-events = site.data.sync.events %}
