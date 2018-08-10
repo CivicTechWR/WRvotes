@@ -205,7 +205,7 @@ def sync_calendar(cal, include_all=False):
 
         # If the event is in the past, then 
         if datetime_end < since_when:
-            print("IGNORED: {}".format(ev['Title']))
+            # print("IGNORED: {}".format(ev['Title']))
             continue
            
         desc = '<p>Website: <a href="{}">{}</a></p>'.format(
@@ -238,14 +238,14 @@ def sync_calendar(cal, include_all=False):
 
         # If the entry exists then update, else create
         if get_padded_id(ev['RowID']) in existing_ids:
-            print("Update: {}".format(ev['Title']))
+            # print("Update: {}".format(ev['Title']))
             event_add = cal.events().update(
                 calendarId=config.CALENDAR_ID,
                 eventId=get_padded_id(ev['RowID']),
                 body=bodydict,
                 ).execute()
         else:
-            print("Insert: {}".format(ev['Title']))
+            # print("Insert: {}".format(ev['Title']))
             event_add = cal.events().insert(
                 calendarId=config.CALENDAR_ID,
                 body=bodydict,
@@ -269,6 +269,6 @@ elif script_operation == 'sync-all':
 elif script_operation == 'clear-calendar':
     # Yikes! Danger! Fortunately this does not work..
     cal.calendars().clear(calendarId=config.CALENDAR_ID).execute()
-    print("Yikes! Calendar cleared.")
+    # print("Yikes! Calendar cleared.")
 else:
     print("Unknown operation: {}".format(script_operation))
