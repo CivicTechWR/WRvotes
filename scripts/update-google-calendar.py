@@ -8,8 +8,8 @@ Paul "Worthless" Nijjar, 2018-08-08
 
 import csv, json
 import argparse, sys, os
-import requests
 import pprint
+import dateutil.parser
 from google.oauth2 import service_account
 import googleapiclient.discovery
 
@@ -22,6 +22,23 @@ DEFAULT_CONFIG_SOURCEFILE = os.path.join(
 
 events_dict = {}
 positions_dict = {}
+
+script_operation = None
+
+# -----------------------------
+def get_padded_id(id_str):
+    """ Get the padded calendar ID for Google calendar, 
+        because IDs must be at least 5 chars long
+    """
+    return "00000{}".format(id_str)
+
+# ------------------------------
+def get_datetime(datetime_str):
+   """ Convert a date/time string that might have a space
+      to one that Google will accept.
+   """
+   d = dateutil.parser.parse(datetime_str)
+   return d.strftime("%FT%T")
 
 # ------------------------------
 def load_config(configfile=None):
@@ -52,10 +69,17 @@ def load_config(configfile=None):
         help='configuration file location',
         default=DEFAULT_CONFIG_SOURCEFILE,
         )
+    parser.add_argument('-o', '--operation',
+        help='operation to perform',
+        default='sync_upcoming',
+        choices=['sync-upcoming','sync-all', 'clear']
+        )
 
     args = parser.parse_args()
     if args.configfile:
         config_location = os.path.abspath(args.configfile)
+
+    script_operation = args.operation
 
     # http://stackoverflow.com/questions/11990556/python-how-to-make-global 
     global config
@@ -132,16 +156,70 @@ load_csv_dicts()
 
 cal = connect_to_calendar()
 
-response = cal.events().list(
+# Need to handle exceptions in responses!
+# Grab events we know so far. 
+existing_events = cal.events().list(
     calendarId=config.CALENDAR_ID,
-    orderBy='updated').execute()
+    orderBy='updated',
+    showDeleted='true',).execute()
 
-pprint.pprint(response)
+# Map existing IDs 
+existing_ids = {}
+for ev in existing_events['items']:
+    existing_ids[ev['id']] = True
 
+for k in sorted(events_dict.keys()):
+    ev = events_dict[k]
 
-#pprint.pprint(events_dict)
-#for k in sorted(events_dict.keys()):
-#    print("{} : {}".format(
-#        k,
-#        events_dict[k]['Title'],
-#        ))
+    desc = '<p>Website: <a href="{}">{}</a></p>'.format(
+        ev['URL'],
+        ev['URL'],
+        )
+    desc += '<p>{}</p><p>Tags: {}</p>'.format(
+        ev['Notes'],
+        ev['PositionIDList'],
+        )
+
+    bodydict = {
+        'start':{
+            'dateTime': get_datetime(ev['DateTimeStart']),
+            'timeZone': config.TIMEZONE,
+            },
+        'end':{
+            'dateTime': get_datetime(ev['DateTimeEnd']),
+            'timeZone': config.TIMEZONE,
+            },
+        'id': get_padded_id(ev['RowID']),
+        'description': desc,
+        'location': ev['Location'],
+        'source': { 'url' : ev['URL']},
+        'summary': ev['Title'],
+        }
+    
+    if ev['CancelledOrRescheduled'] == "Cancelled":
+        bodydict['status'] = 'cancelled'
+
+    # If the entry exists then update, else create
+    if get_padded_id(ev['RowID']) in existing_ids:
+        print("Update: {}".format(ev['Title']))
+        event_add = cal.events().update(
+            calendarId=config.CALENDAR_ID,
+            eventId=get_padded_id(ev['RowID']),
+            body=bodydict,
+            ).execute()
+    else:
+        print("Insert: {}".format(ev['Title']))
+        event_add = cal.events().insert(
+            calendarId=config.CALENDAR_ID,
+            body=bodydict,
+            ).execute()
+
+    #pprint.pprint(event_add)
+
+     
+    # print("{} : {}".format(
+    #    k,
+    #    events_dict[k]['Title'],
+    #    ))
+
+#pprint.pprint(existing_events)
