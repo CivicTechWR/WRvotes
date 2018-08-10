@@ -39,8 +39,6 @@ def get_today():
 
     return today
 
-
-
 # -----------------------------
 def get_padded_id(id_str):
     """ Get the padded calendar ID for Google calendar, 
@@ -88,7 +86,7 @@ def load_config(configfile=None):
     parser.add_argument('-o', '--operation',
         help='operation to perform',
         default='sync-upcoming',
-        choices=['sync-upcoming','sync-all', 'clear-calendar']
+        choices=['sync-upcoming','sync-all']
         )
 
     args = parser.parse_args()
@@ -266,9 +264,5 @@ if script_operation == 'sync-upcoming':
     sync_calendar(cal)
 elif script_operation == 'sync-all':
     sync_calendar(cal, True)
-elif script_operation == 'clear-calendar':
-    # Yikes! Danger! Fortunately this does not work..
-    cal.calendars().clear(calendarId=config.CALENDAR_ID).execute()
-    # print("Yikes! Calendar cleared.")
 else:
     print("Unknown operation: {}".format(script_operation))
