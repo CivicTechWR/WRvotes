@@ -1,3 +1,10 @@
+CSV File Notes
+--------------
+
+- Commas are used to separate fields
+- Double quotes are used to enclose fields that contain commas
+- The encoding is UTF-8
+
 
 Position IDs
 ------------
