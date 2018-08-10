@@ -142,7 +142,6 @@ response = cal.events().list(
 
 pprint.pprint(response)
 
-#pprint.pprint(positions_dict)
 
 #pprint.pprint(events_dict)
 #for k in sorted(events_dict.keys()):
