@@ -205,9 +205,11 @@ def sync_calendar(cal, include_all=False):
         if datetime_end < since_when:
             # print("IGNORED: {}".format(ev['Title']))
             continue
+
+        desc = ""
            
         if ev['URL']:
-            desc = '<p>Website: <a href="{}">{}</a></p>'.format(
+            desc += '<p>Website: <a href="{}">{}</a></p>'.format(
                 ev['URL'],
                 ev['URL'],
                 )
@@ -234,7 +236,7 @@ def sync_calendar(cal, include_all=False):
                    )
             desc += "</ul></p>"
             
-
+        bodydict = {}
         bodydict = {
             'start':{
                 'dateTime': get_datetime(ev['DateTimeStart']),
