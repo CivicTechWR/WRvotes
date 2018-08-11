@@ -206,10 +206,11 @@ def sync_calendar(cal, include_all=False):
             # print("IGNORED: {}".format(ev['Title']))
             continue
            
-        desc = '<p>Website: <a href="{}">{}</a></p>'.format(
-            ev['URL'],
-            ev['URL'],
-            )
+        if ev['URL']:
+            desc = '<p>Website: <a href="{}">{}</a></p>'.format(
+                ev['URL'],
+                ev['URL'],
+                )
         desc += '<p>{}</p>'.format(
             ev['Notes'],
             )
@@ -246,9 +247,11 @@ def sync_calendar(cal, include_all=False):
             'id': get_padded_id(ev['RowID']),
             'description': desc,
             'location': ev['Location'],
-            'source': { 'url' : ev['URL']},
             'summary': ev['Title'],
             }
+
+        if ev['URL']:
+            bodydict['source'] = { 'url' : ev['URL']}
         
         if ev['CancelledOrRescheduled'] == "Cancelled":
             bodydict['status'] = 'cancelled'
