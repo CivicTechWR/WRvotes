@@ -13,8 +13,18 @@ href="./wards/">information page for your ward</a>.
 {% if site.google_calendar_id -%}
   <h2>Embedded Calendar</h2>
 
+  <p>
   You can also view this calendar <a href="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}&hl=en">on 
   its own page</a>.
+  </p>
+  
+  {% if site.events_newsletter -%}
+    <p>
+    Instead of forgetting to visit this page and missing events, you
+    can sign up for <a href="{{ site.events_newletter }}">event
+    listings</a> and get a weekly summary emailed to you. 
+    </p>
+  {% endif %}
   
 <div class="embedContainer">
   <iframe src="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}&hl=en" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
