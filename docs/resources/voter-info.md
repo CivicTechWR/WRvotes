@@ -84,6 +84,35 @@ See the "Post-secondary" section on the [Region of Waterloo elections
 page](https://www.regionofwaterloo.ca/en/regional-government/elections.aspx)
 
 
+### How do I vote? May I vote using the Internet?
+
+This depends on the area municipality in which you live. In North
+Dumfries, Wellesley, and Woolwich you will **only** be able to vote
+via the Internet or by telephone. The election period for all of these
+area municipalities is from 10:00am on October 9 to 8:00pm on October
+22. Proxy voting will not be allowed in any of these townships. For more information see the following page for your area
+municipality: 
+
+- [North
+  Dumfries](https://www.northdumfries.ca/en/township-services/information-for-voters-.aspx)
+- [Wellesley](https://www.wellesley.ca/en/township-services/voter-information.aspx)
+- [Woolwich](https://www.woolwich.ca/en/township-services/information-for-voters.aspx)
+
+In Cambridge you may vote by Internet (but not telephone?), or in-person during
+an advance polling day or on election day. 
+
+- [Cambridge](https://www.cambridge.ca/en/your-city/information-for-voters.aspx)
+
+In the other area municipalities (Kitchener, City of Waterloo, Wilmot
+Township) you may vote in-person during an advance poll or on election
+day: 
+
+- [Kitchener](https://www.kitchener.ca/en/city-services/election-2018-important-dates.aspx)
+- [Wilmot](https://www.wilmot.ca/en/township-office/voting-locations.aspx)
+- [City of
+  Waterloo](https://www.waterloo.ca/en/government/where-when-to-vote.asp)
+
+
 ### There are a lot of positions to vote for! Do I have to vote for all of them?
 
 No. You may refrain from voting for some positions if you wish; your
