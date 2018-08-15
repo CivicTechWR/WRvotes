@@ -36,6 +36,9 @@ Media
   IsComparison
 - News opinion pieces by columnists are fair game but must be marked
   "Opinion"
+- News items that are about election issues (safe injection sites,
+  intensification) but not about the election directly are probably
+  not fair game. 
 
 ### Fuzzy lines
 
