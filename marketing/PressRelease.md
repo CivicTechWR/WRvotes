@@ -12,7 +12,7 @@ Voter turnout [is lower](https://www150.statcan.gc.ca/n1/pub/89-640-x/2009001/ta
 
 WaterlooRegionVotes.org has compiled candidate listings, events, news articles, and more into one easy to navigate website.  Learning about the election and making an informed decision based on where you live in Waterlo Region is one click away. Voters no longer have to feel overwhelmed by the complexities of voting municipally. Individuals are encouraged to contribute election content to produce a more comprehensive website by emailing CivicTechWR at [civictechwr@gmail.com](mailto:civictechwr@gmail.com).
 
-*“I've always considered voting to be the most basic of civic duties, but it's not straighforward to keep track of all of the different offices and candidates in municipal elections. In 2014, I remember making it to the polling station, thinking I was ready to make an informed vote, only to discover that one of the positions was a 'choose two.'”* said Kristina Taylor. 
+*“I've always considered voting to be the most basic of civic duties, but it's not straighforward to keep track of all of the different offices and candidates in municipal elections. In 2014, I remember making it to the polling station, thinking I was ready to make an informed vote, only to discover that one of the positions was a 'choose two,'”* said Kristina Taylor. *"I'm selfishly helping with this project so that it's way easier to make an informed choice this time."* 
 
 *“...insert another quote here...”*
 
