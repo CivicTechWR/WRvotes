@@ -65,9 +65,12 @@ div.spacer {
   min-height: 2em;
 }
 
-/* Add space between races */
+/* Add space between races, and put light gray boxes 
+ * around them. (Will this be ugly?)
 div.race-wrapper { 
   margin-bottom: 3em;
+  background: #e6e6e64d; /* 10% gray */
+  padding: 2em; 
 }
 
 /* Move continuation UL elements up so they look 
@@ -76,6 +79,7 @@ div.race-wrapper {
 ul.continue { 
   margin-top: -15px;
 }
+
 
 /* ------------ FOOTER STYLING ----------- */
 
