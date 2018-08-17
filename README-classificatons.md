@@ -24,7 +24,9 @@ Events
 - Events should be related to candidate campaigning in some way
 - Events from individual candidates may be posted, but must not have
   anything in ForMultipleCandidates
-
+- Rule of thumb: if the event is for a candidate's supporters only, it
+  is not eligible for the calendar. If the event is for all people
+  (including people opposed to the candidate) then it is okay.
 
 Media
 -----
