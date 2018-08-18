@@ -39,9 +39,14 @@ following positions municipally:
 - for votes within the cities, regional
   councillors 
 
+For a deeper exploration of this municipal structure, listen to this
+recording of the 
+[Communitech Summer School: Civics
+101](https://soundcloud.com/user-216833142/communitech-summer-school-civics-101)
+panel discussion with outgoing chair Ken Seiling and political science
+professor Robert J. Williams. 
 
 ### Is the Regional Chair like the Premier or the Prime Minister of Waterloo Region?
-
 
 Unlike provincial or federal politics, the Regional Chair does not set
 policy alone, and is not the leader of a party. Rather, the Regional Chair gets one vote on council
@@ -83,6 +88,5 @@ list](https://karen-redman.com/your-government) of
 responsibilities broken down across the different levels of
 government. (Note that linking to this page does not imply endorsement
 of the candidate. It is just a nice list.) 
-
 
 
