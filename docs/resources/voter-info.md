@@ -9,10 +9,10 @@ Information for Voters
 * table of contents
 {:toc}
 
-### What is even happening? 
+### What is this all about? 
 
 On October 22, 2018, there will be a municipal election in Waterloo
-Region. Up for election will be representatives of three different
+Region (and the rest of Ontario). Up for election will be representatives of three different
 levels of government: 
 
 - Regional government (Regional Chair and Councillors)
@@ -23,11 +23,44 @@ There is a good, readable voter's guide to municipal elections in
 Ontario on the Ministry of Municipal Affairs and Housing website:
 [2018 Voters' Guide](http://www.mah.gov.on.ca/Page18734.aspx). 
 
-### Why should I care?
+### Why is municipal government important?
 
-Municipal government is important! 
+In Waterloo Region, your regional government is responsible for:
 
-[And?]
+- Public health
+- Social services
+- Housing
+- Child care
+- Seniors' services
+- Transportation (roads, signals, transit)
+- Water supply
+- Wastewater treatment
+- Emergency medial services
+- Policing
+- Waterloo Regional International Airport
+- Economic development
+- Library, culture, and heritage resources
+- Provincial offenses court
+- Regional planning
+- Licensing & by-laws
+
+Your local municipalities are responsible for:
+
+- Fire Services
+- Recreation & Parks
+- Arts & Culture
+- Roads & Sidewalks
+- Cemetaries
+- Animal Control
+- Water Retail
+- Wastewater Collection
+- Building Inspections
+- Parking
+- Local Planning
+- Licensing & by-laws
+- Libraries
+
+That's a long list of things that have a direct impact on your daily life.
 
 ### I thought we just had an election?
 
