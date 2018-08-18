@@ -85,8 +85,8 @@ Some of the prominent roles played by the area municipalities include:
 
 Karen Redman's campaign page has an [informative
 list](https://karen-redman.com/your-government) of
-responsibilities broken down across the different levels of
-government. (Note that linking to this page does not imply endorsement
+responsibilities broken across the different levels of
+government, including provincial and federal levels. (Note that linking to this page does not imply endorsement
 of the candidate. It is just a nice list.) 
 
 
