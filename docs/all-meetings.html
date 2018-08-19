@@ -22,7 +22,7 @@ across all positions, every survey, and every meeting recording.
     {% include list-event-block.html
       event-list=events-allcandidates
       header="Every All-Candidates Meeting"
-      teaser-limit=site.teaser_limit_events_generic
+      teaser-limit=-1
       race-id="all-candidates"
       big-header=true %}
     </div>
@@ -38,11 +38,8 @@ across all positions, every survey, and every meeting recording.
       race-id="surveys"
       type="survey"
       header="Questionnaires and Meeting Recordings"
-      teaser-limit=site.teaser_limit_surveys 
+      teaser-limit=-1
       big-header=true %}
 {% endif %}
 
-
-<script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
 
