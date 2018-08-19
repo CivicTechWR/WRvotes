@@ -4,6 +4,7 @@ rvm:
 
 before_script:
  - ./create_wards
+ - jekyll build
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
