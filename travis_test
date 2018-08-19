@@ -1,3 +1,5 @@
 #!/bin/sh
-cd /_site
+mkdir /_site
+jekyll b -d /_site
+cd _site
 htmlproofer --assume-extension
