@@ -3,6 +3,11 @@ layout: default
 title: All News
 ---
 
+<p>
+These listings include every news item across all positions. They mix
+up news items with surveys.
+</p>
+
 
 {% assign target-tags = site.data.internal.position-tags
   | where_exp:"pos", "pos.NumberToElect == '0'" %}
@@ -23,11 +28,6 @@ title: All News
       big-header=true %}
   {% endif %}
 {% endfor %}
-
-<p>
-This listing includes every news item across all positions. It mixes
-up news items with surveys.
-</p>
 
 {% assign media-list = site.data.sync.media %}
 
