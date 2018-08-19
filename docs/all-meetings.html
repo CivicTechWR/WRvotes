@@ -13,21 +13,6 @@ across all positions, every survey, and every meeting recording.
 {% assign events-upcoming = all-events  
   | where_exp:"ev", "ev.DateTimeStart >= date-now" %}
 
-{% assign events-allcandidates = events-upcoming
-    | where_exp:"ev", "ev.ForMultipleCandidates == 'Y'" %}
-
-{% if events-allcandidates.size > 0 %}
-  <div class="event-wrapper" id="event-wrapper-allcandidates">
-
-    {% include list-event-block.html
-      event-list=events-allcandidates
-      header="Every All-Candidates Meeting"
-      teaser-limit=-1
-      race-id="all-candidates"
-      big-header=true %}
-    </div>
-{% endif %}
-
 
 {% assign media-list = site.data.sync.media
     | where_exp:"item", "item.ComparisonOrOpinion == 'Comparison'" %}
@@ -42,4 +27,19 @@ across all positions, every survey, and every meeting recording.
       big-header=true %}
 {% endif %}
 
+
+{% assign events-allcandidates = events-upcoming
+    | where_exp:"ev", "ev.ForMultipleCandidates == 'Y'" %}
+
+{% if events-allcandidates.size > 0 %}
+  <div class="event-wrapper" id="event-wrapper-allcandidates">
+
+    {% include list-event-block.html
+      event-list=events-allcandidates
+      header="Every All-Candidates Meeting"
+      teaser-limit=-1
+      race-id="all-candidates"
+      big-header=true %}
+    </div>
+{% endif %}
 
