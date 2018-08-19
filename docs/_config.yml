@@ -5,6 +5,11 @@ show_downloads: false
 plugins:
   - jekyll-sitemap
 
+defaults:
+  -
+   values:
+     layout: "default"
+
 empty-array: []
 
 teaser_limit_events_multi_candidate: 7

@@ -1,0 +1,6 @@
+#!/bin/sh
+cd docs/wards
+cat ../../ward_list | while read I; do 
+   rm $I 2>/dev/null
+   ln -s ../_includes/ward-template.html $I
+done
