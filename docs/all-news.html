@@ -2,10 +2,6 @@
 layout: default
 title: All News
 ---
-<p>
-This listing includes every news item across all positions. It mixes
-up news items with surveys.
-</p>
 
 
 {% assign target-tags = site.data.internal.position-tags
@@ -27,6 +23,11 @@ up news items with surveys.
       big-header=true %}
   {% endif %}
 {% endfor %}
+
+<p>
+This listing includes every news item across all positions. It mixes
+up news items with surveys.
+</p>
 
 {% assign media-list = site.data.sync.media %}
 
