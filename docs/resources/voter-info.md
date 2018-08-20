@@ -23,49 +23,20 @@ There is a good, readable voter's guide to municipal elections in
 Ontario on the Ministry of Municipal Affairs and Housing website:
 [2018 Voters' Guide](http://www.mah.gov.on.ca/Page18734.aspx). 
 
-### Why is municipal government important?
+### Why should I vote in municipal elections?
 
-In Waterloo Region, your regional government is responsible for:
-
-- Public health
-- Social services
-- Housing
-- Child care
-- Seniors' services
-- Transportation (roads, signals, transit)
-- Water supply
-- Wastewater treatment
-- Emergency medial services
-- Policing
-- Waterloo Regional International Airport
-- Economic development
-- Library, culture, and heritage resources
-- Provincial offenses court
-- Regional planning
-- Licensing & by-laws
-
-Your local municipalities are responsible for:
-
-- Fire Services
-- Recreation & Parks
-- Arts & Culture
-- Roads & Sidewalks
-- Cemetaries
-- Animal Control
-- Water Retail
-- Wastewater Collection
-- Building Inspections
-- Parking
-- Local Planning
-- Licensing & by-laws
-- Libraries
-
-That's a long list of things that have a direct impact on your daily life.
+Your municipal government is responsible for many of the services 
+that directly impact your daily life. We've put together a 
+[separate page](/municipal-structure#what-do-the-different-levels-of-government-do) 
+with information about how everything works. Ultimately, whether 
+you get engaged with municipal government is your choice - 
+do you want to have input into who's making decisions about 
+how your city functions?
 
 ### I thought we just had an election?
 
 On June 7 2018 Ontario had a provincial election. This is a municipal
-election. Both sets of elections are held every four years. 
+election. Both sets of elections are currently held every four years. 
 
 
 ### Am I permitted to vote?
