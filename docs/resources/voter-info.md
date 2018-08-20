@@ -27,7 +27,7 @@ Ontario on the Ministry of Municipal Affairs and Housing website:
 
 Your municipal government is responsible for many of the services 
 that directly impact your daily life. We've put together a 
-[separate page](/municipal-structure#what-do-the-different-levels-of-government-do) 
+[separate page](/resources/municipal-structure#what-do-the-different-levels-of-government-do) 
 with information about how everything works. Ultimately, whether 
 you get engaged with municipal government is your choice - 
 do you want to have input into who's making decisions about 
