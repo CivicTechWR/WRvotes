@@ -14,7 +14,21 @@ WaterlooRegionVotes.org has compiled candidate listings, events, news articles, 
 
 *“I've always considered voting to be the most basic of civic duties, but it's not straighforward to keep track of all of the different offices and candidates in municipal elections. In 2014, I remember making it to the polling station, thinking I was ready to make an informed vote, only to discover that one of the positions was a 'choose two,'”* said Kristina Taylor. *"I'm selfishly helping with this project so that it's way easier to make an informed choice this time."* 
 
-*“...insert another quote here...”*
+Quotes from Candidates:
+
+*Thanks so much for waterlooregionvotes.org. I think it's a fantastic idea to help increase voter turnout and awareness. Having a one stop website is going to be very helpful.*
+
+*I think this is awesome. Increasing citizen engagement to increase awareness and voting numbers is so critical.*
+
+*Thanks for this! It's a lot of work.*
+
+*Thanks for getting in touch and for providing this service to the community!*
+
+*Thanks for your email and your dedication to keep the public informed. This is an amazing resource and I am thrilled to share it!*
+
+*Thank you, and thanks to your organization - a great idea and very useful service to the community.*
+
+*Thank you for your email and work toward educating the public on the up coming election.*
 
 ### The municipal election is Monday October 22nd. Get informed, then go vote!
 https://WaterlooRegionVotes.org
