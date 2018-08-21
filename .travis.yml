@@ -8,8 +8,7 @@ addons:
          - libssl1.0.0
 
 before_script:
- - ./create_wards
- - jekyll build
+ - ./build_site
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
