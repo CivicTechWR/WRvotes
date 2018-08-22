@@ -1,3 +1,8 @@
+---
+layout: default
+title: Ward List
+---
+
 # Municipal Ward Listings
 
 Each of the seven municipalities in Waterloo Region
