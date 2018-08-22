@@ -149,7 +149,7 @@ means that candidates must be evaluated on their individual merits.
 ### I don't feel informed enough to vote. Where do I start?
 
 Start by finding your municipal ward on the [ward map](/) or by
-finding your ward in the [list of wards](/all-positions). There, you
+finding your ward in the [list of wards](/wards). There, you
 can find the candidates running for each position in your area, their
 websites, news articles about them, and events where they will be
 appearing. 
@@ -248,7 +248,7 @@ about it so we can publish it on this website!
 ### What other groups are working on election education?
 
 The Region of Waterloo links to election information for the different
-municipalities at <https://wrvotes.com> . 
+municipalities at <http://wrvotes.com> . 
 
 The (City of) Waterloo Voter Support Committee has a website at
 <https://waterloovotes.com> 
@@ -263,7 +263,7 @@ have a Twitter account here:
 
 ### I don't trust your candidate listings. Where can I find the real ones?
 
-Official candidate listing pages are listed on <https://wrvotes.com> .
+Official candidate listing pages are listed on <http://wrvotes.com> .
 For convenience, here they are again: 
 
 - [Region of
