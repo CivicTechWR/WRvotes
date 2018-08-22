@@ -43,10 +43,10 @@
         {% if first-char-website == '@' %}
           {% assign website-url = nominee.Website 
             | replace_first: '@','https://twitter.com/' %} 
-        {% elsif nominee.website contains '://' %}
+        {% elsif nominee.Website contains '://' %}
           {% assign website-url = nominee.Website %}
         {% else %}
-          {% assign website-url = http://{{ nominee.Website }} %}
+          {% capture website-url %}http://{{ nominee.Website }}{% endcapture %}
         {% endif %}
 
         <a href="{{ website-url }}">{{ nominee.Given_Names }} 
