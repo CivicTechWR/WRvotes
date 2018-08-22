@@ -1,0 +1,7 @@
+#!/bin/bash
+#!/bin/bash
+# Override SSH so that we can specify the identity file to use. 
+# From: https://superuser.com/questions/355676/
+
+/usr/bin/ssh -i /home/pnijjar/.ssh/id_rsa_wrv_deploy "$@"
+

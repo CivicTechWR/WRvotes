@@ -1,0 +1,12 @@
+#!/bin/bash 
+# Force rebuild of page, given a deploy key. 
+# Paul "Worthless" Nijjar, 2018-08-15
+
+
+WORKDIR=~/wrvotes/scripts/force_rebuild
+export GIT_SSH=$WORKDIR/ssh-wrv-push
+
+cd $WORKDIR
+git pull --quiet 
+git commit --quiet --allow-empty -m "Robo-commit to rebuild page"
+git push --quiet

@@ -1,3 +1,10 @@
+CSV File Notes
+--------------
+
+- Commas are used to separate fields
+- Double quotes are used to enclose fields that contain commas
+- The encoding is UTF-8
+
 
 Position IDs
 ------------
@@ -67,18 +74,34 @@ lists on the website should be auto-updated.
 Adding Media Entries
 --------------------
 
-There are two kinds of media. One is news items, which are of interest
-to people exploring deep into the election.
+There are three kinds of media. One is news items, which are of interest
+to people exploring deep into the election. One is opinion pieces. 
 
 One is called "Questionnaires and Recorded Meetings" which is intended
 to serve as side-by-side comparisons of candidates. These are the
 resources that people hoping to make up their minds in a hurry should
 use.
 
-In `media.csv` these two types are distinguished by the `IsComparison`
-field. If this field is set to 'Y' then the entry will be included in
-"Questionnaires and Recorded Meetings". Otherwise it is a regular
-news item. 
+In `media.csv` these two types are distinguished by the
+`ComparisonOrOpinion`
+field. If this field is set to 'Comparison' then the entry will be included in
+"Questionnaires and Recorded Meetings". If it is 'Opinion' it will be
+marked as an opinion piece. Otherwise it is a regular news item. 
+
+Note that capitals count!
+
+Adding Event Entries
+--------------------
+
+Each event has a RowID. This must be distinct from all other rows.
+They do not need to be in increasing order, but it does not hurt. 
+
+Removing Event Entries
+----------------------
+
+You probably do not want to delete an event from events.csv, or the
+Google Calendar will not reflect the change. Instead, marked the
+"CancelledOrRescheduled" field to "Cancelled". 
 
 Adding Menu Entries
 -------------------
