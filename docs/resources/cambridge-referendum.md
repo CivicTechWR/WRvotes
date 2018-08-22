@@ -87,3 +87,15 @@ Ballot](http://www.mah.gov.on.ca/Page18734.aspx#questions) section of
 the Ontario 2018 Voters' Guide.
 
 
+### Who is campaigning for and against this referendum?
+
+The only officially registered third-party is Yes! Cambridge. They
+have a Twitter account here:
+[@yescambridge](https://twitter.com/yescambridge).
+
+There is also an anonymous Twitter account
+[@RankedBallotWR](https://twitter.com/RankedBallotWR) that seems to be
+promoting the referendum. 
+
+So far there appear to be no organized groups opposing the referendum.
+If you find some please contact us so we can update this FAQ.

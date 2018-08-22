@@ -2,11 +2,32 @@
 layout: default
 title: All News
 ---
+
 <p>
-This listing includes every news item across all positions. It mixes
+These listings include every news item across all positions. They mix
 up news items with surveys.
 </p>
 
+
+{% assign target-tags = site.data.internal.position-tags
+  | where_exp:"pos", "pos.NumberToElect == '0'" %}
+
+{% for virtual-tag in target-tags %}
+
+  {% assign pos-media = site.data.sync.media
+    | where_exp:"ev", "ev.PositionIDList contains
+    virtual-tag.PositionUniqueName" %}
+
+  {% if pos-media.size > 0 %}
+     {% include list-media-items.html
+      item-list=pos-media
+      race-id=virtual-tag.PositionUniqueName
+      type="news"
+      header=virtual-tag.PositionDesc
+      teaser-limit=site.teaser_limit_surveys 
+      big-header=true %}
+  {% endif %}
+{% endfor %}
 
 {% assign media-list = site.data.sync.media %}
 
@@ -15,8 +36,11 @@ up news items with surveys.
       item-list=media-list
       race-id="news"
       type="news"
-      header="News Items, Surveys, and Recordings"
-      teaser-limit=site.teaser_limit_surveys 
+      header="All News Items, Surveys, and Recordings"
+      teaser-limit=-1
       big-header=true %}
 {% endif %}
+
+<script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
 

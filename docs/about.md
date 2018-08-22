@@ -20,6 +20,19 @@ In particular, we aim to:
   structured, what different elected officials do, and a sense of
   how municipal politics affects your life. 
 
+## Who is Responsible for This?
+
+This site is a project of [CivicTechWR](https://civictechwr.org), a
+local group that attempts to improve the lives of residents in
+Waterloo Region through civic technology. 
+
+You can join us! Come to one of our meetups at
+<https://meetup.com/CivicTechWR/> to get involved. 
+
+If you want to get in touch, email us at 
+<a href="mailto:civictechwr.wrvotes@gmail.com">civictechwr.wrvotes@gmail.com</a>
+. 
+
 ## How to Help
 
 Use the site! Learn about the election so you can cast an informed
@@ -43,11 +56,3 @@ We currently could really use help with:
 - Helping with promotion 
 
 
-## Who is Responsible for This?
-
-This site is a project of [CivicTechWR](https://civictechwr.org), a
-local group that attempts to improve the lives of residents in
-Waterloo Region through civic technology. 
-
-You can join us! Come to one of our meetups at
-<https://meetup.com/CivicTechWR/> to get involved. 

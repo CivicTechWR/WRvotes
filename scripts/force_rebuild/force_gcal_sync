@@ -1,0 +1,9 @@
+#!/bin/bash
+ 
+PYDIR=/home/pnijjar/wrvotes/scripts
+
+source "$PYDIR/venv/bin/activate"
+
+$PYDIR/update-google-calendar.py \
+  --configfile=$PYDIR/update-google-calendar.config.py
+
