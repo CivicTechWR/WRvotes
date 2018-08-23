@@ -56,11 +56,11 @@ $( document ).ready(function() {
 
     if ($(target).hasClass('hidden')) {
       $(target).removeClass('hidden');
-      $(target).text("Fewer " + div_description); 
+      $(target).text("Show Fewer " + div_description); 
       $(target + " ~ .togglable").show();
     } else {
       $(target).addClass('hidden');
-      $(target).text("More " + div_description);
+      $(target).text("Show More " + div_description);
       $(target + " ~ .togglable").hide();
     }
   }; // end toggle_listing

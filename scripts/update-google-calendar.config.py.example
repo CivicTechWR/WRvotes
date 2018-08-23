@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+# Should be generated as a service account .json file
+# in console.developers.google.com .
+#
+# This account needs access to the Google Calendar API. 
+# It needs the ability to edit the calendar in question.
+SERVICE_CREDENTIALS="./secrets/service-account-credentials.json"
+
+# Look in your calendar URLs to figure this out (src= parameter)
+# This is NOT a list. 
+CALENDAR_ID="some-calendar@group.calendar.google.com"
+
+# For datetime nonsense 
+TIMEZONE='America/Toronto'
+
+# Where to find the events file
+EVENTS_CSV="../docs/_data/sync/events.csv"
+
+# Translations of position tags to names
+POSITIONS_CSV="../docs/_data/internal/position-tags.csv"
+
+

@@ -10,8 +10,29 @@ information events. You can get a more specific listing of
 all-candidates meetings relevant to your area on the <a
 href="./wards/">information page for your ward</a>.
 </p><p>
-These events will also be also synchronized to a Google Calendar. Stay
-tuned!
+{% if site.google_calendar_id -%}
+  <h2>Embedded Calendar</h2>
+
+  <p>
+  You can also view this calendar <a href="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}&hl=en">on 
+  its own page</a>.
+  </p>
+  
+  {% if site.events_newsletter -%}
+    <p>
+    Instead of forgetting to visit this page and missing events, you
+    can sign up for <a href="{{ site.events_newsletter }}">event
+    listings</a> and get a weekly summary emailed to you. 
+    </p>
+  {% endif %}
+  
+<div class="embedContainer">
+  <iframe src="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}&hl=en" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+{%- endif %}
+
+
 </p>
 
 {% assign all-events = site.data.sync.events %}

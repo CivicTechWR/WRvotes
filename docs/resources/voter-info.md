@@ -9,10 +9,10 @@ Information for Voters
 * table of contents
 {:toc}
 
-### What is even happening? 
+### What is this all about? 
 
 On October 22, 2018, there will be a municipal election in Waterloo
-Region. Up for election will be representatives of three different
+Region (and the rest of Ontario). Up for election will be representatives of three different
 levels of government: 
 
 - Regional government (Regional Chair and Councillors)
@@ -23,16 +23,20 @@ There is a good, readable voter's guide to municipal elections in
 Ontario on the Ministry of Municipal Affairs and Housing website:
 [2018 Voters' Guide](http://www.mah.gov.on.ca/Page18734.aspx). 
 
-### Why should I care?
+### Why should I vote in municipal elections?
 
-Municipal government is important! 
-
-[And?]
+Your municipal government is responsible for many of the services 
+that directly impact your daily life. We've put together a 
+[separate page](/resources/municipal-structure#what-do-the-different-levels-of-government-do) 
+with information about how everything works. Ultimately, whether 
+you get engaged with municipal government is your choice - 
+do you want to have input into who's making decisions about 
+how your city functions?
 
 ### I thought we just had an election?
 
 On June 7 2018 Ontario had a provincial election. This is a municipal
-election. Both sets of elections are held every four years. 
+election. Both sets of elections are currently held every four years. 
 
 
 ### Am I permitted to vote?
@@ -82,6 +86,35 @@ vote twice!
 
 See the "Post-secondary" section on the [Region of Waterloo elections
 page](https://www.regionofwaterloo.ca/en/regional-government/elections.aspx)
+
+
+### How do I vote? May I vote using the Internet?
+
+This depends on the area municipality in which you live. In North
+Dumfries, Wellesley, and Woolwich you will **only** be able to vote
+via the Internet or by telephone. The election period for all of these
+area municipalities is from 10:00am on October 9 to 8:00pm on October 22. 
+Proxy voting will not be allowed in any of these townships. For more information see the  page for your area
+municipality: 
+
+- [North
+  Dumfries](https://www.northdumfries.ca/en/township-services/information-for-voters-.aspx)
+- [Wellesley](https://www.wellesley.ca/en/township-services/voter-information.aspx)
+- [Woolwich](https://www.woolwich.ca/en/township-services/information-for-voters.aspx)
+
+In Cambridge you may vote by Internet (but not telephone?), or in-person during
+an advance polling day or on election day. 
+
+- [Cambridge](https://www.cambridge.ca/en/your-city/information-for-voters.aspx)
+
+In the other area municipalities (Kitchener, City of Waterloo, Wilmot
+Township) you may vote in-person during an advance poll or on election
+day: 
+
+- [Kitchener](https://www.kitchener.ca/en/city-services/election-2018-important-dates.aspx)
+- [Wilmot](https://www.wilmot.ca/en/township-office/voting-locations.aspx)
+- [City of
+  Waterloo](https://www.waterloo.ca/en/government/where-when-to-vote.asp)
 
 
 ### There are a lot of positions to vote for! Do I have to vote for all of them?
