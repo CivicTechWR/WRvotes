@@ -1,5 +1,16 @@
   {% assign events-list = site.data.sync.events 
     | where_exp:"ev", "ev.PositionIDList contains include.race-id" %}
+
+  {% assign alias-list = include.alias-string | split: "," | strip %}
+  {% for alias in alias-list %}
+    {% assign aliased-events = site.data.sync.events
+      | where_exp:"item", "item.PositionIDList contains alias"
+      %}
+
+     {% assign events-list = media-list | concat: aliased-media %}
+  {% endfor %}
+
+  {% assign events-list = media-list | uniq %}
     
   {% comment %}
     I think this should not miss any events. site.time
