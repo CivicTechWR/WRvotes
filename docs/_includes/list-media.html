@@ -2,10 +2,11 @@
     | where_exp:"item", "item.PositionIDList contains include.race-id"
     %}
 
-  {% assign alias-list = include.alias-string | split: "," | strip %}
+  {% assign alias-list = include.alias-string | split: "," %}
   {% for alias in alias-list %}
+    {% assign stripped-alias = alias | strip %}
     {% assign aliased-media = site.data.sync.media
-      | where_exp:"item", "item.PositionIDList contains alias"
+      | where_exp:"item", "item.PositionIDList contains stripped-alias"
       %}
 
      {% assign media-list = media-list | concat: aliased-media %}
