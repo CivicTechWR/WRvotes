@@ -10,7 +10,7 @@ This is gross but it works.
 {% assign ward-info = site.data.internal.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
 
-<h2>Who is Running? {{ ward-info.PositionDesc }}</h2>
+<h1>Who is Running? {{ ward-info.PositionDesc }}</h1>
 
 <p>On this page you will find information about people you can vote for
 on <b>regional council</b> (Regional Chair and possibly Regional
@@ -19,8 +19,9 @@ Councillors), your <b>area municipality</b> (Mayor and Ward councillors) and
 </p>
 
 <div class="flex">
+<div class="flex gutters">
   <div class="aside">
-    <aside class="standout-box large dark" data-aos="fade-up">
+    <aside class="standout-box full-width dark" data-aos="fade-up">
       <header><h5>About School Boards</h5></header>
       <p>There are four school boards in this region. Voters are eligible to vote in at most one (by default, the Public English one). For more information see <a href="../resources/school-boards-info">Information About School Board Elections</a>.</p>
       <header><h5>About Events</h5></header>
@@ -40,7 +41,7 @@ Councillors), your <b>area municipality</b> (Mayor and Ward councillors) and
         {% assign race-id = race %}
       {% endif %}
 
-      <div class="race-wrapper large standout-box" data-aos="fade-up" id="{{ race-id | slugify }}-wrapper">
+      <div class="race-wrapper full-width standout-box" data-aos="fade-up" id="{{ race-id | slugify }}-wrapper">
 
         {% include list-nominees.html race-id=race-id %}
 

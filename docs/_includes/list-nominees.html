@@ -3,14 +3,14 @@
   where:"PositionUniqueName",include.race-id | first -%}
 
 
-<h3 class="inline">{{ race-info.PositionDesc }}</h3>
+<h3 class="medium-text">{{ race-info.PositionDesc }}</h3>
 <div class="candidate-list" id="{{ include.race-id | slugify }}" >
 
-  {% assign these-nominees = site.data.sync.nominees 
+  {% assign these-nominees = site.data.sync.nominees
     | where:"PositionUniqueName",include.race-id %}
   {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
 
-  {% assign valid-nominees = these-nominees 
+  {% assign valid-nominees = these-nominees
     | where_exp:"nom", "nom.Withdrawn != 'Y'" %}
   {% assign num-to-elect = race-info.NumberToElect | plus: 0 %}
 
@@ -38,18 +38,18 @@
         Or we should prohibit this!
         {% endcomment %}
 
-        {% assign first-char-website = nominee.Website 
+        {% assign first-char-website = nominee.Website
           | slice: 0 %}
         {% if first-char-website == '@' %}
-          {% assign website-url = nominee.Website 
-            | replace_first: '@','https://twitter.com/' %} 
+          {% assign website-url = nominee.Website
+            | replace_first: '@','https://twitter.com/' %}
         {% elsif nominee.Website contains '://' %}
           {% assign website-url = nominee.Website %}
         {% else %}
           {% capture website-url %}http://{{ nominee.Website }}{% endcapture %}
         {% endif %}
 
-        <a href="{{ website-url }}">{{ nominee.Given_Names }} 
+        <a href="{{ website-url }}">{{ nominee.Given_Names }}
           {{ nominee.Last_Name }}</a>
       {%- else -%}
         {{ nominee.Given_Names}} {{ nominee.Last_Name }}
@@ -61,12 +61,12 @@
         {%- endif -%}
 
         {%- if nominee.Email -%}
-          , {{ nominee.Email }} 
+          , {{ nominee.Email }}
         {%- endif -%}
 
         {%- if nominee.Twitter -%}
-          , 
-          <a href="{{ nominee.Twitter | 
+          ,
+          <a href="{{ nominee.Twitter |
             replace_first: '@', 'https://twitter.com/' }}">{{
             nominee.Twitter }}</a>
         {%- endif -%}

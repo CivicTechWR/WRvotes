@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Every All-Candidates Meeting
 ---
 <p>
@@ -10,7 +10,7 @@ across all positions, every survey, and every meeting recording.
 {% assign all-events = site.data.sync.events %}
 {% assign date-now = site.time | date: "%F" %}
 
-{% assign events-upcoming = all-events  
+{% assign events-upcoming = all-events
   | where_exp:"ev", "ev.DateTimeStart >= date-now" %}
 
 
