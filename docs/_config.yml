@@ -11,6 +11,7 @@ defaults:
      layout: "default"
 
 empty-array: []
+permalink: pretty
 
 teaser_limit_events_multi_candidate: 7
 teaser_limit_events_specific: 2
@@ -20,7 +21,7 @@ teaser_limit_surveys: 5
 
 google_calendar_id: atv3446s9ii5mq5873qh3i94qo@group.calendar.google.com
 
-google_calendar_timezone: America/Toronto 
+google_calendar_timezone: America/Toronto
 
 google_analytics: UA-102439664-2
 
