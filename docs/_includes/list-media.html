@@ -4,9 +4,8 @@
 
   {% assign alias-list = include.alias-string | split: "," %}
   {% for alias in alias-list %}
-    {% assign stripped-alias = alias | strip %}
     {% assign aliased-media = site.data.sync.media
-      | where_exp:"item", "item.PositionIDList contains stripped-alias"
+      | where_exp:"item", "item.PositionIDList contains {{ alias | strip }}"
       %}
 
      {% assign media-list = media-list | concat: aliased-media %}
