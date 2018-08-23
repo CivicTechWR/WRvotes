@@ -7,7 +7,7 @@
       | where_exp:"item", "item.PositionIDList contains alias"
       %}
 
-     {% assign events-list = media-list | concat: aliased-media %}
+     {% assign events-list = events-list | concat: aliased-events %}
   {% endfor %}
 
   {% assign events-list = media-list | uniq %}
