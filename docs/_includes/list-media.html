@@ -2,6 +2,17 @@
     | where_exp:"item", "item.PositionIDList contains include.race-id"
     %}
 
+  {% assign alias-list = include.alias-string | split: "," | trim %}
+  {% for alias in alias-list %}
+    {% assign aliased-media = site.data.sync.media
+      | where_exp:"item", "item.PositionIDList contains alias"
+      %}
+
+     {% assign media-list = media-list | concat: aliased-media %}
+  {% endfor %}
+
+  {% assign media-list = media-list | uniq %}
+
   {% assign news-list = site.empty-array %}
   {% assign survey-list = site.empty-array %}
 
