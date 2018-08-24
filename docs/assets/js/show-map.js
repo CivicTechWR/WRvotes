@@ -1,7 +1,9 @@
 
 /* Show map in new way. */
 
-var map = new L.Map('map', {zoom: 9, center: new L.latLng([43.575730,-80.002411]) });
+var attrib = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+var map = new L.Map('map', {zoom: 11, center: new
+  L.latLng([43.575730,-80.002411]), attribution: attrib });
 map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'));     //base layer
 
 map.addControl( new L.Control.Search({
