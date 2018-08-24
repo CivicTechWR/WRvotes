@@ -10,7 +10,7 @@
      {% assign events-list = events-list | concat: aliased-events %}
   {% endfor %}
 
-  {% assign events-list = media-list | uniq %}
+  {% assign events-list = events-list | uniq %}
     
   {% comment %}
     I think this should not miss any events. site.time
