@@ -18,7 +18,7 @@ map.addControl( new L.Control.Search({
         marker: L.circleMarker([0,0],{radius:30}),
         autoCollapse: false,
         collapsed: false,
-        autoType: true,
+        autoType: false,
         container: 'map-searchbar',
         zoom: 15,
         minLength: 5
