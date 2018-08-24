@@ -24,7 +24,7 @@ map.addControl( new L.Control.Search({
         minLength: 3
 }) );
 
-$.getJSON("./assets/data/WardBoundaries.json", function(data) {
+$.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     var geojson = L.geoJson(data, {
       onEachFeature: function (feature, layer) {
         layer.bindPopup(feature.properties.name);
