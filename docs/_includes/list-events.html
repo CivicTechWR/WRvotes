@@ -2,15 +2,10 @@
     | where_exp:"ev", "ev.PositionIDList contains include.race-id" %}
 
   {% assign alias-list = include.alias-string | split: "," %}
-  <!-- Alias list: {{ alias-list }} -->
   {% for alias in alias-list %}
     {% assign aliased-events = site.data.sync.events
       | where_exp:"item", "item.PositionIDList contains alias"
       %}
-
-      <!-- Aliased events: {{ aliased-events }} -->
-      <!-- Alias: {{ alias }} -->
-
      {% assign events-list = events-list | concat: aliased-events %}
   {% endfor %}
 
