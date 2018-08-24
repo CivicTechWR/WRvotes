@@ -30,7 +30,8 @@ $.getJSON("/assets/data/WardBoundaries.json", function(data) {
         layer.bindPopup(feature.properties.name);
       }
     });
-geojson.addTo(map);
+    geojson.addTo(map);
+});
  
 
 
