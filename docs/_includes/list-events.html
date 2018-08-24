@@ -7,6 +7,8 @@
       | where_exp:"item", "item.PositionIDList contains alias"
       %}
 
+      <!-- Aliased events: {{ aliased-events }} -->
+
      {% assign events-list = events-list | concat: aliased-events %}
   {% endfor %}
 
