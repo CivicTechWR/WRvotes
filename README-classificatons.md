@@ -4,18 +4,25 @@ What is fair game for the site? What goes where?
 Reducing Duplicates
 -------------------
 
-- When an event, questionnaire, etc applies to multiple positions use
-  the most general position (if there is one) or list the applicable
-  positions if there is not. 
+There are two options to deal with events, questionnaires, articles,
+etc that apply to many positions.
 
-  For example, articles about all of Cambridge can be tagged 
-  "Cambridge-Maypr" and articles about all of Waterloo Region can be
-  tagged "Regional-Chair"
+If it is not important that this event be listed for every single race
+(eg mayor and ward councillors) then list the position that is the
+most general position. 
 
-- All-candidates events should be tagged with all relevant positions,
-  however. 
+For example, articles about all of Cambridge can be tagged 
+"Cambridge-Maypr" and articles about all of Waterloo Region can be
+tagged "Regional-Chair"
 
-- The Election-Info tag is strictly for information about the election
+If it is important that this event be listed in all races (most
+all-candidates meetings, probably most questionnaires) then you can
+use an alias. Each position has a list of applicable aliases in
+`position-tags.csv` , and you can use one of them. 
+
+
+Note that the Election-Info tag is strictly for information about the
+election.
 
 
 Events

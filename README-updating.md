@@ -29,6 +29,14 @@ associated with a municipality (a township or one of the three
 cities). In Waterloo Region a ward is sufficient to identify all the
 races in that region. 
 
+Aliases
+-------
+
+Each position has a list of aliases. To sync with the Google calendar,
+these aliases need to contain a substring that is in all aliases and
+in no position tags. For us, that substring is "Alias-". 
+
+
 Time and Date formats
 ---------------------
 
