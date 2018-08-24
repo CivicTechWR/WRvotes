@@ -46,4 +46,5 @@ patient, or use the [ward listing](./wards/).
 
 <script src="{{ site.baseurl }}/assets/js/leaflet.js"></script>
 <script src="{{ site.baseurl }}/assets/js/leaflet-search.min.js"></script>
+<script src="{{ site.baseurl }}/assets/data/WardBoundaries.geojson" type="text/javascript"></script>
 <script src="{{ site.baseurl }}/assets/js/show-map.js"></script>
