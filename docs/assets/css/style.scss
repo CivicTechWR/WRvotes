@@ -168,13 +168,13 @@ p.bigtext {
 
 #map {
         float:left;
-        width:600px;
-        height:400px;
+        width:100%;
+        height:20em;
 }
 .search-input {
         font-family:Courier
 }
 .search-input,
 .leaflet-control-search {
-        max-width:400px;
+        max-width:20rem;
 }
