@@ -37,5 +37,12 @@ going on**, or **why you should care**, you will find answers here.
 Here is the map. It loads more slowly than the rest of the page, so be
 patient, or use the [ward listing](./wards/).
 
+<div id="map">
+</div>
+
+
 <script src="https://embed.github.com/view/geojson/CivicTechWR/WRvotes/master/docs/_data/sync/WardBoundaries.geojson"></script>
 
+<script src="{{ site.baseurl }}/assets/js/leaflet.js"></script>
+<script src="{{ site.baseurl }}/assets/js/leaflet-search.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/show-map.js"></script>
