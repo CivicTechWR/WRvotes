@@ -158,4 +158,17 @@ The code is fairly abstract. Most of the site-specific customization
 is in the CSV files and in `_config.yml` . Here are exceptions where
 things that are local to Waterloo Region are hardcoded: 
 
-(None that I found so far?)
+- The sharing links in the footer have hashtags specific to Waterloo
+  Region
+- The map embedding uses lat and long values specific to Waterloo
+  Region
+
+
+Javascript Libraries
+--------------------
+
+https://github.com/stefanocudini/leaflet-search
+
+https://unpkg.com/leaflet@1.3.0/dist/leaflet.js
+
+
