@@ -21,6 +21,7 @@ map.addControl( new L.Control.Search({
         autoType: false,
         container: 'map-searchbar',
         zoom: 15,
+        tooltipLimit: 0,
         minLength: 2
 }) );
 
