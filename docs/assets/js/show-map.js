@@ -14,7 +14,7 @@ map.addControl( new L.Control.Search({
         url: 'https://nominatim.openstreetmap.org/search?format=json&countrycodes=ca&viewbox=-80.7907,43.2281,-80.0834,43.6032&bounded=1&q={s}',
         jsonpParam: 'json_callback',
         propertyLoc: ['lat','lon'],
-        propertyName: 'display_name',
+        propertyName: 'name',
         marker: L.circleMarker([0,0],{radius:30}),
         autoCollapse: false,
         collapsed: false,
