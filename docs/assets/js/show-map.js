@@ -3,11 +3,12 @@
 
 var attrib = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
 var map = new L.Map('map', 
-  {zoom: 11, 
-  center: new L.latLng([43.418611, -80.472778]), 
-  attribution: 'This is a map'
+  {zoom: 10, 
+  center: new L.latLng([43.418611, -80.472778])
   });
-map.addLayer(new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'));     //base layer
+map.addLayer(
+  new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    { attribution: attrib }));     //base layer
 
 map.addControl( new L.Control.Search({
         url: 'https://nominatim.openstreetmap.org/search?format=json&countrycodes=ca&viewbox=-80.7907,43.2281,-80.0834,43.6032&bounded=1&q={s}',
