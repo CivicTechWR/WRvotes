@@ -25,3 +25,4 @@ map.addControl( new L.Control.Search({
 }) );
 
 
+L.geoJSON(WardBoundaries).addTo(map);
