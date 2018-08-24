@@ -20,9 +20,7 @@ map.addControl( new L.Control.Search({
         collapsed: false,
         autoType: false,
         container: 'map-searchbar',
+        zoom: 15,
         minLength: 2
 }) );
 
-map.on('click', function(e) {
-    alert(e.latlng);
-    });
