@@ -56805,7 +56805,7 @@
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-09\">Positions and Candidates</a>",
+        "2018 Election Information": "<a href=\"wards/Kitchener-Ward-09\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -58009,7 +58009,7 @@
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-10\">Positions and Candidates</a>",
+        "2018 Election Information": "<a href=\"wards/Kitchener-Ward-10\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
