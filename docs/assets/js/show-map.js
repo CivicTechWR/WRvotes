@@ -5,7 +5,8 @@ var attrib = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> 
 var map = new L.Map('map', 
   {zoom: 13, 
   center: new L.latLng([43.418609, -80.472778]), 
-  attribution: attrib });
+  attribution: "This is a map"
+  });
 map.addLayer(new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'));     //base layer
 
 map.addControl( new L.Control.Search({
