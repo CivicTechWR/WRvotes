@@ -10,7 +10,8 @@ map.addControl( new L.Control.Search({
         propertyName: 'display_name',
         propertyLoc: ['lat','lon'],
         marker: L.circleMarker([0,0],{radius:30}),
-        autoCollapse: true,
+        autoCollapse: false,
+        collapsed: false,
         autoType: false,
         minLength: 2
 }) );
