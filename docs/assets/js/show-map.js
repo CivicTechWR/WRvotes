@@ -18,3 +18,6 @@ map.addControl( new L.Control.Search({
         minLength: 2
 }) );
 
+map.on('click', function(e) {
+    alert(e.latlng);
+    });
