@@ -13,6 +13,7 @@ map.addControl( new L.Control.Search({
         autoCollapse: false,
         collapsed: false,
         autoType: false,
+        container: 'map-searchbar',
         minLength: 2
 }) );
 

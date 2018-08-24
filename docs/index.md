@@ -37,6 +37,7 @@ going on**, or **why you should care**, you will find answers here.
 Here is the map. It loads more slowly than the rest of the page, so be
 patient, or use the [ward listing](./wards/).
 
+<div id="map-searchbar"></div>
 <div id="map">
 </div>
 
