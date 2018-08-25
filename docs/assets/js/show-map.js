@@ -58,10 +58,15 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
 
     searchControl.on('search:locationfound', function(e) { 
         console.dir(e);
+        // https://github.com/IvanSanchez/Leaflet.CheapLayerAt
+
+        layer = map.getLayerAtLatLng(e.latlng);
+        layer.openPopup().openOn(map);
+
         // e.sourceTarget._layer.openPopup();
         //e.layer.openPopup().openOn(map);
         //e.sourceTarget.fire('click');
-        map.fire('click', e.latlng);
+        //map.fire('click', e.latlng);
     });
 
     // Make a combined layer so the popups will work?
@@ -72,5 +77,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v04");
+console.log("v05");
 

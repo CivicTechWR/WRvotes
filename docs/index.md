@@ -47,4 +47,5 @@ candidate information.
 <script src="{{ site.baseurl }}/assets/js/leaflet.js"></script>
 <script src="{{ site.baseurl }}/assets/js/leaflet-search.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/Leaflet.CheapLayerAt.js"></script>
 <script src="{{ site.baseurl }}/assets/js/show-map.js"></script>
