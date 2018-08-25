@@ -63,23 +63,9 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
         });
 
     searchControl.on('search:locationfound', function(e) { 
-        console.dir(e);
-        // https://github.com/IvanSanchez/Leaflet.CheapLayerAt
-
-        // layer = e.target._map.getLayerAt(map.latLngToLayerPoint(e.latlng));
-        // console.dir(layer);
-        // console.dir(map.latLngToLayerPoint(e.latlng));
-        // layer.openPopup().openOn(map);
-        // layer.openPopup();
-
-        // e.sourceTarget._layer.openPopup();
-        //e.layer.openPopup().openOn(map);
-        //e.sourceTarget.fire('click');
-        //map.fire('click', e.latlng);
-        console.dir(geojsonLayer);
-        // geojsonLayer.fire('click', e.latlng)
-
         // Use Mapbox Leaflet PIP (point in polygon) library.
+        // Ugh ugh ugh. 
+        // https://stackoverflow.com/questions/48798336/
         var foundLayers = leafletPip.pointInLayer(e.latlng, geojsonLayer);
 
         foundLayers.forEach(function(layer) {
@@ -90,16 +76,11 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
 
     });
 
-    // Make a combined layer so the popups will work?
-    //geojson.addTo(map);
     map.addLayer(baseLayer);
     map.addLayer(geojson);
-
-    //baseLayer.addTo(map);
-    //geojson.addTo(map);
 
     map.addControl(searchControl);
 });
  
-console.log("v26");
+console.log("v28");
 
