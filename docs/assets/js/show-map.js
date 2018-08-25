@@ -44,6 +44,8 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
 
     geojsonLayer = geojson;
 
+    // I am doing all of this code inside so that the geojsonLayer
+    // variable will be accessible. 
     var searchControl = new L.Control.Search({
         url: 'https://nominatim.openstreetmap.org/search?format=json&countrycodes=ca&viewbox=-80.7907,43.2281,-80.0834,43.6032&bounded=1&q={s}',
         jsonpParam: 'json_callback',
@@ -56,9 +58,7 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
         container: 'map-searchbar',
         zoom: 15,
         firstTipSubmit: true,
-        //autoResize: false,
         textPlaceholder: "Type your address to search",
-        //layer: L.featureGroup([baseLayer, geojson]),
         minLength: 3
         });
 
@@ -82,5 +82,3 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v28");
-
