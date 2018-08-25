@@ -3,9 +3,9 @@
 
 function onEachFeature(feature, layer) {
     if (feature.properties 
-      && feature.properties["2018 Election Information"]) { 
+      && feature.properties.information-link) { 
         layer.bindPopup(
-          feature.properties["2018 Election Information"]);
+          feature.properties.information-link);
     }
 
 } 
