@@ -1,4 +1,5 @@
 
+var geojsonLayer = null;
 
 // This feature had better be from the geoJSON
 function getPopupText(feature) { 
@@ -41,6 +42,8 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
       onEachFeature: onEachFeature
     });
 
+    geojsonLayer = geojson;
+
     var searchControl = new L.Control.Search({
         url: 'https://nominatim.openstreetmap.org/search?format=json&countrycodes=ca&viewbox=-80.7907,43.2281,-80.0834,43.6032&bounded=1&q={s}',
         jsonpParam: 'json_callback',
@@ -63,8 +66,8 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
         console.dir(e);
         // https://github.com/IvanSanchez/Leaflet.CheapLayerAt
 
-        layer = e.target._map.getLayerAt(map.latLngToLayerPoint(e.latlng));
-        console.dir(layer);
+        // layer = e.target._map.getLayerAt(map.latLngToLayerPoint(e.latlng));
+        // console.dir(layer);
         // console.dir(map.latLngToLayerPoint(e.latlng));
         // layer.openPopup().openOn(map);
         // layer.openPopup();
@@ -73,6 +76,7 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
         //e.layer.openPopup().openOn(map);
         //e.sourceTarget.fire('click');
         //map.fire('click', e.latlng);
+        geojsonLayer.fire('click', e.latlng)
     });
 
     // Make a combined layer so the popups will work?
@@ -86,5 +90,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v17");
+console.log("v20");
 
