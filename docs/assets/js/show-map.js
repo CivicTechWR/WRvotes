@@ -3,9 +3,9 @@
 
 function onEachFeature(feature, layer) {
     if (feature.properties 
-      && feature.properties.information-link) { 
+      && feature.properties["information-link"]) { 
         layer.bindPopup(
-          feature.properties.information-link);
+          feature.properties["information-link"]);
     }
 
 } 
