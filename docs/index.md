@@ -39,6 +39,10 @@ Be patient! The map loads slowly. If you are impatient or don't have
 Javascript, use the [ward listing](./wards/) to find your 
 candidate information.
 
+**Important**: The ward boundaries on this map are close but not
+exact. If you live close to a boundary you need to double-check which
+ward you are in. 
+
 <div id="map-searchbar"></div>
 <div id="map">
 </div>
