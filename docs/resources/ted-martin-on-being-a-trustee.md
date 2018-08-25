@@ -1,5 +1,5 @@
-﻿---
-title: Ted Martin: On Being a Trustee
+---
+title: "Ted Martin: On Being a Trustee"
 ---
 
 Ted Martin: On Being a Trustee
