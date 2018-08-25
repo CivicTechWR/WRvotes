@@ -1,6 +1,16 @@
 
 /* Show map in new way. */
 
+function onEachFeature(feature, layer) {
+    if (feature.properties 
+      && feature.properties["2018 Election Information"]) { 
+        layer.bindPopup(
+          feature.properties["2018 Election Information"]);
+    }
+
+} 
+
+
 var attrib = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
 var map = new L.Map('map', 
   {zoom: 10, 
@@ -27,9 +37,7 @@ map.addControl( new L.Control.Search({
 
 $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     var geojson = L.geoJson(data, {
-      onEachFeature: function (feature, layer) {
-        layer.bindPopup(feature.properties.name);
-      }
+      onEachFeature: onEachFeature
     });
     geojson.addTo(map);
 });
