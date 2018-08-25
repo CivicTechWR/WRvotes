@@ -38,7 +38,7 @@ var searchControl = new L.Control.Search({
     jsonpParam: 'json_callback',
     propertyLoc: ['lat','lon'],
     propertyName: 'display_name',
-    marker: false,
+    //marker: false,
     autoCollapse: false,
     collapsed: false,
     autoType: false,
