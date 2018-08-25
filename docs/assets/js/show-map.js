@@ -52,7 +52,7 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
         firstTipSubmit: true,
         //autoResize: false,
         textPlaceholder: "Type your address to search",
-        layer: L.featureGroup([baseLayer, geojson]),
+        //layer: L.featureGroup([baseLayer, geojson]),
         minLength: 3
         });
 
@@ -70,5 +70,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v01");
+console.log("v02");
 
