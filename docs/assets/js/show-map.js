@@ -2,7 +2,7 @@
 
 // This feature had better be from the geoJSON
 function getPopupText(feature) { 
-  return feature.properties.["Name"] + ": "
+  return feature.properties["Name"] + ": "
     + feature.properties["information-link"];
 }
 
