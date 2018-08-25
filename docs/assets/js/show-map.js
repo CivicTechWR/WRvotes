@@ -46,7 +46,7 @@ var searchControl = new L.Control.Search({
     zoom: 15,
     firstTipSubmit: true,
     //autoResize: false,
-    placeholder: "Type your address to search",
+    textPlaceholder: "Type your address to search",
     minLength: 3
     });
 
