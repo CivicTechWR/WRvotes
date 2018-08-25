@@ -76,6 +76,7 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
         //e.layer.openPopup().openOn(map);
         //e.sourceTarget.fire('click');
         //map.fire('click', e.latlng);
+        console.dir(geojsonLayer);
         geojsonLayer.fire('click', e.latlng)
     });
 
@@ -90,5 +91,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v20");
+console.log("v21");
 
