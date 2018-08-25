@@ -2230,7 +2230,7 @@
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-05\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Waterloo-Ward-05\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -3269,7 +3269,7 @@
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-01\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Waterloo-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -5633,7 +5633,7 @@
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-07\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Waterloo-Ward-07\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -8632,7 +8632,7 @@
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-04\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Waterloo-Ward-04\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -10401,7 +10401,7 @@
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-03\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Waterloo-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -11720,7 +11720,7 @@
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-02\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Waterloo-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -14809,7 +14809,7 @@
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Waterloo-Ward-06\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Waterloo-Ward-06\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -16053,7 +16053,7 @@
         "stroke": "#FA6800",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-02\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Cambridge-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -17382,7 +17382,7 @@
         "stroke": "#FA6800",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-05\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Cambridge-Ward-05\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -18661,7 +18661,7 @@
         "stroke": "#FA6800",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-03\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Cambridge-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -22410,7 +22410,7 @@
         "stroke": "#FA6800",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-01\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Cambridge-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -24374,7 +24374,7 @@
         "stroke": "#FA6800",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-06\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Cambridge-Ward-06\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -26358,7 +26358,7 @@
         "stroke": "#FA6800",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-07\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Cambridge-Ward-07\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -27847,7 +27847,7 @@
         "stroke": "#FA6800",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-08\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Cambridge-Ward-08\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -29566,7 +29566,7 @@
         "stroke": "#FA6800",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Cambridge-Ward-04\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Cambridge-Ward-04\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -30005,7 +30005,7 @@
         "stroke": "#0050ef",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/NorthDumfries-Ward-02\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/NorthDumfries-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -31749,7 +31749,7 @@
         "stroke": "#0050ef",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/NorthDumfries-Ward-03\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/NorthDumfries-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -34393,7 +34393,7 @@
         "stroke": "#0050ef",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/NorthDumfries-Ward-04\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/NorthDumfries-Ward-04\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -35717,7 +35717,7 @@
         "stroke": "#00aba9",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wilmot-Ward-01\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Wilmot-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -36216,7 +36216,7 @@
         "stroke": "#00aba9",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wilmot-Ward-03\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Wilmot-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -36795,7 +36795,7 @@
         "stroke": "#00aba9",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wilmot-Ward-04\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Wilmot-Ward-04\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -38154,7 +38154,7 @@
         "stroke": "#00aba9",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wilmot-Ward-02\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Wilmot-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -38758,7 +38758,7 @@
         "stroke": "#008a00",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wellesley-Ward-01\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Wellesley-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -39517,7 +39517,7 @@
         "stroke": "#008a00",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wellesley-Ward-02\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Wellesley-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -40346,7 +40346,7 @@
         "stroke": "#008a00",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wellesley-Ward-03\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Wellesley-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -40805,7 +40805,7 @@
         "stroke": "#008a00",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Wellesley-Ward-04\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Wellesley-Ward-04\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -41946,7 +41946,7 @@
         "stroke": "#c0392b",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Woolwich-Ward-02\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Woolwich-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -42375,7 +42375,7 @@
         "stroke": "#c0392b",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Woolwich-Ward-01\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Woolwich-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -46034,7 +46034,7 @@
         "stroke": "#c0392b",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Woolwich-Ward-03\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Woolwich-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -47933,7 +47933,7 @@
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-01\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Kitchener-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -48957,7 +48957,7 @@
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-02\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Kitchener-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -50296,7 +50296,7 @@
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-03\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Kitchener-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -51330,7 +51330,7 @@
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-04\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Kitchener-Ward-04\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -52464,7 +52464,7 @@
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-05\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Kitchener-Ward-05\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -53033,7 +53033,7 @@
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-06\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Kitchener-Ward-06\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -53817,7 +53817,7 @@
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-07\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Kitchener-Ward-07\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -55531,7 +55531,7 @@
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-08\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Kitchener-Ward-08\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -56805,7 +56805,7 @@
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-09\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Kitchener-Ward-09\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -58009,7 +58009,7 @@
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/Kitchener-Ward-10\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/Kitchener-Ward-10\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }
@@ -58468,7 +58468,7 @@
         "stroke": "#0050ef",
         "stroke-opacity": 1,
         "stroke-width": 1.2,
-        "2018 Election Information": "<a href=\"http://waterlooregionvotes.org/wards/NorthDumfries-Ward-01\">Positions and Candidates</a>",
+        "information-link": "<a href=\"wards/NorthDumfries-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
         "fill-opacity": 0
       }

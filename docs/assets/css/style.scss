@@ -163,3 +163,26 @@ p.bigtext {
     height: 100%;
 }
 
+
+/* ------ REDO SEARCHABLE MAP ----- */
+
+#map {
+    /* float:left; */
+    width:100%;
+    height:40em;
+}
+
+#map-searchbar { 
+    width: 100%;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+.search-input {
+        /* font-family:Courier */
+}
+.leaflet-control-search .search-input {
+    max-width:20em;
+    min-width:20em;
+}
+
+
