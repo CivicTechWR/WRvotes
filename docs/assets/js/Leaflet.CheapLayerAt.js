@@ -1,4 +1,4 @@
-console.log("cheap v02");
+console.log("cheap v04");
 
 L.Map.include({
 
@@ -22,7 +22,7 @@ L.Map.include({
 		var mapPos = this._container.getBoundingClientRect();
 
 		var viewportPoint = L.point(mapPos.left, mapPos.top).add(point);
-        console.log(viewportPoint);
+        console.dir(viewportPoint);
 
 		var el = document.elementFromPoint(viewportPoint.x, viewportPoint.y);
         console.log(el);
