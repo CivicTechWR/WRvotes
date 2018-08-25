@@ -34,32 +34,32 @@ map.addLayer(
     { attribution: attrib }));     //base layer
 
 
+var searchControl = new L.Control.Search({
+    url: 'https://nominatim.openstreetmap.org/search?format=json&countrycodes=ca&viewbox=-80.7907,43.2281,-80.0834,43.6032&bounded=1&q={s}',
+    jsonpParam: 'json_callback',
+    propertyLoc: ['lat','lon'],
+    propertyName: 'display_name',
+    marker: false,
+    autoCollapse: false,
+    collapsed: false,
+    autoType: false,
+    container: 'map-searchbar',
+    zoom: 15,
+    minLength: 3
+    });
+
+searchControl.on('search_locationfound', function(e) { 
+    e.layer.fire('click');
+});
+
+map.addControl(searchControl);
+
+
 $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     var geojson = L.geoJson(data, {
       onEachFeature: onEachFeature
     });
     geojson.addTo(map);
-
-
-    var searchControl = new L.Control.Search({
-            url: 'https://nominatim.openstreetmap.org/search?format=json&countrycodes=ca&viewbox=-80.7907,43.2281,-80.0834,43.6032&bounded=1&q={s}',
-            jsonpParam: 'json_callback',
-            propertyLoc: ['lat','lon'],
-            propertyName: 'display_name',
-            marker: false,
-            autoCollapse: false,
-            collapsed: false,
-            autoType: false,
-            container: 'map-searchbar',
-            zoom: 15,
-            minLength: 3
-        });
-
-    searchControl.on('search_locationfound', function(e) { 
-        e.layer.openPopup();
-    });
-
-    map.addControl(searchControl);
 
 });
  
