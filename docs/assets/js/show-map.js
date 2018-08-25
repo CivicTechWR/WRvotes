@@ -61,7 +61,7 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
 
     // Make a combined layer so the popups will work?
     //geojson.addTo(map);
-    L.featureGroup[baseLayer, geojson]).addTo(map);
+    L.featureGroup([baseLayer, geojson]).addTo(map);
 });
  
 
