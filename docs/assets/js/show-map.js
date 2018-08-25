@@ -48,7 +48,7 @@ var searchControl = new L.Control.Search({
     });
 
 searchControl.on('search_locationfound', function(e) { 
-    e.layer.openPopup().openOn(map);
+    e.layer.openPopup();
 });
 
 map.addControl(searchControl);
