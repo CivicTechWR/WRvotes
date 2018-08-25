@@ -25,7 +25,7 @@ function onEachFeature(feature, layer) {
 var attrib = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
 var map = new L.Map('map', {
     zoom: 10, 
-    center: new L.latLng([43.418611, -80.472778]),
+    center: new L.latLng([43.45850, -80.51511]),
     scrollWheelZoom:false,
   });
 
