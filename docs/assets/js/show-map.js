@@ -77,7 +77,17 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
         //e.sourceTarget.fire('click');
         //map.fire('click', e.latlng);
         console.dir(geojsonLayer);
-        geojsonLayer.fire('click', e.latlng)
+        // geojsonLayer.fire('click', e.latlng)
+
+        // Use Mapbox Leaflet PIP (point in polygon) library.
+        var foundLayers = leafletPip.pointInLayer(e.latlng, geoJsonLayer);
+
+        foundLayers.forEach(function(layer) {
+          layer.fire('click', {
+            latlng: latlng
+          });
+        });
+
     });
 
     // Make a combined layer so the popups will work?
@@ -91,5 +101,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v21");
+console.log("v23");
 
