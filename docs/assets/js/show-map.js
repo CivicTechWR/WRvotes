@@ -2,7 +2,7 @@
 
 // This feature had better be from the geoJSON
 function getPopupText(feature) { 
-  return fature.properties.["Name"] + ": "
+  return feature.properties.["Name"] + ": "
     + feature.properties["information-link"];
 }
 
@@ -85,5 +85,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v12");
+console.log("v13");
 
