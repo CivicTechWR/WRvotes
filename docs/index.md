@@ -43,7 +43,6 @@ candidate information.
 <div id="map">
 </div>
 
-Have fun!
 
 <script src="{{ site.baseurl }}/assets/js/leaflet.js"></script>
 <script src="{{ site.baseurl }}/assets/js/leaflet-search.min.js"></script>
