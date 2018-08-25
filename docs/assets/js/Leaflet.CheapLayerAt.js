@@ -1,3 +1,4 @@
+console.log("cheap v01");
 
 L.Map.include({
 
@@ -23,6 +24,7 @@ L.Map.include({
 		var viewportPoint = L.point(mapPos.left, mapPos.top).add(point);
 
 		var el = document.elementFromPoint(viewportPoint.x, viewportPoint.y);
+        console.log(el);
 
 		return this._getLayerFromDOMElement(el);
 	},
