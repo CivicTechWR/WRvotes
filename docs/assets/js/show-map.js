@@ -8,6 +8,7 @@ function onEachFeature(feature, layer) {
             var msg = feature.properties["Name"] + ": " 
               + feature.properties["information-link"];
             layer.bindPopup(msg);
+            map.bindPopup(msg);
         } // end if information link
 
         layer.setStyle({
@@ -60,10 +61,10 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
         console.dir(e);
         // https://github.com/IvanSanchez/Leaflet.CheapLayerAt
 
-        layer = map.getLayerAt(map.latLngToLayerPoint(e.latlng));
-        console.dir(map.latLngToLayerPoint(e.latlng));
+        // layer = map.getLayerAt(map.latLngToLayerPoint(e.latlng));
+        // console.dir(map.latLngToLayerPoint(e.latlng));
         // layer.openPopup().openOn(map);
-        layer.openPopup();
+        // layer.openPopup();
 
         // e.sourceTarget._layer.openPopup();
         //e.layer.openPopup().openOn(map);
@@ -82,5 +83,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v10");
+console.log("v11");
 
