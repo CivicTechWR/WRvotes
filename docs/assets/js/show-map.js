@@ -1,14 +1,16 @@
 
-/* Show map in new way. */
+
+// This feature had better be from the geoJSON
+function getPopupText(feature) { 
+  return fature.properties.["Name"] + ": "
+    + feature.properties["information-link"];
+}
 
 function onEachFeature(feature, layer) {
     if (feature.properties) { 
         if (feature.properties["information-link"] 
           && feature.properties["Name"]) { 
-            var msg = feature.properties["Name"] + ": " 
-              + feature.properties["information-link"];
-            layer.bindPopup(msg);
-            map.bindPopup(msg);
+            layer.bindPopup(getPopupText(feature));
         } // end if information link
 
         layer.setStyle({
@@ -83,5 +85,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v11");
+console.log("v12");
 
