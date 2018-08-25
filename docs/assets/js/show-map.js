@@ -29,9 +29,8 @@ var map = new L.Map('map', {
     scrollWheelZoom:false,
   });
 
-map.addLayer(
-  new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    { attribution: attrib }));     //base layer
+var baselayer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    { attribution: attrib });     //base layer
 
 
 var searchControl = new L.Control.Search({
@@ -49,18 +48,20 @@ var searchControl = new L.Control.Search({
     });
 
 searchControl.on('search_locationfound', function(e) { 
-    e.layer.fire('click');
+    console.log(e)
+    e.layer.openPopup().openOn(map);
 });
 
 map.addControl(searchControl);
-
 
 $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     var geojson = L.geoJson(data, {
       onEachFeature: onEachFeature
     });
-    geojson.addTo(map);
 
+    // Make a combined layer so the popups will work?
+    //geojson.addTo(map);
+    L.featureGroup[baseLayer, geojson]).addTo(map);
 });
  
 
