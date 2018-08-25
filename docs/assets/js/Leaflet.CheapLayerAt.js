@@ -10,8 +10,13 @@ L.Map.include({
 	getLayerAt: function(point, y) {
 		point = L.point(point, y);
 
+        console.log(point);
+
 		// Ignore points outside the map
-		if (!this.getSize().contains(point)) { return; }
+		if (!this.getSize().contains(point)) { 
+          console.log("point is not in range"); 
+          return; 
+        }
 
 		var mapPos = this._container.getBoundingClientRect();
 
