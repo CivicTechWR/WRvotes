@@ -35,15 +35,15 @@ going on**, or **why you should care**, you will find answers here.
 
 
 Here is the map. 
-
-<div id="map-searchbar"></div>
-<div id="map">
-<p>
 Be patient! The map loads slowly. If you are impatient or don't have
 Javascript, use the [ward listing](./wards/) to find your 
 candidate information.
+
+<div id="map-searchbar"></div>
+<div id="map">
 </div>
 
+<p></p>
 
 
 <script src="{{ site.baseurl }}/assets/js/leaflet.js"></script>
