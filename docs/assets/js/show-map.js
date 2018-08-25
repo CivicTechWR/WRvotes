@@ -33,8 +33,6 @@ var baseLayer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.
     { attribution: attrib });     //base layer
 
 
-
-
 $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     var geojson = L.geoJson(data, {
       onEachFeature: onEachFeature
@@ -68,9 +66,9 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     //geojson.addTo(map);
     baseLayer.addTo(map);
     geojson.addTo(map);
-    //L.featureGroup([baseLayer, geojson]).addTo(map);
+
+    map.addControl(searchControl);
 });
  
-
-map.addControl(searchControl);
+console.log("v01");
 
