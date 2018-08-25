@@ -1,5 +1,6 @@
 ---
 title: Home
+use-leaflet: true
 ---
 <p class="bigtext">What? Another election?!</p>
 
