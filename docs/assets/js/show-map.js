@@ -52,7 +52,6 @@ searchControl.on('search_locationfound', function(e) {
     e.layer.openPopup().openOn(map);
 });
 
-map.addControl(searchControl);
 
 $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     var geojson = L.geoJson(data, {
@@ -65,5 +64,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
 });
  
 
-
+map.addControl(searchControl);
 
