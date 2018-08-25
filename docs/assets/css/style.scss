@@ -180,7 +180,8 @@ p.bigtext {
 .search-input {
         /* font-family:Courier */
 }
-.search-input,
-.leaflet-control-search {
-    max-width:20rem;
+.leaflet-control-search .search-input {
+    max-width:20em;
 }
+
+
