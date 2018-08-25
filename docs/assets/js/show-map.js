@@ -60,7 +60,7 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
         console.dir(e);
         // https://github.com/IvanSanchez/Leaflet.CheapLayerAt
 
-        layer = map.getLayerAtLatLng(e.latlng);
+        layer = map.getLayerAt(map.latLngToLayerPoint(e.latlng));
         layer.openPopup().openOn(map);
 
         // e.sourceTarget._layer.openPopup();
@@ -77,5 +77,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v06");
+console.log("v07");
 
