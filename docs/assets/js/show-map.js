@@ -62,7 +62,8 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
 
         layer = map.getLayerAt(map.latLngToLayerPoint(e.latlng));
         console.dir(map.latLngToLayerPoint(e.latlng));
-        layer.openPopup().openOn(map);
+        // layer.openPopup().openOn(map);
+        layer.openPopup();
 
         // e.sourceTarget._layer.openPopup();
         //e.layer.openPopup().openOn(map);
