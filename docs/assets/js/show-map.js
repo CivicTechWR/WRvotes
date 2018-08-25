@@ -77,5 +77,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v05");
+console.log("v06");
 
