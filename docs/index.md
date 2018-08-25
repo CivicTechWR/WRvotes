@@ -34,15 +34,17 @@ background information about the election. If you don't know **what is
 going on**, or **why you should care**, you will find answers here. 
 
 
-Here is the map. It loads more slowly than the rest of the page, so be
-patient, or use the [ward listing](./wards/).
+Here is the map. 
 
 <div id="map-searchbar"></div>
 <div id="map">
+<p>
+Be patient! The map loads slowly. If you are impatient or don't have
+Javascript, use the [ward listing](./wards/) to find your 
+candidate information.
 </div>
 
 
-<script src="https://embed.github.com/view/geojson/CivicTechWR/WRvotes/master/docs/_data/sync/WardBoundaries.geojson"></script>
 
 <script src="{{ site.baseurl }}/assets/js/leaflet.js"></script>
 <script src="{{ site.baseurl }}/assets/js/leaflet-search.min.js"></script>
