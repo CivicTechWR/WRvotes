@@ -2,11 +2,15 @@
 /* Show map in new way. */
 
 function onEachFeature(feature, layer) {
-    if (feature.properties 
-      && feature.properties["information-link"]) { 
-        var msg = feature.properties["Name"] + ": " 
-          + feature.properties["information-link"];
-        layer.bindPopup(msg);
+    if (feature.properties) { 
+        if (feature.properties["information-link"] 
+          && feature.properties["Name"]) { 
+            var msg = feature.properties["Name"] + ": " 
+              + feature.properties["information-link"];
+            layer.bindPopup(msg);
+        } // end if information link
+
+        layer.setStyle(feature.properties);
     }
 
 } 
