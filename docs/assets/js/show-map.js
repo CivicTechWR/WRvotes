@@ -44,6 +44,8 @@ var searchControl = new L.Control.Search({
     autoType: false,
     container: 'map-searchbar',
     zoom: 15,
+    firstTipSubmit: true,
+    autoResize: false,
     minLength: 3
     });
 
