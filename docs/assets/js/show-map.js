@@ -14,7 +14,7 @@ function onEachFeature(feature, layer) {
             color: feature.properties["stroke"],
             fillColor: feature.properties["fill"],
             fillOpacity: feature.properties["fill-opacity"],
-            width: feature.properties["stroke-width"],
+            weight: feature.properties["stroke-width"],
             opacity: feature.properties["opacity"]
         });
     }
