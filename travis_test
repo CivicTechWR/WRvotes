@@ -1,3 +1,0 @@
-#!/bin/sh
-cd _site
-htmlproofer --assume-extension
