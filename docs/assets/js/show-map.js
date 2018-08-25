@@ -80,7 +80,7 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
         // geojsonLayer.fire('click', e.latlng)
 
         // Use Mapbox Leaflet PIP (point in polygon) library.
-        var foundLayers = leafletPip.pointInLayer(e.latlng, geoJsonLayer);
+        var foundLayers = leafletPip.pointInLayer(e.latlng, geojsonLayer);
 
         foundLayers.forEach(function(layer) {
           layer.fire('click', {
@@ -101,5 +101,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v23");
+console.log("v24");
 
