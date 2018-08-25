@@ -51,7 +51,6 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
             collapsed: false,
             autoType: false,
             container: 'map-searchbar',
-            layer: geojson,
             zoom: 15,
             minLength: 3
         });
