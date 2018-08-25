@@ -10,7 +10,13 @@ function onEachFeature(feature, layer) {
             layer.bindPopup(msg);
         } // end if information link
 
-        layer.setStyle(feature.properties);
+        layer.setStyle({
+            color: feature.properties["stroke"],
+            fillColor: feature.properties["fill"],
+            fillOpacity: feature.properties["fill-opacity"],
+            width: feature.properties["stroke-width"],
+            opacity: feature.properties["opacity"]
+        });
     }
 
 } 
