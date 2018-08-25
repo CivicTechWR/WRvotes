@@ -29,7 +29,7 @@ var map = new L.Map('map', {
     scrollWheelZoom:false,
   });
 
-var baselayer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+var baseLayer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     { attribution: attrib });     //base layer
 
 
