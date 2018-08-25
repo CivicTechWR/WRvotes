@@ -59,7 +59,8 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     searchControl.on('search:locationfound', function(e) { 
         console.dir(e);
         // e.sourceTarget._layer.openPopup();
-        e.layer.openPopup().openOn(map);
+        //e.layer.openPopup().openOn(map);
+        e.sourceTarget.fire('click');
     });
 
     // Make a combined layer so the popups will work?
@@ -70,5 +71,5 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addControl(searchControl);
 });
  
-console.log("v02");
+console.log("v03");
 
