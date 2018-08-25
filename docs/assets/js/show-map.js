@@ -33,33 +33,35 @@ var baseLayer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.
     { attribution: attrib });     //base layer
 
 
-var searchControl = new L.Control.Search({
-    url: 'https://nominatim.openstreetmap.org/search?format=json&countrycodes=ca&viewbox=-80.7907,43.2281,-80.0834,43.6032&bounded=1&q={s}',
-    jsonpParam: 'json_callback',
-    propertyLoc: ['lat','lon'],
-    propertyName: 'display_name',
-    //marker: false,
-    autoCollapse: false,
-    collapsed: false,
-    autoType: false,
-    container: 'map-searchbar',
-    zoom: 15,
-    firstTipSubmit: true,
-    //autoResize: false,
-    textPlaceholder: "Type your address to search",
-    minLength: 3
-    });
-
-searchControl.on('search:locationfound', function(e) { 
-    console.dir(e);
-    e.sourceTarget._layer.openPopup();
-    // e.layer.openPopup().openOn(map);
-});
 
 
 $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     var geojson = L.geoJson(data, {
       onEachFeature: onEachFeature
+    });
+
+    var searchControl = new L.Control.Search({
+        url: 'https://nominatim.openstreetmap.org/search?format=json&countrycodes=ca&viewbox=-80.7907,43.2281,-80.0834,43.6032&bounded=1&q={s}',
+        jsonpParam: 'json_callback',
+        propertyLoc: ['lat','lon'],
+        propertyName: 'display_name',
+        marker: false,
+        autoCollapse: false,
+        collapsed: false,
+        autoType: false,
+        container: 'map-searchbar',
+        zoom: 15,
+        firstTipSubmit: true,
+        //autoResize: false,
+        textPlaceholder: "Type your address to search",
+        layer: L.featureGroup([baseLayer, geojson]),
+        minLength: 3
+        });
+
+    searchControl.on('search:locationfound', function(e) { 
+        console.dir(e);
+        // e.sourceTarget._layer.openPopup();
+        e.layer.openPopup().openOn(map);
     });
 
     // Make a combined layer so the popups will work?
