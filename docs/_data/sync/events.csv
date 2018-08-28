@@ -1,4 +1,4 @@
-RowID,DateTimeStart,DateTimeEnd,Title,Location,ForMultipleCandidates,CancelledOrRescheduled,PositionIDList,URL,Notes
+<<<<<<< HEAD,,,,,,,,,
 2,2018-10-10T18:30,2018-10-10T20:30,Regional Chair All-Candidates Meeting (Working Centre),"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Regional-Chair,https://www.theworkingcentre.org/election2018,Organized by The Working Centre.
 9,2018-09-10 18:00,2018-09-10T20:00,City of Cambridge Voter Information Session,"Cambridge City Hall (Bowman Room), 50 Dickson Street, Cambridge, Ontario",,,Election-Info,https://www.cambridge.ca/en/your-city/information-for-voters.aspx,
 11,2018-08-01 18:30,2018-08-01 20:00,Rob Deutschmann Town Hall: Wellesley,"Wellesley Recreation Complex, Wellesley",,,Regional-Chair,https://www.robforchair.ca/town-hall-meetings/,
@@ -64,3 +64,4 @@ RowID,DateTimeStart,DateTimeEnd,Title,Location,ForMultipleCandidates,CancelledOr
 74,2018-10-03 18:00,2018-10-03 21:00,THEMUSEUM Cultural Exchange 7.0,"THEMUSEUM, 10 King Street West, Kitchener",Y,,"Regional-Chair,Kitchener-Mayor,Kitchener-Ward-09,Kitchener-Ward-10",,Doors open at 6:00pm; event starts at 6:45pm. Suggested donation of $7. Focused on arts and culture.
 75,2018-10-02T19:00,2018-10-02T21:00,Waterloo Ward 7 All Candidates Forum,"Hauser Haus, Waterloo Memorial Recreation Complex",Y,,Waterloo-Ward-07,https://www.facebook.com/events/1792093394220756/,"Hosted by the Waterloo Ward 7 Neighbourhood Associations: MACA, Mary Allen, Uptown North, and Uptown West Neighbourhood Associations"
 76,2018-09-30 12:00,2018-09-30 14:00,Social Development Centre Community Dialogue - Kitchener,"St Matthew's Church, 54 Benton St, Kitchener",Y,,"Regional-Chair,Kitchener-Mayor,Regional-Kitchener",,Not a debate.
+77,2018-08-30T18:00,2018-08-30T20:00,Tenille Bonoguore - Meet The Candidate,"50 Menno St, Waterloo",,,Waterloo-Ward-07,https://www.facebook.com/events/246944592624913/,
