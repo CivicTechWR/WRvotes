@@ -131,19 +131,7 @@ Similarly, if a position elects more than one representative (for
 example, there are four Kitchener Regional Council representatives)
 then you are not obligated to cast four votes for that position.
 
-### Other Questions
-
-#### How high is voter turnout in municipal elections?
-
-Voter turnout tends to be significantly lower than for provincial or
-federal elections. The CBC [published a
-summary](http://www.cbc.ca/news/canada/kitchener-waterloo/voter-turnout-in-waterloo-region-stagnant-overall-1.2815625)
-of turnout rates for Waterloo Region. In 2014, they ranged from a low
-of 29.3% in Wellesley township to 40.6% in Wilmot township.
-
-These rates are significantly lower than municipal election rates
-throughout Canada, as [reported by Statistics
-Canada](https://www150.statcan.gc.ca/n1/pub/89-640-x/2009001/tab/tab3-1-eng.htm). 
+### Getting Informed
 
 #### What parties are running in this election?
 
@@ -152,8 +140,6 @@ municipality do not run under party banners.
 
 This has the advantage of potentially reducing partisanship, but it
 means that candidates must be evaluated on their individual merits.
-
-### Getting Informed
 
 #### I don't feel informed enough to vote. Where do I start?
 
@@ -230,6 +216,19 @@ There is an active discussion about the 2018 municipal elections on the
 forums](http://www.waterlooregionconnected.com/forumdisplay.php?fid=34).
 
 ### Getting More Involved
+
+#### How high is voter turnout in municipal elections?
+
+Voter turnout tends to be significantly lower than for provincial or
+federal elections. The CBC [published a
+summary](http://www.cbc.ca/news/canada/kitchener-waterloo/voter-turnout-in-waterloo-region-stagnant-overall-1.2815625)
+of turnout rates for Waterloo Region. In 2014, they ranged from a low
+of 29.3% in Wellesley township to 40.6% in Wilmot township.
+
+These rates are significantly lower than municipal election rates
+throughout Canada, as [reported by Statistics
+Canada](https://www150.statcan.gc.ca/n1/pub/89-640-x/2009001/tab/tab3-1-eng.htm). 
+
 
 #### I want to organize an all-candidates meeting. What do I do?
 
