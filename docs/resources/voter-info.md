@@ -260,7 +260,7 @@ The Region of Waterloo links to election information for the different
 municipalities at <http://wrvotes.com> . 
 
 The (City of) Waterloo Voter Support Committee has a website at
-<https://waterloovotes.com> 
+<http://waterloovotes.com> 
 
 A group called the [Waterloo Region Women's Municipal Campaign
 School](https://learnhowtorun.com) held workshops on how to run for
