@@ -55,7 +55,7 @@ h2.inline, h3.inline, h4.inline {
 }
 
 /* h4 and h3 do not look sufficiently different. */
-h4, h4.inline { 
+h4.race-wrapper, h4.inline { 
   font-size: 16px;
 } 
 
