@@ -9,7 +9,9 @@ Information for Voters
 * table of contents
 {:toc}
 
-### What is this all about? 
+### Overview
+
+#### What is this all about? 
 
 On October 22, 2018, there will be a municipal election in Waterloo
 Region (and the rest of Ontario). Up for election will be representatives of three different
@@ -23,7 +25,7 @@ There is a good, readable voter's guide to municipal elections in
 Ontario on the Ministry of Municipal Affairs and Housing website:
 [2018 Voters' Guide](http://www.mah.gov.on.ca/Page18734.aspx). 
 
-### Why should I vote in municipal elections?
+#### Why should I vote in municipal elections?
 
 Your municipal government is responsible for many of the services 
 that directly impact your daily life. We've put together a 
@@ -33,13 +35,15 @@ you get engaged with municipal government is your choice -
 do you want to have input into who's making decisions about 
 how your city functions?
 
-### I thought we just had an election?
+#### I thought we just had an election?
 
 On June 7 2018 Ontario had a provincial election. This is a municipal
 election. Both sets of elections are currently held every four years. 
 
 
-### Am I permitted to vote?
+### Voter Eligibility
+
+#### Am I permitted to vote?
 
 You may vote if you are a Canadian citizen who resides in Waterloo
 Region, owns property here, or has a spouse who owns property here.
@@ -57,14 +61,14 @@ documentation](http://www.mah.gov.on.ca/Page219.aspx#voters) for a
 comprehensive list.
 
 
-### I voted provincially. Am I registered to vote?
+#### I voted provincially. Am I registered to vote?
 
 Not necessarily. The provincial register of electors is distinct from
 the municipal one. The municipal List of Electors is managed by MPAC,
 the Municipal Property Assessment Corporation (MPAC). 
 
 
-### How do I register to vote?
+#### How do I register to vote?
 
 MPAC maintains an
 online tool for checking your voter registration at
@@ -79,7 +83,7 @@ municipality. [HOW? FOR ALL MUNICIPALITIES?]
 - [Wellesley](https://forms.wellesley.ca/Application-to-Amend-Voters-List)
 
 
-### I am a student. Do I get to vote?
+#### I am a student. Do I get to vote?
 
 Yes. Depending on where your home address is, you may be eligible to
 vote twice! 
@@ -87,8 +91,9 @@ vote twice!
 See the "Post-secondary" section on the [Region of Waterloo elections
 page](https://www.regionofwaterloo.ca/en/regional-government/elections.aspx)
 
+### About Voting
 
-### How do I vote? May I vote using the Internet?
+#### How do I vote? May I vote using the Internet?
 
 This depends on the area municipality in which you live. In North
 Dumfries, Wellesley, and Woolwich you will **only** be able to vote
@@ -117,7 +122,7 @@ day:
   Waterloo](https://www.waterloo.ca/en/government/where-when-to-vote.asp)
 
 
-### There are a lot of positions to vote for! Do I have to vote for all of them?
+#### There are a lot of positions to vote for! Do I have to vote for all of them?
 
 No. You may refrain from voting for some positions if you wish; your
 vote will count for the positions you did vote for. 
@@ -126,7 +131,9 @@ Similarly, if a position elects more than one representative (for
 example, there are four Kitchener Regional Council representatives)
 then you are not obligated to cast four votes for that position.
 
-### How high is voter turnout in municipal elections?
+### Other Questions
+
+#### How high is voter turnout in municipal elections?
 
 Voter turnout tends to be significantly lower than for provincial or
 federal elections. The CBC [published a
@@ -138,7 +145,7 @@ These rates are significantly lower than municipal election rates
 throughout Canada, as [reported by Statistics
 Canada](https://www150.statcan.gc.ca/n1/pub/89-640-x/2009001/tab/tab3-1-eng.htm). 
 
-### What parties are running in this election?
+#### What parties are running in this election?
 
 Unlike provincial or federal politics, municipal candidates in our
 municipality do not run under party banners. 
@@ -146,7 +153,9 @@ municipality do not run under party banners.
 This has the advantage of potentially reducing partisanship, but it
 means that candidates must be evaluated on their individual merits.
 
-### I don't feel informed enough to vote. Where do I start?
+### Getting Informed
+
+#### I don't feel informed enough to vote. Where do I start?
 
 Start by finding your municipal ward on the [ward map](/) or by
 finding your ward in the [list of wards](/wards). There, you
@@ -185,7 +194,7 @@ other than identifying candidates who put time into door-knocking it
 does not give you much information about which candidates are best for
 their jobs.
 
-### I don't feel informed enough to vote and there is not much time left.  What do I do?
+#### I don't feel informed enough to vote and there is not much time left.  What do I do?
 
 If you are stretched for time, you can follow one or two races and
 cast informed votes for those. The regional level of government is
@@ -200,7 +209,7 @@ Alternatively, you can follow one or two races by reading the campaign
 literature (in printed form or on the Internet) from the contenders,
 and choosing the candidates that match your views most closely. 
 
-### How do I follow what is going on during the election?
+#### How do I follow what is going on during the election?
 
 Local media provides lots of election coverage. 
 
@@ -220,9 +229,9 @@ There is an active discussion about the 2018 municipal elections on the
 [Waterloo Region Connected
 forums](http://www.waterlooregionconnected.com/forumdisplay.php?fid=34).
 
+### Getting More Involved
 
-
-### I want to organize an all-candidates meeting. What do I do?
+#### I want to organize an all-candidates meeting. What do I do?
 
 If there are not enough all-candidates meetings for the positions that
 interest you (spoiler: there probably aren't) then you can organize
@@ -245,7 +254,7 @@ Once you have started organizing your meeting, be sure to let us know
 about it so we can publish it on this website!
 
 
-### What other groups are working on election education?
+#### What other groups are working on election education?
 
 The Region of Waterloo links to election information for the different
 municipalities at <http://wrvotes.com> . 
@@ -261,7 +270,7 @@ have a Twitter account here:
 [@wrwomenrun](https://twitter.com/wrwomenrun).
 
 
-### I don't trust your candidate listings. Where can I find the real ones?
+#### I don't trust your candidate listings. Where can I find the real ones?
 
 Official candidate listing pages are listed on <http://wrvotes.com> .
 For convenience, here they are again: 
