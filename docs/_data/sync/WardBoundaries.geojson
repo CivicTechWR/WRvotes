@@ -2229,10 +2229,10 @@
         "Name": "Waterloo Ward 5",
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Waterloo-Ward-05\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -3268,10 +3268,10 @@
         "Name": "Waterloo Ward 1",
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Waterloo-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -5632,10 +5632,10 @@
         "Name": "Waterloo Ward 7",
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Waterloo-Ward-07\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -8631,10 +8631,10 @@
         "Name": "Waterloo Ward 4",
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Waterloo-Ward-04\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -10400,10 +10400,10 @@
         "Name": "Waterloo Ward 3",
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Waterloo-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -11719,10 +11719,10 @@
         "Name": "Waterloo Ward 2",
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Waterloo-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -14808,10 +14808,10 @@
         "Name": "Waterloo Ward 6",
         "stroke": "#f1c40f",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Waterloo-Ward-06\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -16052,10 +16052,10 @@
         "Name": "Cambridge Ward 2",
         "stroke": "#FA6800",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Cambridge-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -17381,10 +17381,10 @@
         "Name": "Cambridge Ward 5",
         "stroke": "#FA6800",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Cambridge-Ward-05\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -18660,10 +18660,10 @@
         "Name": "Cambridge Ward 3",
         "stroke": "#FA6800",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Cambridge-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -22409,10 +22409,10 @@
         "Name": "Cambridge Ward 1",
         "stroke": "#FA6800",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Cambridge-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -24373,10 +24373,10 @@
         "Name": "Cambridge Ward 6",
         "stroke": "#FA6800",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Cambridge-Ward-06\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -26357,10 +26357,10 @@
         "Name": "Cambridge Ward 7",
         "stroke": "#FA6800",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Cambridge-Ward-07\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -27846,10 +27846,10 @@
         "Name": "Cambridge Ward 8",
         "stroke": "#FA6800",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Cambridge-Ward-08\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -29565,10 +29565,10 @@
         "Name": "Cambridge Ward 4",
         "stroke": "#FA6800",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Cambridge-Ward-04\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -30004,10 +30004,10 @@
         "Name": "North Dumfries Ward 2",
         "stroke": "#0050ef",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/NorthDumfries-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -31748,10 +31748,10 @@
         "Name": "North Dumfries Ward 3",
         "stroke": "#0050ef",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/NorthDumfries-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -34392,10 +34392,10 @@
         "Name": "North Dumfries Ward 4",
         "stroke": "#0050ef",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/NorthDumfries-Ward-04\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -35716,10 +35716,10 @@
         "Name": "Wilmot Ward 1",
         "stroke": "#00aba9",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Wilmot-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -36215,10 +36215,10 @@
         "Name": "Wilmot Ward 3",
         "stroke": "#00aba9",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Wilmot-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -36794,10 +36794,10 @@
         "Name": "Wilmot Ward 4",
         "stroke": "#00aba9",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Wilmot-Ward-04\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -38153,10 +38153,10 @@
         "Name": "Wilmot Ward 2",
         "stroke": "#00aba9",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Wilmot-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -38757,10 +38757,10 @@
         "Name": "Wellesley Ward 1",
         "stroke": "#008a00",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Wellesley-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -39516,10 +39516,10 @@
         "Name": "Wellesley Ward 2",
         "stroke": "#008a00",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Wellesley-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -40345,10 +40345,10 @@
         "Name": "Wellesley Ward 3",
         "stroke": "#008a00",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Wellesley-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -40804,10 +40804,10 @@
         "Name": "Wellesley Ward 4",
         "stroke": "#008a00",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Wellesley-Ward-04\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -41945,10 +41945,10 @@
         "Name": "Woolwich Ward 2",
         "stroke": "#c0392b",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Woolwich-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -42374,10 +42374,10 @@
         "Name": "Woolwich Ward 1",
         "stroke": "#c0392b",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Woolwich-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -46033,10 +46033,10 @@
         "Name": "Woolwich Ward 3",
         "stroke": "#c0392b",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Woolwich-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -47932,10 +47932,10 @@
         "Name": "Kitchener Ward 1",
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Kitchener-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -48956,10 +48956,10 @@
         "Name": "Kitchener Ward 2",
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Kitchener-Ward-02\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -50295,10 +50295,10 @@
         "Name": "Kitchener Ward 3",
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Kitchener-Ward-03\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -51329,10 +51329,10 @@
         "Name": "Kitchener Ward 4",
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Kitchener-Ward-04\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -52463,10 +52463,10 @@
         "Name": "Kitchener Ward 5",
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Kitchener-Ward-05\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -53032,10 +53032,10 @@
         "Name": "Kitchener Ward 6",
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Kitchener-Ward-06\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -53816,10 +53816,10 @@
         "Name": "Kitchener Ward 7",
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Kitchener-Ward-07\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -55530,10 +55530,10 @@
         "Name": "Kitchener Ward 8",
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Kitchener-Ward-08\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -56804,10 +56804,10 @@
         "Name": "Kitchener Ward 9",
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Kitchener-Ward-09\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -58008,10 +58008,10 @@
         "Name": "Kitchener Ward 10",
         "stroke": "#aa00ff",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/Kitchener-Ward-10\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     },
     {
@@ -58467,10 +58467,10 @@
         "Name": "North Dumfries Ward 1",
         "stroke": "#0050ef",
         "stroke-opacity": 1,
-        "stroke-width": 2,
+        "stroke-width": 2.5,
         "information-link": "<a href=\"wards/NorthDumfries-Ward-01\">Positions and Candidates</a>",
         "fill": "#fff",
-        "fill-opacity": 0.2
+        "fill-opacity": 0.5
       }
     }
   ]
