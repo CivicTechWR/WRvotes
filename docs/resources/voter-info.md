@@ -156,6 +156,12 @@ See the "Post-secondary" section on the [Region of Waterloo elections
 page](https://www.regionofwaterloo.ca/en/regional-government/elections.aspx).
 
 
+#### I am homeless or have no fixed address. Do I get to vote?
+
+Yes. Your voting address is considered to be the place where you ate
+or slept most frequently during the last five weeks. 
+
+
 ### About Voting
 
 #### How do I vote? May I vote using the Internet?
@@ -185,6 +191,22 @@ day:
 - [Wilmot](https://www.wilmot.ca/en/township-office/voting-locations.aspx)
 - [City of
   Waterloo](https://www.waterloo.ca/en/government/where-when-to-vote.asp)
+
+#### Do I need a voter card to vote? Do I need identification?
+
+If your area municipality allows voting in person then you do not need
+a voter card. If your area municipality allows only Internet and
+telephone voting then you will need a PIN. 
+
+In general you need to bring identification with you in order to
+vote. The Ministry of Municipal Affairs and Housing publishes a list
+of [acceptable documents for voter
+identification](http://www.mah.gov.on.ca/Page18734.aspx#identification).
+If you do not have identification you may still vote, but you must be
+registered on the voter's list and you must sign a declaration of your
+identity. See the [voter's
+list](http://www.mah.gov.on.ca/Page18734.aspx#identification) section
+of the 2018 Voters' Guide for more information.
 
 #### There are a lot of positions to vote for! Do I have to vote for all of them?
 
