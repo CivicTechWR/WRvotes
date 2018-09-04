@@ -89,7 +89,7 @@ day, but some area municipalities allow registration when you vote.
 Here is information about getting yourself registered in the different
 area municipalities. 
 
-**Cambridge**: You may not update your information via voterlookup.ca. Fill out the [following
+**Cambridge**:  Fill out the [following
 form](https://www.cambridge.ca/en/resources/Form-EL15---Application-to-Amend-Voters-List-Fillable.pdf)
 and submit it to the Clerk's Office on the 2nd floor of Cambridge City
 Hall.
@@ -113,10 +113,10 @@ See
 <https://www.kitchener.ca/en/city-services/what-voters-need-to-know.aspx>
 for more information.
 
-**North Dumfries**: Voters should get an information letter by October
-15. The township is holding several voter help centres at the North
-Dumfries Community Complex (NDCC) and Clyde-Scott Women's Institute
-(Clyde). See [this
+**North Dumfries**: Voters should recieve an information letter by
+October 15.  The township is holding several voter help centres at the
+North Dumfries Community Complex (NDCC) and Clyde-Scott Women's
+Institute (Clyde). See [this
 PDF](https://www.northdumfries.ca/en/township-services/resources/Documents/Voter-Help-Centre-Calendar.pdf)
 for the voter help centre schedule. You may also contact the Clerk's
 office. For more information see:
@@ -133,7 +133,7 @@ contact the Clerk's office. For more information see:
 <https://www.wellesley.ca/en/township-services/voter-information.aspx>. 
 
 **Wilmot**: Check your information here:
-<https://www.wilmot.ca/en/township-office/voters--list.aspx> . You can
+<https://www.wilmot.ca/en/township-office/voters--list.aspx>. You can
 change your voter registration information at the township office, or
 on voting day at your voting location. 
 
@@ -154,6 +154,7 @@ vote twice!
 
 See the "Post-secondary" section on the [Region of Waterloo elections
 page](https://www.regionofwaterloo.ca/en/regional-government/elections.aspx).
+
 
 ### About Voting
 
