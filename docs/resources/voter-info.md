@@ -72,15 +72,79 @@ the Municipal Property Assessment Corporation (MPAC).
 
 MPAC maintains an
 online tool for checking your voter registration at
-<https://www.voterlookup.ca> . For some municipalities [WHICH ONES?]
-you can also use this tool to add yourself to the List of Electors, or
-to change your voting information.
+<https://www.voterlookup.ca> . This is the place to start. 
+If your information is correct you will probably receive a voter card
+in the mail.
 
-You can also add yourself to the List of Electors via your
-municipality. [HOW? FOR ALL MUNICIPALITIES?]
+If your information is not correct or you are not present on the site
+then life gets complicated. The best way for you to ensure that you
+are registered to vote is by registering in your area municipality.
+You may be able to register on voterlookup.ca as well, but be careful
+-- your registration there may only apply for the 2022 election
+onwards, not the 2018 one. 
 
-- [Cambridge](https://www.cambridge.ca/en/resources/Form-EL15---Application-to-Amend-Voters-List-Fillable.pdf)
-- [Wellesley](https://forms.wellesley.ca/Application-to-Amend-Voters-List)
+In most cases it is wise to get yourself registered before election
+day, but some area municipalities allow registration when you vote. 
+
+Here is information about getting yourself registered in the different
+area municipalities. 
+
+**Cambridge**: You may not update your information via voterlookup.ca. Fill out the [following
+form](https://www.cambridge.ca/en/resources/Form-EL15---Application-to-Amend-Voters-List-Fillable.pdf)
+and submit it to the Clerk's Office on the 2nd floor of Cambridge City
+Hall.
+You will also need to show identification. 
+
+For Internet voting you will need a PIN which is mailed to you. For
+in-person voting you may register on voting day at [your polling
+station](https://cityofcambridge.maps.arcgis.com/apps/InformationLookup/index.html?appid=5b26f2e0b29d4bdf92fcf76eb61efd13).
+See
+<https://www.cambridge.ca/en/your-city/information-for-voters.aspx>
+for more information.
+
+**Kitchener**: Until October 19, you may fill out the [following
+form](https://lf.kitchener.ca/WebLinkExt/DocView.aspx?dbid=0&id=1705934&_ga=2.53806632.1802388269.1535916888-2068458943.1532310666)
+and submit it to Legislated Services, at the 2nd floor of Kitchener
+City Hall. 
+
+On election day you will be able to register to vote at [your polling
+station](https://kitchenergis.maps.arcgis.com/apps/View/index.html?appid=716aa406b32e40d697f24cabae551006).
+See
+<https://www.kitchener.ca/en/city-services/what-voters-need-to-know.aspx>
+for more information.
+
+**North Dumfries**: Voters should get an information letter by October
+15. The township is holding several voter help centres at the North
+Dumfries Community Complex (NDCC) and Clyde-Scott Women's Institute
+(Clyde). See [this
+PDF](https://www.northdumfries.ca/en/township-services/resources/Documents/Voter-Help-Centre-Calendar.pdf)
+for the voter help centre schedule. You may also contact the Clerk's
+office. For more information see:
+<https://www.northdumfries.ca/en/township-services/information-for-voters-.aspx> 
+
+**City of Waterloo**: You can look up and change your voter
+registration information here:
+<https://www.waterloo.ca/en/government/voter-registration.asp>. 
+
+**Wellesley**: If you are on the voter's list you should receive a
+voter information letter by October 15. There is a voter help line at
+519-699-3968 where you can check your registration. You may also
+contact the Clerk's office. For more information see: 
+<https://www.wellesley.ca/en/township-services/voter-information.aspx>. 
+
+**Wilmot**: Check your information here:
+<https://www.wilmot.ca/en/township-office/voters--list.aspx> . You can
+change your voter registration information at the township office, or
+on voting day at your voting location. 
+
+**Woolwich**: Registered voters should receive an information letter
+in "early October". Registration information must be changed in
+person. There is a voter help line at 519-669-6049, and the
+municipality is holding a number of Election Help Centres: see
+<https://www.woolwich.ca/en/township-services/information-for-voters.aspx>
+for times and locations.
+
+
 
 
 #### I am a student. Do I get to vote?
