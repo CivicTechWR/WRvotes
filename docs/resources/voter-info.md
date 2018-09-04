@@ -153,7 +153,7 @@ Yes. Depending on where your home address is, you may be eligible to
 vote twice! 
 
 See the "Post-secondary" section on the [Region of Waterloo elections
-page](https://www.regionofwaterloo.ca/en/regional-government/elections.aspx)
+page](https://www.regionofwaterloo.ca/en/regional-government/elections.aspx).
 
 ### About Voting
 
