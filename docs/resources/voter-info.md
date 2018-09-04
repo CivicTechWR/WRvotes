@@ -55,11 +55,6 @@ from voting: see the "Who cannot vote" section on the
 Page](http://www.mah.gov.on.ca/Page18734.aspx). 
 
 
-When voting you must show voter identification. See the [list of
-acceptable voter
-documentation](http://www.mah.gov.on.ca/Page219.aspx#voters) for a
-comprehensive list.
-
 
 #### I voted provincially. Am I registered to vote?
 
@@ -120,7 +115,7 @@ Institute (Clyde). See [this
 PDF](https://www.northdumfries.ca/en/township-services/resources/Documents/Voter-Help-Centre-Calendar.pdf)
 for the voter help centre schedule. You may also contact the Clerk's
 office. For more information see:
-<https://www.northdumfries.ca/en/township-services/information-for-voters-.aspx> 
+<https://www.northdumfries.ca/en/township-services/information-for-voters-.aspx>.
 
 **City of Waterloo**: You can look up and change your voter
 registration information here:
@@ -205,7 +200,7 @@ identification](http://www.mah.gov.on.ca/Page18734.aspx#identification).
 If you do not have identification you may still vote, but you must be
 registered on the voter's list and you must sign a declaration of your
 identity. See the [voter's
-list](http://www.mah.gov.on.ca/Page18734.aspx#identification) section
+list](http://www.mah.gov.on.ca/Page18734.aspx#voterslist) section
 of the 2018 Voters' Guide for more information.
 
 #### There are a lot of positions to vote for! Do I have to vote for all of them?
