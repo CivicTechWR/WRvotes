@@ -3,50 +3,53 @@ layout: "default"
 ---
 
 {% comment %}
-Try to eat up all leading slashes and the trailing .html . 
+Try to eat up all leading slashes and the trailing .html .
 This is gross but it works.
 {% endcomment %}
 {% assign ward-id = page.url | replace: '.html', '' | split: '/' | last -%}
 {% assign ward-info = site.data.internal.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
 
-<h2>Who is Running? {{ ward-info.PositionDesc }}</h2>
+<h1>Who is Running? {{ ward-info.PositionDesc }}</h1>
 
-<p>
-On this page you will find information about people you can vote for
+<p>On this page you will find information about people you can vote for
 on <b>regional council</b> (Regional Chair and possibly Regional
 Councillors), your <b>area municipality</b> (Mayor and Ward councillors) and
 <b>school trustees</b>.
-</p><p>
-<strong>About School Boards:</strong> There are four school boards in
-this region. Voters are eligible to vote for one of them (by default,
-the Public English one). For more information see <a
-href="../resources/school-boards-info">Information About School Board
-Elections</a>.
-</p><p>
-<strong>About Events:</strong>There are general-interest events not listed here.  See the <a href="../events">Events</a> page for a
-complete listing.
 </p>
 
-{% assign municipal-info = site.data.internal.municipality-map |
-where:"Name",ward-info.WardMunicipality | first %}
-{% assign races-split = municipal-info.Races | split: ',' %}
-
-{% for race in races-split %}
-  {% if race == "_SELF" %}
-    {% assign race-id = ward-id %}
-  {% else %}
-    {% assign race-id = race %}
-  {% endif %}
-
-  <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
-
-    {% include list-nominees.html race-id=race-id %}
-
+<div class="flex">
+<div class="flex gutters">
+  <div class="aside">
+    <aside class="aside-box" data-aos="fade-left">
+      <header><h5>About School Boards</h5></header>
+      <p>There are four school boards in this region. Voters are eligible to vote in at most one (by default, the Public English one). For more information see <a href="../resources/school-boards-info">Information About School Board Elections</a>.</p>
+      <header><h5>About Events</h5></header>
+      <p>There are general-interest events not listed here. See the <a href="../events">Events</a> page for a complete listing.</p>
+    </aside>
   </div>
 
-{% endfor %}
+  <div class="main">
+    {% assign municipal-info = site.data.internal.municipality-map |
+    where:"Name",ward-info.WardMunicipality | first %}
+    {% assign races-split = municipal-info.Races | split: ',' %}
 
+    {% for race in races-split %}
+      {% if race == "_SELF" %}
+        {% assign race-id = ward-id %}
+      {% else %}
+        {% assign race-id = race %}
+      {% endif %}
+
+      <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
+
+        {% include list-nominees.html race-id=race-id %}
+
+      </div>
+
+    {% endfor %}
+  </div>
+</div>
 <script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
 

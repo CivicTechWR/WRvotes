@@ -1,67 +1,56 @@
----
----
 <!-- FOOTER  -->
 <div id="footer_wrap" class="outer footer">
   <footer class="inner">
+    <div class="sharing">
+      <div class="minicaps">Share this page:</div>
+      <div>
+        <a href="http://www.facebook.com/sharer.php?u={{(page.url | absolute_url) | url_encode }}" target="_blank">
+          <span class="icon">
+            <img src="{{ site.baseurl }}/assets/icons/svg/facebook.svg" alt="Facebook"/>
+          </span>
+        </a>
 
-    <p class="bigger sharing">
-    Share this page on social media: 
-    <a href="http://www.facebook.com/sharer.php?u={{ 
-    (page.url | absolute_url) | url_encode }}" 
-    target="_blank">
-    <img src="{{ site.baseurl }}/assets/icons/24x24/facebook.png" 
-    alt="Facebook"/></a> 
+        <a href="https://twitter.com/intent/tweet?text=Check+out+this+municipal+election+info+hub+by+@CivicTechWR&url={{
+        (page.url | absolute_url) | url_encode }}&hashtags=WRVotes,WRPoli,WatReg,WRAwesome" target="_blank">
+          <span class="icon">
+            <img src="{{ site.baseurl }}/assets/icons/svg/twitter.svg" alt="Twitter"/>
+          </span>
+        </a>
 
-    <a
-    href="https://twitter.com/intent/tweet?text=Check+out+this+municipal+election+info+hub+by+@CivicTechWR&url={{ 
-    (page.url | absolute_url) | url_encode }}&hashtags=WRVotes,WRPoli,WatReg,WRAwesome" 
-    target="_blank">
-    <img src="{{ site.baseurl }}/assets/icons/24x24/twitter.png" 
-    alt="Twitter"/></a> 
-
-    <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ 
-    (page.url | absolute_url) | url_encode }}"  
-    target="_blank">
-    <img src="{{ site.baseurl }}/assets/icons/24x24/linkedin.png" 
-    alt="LinkedIn"/></a> 
-    </p>
-
-    <hr/>
-    <div class="footer-columns">
-      <p> 
-      <a href="{{ site.baseurl }}/all-nominees">All nominees on one page</a>
-      </p><p>
-      <a href="{{ site.baseurl }}/wards/">All wards on one page</a>
-      </p><p>
-      <a href="{{ site.baseurl }}/all-news">All news items on one page</a>
-      </p><p>
-      <a href="{{ site.baseurl }}/all-meetings">All meetings on one
-      page</a>
-      </p><p>
-      <a href="{{ site.baseurl }}/sitemap">Site Map</a>
-      </p><p>
-      <a href="{{ site.baseurl }}/resources/open-data">Open data</a>
-      </p><p>
-      Twitter: <a href="https://twitter.com/civictechwr">@civictechwr</a>
-      </p>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url={{(page.url | absolute_url) | url_encode }}" target="_blank">
+          <span class="icon">
+            <img src="{{ site.baseurl }}/assets/icons/svg/linkedin.svg" alt="LinkedIn"/>
+          </span>
+        </a>
+      </div>
     </div>
-    <hr/>
 
+    <div class="footer-columns">
+      <div class="contact">
+        <div class="minicaps">{{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></div>
+        <ul>
+          <li><a href="https://civictechwr.org/">Website</a></li>
+          <li><a href="{{ site.github.owner_url }}">Github</a></li>
+          <li><a href="https://twitter.com/civictechwr">Twitter</a></li>
+        </ul>
+      </div>
 
+      <div class="links">
+        <div class="minicaps">Links</div>
+        <ul>
+          <li><a href="{{ site.baseurl }}/all-nominees">Candidates</a></li>
+          <li><a href="{{ site.baseurl }}/wards/">Wards</a></li>
+          <li><a href="{{ site.baseurl }}/all-news">News</a></li>
+          <li><a href="{{ site.baseurl }}/all-meetings">Meetings</a></li>
+          <li><a href="{{ site.baseurl }}/resources/open-data">Open data</a></li>
+          <li><a href="{{ site.baseurl }}/sitemap">Site Map</a></li>
+        </ul>
+      </div>
+    </div>
 
-    <p class="bigger">Are we missing information?
-    Did we make a mistake?
-    Please let us know: 
-    <a
-    href="mailto:civictechwr.wrvotes@gmail.com">civictechwr.wrvotes@gmail.com</a>
-    . 
-    </p>
+    <div class="email">
+      <div class="minicaps">Are we missing information? Did we make a mistake? Please let us know: <a href="mailto:civictechwr.wrvotes@gmail.com">civictechwr.wrvotes@gmail.com</a></div>
+    </div>
 
-    {% if site.github.is_project_page %}
-    <p class="copyright smaller">{{ site.title | default:
-    site.github.repository_name }} maintained by <a href="{{
-    site.github.owner_url }}">{{ site.github.owner_name }}</a>.
-    {% endif %}
-    Published with <a href="https://pages.github.com">GitHub Pages</a></p>
   </footer>
 </div>

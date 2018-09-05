@@ -8,7 +8,7 @@ As a citizen in Waterloo Region, it can be a lot of work to try to figure out wh
 
 ## Goals
 
-Encourage greater municipal election participation through candidacy, campaign volunteership and increased voter turnout.   
+Encourage greater municipal election participation through candidacy, campaign volunteership and increased voter turnout.
 
 ## What are we trying to build?
 1.  Identify wards with low historic (2014) candidate participation
@@ -20,9 +20,23 @@ Encourage greater municipal election participation through candidacy, campaign v
     - links to websites, emails, phone #s
 3.  Inform the community on debates/all candidate meetings for their wards
 4.  Get out the vote on October 22
-    - *How?* 
+    - *How?*
+
+## Contributing
+
+Dependencies:
+- Ruby
+- Bundler
+- Jekyll
+
+To get started locally:
+- Clone the repo: `git clone https://github.com/CivicTechWR/WRvotes.git`
+- Install gems: `bundle`
+- Move into the website directory: `cd docs`
+- Start the local server: `jekyll serve`
+
 
 ## How can I help?
-See the [Wiki](https://github.com/CivicTechWR/WRvotes/wiki), [Issues list](https://github.com/CivicTechWR/WRvotes/issues), or join the #project_region_vote channel on our slack space: https://civictechwrslack.herokuapp.com/. 
+See the [Wiki](https://github.com/CivicTechWR/WRvotes/wiki), [Issues list](https://github.com/CivicTechWR/WRvotes/issues), or join the #project_region_vote channel on our slack space: https://civictechwrslack.herokuapp.com/.
 
 Or come to one of [our meetups](https://www.meetup.com/CivicTechWR/)!

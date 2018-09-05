@@ -2,52 +2,65 @@
 ---
 
 @import "{{ site.theme }}";
+@import "variables";
+@import "typography";
+@import "theme_overrides";
 
 
 /* ---------- MAIN MENU STYLING --------- */
-#main-menu a { 
-  color:#fff;
-} 
+#main-menu {
+  background: $green;
+  padding: 1em;
 
-#main-menu a.current { 
+  .inner {
+    max-width: 1366px;
+    padding: 0 2%;
+  }
+}
+
+#main-menu a {
+  color: $light;
+}
+
+#main-menu a.current {
   text-decoration: underline;
 }
 
 #main-menu ul {
-  padding-top: 1em;
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 #main-menu li {
   display: inline-block;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
+  padding-right: 3em;
+  margin: 0;
 }
 
 
 /* ----------- COLLAPSABLE LISTS --------- */
 
 /* Make buttons inline with their headings */
-button.toggle-button { 
+button.toggle-button {
   float: right;
 }
 
 /* Style buttons to be less ugly */
-button.toggle-button { 
+button.toggle-button {
   color: black;
   background-color: Transparent;
   border: 0.2em solid black;
   font-size: smaller;
-  border-radius: 15%;
 
   /* Push button down a touch */
   margin-top: 0.2em;
-} 
+}
 
-button.toggle-button:hover { 
+button.toggle-button:hover {
   color: white;
   background-color: black;
-} 
+}
 
 
 h2.inline, h3.inline, h4.inline {
@@ -55,65 +68,134 @@ h2.inline, h3.inline, h4.inline {
 }
 
 /* h4 and h3 do not look sufficiently different. */
-h4.race-wrapper, h4.inline { 
-  font-size: 16px;
-} 
+h4.race-wrapper, h4.inline {
+  font-size: 1.2em;
+}
 
 /* Stop buttons from crashing into each other */
-div.spacer { 
+div.spacer {
   display: block;
   min-height: 2em;
 }
 
-/* Add space between races, and put light gray boxes 
- * around them. (Will this be ugly?)
- */
-div.race-wrapper { 
-  margin-bottom: 3em;
-  background: #e6e6e6; /* 10% gray */
-  padding: 2em; 
-}
-
-/* Move continuation UL elements up so they look 
+/* Move continuation UL elements up so they look
  * like they merged with the previous lists.
  */
-ul.continue { 
+ul.continue {
   margin-top: -15px;
 }
 
 
 /* ------------ FOOTER STYLING ----------- */
 
-/* Make footer more appealing visually. */
-div.footer-columns { 
-  column-count: 3;
+div.footer {
+  font-size: smaller;
 }
 
-div.footer { 
-  font-size: smaller; 
-}
-
-p.bigger { 
-  font-size: larger;
-}
-
-/* Make columns line up better */
-div.footer-columns p { 
-  margin: 0 0 0.5ex 0;
-}
-
-/* Don't underline links unless they are highlighted */
-div.footer-columns a { 
-  text-decoration: none;
-} 
-
-div.footer-columns a:hover { 
-  text-decoration: underline;
-}
-
-p.sharing a { 
+p.sharing a {
   margin-left: 0.5em;
   margin-right: 0.5em;
+}
+
+#footer_wrap {
+  background: $dark;
+  color: $light;
+  position: absolute;
+  bottom: 0;
+
+  footer.inner {
+    max-width: 1366px;
+    padding: 1% 2%;
+
+    p {
+      color: $light;
+    }
+
+    a {
+      color: $light;
+      &:hover, &:focus {
+        color: $pink;
+      }
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .minicaps {
+      font-family: $secondary-font;
+      font-weight: 700;
+    }
+
+    .sharing {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-items: center;
+      border-bottom: 1px solid white;
+      padding: 1em 0;
+
+      > div {
+        margin-right: 10px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      span.icon {
+        height: 24px;
+        width: 24px !important;
+        padding: 3px;
+        border-radius: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background: $pink;
+        }
+      }
+
+      img {
+        height: 18px;
+        width: 18px;
+      }
+    }
+
+    .contact, .links {
+      padding: 1em 0;
+
+      ul {
+        li {
+          margin: 0;
+        }
+      }
+    }
+
+    .links {
+      ul {
+        column-count: 2;
+      }
+    }
+
+    .footer-columns {
+      display: flex;
+
+      > div {
+        flex: 1 1 auto;
+      }
+    }
+
+    .email {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-items: center;
+      border-top: 1px solid white;
+      padding: 1em 0;
+    }
+  }
 }
 
 
@@ -131,10 +213,10 @@ my-email::before {
 /* --------- FRONT PAGE ------------- */
 
 /* Make big bold text */
-p.bigtext { 
+p.bigtext {
   text-align: center;
   font-size: x-large;
-} 
+}
 
 /* ------ EMBED GOOGLE CALENDAR RESPONSIVELY ----- */
 
@@ -163,7 +245,6 @@ p.bigtext {
     height: 100%;
 }
 
-
 /* ------ REDO SEARCHABLE MAP ----- */
 
 #map {
@@ -172,17 +253,36 @@ p.bigtext {
     height:40em;
 }
 
-#map-searchbar { 
+#map-searchbar {
     width: 100%;
-    margin-bottom: 2em;
-    padding-bottom: 2em;
-}
-.search-input {
-        /* font-family:Courier */
-}
-.leaflet-control-search .search-input {
-    max-width:20em;
-    min-width:20em;
+    display: flex;
+    margin-bottom: 1em;
+
+    .search-input {
+      flex-grow: 1;
+      padding: 3px 6px;
+      font-family: $primary-font;
+      font-size: inherit;
+
+      &:placeholder {
+        font-size: inherit;
+      }
+    }
+
+    .leaflet-control-search {
+      .search-cancel {
+        margin: 0;
+        margin-right: 6px;
+      }
+    }
+
+    .leaflet-control-search.search-exp {
+      flex-grow: 1;
+      display: flex;
+      position: relative;
+      align-items: center;
+      border: none;
+    }
 }
 
 

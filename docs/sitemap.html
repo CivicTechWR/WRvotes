@@ -1,6 +1,6 @@
 ---
 title: Site Map
-layout: default
+layout: page
 ---
 
 <h2>Site Map</h2>
@@ -12,9 +12,9 @@ layout: default
 <ul>
 
   {% assign sorted-pages = site.html_pages | sort: "url" %}
-  
+
   {% for item in sorted-pages %}
-   
+
     {%- if item.title -%}
     <li><a href="{{ item.url | absolute_url }}">
         {{ item.title }}
