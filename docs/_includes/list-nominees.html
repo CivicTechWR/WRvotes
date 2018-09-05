@@ -5,6 +5,7 @@
 
 <h3 class="medium-text">{{ race-info.PositionDesc }}</h3>
 <div class="candidate-list" id="{{ include.race-id | slugify }}" >
+  <h4 class="inline">Candidates</h4>
 
   {% assign these-nominees = site.data.sync.nominees
     | where:"PositionUniqueName",include.race-id %}
@@ -88,7 +89,7 @@
     {% include list-events.html race-id=include.race-id
       alias-string=race-info.Aliases %}
 
-    {% include list-media.html race-id=include.race-id 
+    {% include list-media.html race-id=include.race-id
       alias-string=race-info.Aliases %}
 
   {% endunless %}

@@ -3,23 +3,28 @@ title: About WaterlooRegionVotes
 layout: page
 ---
 
-Waterloo Region Votes is a nonpartisan initiative to
-increase voter engagement during this fall's municipal election.
-
-Many people say, "I didn't realize there was an election" or "I did
-not feel informed enough to vote". Our goal is to fix that.
-
-In particular, we aim to:
-
-- Make it easy for you to find out who is running in your geographic
-  area.
-- Make it easy for you to learn more about these candidates so you can
-  cast an informed vote. To this end, we link to candidate websites,
-  upcoming all-candidates meetings, candidate surveys, and other
-  relevant information.
-- Make it easy for you to understand how the municipal election is
-  structured, what different elected officials do, and a sense of
-  how municipal politics affects your life.
+<div class="standout-box blue full-width no-margin-top">
+  <div class="header big-text blue-text" data-aos="fade-left">
+    Waterloo Region Votes is a nonpartisan initiative to
+    increase voter engagement during this fall's municipal election.
+  </div>
+  <div class="content" data-aos="fade-right">
+    <p>Many people say, "I didn't realize there was an election" or "I did
+    not feel informed enough to vote". Our goal is to fix that.</p>
+    <p>In particular, we aim to:</p>
+    <ul>
+      <li>Make it easy for you to find out who is running in your geographic
+      area.</li>
+      <li>Make it easy for you to learn more about these candidates so you can
+      cast an informed vote. To this end, we link to candidate websites,
+      upcoming all-candidates meetings, candidate surveys, and other
+      relevant information.</li>
+      <li>Make it easy for you to understand how the municipal election is
+      structured, what different elected officials do, and a sense of
+      how municipal politics affects your life.</li>
+    </ul>
+  </div>
+</div>
 
 ## Who is Responsible for This?
 

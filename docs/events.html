@@ -53,7 +53,7 @@ href="./wards/">information page for your ward</a>.
     virtual-tag.PositionUniqueName" %}
 
   {% if events-pos.size > 0 %}
-    <div class="event-wrapper" id="event-wrapper-{{
+    <div class="event-wrapper content-box" id="event-wrapper-{{
       virtual-tag.PositionUniqueName | slugify }}">
 
       {% include list-event-block.html
@@ -69,7 +69,7 @@ href="./wards/">information page for your ward</a>.
 
 
 {% if events-upcoming.size > 0 %}
-  <div class="event-wrapper" id="event-wrapper-upcoming">
+  <div class="event-wrapper content-box" id="event-wrapper-upcoming">
     {% include list-event-block.html
       event-list=events-upcoming
       header="Upcoming Events"
@@ -84,7 +84,7 @@ href="./wards/">information page for your ward</a>.
   | where_exp:"ev", "ev.DateTimeStart < date-now" %}
 
 {% if events-past.size > 0 %}
-  <div class="event-wrapper" id="event-wrapper-past">
+  <div class="event-wrapper content-box" id="event-wrapper-past">
     {% include list-event-block.html
       event-list=events-past
       header="Past Events"
