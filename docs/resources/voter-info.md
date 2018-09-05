@@ -14,16 +14,15 @@ Information for Voters
 
 #### What is this all about?
 
-On October 22, 2018, there will be a municipal election in Waterloo
-Region (and the rest of Ontario). Up for election will be representatives of three different
-levels of government:
+On October 22nd, 2018, are the Ontario municipal elections, including here in Waterloo
+Region. Representatives for three areas of government will be elected:
 
 - Regional government (Regional Chair and Councillors)
 - Municipal governments (Mayors and Ward Councillors)
 - School boards (Trustees)
 
-There is a good, readable voter's guide to municipal elections in
-Ontario on the Ministry of Municipal Affairs and Housing website:
+There is an easy to understand voter's guide for the Ontario municipal election 
+on the Ministry of Municipal Affairs and Housing website:
 [2018 Voters' Guide](http://www.mah.gov.on.ca/Page18734.aspx).
 
 #### Why should I vote in municipal elections?
@@ -31,8 +30,8 @@ Ontario on the Ministry of Municipal Affairs and Housing website:
 Your municipal government is responsible for many of the services
 that directly impact your daily life. We've put together a
 [separate page](/resources/municipal-structure#what-do-the-different-levels-of-government-do)
-with information about how everything works. Ultimately, whether
-you get engaged with municipal government is your choice -
+with information to explain the roles and responsibilities of the different positions. 
+Becoming engaged with municipal government is your choice -
 do you want to have input into who's making decisions about
 how your city functions?
 
