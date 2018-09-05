@@ -145,6 +145,11 @@ body {
       color: $yellow;
       font-weight: bold;
     }
+
+    ul > li > ul > li a {
+      color: $light;
+      font-weight: normal;
+    }
   }
 
   .standout-box {

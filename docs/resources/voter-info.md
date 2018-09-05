@@ -3,14 +3,22 @@ title: Information for Voters
 layout: page
 ---
 
-Information for Voters
-----------------------
+# Information for Voters
 {:.no_toc}
 
+
+{::options parse_block_html="true" /}
+<div class="flex gutters">
+
+<div class="aside">
+<aside class="aside-box" data-aos="fade-left">
 * table of contents
 {:toc}
+</aside>
+</div>
 
-### Overview
+<div class="main">
+## Overview
 
 #### What is this all about?
 
@@ -42,7 +50,7 @@ On June 7 2018 Ontario had a provincial election. This is a municipal
 election. Both sets of elections are currently held every four years.
 
 
-### Voter Eligibility
+## Voter Eligibility
 
 #### Am I permitted to vote?
 
@@ -158,7 +166,7 @@ Yes. Your voting address is considered to be the place where you ate
 or slept most frequently during the last five weeks.
 
 
-### About Voting
+## About Voting
 
 #### How do I vote? May I vote using the Internet?
 
@@ -213,7 +221,7 @@ Similarly, if a position elects more than one representative (for
 example, there are four Kitchener Regional Council representatives)
 then you are not obligated to cast four votes for that position.
 
-### Getting Informed
+## Getting Informed
 
 #### What parties are running in this election?
 
@@ -297,7 +305,7 @@ There is an active discussion about the 2018 municipal elections on the
 [Waterloo Region Connected
 forums](http://www.waterlooregionconnected.com/forumdisplay.php?fid=34).
 
-### Getting More Involved
+## Getting More Involved
 
 #### How high is voter turnout in municipal elections?
 
@@ -371,3 +379,7 @@ For convenience, here they are again:
   Wilmot](https://www.wilmot.ca/en/township-office/registered-candidates.aspx)
 - [Township of
   Woolwich](https://www.woolwich.ca/en/township-services/list-of-candidates.aspx)
+
+</div>
+
+</div>
