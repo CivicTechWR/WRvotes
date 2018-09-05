@@ -29,6 +29,14 @@ associated with a municipality (a township or one of the three
 cities). In Waterloo Region a ward is sufficient to identify all the
 races in that region. 
 
+Aliases
+-------
+
+Each position has a list of aliases. To sync with the Google calendar,
+these aliases need to contain a substring that is in all aliases and
+in no position tags. For us, that substring is "Alias-". 
+
+
 Time and Date formats
 ---------------------
 
@@ -150,4 +158,52 @@ The code is fairly abstract. Most of the site-specific customization
 is in the CSV files and in `_config.yml` . Here are exceptions where
 things that are local to Waterloo Region are hardcoded: 
 
-(None that I found so far?)
+- The sharing links in the footer have hashtags specific to Waterloo
+  Region
+- The map embedding uses lat and long values specific to Waterloo
+  Region
+- The exceptions in `scripts/travis_build` have exceptions specific to
+  the Waterloo Region dataset.
+
+Javascript Libraries
+--------------------
+
+https://github.com/stefanocudini/leaflet-search
+
+https://unpkg.com/leaflet@1.3.0/dist/leaflet.js
+
+Travis CI
+---------
+
+Travis-CI is a continuous integration service that is free for open source 
+projects like ours. It will run a series of basic tests on the CivicTechWR
+website after building it with Jekyll. They will run on every build for 
+any repository that is connected to their service and configured approprately.
+Currently, travis will only run tests on branches named "master" and "dev".
+
+To get started:
+- Go to travis-ci.com and click "Sign up with GitHub"
+- Accept the authorization from the Travis CI service. You will be redirected 
+to Github
+- Click the green Activate button, and select your CivicTechWR repository.
+
+Now you should be able to check in to your dev branch and watch the CI
+pipeline do it's thing. We suggest always doing your work in a feature branch
+and periodically integrating into your dev branch whenever you want to ensure
+you haven't broken things.
+
+Configuration for Travis is all in the .travis.yml file. It runs the bash
+scripts "scripts/build_site" and "scripts/travis_test" to do the actual
+work of building and testing.
+
+Tests
+-----
+
+We currently are running html-proofer in the CI pipline. It will test for
+- broken internal links
+- broken external links
+- images referenced exist
+- css and js resources exist
+
+If there are more tests that you would like to see (if you have a specific 
+component, for example) talk to us on Slack.

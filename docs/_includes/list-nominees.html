@@ -85,9 +85,11 @@
 
   {% unless page.hide-details %}
 
-    {% include list-events.html race-id=include.race-id %}
+    {% include list-events.html race-id=include.race-id
+      alias-string=race-info.Aliases %}
 
-    {% include list-media.html race-id=include.race-id %}
+    {% include list-media.html race-id=include.race-id 
+      alias-string=race-info.Aliases %}
 
   {% endunless %}
 

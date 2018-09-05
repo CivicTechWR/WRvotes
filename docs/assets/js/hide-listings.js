@@ -19,6 +19,8 @@ $( document ).ready(function() {
       desc = "Questionnaires";
     } else if ($(id).hasClass("news-list")) { 
       desc = "News Items";
+    } else if ($(id).hasClass("blogs-list")) { 
+      desc = "Opinions";
     } 
 
     return desc;

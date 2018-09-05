@@ -27,6 +27,7 @@ INVALID_DATE = datetime.datetime(1969,12,12,
 
 events_dict = {}
 positions_dict = {}
+alias_dict = {}
 
 # ------------------------------
 def get_today():
@@ -146,6 +147,14 @@ def load_csv_dicts():
             positions_dict[row['PositionUniqueName']] = row
 
 
+    with open(config.ALIAS_CSV, encoding='utf-8-sig') as alias_csv:
+        reader_events = csv.DictReader(alias_csv)
+
+        for row in reader_events:
+            alias_dict[row['Alias']] = row
+
+
+
 # ------------------------------
 def connect_to_calendar():
     # From: https://developers.google.com/api-client-library/python/auth/service-accounts
@@ -162,6 +171,18 @@ def connect_to_calendar():
         credentials=credentials,
         )
     return cal_object
+
+
+# ------------------------------
+def get_position_description(pos_id):
+    """ Given a position ID (which might be a position 
+        or an alias) produce the verbal description.
+    """
+
+    if config.ALIAS_SIGNIFIER in pos_id:
+        return alias_dict[pos_id]['Description']
+    else:
+        return positions_dict[pos_id]['PositionDesc']
 
 
 # ------------------------------
@@ -222,8 +243,7 @@ def sync_calendar(cal, include_all=False):
         
         if len(position_list) == 1:
             desc += '<p>For position: {}'.format(
-                positions_dict[position_list[0].strip()]
-                              ['PositionDesc'])
+                get_position_description(position_list[0].strip())) 
             desc += '</p>'
                 
 
@@ -232,8 +252,8 @@ def sync_calendar(cal, include_all=False):
             for pos in position_list:
                 p_key = pos.strip()
                 desc += '<li>{}</li>'.format(
-                   positions_dict[p_key]['PositionDesc'],
-                   )
+                    get_position_description(p_key),
+                    )
             desc += "</ul></p>"
             
         bodydict = {}

@@ -20,4 +20,9 @@ EVENTS_CSV="../docs/_data/sync/events.csv"
 # Translations of position tags to names
 POSITIONS_CSV="../docs/_data/internal/position-tags.csv"
 
+# Alias descriptions
+ALIAS_CSV="../docs/_data/internal/aliases.csv"
 
+# Alias signifier. All aliases should contain this string,
+# and no non-aliases should.
+ALIAS_SIGNIFIER="Alias-"

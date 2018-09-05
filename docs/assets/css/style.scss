@@ -55,7 +55,7 @@ h2.inline, h3.inline, h4.inline {
 }
 
 /* h4 and h3 do not look sufficiently different. */
-h4, h4.inline { 
+h4.race-wrapper, h4.inline { 
   font-size: 16px;
 } 
 
@@ -162,4 +162,27 @@ p.bigtext {
     width: 100%;
     height: 100%;
 }
+
+
+/* ------ REDO SEARCHABLE MAP ----- */
+
+#map {
+    /* float:left; */
+    width:100%;
+    height:40em;
+}
+
+#map-searchbar { 
+    width: 100%;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+.search-input {
+        /* font-family:Courier */
+}
+.leaflet-control-search .search-input {
+    max-width:20em;
+    min-width:20em;
+}
+
 

@@ -9,7 +9,9 @@ Information for Voters
 * table of contents
 {:toc}
 
-### What is this all about? 
+### Overview
+
+#### What is this all about? 
 
 On October 22, 2018, there will be a municipal election in Waterloo
 Region (and the rest of Ontario). Up for election will be representatives of three different
@@ -23,7 +25,7 @@ There is a good, readable voter's guide to municipal elections in
 Ontario on the Ministry of Municipal Affairs and Housing website:
 [2018 Voters' Guide](http://www.mah.gov.on.ca/Page18734.aspx). 
 
-### Why should I vote in municipal elections?
+#### Why should I vote in municipal elections?
 
 Your municipal government is responsible for many of the services 
 that directly impact your daily life. We've put together a 
@@ -33,13 +35,15 @@ you get engaged with municipal government is your choice -
 do you want to have input into who's making decisions about 
 how your city functions?
 
-### I thought we just had an election?
+#### I thought we just had an election?
 
 On June 7 2018 Ontario had a provincial election. This is a municipal
 election. Both sets of elections are currently held every four years. 
 
 
-### Am I permitted to vote?
+### Voter Eligibility
+
+#### Am I permitted to vote?
 
 You may vote if you are a Canadian citizen who resides in Waterloo
 Region, owns property here, or has a spouse who owns property here.
@@ -51,44 +55,111 @@ from voting: see the "Who cannot vote" section on the
 Page](http://www.mah.gov.on.ca/Page18734.aspx). 
 
 
-When voting you must show voter identification. See the [list of
-acceptable voter
-documentation](http://www.mah.gov.on.ca/Page219.aspx#voters) for a
-comprehensive list.
 
-
-### I voted provincially. Am I registered to vote?
+#### I voted provincially. Am I registered to vote?
 
 Not necessarily. The provincial register of electors is distinct from
 the municipal one. The municipal List of Electors is managed by MPAC,
 the Municipal Property Assessment Corporation (MPAC). 
 
 
-### How do I register to vote?
+#### How do I register to vote?
 
 MPAC maintains an
 online tool for checking your voter registration at
-<https://www.voterlookup.ca> . For some municipalities [WHICH ONES?]
-you can also use this tool to add yourself to the List of Electors, or
-to change your voting information.
+<https://www.voterlookup.ca> . This is the place to start. 
+If your information is correct you will probably receive a voter card
+in the mail.
 
-You can also add yourself to the List of Electors via your
-municipality. [HOW? FOR ALL MUNICIPALITIES?]
+If your information is not correct or you are not present on the site
+then life gets complicated. The best way for you to ensure that you
+are registered to vote is by registering in your area municipality.
+You may be able to register on voterlookup.ca as well, but be careful
+-- your registration there may only apply for the 2022 election
+onwards, not the 2018 one. 
 
-- [Cambridge](https://www.cambridge.ca/en/resources/Form-EL15---Application-to-Amend-Voters-List-Fillable.pdf)
-- [Wellesley](https://forms.wellesley.ca/Application-to-Amend-Voters-List)
+In most cases it is wise to get yourself registered before election
+day, but some area municipalities allow registration when you vote. 
+
+Here is information about getting yourself registered in the different
+area municipalities. 
+
+**Cambridge**:  Fill out the [following
+form](https://www.cambridge.ca/en/resources/Form-EL15---Application-to-Amend-Voters-List-Fillable.pdf)
+and submit it to the Clerk's Office on the 2nd floor of Cambridge City
+Hall.
+You will also need to show identification. 
+
+For Internet voting you will need a PIN which is mailed to you. For
+in-person voting you may register on voting day at [your polling
+station](https://cityofcambridge.maps.arcgis.com/apps/InformationLookup/index.html?appid=5b26f2e0b29d4bdf92fcf76eb61efd13).
+See
+<https://www.cambridge.ca/en/your-city/information-for-voters.aspx>
+for more information.
+
+**Kitchener**: Until October 19, you may fill out the [following
+form](https://lf.kitchener.ca/WebLinkExt/DocView.aspx?dbid=0&id=1705934&_ga=2.53806632.1802388269.1535916888-2068458943.1532310666)
+and submit it to Legislated Services, at the 2nd floor of Kitchener
+City Hall. 
+
+On election day you will be able to register to vote at [your polling
+station](https://kitchenergis.maps.arcgis.com/apps/View/index.html?appid=716aa406b32e40d697f24cabae551006).
+See
+<https://www.kitchener.ca/en/city-services/what-voters-need-to-know.aspx>
+for more information.
+
+**North Dumfries**: Voters should recieve an information letter by
+October 15.  The township is holding several voter help centres at the
+North Dumfries Community Complex (NDCC) and Clyde-Scott Women's
+Institute (Clyde). See [this
+PDF](https://www.northdumfries.ca/en/township-services/resources/Documents/Voter-Help-Centre-Calendar.pdf)
+for the voter help centre schedule. You may also contact the Clerk's
+office. For more information see:
+<https://www.northdumfries.ca/en/township-services/information-for-voters-.aspx>.
+
+**City of Waterloo**: You can look up and change your voter
+registration information here:
+<https://www.waterloo.ca/en/government/voter-registration.asp>. 
+
+**Wellesley**: If you are on the voter's list you should receive a
+voter information letter by October 15. There is a voter help line at
+519-699-3968 where you can check your registration. You may also
+contact the Clerk's office. For more information see: 
+<https://www.wellesley.ca/en/township-services/voter-information.aspx>. 
+
+**Wilmot**: Check your information here:
+<https://www.wilmot.ca/en/township-office/voters--list.aspx>. You can
+change your voter registration information at the township office, or
+on voting day at your voting location. 
+
+**Woolwich**: Registered voters should receive an information letter
+in "early October". Registration information must be changed in
+person. There is a voter help line at 519-669-6049, and the
+municipality is holding a number of Election Help Centres: see
+<https://www.woolwich.ca/en/township-services/information-for-voters.aspx>
+for times and locations.
 
 
-### I am a student. Do I get to vote?
+
+
+#### I am a student. Do I get to vote?
 
 Yes. Depending on where your home address is, you may be eligible to
 vote twice! 
 
 See the "Post-secondary" section on the [Region of Waterloo elections
-page](https://www.regionofwaterloo.ca/en/regional-government/elections.aspx)
+page](https://www.regionofwaterloo.ca/en/regional-government/elections.aspx).
 
 
-### How do I vote? May I vote using the Internet?
+#### I am homeless or have no fixed address. Do I get to vote?
+
+Yes. Your voting address is considered to be the place where you ate
+or slept most frequently during the last five weeks. 
+
+
+### About Voting
+
+#### How do I vote? May I vote using the Internet?
 
 This depends on the area municipality in which you live. In North
 Dumfries, Wellesley, and Woolwich you will **only** be able to vote
@@ -111,13 +182,28 @@ In the other area municipalities (Kitchener, City of Waterloo, Wilmot
 Township) you may vote in-person during an advance poll or on election
 day: 
 
-- [Kitchener](https://www.kitchener.ca/en/city-services/election-2018-important-dates.aspx)
+- [Kitchener](https://www.kitchener.ca/en/city-services/where-do-i-vote-.aspx)
 - [Wilmot](https://www.wilmot.ca/en/township-office/voting-locations.aspx)
 - [City of
   Waterloo](https://www.waterloo.ca/en/government/where-when-to-vote.asp)
 
+#### Do I need a voter card to vote? Do I need identification?
 
-### There are a lot of positions to vote for! Do I have to vote for all of them?
+If your area municipality allows voting in person then you do not need
+a voter card. If your area municipality allows only Internet and
+telephone voting then you will need a PIN. 
+
+In general you need to bring identification with you in order to
+vote. The Ministry of Municipal Affairs and Housing publishes a list
+of [acceptable documents for voter
+identification](http://www.mah.gov.on.ca/Page18734.aspx#identification).
+If you do not have identification you may still vote, but you must be
+registered on the voter's list and you must sign a declaration of your
+identity. See the [voter's
+list](http://www.mah.gov.on.ca/Page18734.aspx#voterslist) section
+of the 2018 Voters' Guide for more information.
+
+#### There are a lot of positions to vote for! Do I have to vote for all of them?
 
 No. You may refrain from voting for some positions if you wish; your
 vote will count for the positions you did vote for. 
@@ -126,19 +212,9 @@ Similarly, if a position elects more than one representative (for
 example, there are four Kitchener Regional Council representatives)
 then you are not obligated to cast four votes for that position.
 
-### How high is voter turnout in municipal elections?
+### Getting Informed
 
-Voter turnout tends to be significantly lower than for provincial or
-federal elections. The CBC [published a
-summary](http://www.cbc.ca/news/canada/kitchener-waterloo/voter-turnout-in-waterloo-region-stagnant-overall-1.2815625)
-of turnout rates for Waterloo Region. In 2014, they ranged from a low
-of 29.3% in Wellesley township to 40.6% in Wilmot township.
-
-These rates are significantly lower than municipal election rates
-throughout Canada, as [reported by Statistics
-Canada](https://www150.statcan.gc.ca/n1/pub/89-640-x/2009001/tab/tab3-1-eng.htm). 
-
-### What parties are running in this election?
+#### What parties are running in this election?
 
 Unlike provincial or federal politics, municipal candidates in our
 municipality do not run under party banners. 
@@ -146,10 +222,10 @@ municipality do not run under party banners.
 This has the advantage of potentially reducing partisanship, but it
 means that candidates must be evaluated on their individual merits.
 
-### I don't feel informed enough to vote. Where do I start?
+#### I don't feel informed enough to vote. Where do I start?
 
 Start by finding your municipal ward on the [ward map](/) or by
-finding your ward in the [list of wards](/all-positions). There, you
+finding your ward in the [list of wards](/wards). There, you
 can find the candidates running for each position in your area, their
 websites, news articles about them, and events where they will be
 appearing. 
@@ -185,7 +261,7 @@ other than identifying candidates who put time into door-knocking it
 does not give you much information about which candidates are best for
 their jobs.
 
-### I don't feel informed enough to vote and there is not much time left.  What do I do?
+#### I don't feel informed enough to vote and there is not much time left.  What do I do?
 
 If you are stretched for time, you can follow one or two races and
 cast informed votes for those. The regional level of government is
@@ -200,7 +276,7 @@ Alternatively, you can follow one or two races by reading the campaign
 literature (in printed form or on the Internet) from the contenders,
 and choosing the candidates that match your views most closely. 
 
-### How do I follow what is going on during the election?
+#### How do I follow what is going on during the election?
 
 Local media provides lots of election coverage. 
 
@@ -220,9 +296,22 @@ There is an active discussion about the 2018 municipal elections on the
 [Waterloo Region Connected
 forums](http://www.waterlooregionconnected.com/forumdisplay.php?fid=34).
 
+### Getting More Involved
+
+#### How high is voter turnout in municipal elections?
+
+Voter turnout tends to be significantly lower than for provincial or
+federal elections. The CBC [published a
+summary](http://www.cbc.ca/news/canada/kitchener-waterloo/voter-turnout-in-waterloo-region-stagnant-overall-1.2815625)
+of turnout rates for Waterloo Region. In 2014, they ranged from a low
+of 29.3% in Wellesley township to 40.6% in Wilmot township.
+
+These rates are significantly lower than municipal election rates
+throughout Canada, as [reported by Statistics
+Canada](https://www150.statcan.gc.ca/n1/pub/89-640-x/2009001/tab/tab3-1-eng.htm). 
 
 
-### I want to organize an all-candidates meeting. What do I do?
+#### I want to organize an all-candidates meeting. What do I do?
 
 If there are not enough all-candidates meetings for the positions that
 interest you (spoiler: there probably aren't) then you can organize
@@ -245,13 +334,13 @@ Once you have started organizing your meeting, be sure to let us know
 about it so we can publish it on this website!
 
 
-### What other groups are working on election education?
+#### What other groups are working on election education?
 
 The Region of Waterloo links to election information for the different
-municipalities at <https://wrvotes.com> . 
+municipalities at <http://wrvotes.com> . 
 
 The (City of) Waterloo Voter Support Committee has a website at
-<https://waterloovotes.com> 
+<http://waterloovotes.com> 
 
 A group called the [Waterloo Region Women's Municipal Campaign
 School](https://learnhowtorun.com) held workshops on how to run for
@@ -261,9 +350,9 @@ have a Twitter account here:
 [@wrwomenrun](https://twitter.com/wrwomenrun).
 
 
-### I don't trust your candidate listings. Where can I find the real ones?
+#### I don't trust your candidate listings. Where can I find the real ones?
 
-Official candidate listing pages are listed on <https://wrvotes.com> .
+Official candidate listing pages are listed on <http://wrvotes.com> .
 For convenience, here they are again: 
 
 - [Region of

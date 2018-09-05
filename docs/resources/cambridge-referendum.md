@@ -66,7 +66,8 @@ trustees) will continue to be elected using the existing system.
 ### What happens if the referendum does not pass?
 
 If the referendum does not pass then the voting system in Cambridge
-remains the same.  
+remains the same. City council is allowed to use the results of the
+referendum to influence future policy but is not obligated to.
 
 ### Under what conditions does the referendum pass?
 

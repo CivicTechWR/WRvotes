@@ -2,16 +2,31 @@
     | where_exp:"item", "item.PositionIDList contains include.race-id"
     %}
 
+  {% assign alias-list = include.alias-string | split: "," %}
+  {% for alias in alias-list %}
+    {% assign aliased-media = site.data.sync.media
+      | where_exp:"item", "item.PositionIDList contains alias"
+      %}
+
+     {% assign media-list = media-list | concat: aliased-media %}
+  {% endfor %}
+
+  {% assign media-list = media-list | uniq %}
+
   {% assign news-list = site.empty-array %}
   {% assign survey-list = site.empty-array %}
+  {% assign blog-list = site.empty-array %}
 
   {% for media-item in media-list %}
-    {% unless media-item 
+    {% if media-item 
        and media-item.ComparisonOrOpinion == 'Comparison' %}
-      {% assign news-list = news-list | push: media-item %}
-    {% else %}
       {% assign survey-list = survey-list | push: media-item %}
-    {% endunless %}
+    {% elsif media-item 
+       and media-item.ComparisonOrOpinion == 'Opinion' %}
+      {% assign blog-list = blog-list | push: media-item %}
+    {% else %}
+      {% assign news-list = news-list | push: media-item %}
+    {% endif %}
 
   {% endfor %}
 
@@ -21,7 +36,7 @@
       item-list=survey-list
       race-id=include.race-id 
       type="survey" 
-      header="Questionnaires and Meeting Recordings" 
+      header="Questionnaires, Meeting Recordings and Endorsement Lists" 
       teaser-limit=site.teaser_limit_surveys %}
   {% endif %}
 
@@ -32,5 +47,15 @@
       race-id=include.race-id 
       type="news" 
       header="News Items"
+      teaser-limit=site.teaser_limit_news %}
+  {% endif %}
+
+  {% if blog-list.size > 0 %}
+
+    {% include list-media-items.html 
+      item-list=blog-list 
+      race-id=include.race-id 
+      type="blogs" 
+      header="Opinion Pieces and Blog Posts"
       teaser-limit=site.teaser_limit_news %}
   {% endif %}
