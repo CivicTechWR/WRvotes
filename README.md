@@ -32,6 +32,7 @@ Dependencies:
 To get started locally:
 - Clone the repo: `git clone https://github.com/CivicTechWR/WRvotes.git`
 - Install gems: `bundle`
+- Move into the website directory: `cd docs`
 - Start the local server: `jekyll serve`
 
 
