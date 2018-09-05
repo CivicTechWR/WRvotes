@@ -88,36 +88,114 @@ ul.continue {
 
 /* ------------ FOOTER STYLING ----------- */
 
-/* Make footer more appealing visually. */
-div.footer-columns {
-  column-count: 3;
-}
-
 div.footer {
   font-size: smaller;
-}
-
-p.bigger {
-  font-size: larger;
-}
-
-/* Make columns line up better */
-div.footer-columns p {
-  margin: 0 0 0.5ex 0;
-}
-
-/* Don't underline links unless they are highlighted */
-div.footer-columns a {
-  text-decoration: none;
-}
-
-div.footer-columns a:hover {
-  text-decoration: underline;
 }
 
 p.sharing a {
   margin-left: 0.5em;
   margin-right: 0.5em;
+}
+
+#footer_wrap {
+  background: $dark;
+  color: $light;
+  position: absolute;
+  bottom: 0;
+
+  footer.inner {
+    max-width: 1366px;
+    padding: 1% 2%;
+
+    p {
+      color: $light;
+    }
+
+    a {
+      color: $light;
+      &:hover, &:focus {
+        color: $pink;
+      }
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .minicaps {
+      font-family: $secondary-font;
+      font-weight: 700;
+    }
+
+    .sharing {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-items: center;
+      border-bottom: 1px solid white;
+      padding: 1em 0;
+
+      > div {
+        margin-right: 10px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      span.icon {
+        height: 24px;
+        width: 24px !important;
+        padding: 3px;
+        border-radius: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background: $pink;
+        }
+      }
+
+      img {
+        height: 18px;
+        width: 18px;
+      }
+    }
+
+    .contact, .links {
+      padding: 1em 0;
+
+      ul {
+        li {
+          margin: 0;
+        }
+      }
+    }
+
+    .links {
+      ul {
+        column-count: 2;
+      }
+    }
+
+    .footer-columns {
+      display: flex;
+
+      > div {
+        flex: 1 1 auto;
+      }
+    }
+
+    .email {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-items: center;
+      border-top: 1px solid white;
+      padding: 1em 0;
+    }
+  }
 }
 
 

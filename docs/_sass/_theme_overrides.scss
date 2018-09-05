@@ -80,27 +80,6 @@ body {
     text-shadow: none;
   }
 
-  #footer_wrap {
-    background: $dark;
-    color: $light;
-    position: absolute;
-    bottom: 0;
-
-    footer.inner {
-      max-width: 1366px;
-      padding: 1% 2%;
-
-      p {
-        color: $light;
-      }
-
-      a {
-        color: $light;
-        text-decoration: underline;
-      }
-    }
-  }
-
   #main_content_wrap {
     border-top: none;
     border-bottom: none;

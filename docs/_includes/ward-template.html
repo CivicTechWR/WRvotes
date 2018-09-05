@@ -41,7 +41,7 @@ Councillors), your <b>area municipality</b> (Mayor and Ward councillors) and
         {% assign race-id = race %}
       {% endif %}
 
-      <div class="race-wrapper full-width content-box" data-aos="fade-up" id="{{ race-id | slugify }}-wrapper">
+      <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
 
         {% include list-nominees.html race-id=race-id %}
 
