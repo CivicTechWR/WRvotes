@@ -1,8 +1,9 @@
 ---
-title: Being a Politician 
+title: Being a Politician
+layout: page
 ---
 
-Being a Politician 
+Being a Politician
 ----------------------
 {:.no_toc}
 
@@ -12,7 +13,7 @@ questions. We reached out to some sitting and former politicians and
 asked them about their experiences.
 
 Some of the politicians we contacted offered individual accounts they
-had put together in the past: 
+had put together in the past:
 
 - School trustee Ted Martin [on being a
   trustee](./ted-martin-on-being-a-trustee)
@@ -34,7 +35,7 @@ other people ask them to run.
 Some people are inspired to run by civic engagement groups. In this
 election, several candidates ran after attending the [Waterloo Region
 Women's Municipal Campaign School](https://learnhowtorun.com)
-workshops. 
+workshops.
 
 Some people become politically actve because a municipal issue affects
 them personally.
@@ -57,10 +58,10 @@ service.
 The positions of ward councillor, school trustee [and regional
 councillor?] are not considered full-time positions. Some of these
 elected officials hold other jobs in addition to their office; some do
-not. 
+not.
 
 Mayoral positions and Regional Chair are considered full-time
-positions. 
+positions.
 
 
 

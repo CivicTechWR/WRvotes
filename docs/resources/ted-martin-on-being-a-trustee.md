@@ -1,5 +1,6 @@
 ---
 title: "Ted Martin: On Being a Trustee"
+layout: page
 ---
 
 Ted Martin: On Being a Trustee
@@ -42,7 +43,7 @@ And, in subsequent years, under subsequent governments, that realm has
 continued to shrink.
 
 Perhaps a good place to start is with a reminder that trustees are not
-members of a parliament. 
+members of a parliament.
 
 During my first year, I often spent much of my energy asking pointed
 questions to staff. After one particularly heated exchange, during
@@ -268,7 +269,7 @@ even garners the most community support is not the trustee who is best
 helping the Board be effective, because he or she is not working with
 the other trustees as a team.
 
-Because being Trustees really is a team sport. 
+Because being Trustees really is a team sport.
 
 So I would add another role for trustees to that list we developed
 throughout this presentation – being a team player: working with the

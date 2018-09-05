@@ -1,8 +1,9 @@
 ---
-layout: default
-title: All News
+layout: page
+title: News
 ---
 
+<h1>{{ page.title }}</h1>
 <p>
 These listings include every news item across all positions. They mix
 up news items with surveys.
@@ -24,7 +25,7 @@ up news items with surveys.
       race-id=virtual-tag.PositionUniqueName
       type="news"
       header=virtual-tag.PositionDesc
-      teaser-limit=site.teaser_limit_surveys 
+      teaser-limit=site.teaser_limit_surveys
       big-header=true %}
   {% endif %}
 {% endfor %}

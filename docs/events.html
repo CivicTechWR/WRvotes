@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: All Events
 ---
 <h1>Events</h1>
@@ -14,18 +14,18 @@ href="./wards/">information page for your ward</a>.
   <h2>Embedded Calendar</h2>
 
   <p>
-  You can also view this calendar <a href="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}&hl=en">on 
+  You can also view this calendar <a href="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}&hl=en">on
   its own page</a>.
   </p>
-  
+
   {% if site.events_newsletter -%}
     <p>
     Instead of forgetting to visit this page and missing events, you
     can sign up for <a href="{{ site.events_newsletter }}">event
-    listings</a> and get a weekly summary emailed to you. 
+    listings</a> and get a weekly summary emailed to you.
     </p>
   {% endif %}
-  
+
 <div class="embedContainer">
   <iframe src="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}&hl=en" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
@@ -39,7 +39,7 @@ href="./wards/">information page for your ward</a>.
 {% assign date-now = site.time | date: "%F" %}
 
 
-{% assign events-upcoming = all-events  
+{% assign events-upcoming = all-events
   | where_exp:"ev", "ev.DateTimeStart >= date-now" %}
 
 
@@ -48,19 +48,19 @@ href="./wards/">information page for your ward</a>.
 
 {% for virtual-tag in target-tags %}
 
-  {% assign events-pos = events-upcoming 
+  {% assign events-pos = events-upcoming
     | where_exp:"ev", "ev.PositionIDList contains
     virtual-tag.PositionUniqueName" %}
 
   {% if events-pos.size > 0 %}
-    <div class="event-wrapper" id="event-wrapper-{{ 
+    <div class="event-wrapper content-box" id="event-wrapper-{{
       virtual-tag.PositionUniqueName | slugify }}">
 
       {% include list-event-block.html
         event-list=events-pos
         header=virtual-tag.PositionDesc
         teaser-limit=site.teaser_limit_events_generic
-        race-id=include.race-id 
+        race-id=include.race-id
         big-header=true %}
       </div>
   {% endif %}
@@ -69,29 +69,29 @@ href="./wards/">information page for your ward</a>.
 
 
 {% if events-upcoming.size > 0 %}
-  <div class="event-wrapper" id="event-wrapper-upcoming">
+  <div class="event-wrapper content-box" id="event-wrapper-upcoming">
     {% include list-event-block.html
       event-list=events-upcoming
       header="Upcoming Events"
       teaser-limit=site.teaser_limit_events_generic
-      race-id=include.race-id 
+      race-id=include.race-id
       big-header=true %}
     </div>
 {% endif %}
 
 
-{% assign events-past = all-events  
+{% assign events-past = all-events
   | where_exp:"ev", "ev.DateTimeStart < date-now" %}
 
 {% if events-past.size > 0 %}
-  <div class="event-wrapper" id="event-wrapper-past">
+  <div class="event-wrapper content-box" id="event-wrapper-past">
     {% include list-event-block.html
       event-list=events-past
       header="Past Events"
       teaser-limit=site.teaser_limit_events_generic
-      race-id=include.race-id 
-      big-header=true 
-      reverse-sort=true 
+      race-id=include.race-id
+      big-header=true
+      reverse-sort=true
     %}
   <div>
 {% endif %}

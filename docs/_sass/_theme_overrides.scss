@@ -1,0 +1,321 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 18px;
+  min-height: 100%;
+  position: relative;
+  background: $light;
+
+  a {
+    color: $blue;
+
+    &:hover, &:focus {
+      color: $pink;
+    }
+  }
+
+  img {
+    border: none;
+    box-shadow: none;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    background: none;
+  }
+
+  ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    li {
+      margin: 0.4rem 0;
+    }
+  }
+
+  #header_wrap {
+    background: $light;
+
+    header.inner {
+      max-width: 1366px;
+      padding: 1% 2%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .titles {
+        #project_title {
+          font-size: 28px;
+          margin: 0;
+          padding: 0;
+        }
+
+        #project_tagline {
+          font-size: 20px;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .header-logo {
+        img {
+          height: 100px;
+          width: auto;
+          margin: 0;
+          padding: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  #project_title, #project_tagline {
+    color: $dark;
+    text-shadow: none;
+  }
+
+  #main_content_wrap {
+    border-top: none;
+    border-bottom: none;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    background: $light;
+
+    .inner {
+      max-width: 1366px;
+      padding: 1% 2%;
+    }
+  }
+
+  .flex {
+    display: flex;
+
+    &.gutters {
+      margin-left: -1em;
+      margin-right: -1em;
+    }
+
+    &.justify-center {
+      justify-content: center;
+    }
+
+    &.justify-right {
+      justify-content: flex-end;
+    }
+
+    .main {
+      flex-grow: 2;
+      order: 1;
+      margin: 1em;
+      flex-basis: 66%;
+    }
+
+    .aside {
+      flex-grow: 1;
+      order: 2;
+      margin: 1em;
+      flex-basis: 33%;
+    }
+  }
+
+  .content-box {
+    background: transparentize($blue, 0.95);
+    border-left: 6px solid $blue;
+    padding: 2em;
+    color: $dark;
+    margin-bottom: 2em;
+  }
+
+  .aside-box {
+    background-color: $blue;
+    color: $light;
+    padding: 2rem;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $light;
+    }
+
+    a {
+      color: $yellow;
+      font-weight: bold;
+    }
+  }
+
+  .standout-box {
+    background: $light;
+    color: $dark;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    .header {
+      padding: 20px 0;
+    }
+
+    .content {
+      padding: 0px;
+      padding-left: 20px;
+      border-left: 4px solid $dark;
+    }
+
+
+    &.pink {
+      .content {
+        border-left: 4px solid $pink;
+      }
+
+      a {
+        color: $pink;
+      }
+    }
+
+    &.yellow {
+      .content {
+        border-left: 4px solid $yellow;
+      }
+
+      a {
+        color: $yellow;
+      }
+    }
+
+    &.blue {
+      .content {
+        border-left: 4px solid $blue;
+      }
+
+      a {
+        color: $blue;
+      }
+    }
+
+    &.green {
+      .content {
+        border-left: 4px solid $green;
+      }
+
+      a {
+        color: $green;
+      }
+    }
+
+    &.mint {
+      .content {
+        border-left: 4px solid $mint;
+      }
+
+      a {
+        color: $mint;
+      }
+    }
+
+    &.light {
+      .content {
+        border-left: 4px solid transparentize($blue, 0.8);
+      }
+
+      a {
+        color: $blue;
+      }
+    }
+
+    &.small {
+      max-width: 380px;
+    }
+
+    &.medium {
+      max-width: 640px;
+    }
+
+    &.large {
+      max-width: 960px;
+    }
+
+    &.full-width {
+      max-width: 100%;
+    }
+  }
+
+  .bg-blue {
+    background-color: $blue;
+  }
+
+  .bg-green {
+    background-color: $green;
+  }
+
+  .bg-yellow {
+    background-color: $yellow;
+  }
+
+  .bg-pink {
+    background-color: $pink;
+  }
+
+  .bg-mint {
+    background-color: $mint;
+  }
+
+  .blue-text {
+    color: $blue;
+  }
+
+  .green-text {
+    color: $green;
+  }
+
+  .yellow-text {
+    color: $yellow;
+  }
+
+  .pink-text {
+    color: $pink;
+  }
+
+  .mint-text {
+    color: $mint;
+  }
+
+  .big-text {
+    font-size: 3em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .medium-text {
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .no-margin-top {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+
+  body {
+    .flex {
+      flex-direction: column;
+
+      .main {
+        flex-grow: 1;
+        order: 2;
+        margin: 1em;
+      }
+
+      .aside {
+        flex-grow: 1;
+        order: 1;
+        margin: 1em;
+      }
+    }
+  }
+}

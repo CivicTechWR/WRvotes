@@ -5,14 +5,16 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.svg">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     {% if page.use-leaflet %}
-      <link rel="stylesheet" type="text/css" media="screen" 
+      <link rel="stylesheet" type="text/css" media="screen"
         href="{{ site.baseurl }}/assets/css/leaflet.css">
-      <link rel="stylesheet" type="text/css" media="screen" 
+      <link rel="stylesheet" type="text/css" media="screen"
         href="{{ site.baseurl }}/assets/css/leaflet-search.min.css">
-      <link rel="stylesheet" type="text/css" media="screen" 
+      <link rel="stylesheet" type="text/css" media="screen"
         href="{{ site.baseurl }}/assets/css/leaflet-search.mobile.min.css">
     {% endif %}
 
@@ -20,15 +22,15 @@
   {% if page.title -%}
     <title>{{ page.title }} | {{ site.title }}</title>
   {%- else -%}
-      
-    {% assign ward-id = page.url | replace: '.html', '' 
+
+    {% assign ward-id = page.url | replace: '.html', ''
        | split: '/' | last -%}
-    {% assign ward-info-list = site.data.internal.position-tags 
+    {% assign ward-info-list = site.data.internal.position-tags
        | where:"PositionUniqueName",ward-id -%}
     {%- if ward-info-list.size > 0 -%}
       {%- assign ward-info = ward-info-list | first -%}
       <title>{{ ward-info.PositionDesc }} | {{ site.title }}</title>
-    {%- else -%} 
+    {%- else -%}
       <title>{{ site.title }} | boo! no title!</title>
     {%- endif -%}
   {%- endif -%}
@@ -39,9 +41,13 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+          <a href="/" class="header-logo">
+            <img src="{{ site.baseurl }}/assets/images/wrvotes-logo.svg" alt="Waterloo Region Votes logo" />
+          </a>
+          <div class="titles">
+            <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+            <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+          </div>
 
           {% if site.show_downloads %}
             <section id="downloads">
@@ -73,6 +79,18 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      (function() {
+        var footerHeight = document.getElementById('footer_wrap').getBoundingClientRect().height;
+        document.getElementsByTagName("body")[0].style.paddingBottom = footerHeight + 'px';
+      }())
+    </script>
   </body>
 </html>
 

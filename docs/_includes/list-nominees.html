@@ -2,95 +2,97 @@
   {% assign race-info = site.data.internal.position-tags |
   where:"PositionUniqueName",include.race-id | first -%}
 
+<div class="content-box" data-aos="fade-up">
+  <h3 class="medium-text">{{ race-info.PositionDesc }}</h3>
+  <div class="candidate-list" id="{{ include.race-id | slugify }}" >
+    <h4 class="inline">Candidates</h4>
 
-<h3 class="inline">{{ race-info.PositionDesc }}</h3>
-<div class="candidate-list" id="{{ include.race-id | slugify }}" >
+    {% assign these-nominees = site.data.sync.nominees
+      | where:"PositionUniqueName",include.race-id %}
+    {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
 
-  {% assign these-nominees = site.data.sync.nominees 
-    | where:"PositionUniqueName",include.race-id %}
-  {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
+    {% assign valid-nominees = these-nominees
+      | where_exp:"nom", "nom.Withdrawn != 'Y'" %}
+    {% assign num-to-elect = race-info.NumberToElect | plus: 0 %}
 
-  {% assign valid-nominees = these-nominees 
-    | where_exp:"nom", "nom.Withdrawn != 'Y'" %}
-  {% assign num-to-elect = race-info.NumberToElect | plus: 0 %}
+    {%- if num-to-elect == 1 and valid-nominees.size == 1 -%}
+      <p><strong>(This position is acclaimed.)</strong></p>
+    {% elsif num-to-elect == 0 %}
+    {% elsif num-to-elect == valid-nominees.size %}
+      <p><strong>(These {{ num-to-elect }} positions are
+      acclaimed.)</strong></p>
+    {%- elsif num-to-elect > 1 %}
+      <p><strong>(Elect {{ num-to-elect }})</strong></p>
+    {%- endif -%}
 
-  {%- if num-to-elect == 1 and valid-nominees.size == 1 -%}
-    <p><strong>(This position is acclaimed.)</strong></p>
-  {% elsif num-to-elect == 0 %}
-  {% elsif num-to-elect == valid-nominees.size %}
-    <p><strong>(These {{ num-to-elect }} positions are
-    acclaimed.)</strong></p>
-  {%- elsif num-to-elect > 1 %}
-    <p><strong>(Elect {{ num-to-elect }})</strong></p>
-  {%- endif -%}
+    {% if sorted-nominees.size > 0 or num-to-elect == 0 %}
+      <ul>
+      {% for nominee in sorted-nominees %}
+        <li>
+        {% if nominee.Withdrawn == 'Y' -%}
+          <strong>WITHDRAWN: </strong>
+        {%- endif -%}
+        {%- if nominee.Website -%}
+          {% comment %}
+          Assume @name means Twitter and not Instagram.
+          This should probably be its own function.
+          Or we should prohibit this!
+          {% endcomment %}
 
-  {% if sorted-nominees.size > 0 or num-to-elect == 0 %}
-    <ul>
-    {% for nominee in sorted-nominees %}
-      <li>
-      {% if nominee.Withdrawn == 'Y' -%}
-        <strong>WITHDRAWN: </strong>
-      {%- endif -%}
-      {%- if nominee.Website -%}
-        {% comment %}
-        Assume @name means Twitter and not Instagram.
-        This should probably be its own function.
-        Or we should prohibit this!
-        {% endcomment %}
+          {% assign first-char-website = nominee.Website
+            | slice: 0 %}
+          {% if first-char-website == '@' %}
+            {% assign website-url = nominee.Website
+              | replace_first: '@','https://twitter.com/' %}
+          {% elsif nominee.Website contains '://' %}
+            {% assign website-url = nominee.Website %}
+          {% else %}
+            {% capture website-url %}http://{{ nominee.Website }}{% endcapture %}
+          {% endif %}
 
-        {% assign first-char-website = nominee.Website 
-          | slice: 0 %}
-        {% if first-char-website == '@' %}
-          {% assign website-url = nominee.Website 
-            | replace_first: '@','https://twitter.com/' %} 
-        {% elsif nominee.Website contains '://' %}
-          {% assign website-url = nominee.Website %}
-        {% else %}
-          {% capture website-url %}http://{{ nominee.Website }}{% endcapture %}
-        {% endif %}
-
-        <a href="{{ website-url }}">{{ nominee.Given_Names }} 
-          {{ nominee.Last_Name }}</a>
-      {%- else -%}
-        {{ nominee.Given_Names}} {{ nominee.Last_Name }}
-      {%- endif -%}
-
-      {%- unless nominee.Withdrawn == 'Y' -%}
-        {%- if nominee.Phone1 -%}
-          , {{ nominee.Phone1 }}
+          <a href="{{ website-url }}">{{ nominee.Given_Names }}
+            {{ nominee.Last_Name }}</a>
+        {%- else -%}
+          {{ nominee.Given_Names}} {{ nominee.Last_Name }}
         {%- endif -%}
 
-        {%- if nominee.Email -%}
-          , {{ nominee.Email }} 
-        {%- endif -%}
+        {%- unless nominee.Withdrawn == 'Y' -%}
+          {%- if nominee.Phone1 -%}
+            , {{ nominee.Phone1 }}
+          {%- endif -%}
 
-        {%- if nominee.Twitter -%}
-          , 
-          <a href="{{ nominee.Twitter | 
-            replace_first: '@', 'https://twitter.com/' }}">{{
-            nominee.Twitter }}</a>
-        {%- endif -%}
-      {%- endunless -%}
+          {%- if nominee.Email -%}
+            , {{ nominee.Email }}
+          {%- endif -%}
 
-      </li>
-    {% endfor %}
-    </ul>
+          {%- if nominee.Twitter -%}
+            ,
+            <a href="{{ nominee.Twitter |
+              replace_first: '@', 'https://twitter.com/' }}">{{
+              nominee.Twitter }}</a>
+          {%- endif -%}
+        {%- endunless -%}
 
-  {% else %}
-    <p>
-    Whoops! Nobody appears to be running for this position!
-    Has democracy failed or are our records out of date?
-    </p>
-  {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
 
-  {% unless page.hide-details %}
+    {% else %}
+      <p>
+      Whoops! Nobody appears to be running for this position!
+      Has democracy failed or are our records out of date?
+      </p>
+    {% endif %}
 
-    {% include list-events.html race-id=include.race-id
-      alias-string=race-info.Aliases %}
+    {% unless page.hide-details %}
 
-    {% include list-media.html race-id=include.race-id 
-      alias-string=race-info.Aliases %}
+      {% include list-events.html race-id=include.race-id
+        alias-string=race-info.Aliases %}
 
-  {% endunless %}
+      {% include list-media.html race-id=include.race-id
+        alias-string=race-info.Aliases %}
 
+    {% endunless %}
+
+  </div>
 </div>
