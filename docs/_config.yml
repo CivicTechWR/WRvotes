@@ -11,7 +11,6 @@ defaults:
      layout: "default"
 
 empty-array: []
-permalink: pretty
 
 teaser_limit_events_multi_candidate: 7
 teaser_limit_events_specific: 2
