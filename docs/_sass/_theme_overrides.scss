@@ -1,5 +1,12 @@
+html {
+  height: 100%;
+}
+
 body {
   font-size: 18px;
+  min-height: 100%;
+  position: relative;
+  background: $light;
 
   a {
     color: $blue;
@@ -76,6 +83,8 @@ body {
   #footer_wrap {
     background: $dark;
     color: $light;
+    position: absolute;
+    bottom: 0;
 
     footer.inner {
       max-width: 1366px;

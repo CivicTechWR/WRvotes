@@ -84,6 +84,13 @@
     <script>
       AOS.init();
     </script>
+
+    <script>
+      (function() {
+        var footerHeight = document.getElementById('footer_wrap').getBoundingClientRect().height;
+        document.getElementsByTagName("body")[0].style.paddingBottom = footerHeight + 'px';
+      }())
+    </script>
   </body>
 </html>
 
