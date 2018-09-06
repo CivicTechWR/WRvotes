@@ -58,7 +58,7 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
         container: 'map-searchbar',
         zoom: 15,
         firstTipSubmit: true,
-        textPlaceholder: "Type your address to search",
+        textPlaceholder: "Search by address",
         minLength: 3
     });
 
