@@ -30,9 +30,9 @@ use-leaflet: true
 </section>
 
 <section class="flex justify-center">
-  <article class="standout-box green large" id="map-box">
-    <div class="big-text green-text header" data-aos="fade-left">Start by finding your ward.</div>
-    <div class="content" data-aos="fade-right">
+    <article class="standout-box blue large" id="map-box" data-aos="fade-up">
+    <div class="big-text blue-text header">Start by finding your ward.</div>
+    <div class="content">
       <p>The map loads more slowly than the rest of the page, so be
       patient, or use the <a href="/wards/">ward listing</a>.</p>
       <p><strong>Important</strong>: The ward boundaries on this map are close but not exact. If you live close to a boundary you need to double-check which ward you are in.</p>
