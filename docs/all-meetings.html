@@ -19,6 +19,7 @@ across all positions, every survey, and every meeting recording.
     | where_exp:"item", "item.ComparisonOrOpinion == 'Comparison'" %}
 
 {% if media-list.size > 0 %}
+  <div class="content-box">
     {% include list-media-items.html
       item-list=media-list
       race-id="surveys"
@@ -26,6 +27,7 @@ across all positions, every survey, and every meeting recording.
       header="Questionnaires and Meeting Recordings"
       teaser-limit=-1
       big-header=true %}
+  </div>
 {% endif %}
 
 
