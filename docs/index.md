@@ -17,9 +17,9 @@ use-leaflet: true
 </section>
 
 <section class="flex justify-right">
-  <article class="standout-box blue medium">
-    <div class="big-text blue-text header" data-aos="fade-left">Don't panic. We've got you covered.</div>
-    <div class="content" data-aos="fade-right">
+  <article class="standout-box green medium" data-aos="fade-up">
+    <div class="big-text green-text header">Don't panic. We've got you covered.</div>
+    <div class="content">
       <p>Start by looking up the candidates who are running in your area.
         Use the map below to <strong>locate your <a href="/wards/">municipal ward</a></strong>, and click the
       information link. From here you will find a list of the candidates for every position you can
