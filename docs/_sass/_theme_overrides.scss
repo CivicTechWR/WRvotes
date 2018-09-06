@@ -7,6 +7,7 @@ body {
   min-height: 100%;
   position: relative;
   background: $light;
+  overflow-wrap: break-word;
 
   a {
     color: $blue;
@@ -83,8 +84,8 @@ body {
   #main_content_wrap {
     border-top: none;
     border-bottom: none;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     background: $light;
 
     .inner {
@@ -130,6 +131,7 @@ body {
     padding: 2em;
     color: $dark;
     margin-bottom: 2em;
+    overflow-wrap: break-word;
   }
 
   .aside-box {
@@ -307,20 +309,46 @@ body {
 @media screen and (max-width: 1080px) {
 
   body {
-    .flex {
+    #main_content_wrap {
+      .flex {
+        flex-direction: column;
+
+        &.gutters {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        .main {
+          flex-grow: 1;
+          order: 2;
+          margin: 1em 0;
+        }
+
+        .aside {
+          flex-grow: 1;
+          order: 1;
+          margin: 1em 0;
+        }
+      }
+    }
+
+    .big-text {
+      font-size: 2em;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    h1 {
+      font-size: 2em;
+    }
+
+    #main-menu ul {
+      display: flex;
       flex-direction: column;
-
-      .main {
-        flex-grow: 1;
-        order: 2;
-        margin: 1em;
-      }
-
-      .aside {
-        flex-grow: 1;
-        order: 1;
-        margin: 1em;
-      }
     }
   }
 }

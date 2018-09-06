@@ -181,9 +181,10 @@ p.sharing a {
 
     .footer-columns {
       display: flex;
+      flex-wrap: wrap;
 
       > div {
-        flex: 1 1 auto;
+        flex: 1 0 50%;
       }
     }
 
@@ -266,6 +267,7 @@ p.bigtext {
 
       &:placeholder {
         font-size: inherit;
+        text-overflow: ellipsis;
       }
     }
 
