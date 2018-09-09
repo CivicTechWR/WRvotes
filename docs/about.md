@@ -47,11 +47,12 @@ misleading, let us know.
 
 Spread the word! Encourage your friends, family, and social media
 contacts to use this site, especially if they are not engaged in
-municipal politics already.
+municipal politics already. There are convenient sharing links at the
+bottom of each page on the site.
 
 Improve the content! Are we missing information about candidates, events,
 questionnaires or news coverage? Contact us at
-civictechwr.wrvotes@gmail.com and submit them to
+civictechwr.wrvotes@gmail.com and submit it to
 the site. Crowdsourcing resources helps improve the site for everyone.
 We currently could really use help with:
 
