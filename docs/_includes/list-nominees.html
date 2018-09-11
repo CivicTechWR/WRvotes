@@ -36,6 +36,10 @@
 
           <a href="{% include get-website.html site=nominee.Website -%}">{{ nominee.Given_Names }}
             {{ nominee.Last_Name }}</a>
+
+        {%- elsif nominee.Facebook -%}
+          <a href="{{ nominee.Facebook }}">{{ nominee.Given_Names }}
+          {{ nominee.Last_Name }}</a>
         {%- else -%}
           {{ nominee.Given_Names}} {{ nominee.Last_Name }}
         {%- endif -%}
