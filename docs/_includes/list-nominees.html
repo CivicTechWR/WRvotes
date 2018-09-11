@@ -42,14 +42,6 @@
 
         {%- unless nominee.Withdrawn == 'Y' -%}
           {% assign num-seps = 0 %}
-          {%- if nominee.Website -%}
-              {%- include punctuate.html num-sofar=num-seps -%}
-              {%- assign num-seps = num-seps | plus: 1 -%}
-              <a href="
-              {%- include get-website.html site=nominee.Website -%}
-              ">website</a>
-
-          {%- endif -%}
 
           {%- if nominee.Phone1 -%}
               {%- include punctuate.html num-sofar=num-seps -%}
@@ -61,6 +53,14 @@
               {%- include punctuate.html num-sofar=num-seps -%}
               {%- assign num-seps = num-seps | plus: 1 -%}
               {{ nominee.Email }}
+          {%- endif -%}
+
+          {%- if nominee.Website -%}
+              {%- include punctuate.html num-sofar=num-seps -%}
+              {%- assign num-seps = num-seps | plus: 1 -%}
+              <a href="
+              {%- include get-website.html site=nominee.Website -%}
+              ">website</a>
           {%- endif -%}
 
           {%- if nominee.Twitter -%}
