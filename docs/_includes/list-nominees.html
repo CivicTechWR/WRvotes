@@ -34,7 +34,7 @@
         {%- endif -%}
         {%- if nominee.Website -%}
 
-          <a href="{% include=get-website.html site=nominee.Website -%}">{{ nominee.Given_Names }}
+          <a href="{% include get-website.html site=nominee.Website -%}">{{ nominee.Given_Names }}
             {{ nominee.Last_Name }}</a>
         {%- else -%}
           {{ nominee.Given_Names}} {{ nominee.Last_Name }}
@@ -43,29 +43,29 @@
         {%- unless nominee.Withdrawn == 'Y' -%}
           {% assign num-seps = 0 %}
           {%- if nominee.Website -%}
-              {%- include=punctuate.html num-sofar=num-seps -%}
+              {%- include punctuate.html num-sofar=num-seps -%}
               {%- assign num-seps = num-seps | plus: 1 -%}
               <a href="
-              {%- include=get-website.html site=nominee.Website -%}
+              {%- include get-website.html site=nominee.Website -%}
               ">website</a>
 
           {%- endif -%}
 
           {%- if nominee.Phone1 -%}
-              {%- include=punctuate.html num-sofar=num-seps -%}
+              {%- include punctuate.html num-sofar=num-seps -%}
               {%- assign num-seps = num-seps | plus: 1 -%}
               {{ nominee.Phone1 }}
           {%- endif -%}
 
           {%- if nominee.Email -%}
-              {%- include=punctuate.html num-sofar=num-seps -%}
+              {%- include punctuate.html num-sofar=num-seps -%}
               {%- assign num-seps = num-seps | plus: 1 -%}
               {{ nominee.Email }}
           {%- endif -%}
 
           {%- if nominee.Twitter -%}
             
-           {%- include=punctuate.html num-sofar=num-seps -%}
+           {%- include punctuate.html num-sofar=num-seps -%}
            {%- assign num-seps = num-seps | plus: 1 -%}
             <a href="{{ nominee.Twitter |
               replace_first: '@', 'https://twitter.com/' }}">{{
