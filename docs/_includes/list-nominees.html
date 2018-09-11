@@ -63,6 +63,12 @@
               ">website</a>
           {%- endif -%}
 
+          {%- if nominee.Facebook -%}
+            {%- include punctuate.html num-sofar=num-seps -%}
+            {%- assign num-seps = num-seps | plus: 1 -%}
+            <a href="{{ nominee.Facebook }}">facebook</a>
+          {%- endif -%}
+
           {%- if nominee.Twitter -%}
             
            {%- include punctuate.html num-sofar=num-seps -%}
