@@ -1,0 +1,17 @@
+{%- comment -%}
+Assume @name means Twitter and not Instagram.
+This should probably be its own function.
+Or we should prohibit this!
+{%- endcomment -%}
+
+{%- assign first-char-website = nominee.Website
+  | slice: 0 -%}
+{%- if first-char-website == '@' -%}
+  {%- assign website-url = nominee.Website
+    | replace_first: '@','https://twitter.com/' -%}
+{%- elsif nominee.Website contains '://' -%}
+  {%- assign website-url = nominee.Website -%}
+{%- else -%}
+  {%- capture website-url -%}http://{{ nominee.Website }}{%- endcapture -%}
+{%- endif -%}
+{{ website-url }}
