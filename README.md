@@ -14,13 +14,13 @@ Encourage greater municipal election participation through candidacy, campaign v
 1.  Consolidated & easy to navigate access to basic candidate information
     - who
     - where
-    - links to websites, emails, phone #s (*help wanted* find information for candidates that have nothing listed!)
+    - links to websites, emails, phone #s (**help wanted** find information for candidates that have nothing listed!)
 2.  Inform the community on debates/all candidate meetings for their wards
-    - *help wanted* monitoring news sites, social media feeds, etc.
-3.  Easy to navigate information on who's responsible for what, so they can make an informed choice for each position
-    - *help wanted* Do you have knowledge or experience in local politics? Can you explain what a school board trustee does?
+    - **help wanted** monitoring news sites, social media feeds, etc.
+3.  Easy to navigate resources on who's responsible for what, so voters can make an informed choice for each position
+    - **help wanted** Do you have knowledge or experience in local politics? Can you explain what a school board trustee does?
 4.  Get out the vote on October 22
-    - *help wanted* promotion, information on how & when to vote, information on how to ensure you're registered, etc.
+    - **help wanted** promotion, information on how & when to vote, information on how to ensure you're registered, etc.
 
 ## Contributing
 
