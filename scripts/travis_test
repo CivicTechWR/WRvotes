@@ -5,4 +5,4 @@ cd "$BASEDIR/../"
 cd _site
 htmlproofer --assume-extension \
    --url-ignore \
-   "/jasone.ca/,/shannonadshade.com/,/dhshpatel.ca/,/jasonhouse.ca/,/elections.ontarioschooltrustees.org/WhatDoTrusteesDo/SchoolBoardTrustees.aspx/,/www.nataliewaddell.ca/"
+   "/jasone.ca/,/shannonadshade.com/,/elections.ontarioschooltrustees.org/WhatDoTrusteesDo/SchoolBoardTrustees.aspx/"
