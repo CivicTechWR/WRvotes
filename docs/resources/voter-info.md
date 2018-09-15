@@ -190,7 +190,7 @@ In the other area municipalities (Kitchener, City of Waterloo, Wilmot
 Township) you may vote in-person during an advance poll or on election
 day:
 
-- [Kitchener](https://www.kitchener.ca/en/city-services/where-do-i-vote-.aspx)
+- [Kitchener](https://www.kitchener.ca/en/city-services/where-do-i-vote-.aspx). The city has provided a [map of 2018 polling locations in Kitchener](https://kitchenergis.maps.arcgis.com/apps/View/index.html?appid=716aa406b32e40d697f24cabae551006).
 - [Wilmot](https://www.wilmot.ca/en/township-office/voting-locations.aspx)
 - [City of
   Waterloo](https://www.waterloo.ca/en/government/where-when-to-vote.asp)
