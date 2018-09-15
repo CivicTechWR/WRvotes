@@ -4,14 +4,14 @@ This should probably be its own function.
 Or we should prohibit this!
 {%- endcomment -%}
 
-{%- assign first-char-website = nominee.Website
+{%- assign first-char-website = include.site
   | slice: 0 -%}
 {%- if first-char-website == '@' -%}
-  {%- assign website-url = nominee.Website
+  {%- assign website-url = include.site
     | replace_first: '@','https://twitter.com/' -%}
-{%- elsif nominee.Website contains '://' -%}
-  {%- assign website-url = nominee.Website -%}
+{%- elsif include.site contains '://' -%}
+  {%- assign website-url = include.site -%}
 {%- else -%}
-  {%- capture website-url -%}http://{{ nominee.Website }}{%- endcapture -%}
+  {%- capture website-url -%}http://{{ include.site }}{%- endcapture -%}
 {%- endif -%}
 {{ website-url }}
