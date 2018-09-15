@@ -71,7 +71,8 @@
            {%- include punctuate.html num-sofar=num-seps -%}
            {%- assign num-seps = num-seps | plus: 1 -%}
 
-           Twitter: <a href="{%- include get-website.html site=nominee.Twitter -%} ">nominee.Twitter</a>
+           Twitter: <a href="{%- include get-website.html
+           site=nominee.Twitter -%}">{{ nominee.Twitter }}</a>
           {%- endif -%}
         {%- endunless -%}
 
