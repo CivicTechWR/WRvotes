@@ -32,6 +32,7 @@
         {% if nominee.Withdrawn == 'Y' -%}
           <strong>WITHDRAWN: </strong>
         {%- endif -%}
+
         {{ nominee.Given_Names}} {{ nominee.Last_Name }}
 
         {%- unless nominee.Withdrawn == 'Y' -%}
@@ -41,7 +42,7 @@
             {%- include punctuate.html num-sofar=num-seps -%}
             {%- assign num-seps = num-seps | plus: 1 -%}
 
-            {%- include get-website.html site=nominee.Website -%} ">Website</a>
+            <a href="{%- include get-website.html site=nominee.Website -%}">Website</a>
           {%- endif -%}
 
           {%- if nominee.Phone1 -%}
@@ -62,7 +63,7 @@
             {%- include punctuate.html num-sofar=num-seps -%}
             {%- assign num-seps = num-seps | plus: 1 -%}
 
-            {%- include get-website.html site=nominee.Facebook -%} ">Facebook</a>
+            <a href="{%- include get-website.html site=nominee.Facebook -%}">Facebook</a>
           {%- endif -%}
 
           {%- if nominee.Twitter -%}
@@ -70,7 +71,7 @@
            {%- include punctuate.html num-sofar=num-seps -%}
            {%- assign num-seps = num-seps | plus: 1 -%}
 
-           Twitter: {%- include get-website.html site=nominee.Twitter -%} ">nominee.Twitter</a>
+           Twitter: <a href="{%- include get-website.html site=nominee.Twitter -%} ">nominee.Twitter</a>
           {%- endif -%}
         {%- endunless -%}
 
