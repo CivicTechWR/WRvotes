@@ -32,44 +32,47 @@
         {% if nominee.Withdrawn == 'Y' -%}
           <strong>WITHDRAWN: </strong>
         {%- endif -%}
-        {%- if nominee.Website -%}
-          {% comment %}
-          Assume @name means Twitter and not Instagram.
-          This should probably be its own function.
-          Or we should prohibit this!
-          {% endcomment %}
 
-          {% assign first-char-website = nominee.Website
-            | slice: 0 %}
-          {% if first-char-website == '@' %}
-            {% assign website-url = nominee.Website
-              | replace_first: '@','https://twitter.com/' %}
-          {% elsif nominee.Website contains '://' %}
-            {% assign website-url = nominee.Website %}
-          {% else %}
-            {% capture website-url %}http://{{ nominee.Website }}{% endcapture %}
-          {% endif %}
-
-          <a href="{{ website-url }}">{{ nominee.Given_Names }}
-            {{ nominee.Last_Name }}</a>
-        {%- else -%}
-          {{ nominee.Given_Names}} {{ nominee.Last_Name }}
-        {%- endif -%}
+        {{ nominee.Given_Names}} {{ nominee.Last_Name }}
 
         {%- unless nominee.Withdrawn == 'Y' -%}
+          {% assign num-seps = 0 %}
+
+          {%- if nominee.Website -%}
+            {%- include punctuate.html num-sofar=num-seps -%}
+            {%- assign num-seps = num-seps | plus: 1 -%}
+
+            <a href="{%- include get-website.html site=nominee.Website -%}">Website</a>
+          {%- endif -%}
+
           {%- if nominee.Phone1 -%}
-            , {{ nominee.Phone1 }}
+              {%- include punctuate.html num-sofar=num-seps -%}
+              {%- assign num-seps = num-seps | plus: 1 -%}
+
+              {{ nominee.Phone1 }}
           {%- endif -%}
 
           {%- if nominee.Email -%}
-            , {{ nominee.Email }}
+              {%- include punctuate.html num-sofar=num-seps -%}
+              {%- assign num-seps = num-seps | plus: 1 -%}
+
+              {{ nominee.Email }}
+          {%- endif -%}
+
+          {%- if nominee.Facebook -%}
+            {%- include punctuate.html num-sofar=num-seps -%}
+            {%- assign num-seps = num-seps | plus: 1 -%}
+
+            <a href="{%- include get-website.html site=nominee.Facebook -%}">Facebook</a>
           {%- endif -%}
 
           {%- if nominee.Twitter -%}
-            ,
-            <a href="{{ nominee.Twitter |
-              replace_first: '@', 'https://twitter.com/' }}">{{
-              nominee.Twitter }}</a>
+            
+           {%- include punctuate.html num-sofar=num-seps -%}
+           {%- assign num-seps = num-seps | plus: 1 -%}
+
+           Twitter: <a href="{%- include get-website.html
+           site=nominee.Twitter -%}">{{ nominee.Twitter }}</a>
           {%- endif -%}
         {%- endunless -%}
 
