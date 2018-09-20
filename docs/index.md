@@ -29,9 +29,9 @@ use-leaflet: true
   </article>
 </section>
 
-<a name=map></a>
 <section class="flex justify-center">
     <article class="standout-box blue large" id="map-box" data-aos="fade-up">
+    <a name="map"></a>
     <div class="big-text blue-text header">Start by finding your ward.</div>
     <div class="content">
       <p>The map loads more slowly than the rest of the page, so be
