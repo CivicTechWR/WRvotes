@@ -30,6 +30,7 @@ use-leaflet: true
 </section>
 
 <section class="flex justify-center">
+    <a name="search"></a>
     <article class="standout-box blue large" id="map-box" data-aos="fade-up">
     <div class="big-text blue-text header">Start by finding your ward.</div>
     <div class="content">
