@@ -32,7 +32,7 @@ Councillors), your <strong>area municipality</strong> (Mayor and Ward councillor
       {% assign race-id = race %}
     {% endif %}
     {% assign race-info = site.data.internal.position-tags |
-      where:"PositionUniqueName",include.race-id | first -%}
+      where:"PositionUniqueName",race-id | first -%}
     <li><a href="#{{ race-id | slugify }}-wrapper">{{
       race-info.PositionDesc }}</a> </li>
   {% endfor %}
