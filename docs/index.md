@@ -5,13 +5,15 @@ use-leaflet: true
 ---
 
 <section class="flex justify-center">
-  <article class="standout-box pink medium">
+  <article class="standout-box pink large">
     <div class="big-text pink-text header" id="map-box" data-aos="fade-left">
       On October 22, 2018 there will be a municipal election in Waterloo Region.
     </div>
     <div class="content" data-aos="fade-up">
      <p>Get informed, then vote! Type your address to find your ward, and click the information link in the pop up to learn about your local candidates. More information about <strong>why</strong>, <strong>how</strong>, &amp; <strong>where</strong> to vote can be found in the <a href="/resources">resources section</a> of the site. The <a href="/events">events</a> page has a calendar showing times and places where you can meet candidates and ask them questions in person.</p>
      <p><strong>Note:</strong> The ward boundaries on this map are more visually accurate the closer you zoom in. If you live close to a boundary, double check which ward you are in. The map loads more slowly than the rest of the page, so be patient, or use the <a href="/wards/">ward listing</a>.</p>
+     <div id="map-searchbar"></div>
+     <div id="map"></div>
     </div>
   </article>
 </section>
