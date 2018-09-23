@@ -5,9 +5,9 @@ use-leaflet: true
 ---
 
 <section class="flex justify-center">
-  <article class="standout-box pink large">
-    <div class="big-text pink-text header" id="map-box" data-aos="fade-left">
-      On October 22, 2018 there will be a municipal election in Waterloo Region.
+  <article class="standout-box blue large">
+    <div class="big-text blue-text header" id="map-box" data-aos="fade-left">
+      October 22, 2018 is municipal election day in Waterloo Region.
     </div>
     <div class="content" data-aos="fade-up">
      <p>Get informed, then vote! Type your address to find your ward, and click the information link in the pop up to learn about your local candidates. More information about <strong>why</strong>, <strong>how</strong>, &amp; <strong>where</strong> to vote can be found in the <a href="/resources">resources section</a> of the site. The <a href="/events">events</a> page has a calendar showing times and places where you can meet candidates and ask them questions in person.</p>
