@@ -138,7 +138,7 @@ body {
     background-color: $blue;
     color: $light;
     padding: 2rem;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     h1, h2, h3, h4, h5, h6 {
       color: $light;
@@ -153,10 +153,10 @@ body {
       color: $light;
       font-weight: normal;
     }
-  }
 
-  &.green { 
-    background-color: $green;
+    &.green { 
+      background-color: $green;
+    }
   } 
 
   .standout-box {
