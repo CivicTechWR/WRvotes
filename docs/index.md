@@ -4,47 +4,17 @@ layout: default
 use-leaflet: true
 ---
 
-<section class="flex">
+<section class="flex justify-center">
   <article class="standout-box pink medium">
-    <div class="big-text pink-text header" data-aos="fade-left">
+    <div class="big-text pink-text header" id="map-box" data-aos="fade-left">
       On October 22, 2018 there will be a municipal election in Waterloo Region.
     </div>
-    <div class="content" data-aos="fade-right">
-      <p>Municipal elections can be confusing.</p>
-      <p>There are a lot of positions to vote for! There are no political parties! How do you start educating yourself so you can cast an informed vote?</p>
+    <div class="content" data-aos="fade-up">
+     <p>Get informed, then vote! Type your address to find your ward, and click the information link in the pop up to learn about your local candidates. More information about <strong>why</strong>, <strong>how</strong>, &amp; <strong>where</strong> to vote can be found in the <a href="/resources">resources section</a> of the site. The <a href="/events">events</a> page has a calendar showing times and places where you can meet candidates and ask them questions in person.</p>
+     <p><strong>Note:</strong> The ward boundaries on this map are more visually accurate the closer you zoom in. If you live close to a boundary, double check which ward you are in. The map loads more slowly than the rest of the page, so be patient, or use the <a href="/wards/">ward listing</a>.</p>
     </div>
   </article>
 </section>
-
-<section class="flex justify-right">
-  <article class="standout-box green medium" data-aos="fade-up">
-    <div class="big-text green-text header">Don't panic. We've got you covered.</div>
-    <div class="content">
-      <p>Start by looking up the candidates who are running in your area.
-        Use the map below to <strong>locate your <a href="/wards/">municipal ward</a></strong>, and click the
-      information link. From here you will find a list of the candidates for every position you can
-        vote for.</p>
-      <p>If you are unsure of <strong>what is going on</strong>, or wonder<strong> why you should care</strong>, check out our <a href="/resources">resource pages</a> for useful background information about the election.</p>
-    </div>
-  </article>
-</section>
-
-<section class="flex justify-center">
-    <a name="search"></a>
-    <article class="standout-box blue large" id="map-box" data-aos="fade-up">
-    <div class="big-text blue-text header">Start by finding your ward.</div>
-    <div class="content">
-      <p>Type your address to find your ward.  <strong>Important</strong>: The ward boundaries on this map are close but not exact. If you live close to a boundary you need to double-check which ward you are in.</p>
-      
-      <p>The map loads more slowly than the rest of the page, so be
-      patient, or use the <a href="/wards/">ward listing</a>.</p>
-      <div id="map-searchbar"></div>
-      <div id="map"></div>
-    </div>
-  </article>
-</section>
-
-
 
 <script src="{{ site.baseurl }}/assets/js/leaflet.js"></script>
 <script src="{{ site.baseurl }}/assets/js/leaflet-search.min.js"></script>
