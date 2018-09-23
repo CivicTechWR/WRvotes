@@ -19,6 +19,27 @@ Councillors), your <strong>area municipality</strong> (Mayor and Ward councillor
 <strong>school trustees</strong>.
 </p>
 
+{% assign municipal-info = site.data.internal.municipality-map |
+  where:"Name",ward-info.WardMunicipality | first %}
+{% assign races-split = municipal-info.Races | split: ',' %}
+
+<div class="toc">
+<ul>
+  {% for race in races-split %}
+    {% if race == "_SELF" %}
+      {% assign race-id = ward-id %}
+    {% else %}
+      {% assign race-id = race %}
+    {% endif %}
+    {% assign race-info = site.data.internal.position-tags |
+      where:"PositionUniqueName",include.race-id | first -%}
+    <li><a href="#{{ race-id | slugify }}-wrapper">{{
+      race-info.PositionDesc }}</a> </li>
+  {% endfor %}
+</ul>
+</div>
+
+
 <div class="flex gutters">
   <div class="aside">
     <aside class="aside-box" data-aos="fade-up">
@@ -30,9 +51,6 @@ Councillors), your <strong>area municipality</strong> (Mayor and Ward councillor
   </div>
 
   <div class="main">
-    {% assign municipal-info = site.data.internal.municipality-map |
-    where:"Name",ward-info.WardMunicipality | first %}
-    {% assign races-split = municipal-info.Races | split: ',' %}
 
     {% for race in races-split %}
       {% if race == "_SELF" %}
