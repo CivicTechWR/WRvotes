@@ -23,24 +23,30 @@ Councillors), your <strong>area municipality</strong> (Mayor and Ward councillor
   where:"Name",ward-info.WardMunicipality | first %}
 {% assign races-split = municipal-info.Races | split: ',' %}
 
-<div class="toc">
-<ul>
-  {% for race in races-split %}
-    {% if race == "_SELF" %}
-      {% assign race-id = ward-id %}
-    {% else %}
-      {% assign race-id = race %}
-    {% endif %}
-    {% assign race-info = site.data.internal.position-tags |
-      where:"PositionUniqueName",race-id | first -%}
-    <li><a href="#{{ race-id | slugify }}-wrapper">{{
-      race-info.PositionDesc }}</a> </li>
-  {% endfor %}
-</ul>
-</div>
-
 
 <div class="flex gutters">
+  <div class="aside">
+    <aside class="aside-box" data-aos="fade-up">
+      <div class="toc">
+        <header><h5>On This Page</h5></header>
+        <ul>
+          {% for race in races-split %}
+            {% if race == "_SELF" %}
+              {% assign race-id = ward-id %}
+            {% else %}
+              {% assign race-id = race %}
+            {% endif %}
+
+            {% assign race-info = site.data.internal.position-tags |
+              where:"PositionUniqueName",race-id | first -%}
+            <li><a href="#{{ race-id | slugify }}-wrapper">{{
+              race-info.PositionDesc }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </aside>
+  </div>
+
   <div class="aside">
     <aside class="aside-box" data-aos="fade-up">
       <header><h5>About School Boards</h5></header>
