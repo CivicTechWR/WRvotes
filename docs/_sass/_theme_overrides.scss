@@ -128,9 +128,9 @@ body {
   .content-box {
     background: transparentize($blue, 0.95);
     border-left: 6px solid $blue;
-    padding: 2em;
+    padding: 0.25em 2em;
     color: $dark;
-    margin-bottom: 2em;
+    margin-bottom: 2em; 
     overflow-wrap: break-word;
   }
 
@@ -138,6 +138,10 @@ body {
     padding-left: 1em;
     border-left: 6px solid $blue;
     margin-top: 2em;
+  } 
+
+  .toc-link { 
+    font-size: smaller;
   } 
 
   .aside-box {
