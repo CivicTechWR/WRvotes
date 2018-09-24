@@ -3,45 +3,74 @@ layout: "default"
 ---
 
 {% comment %}
-Try to eat up all leading slashes and the trailing .html . 
+Try to eat up all leading slashes and the trailing .html .
 This is gross but it works.
 {% endcomment %}
 {% assign ward-id = page.url | replace: '.html', '' | split: '/' | last -%}
 {% assign ward-info = site.data.internal.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
 
-<h2>Who is Running? {{ ward-info.PositionDesc }}</h2>
+<h1>Who is Running? {{ ward-info.PositionDesc }}</h1>
 
 <p>
-<strong>About School Boards:</strong> There are four school boards in
-this region. Voters are eligible to vote for one of them (by default,
-the Public English one). For more information see <a
-href="../resources/school-boards-info">Information About School Board
-Elections</a>.
-</p><p>
-<strong>About Events:</strong>There are general-interest events not listed here.  See the <a href="../events">Events</a> page for a
-complete listing.
+On this page you will find information about people you can vote for
+on <strong>regional council</strong> (Regional Chair and possibly Regional
+Councillors), your <strong>area municipality</strong> (Mayor and Ward Councillors) and
+<strong>school trustees</strong>.
 </p>
 
 {% assign municipal-info = site.data.internal.municipality-map |
-where:"Name",ward-info.WardMunicipality | first %}
+  where:"Name",ward-info.WardMunicipality | first %}
 {% assign races-split = municipal-info.Races | split: ',' %}
 
-{% for race in races-split %}
-  {% if race == "_SELF" %}
-    {% assign race-id = ward-id %}
-  {% else %}
-    {% assign race-id = race %}
-  {% endif %}
+<div class="flex gutters">
+  <div class="aside">
+    <aside class="aside-box" data-aos="fade-up">
+      <header><h5>About School Boards</h5></header>
+      <p>There are four school boards in this region. Voters are eligible to vote in at most one (by default, the Public English one). For more information see <a href="../resources/school-boards-info">Information About School Board Elections</a>.</p>
+      <header><h5>About Events</h5></header>
+      <p>There are general-interest events not listed here. See the <a href="../events">Events</a> page for a complete listing.</p>
 
-  <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
+    </aside>
+    <aside class="aside-box green" data-aos="fade-up">
 
-    {% include list-nominees.html race-id=race-id %}
+        <header><h5>On This Page</h5></header>
+        <ul>
+          {% for race in races-split %}
+            {% if race == "_SELF" %}
+              {% assign race-id = ward-id %}
+            {% else %}
+              {% assign race-id = race %}
+            {% endif %}
 
+            {% assign race-info = site.data.internal.position-tags |
+              where:"PositionUniqueName",race-id | first -%}
+            <li><a href="#{{ race-id | slugify }}-wrapper">{{
+              race-info.PositionDesc }}</a></li>
+          {% endfor %}
+        </ul>
+
+    </aside>
   </div>
 
-{% endfor %}
+  <div class="main">
 
+    {% for race in races-split %}
+      {% if race == "_SELF" %}
+        {% assign race-id = ward-id %}
+      {% else %}
+        {% assign race-id = race %}
+      {% endif %}
+
+      <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
+
+        {% include list-nominees.html race-id=race-id %}
+
+      </div>
+
+    {% endfor %}
+  </div>
+</div>
 <script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
 

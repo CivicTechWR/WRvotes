@@ -162,7 +162,8 @@ things that are local to Waterloo Region are hardcoded:
   Region
 - The map embedding uses lat and long values specific to Waterloo
   Region
-
+- The exceptions in `scripts/travis_build` have exceptions specific to
+  the Waterloo Region dataset.
 
 Javascript Libraries
 --------------------

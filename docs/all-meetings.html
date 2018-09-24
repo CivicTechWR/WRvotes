@@ -1,7 +1,8 @@
 ---
-layout: default
-title: Every All-Candidates Meeting
+layout: page
+title: All-Candidates Meetings
 ---
+<h1>{{ page.title }}</h1>
 <p>
 This listing includes every all-candidates meeting we know about,
 across all positions, every survey, and every meeting recording.
@@ -10,7 +11,7 @@ across all positions, every survey, and every meeting recording.
 {% assign all-events = site.data.sync.events %}
 {% assign date-now = site.time | date: "%F" %}
 
-{% assign events-upcoming = all-events  
+{% assign events-upcoming = all-events
   | where_exp:"ev", "ev.DateTimeStart >= date-now" %}
 
 
@@ -18,6 +19,7 @@ across all positions, every survey, and every meeting recording.
     | where_exp:"item", "item.ComparisonOrOpinion == 'Comparison'" %}
 
 {% if media-list.size > 0 %}
+  <div class="content-box">
     {% include list-media-items.html
       item-list=media-list
       race-id="surveys"
@@ -25,6 +27,7 @@ across all positions, every survey, and every meeting recording.
       header="Questionnaires and Meeting Recordings"
       teaser-limit=-1
       big-header=true %}
+  </div>
 {% endif %}
 
 
@@ -32,7 +35,7 @@ across all positions, every survey, and every meeting recording.
     | where_exp:"ev", "ev.ForMultipleCandidates == 'Y'" %}
 
 {% if events-allcandidates.size > 0 %}
-  <div class="event-wrapper" id="event-wrapper-allcandidates">
+  <div class="event-wrapper content-box" id="event-wrapper-allcandidates">
 
     {% include list-event-block.html
       event-list=events-allcandidates

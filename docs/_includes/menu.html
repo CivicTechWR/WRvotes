@@ -3,12 +3,14 @@ From: https://christianspecht.de/2014/06/18/building-a-pseudo-dynamic-tree-menu-
 {% endcomment %}
 {% assign navurl = page.url | remove: '.html' %}
 <div id="main-menu">
-  <ul>
-    {%- for item in site.data.internal.menu-layout %}
-      <li><a href="{{ site.baseurl }}{{ item.url }}" 
-          {%- if item.url == navurl %} class="current"{% endif -%}>
-          {{- item.text -}}
-      </a></li>
-    {% endfor -%}
-  </ul>
+  <div class="inner">
+    <ul>
+      {%- for item in site.data.internal.menu-layout %}
+        <li><a href="{{ site.baseurl }}{{ item.url }}"
+            {%- if item.url == navurl %} class="current"{% endif -%}>
+            {{- item.text -}}
+        </a></li>
+      {% endfor -%}
+    </ul>
+  </div>
 </div>

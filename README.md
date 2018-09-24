@@ -8,21 +8,35 @@ As a citizen in Waterloo Region, it can be a lot of work to try to figure out wh
 
 ## Goals
 
-Encourage greater municipal election participation through candidacy, campaign volunteership and increased voter turnout.   
+Encourage greater municipal election participation through candidacy, campaign volunteership and increased voter turnout.
 
-## What are we trying to build?
-1.  Identify wards with low historic (2014) candidate participation
-    -  *Why?* Help people identify where they should get active as candidates, before nominations close (May 1-July 27)
-    -  Answer the question of *How do I run?*  by providing basic campaigning resources for potential candidates.
-2.  Consolidated & easy to navigate access to basic candidate information
+## What are we building?
+1.  Consolidated & easy to navigate access to basic candidate information
     - who
     - where
-    - links to websites, emails, phone #s
-3.  Inform the community on debates/all candidate meetings for their wards
+    - links to websites, emails, phone #s (**help wanted** find information for candidates that have nothing listed!)
+2.  Inform the community on debates/all candidate meetings for their wards
+    - **help wanted** monitoring news sites, social media feeds, etc.
+3.  Easy to navigate resources on who's responsible for what, so voters can make an informed choice for each position
+    - **help wanted** Do you have knowledge or experience in local politics? Can you explain what a school board trustee does?
 4.  Get out the vote on October 22
-    - *How?* 
+    - **help wanted** promotion, information on how & when to vote, information on how to ensure you're registered, etc.
+
+## Contributing
+
+Dependencies:
+- Ruby
+- Bundler
+- Jekyll
+
+To get started locally:
+- Clone the repo: `git clone https://github.com/CivicTechWR/WRvotes.git`
+- Install gems: `bundle`
+- Move into the website directory: `cd docs`
+- Start the local server: `jekyll serve`
+
 
 ## How can I help?
-See the [Wiki](https://github.com/CivicTechWR/WRvotes/wiki), [Issues list](https://github.com/CivicTechWR/WRvotes/issues), or join the #project_region_vote channel on our slack space: https://civictechwrslack.herokuapp.com/. 
+See the [Wiki](https://github.com/CivicTechWR/WRvotes/wiki), [Issues list](https://github.com/CivicTechWR/WRvotes/issues), or join the #project_region_vote channel on our slack space: https://civictechwrslack.herokuapp.com/.
 
 Or come to one of [our meetups](https://www.meetup.com/CivicTechWR/)!

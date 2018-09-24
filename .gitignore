@@ -1,2 +1,6 @@
 *.swp
 .DS_Store
+docs/_site
+docs/.sass-cache
+docs/Gemfile
+docs/Gemfile.lock

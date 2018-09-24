@@ -1,6 +1,5 @@
 
  <div class="spacer">
-
     {% if include.big-header %}
       <h2 class="inline">{{ include.header }}</h2>
     {% else %}
@@ -18,13 +17,10 @@
         togglable{%- endif -%}">
 
     {% for item in item-list-sorted %}
-      
+
       <li>
-      {%- if item.ComparisonOrOpinion == "Opinion" -%}
-        (Opinion)
-      {% endif -%}
       <a href="{{ item.URL }}">{{ item.Title }}</a>,
-      {{ item.Publication }}, 
+      {{ item.Publication }},
       {{ item.PubDate | date: "%B %-d, %Y" }}.
       </li>
 

@@ -1,6 +1,6 @@
 theme: jekyll-theme-slate
 title: Waterloo Region Votes
-description: An Information Hub for the 2018 Municipal Election
+description: Your Information Hub for the 2018 Municipal Election
 show_downloads: false
 plugins:
   - jekyll-sitemap
@@ -20,7 +20,7 @@ teaser_limit_surveys: 5
 
 google_calendar_id: atv3446s9ii5mq5873qh3i94qo@group.calendar.google.com
 
-google_calendar_timezone: America/Toronto 
+google_calendar_timezone: America/Toronto
 
 google_analytics: UA-102439664-2
 
