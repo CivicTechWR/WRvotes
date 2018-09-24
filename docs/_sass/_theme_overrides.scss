@@ -134,6 +134,12 @@ body {
     overflow-wrap: break-word;
   }
 
+  .content-box .spacer { 
+    padding-left: 1em;
+    border-left: 6px solid $blue;
+    margin-top: 2em;
+  } 
+
   .aside-box {
     background-color: $blue;
     color: $light;
