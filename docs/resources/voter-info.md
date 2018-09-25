@@ -105,7 +105,11 @@ See
 <https://www.cambridge.ca/en/your-city/information-for-voters.aspx>
 for more information.
 
-**Kitchener**: Until October 19, you may fill out the [following
+**Kitchener**: You may look up your voter registration information
+[on the city
+website](https://app2.kitchener.ca/election/onVoterList.aspx?_ga=2.209541650.1210709559.1537188998-202176130.1515520581).
+
+Until October 19, you may fill out the [following
 form](https://lf.kitchener.ca/WebLinkExt/DocView.aspx?dbid=0&id=1705934&_ga=2.53806632.1802388269.1535916888-2068458943.1532310666)
 and submit it to Legislated Services, at the 2nd floor of Kitchener
 City Hall.
@@ -116,8 +120,9 @@ See
 <https://www.kitchener.ca/en/city-services/what-voters-need-to-know.aspx>
 for more information.
 
-**North Dumfries**: Voters should recieve an information letter by
-October 15.  The township is holding several voter help centres at the
+**North Dumfries**: Voters should [recieve an information letter by
+October
+1](https://twitter.com/northdumfries/status/1042848984266551296).  The township is holding several voter help centres at the
 North Dumfries Community Complex (NDCC) and Clyde-Scott Women's
 Institute (Clyde). See [this
 PDF](https://www.northdumfries.ca/en/township-services/resources/Documents/Voter-Help-Centre-Calendar.pdf)
