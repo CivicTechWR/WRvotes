@@ -35,6 +35,10 @@ For a more personal take on the duties of a school board trustee, see
 the transcript of [this speech by Ted
 Martin](./ted-martin-on-being-a-trustee).
 
+Trustee Scott McMillan [identifies the role of school
+trustees](https://www.kitchenertoday.com/kitchenervotes/get-to-know-the-responsibilities-of-a-school-board-trustee-before-you-vote-1064230) as
+managing the budget and facilitating communication between parents
+and school staff. 
 
 ### There are so many school board positions listed! What do I vote for?
 
