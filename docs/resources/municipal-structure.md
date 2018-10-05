@@ -59,10 +59,13 @@ votes, just as other members of council do.
 The regional and area municipal governments each have their own
 jurdisdictions, and understanding who does what can get complicated.
 For example, some roads (usually major and arterial roads) are
-designated as regional roads and are controlled by the Region,while
-other roads are controlled by the municipality.
+designated as regional roads and are controlled by the Region, while
+other roads are controlled by the municipality. You can find a [list
+of regional
+roads](https://www.regionofwaterloo.ca/en/living-here/resources/Roads-and-Traffic/Regional-Roads-By-Name.pdf)
+on the Region of Waterloo website. 
 
-On the Region of Waterloo website you can find a more detailed list of
+Also on the Region of Waterloo website you can find a more detailed list of
 [who does
 what](https://www.regionofwaterloo.ca/en/regional-government/regional-responsibilities---who-does-what-in-government.aspx).
 
