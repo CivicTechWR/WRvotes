@@ -214,4 +214,4 @@ Populating symlinks
 
 positions=`cat position-tags.csv | cut --field=1 --delimiter=,`
 
-for i in $positions; do ln -s ../_includes/position-template.html $i; done
+for i in $positions; do ln -s ../_includes/position-template.html $i.html; done
