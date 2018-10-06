@@ -10,6 +10,10 @@ in the election, and a few information pages. Each page includes
 nominee listings, news articles, questionnaires, and meeting
 information relevant to that position. 
 
+Note that these pages show information for only one position. If you
+want to know who is running in the different races where you live, use
+the [ward pages](/wards) instead.
+
 <div class="content-box">
   <ul>
     {% for position in site.data.internal.position-tags %}
