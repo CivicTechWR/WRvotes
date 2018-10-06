@@ -16,6 +16,5 @@ informations relevant to that position.
   {% endfor %}
 </ul>
 
-{% endfor %}
 
 
