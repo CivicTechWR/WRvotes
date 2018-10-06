@@ -1,0 +1,26 @@
+---
+layout: "default"
+---
+
+{% comment %}
+Try to eat up all leading slashes and the trailing .html .
+This is gross but it works.
+{% endcomment %}
+{% assign race-id = page.url | replace: '.html', '' | split: '/' | last -%}
+{% assign race-info = site.data.internal.position-tags |
+where:"PositionUniqueName",race-id | first -%}
+
+<h1>Who is Running? {{ race-info.PositionDesc }}</h1>
+
+  <div class="main">
+
+      <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
+
+        {% include list-nominees.html race-id=race-id %}
+
+      </div>
+  </div>
+</div>
+<script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
+

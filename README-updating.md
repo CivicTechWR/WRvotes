@@ -207,3 +207,11 @@ We currently are running html-proofer in the CI pipline. It will test for
 
 If there are more tests that you would like to see (if you have a specific 
 component, for example) talk to us on Slack.
+
+
+Populating symlinks
+-------------------
+
+positions=`cat position-tags.csv | cut --field=1 --delimiter=,`
+
+for i in $positions; do ln -s ../_includes/position-template.html $i; done
