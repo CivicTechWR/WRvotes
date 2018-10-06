@@ -11,7 +11,7 @@ This is gross but it works.
 where:"PositionUniqueName",race-id | first -%}
 
   <div class="main">
-    <div class="race-wrapper content-box" id="{{ race-id | slugify }}-wrapper">
+    <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
 
         {% include list-nominees.html race-id=race-id %}
 
