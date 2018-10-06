@@ -73,8 +73,7 @@ as-is the Regional Chair. Other positions are not. Many elected
 officials hold other jobs in addition to their offices. 
 
 For context, [according to the New Hamburg
-Independent](https://www.waterloochronicle.ca/community-story/8943235-waterlooregionvotes-o
-rg-helps-voters-inform-themselves-before-municipal-election/) in 2017
+Independent](https://www.newhamburgindependent.ca/news-story/7767503-wilmot-increases-council-salaries-to-keep-them-the-same) 
 the Mayor of Wilmot earned $28 222, and ward councillors earned $14
 112. 
 
