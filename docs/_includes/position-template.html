@@ -10,8 +10,6 @@ This is gross but it works.
 {% assign race-info = site.data.internal.position-tags |
 where:"PositionUniqueName",race-id | first -%}
 
-<h1>Who is Running? {{ race-info.PositionDesc }}</h1>
-
   <div class="main">
 
       <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
