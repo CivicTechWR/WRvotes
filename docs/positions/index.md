@@ -11,7 +11,7 @@ nominee listings, news articles, questionnaires, and meeting
 informations relevant to that position. 
 
 <ul>
-  {% for position in site.data.internal.position-list %}
+  {% for position in site.data.internal.position-tags %}
       <li><a href="./{{ position.PositionUniqueName }}">{{ position.PositionDesc }}</a></li>
   {% endfor %}
 </ul>
