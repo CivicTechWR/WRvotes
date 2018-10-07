@@ -43,6 +43,7 @@ Becoming engaged with municipal government is your choice -
 do you want to have input into who's making decisions about
 how your city functions?
 
+
 #### I thought we just had an election?
 
 On June 7 2018 Ontario had a provincial election. This is a municipal
