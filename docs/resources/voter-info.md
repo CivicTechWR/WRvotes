@@ -43,6 +43,7 @@ Becoming engaged with municipal government is your choice -
 do you want to have input into who's making decisions about
 how your city functions?
 
+
 #### I thought we just had an election?
 
 On June 7 2018 Ontario had a provincial election. This is a municipal
@@ -362,6 +363,10 @@ credit the campaign school for inspiring them to run for office. They
 have a Twitter account here:
 [@wrwomenrun](https://twitter.com/wrwomenrun).
 
+The Cambridge oriented site <https://cbridge.ca> has a [primer on the
+2018 Municipal
+Election in
+Cambridge](https://cbridge.ca/cambridge-ontario-municipal-election-2018-primer/).
 
 #### I don't trust your candidate listings. Where can I find the real ones?
 

@@ -13,7 +13,7 @@ use-leaflet: true
      <p>Type your address to find information about candidates & events relevant to your ward. Get informed, then vote!</p>
      <div id="map-searchbar"></div>
      <div id="map"></div>
-     <p><strong>Note:</strong> The ward boundaries on this map are more visually accurate the closer you zoom in. If you live close to a boundary, double check which ward you are in. The map loads more slowly than the rest of the page, so be patient, or use the <a href="/wards/">ward listing</a>.</p>
+     <p><strong>Note:</strong> The map loads more slowly than the rest of the page, so be patient, or use the <a href="/wards/">ward listing</a>.</p>
     </div>
   </article>
 </section>
