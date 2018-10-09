@@ -65,7 +65,7 @@ RowID,DateTimeStart,DateTimeEnd,Title,Location,ForMultipleCandidates,CancelledOr
 75,2018-10-02T19:00,2018-10-02T21:00,Waterloo Ward 7 All Candidates Forum,"Hauser Haus, Waterloo Memorial Recreation Complex",Y,,Waterloo-Ward-07,https://www.facebook.com/events/1792093394220756/,"Hosted by the Waterloo Ward 7 Neighbourhood Associations: MACA, Mary Allen, Uptown North, and Uptown West Neighbourhood Associations"
 76,2018-09-30 12:00,2018-09-30 14:00,Social Development Centre Community Dialogue - Kitchener,"St Matthew's Church, 54 Benton St, Kitchener",Y,,"Regional-Chair,Kitchener-Mayor,Regional-Kitchener",,Not a debate.
 77,2018-08-30T18:00,2018-08-30T20:00,Tenille Bonoguore - Meet The Candidate,"50 Menno St, Waterloo",,,Waterloo-Ward-07,https://www.facebook.com/events/246944592624913/,
-=======
+=======,,,,,,,,,
 RowID,DateTimeStart,DateTimeEnd,Title,Location,ForMultipleCandidates,CancelledOrRescheduled,PositionIDList,URL,Notes
 2,2018-10-10 18:30,2018-10-10 20:30,Regional Chair All-Candidates Meeting (Working Centre),"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Regional-Chair,https://www.theworkingcentre.org/election2018,Organized by The Working Centre.
 9,2018-09-10 18:00,2018-09-10 20:00,City of Cambridge Voter Information Session,"Cambridge City Hall (Bowman Room), 50 Dickson Street, Cambridge, Ontario",,,Election-Info,https://www.cambridge.ca/en/your-city/information-for-voters.aspx,
@@ -192,4 +192,6 @@ RowID,DateTimeStart,DateTimeEnd,Title,Location,ForMultipleCandidates,CancelledOr
 134,2018-10-15 19:00,2018-10-15 21:00,Sharon MacKenzie Meet and Greet,"EJs Tavern and Restaurant, 39 Snyder's Rd West,Baden",,,Wilmot-Ward-03,https://shazmack.wixsite.com/votesharonmackenzie/vote-times-and-dates,
 135,2018-10-16 19:00,2018-10-16 21:00,Jay Aissa Town Hall,"Ayr Fire Hall- 501 Scott St., Ayr",,,Regional-Chair,https://mobile.twitter.com/AissaJay/status/1047230495170260992,
 136,2018-10-11 19:00,2018-10-11 20:30,Yes Cambridge! Town Hall,"Wesley United Church, 6 Cambridge Street, Cambridge, ON",,,Cambridge-Referendum,https://www.yescambridge.ca/events.html,
-137,2018-10-14 14:00,2018-10-14 16:00,Angie Hallman Meet and Greet,"1481 Mannheim Rd, Petersburg, ON",,,Wilmot-Ward-01,https://www.facebook.com/events/176666189876656/,
+137,2018-10-14T14:00,2018-10-14T16:00,Angie Hallman Meet and Greet,"1481 Mannheim Rd, Petersburg, ON",,,Wilmot-Ward-01,https://www.facebook.com/events/176666189876656/,
+138,2018-10-14T10:00,2018:10-14T13:00,Andres Fuentes Meet the Candidate,"Tim Hortons, 1415 Huron Rd, Kitchener",,,Kitchener-Ward-05,https://www.facebook.com/andresforward5/photos/a.303365947156542/327394134753723/?type=3&theater,
+139,2018-10-10T11:00,2018-10-10T14:00,John Jordan Meet and Greet,"Wilmot Rod & Gun Club, 2607 Bleams Rd, New Hamburg, ON N3A 3J2",,,Wilmot-Mayor,https://www.facebook.com/events/307053323419645/,
