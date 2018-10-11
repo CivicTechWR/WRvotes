@@ -16,7 +16,7 @@ RowID,DateTimeStart,DateTimeEnd,Title,Location,ForMultipleCandidates,CancelledOr
 23,2018-08-05 14:00,2018-08-05 16:00,Peter Meier Meet & Greet,"Tim Horton's Ottawa Street (Eastwood Plaza), Kitchener",,,Kitchener-Ward-10,http://petermeier.ca/lets-connect/,
 24,2018-08-12 14:00,2018-08-12 16:00,Peter Meier Meet & Greet,"Smile Tiger Coffee Roasters, Kitchener",,,Kitchener-Ward-10,http://petermeier.ca/lets-connect/,
 25,2018-08-14 14:00,2018-08-14 16:00,Peter Meier Meet & Greet,"Nova Era Bakery, Kitchener",,,Kitchener-Ward-10,http://petermeier.ca/lets-connect/,
-26,2018-09-26 19:00,2018-09-26 21:00,Kitchener Ward 9 All Candidates Debate,"Victoria Park Pavilion, Victoria Park, Kitchener",Y,,Kitchener-Ward-09,https://www.facebook.com/CherryParkNeighbourhood/posts/2284547724894154,Mail questions to: cpna@execulink.com
+26,2018-09-26 19:00,2018-09-26 21:00,Kitchener Ward 9 All Candidates Debate,"Victoria Park Pavilion, Victoria Park, 80 Schneider Avenue, Kitchener",Y,,Kitchener-Ward-09,https://www.facebook.com/CherryParkNeighbourhood/posts/2284547724894154,Mail questions to: cpna@execulink.com
 27,2018-09-12 18:30,2018-09-12 20:30,Kitchener Ward 9 All-Candidates Meeting (Working Centre),"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Kitchener-Ward-09,https://www.theworkingcentre.org/election2018,Organized by The Working Centre.
 28,2018-09-19 18:30,2018-09-19 20:30,Kitchener Ward 10 All-Candidates Meeting (Working Centre),"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Kitchener-Ward-10,https://www.theworkingcentre.org/election2018,Organized by The Working Centre.
 29,2018-09-26 18:30,2018-09-26 20:30,Kitchener Regional Councillors All-Candidates Meeting (Working Centre),"Queen Street Commons, 43 Queen Street S, Kitchener",Y,,Regional-Kitchener,https://www.theworkingcentre.org/election2018,Organized by The Working Centre.
@@ -123,4 +123,7 @@ RowID,DateTimeStart,DateTimeEnd,Title,Location,ForMultipleCandidates,CancelledOr
 133,2018-10-06 16:30,2018-10-06 18:30,Aizad Ahmad Meet and Greet,"Williamsburg Community Center, 1187 Fischer-Hallman Rd #620, Kitchener",,,Kitchener-Ward-05,https://www.facebook.com/events/2187944184785514,
 134,2018-10-15 19:00,2018-10-15 21:00,Sharon MacKenzie Meet and Greet,"EJs Tavern and Restaurant, 39 Snyder's Rd West,Baden",,,Wilmot-Ward-03,https://shazmack.wixsite.com/votesharonmackenzie/vote-times-and-dates,
 135,2018-10-16 19:00,2018-10-16 21:00,Jay Aissa Town Hall,"Ayr Fire Hall- 501 Scott St., Ayr",,,Regional-Chair,https://mobile.twitter.com/AissaJay/status/1047230495170260992,
-136,2018-10-11 19:00,2018-10-11 20:30,Yes Cambridge! Town Hall,"Wesley United Church, 6 Cambridge Street, ON",,,Cambridge-Referendum,https://www.yescambridge.ca/events.html,
+136,2018-10-11 19:00,2018-10-11 20:30,Yes Cambridge! Town Hall,"Wesley United Church, 6 Cambridge Street, Cambridge, ON",,,Cambridge-Referendum,https://www.yescambridge.ca/events.html,
+137,2018-10-14T14:00,2018-10-14T16:00,Angie Hallman Meet and Greet,"1481 Mannheim Rd, Petersburg, ON",,,Wilmot-Ward-01,https://www.facebook.com/events/176666189876656/,
+138,2018-10-14T10:00,2018:10-14T13:00,Andres Fuentes Meet the Candidate,"Tim Hortons, 1415 Huron Rd, Kitchener",,,Kitchener-Ward-05,https://www.facebook.com/andresforward5/photos/a.303365947156542/327394134753723/?type=3&theater,
+139,2018-10-10T11:00,2018-10-10T14:00,John Jordan Meet and Greet,"Wilmot Rod & Gun Club, 2607 Bleams Rd, New Hamburg, ON N3A 3J2",,,Wilmot-Mayor,https://www.facebook.com/events/307053323419645/,
