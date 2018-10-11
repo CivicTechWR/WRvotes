@@ -21,6 +21,7 @@ all_ignorable_urls = [
 
 options = {
    :assume_extension => true,
+   :cache => { :timeframe => "2w" },
    :url_ignore => all_ignorable_urls,
 }
 
