@@ -13,3 +13,4 @@ Voters](./voter-info) page.
 - [Information About School Board Elections](./school-boards-info)
 - [Municipal Government Overview](./municipal-structure)
 - [Cambridge Referendum on Ranked Ballots](./cambridge-referendum)
+- [What is it like to be a Politician?](./being-a-politician)
