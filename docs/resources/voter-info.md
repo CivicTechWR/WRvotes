@@ -43,6 +43,9 @@ Becoming engaged with municipal government is your choice -
 do you want to have input into who's making decisions about
 how your city functions?
 
+The Region of Waterloo has also created [a series of
+videos](https://www.youtube.com/playlist?list=PLRVDwi_WScLn5k-iSrXjSRAM14iA5Ltgc)
+in which local voters explain their reasons to vote.
 
 #### I thought we just had an election?
 
