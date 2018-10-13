@@ -219,8 +219,12 @@ def sync_calendar(cal, include_all=False):
 
         datetime_end = dateutil.parser.parse(ev['DateTimeEnd'])
         # Make date timezone-aware (sigh)
-        tz = pytz.timezone(config.TIMEZONE)
-        datetime_end = tz.localize(datetime_end)
+        try:
+            tz = pytz.timezone(config.TIMEZONE)
+            datetime_end = tz.localize(datetime_end)
+        except ValueError:
+            print(ev['Title'])
+            print("ERROR: already localized: {}".format(datetime_end))
 
         # If the event is in the past, then 
         if datetime_end < since_when:
