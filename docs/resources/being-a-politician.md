@@ -86,9 +86,7 @@ officials hold other jobs in addition to their offices.
 
 For context, [according to the New Hamburg
 Independent](https://www.newhamburgindependent.ca/news-story/7767503-wilmot-increases-council-salaries-to-keep-them-the-same) 
-the Mayor of Wilmot earned $28 222, and ward councillors earned $14
-112. 
-
+the Mayor of Wilmot earned $28 222, and ward councillors earned $14 112.
 
 ### What do politicians wish voters understood about their jobs?
 
