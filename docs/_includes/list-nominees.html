@@ -2,7 +2,7 @@
   {% assign race-info = site.data.internal.position-tags |
   where:"PositionUniqueName",include.race-id | first -%}
 
-<div class="content-box" data-aos="fade-up">
+<div class="content-box" >
   <h3 class="medium-text">{{ race-info.PositionDesc }}</h3>
   <div class="candidate-list" id="{{ include.race-id | slugify }}" >
 
