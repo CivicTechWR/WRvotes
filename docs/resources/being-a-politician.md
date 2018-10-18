@@ -20,6 +20,10 @@ had put together in the past:
 - Kitchener ward Councillor Sarah Marsh [podcast
   interview](https://soundcloud.com/theglobalshuffle/city-councillor-sarah-marsh-learnings-in-the-nonpartisan-level-of-govt)
 
+There is also a good [Civics 101
+recording](https://soundcloud.com/user-216833142/communitech-summer-school-civics-101) put on by 
+Communitech that featured retiring Regional Chair Ken Seiling. 
+
 If you have other accounts, or if you are/were a sitting politician
 and would like to add your experiences, contact us.
 
@@ -45,24 +49,46 @@ service.
 
 ### What do politicians find rewarding about the office?
 
+Some officials say that they enjoy getting positive results for the
+constituents they advocate for. Others appreciate seeing improvements
+in their communities because of good decision-making by their
+councils. 
+
 
 ### What do politicians find challenging?
 
+Serving as an elected official means balancing competing interests,
+and the nature of the job means that politicians cannot please
+everybody. 
+
+In addition, elected officials get frustrated when the press
+misrepresents their statements or actions. 
 
 ### What do they do? What responsibilities do they have?
 
-[It depends on the position]
+It depends on the position. In general elected officials set direction
+and policies, while non-elected staff figure out the details and
+implement the policies. 
+
+Many elected officials also manage budgets. 
+
+Regional and area municipal politicians sit on various steering
+committees within their level of government.
+
+Almost all muncipal politicians and school board trustees interact
+with the public and address their concerns. 
 
 ### Is being a municipal politician a full-time job?
 
-The positions of ward councillor, school trustee [and regional
-councillor?] are not considered full-time positions. Some of these
-elected officials hold other jobs in addition to their office; some do
-not.
+Mayoral positions in the three cities are considered full-time jobs,
+as-is the Regional Chair. Other positions are not. Many elected
+officials hold other jobs in addition to their offices. 
 
-Mayoral positions and Regional Chair are considered full-time
-positions.
-
-
+For context, [according to the New Hamburg
+Independent](https://www.newhamburgindependent.ca/news-story/7767503-wilmot-increases-council-salaries-to-keep-them-the-same) 
+the Mayor of Wilmot earned $28 222, and ward councillors earned $14 112.
 
 ### What do politicians wish voters understood about their jobs?
+
+Some elected officials wish residents understood that politicians are
+regular people carrying out public service. 

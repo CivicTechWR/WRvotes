@@ -1,8 +1,33 @@
-#!/bin/sh
-BASEDIR=`dirname $0`
-cd "$BASEDIR/../"
+#!/usr/bin/env ruby
 
-cd _site
-htmlproofer --assume-extension \
-   --url-ignore \
-   "/jasone.ca/,/shannonadshade.com/,/elections.ontarioschooltrustees.org/WhatDoTrusteesDo/SchoolBoardTrustees.aspx/,/kevindupuis.com/"
+require 'html-proofer'
+
+Dir.chdir(File.join(File.dirname($0), "..", "_site"))
+
+# protocol (http/https) should not be provided as these are given as regexes
+all_ignorable_urls = [
+   #known problematic candidate sites
+   /jasone.ca/,
+   /shannonadshade.com/,
+   /kevindupuis.com/,
+   /twitter.com\/wagnerccc/,
+   #uninvestigated issues, pages do seem to work manually
+   /elections.ontarioschooltrustees.org\/WhatDoTrusteesDo\/SchoolBoardTrustees.aspx/,
+   #LinkedIn/Facebook profiles that are not public and have been manually checked
+   /www.linkedin.com\/in\/billkirbyprofessional/,
+   /www.facebook.com\/helen.mcdonaldjowett/,
+   /www.facebook.com\/grant.kingsbury.79/,
+]
+
+options = {
+   :assume_extension => true,
+   :cache => { :timeframe => "2w" },
+   :url_ignore => all_ignorable_urls,
+}
+
+#if one particular page is giving you trouble, run it explicitly
+#options[:log_level] = :debug
+#HTMLProofer.check_file("./wards/Cambridge-Ward-05.html", options).run
+
+#check the entire site
+HTMLProofer.check_directory("./", options).run
