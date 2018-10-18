@@ -25,7 +25,8 @@
       <p><strong>(These {{ num-to-elect }} positions are
       acclaimed.)</strong></p>
     {%- elsif num-to-elect > 1 %}
-      <p><strong>(Elect {{ num-to-elect }})</strong></p>
+      <p><strong>({{ num-to-elect }} to be elected; you may vote for
+      up to {{ num-to-elect }} candidates)</strong></p>
     {%- endif -%}
 
     {% if sorted-nominees.size > 0 or num-to-elect == 0 %}
