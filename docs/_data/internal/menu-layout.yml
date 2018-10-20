@@ -1,9 +1,11 @@
 # Try using a YAML file to specify the menu structure.
-# This may not be the best approach. See: 
+# This may not be the best approach. See:
 # https://thinkshout.com/blog/2014/12/creating-dynamic-menus-in-jekyll/
 
 - text: Home
   url: /
+- text: Results
+  url: /results
 - text: Ward Listings
   url: /wards/
 - text: Resources
