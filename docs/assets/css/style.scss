@@ -293,3 +293,69 @@ p.bigtext {
 }
 
 
+/* ------ RESULTS PAGE ------ */
+
+.jurisdiction {
+  display: flex;
+  flex-wrap: wrap;
+  background: #FEFEFE;
+  margin: -0.5em;
+}
+
+.grid-item {
+  flex: 0 0 25%;
+
+  .candidate-card {
+    border: 1px solid $dark;
+    margin: 0.5em;
+
+    .title {
+      background-color: $dark;
+      padding: 1em;
+      color: $white;
+      margin: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .card-content {
+      padding: 1em;
+      padding-bottom: 0;
+      text-align: center;
+
+      .image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        img {
+          height: 120px;
+          width: 120px;
+          border-radius: 120px;
+          background: $pink;
+          padding: 0;
+          border: 1px solid $dark;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .contact {
+      display: flex;
+      padding: 1em;
+      padding-top: 0;
+
+      .contact-item {
+        flex: 1 0 25%;
+
+        .contact-item-inner {
+          padding: 6px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}
+

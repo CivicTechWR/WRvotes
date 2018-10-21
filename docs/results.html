@@ -3,6 +3,19 @@ layout: page
 title: Municipal Election Results
 ---
 <h1>{{ page.title }}</h1>
-<div class="scope">
-  {% include candidate-card.html %}
-</div>
+
+{% for jurisdiction in site.data.internal.jurisdictions %}
+{% assign positions = site.data.internal.position-tags | where: "Jurisdiction", jurisdiction %}
+  <h2>{{ jurisdiction }}</h2>
+  <div class="jurisdiction">
+    {% for position in positions %}
+      {% assign position_id = position["PositionUniqueName"] %}
+      {% assign winners = site.data.sync.nominees | where:"PositionUniqueName",position_id | where:"Winner", "Y" %}
+      {% if position["NumberToElect"] != "0" %}
+        {% for winner in winners %}
+          {% include candidate-card.html position_id=position_id winner=winner %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endfor %}
