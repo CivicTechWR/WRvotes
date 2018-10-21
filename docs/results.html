@@ -8,7 +8,7 @@ title: Municipal Election Results
 {% for jurisdiction in site.data.internal.jurisdictions %}
 {% assign positions = site.data.internal.position-tags | where: "Jurisdiction", jurisdiction %}
   <div class="accordion-ward">
-    <a>{{ jurisdiction }}</a>
+    <a class="toggle">{{ jurisdiction }}</a>
     <div class="content">
       <div class="jurisdiction">
         {% for position in positions %}

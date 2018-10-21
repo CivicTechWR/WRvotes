@@ -1,8 +1,8 @@
-/*** 
+/***
  * script to toggle accordion links on the winners index page
  */
 
-const wards = document.querySelectorAll(".wrv-accordion a");
+const wards = document.querySelectorAll(".wrv-accordion a.toggle");
 
 function toggleAccordion(){
     this.classList.toggle('active');
