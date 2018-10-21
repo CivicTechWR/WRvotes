@@ -5,14 +5,12 @@
 - text: Home
   url: /
 - text: 2018 Results
-  url: /results
+  url: /2018-results
 - text: Ward Listings
   url: /wards/
 - text: Resources
   url: /resources/
 - text: Events
   url: /events
-- text: 2018 Results
-  url: /2018-results
 - text: About Us
   url: /about
