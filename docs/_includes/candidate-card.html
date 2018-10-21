@@ -1,7 +1,8 @@
 {% assign full_name = winner["Given_Names"] | append:" " | append:winner["Last_Name"] %}
-{% assign percentage = winner["Percentage"] | append:"%" %}
 {% if winner["Nominated_Office"] == "Councillor" %}
     {% assign position_title = "Councillor for Ward " | append:winner["Ward"] %}
+{% elsif winner["Nominated_Office"] == "Regional Councillor" %}
+    {% assign position_title = winner["Nominated_Office"] | append: " for " | append: winner["Ward"] %}
 {% else %}
     {% assign position_title = winner["Nominated_Office"] %}
 {% endif %}
@@ -20,9 +21,12 @@
             <div class="name">
                 <h3>{{ full_name }}</h3>
             </div>
-            <div class="name">
-                <p>{{ winner["Votes"] }} votes - {{ percentage }}</>
+            {% if winner["Votes"] and winner["Percentage"] %}
+            {% assign percentage = winner["Percentage"] | append:"%" %}
+            <div class="voting-result">
+                <p>{{ winner["Votes"] }} votes - {{ percentage }}</p>
             </div>
+            {% endif %}
         </div>
         <div class="contact">
             {% if winner["Email"] %}
