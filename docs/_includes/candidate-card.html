@@ -1,0 +1,74 @@
+{% assign full_name = winner["Given_Names"] | append:" " | append:winner["Last_Name"] %}
+{% if winner["Nominated_Office"] == "Councillor" %}
+    {% assign position_title = "Councillor for Ward " | append:winner["Ward"] %}
+{% elsif winner["Nominated_Office"] == "Regional Councillor" %}
+    {% assign position_title = winner["Nominated_Office"] | append: " for " | append: winner["Ward"] %}
+{% else %}
+    {% assign position_title = winner["Nominated_Office"] %}
+{% endif %}
+
+<div class="grid-item">
+    <div class="candidate-card">
+        <div class="title">
+            {{ position_title }}
+        </div>
+        <div class="card-content">
+            <div class="image">
+                {% if winner["ImageTitle"] %}
+                <img src="{{ site.url }}/assets/images/nominees/{{ winner['ImageTitle'] }}" alt="{{ full_name }}">
+                {% endif %}
+            </div>
+            <div class="name">
+                <h3>{{ full_name }}</h3>
+            </div>
+            {% if winner["Votes"] and winner["Percentage"] %}
+            {% assign percentage = winner["Percentage"] | append:"%" %}
+            <div class="voting-result">
+                <p>{{ winner["Votes"] }} votes - {{ percentage }}</p>
+            </div>
+            {% endif %}
+        </div>
+        <div class="contact">
+            {% if winner["Email"] %}
+            <div class="contact-item">
+                <div class="contact-item-inner">
+                    <a href="mailto:{{ winner['Email'] }}">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if winner["Website"] %}
+            <div class="contact-item">
+                <div class="contact-item-inner">
+                    <a href="{{ winner['Website'] }}">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if winner["Twitter"] %}
+            {% assign twitter_page = "https://twitter.com/" | append:winner['Twitter'] %}
+            <div class="contact-item">
+                <div class="contact-item-inner">
+                    <a href="{{ twitter_page }}">
+                        <i class="fab fa-twitter"></i>
+                </a>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if winner["Facebook"] %}
+            <div class="contact-item">
+                <div class="contact-item-inner">
+                    <a href="{{ winner['Facebook'] }}">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

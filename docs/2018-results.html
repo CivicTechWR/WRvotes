@@ -1,0 +1,32 @@
+---
+layout: page
+title: 2018 Election Results
+---
+<h1>{{ page.title }}</h1>
+
+<div class="wrv-accordion" data-aos="fade-up">
+{% for alias in site.data.internal.results-aliases %}
+  {% assign title = site.data.internal.aliases | where: "Alias", alias | first %}
+  <div class="accordion-ward">
+    <a class="toggle">{{ title["Description"] }}</a>
+    <div class="content">
+      <div class="jurisdiction">
+        {% for position in site.data.internal.position-tags %}
+          {% assign position_aliases = position["Aliases"] | split: "," %}
+          {% if position_aliases contains alias %}
+            {% assign position_id = position["PositionUniqueName"] %}
+            {% assign winners = site.data.sync.nominees | where:"PositionUniqueName",position_id | where:"Winner", "Y" %}
+            {% if position["NumberToElect"] != "0" %}
+              {% for winner in winners %}
+                {% include candidate-card.html position_id=position_id winner=winner %}
+              {% endfor %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/accordion.js"></script>

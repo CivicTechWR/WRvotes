@@ -292,4 +292,132 @@ p.bigtext {
     }
 }
 
+/* ------ RESULTS PAGE ------ */
 
+.jurisdiction {
+  display: flex;
+  flex-wrap: wrap;
+  background: #FEFEFE;
+  margin: -0.5em;
+}
+
+.grid-item {
+  flex: 0 0 25%;
+  min-width: 200px;
+
+  .candidate-card {
+    border: 1px solid $dark;
+    margin: 0.5em;
+
+    .title {
+      background-color: $dark;
+      padding: 1em;
+      color: $white;
+      margin: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .card-content {
+      padding: 1em;
+      padding-bottom: 0;
+      text-align: center;
+
+      .image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        img {
+          height: 120px;
+          width: 120px;
+          border-radius: 120px;
+          background: $pink;
+          padding: 0;
+          border: 1px solid $dark;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .contact {
+      display: flex;
+      padding: 1em;
+      padding-top: 0;
+
+      .contact-item {
+        flex: 1 0 25%;
+
+        .contact-item-inner {
+          padding: 6px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}
+
+.wrv-accordion {
+  a.toggle {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 1rem 3rem 1rem 1rem;
+    color: black;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 3px solid #156cb2;
+    background: #f2f7fa;
+    &:hover {
+      cursor: pointer;
+      &::after {
+        cursor: pointer;
+        border: 1px solid #156cb2;
+      }
+    }
+  }
+  .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    &.active {
+      opacity: 1;
+      padding: 1rem;
+      max-height: 100%;
+      -webkit-transition: all 0.35s ease 0.15s;
+      -o-transition: all 0.35s ease 0.15s;
+      transition: all 0.35s ease 0.15s;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .grid-item {
+    flex: 1 0 50%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .grid-item {
+    flex: 1 0 100%;
+  }
+}
