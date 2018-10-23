@@ -24,7 +24,8 @@ use-leaflet: true
       href="https://www.kitchener.ca/Modules/News/index.aspx?newsId=b2f62478-c62c-4d9e-8655-643c32c2c1ea">City of Kitchener</a></li>
       <li><a
       href="https://www.northdumfries.ca/en/township-services/2018-election-results.aspx">Township of North Dumfries</a></li>
-      <li><a href="">Township of Wilmot</a></li>
+      <li><a
+      href="https://www.wilmot.ca/en/township-office/election-day-results.aspx">Township of Wilmot</a></li>
       <li><a
       href="https://www.waterloo.ca/en/contentresources/resources/government/Elections/2018-Elections/unofficial-election-results-2018.pdf">City
       of Waterloo</a> (PDF)</li>
