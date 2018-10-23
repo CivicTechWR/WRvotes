@@ -33,7 +33,9 @@ use-leaflet: true
     </p>
     </div>
     <div class="content" data-aos="fade-up">
-     <p>Type your address to find information about candidates & events relevant to your ward. Get informed, then vote!</p>
+     <p>In the meantime, we intend to keep waterlooregionvotes.org
+     up and running as a reference for the future. 
+     Type your address to find information about candidates & events relevant to your ward.</p>
      <div id="map-searchbar"></div>
      <div id="map"></div>
      <p><strong>Note:</strong> The map loads more slowly than the rest of the page, so be patient, or use the <a href="/wards/">ward listing</a>.</p>
