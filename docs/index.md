@@ -10,14 +10,11 @@ use-leaflet: true
     October 22, 2018 <strong>was</strong> municipal election day in Waterloo Region.
     </div>
     <div class="content">
-    <p>Because internet voting is amazing, the townships of Woolwich
-    and Wellesley have extended their voting period to <strong>8pm on
-    Tuesday, October 23</strong>. For this reason, results for
-    Regional Chair and some school trustee positions 
-    will not be available until Wednesday morning.
-    </p><p>
-    Here are unofficial results for the other municipalities. 
+    <p>
+    Here are unofficial results from the municipalities.
     <ul>
+      <li><a
+      href="https://www.regionofwaterloo.ca/en/regional-government/results.aspx">Region of Waterloo </a></li>
       <li><a
       href="https://www.cambridge.ca/Modules/News/index.aspx?newsId=3ff966f5-bf66-4ed4-abff-3b0b7f2ca521">City of Cambridge</a></li>
       <li><a
@@ -25,7 +22,11 @@ use-leaflet: true
       <li><a
       href="https://www.northdumfries.ca/en/township-services/2018-election-results.aspx">Township of North Dumfries</a></li>
       <li><a
+      href="https://www.wellesley.ca/en/elections/2018-election-results.aspx">Township of Wellesley</a></li>
+      <li><a
       href="https://www.wilmot.ca/en/township-office/election-day-results.aspx">Township of Wilmot</a></li>
+      <li><a
+      href="https://www.woolwich.ca/en/elections/elections-2018.aspx">Township of Woolwich</a></li>
       <li><a
       href="https://www.waterloo.ca/en/contentresources/resources/government/Elections/2018-Elections/unofficial-election-results-2018.pdf">City
       of Waterloo</a> (PDF)</li>
