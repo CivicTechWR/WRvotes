@@ -28,8 +28,7 @@ use-leaflet: true
       <li><a
       href="https://www.woolwich.ca/en/elections/elections-2018.aspx">Township of Woolwich</a></li>
       <li><a
-      href="https://www.waterloo.ca/en/contentresources/resources/government/Elections/2018-Elections/unofficial-election-results-2018.pdf">City
-      of Waterloo</a> (PDF)</li>
+      href="https://www.waterloo.ca/en/government/election.asp">City of Waterloo</a></li>
     </ul>
     </p>
     </div>
