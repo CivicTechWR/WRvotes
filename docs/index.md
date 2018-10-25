@@ -33,7 +33,7 @@ use-leaflet: true
     </p>
     </div>
     <div class="content" data-aos="fade-up">
-     <p>In the meantime, we intend to keep waterlooregionvotes.org
+     <p>We hope to keep waterlooregionvotes.org
      up and running as a reference for the future. 
      Type your address to find information about candidates & events relevant to your ward.</p>
      <div id="map-searchbar"></div>
