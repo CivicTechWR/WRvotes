@@ -6,8 +6,8 @@
 
     <ul>
       {% for candidate in sorted-nominees %}
-      <li>
-      {{ nominee.Given_Names}} {{ nominee.Last_Name }} : {{ nominee.Votes }}
+      <li>{{- candidate.Given_Names}} {{ candidate.Last_Name }}: {{
+      candidate.Votes }}
       </li>
       {% endfor %}
     </ul>
