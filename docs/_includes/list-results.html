@@ -1,0 +1,17 @@
+
+  {% assign sorted-nominees = include.nominees | sort_natural: "Votes" %}
+
+  <div class="results-list">
+    <h3 class="medium-text">Results</h3>
+
+    <ul>
+      {% for candidate in sorted-nominees %}
+      <li>
+      {{ nominee.Given_Names}} {{ nominee.Last_Name }} : {{ nominee.Votes }}
+      </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+
