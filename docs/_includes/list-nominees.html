@@ -17,14 +17,16 @@
 
     {% unless page.hide-details %}
       {% if site.election_over %}
-
-      {% include list-results.html nominees=these-nominess 
-         valid-nominees=valid-nominees
-         num-to-elect=num-to-elect
-         race-id=include.race-id %}
-
+        {% include list-results.html nominees=these-nominees 
+           valid-nominees=valid-nominees
+           num-to-elect=num-to-elect
+           race-id=include.race-id %}
       {% endif %}
     {% endunless %}
+
+    <p>num-to-elect is {{ num-to-elect }}, 
+    valid-nominees.size is {{ valid-nominees.size }}
+    </p>
 
 
 
