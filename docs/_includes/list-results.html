@@ -10,8 +10,18 @@
 
   {% capture tuples -%}
     {%- for candidate in include.nominees -%}
-    {{ candidate.Given_Names }} 
-    {{candidate.Last_Name}}: {{ candidate.Votes }} votes. :splt:
+
+      {%- if candidate.Votes -%}
+        {%- assign padded-votes = candidate.Votes 
+          | plus: site.big_number -%}
+      {%- else -%}
+        {{ assign padded-votes = site.big_number }}
+      {%- endif -%}
+
+      {{ padded-votes }} :field:
+      {{ candidate.Given_Names }} 
+      {{candidate.Last_Name}}: 
+      {{ candidate.Votes }} votes. :split:
     {%- endfor -%}
   {%- endcapture %}
 
