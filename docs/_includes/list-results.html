@@ -25,7 +25,7 @@
   {%- endcapture %}
 
   <ul>
-    {% assign tuple-split = tuples | split:':split'| sort %}
+    {% assign tuple-split = tuples | split:':split:'| sort | reverse %}
     
     {%- for candidate in tuple-split -%}
       <li>{{ candidate }}</li>
