@@ -28,7 +28,8 @@
     {% assign tuple-split = tuples | split:':split:'| sort | reverse %}
     
     {%- for candidate in tuple-split -%}
-      <li>{{ candidate }}</li>
+      {%- assign candidate-split = candidate | split:':field:' -%}
+      <li>{{ candidate-split[1] }}</li>
     {%- endfor -%}
   </ul>
 
