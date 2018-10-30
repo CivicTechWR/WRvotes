@@ -1,5 +1,23 @@
 
   {% assign sorted-nominees = include.nominees | sort:"Votes" %}
+  {% comment %}
+  Ugh. You cannot sort numerically and cannot (easily) add a custom 
+  field to an existing array. Let's generate a long string of (key,
+  val) pairs, sort that, and then split everything again.
+  See: https://stackoverflow.com/questions/6387540/
+  Also: https://github.com/Shopify/liquid/issues/980
+  {% endcomment %}
+
+  {% capture tuples -%}
+    {%- for candidate in include.nominees -%}
+    {{ candidate.Given_Names }} 
+    {{candidate.Last_Name}}: {{ candidate.Votes }} votes. :splt:
+    {%- endfor -%}
+  {%- endcapture %}
+
+
+  <p>Tuples: {{ tuples }}</p>
+
 
   <div class="results-list">
     <h3 class="medium-text">Results</h3>
