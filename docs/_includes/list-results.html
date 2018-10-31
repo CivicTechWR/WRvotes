@@ -11,9 +11,9 @@
     {%- for candidate in include.nominees -%}
 
       {%- if candidate.Winner == 'Y' -%}
-      <strong>(Winner)</strong>
+        <strong>(Winner)</strong>
       {%- elsif candidate.Withdrawn == 'Y' -%}
-      <strong>(Withdrawn)</strong>
+        <strong>(Withdrawn)</strong>
       {%- endif -%}
 
       {%- if candidate.Votes -%}
@@ -29,7 +29,7 @@
 
       {%- if candidate.Votes == '0' -%}
         no votes.
-      {%- elseif candidate.Votes -%}
+      {%- elsif candidate.Votes -%}
         {{ candidate.Votes }} votes. 
       {%- else -%}
         no votes.
