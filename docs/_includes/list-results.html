@@ -10,11 +10,6 @@
   {% capture tuples -%}
     {%- for candidate in include.nominees -%}
 
-      {%- if candidate.Winner == 'Y' -%}
-        <strong>(Winner)</strong>
-      {%- elsif candidate.Withdrawn == 'Y' -%}
-        <strong>(Withdrawn)</strong>
-      {%- endif -%}
 
       {%- if candidate.Votes -%}
         {%- assign padded-votes = candidate.Votes 
@@ -24,6 +19,13 @@
       {%- endif -%}
 
       {{ padded-votes }} :field:
+
+      {%- if candidate.Winner == 'Y' -%}
+        <strong>(Winner)</strong>
+      {%- elsif candidate.Withdrawn == 'Y' -%}
+        <strong>(Withdrawn)</strong>
+      {%- endif -%}
+
       {{ candidate.Given_Names }} 
       {{ candidate.Last_Name -}}: 
 
