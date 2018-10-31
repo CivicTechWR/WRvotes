@@ -10,6 +10,12 @@
   {% capture tuples -%}
     {%- for candidate in include.nominees -%}
 
+      {%- if candidate.Winner == 'Y' -%}
+      <strong>(Winner)</strong>
+      {%- elsif candidate.Withdrawn == 'Y' -%}
+      <strong>(Withdrawn)</strong>
+      {%- endif -%}
+
       {%- if candidate.Votes -%}
         {%- assign padded-votes = candidate.Votes 
           | plus: 0 | plus: site.big_number -%}
@@ -19,8 +25,16 @@
 
       {{ padded-votes }} :field:
       {{ candidate.Given_Names }} 
-      {{candidate.Last_Name}}: 
-      {{ candidate.Votes }} votes. :split:
+      {{ candidate.Last_Name -}}: 
+
+      {%- if candidate.Votes == '0' -%}
+        no votes.
+      {%- elseif candidate.Votes -%}
+        {{ candidate.Votes }} votes. 
+      {%- else -%}
+        no votes.
+      {%- endif -%}
+      :split:
     {%- endfor -%}
   {%- endcapture %}
 
