@@ -27,14 +27,14 @@
       {%- endif -%}
 
       {{ candidate.Given_Names }} 
-      {{ candidate.Last_Name }}: 
+      {{ candidate.Last_Name -}}
 
       {% if candidate.Votes == '0' -%}
-        no votes.
+        :no votes.
       {%- elsif candidate.Votes -%}
-        {{ candidate.Votes }} votes. 
+        :{{ candidate.Votes }} votes. 
       {%- else -%}
-        no votes.
+        :no votes.
       {%- endif -%}
       :split:
     {%- endfor -%}
@@ -43,33 +43,18 @@
   <ul>
     {% assign tuple-split = tuples | split:':split:'| sort | reverse %}
     
-    {%- for candidate in tuple-split -%}
-      {%- assign candidate-split = candidate | split:':field:' -%}
-      <li>{{ candidate-split[1] }}</li>
-    {%- endfor -%}
   </ul>
-
 
   <p>Tuples: {{ tuples }}</p>
 
-
   <div class="results-list">
     <h3 class="medium-text">Results</h3>
-
     <ul>
-      {% for candidate in include.nominees %}
-      <li>
-
-        {%- if candidate.Winner == 'Y' -%}
-        <strong>(Winner) </strong>
-        {%- endif -%}
-
-        {{- candidate.Given_Names}} {{ candidate.Last_Name }}: 
-        {{ candidate.Votes }} 
-      </li>
-      {% endfor %}
+      {%- for candidate in tuple-split -%}
+        {%- assign candidate-split = candidate | split:':field:' -%}
+        <li>{{ candidate-split[1] }}</li>
+      {%- endfor -%}
     </ul>
-
   </div>
 
 
