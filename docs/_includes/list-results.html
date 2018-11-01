@@ -21,15 +21,15 @@
       {{ padded-votes }} :field:
 
       {%- if candidate.Winner == 'Y' -%}
-        <strong>(Winner)</strong>
+        <strong>(Winner) </strong>
       {%- elsif candidate.Withdrawn == 'Y' -%}
-        <strong>(Withdrawn)</strong>
+        <strong>(Withdrawn) </strong>
       {%- endif -%}
 
       {{ candidate.Given_Names }} 
-      {{ candidate.Last_Name -}}: 
+      {{ candidate.Last_Name }}: 
 
-      {%- if candidate.Votes == '0' -%}
+      {% if candidate.Votes == '0' -%}
         no votes.
       {%- elsif candidate.Votes -%}
         {{ candidate.Votes }} votes. 
