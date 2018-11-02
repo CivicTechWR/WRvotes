@@ -24,7 +24,7 @@
 
       {%- if acclaimed -%}
         <strong>(Acclaimed) </strong>
-      {%- if candidate.Winner == 'Y' -%}
+      {%- elsif candidate.Winner == 'Y' -%}
         <strong>(Winner) </strong>
       {%- elsif candidate.Withdrawn == 'Y' -%}
         <strong>(Withdrawn) </strong>
