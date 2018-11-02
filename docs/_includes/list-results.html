@@ -7,6 +7,8 @@
   Also: https://github.com/Shopify/liquid/issues/980
   {% endcomment %}
 
+  {%- assign acclaimed = (include.num-to-elect == include.valid-nominees.size) -%}
+
   {% capture tuples -%}
     {%- for candidate in include.nominees -%}
 
@@ -20,6 +22,8 @@
 
       {{ padded-votes }} :field:
 
+      {%- if acclaimed -%}
+        <strong>(Acclaimed) </strong>
       {%- if candidate.Winner == 'Y' -%}
         <strong>(Winner) </strong>
       {%- elsif candidate.Withdrawn == 'Y' -%}
@@ -27,13 +31,13 @@
       {%- endif -%}
 
       {{ candidate.Given_Names }} 
-      {{ candidate.Last_Name -}}
+      {{ candidate.Last_Name }}
 
-      {% if candidate.Votes == '0' -%}
+      {% if candidate.Votes == '0' %}
         :no votes.
-      {%- elsif candidate.Votes -%}
+      {% elsif candidate.Votes %}
         :{{ candidate.Votes }} votes. 
-      {%- else -%}
+      {% else %}
         :no votes.
       {%- endif -%}
       :split:
