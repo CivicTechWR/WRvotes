@@ -31,12 +31,12 @@
       {{ candidate.Given_Names }} 
       {{ candidate.Last_Name -}}
 
-      {%- if include.num-to-elect == include.valid-nominees.size and candidate.Votes == '0' -%}
+      {%- if include.num-to-elect == include.valid-nominees.size -%}
+      {%- elsif candidate.Withdrawn and candidate.votes == '0' -%}
       {%- elsif candidate.Votes == '0' -%}
         : no votes.
       {%- elsif candidate.Votes -%}
         : {{ candidate.Votes }} votes. 
-      {%- elsif num-to-elect == include.valid-nominee.size -%}
       {%- else -%}
         : no votes.
       {%- endif -%}
