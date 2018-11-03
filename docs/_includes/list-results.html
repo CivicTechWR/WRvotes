@@ -10,7 +10,6 @@
   {% capture tuples -%}
     {%- for candidate in include.nominees -%}
 
-
       {%- if candidate.Votes -%}
         {%- assign padded-votes = candidate.Votes 
           | plus: 0 | plus: site.big_number -%}
@@ -49,10 +48,8 @@
     
   </ul>
 
-  <p>Tuples: {{ tuples }}</p>
-
   <div class="results-list">
-    <h3 class="medium-text">Results</h3>
+    <h4 class="medium-text">Results</h4>
     <ul>
       {%- for candidate in tuple-split -%}
         {%- assign candidate-split = candidate | split:':field:' -%}
