@@ -25,3 +25,9 @@ google_calendar_timezone: America/Toronto
 google_analytics: UA-102439664-2
 
 # events_newsletter: "https://off-topic.kwlug.org/mailman/listinfo/waterlooregionvotes-events_off-topic.kwlug.org"
+
+election_over: true
+
+# This should be a number strictly greater than the number of votes
+# received by any candidate in any race. 
+big_number: 10000000

@@ -1,0 +1,61 @@
+
+  {% comment %}
+  Ugh. You cannot sort numerically and cannot (easily) add a custom 
+  field to an existing array. Let's generate a long string of (key,
+  val) pairs, sort that, and then split everything again.
+  See: https://stackoverflow.com/questions/6387540/
+  Also: https://github.com/Shopify/liquid/issues/980
+  {% endcomment %}
+
+  {% capture tuples -%}
+    {%- for candidate in include.nominees -%}
+
+      {%- if candidate.Votes -%}
+        {%- assign padded-votes = candidate.Votes 
+          | plus: 0 | plus: site.big_number -%}
+      {%- else -%}
+        {{ assign padded-votes = site.big_number }}
+      {%- endif -%}
+
+      {{ padded-votes }} :field:
+
+      {%- if include.num-to-elect == include.valid-nominees.size -%}
+        <strong>(Acclaimed) </strong>
+      {%- elsif candidate.Winner == 'Y' -%}
+        <strong>(Winner) </strong>
+      {%- elsif candidate.Withdrawn == 'Y' -%}
+        <strong>(Withdrawn) </strong>
+      {%- endif -%}
+
+      {{ candidate.Given_Names }} 
+      {{ candidate.Last_Name -}}
+
+      {%- if include.num-to-elect == include.valid-nominees.size -%}
+      {%- elsif candidate.Withdrawn == 'Y' and candidate.Votes == '0' -%}
+      {%- elsif candidate.Votes == '0' -%}
+        : no votes.
+      {%- elsif candidate.Votes -%}
+        : {{ candidate.Votes }} votes. 
+      {%- else -%}
+        : no votes.
+      {%- endif -%}
+      :split:
+    {%- endfor -%}
+  {%- endcapture %}
+
+  <ul>
+    {% assign tuple-split = tuples | split:':split:'| sort | reverse %}
+    
+  </ul>
+
+  <div class="results-list">
+    <h4 class="inline">Results</h4>
+    <ul>
+      {%- for candidate in tuple-split -%}
+        {%- assign candidate-split = candidate | split:':field:' -%}
+        <li>{{ candidate-split[1] }}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+
+
