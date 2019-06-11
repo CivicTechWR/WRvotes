@@ -50,6 +50,10 @@
 
         {{ nominee.Given_Names}} {{ nominee.Last_Name }}
 
+        {%- if nominee.Party -%}
+          ({{ nominee.Party }}
+        {%- endif -%}
+
         {%- unless nominee.Withdrawn == 'Y' -%}
           {% assign num-seps = 0 %}
 
