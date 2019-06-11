@@ -1,6 +1,6 @@
 theme: jekyll-theme-slate
-title: Waterloo Region Votes
-description: Your Information Hub for the 2018 Municipal Election
+title: Waterloo Region Votes Federally
+description: 2019 Federal Election Information for Waterloo Region
 show_downloads: false
 plugins:
   - jekyll-sitemap
@@ -26,7 +26,7 @@ google_analytics: UA-102439664-2
 
 # events_newsletter: "https://off-topic.kwlug.org/mailman/listinfo/waterlooregionvotes-events_off-topic.kwlug.org"
 
-election_over: true
+election_over: false
 
 # This should be a number strictly greater than the number of votes
 # received by any candidate in any race. 
