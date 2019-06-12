@@ -64,11 +64,11 @@
             <a href="{%- include get-website.html site=nominee.Website -%}">Website</a>
           {%- endif -%}
 
-          {%- if nominee.Phone1 -%}
+          {%- if nominee.Phone -%}
               {%- include punctuate.html num-sofar=num-seps -%}
               {%- assign num-seps = num-seps | plus: 1 -%}
 
-              {{ nominee.Phone1 }}
+              {{ nominee.Phone }}
           {%- endif -%}
 
           {%- if nominee.Email -%}
