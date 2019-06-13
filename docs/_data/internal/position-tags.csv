@@ -1,4 +1,9 @@
 PositionUniqueName,WardMunicipality,PositionDesc,NumberToElect,Aliases
+Kitchener-Centre,N/A,"Kitchener Centre",1,
+Kitchener-South-Hespeler,N/A,"Kitchener South-Hespeler",1,
+Waterloo,N/A,"Waterloo",1,
+Kitchener-Conestoga,N/A,"Kitchener-Conestoga",1,
+Cambridge,N/A,"Cambridge",1,
 Regional-Chair,N/A,Regional Chair,1,"Alias-Everything,Alias-All-Regional"
 Regional-Kitchener,N/A,Regional Council - Kitchener,4,"Alias-Everything,Alias-All-Regional"
 Regional-Waterloo,N/A,Regional Council - Waterloo,2,"Alias-Everything,Alias-All-Regional"
