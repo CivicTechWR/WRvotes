@@ -1,6 +1,6 @@
 PositionUniqueName,WardMunicipality,PositionDesc,NumberToElect,Aliases
-KitchenerCentre,Kitchener,Kitchener Centre,1,Alias-Everything
+KitchenerCentre,KitchenerCentre,Kitchener Centre,1,Alias-Everything
 Cambridge,Cambridge,Cambridge,1,Alias-Everything
-KitchenerConestoga,Waterloo Region,Kitchener,1,Alias-Everything
-KitchenerSouthHespeler,Waterloo Region,Kitchener South Hespeler,1,Alias-Everything
-Waterloo,Waterloo,Waterloo,1,akAlias-Everything
+KitchenerConestoga,KitchenerConestoga,Kitchener Conestoga,1,Alias-Everything
+KitchenerSouthHespeler,KitchenerSouthHespeler,Kitchener South Hespeler,1,Alias-Everything
+Waterloo,Waterloo,Waterloo,1,Alias-Everything
