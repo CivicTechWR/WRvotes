@@ -5,8 +5,9 @@ title: Riding List
 
 # Riding List
 
-Waterloo Region is divided into 5 ridings. Clicking a riding to show all of the nominees
+Waterloo Region is divided into 5 ridings. Click a riding to show all of the nominees
 running in that riding.
+
 
 If you would prefer a more graphical approach, use the [Riding Map]({{site.url}}).
 
