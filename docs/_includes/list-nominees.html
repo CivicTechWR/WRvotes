@@ -88,8 +88,7 @@
            {%- include punctuate.html num-sofar=num-seps -%}
            {%- assign num-seps = num-seps | plus: 1 -%}
 
-           Twitter: <a href="{%- include get-website.html
-           site=nominee.Twitter -%}">{{ nominee.Twitter }}</a>
+            <a href="{%- include get-website.html site=nominee.Twitter -%}">Twitter</a>
           {%- endif -%}
 
           {%- if nominee.Instagram -%}
@@ -97,7 +96,8 @@
            {%- include punctuate.html num-sofar=num-seps -%}
            {%- assign num-seps = num-seps | plus: 1 -%}
 
-           Instagram: <a href="{%- include get-website.html
+            <a href="{%- include get-website.html
+            site=nominee.Instagram -%}">Instagram</a>
            site=nominee.Instagram -%}">{{ nominee.Instagram }}</a>
           {%- endif -%}
 
@@ -106,8 +106,8 @@
            {%- include punctuate.html num-sofar=num-seps -%}
            {%- assign num-seps = num-seps | plus: 1 -%}
 
-           Linkedin: <a href="{%- include get-website.html
-           site=nominee.Linkedin -%}">{{ nominee.Linkedin }}</a>
+            <a href="{%- include get-website.html
+            site=nominee.LinkedIn -%}">LinkedIn</a>
           {%- endif -%}
         {%- endunless -%}
 
