@@ -8,12 +8,12 @@ layout: page
     Waterloo Region Votes is a nonpartisan initiative to
     increase voter engagement during elections. 
 
-  </div>
+  </div><div>
     
     In particular, this
     project aims to make it easy for our community: 
     <ul>
-      <li>to find out who is running in their geographic area.<li>
+      <li>to find out who is running in their geographic area.</li>
       <li>to learn more about candidates by linking to candidate
       websites and social media, upcoming all-candidates meetings and
       events</li>
