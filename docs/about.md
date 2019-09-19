@@ -6,31 +6,43 @@ layout: page
 <div class="standout-box blue full-width no-margin-top">
   <div class="header big-text blue-text" data-aos="fade-left">
     Waterloo Region Votes is a nonpartisan initiative to
-    increase voter engagement during this fall's municipal election.
-  </div>
-  <div class="content" data-aos="fade-right">
-    <p>Many people say, "I didn't realize there was an election" or "I did
-    not feel informed enough to vote". Our goal is to fix that.</p>
-    <p>In particular, we aim to:</p>
+    increase voter engagement during elections. 
+
+  </div><div>
+    
+    In particular, this
+    project aims to make it easy for our community: 
     <ul>
-      <li>Make it easy for you to find out who is running in your geographic
-      area.</li>
-      <li>Make it easy for you to learn more about these candidates so you can
-      cast an informed vote. To this end, we link to candidate websites,
-      upcoming all-candidates meetings, candidate surveys, and other
-      relevant information.</li>
-      <li>Make it easy for you to understand how the municipal election is
-      structured, what different elected officials do, and a sense of
-      how municipal politics affects your life.</li>
+      <li>to find out who is running in their geographic area.</li>
+      <li>to learn more about candidates by linking to candidate
+      websites and social media, upcoming all-candidates meetings and
+      events</li>
+      <li>to learn more about voting and the election by linking to
+      election-related resources</li>
     </ul>
   </div>
 </div>
 
-## Who is Responsible for This?
 
-This site is a project of [CivicTechWR](https://civictechwr.org), a
+Waterloo Region Votes  is a project of [CivicTechWR](https://civictechwr.org), a
 local group that attempts to improve the lives of residents in
 Waterloo Region through civic technology.
+
+Over 9000 people used the municipal iteration of the site during the
+2018 election and the project was featured in the [Waterloo Region
+Record](https://www.therecord.com/news-story/8847728-techies-mobilizing-for-this-fall-s-municipal-elections-in-waterloo-region/),
+[CBC
+KW](https://www.cbc.ca/news/canada/kitchener-waterloo/waterloo-region-votes-why-we-dont-vote-1.4867100),
+[CBC News Network](https://www.youtube.com/watch?v=qEiy_tiN41w) and
+[Code for Canada’s 2019 Showcase](https://codefor.ca/showcase-2019/).
+
+## Who is responsible for this?
+
+This site is a project of CivicTechWR, a local volunteer group that
+strives to improve the lives of residents in Waterloo Region through
+civic
+technology.
+
 
 You can join us! Come to one of our meetups at
 <https://meetup.com/CivicTechWR/> to get involved.
@@ -38,6 +50,22 @@ You can join us! Come to one of our meetups at
 If you want to get in touch, email us at
 <a href="mailto:civictechwr.wrvotes@gmail.com">civictechwr.wrvotes@gmail.com</a>
 .
+
+
+## Are you a federally registered third party?
+
+No. As of June 13, 2019, there are new [Elections Canada rules for
+third
+parties](https://www.elections.ca/content.aspx?section=pol&document=index&dir=thi/roadmap&lang=e).
+Individuals, corporations or groups spending $500 or more on regulated
+activities that take place during the pre-election period or election
+period need to register as a third party to conduct regulated
+activities like partisan activities, election surveys, partisan
+advertising and election advertising.
+
+CivicTechWR’s only expenditure on waterlooregionvotes.org is domain
+registration for the website.
+
 
 ## How to Help
 
