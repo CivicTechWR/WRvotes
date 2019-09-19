@@ -3,7 +3,10 @@
   where:"PositionUniqueName",include.race-id | first -%}
 
 <div class="content-box" >
-  <h3 class="medium-text">{{ race-info.PositionDesc }}</h3>
+  {% unless include.hide-position-desc %}
+    <h3 class="medium-text">{{ race-info.PositionDesc }}</h3>
+  {% endunless %}
+
   <div class="candidate-list" id="{{ include.race-id | slugify }}" >
 
     {% assign these-nominees = site.data.sync.nominees
@@ -23,11 +26,6 @@
            race-id=include.race-id %}
       {% endif %}
     {% endunless %}
-
-
-    {%- if num-to-elect > 0 -%}
-      <h4 class="inline">Candidates</h4>
-    {%- endif -%}
 
     {%- if num-to-elect == 1 and valid-nominees.size == 1 -%}
       <p><strong>(This position is acclaimed.)</strong></p>
@@ -92,6 +90,24 @@
 
            Twitter: <a href="{%- include get-website.html
            site=nominee.Twitter -%}">{{ nominee.Twitter }}</a>
+          {%- endif -%}
+
+          {%- if nominee.Instagram -%}
+            
+           {%- include punctuate.html num-sofar=num-seps -%}
+           {%- assign num-seps = num-seps | plus: 1 -%}
+
+           Instagram: <a href="{%- include get-website.html
+           site=nominee.Instagram -%}">{{ nominee.Instagram }}</a>
+          {%- endif -%}
+
+          {%- if nominee.Linkedin -%}
+            
+           {%- include punctuate.html num-sofar=num-seps -%}
+           {%- assign num-seps = num-seps | plus: 1 -%}
+
+           Linkedin: <a href="{%- include get-website.html
+           site=nominee.Linkedin -%}">{{ nominee.Linkedin }}</a>
           {%- endif -%}
         {%- endunless -%}
 
