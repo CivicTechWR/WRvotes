@@ -23,7 +23,7 @@ include:
   and [other
   languages](https://www.elections.ca/content2.aspx?section=id&dir=idLangs&document=index&lang=e)
 - [Accessible voting tools and
-  services)[https://www.elections.ca/content2.aspx?section=acc&document=index&lang=e]
+  services](https://www.elections.ca/content2.aspx?section=acc&document=index&lang=e)
 - A guide to the Federal election in
   [English](https://www.elections.ca/content2.aspx?section=spr&dir=voting&document=guige&lang=e)
   and [other
