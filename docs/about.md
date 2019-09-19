@@ -36,7 +36,7 @@ KW](https://www.cbc.ca/news/canada/kitchener-waterloo/waterloo-region-votes-why-
 [CBC News Network](https://www.youtube.com/watch?v=qEiy_tiN41w) and
 [Code for Canada’s 2019 Showcase](https://codefor.ca/showcase-2019/).
 
-##Who is responsible for this?
+## Who is responsible for this?
 
 This site is a project of CivicTechWR, a local volunteer group that
 strives to improve the lives of residents in Waterloo Region through
