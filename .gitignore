@@ -4,3 +4,4 @@ docs/_site
 docs/.sass-cache
 docs/Gemfile
 docs/Gemfile.lock
+venv

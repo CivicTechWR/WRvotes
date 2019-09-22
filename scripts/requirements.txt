@@ -3,3 +3,4 @@ python_dateutil
 pytz
 datetime
 requests
+gitpython
