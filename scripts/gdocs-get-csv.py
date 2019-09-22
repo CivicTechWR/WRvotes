@@ -5,6 +5,7 @@ import tempfile
 import filecmp
 import sys
 import time
+import datetime
 
 """ Grab data files from Google docs
     Paul "Worthless" Nijjar, 2019-09-22
@@ -25,14 +26,13 @@ TARGETDIR='../docs/_data/sync'
 
 COMMIT_NEEDED=False
 
-# Probably I should use a module for this? Or have different
-# debug levels? Whatever. 
+# Probably I should use a module for this? Whatever.
 DEBUG_SCREEN=True
 DEBUG_LOG=True 
 DEBUG_FILE='/tmp/gdocs-get.log'
 DEBUG_FILEHANDLE=None
 DEBUG_THRESHOLD=1
-
+DEBUG_DEFAULT_LEVEL=2
 
 # --- Why open here?? ---
 
@@ -45,14 +45,18 @@ if DEBUG_LOG:
 
 # --- FUNCTIONS ---
 
-def debug(msg,level=2):
+def debug(msg,level=DEBUG_DEFAULT_LEVEL):
     """ Add debug information to screen and or file. """
 
     if DEBUG_SCREEN and level <= DEBUG_THRESHOLD:
         print(msg)
 
     if DEBUG_LOG and level <= DEBUG_THRESHOLD:
+        DEBUG_FILEHANDLE.write("{}: ".format(
+          datetime.datetime.now())
+          )
         DEBUG_FILEHANDLE.write(msg)
+        DEBUG_FILEHANDLE.write('\n')
 
 def cleanup():
     """ Clean up file handles. """
@@ -93,7 +97,7 @@ for syncfile in sources:
                 f_orig.write(r.content)
                 f_orig.close()
         else:
-            debug("{}: files are the same")
+            debug("{}: files are the same".format(syncfile))
 
     else:
         debug("Oops. Received status "
