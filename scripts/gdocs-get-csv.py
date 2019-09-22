@@ -6,6 +6,7 @@ import filecmp
 import sys
 import time
 import datetime
+from git import Repo
 
 """ Grab data files from Google docs
     Paul "Worthless" Nijjar, 2019-09-22
@@ -22,9 +23,8 @@ sources = {
 
 TMPDIR=tempfile.TemporaryDirectory()
 
-TARGETDIR='../docs/_data/sync'
-
-COMMIT_NEEDED=False
+GITDIR='/home/pnijjar/src/wrvotesfed-pnijjar'
+TARGETDIR="docs/_data/sync"
 
 # Probably I should use a module for this? Whatever.
 DEBUG_SCREEN=True
@@ -65,6 +65,8 @@ def cleanup():
 
 # --- END FUNCTIONS ---
 
+changed_files = []
+
 for syncfile in sources:
     debug("file: {}, target: {}".format(
             syncfile,
@@ -77,7 +79,6 @@ for syncfile in sources:
 
     # https://stackabuse.com/download-files-with-python/
     if r.status_code == 200:
-        this_file_different = False
 
         candidate="{}/{}".format(TMPDIR.name,syncfile)
 
@@ -85,17 +86,17 @@ for syncfile in sources:
             f.write(r.content)
             f.close()
 
-        origfile="{}/{}".format(TARGETDIR,syncfile)
+        origfile="{}/{}/{}".format(GITDIR,TARGETDIR,syncfile)
 
         if not filecmp.cmp(candidate, origfile):
-            this_file_different=True
             debug("Found different files: "
-                  "{}. Overwriting.".format(syncfile),
+                  "{}. NOT overwriting.".format(syncfile),
                  1)
+            changed_files.append(syncfile)
 
-            with open(origfile, 'wb') as f_orig:
-                f_orig.write(r.content)
-                f_orig.close()
+            #with open(origfile, 'wb') as f_orig:
+            #    f_orig.write(r.content)
+            #    f_orig.close()
         else:
             debug("{}: files are the same".format(syncfile))
 
@@ -110,5 +111,32 @@ for syncfile in sources:
              0,
              )
 
+if changed_files:
+    repo = Repo(GITDIR)
+
+
+    commit_msg = "Auto-commit: updated "
+    commit_msg += "{} from Google Docs".format( 
+                     ", ".join(changed_files))
+
+    debug(commit_msg, 0)
+
+    changed_with_path = map(
+      lambda x: "{}/{}".format(TARGETDIR, x),
+      changed_files)
+
+
+    repo.index.add(changed_with_path)
+
+"""
+    for item in changed_files:
+        repo.index.add("{}/{}".format(
+          TARGETDIR,
+          item,
+          ))
+    repo.index.commit(commit_msg, dry_run=True)
+    origin = repo.remote('origin')
+    origin.push(dry_run=True)
+"""
 
 cleanup()
