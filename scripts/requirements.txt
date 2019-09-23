@@ -1,6 +1,6 @@
-google-api-python-client
-python_dateutil
-pytz
+google-api-python-client>=1.7.11
+python_dateutil>=2.8.0
+pytz>=2019.2
 datetime
-requests
-gitpython
+requests>=2.22.0
+gitpython>=3.0.2
