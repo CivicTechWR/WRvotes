@@ -10,3 +10,14 @@ Deployment
   needs.
 
 - Run `update-google-calendar.py`
+
+
+Deployment With Cron onto Github
+--------------------------------
+
+- Make sure there is an appropriate SSH key in the VPS
+- Add SSH Deploy key to the project.
+- On the VPS, check out the code:
+  `git clone git@github.com:CivicTechWR/WRVotesFed wrvotesfed`
+- `cd wrvotesfed`
+- Add cronjob to force a rebuild every N minutes
