@@ -2,3 +2,5 @@ google-api-python-client
 python_dateutil
 pytz
 datetime
+requests
+gitpython
