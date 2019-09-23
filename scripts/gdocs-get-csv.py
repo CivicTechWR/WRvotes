@@ -90,13 +90,13 @@ for syncfile in sources:
 
         if not filecmp.cmp(candidate, origfile):
             debug("Found different files: "
-                  "{}. NOT overwriting.".format(syncfile),
+                  "{}. Overwriting.".format(syncfile),
                  1)
             changed_files.append(syncfile)
 
-            #with open(origfile, 'wb') as f_orig:
-            #    f_orig.write(r.content)
-            #    f_orig.close()
+            with open(origfile, 'wb') as f_orig:
+                f_orig.write(r.content)
+                f_orig.close()
         else:
             debug("{}: files are the same".format(syncfile))
 
@@ -119,24 +119,15 @@ if changed_files:
     commit_msg += "{} from Google Docs".format( 
                      ", ".join(changed_files))
 
-    debug(commit_msg, 0)
+    debug(commit_msg, 2)
 
     changed_with_path = map(
       lambda x: "{}/{}".format(TARGETDIR, x),
       changed_files)
 
-
     repo.index.add(changed_with_path)
-
-"""
-    for item in changed_files:
-        repo.index.add("{}/{}".format(
-          TARGETDIR,
-          item,
-          ))
-    repo.index.commit(commit_msg, dry_run=True)
+    repo.index.commit(commit_msg)
     origin = repo.remote('origin')
-    origin.push(dry_run=True)
-"""
+    origin.push()
 
 cleanup()
