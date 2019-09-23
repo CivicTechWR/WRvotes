@@ -8,6 +8,8 @@ PYDIR=~/wrvotesfed/scripts
 export GIT_SSH=$WORKDIR/ssh-wrv-push
 
 cd $WORKDIR
+
+# Ugh. This should be done in the script.
 git pull --quiet 
 
 source "$PYDIR/venv/bin/activate"
