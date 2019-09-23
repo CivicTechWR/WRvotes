@@ -1,0 +1,18 @@
+#!/bin/bash 
+# Force pull of Google Docs, given a deploy key.
+# Paul "Worthless" Nijjar, 2019-09-23
+
+
+WORKDIR=~/wrvotesfed/scripts/force_rebuild
+PYDIR=~/wrvotesfed/scripts
+export GIT_SSH=$WORKDIR/ssh-wrv-push
+
+cd $WORKDIR
+git pull --quiet 
+
+source "$PYDIR/venv/bin/activate"
+
+export GIT_SSH=$WORKDIR/ssh-wrv-push
+
+# This command will push on its own (maybe)
+$PYDIR/gdocs-get-csv.py
