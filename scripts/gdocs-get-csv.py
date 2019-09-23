@@ -134,6 +134,6 @@ if changed_files:
     origin = repo.remote('origin')
     origin.push()
 else:
-    debug("All files are the same. Not committing.", 1)
+    debug("All files are the same. Not committing.", 2)
 
 cleanup()
