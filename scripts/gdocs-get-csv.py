@@ -23,13 +23,13 @@ sources = {
 
 TMPDIR=tempfile.TemporaryDirectory()
 
-GITDIR='/home/pnijjar/src/wrvotesfed-pnijjar'
+GITDIR='/home/pnijjar/wrvotesfed'
 TARGETDIR="docs/_data/sync"
 
 # Probably I should use a module for this? Whatever.
 DEBUG_SCREEN=True
 DEBUG_LOG=True 
-DEBUG_FILE='/tmp/gdocs-get.log'
+DEBUG_FILE='/home/pnijjar/logs/gdocs-get.log'
 DEBUG_FILEHANDLE=None
 DEBUG_LOG_THRESHOLD=1
 DEBUG_SCREEN_THRESHOLD=0
