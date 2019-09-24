@@ -1,6 +1,6 @@
 ---
 layout: "default"
-hide-details: true
+hide-details: false
 ---
 
 {% comment %}
@@ -30,7 +30,8 @@ where:"PositionUniqueName",ward-id | first -%}
       <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
 
         {% include list-nominees.html race-id=race-id
-           show-toc-link=false hide-details=true hide-position-desc=true %}
+           show-toc-link=false hide-details=false
+           hide-position-desc=false %} 
 
       </div>
 
