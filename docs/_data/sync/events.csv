@@ -1,4 +1,4 @@
-RowID,DateTimeStart,DateTimeEnd,Title,Location,ForMultipleCandidates,CancelledorRescheduled,PositionIDList,URL,Notes
+RowID,DateTimeStart,DateTimeEnd,Title,Location,ForMultipleCandidates,CancelledOrRescheduled,PositionIDList,URL,Notes
 1,2019-10-09 19:00,2019-10-09 21:00,100 Debates on the Environment-  Waterloo,"ML - Modern Languages, Theatre of the Arts, 200 University Avenue West, WAterloo",Y,,Waterloo,https://www.100debates.ca/waterloo,
 2,2019-10-02 19:00,2019-10-02 21:00,100 Debates on the Environment - Kitchener Centre,"Walter Fedy Building, 675 Queen St. S., Kitchener",Y,,KitchenerCentre ,https://www.100debates.ca/kitchener_centre,
 3,2019-10-02 19:00,2019-10-02 21:00,100 Debates on the Environment - Kitchener South-Hespeker,"Ken Seiling Waterloo Region Museum - Christie Digital Theatre, 10 Huron Rd, Kitchener ",Y,,KitchenerSouthHespeler,https://www.100debates.ca/kitchener_south_hespeler,
@@ -12,14 +12,14 @@ RowID,DateTimeStart,DateTimeEnd,Title,Location,ForMultipleCandidates,Cancelledor
 11,2019-09-29 14:00,2019-09-29 16:00,Forest Heights All Candidates Meeting - Kitchener Centre,"Forest Heights Community Centre, 1700 Queen's Boulevard, Kitchener",Y,,KitchenerCentre ,,
 12,2019-10-01 08:10,2019-10-02 08:30,CBC Kitchener Centre Candidates Panel (Radio),CBC KW 89.1FM,Y,,KitchenerCentre ,,
 13,2019-10-01 19:30,2019-10-01 21:30,"Citizens for Public Justice Fall Election Tour – Kitchener-Waterloo, ON","Mount Zion Lutheren Church, 29 Westmount Rd. S., Kitchener",,,,https://cpj.ca/events/cpj-fall-tour-kitchener-waterloo/,
-14,2019-10-03 18:30,2019-10-01 20:20,A Cultural Exchange 8.0,"THEMUSEUM, 10 King St. W., Kitchener",Y,,"KitchenerCentre, KitchenerConestoga, Waterloo",https://themuseum.ca/events/a-cultural-exchange-8-0/,
+14,2019-10-03 18:30,2019-10-03 20:20,A Cultural Exchange 8.0,"THEMUSEUM, 10 King St. W., Kitchener",Y,,"KitchenerCentre, KitchenerConestoga, Waterloo",https://themuseum.ca/events/a-cultural-exchange-8-0/,
 15,2019-10-07 16:00,2019-10-07 18:00,KW Chamber of Commerce Candidate Forum - Kitchener Centre,"Kitchener City Hall Rotunda, 200 King St. W., Kitchener",,,KitchenerCentre ,,
 16,2019-09-24 19:00,2019-09-24 20:00,Waterloo Rogers TV Debate (Televised),Cable 20,Y,,Waterloo,https://www.rogerstv.com/show?lid=12&rid=54&sid=8134,
 17,2019-09-19 19:00,2019-09-19 20:00,Kitchener-Conestoga Rogers TV Debate (Televised),Cable 20,Y,,KitchenerConestoga,https://rogerstv.com/show?lid=12&rid=7&sid=8133,
 18,,,Cambridge Rogers TV Debate (Televised),Cable 20,Y,,Cambridge,https://rogerstv.com/show?lid=12&rid=22&sid=8135,
 19,,,Kitchener South - Hespeler Rogers TV Debate (Televised),Cable 20,Y,,KitchenerSouthHespeler,https://rogerstv.com/show?lid=12&rid=54&sid=8132,
-20,2019-10-08 18:00,2019-10-08 20:00,Let's Get Political with Common Knowledge and Laura Mae Lindo,"Workhaus Market 290 King Street East Kitchener, ON N2G 2L3",,,,https://www.eventbrite.com/e/lets-get-political-tickets-73015169337,
-21,2019-10-03 19:00,2019-10-03 21:00,Fake News and Elections: What We Need to Know Before Heading to the Polls - CIGI Event,"CIGI Campus Auditorium, 67 Erb St. W., Waterloo",,,,https://www.cigionline.org/events/fake-news-and-elections-what-we-need-know-heading-polls,
+20,2019-10-08 18:00,2019-10-08 20:00,Let's Get Political with Common Knowledge and Laura Mae Lindo,"Workhaus Market 290 King Street East Kitchener, ON N2G 2L3",,,Alias-Everything,https://www.eventbrite.com/e/lets-get-political-tickets-73015169337,
+21,2019-10-03 19:00,2019-10-03 21:00,Fake News and Elections: What We Need to Know Before Heading to the Polls - CIGI Event,"CIGI Campus Auditorium, 67 Erb St. W., Waterloo",,,Alias-Everything,https://www.cigionline.org/events/fake-news-and-elections-what-we-need-know-heading-polls,
 22,2019-09-26 16:30,2019-09-26 17:30,Meet & Greet with Mike,"Morrice Campaign Office, 157 King St. W., Kitchener",,,KitchenerCentre ,https://morrice2019.ca/public-events/2019/9/6/meet-amp-greet-with-mike-n5slm,
 23,2019-10-03 16:30,2019-10-03 17:30,Meet & Greet with Mike,"Morrice Campaign Office, 157 King St. W., Kitchener",,,KitchenerCentre ,https://morrice2019.ca/public-events/2019/9/6/meet-amp-greet-with-mike-gtbx8,
 24,2019-10-10 16:30,2019-10-10 17:30,Meet & Greet with Mike,"Morrice Campaign Office, 157 King St. W., Kitchener",,,KitchenerCentre ,https://morrice2019.ca/public-events/2019/9/6/meet-amp-greet-with-mike-w73yb,
