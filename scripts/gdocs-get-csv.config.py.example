@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+
+### --- Sources ---
+
+# format: localfile: remotesource
+# To find these sources: load the spreadsheet in Google Docs, save as
+# CSV to your computer, and look in the list of downloads for the 
+# download link.
+
+# A better way would be to use the actual Google Docs API, but
+# whatever. This works for now.
+SOURCES = {
+  'nominees.csv': 'https://docs.google.com/spreadsheets/d/1rsQksqAJjyVzjs9pA49dRij-fC-hwG8nORMmlTx_9_I/export?format=csv&id=1rsQksqAJjyVzjs9pA49dRij-fC-hwG8nORMmlTx_9_I&gid=917247882',
+  'events.csv': 'https://docs.google.com/spreadsheets/d/1sIfYfey7D72Uyi1NOAxrAFbU6yn9HvIUjINCqYGHwMw/export?format=csv&id=1sIfYfey7D72Uyi1NOAxrAFbU6yn9HvIUjINCqYGHwMw&gid=103989638',
+  'media.csv': 'https://docs.google.com/spreadsheets/d/1sIfYfey7D72Uyi1NOAxrAFbU6yn9HvIUjINCqYGHwMw/export?format=csv&id=1sIfYfey7D72Uyi1NOAxrAFbU6yn9HvIUjINCqYGHwMw&gid=1989058875',
+  }
+
+# The root of the git config file
+GITDIR='/home/pnijjar/wrvotesfed'
+
+# The path to the CSV files, relative to GITDIR
+TARGETDIR="docs/_data/sync"
+
+# Assorted debugging parameters. 
+# Lower thresholds are more important.
+DEBUG_SCREEN=True
+DEBUG_LOG=True 
+DEBUG_FILE='/home/pnijjar/logs/gdocs-get.log'
+
+DEBUG_LOG_THRESHOLD=1
+DEBUG_SCREEN_THRESHOLD=0
+DEBUG_DEFAULT_LEVEL=3

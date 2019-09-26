@@ -6,53 +6,112 @@ import filecmp
 import sys
 import time
 import datetime
+import argparse, sys, os
 from git import Repo
 
 """ Grab data files from Google docs
     Paul "Worthless" Nijjar, 2019-09-22
 """
 
-### --- Sources ---
-
-# format: localfile: remotesource
-sources = {
-  'nominees.csv': 'https://docs.google.com/spreadsheets/d/1rsQksqAJjyVzjs9pA49dRij-fC-hwG8nORMmlTx_9_I/export?format=csv&id=1rsQksqAJjyVzjs9pA49dRij-fC-hwG8nORMmlTx_9_I&gid=917247882',
-  'events.csv': 'https://docs.google.com/spreadsheets/d/1sIfYfey7D72Uyi1NOAxrAFbU6yn9HvIUjINCqYGHwMw/export?format=csv&id=1sIfYfey7D72Uyi1NOAxrAFbU6yn9HvIUjINCqYGHwMw&gid=103989638',
-  'media.csv': 'https://docs.google.com/spreadsheets/d/1sIfYfey7D72Uyi1NOAxrAFbU6yn9HvIUjINCqYGHwMw/export?format=csv&id=1sIfYfey7D72Uyi1NOAxrAFbU6yn9HvIUjINCqYGHwMw&gid=1989058875',
-  }
-
 TMPDIR=tempfile.TemporaryDirectory()
 
-GITDIR='/home/pnijjar/wrvotesfed'
-TARGETDIR="docs/_data/sync"
+DEBUG_DEFAULT_LEVEL=2
 
-# Probably I should use a module for this? Whatever.
-DEBUG_SCREEN=True
-DEBUG_LOG=True 
-DEBUG_FILE='/home/pnijjar/logs/gdocs-get.log'
-DEBUG_FILEHANDLE=None
-DEBUG_LOG_THRESHOLD=1
-DEBUG_SCREEN_THRESHOLD=0
-DEBUG_DEFAULT_LEVEL=3
 
-# --- Why open here?? ---
+# --- Copy and paste ridiculous config code
+# See: http://www.karoltomala.com/blog/?p=622
+DEFAULT_CONFIG_SOURCEFILE = os.path.join(
+    os.getcwd(),
+    'gdocs-get-csv.config.py',
+    )
 
-if DEBUG_LOG:
-    DEBUG_FILEHANDLE = open(DEBUG_FILE, 'a', newline='') 
-    # What if this fails?
-    if not DEBUG_FILEHANDLE:
-        print("Unable to write to {}".format(DEBUG_FILE))
-        sys.exit(1)
 
-# --- FUNCTIONS ---
+
+# ------------------------------
+def load_config(configfile=None):
+    """ Load configuration definitions.
+       (This is really scary, actually. We are trusting that the 
+       config.py we are taking as input is sane!) 
+
+       If both the commandline and the parameter are 
+       specified then the commandline takes precedence.
+
+       Stolen from my google calendar helpers. 
+    """
+
+    config_location=None
+
+    if configfile: 
+        config_location=configfile
+    else: 
+        config_location = DEFAULT_CONFIG_SOURCEFILE
+
+    # Now parse commandline options (Here??? This code smells bad.)
+    parser = argparse.ArgumentParser(
+        description="Synchronize from Google Docs to "
+            "local csv files",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        )
+    parser.add_argument('-c', '--configfile', 
+        help='configuration file location',
+        default=DEFAULT_CONFIG_SOURCEFILE,
+        )
+
+    args = parser.parse_args()
+    if args.configfile:
+        config_location = os.path.abspath(args.configfile)
+
+    # http://stackoverflow.com/questions/11990556/python-how-to-make-global 
+    global config
+
+    # Blargh. You can load modules from paths, but the syntax is
+    # different depending on the version of python. 
+    # http://stackoverflow.com/questions/67631/how-to-import-a-mod
+    # https://stackoverflow.com/questions/1093322/how-do-i-ch
+
+    if sys.version_info >= (3,5): 
+        import importlib.util 
+        spec = importlib.util.spec_from_file_location(
+            'config',
+            config_location,
+            )
+        config = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(config)
+    elif sys.version_info >= (3,3):
+        # This is the only one I can test. Sad!
+        from importlib.machinery import SourceFileLoader
+        config = SourceFileLoader( 'config', config_location,).load_module()
+    else:
+        import imp
+        config = imp.load_source( 'config', config_location,)
+
+    if config.DEBUG_DEFAULT_LEVEL:
+        DEBUG_DEFAULT_LEVEL = config.DEBUG_DEFAULT_LEVEL
+
+    # For test harness
+    return config
+            
+
+# --- FUNCTIONS --
+
+def setup_debug_log():
+    if config.DEBUG_LOG:
+        global DEBUG_FILEHANDLE
+        DEBUG_FILEHANDLE = open(config.DEBUG_FILE, 'a', newline='') 
+        # What if this fails?
+        if not DEBUG_FILEHANDLE:
+            print("Unable to write to {}".format(config.DEBUG_FILE))
+            sys.exit(1)
+
+
 
 def debug(msg,level=DEBUG_DEFAULT_LEVEL):
     """ Add debug information to screen and or file. """
 
-    if DEBUG_SCREEN and level <= DEBUG_SCREEN_THRESHOLD:
+    if config.DEBUG_SCREEN and level <= config.DEBUG_SCREEN_THRESHOLD:
         print(msg)
 
-    if DEBUG_LOG and level <= DEBUG_LOG_THRESHOLD:
+    if config.DEBUG_LOG and level <= config.DEBUG_LOG_THRESHOLD:
         DEBUG_FILEHANDLE.write("{}: ".format(
           datetime.datetime.now())
           )
@@ -66,9 +125,14 @@ def cleanup():
 
 # --- END FUNCTIONS ---
 
+load_config()
+setup_debug_log()
+
 debug("---- Beginning run ----",1)
 
 changed_files = []
+
+sources = config.SOURCES
 
 for syncfile in sources:
     debug("file: {}, target: {}".format(
@@ -90,7 +154,10 @@ for syncfile in sources:
             f.write(r.content)
             f.close()
 
-        origfile="{}/{}/{}".format(GITDIR,TARGETDIR,syncfile)
+        origfile="{}/{}/{}".format(
+          config.GITDIR,
+          config.TARGETDIR,
+          syncfile)
 
         if not filecmp.cmp(candidate, origfile):
             debug("Found different files: "
@@ -116,7 +183,7 @@ for syncfile in sources:
              )
 
 if changed_files:
-    repo = Repo(GITDIR)
+    repo = Repo(config.GITDIR)
 
 
     commit_msg = "Auto-commit: updated "
@@ -126,7 +193,7 @@ if changed_files:
     debug(commit_msg, 1)
 
     changed_with_path = map(
-      lambda x: "{}/{}".format(TARGETDIR, x),
+      lambda x: "{}/{}".format(config.TARGETDIR, x),
       changed_files)
 
     repo.index.add(changed_with_path)
