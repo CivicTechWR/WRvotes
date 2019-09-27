@@ -2,6 +2,12 @@ Deployment
 ----------
 
 - Generate a Google service account. It needs access to the Calendar API, but does not need roles. 
+  + <https://console.developers.google.com>
+  + Make a project
+  + Make a service account
+  + Give the service account access to the Calendar API
+  + In the Google Calendar, give the email address of the service
+  account "Make Changes to Events" permissions
 - Use `virtualenv` to set up a Python 3 environment: `virtualenv -p
   /usr/bin/python3 venv`
 - Activate the environment: `source venv/bin/activate`
