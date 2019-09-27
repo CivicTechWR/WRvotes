@@ -184,6 +184,8 @@ for syncfile in sources:
 
 if changed_files:
     repo = Repo(config.GITDIR)
+    origin = repo.remote('origin')
+    origin.pull()
 
 
     commit_msg = "Auto-commit: updated "
@@ -198,7 +200,6 @@ if changed_files:
 
     repo.index.add(changed_with_path)
     repo.index.commit(commit_msg)
-    origin = repo.remote('origin')
     origin.push()
 else:
     debug("All files are the same. Not committing.", 2)
