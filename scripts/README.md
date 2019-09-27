@@ -15,6 +15,12 @@ Deployment
 Deployment With Cron onto Github
 --------------------------------
 
+- Make a virtualenv and install the necessary Python packages:
+  ```
+  virtualenv -p python3 venv
+  source venv/bin/activate
+  pip install -r requirements.txt
+  ```
 - Make sure there is an appropriate SSH key in the VPS
 - Add SSH Deploy key to the project.
 - On the VPS, check out the code:
