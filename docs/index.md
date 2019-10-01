@@ -12,7 +12,7 @@ use-leaflet: true
     <div class="content">
     </div>
     <div class="content" data-aos="fade-up">
-     <p>Type your address to find information about candidates & events relevant to your riding.</p>
+     <p>Search for information about where to vote and who is running in your riding.</p>
      <div id="map-searchbar"></div>
      <div id="map"></div>
      <p><strong>Note:</strong> The map loads more slowly than the rest of the page, so be patient, or use the <a href="/ridings/">ridings listing</a>.</p>
