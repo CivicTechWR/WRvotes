@@ -187,6 +187,16 @@ body {
     }
 
 
+    &.purple {
+      .content {
+        border-left: 4px solid $purple;
+      }
+
+      a {
+        color: $purple;
+      }
+    }
+
     &.pink {
       .content {
         border-left: 4px solid $pink;
