@@ -9,7 +9,7 @@
 
 /* ---------- MAIN MENU STYLING --------- */
 #main-menu {
-  background: $green;
+  background: $yellow;
   padding: 1em;
 
   .inner {
@@ -19,7 +19,7 @@
 }
 
 #main-menu a {
-  color: $light;
+  color: $dark;
 }
 
 #main-menu a.current {
