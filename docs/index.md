@@ -5,7 +5,7 @@ use-leaflet: true
 ---
 
 <section class="flex justify-center">
-  <article class="standout-box blue large">
+  <article class="standout-box yellow large">
     <div class="big-text blue-text header" id="map-box" data-aos="fade-left">
     The Canadian Federal election is on October 21, 2019.
     </div>
