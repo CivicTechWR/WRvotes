@@ -126,8 +126,8 @@ body {
   }
 
   .content-box {
-    background: transparentize($blue, 0.95);
-    border-left: 6px solid $blue;
+    background: transparentize($purple, 0.95);
+    border-left: 6px solid $purple;
     padding: 0.5em 2em 0 2em;
     color: $dark;
     margin-bottom: 2em; 
@@ -136,7 +136,7 @@ body {
 
   .content-box .spacer { 
     padding-left: 1em;
-    border-left: 6px solid $blue;
+    border-left: 6px solid $purple;
     margin-top: 2em;
   } 
 
@@ -146,7 +146,7 @@ body {
   } 
 
   .aside-box {
-    background-color: $blue;
+    background-color: $purple;
     color: $light;
     padding: 2rem;
     margin-bottom: 1rem;
@@ -284,6 +284,10 @@ body {
     background-color: $mint;
   }
 
+  .bg-purple { 
+    background-color: $purple;
+  }
+
   .blue-text {
     color: $blue;
   }
@@ -302,6 +306,10 @@ body {
 
   .mint-text {
     color: $mint;
+  }
+
+  .purple-text {
+    color: $purple;
   }
 
   .big-text {
