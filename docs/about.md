@@ -4,14 +4,14 @@ layout: page
 ---
 
 <div class="standout-box blue full-width no-margin-top">
-  <div class="header big-text blue-text" data-aos="fade-left">
+  <div class="header big-text" data-aos="fade-left">
     Waterloo Region Votes is a nonpartisan initiative to
-    increase voter engagement during elections. 
+    increase voter engagement during elections.
 
   </div><div>
-    
+
     In particular, this
-    project aims to make it easy for our community: 
+    project aims to make it easy for our community:
     <ul>
       <li>to find out who is running in their geographic area.</li>
       <li>to learn more about candidates by linking to candidate
@@ -89,5 +89,3 @@ We currently could really use help with:
 - Tracking down candidate information (especially websites)
 - Contacting neighbourhood associations and other local groups
 - Helping with promotion
-
-
