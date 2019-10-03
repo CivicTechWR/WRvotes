@@ -3,7 +3,7 @@
 # Paul "Worthless" Nijjar, 2018-08-15
 
 
-WORKDIR=~/wrvotes/scripts/force_rebuild
+WORKDIR=~/wrvotesfed/scripts/force_rebuild
 export GIT_SSH=$WORKDIR/ssh-wrv-push
 
 cd $WORKDIR

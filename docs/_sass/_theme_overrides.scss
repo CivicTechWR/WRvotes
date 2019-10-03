@@ -146,7 +146,7 @@ body {
   }
 
   .aside-box {
-    background-color: $blue;
+    background-color: $purple;
     color: $light;
     padding: 2rem;
     margin-bottom: 1rem;
@@ -186,6 +186,16 @@ body {
       border-left: 4px solid $dark;
     }
 
+
+    &.purple {
+      .content {
+        border-left: 4px solid $purple;
+      }
+
+      a {
+        color: $purple;
+      }
+    }
 
     &.pink {
       .content {
@@ -294,6 +304,10 @@ body {
     background-color: $mint;
   }
 
+  .bg-purple {
+    background-color: $purple;
+  }
+
   .blue-text {
     color: $blue;
   }
@@ -312,6 +326,10 @@ body {
 
   .mint-text {
     color: $mint;
+  }
+
+  .purple-text {
+    color: $purple;
   }
 
   .big-text {
