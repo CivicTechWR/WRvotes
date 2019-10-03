@@ -10,10 +10,10 @@ body {
   overflow-wrap: break-word;
 
   a {
-    color: $blue;
+    color: $purple;
 
     &:hover, &:focus {
-      color: $pink;
+      color: #6e26ab;
     }
   }
 
@@ -126,24 +126,24 @@ body {
   }
 
   .content-box {
-    background: transparentize($blue, 0.95);
-    border-left: 6px solid $blue;
+    background: transparentize($deepYellow, 0.95);
+    border-left: 6px solid $deepYellow;
     padding: 0.5em 2em 0 2em;
     color: $dark;
-    margin-bottom: 2em; 
+    margin-bottom: 2em;
     overflow-wrap: break-word;
   }
 
-  .content-box .spacer { 
+  .content-box .spacer {
     padding-left: 1em;
-    border-left: 6px solid $blue;
+    border-left: 6px solid $deepYellow;
     margin-top: 2em;
-  } 
+  }
 
-  .toc-link { 
+  .toc-link {
     margin-top: 3em;
     font-size: smaller;
-  } 
+  }
 
   .aside-box {
     background-color: $blue;
@@ -165,10 +165,10 @@ body {
       font-weight: normal;
     }
 
-    &.green { 
+    &.green {
       background-color: $green;
     }
-  } 
+  }
 
   .standout-box {
     background: $light;
@@ -204,6 +204,16 @@ body {
 
       a {
         color: $yellow;
+      }
+    }
+
+     &.deepYellow {
+      .content {
+        border-left: 4px solid $deepYellow;
+      }
+
+      a {
+        color: $deepYellow;
       }
     }
 
@@ -307,7 +317,6 @@ body {
   .big-text {
     font-size: 3em;
     line-height: 1.2;
-    margin-bottom: 20px;
   }
 
   .medium-text {
@@ -315,6 +324,12 @@ body {
     font-weight: 900;
     line-height: 1.2;
     margin-bottom: 20px;
+  }
+
+  .countdown-container {
+    .countdown-days {
+      font-size: 2rem;
+    }
   }
 
   .no-margin-top {
@@ -351,7 +366,6 @@ body {
     .big-text {
       font-size: 2em;
       line-height: 1.2;
-      margin-bottom: 10px;
     }
   }
 }

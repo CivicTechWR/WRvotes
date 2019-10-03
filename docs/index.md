@@ -5,11 +5,14 @@ use-leaflet: true
 ---
 
 <section class="flex justify-center">
-  <article class="standout-box blue large">
-    <div class="big-text blue-text header" id="map-box" data-aos="fade-left">
-    The Canadian Federal election is on October 21, 2019.
+  <article class="standout-box deepYellow large">
+    <div class="big-text header" id="map-box" data-aos="fade-left">
+    Countdown to the federal election
     </div>
-    <div class="content">
+    <div class="countdown-container" style="font-size: 1.5rem; margin-bottom: 48px;" data-aos="fade-left">
+      <div class="countdown-days">
+        60 days until October 21, 2019
+      </div>
     </div>
     <div class="content" data-aos="fade-up">
      <p>Search for information about where to vote and who is running in your riding.</p>
@@ -26,3 +29,4 @@ use-leaflet: true
 <script src="https://unpkg.com/leaflet-pip@1.1.0/leaflet-pip.js"></script>
 <script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/show-map.js"></script>
+<script src="{{ site.baseurl }}/assets/js/countdown.js"></script>
