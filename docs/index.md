@@ -11,7 +11,8 @@ use-leaflet: true
     </div>
     <div class="countdown-container" style="font-size: 1.5rem; margin-bottom: 48px;" data-aos="fade-left">
       <div class="countdown-days">
-        60 days until October 21, 2019
+        <!--60 days until October 21, 2019-->
+        Today is Election Day
       </div>
     </div>
     <div class="content" data-aos="fade-up">
