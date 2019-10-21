@@ -10,10 +10,10 @@ use-leaflet: true
     Countdown to the federal election
     </div>
     <div class="countdown-container" style="font-size: 1.5rem; margin-bottom: 48px;" data-aos="fade-left">
-      <div class="countdown-days">
-        <!--60 days until October 21, 2019-->
-        Today is Election Day
-      </div>
+      <!--<div class="countdown-days">
+        60 days until October 21, 2019
+      </div>-->
+    Today is Election Day
     </div>
     <div class="content" data-aos="fade-up">
      <p>Search for information about where to vote and who is running in your riding.</p>
