@@ -13,7 +13,8 @@ use-leaflet: true
       <!--<div class="countdown-days">
         60 days until October 21, 2019
       </div>-->
-    Today is Election Day
+    <!--Today is Election Day-->
+      Election Day was on October 21, 2019
     </div>
     <div class="content" data-aos="fade-up">
      <p>Search for information about where to vote and who is running in your riding.</p>
