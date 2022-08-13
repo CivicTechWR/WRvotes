@@ -48,7 +48,7 @@ You can join us! Come to one of our meetups at
 <https://meetup.com/CivicTechWR/> to get involved.
 
 If you want to get in touch, email us at
-<a href="mailto:civictechwr.wrvotes@gmail.com">civictechwr.wrvotes@gmail.com</a>
+<a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
 .
 
 
@@ -80,7 +80,7 @@ bottom of each page on the site.
 
 Improve the content! Are we missing information about candidates, events,
 questionnaires or news coverage? Contact us at
-civictechwr.wrvotes@gmail.com and submit it to
+{{ contact_email}} and submit it to
 the site. Crowdsourcing resources helps improve the site for everyone.
 We currently could really use help with:
 
