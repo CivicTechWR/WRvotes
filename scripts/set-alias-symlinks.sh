@@ -45,7 +45,7 @@ then
     exit 3
 fi
 
-aliases=$(cat $alias_file | cut -f1 -d, )
+aliases=$(tail +2 $alias_file | cut -f1 -d, )
 
 for a in $aliases 
 do
