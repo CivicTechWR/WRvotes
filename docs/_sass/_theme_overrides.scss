@@ -10,10 +10,10 @@ body {
   overflow-wrap: break-word;
 
   a {
-    color: $purple;
+    color: $blue;
 
     &:hover, &:focus {
-      color: #6e26ab;
+      color: $pink;
     }
   }
 
@@ -126,8 +126,8 @@ body {
   }
 
   .content-box {
-    background: transparentize($deepYellow, 0.95);
-    border-left: 6px solid $deepYellow;
+    background: transparentize($blue, 0.95);
+    border-left: 6px solid $blue;
     padding: 0.5em 2em 0 2em;
     color: $dark;
     margin-bottom: 2em;
@@ -136,7 +136,7 @@ body {
 
   .content-box .spacer {
     padding-left: 1em;
-    border-left: 6px solid $deepYellow;
+    border-left: 6px solid $blue;
     margin-top: 2em;
   }
 
