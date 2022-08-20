@@ -1,9 +1,14 @@
-#!/bin/bash -x
+#!/bin/bash 
 
 # Given a file of aliases and  a path to a template file, create a
 # symlink of each alias to the template in the CURRENT folder.
 
 # Paul "Worthless" Nijjar, 2022-08-16
+
+# (This does not work well for the ward listing. The following may be
+# helpful: 
+# for i in `/bin/ls *.html | grep -v "Ward"`; do echo $i; rm $i; done
+# )
 
 usage() {
   echo $0 [alias-file] [template-file]
@@ -49,5 +54,5 @@ aliases=$(tail +2 $alias_file | cut -f1 -d, )
 
 for a in $aliases 
 do
-  ln -sf $template $a 
+  ln -sf $template ${a}.html
 done
