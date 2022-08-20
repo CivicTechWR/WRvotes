@@ -30,6 +30,6 @@ Deployment With Cron onto Github
 - Make sure there is an appropriate SSH key in the VPS
 - Add SSH Deploy key to the project.
 - On the VPS, check out the code:
-  `git clone git@github.com:CivicTechWR/WRVotesFed wrvotesfed`
-- `cd wrvotesfed`
+  `git clone git@github.com:CivicTechWR/WRVotesMunicipal2022 wrvotes`
+- `cd wrvotes`
 - Add cronjob to force a rebuild every N minutes

@@ -1,6 +1,6 @@
 #!/bin/bash
  
-PYDIR=/home/pnijjar/wrvotesfed/scripts
+PYDIR=/home/pnijjar/wrvotes/scripts
 
 source "$PYDIR/venv/bin/activate"
 
