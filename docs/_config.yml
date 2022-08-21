@@ -18,7 +18,7 @@ teaser_limit_events_generic: 5
 teaser_limit_news: 5
 teaser_limit_surveys: 5
 
-google_calendar_id: kic9nk7sfv786tcrmfujlc46jg@group.calendar.google.com
+google_calendar_id: gnjujonnivepneq5mikitis6ms@group.calendar.google.com
 
 google_calendar_timezone: America/Toronto
 
@@ -29,6 +29,9 @@ contact_email: "civictechwr.wrvotes@gmail.com"
 # events_newsletter: "https://off-topic.kwlug.org/mailman/listinfo/waterlooregionvotes-events_off-topic.kwlug.org"
 
 election_over: false
+
+# Use ISO notation. This is used by countdown.js
+election_date: "2022-10-24T09:00"
 
 # This should be a number strictly greater than the number of votes
 # received by any candidate in any race. 
