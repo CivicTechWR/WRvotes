@@ -4,3 +4,5 @@ pytz>=2019.2
 datetime
 requests>=2.22.0
 gitpython>=3.0.2
+pandas>=1.4.3
+odfpy>=1.4.1
