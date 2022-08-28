@@ -9,7 +9,9 @@ Click a ward to show the
 candidates running there. For a more graphical approach, use the 
 [Interactive Map]({{site.url}}).
 
-{% assign ridings-sorted = site.data.internal.position-tags | sort: "PositionUniqueName" %}
+{% assign ridings-sorted = site.data.internal.position-tags | 
+sort: "PositionUniqueName" | 
+where_exp: "item", "item.PositionUniqueName contains '-Ward-'" %}
 <div class="content-box" data-aos="fade-up">
   <ul>
     {% for riding in ridings-sorted %}
