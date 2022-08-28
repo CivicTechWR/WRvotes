@@ -10,9 +10,8 @@ use-leaflet: true
     Election Day is October 24, 2022.
     </div>
     <div class="countdown-container" style="font-size: 1.5rem; margin-bottom: 48px;" data-aos="fade-left">
-      <!--<div class="countdown-days">
-        60 days until October 21, 2019
-      </div>-->
+      <div class="countdown-days">
+      </div>
     <!--Today is Election Day-->
     </div>
     <div class="content" data-aos="fade-up">
