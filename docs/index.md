@@ -18,7 +18,8 @@ use-leaflet: true
      <p>Type your address to identify your ward.</p>
      <div id="map-searchbar"></div>
      <div id="map"></div>
-     <p><strong>Note:</strong> The map loads more slowly than the rest of the page, so be patient, or use the <a href="/ridings/">ridings listing</a>.</p>
+     <p><strong>Note:</strong> The map loads more slowly than the rest
+     of the page, so be patient, or use the <a href="/wards/">ward listing</a>.</p>
     </div>
   </article>
 </section>
