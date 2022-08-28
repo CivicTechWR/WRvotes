@@ -22,7 +22,7 @@ had put together in the past:
 
 There is also a good [Civics 101
 recording](https://soundcloud.com/user-216833142/communitech-summer-school-civics-101) put on by 
-Communitech that featured retiring Regional Chair Ken Seiling. 
+Communitech that featured past Regional Chair Ken Seiling. 
 
 If you have other accounts, or if you are/were a sitting politician
 and would like to add your experiences, contact us.
@@ -59,7 +59,8 @@ councils.
 
 Serving as an elected official means balancing competing interests,
 and the nature of the job means that politicians cannot please
-everybody. 
+everybody. With social media, the [pressure has gotten
+intense](https://www.cbc.ca/news/canada/kitchener-waterloo/waterloo-region-kitchener-cambridge-municipal-election-campaign-1.6559468).
 
 In addition, elected officials get frustrated when the press
 misrepresents their statements or actions. 
@@ -75,7 +76,7 @@ Many elected officials also manage budgets.
 Regional and area municipal politicians sit on various steering
 committees within their level of government.
 
-Almost all muncipal politicians and school board trustees interact
+Almost all municipal politicians and school board trustees interact
 with the public and address their concerns. 
 
 ### Is being a municipal politician a full-time job?
