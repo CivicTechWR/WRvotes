@@ -6,3 +6,5 @@ requests>=2.22.0
 gitpython>=3.0.2
 pandas>=1.4.3
 odfpy>=1.4.1
+pyaml>=21.10.1
+requests-file>=1.5.1

@@ -1,0 +1,47 @@
+sources:
+  nextcloud_ods:
+      url: file:///home/pnijjar/personal/programming/2022-08-12-waterlooregionvotes/WRV-2022.ods
+      localfile: WRV-2022.ods
+  poliblog:
+      url: file:///home/pnijjar/personal/programming/2022-08-12-waterlooregionvotes/2022-Municipal-v02.ods
+      localfile: poliblog.ods
+
+gitdir: /home/pnijjar/src/WRVotesMunicipal2022/
+
+# Should be relative to gitdir
+targetdir: docs/_data/sync
+
+dests:
+  overrides.csv:
+      source: 'nextcloud_ods'
+      sheet: 'overrides'
+      format: ods   # It is kind of gross to put this here but it 
+                    # might be the lesser evil
+  events.csv:
+      source: 'nextcloud_ods'
+      sheet: 'events'
+      format: ods
+  media.csv:
+      source: 'nextcloud_ods'
+      sheet: 'media'
+      format: ods
+  poliblog.csv:
+      source: 'poliblog'
+      sheet: 'Candidates'
+      format: ods
+      no_copy: true
+
+merge_poliblog: true
+
+debug: 
+  screen:
+    enable: true
+    threshold: 0
+  file:
+    enable: true
+    # filename: '/home/pnijjar/logs/csv-get.log'
+    filename: '/tmp/csv-get.log'
+    threshold: 1
+
+
+
