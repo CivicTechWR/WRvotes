@@ -29,4 +29,3 @@ use-leaflet: true
 <script src="https://unpkg.com/leaflet-pip@1.1.0/leaflet-pip.js"></script>
 <script src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/show-map.js"></script>
-<script src="{{ site.baseurl }}/assets/js/countdown.js"></script>
