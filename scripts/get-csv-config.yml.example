@@ -31,6 +31,10 @@ dests:
       format: ods
       no_copy: true
 
+# This is another gross thing, but nominees.csv is not really 
+# a dest.
+nominees: 'nominees.csv'
+
 merge_poliblog: true
 
 debug: 

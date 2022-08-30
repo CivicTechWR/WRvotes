@@ -22,7 +22,6 @@ TMPDIR=tempfile.TemporaryDirectory()
 
 DEBUG_DEFAULT_LEVEL=2
 CONFIG_DEFAULT='get-csv-config.yml'
-NOMINEES='nominees.csv'
 
 # Sigh. Should this be global? Probably not.
 config = None
@@ -36,6 +35,31 @@ def load_config(configfile=CONFIG_DEFAULT):
     with open(configfile, "r") as c:
         cfg = yaml.safe_load(c)
         return cfg
+
+# -----------------------------------
+def check_changes(filename, candidate, changed_files):
+    """ Check if candidate is different than the original
+        file. 
+
+        filename: a string
+        candidate: a path
+        changed_files: an array that gets modified
+    """
+
+    origfile="{}/{}/{}".format(
+      config['gitdir'],
+      config['targetdir'],
+      filename)
+
+    if not filecmp.cmp(candidate, origfile):
+        debug("Found different files: "
+              "{}. Overwriting.".format(filename),
+             0)
+        shutil.copy(candidate, origfile)
+        changed_files.append(filename)
+
+    else:
+        debug("{}: files are the same".format(syncdest),0)
 
 
 # ------------------------------------
@@ -170,45 +194,22 @@ for syncdest in config['dests']:
 
     # Don't compare all files
     if not ('no_copy' in dest) or (not dest['no_copy']): 
-        origfile="{}/{}/{}".format(
-          config['gitdir'],
-          config['targetdir'],
-          syncdest)
-
-        if not filecmp.cmp(candidate, origfile):
-            debug("Found different files: "
-                  "{}. Overwriting.".format(syncdest),
-                 0)
-            shutil.copy(candidate, origfile)
-            changed_files.append(syncdest)
-
-        else:
-            debug("{}: files are the same".format(syncdest),0)
+        check_changes(syncdest, candidate, changed_files)
 
 
-
-# TODO: Merge poliblog
 if config['merge_poliblog']: 
-    new_nominees="{}/{}".format(TMPDIR.name, NOMINEES,)
-    orig_nominees="{}/{}/{}".format(
-          config['gitdir'],
-          config['targetdir'],
-          NOMINEES)
-
+    new_nominees="{}/{}".format(TMPDIR.name, config['nominees'],)
     sync_poliblog(
         destdict['poliblog.csv'],
         destdict['overrides.csv'],
         new_nominees,
         )
 
-    # Ugh this should be a factored out helper function.
-    if not filecmp.cmp(new_nominees, orig_nominees):
-        debug("Found different files: "
-              "{}. Overwriting.".format(NOMINEES))
-        shutil.copy(new_nominees, orig_nominees)
-        changed_files.append(NOMINEES)
-
-
+    check_changes(
+        config['nominees'], 
+        new_nominees, 
+        changed_files,
+        )
 
 # Check in
 
