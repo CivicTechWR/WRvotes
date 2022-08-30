@@ -9,6 +9,10 @@ use-leaflet: true
     <div class="big-text header" id="map-box" data-aos="fade-left">
     Election Day is October 24, 2022.
     </div>
+    <div data-aos="fade-left">
+    Use this site for information about the election, and the
+    candidates asking for your vote!
+    </div>
     <div class="countdown-container" style="font-size: 1.5rem; margin-bottom: 48px;" data-aos="fade-left">
       <div class="countdown-days">
       </div>
