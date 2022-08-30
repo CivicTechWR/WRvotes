@@ -10,6 +10,7 @@ import argparse, sys, os
 import pandas
 import yaml
 import shutil
+import argparse
 
 from git import Repo
 from sync_poliblog import sync_poliblog
@@ -20,19 +21,34 @@ from sync_poliblog import sync_poliblog
 
 TMPDIR=tempfile.TemporaryDirectory()
 
-DEBUG_DEFAULT_LEVEL=2
-CONFIG_DEFAULT='get-csv-config.yml'
-
 # Sigh. Should this be global? Probably not.
 config = None
+args = None
 
+
+# ------ PARSE ARGS -------
+parser = argparse.ArgumentParser(
+  description = "Pull WaterlooRegionVotes files from the INTERNET and"
+      " convert to csv files"
+  )
+
+parser.add_argument("--configfile",
+  help = "Where to find the config YAML",
+  default = 'get-csv-config.yml',
+  )
+parser.add_argument("--debuglevel",
+  help = "How verbose to be",
+  type = int,
+  default = 2,
+  )
+args = parser.parse_args()
 
 # ---------------------------------
-def load_config(configfile=CONFIG_DEFAULT):
+def load_config():
     # From:
     # https://dev.to/jmarhee/using-pyyaml-to-support-yaml-and-json-configuration-files-in-your-cli-tools-1694
 
-    with open(configfile, "r") as c:
+    with open(args.configfile, "r") as c:
         cfg = yaml.safe_load(c)
         return cfg
 
@@ -54,12 +70,12 @@ def check_changes(filename, candidate, changed_files):
     if not filecmp.cmp(candidate, origfile):
         debug("Found different files: "
               "{}. Overwriting.".format(filename),
-             0)
+             2)
         shutil.copy(candidate, origfile)
         changed_files.append(filename)
 
     else:
-        debug("{}: files are the same".format(syncdest),0)
+        debug("{}: files are the same".format(syncdest),2)
 
 
 # ------------------------------------
@@ -78,15 +94,18 @@ def setup_debug_log():
 
 
 # ---------------------------------------
-def debug(msg,level=DEBUG_DEFAULT_LEVEL):
+def debug(msg, level):
     """ Add debug information to screen and or file. """
 
     dbg = config['debug']
+    
 
-    if dbg['screen']['enable'] and level <= dbg['screen']['threshold']:
+    if dbg['screen']['enable'] and \
+      level <= max(args.debuglevel, dbg['screen']['threshold']):
         print(msg)
 
-    if DEBUG_FILEHANDLE and level <= dbg['file']['threshold']:
+    if DEBUG_FILEHANDLE and \
+      level <= max(args.debuglevel, dbg['file']['threshold']):
         DEBUG_FILEHANDLE.write("{}: ".format(
           datetime.datetime.now())
           )
@@ -143,7 +162,7 @@ for syncfile in config['sources']:
         debug("Saved {} to {}".format(
             src['url'],
             candidate,
-            ),0)
+            ),1)
     
     else:
         debug("Oops. Received status "
@@ -180,7 +199,7 @@ for syncdest in config['dests']:
         debug("Saved {} to {}".format(
             syncdest,
             candidate,
-            ),0)
+            ),1)
 
     elif dest['format'] == 'csv':
         shutil.copy(src, candidate)
@@ -213,7 +232,7 @@ if config['merge_poliblog']:
 
 # Check in
 
-debug("changed_files is {}".format(changed_files),0)
+debug("changed_files is {}".format(changed_files),3)
 if changed_files:
     repo = Repo(config['gitdir'])
     origin = repo.remote('origin')
@@ -225,7 +244,7 @@ if changed_files:
     commit_msg += "{} from web editor".format( 
                      ", ".join(changed_files))
 
-    debug(commit_msg, 1)
+    debug(commit_msg, 2)
 
     changed_with_path = map(
       lambda x: "{}/{}".format(config['targetdir'], x),
