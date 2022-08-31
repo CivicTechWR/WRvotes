@@ -162,7 +162,7 @@ for syncfile in config['sources']:
         debug("Saved {} to {}".format(
             src['url'],
             candidate,
-            ),1)
+            ),2)
     
     else:
         debug("Oops. Received status "
@@ -199,7 +199,7 @@ for syncdest in config['dests']:
         debug("Saved {} to {}".format(
             syncdest,
             candidate,
-            ),1)
+            ),3)
 
     elif dest['format'] == 'csv':
         shutil.copy(src, candidate)
