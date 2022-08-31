@@ -256,6 +256,4 @@ if changed_files:
 else:
     debug("All files are the same. Not committing.", 2)
 
-   
-
 cleanup()

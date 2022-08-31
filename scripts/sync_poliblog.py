@@ -195,7 +195,7 @@ def sync_poliblog(srcfile, overrides, mergefile):
                   slugify(fullname),
                   position_tag,
                   )
-                if (row['Withdrawn'] == "TRUE"):
+                if (clean_entry(row['Withdrawn'].upper()) == "TRUE"):
                     mergedict[row_key]['Withdrawn'] = "Y"
 
 
