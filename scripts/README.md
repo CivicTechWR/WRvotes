@@ -1,5 +1,5 @@
-Deployment
-----------
+Deployment (update-google-calendar)
+-----------------------------------
 
 - Generate a Google service account. It needs access to the Calendar API, but does not need roles. 
   + <https://console.developers.google.com>
@@ -18,6 +18,7 @@ Deployment
   needs.
 
 - Run `update-google-calendar.py`
+
 
 
 Deployment With Cron onto Github
