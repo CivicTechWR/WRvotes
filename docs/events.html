@@ -18,6 +18,18 @@ Please email us about it!
   <p>
   You can also view this calendar <a href="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}&hl=en">on
   its own page</a>.
+  </p></p>
+  <p>You can subscribe to this calendar's events using its <a
+  href="https://www.google.com/calendar/ical/{{
+  site.google_calendar_id }}/public/basic.ics">iCal
+  feed</a>
+
+  {%- if site.google_calendar_rss -%}
+  &nbsp; or its <a href="{{ site.google_calendar_rss }}">RSS feed</a>
+  {%- endif -%}
+  . (Learn more about <a
+  href="https://feeds.off-topic.kwlug.org/pages/what-are-feeds.html">how
+  to use feeds.</a>)
   </p>
 
   {% if site.events_newsletter -%}
