@@ -3,19 +3,31 @@ layout: default
 title: Ward List
 ---
 
-# Ward List
+# Municipal Ward Listings
 
-Click a ward to show the
-candidates running there. For a more graphical approach, use the 
-[Interactive Map]({{site.url}}).
+Each of the seven municipalities in Waterloo Region
+are divided into wards. Clicking a ward will show all
+the regional, municipal, and school board elections taking place in
+that ward.
 
-{% assign ridings-sorted = site.data.internal.position-tags | 
-sort: "PositionUniqueName" | 
-where_exp: "item", "item.PositionUniqueName contains '-Ward-'" %}
-<div class="content-box" data-aos="fade-up">
-  <ul>
-    {% for riding in ridings-sorted %}
-      <li><a href="./{{ riding.PositionUniqueName }}">{{ riding.PositionDesc }}</a></li>
+If you would prefer a more graphical approach, use the [Ward
+Map]({{site.url}}).
+
+{% for municipality in site.data.internal.municipality-map %}
+  <div class="content-box" data-aos="fade-up">
+    <h2>{{municipality.MunicipalityType}} of {{municipality.Name}}</h2>
+
+    {% assign wards-unsorted = site.data.internal.position-tags
+      | where: "WardMunicipality",municipality.Name %}
+    {% assign wards-sorted = wards-unsorted | sort: "PositionUniqueName" %}
+
+    <ul>
+    {% for ward in wards-sorted %}
+      <li><a href="./{{ ward.PositionUniqueName }}">{{ ward.PositionDesc }}</a></li>
     {% endfor %}
-  </ul>
-</div>
+    </ul>
+  </div>
+
+{% endfor %}
+
+
