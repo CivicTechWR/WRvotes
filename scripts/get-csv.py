@@ -75,7 +75,7 @@ def check_changes(filename, candidate, changed_files):
         changed_files.append(filename)
 
     else:
-        debug("{}: files are the same".format(syncdest),2)
+        debug("{}: files are the same".format(filename),2)
 
 
 # ------------------------------------
@@ -164,6 +164,11 @@ for syncfile in config['sources']:
             candidate,
             ),2)
     
+
+        # Fine. Copy source files too.
+        if not ('no_copy' in src) or (not src['no_copy']): 
+            check_changes(syncfile, candidate, changed_files)
+
     else:
         debug("Oops. Received status "
               "{} when downloading {} ".format(
