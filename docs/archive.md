@@ -9,8 +9,9 @@ layout: page
   </div><div>
 
 <ul>
-  <li><a href="https://civictechwr.github.io/WRVotesFed">2019 Federal Election</a></li>
+  <li><a href="https://civictechwr.github.io/WRVotesFed">2019 Federal
+  Election WaterlooRegionVotes site</a></li>
   <li><a href="https://civictechwr.github.io/WRvotes">2018 Municipal
-  Election </a></li>
+  Election WaterlooRegionVotes site</a></li>
 </ul>
 
