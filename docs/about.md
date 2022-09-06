@@ -24,9 +24,6 @@ layout: page
 </div>
 
 
-Waterloo Region Votes  is a project of [CivicTechWR](https://civictechwr.org), a
-local group that attempts to improve the lives of residents in
-Waterloo Region through civic technology.
 
 Over 9000 people used the municipal iteration of the site during the
 2018 election and the project was featured in the [Waterloo Region
@@ -38,21 +35,20 @@ KW](https://www.cbc.ca/news/canada/kitchener-waterloo/waterloo-region-votes-why-
 
 ## Who is responsible for this?
 
-This site is a project of CivicTechWR, a local volunteer group that
-strives to improve the lives of residents in Waterloo Region through
-civic
-technology.
+Waterloo Region Votes  is a project of [CivicTechWR](https://civictechwr.org), a
+local group that attempts to improve the lives of residents in
+Waterloo Region through civic technology.
 
 
-You can join us! Come to one of our meetups at
-<https://meetup.com/CivicTechWR/> to get involved.
-
-If you want to get in touch, email us at
+You can join us! 
+Email us at
 <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
-.
+ and we will get you connected to our Slack.
 
 
 ## Are you a federally registered third party?
+
+[NEEDED FOR MUNICIPAL?]
 
 No. As of June 13, 2019, there are new [Elections Canada rules for
 third
