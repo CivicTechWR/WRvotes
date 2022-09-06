@@ -162,12 +162,12 @@ for syncfile in config['sources']:
         debug("Saved {} to {}".format(
             src['url'],
             candidate,
-            ),2)
+            ), 3)
     
 
         # Fine. Copy source files too.
         if not ('no_copy' in src) or (not src['no_copy']): 
-            check_changes(syncfile, candidate, changed_files)
+            check_changes(src['localfile'], candidate, changed_files)
 
     else:
         debug("Oops. Received status "
