@@ -6,12 +6,9 @@ Or we should prohibit this!
 
 {%- assign first-char-website = include.site
   | slice: 0 -%}
-{%- if first-char-website == '@' -%}
-  {%- assign website-url = include.site
-    | replace_first: '@','https://twitter.com/' -%}
-{%- elsif include.site contains '://' -%}
+{%- if include.site contains '://' -%}
   {%- assign website-url = include.site -%}
 {%- else -%}
-  {%- capture website-url -%}http://{{ include.site }}{%- endcapture -%}
+  {%- capture website-url -%}https://{{ include.site }}{%- endcapture -%}
 {%- endif -%}
 {{- website-url -}}
