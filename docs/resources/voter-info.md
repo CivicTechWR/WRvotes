@@ -145,7 +145,7 @@ Click your municipality's name for detailed information:
   voting.**
 - [Wilmot](https://www.wilmot.ca/en/township-office/whats-new-for-2022.aspx):
   In-person voting Oct 15, 16, 22, 23. **There is no in-person voting Oct 24.**
-  Internet voting from Oct 14 to Oct 24.
+  Internet and phone voting from Oct 14 to Oct 24.
 
 
 
@@ -254,7 +254,11 @@ and choosing the candidates that match your views most closely.
 
 #### How do I follow what is going on during the election?
 
-Local media provides lots of election coverage.
+Local media provides lots of election coverage. Here are a few hubs:
+- [CBC KW: Waterloo Region
+  Votes](https://www.cbc.ca/news/canada/kw/topic/Tag/Waterloo%20Region%20Votes%202022)
+- [New Hamburg Independent Municipal Election
+  Hub](https://www.newhamburgindependent.ca/newhamburg-on-news/municipal-election/)
 
 On Twitter you can track the
 [#wrvotes](https://twitter.com/hashtag/wrvotes) and
@@ -311,6 +315,14 @@ about it so we can publish it on this website!
 
 #### What other groups are working on election education?
 
+Bob Jonkman posts a candidate listing on his [poliblog
+site](https://poliblog.jonkman.ca/Poliblog-Elections/2022-10-24-Municipal-Election/).
+We use his data in our candidate listings -- thanks, Bob!
+
+Melissa Bowman publishes a blog about urban issues and local politics
+at <https://citified.substack.com/> . Although the blog is relatively
+even-handed the blog reflects Bowman's own views.
+
 The Region of Waterloo links to election information for the different
 municipalities at <http://wrvotes.com> .
 
@@ -320,6 +332,14 @@ political office. Several election candidates during this election
 credit the campaign school for inspiring them to run for office. They
 have a Twitter account here:
 [@wrwomenrun](https://twitter.com/wrwomenrun).
+
+There is a related initiative called [The Kitchen
+Cabinet](https://thekitchencabinet.ca/) which aims to support women,
+trans and non-binary candidates in the election.
+
+[For a Better Waterloo Region](https://linktr.ee/FABWR) is largely an
+advocacy group for progressive causes, but did hold one information
+meeting for potential candidates.
 
 
 #### I don't trust your candidate listings. Where can I find the real ones?
