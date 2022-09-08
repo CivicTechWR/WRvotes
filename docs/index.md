@@ -19,7 +19,8 @@ use-leaflet: true
     <!--Today is Election Day-->
     </div>
     <div class="content" data-aos="fade-up">
-     <p>Type your address to identify your ward.</p>
+     <p>Type your address to identify your ward, or click your
+     location on the map.</p>
      <div id="map-searchbar"></div>
      <div id="map"></div>
      <p><strong>Note:</strong> The map loads more slowly than the rest
