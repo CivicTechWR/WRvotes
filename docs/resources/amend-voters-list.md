@@ -7,11 +7,15 @@ layout: page
 
 You can use <https://voterlookup.ca> to check whether you are on the
 voters' list. If your information is missing or incorrect, then you
-may have to register yourself via your municipality's municipal
+have to register yourself via your municipality's municipal
 clerk.
 
 The instructions for doing this vary by municipality. Clicking the
 municipality name should take you to the specific information page.
+
+Note that in order to amend your information on the voters' list you
+will have to provide appropriate [voter
+identification](https://www.ontario.ca/laws/regulation/130304). 
 
 - [Cambridge](https://www.cambridge.ca/en/learn-about/Elections.aspx):
   Fill out form EL 15 and either mail it to the City Clerk or complete
