@@ -33,7 +33,8 @@ identification](https://www.ontario.ca/laws/regulation/130304).
 
 - [Waterloo](https://www.waterloo.ca/en/government/register-to-vote.aspx):
   There is a form on the linked page which lets you look up and
-  register to vote.
+  register to vote. You will also be able to register at your voting
+  location.
 
 - [Wellesley](https://forms.wellesley.ca/Voter-List-Look-up): Use the
   linked form to check whether you are registered. If you are not then you
@@ -45,7 +46,8 @@ identification](https://www.ontario.ca/laws/regulation/130304).
 
 - [Wilmot](https://www.wilmot.ca/en/township-office/voters--list.aspx):
   Use the linked form to check whether you are registered. If you are
-  not then you should be prompted for information to register. 
+  not then you should be prompted for information to register. You can
+  also register at the Township office.
 
 - [Woolwich](https://www.woolwich.ca/en/township-services/information-for-voters.aspx):
   Apply to the Township Clerk to amend your information. Contact 
