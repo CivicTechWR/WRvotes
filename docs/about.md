@@ -46,21 +46,14 @@ Email us at
  and we will get you connected to our Slack.
 
 
-## Are you a federally registered third party?
+## Are you a third party advertiser?
 
-[NEEDED FOR MUNICIPAL?]
+No. According to the [Ontario government definition of a third party
+advertiser](https://www.ontario.ca/document/2022-third-party-advertisers-guide/third-party-advertising),
+waterlooregionvotes.org is not a third party advertiser. This website
+does not support or oppose any particular candidate; it exists to
+increase voter engagement. 
 
-No. As of June 13, 2019, there are new [Elections Canada rules for
-third
-parties](https://www.elections.ca/content.aspx?section=pol&document=index&dir=thi/roadmap&lang=e).
-Individuals, corporations or groups spending $500 or more on regulated
-activities that take place during the pre-election period or election
-period need to register as a third party to conduct regulated
-activities like partisan activities, election surveys, partisan
-advertising and election advertising.
-
-CivicTechWR’s only expenditure on waterlooregionvotes.org is domain
-registration for the website.
 
 
 ## How to Help
