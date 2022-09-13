@@ -6,9 +6,6 @@ layout: page
 # Information for Voters
 {:.no_toc}
 
-**Note:** This information is still being reviewed for the 2022
-election, and some of it may be out of date.
-
 {::options parse_block_html="true" /}
 <div class="flex gutters">
 
@@ -96,11 +93,10 @@ If your information is correct you will probably receive a voter card
 in the mail.
 
 If your information is not correct or you are not present on the site
-then life gets complicated. You need to contact your municipality (in
-particular the Clerk's office) to get registered. 
-
-[WHAT ABOUT VOTING DAY?]
-[NEED SUMMARY]
+then life gets complicated. Different municipalities have different
+procedures for amending your information on the Voters' List. See the
+[Registering on the Voters' List](/resources/amend-voters-list) page
+for information specific to your municipality.
 
 
 #### I am a student. Do I get to vote?
