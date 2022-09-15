@@ -36,13 +36,11 @@ up news items with surveys.
 
 {% if media-list.size > 0 %}
   <div class="content-box">
-    {% include list-media-items.html
-      item-list=media-list
+    {% include list-media-split.html
+      media-list=media-list
       race-id="news"
-      type="news"
-      header="All News Items, Opinion Pieces, Surveys, and Recordings"
       teaser-limit=-1
-      big-header=true %}
+      %}
   </div>
 {% endif %}
 
