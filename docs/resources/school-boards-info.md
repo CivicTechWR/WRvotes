@@ -55,8 +55,6 @@ However, if you qualify then you may choose to register with one of
 the other three systems. You may only vote for the school board
 nominees in your school board.
 
-[How does this relate to the schools your children attend?]
-
 In our candidate listings we list nominees for all four school boards.
 Pay attention only to the school board that applies to you.
 
@@ -70,4 +68,4 @@ school board.
 ### May I change what school board I vote for?
 
 If you are eligible to support a different school board, you may do so
-by changing your information on the voter list.
+by changing your information on the voters' list.
