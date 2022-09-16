@@ -19,25 +19,27 @@ where:"PositionUniqueName",ward-id | first -%}
 {% assign races-split = municipal-info.Races | split: ',' %}
 
 <div class="flex gutters">
-  <aside class="aside-box green" data-aos="fade-up">
+  <div class="aside">
+    <aside class="aside-box blue" data-aos="fade-left">
 
-      <header><h2 id="toc">On This Page</h2></header>
-      <ul>
-        {% for race in races-split %}
-          {% if race == "_SELF" %}
-            {% assign race-id = ward-id %}
-          {% else %}
-            {% assign race-id = race %}
-          {% endif %}
+        <header><h2 id="toc">On This Page</h2></header>
+        <ul>
+          {% for race in races-split %}
+            {% if race == "_SELF" %}
+              {% assign race-id = ward-id %}
+            {% else %}
+              {% assign race-id = race %}
+            {% endif %}
 
-          {% assign race-info = site.data.internal.position-tags |
-            where:"PositionUniqueName",race-id | first -%}
-          <li><a href="#{{ race-id | slugify }}-wrapper">{{
-            race-info.PositionDesc }}</a></li>
-        {% endfor %}
-      </ul>
+            {% assign race-info = site.data.internal.position-tags |
+              where:"PositionUniqueName",race-id | first -%}
+            <li><a href="#{{ race-id | slugify }}-wrapper">{{
+              race-info.PositionDesc }}</a></li>
+          {% endfor %}
+        </ul>
 
-  </aside>
+    </aside>
+  </div>
 
   <div class="main">
 
