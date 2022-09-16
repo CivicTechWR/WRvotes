@@ -13,11 +13,32 @@ where:"PositionUniqueName",ward-id | first -%}
 
 <h1>Who is Running? {{ ward-info.PositionDesc }}</h1>
 
+
 {% assign municipal-info = site.data.internal.municipality-map |
   where:"Name",ward-info.WardMunicipality | first %}
 {% assign races-split = municipal-info.Races | split: ',' %}
 
 <div class="flex gutters">
+  <aside class="aside-box green" data-aos="fade-up">
+
+      <header><h2 id="toc">On This Page</h2></header>
+      <ul>
+        {% for race in races-split %}
+          {% if race == "_SELF" %}
+            {% assign race-id = ward-id %}
+          {% else %}
+            {% assign race-id = race %}
+          {% endif %}
+
+          {% assign race-info = site.data.internal.position-tags |
+            where:"PositionUniqueName",race-id | first -%}
+          <li><a href="#{{ race-id | slugify }}-wrapper">{{
+            race-info.PositionDesc }}</a></li>
+        {% endfor %}
+      </ul>
+
+  </aside>
+
   <div class="main">
 
     {% for race in races-split %}
@@ -30,7 +51,7 @@ where:"PositionUniqueName",ward-id | first -%}
       <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
 
         {% include list-nominees.html race-id=race-id
-           show-toc-link=false hide-details=false
+           show-toc-link=true hide-details=false
            hide-position-desc=false %} 
 
       </div>
