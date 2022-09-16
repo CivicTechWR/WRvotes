@@ -163,6 +163,14 @@ identity. See the [voters' and
 identification](https://www.ontario.ca/document/2022-voters-guide-ontario-municipal-council-and-school-board-elections/voters-list-and)
 section of the 2022 Voters' Guide for more information.
 
+#### Why are there four different school boards listed? Which do I vote for?
+
+Everybody who is eligible to vote is assigned to a school board. By
+default this is the English public school board (WRDSB). 
+
+For more information, see our page containing [information about
+school board elections](/resources/school-boards-info).
+
 
 #### There are a lot of positions to vote for! Do I have to vote for all of them?
 
