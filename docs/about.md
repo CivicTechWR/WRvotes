@@ -55,6 +55,36 @@ does not support or oppose any particular candidate; it exists to
 increase voter engagement. 
 
 
+## How do you select news and media items for the site? What counts as an opinion?
+
+This site is manually curated. Broadly speaking, we link to media items that help voters learn about their candidates and decide which ones to support. There are some judgment calls involved, but here are our rules of thumb: 
+
+- Many organizations and special interest groups publish surveys or endorsement lists. We almost always link to these.
+- We usually link to candidate profiles published by local media organizations as "News".
+- We sometimes link to profiles of outgoing candidates.
+- We link to some (but not all) discussions of candidates published on
+  social media, usually as "Opinion" pieces. The guiding principles
+  are
+  whether the article helps voters learn something new about their
+  candidates, or learn about issues that have come up during the election.
+
+"Opinion" pieces are an especially fuzzy area. We do not link to every
+opinion piece we encounter. There are good reasons to read opinion
+items with a skeptical eye. Opinions pieces are often authored by
+pseudo-anonymous people. Sometimes opinion pieces are written by a
+person associated with a particular campaign, or somebody who pretends
+to be neutral but has a strong agenda. Sometimes they contain
+statements that are hyperbolic or incorrect. Opinion pieces can still
+be useful, but do not rely upon them too heavily. They often
+illustrate conversations and controversies that come up during the
+campaign.
+
+Similarly, you should exercise caution when reading endorsement lists. Say the Society for Pineapple on Pizza (SPoP) endorses Candidate A. This means that SPoP believes Candidate A to be more closely aligned with its goals than other candidates. It does not mean that Candidate A actually supports SPoP more than non-endorsed candidates. It does not mean you should automatically vote for Candidate A if you support pineapple on pizza; nor should you automatically reject Candidate A if you oppose it. One of the nice things about municipal elections is that voters from very different political orientations often end up supporting the same candidate. Whether you support or oppose SPoP, looking through its endorsement list can give you a rough sense of which candidates might align with your views.
+
+This website does not endorse the content of any particular linked material, or any particular candidate. For example, we are happy to link to endorsement lists published by groups opposed to each other. 
+
+If we do not see a particular resource we won't be able to link to it. If you see something we have missed, please send it along! We do not promise to link everything we are sent, but we will consider it all. 
+
 
 ## How to Help
 
