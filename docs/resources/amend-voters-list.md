@@ -28,8 +28,10 @@ identification](https://www.ontario.ca/laws/regulation/130304).
 
 - [North
   Dumfries](https://www.northdumfries.ca/en/township-services/information-for-voters-.aspx):
-  TBA. The website lists acceptable ID to be added to the voters'
-  list, but does not indicate how to go about it.
+  Register at the Township office at 2958
+  Greenfield Road, Ayr between 8:30am-4:30pm. You will need to bring
+  acceptable ID. It is possible you will not be able to register on
+  election day.
 
 - [Waterloo](https://www.waterloo.ca/en/government/register-to-vote.aspx):
   There is a form on the linked page which lets you look up and
@@ -47,7 +49,7 @@ identification](https://www.ontario.ca/laws/regulation/130304).
 - [Wilmot](https://www.wilmot.ca/en/township-office/voters--list.aspx):
   Use the linked form to check whether you are registered. If you are
   not then you should be prompted for information to register. You can
-  also register at the Township office.
+  also register at the Township office as late as election day.
 
 - [Woolwich](https://www.woolwich.ca/en/township-services/information-for-voters.aspx):
   Apply to the Township Clerk to amend your information. Contact 
