@@ -20,7 +20,8 @@ identification](https://www.ontario.ca/laws/regulation/130304).
 - [Cambridge](https://www.cambridge.ca/en/learn-about/Elections.aspx):
   Fill out form EL 15 and either mail it to the City Clerk or complete
   it at City Hall. The Cambridge website has a PDF of the form you can
-  print out and complete.
+  print out and complete. On election day you may also register at a
+  polling station.
 
 - [Kitchener](https://www.kitchener.ca/en/council-and-city-administration/voter-notification-card.aspx):
   You may change your information at City Hall or any
