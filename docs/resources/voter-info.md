@@ -73,20 +73,9 @@ Eligibility](https://www.ontario.ca/document/2022-voters-guide-ontario-municipal
 section of the provincial voter guide.
 
 
-#### I voted provincially. Am I registered to vote?
-
-Not necessarily. The provincial register of electors is distinct from
-the municipal one. The municipal List of Electors is managed by MPAC,
-the Municipal Property Assessment Corporation (MPAC).
-
-This will change in 2024. At that time [Elections Ontario will maintain the voter list](https://www.ontario.ca/document/2022-voters-guide-ontario-municipal-council-and-school-board-elections/voters-list-and#section-0)
-both municipally and provincially.
-
-
-
 #### How do I register to vote?
 
-MPAC maintains an
+MPAC (the Municipal Property Assessment Association) maintains an
 online tool for checking your voter registration at
 <https://www.voterlookup.ca> . This is the place to start.
 If your information is correct you will probably receive a voter card
@@ -97,6 +86,17 @@ then life gets complicated. Different municipalities have different
 procedures for amending your information on the Voters' List. See the
 [Registering on the Voters' List](/resources/amend-voters-list) page
 for information specific to your municipality.
+
+
+#### I voted provincially. Am I registered to vote?
+
+Not necessarily. The provincial register of electors is distinct from
+the municipal one. The municipal List of Electors is managed by MPAC,
+the Municipal Property Assessment Corporation (MPAC).
+
+This will change in 2024. At that time [Elections Ontario will maintain the voter list](https://www.ontario.ca/document/2022-voters-guide-ontario-municipal-council-and-school-board-elections/voters-list-and#section-0)
+both municipally and provincially.
+
 
 
 #### I am a student. Do I get to vote?
@@ -144,7 +144,6 @@ Click your municipality's name for detailed information:
   Internet and phone voting from Oct 14 to Oct 24.
 
 
-
 #### Do I need a voter card to vote? Do I need identification?
 
 If your area municipality allows voting in person then you do not need
@@ -180,6 +179,12 @@ vote will count for the positions you did vote for.
 Similarly, if a position elects more than one representative (for
 example, there are four Kitchener Regional Council representatives)
 then you are not obligated to cast four votes for that position.
+
+#### What are all the different positions for? What do these people do?
+
+See our [Municipal Government Overview](./municipal-structure) for an
+explanation of the different positions and their responsibilities.
+
 
 #### I thought Cambridge had a referendum on ranked ballots. What happened with that?
 
