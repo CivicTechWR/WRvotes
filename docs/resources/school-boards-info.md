@@ -5,11 +5,18 @@ layout: page
 
 Information About School Board Elections
 ----------------------------------------
-{:.no_toc}
 
+{::options parse_block_html="true" /}
+<div class="flex gutters">
+
+<div class="aside">
+<aside class="aside-box" data-aos="fade-left">
 * table of contents
 {:toc}
+</aside>
+</div>
 
+<div class="main">
 ### What is even happening?
 
 In addition to voting for members of municipal government, you may
@@ -69,3 +76,6 @@ school board.
 
 If you are eligible to support a different school board, you may do so
 by changing your information on the voters' list.
+
+</div>
+</div>

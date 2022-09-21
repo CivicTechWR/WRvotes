@@ -5,10 +5,18 @@ layout: page
 
 Municipal Government Overview
 ----------------------
-{:.no_toc}
 
+{::options parse_block_html="true" /}
+<div class="flex gutters">
+
+<div class="aside">
+<aside class="aside-box" data-aos="fade-left">
 * table of contents
 {:toc}
+</aside>
+</div>
+
+<div class="main">
 
 ### What is the Region of Waterloo?
 
@@ -106,4 +114,5 @@ government, including provincial and federal levels.
 (Note that linking to this page does not imply endorsement
 of the candidate. It is just a nice list.)
 
+</div></div>
 
