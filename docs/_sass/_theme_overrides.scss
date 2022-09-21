@@ -167,6 +167,10 @@ body {
 
     &.green {
       background-color: $green;
+
+      a { 
+        color: $yellow;
+      } 
     }
   }
 
