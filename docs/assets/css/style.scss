@@ -261,6 +261,7 @@ p.bigtext {
 
 #map-searchbar {
     width: 100%;
+    max-width: 100%;
     display: flex;
     margin-bottom: 1em;
 
@@ -277,11 +278,24 @@ p.bigtext {
     }
 
     .leaflet-control-search {
-      .search-cancel {
-        margin: 0;
-        margin-right: 6px;
+      .search-button {
+        /* margin: 0;
+         * margin-right: 6px;
+         */
+        /* the cancel and the magnifying glass are both useless.
+         * They also overlap each other. The magnifying glass is 
+         * more useless?? So we drop that one.
+         */
+        display: none !important; 
       }
+
+      /* You need this to prevent overflow on mobile */
+      .search-tooltip {
+        max-width: inherit;
+      }
+
     }
+
 
     .leaflet-control-search.search-exp {
       flex-grow: 1;
@@ -289,6 +303,7 @@ p.bigtext {
       position: relative;
       align-items: center;
       border: none;
+      max-width: 100%;
     }
 }
 
