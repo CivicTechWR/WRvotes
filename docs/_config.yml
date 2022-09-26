@@ -24,7 +24,7 @@ google_calendar_timezone: America/Toronto
 
 google_calendar_rss: 'https://feeds.off-topic.kwlug.org/feeds/wrv-events.rss'
 
-google_analytics: UA-102439664-2
+#google_analytics: UA-102439664-2
 
 contact_email: "civictechwr.wrvotes@gmail.com"
 
