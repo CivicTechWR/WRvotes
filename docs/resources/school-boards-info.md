@@ -45,7 +45,8 @@ Martin](./ted-martin-on-being-a-trustee).
 Trustee Scott McMillan [identifies the role of school
 trustees](https://www.kitchenertoday.com/kitchenervotes/get-to-know-the-responsibilities-of-a-school-board-trustee-before-you-vote-1064230) as
 managing the budget and facilitating communication between parents
-and school staff. 
+and school staff. (Note that this article is from 2018, and so lists
+all-candidates meetings for that election, not this one.)
 
 ### There are so many school board positions listed! What do I vote for?
 
