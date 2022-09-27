@@ -6,9 +6,6 @@ layout: page
 # Election Resources
 
 
-**Note:** This information is still being reviewed for the 2022
-election, and some of it may be out of date.
-
 This page contains helpful resources to help you understand how this
 election works. A good place to start is the [Information for
 Voters](./voter-info) page.
