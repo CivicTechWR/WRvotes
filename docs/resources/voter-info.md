@@ -118,8 +118,10 @@ or slept most frequently during the last five weeks.
 #### How do I vote? May I vote using the Internet?
 
 This depends on the area municipality in which you live. Different
-municipalities have different procedures, which we summarize below.
-Click your municipality's name for detailed information: 
+municipalities have different procedures. For the 2022 election, CBC
+Kitchener-Waterloo has [published a comprehensive
+guide](https://www.cbc.ca/news/canada/kitchener-waterloo/waterloo-region-fall-municipal-election-need-to-know-vote-1.6589958).
+Below is a summary and links to official municipality information:
 
 
 - [Cambridge](https://www.cambridge.ca/en/learn-about/Elections.aspx):
@@ -129,18 +131,19 @@ Click your municipality's name for detailed information:
   In-person voting Oct 12-15 and 24. 
 - [North
   Dumfries](https://www.northdumfries.ca/en/township-services/information-for-voters-.aspx):
-  In-person voting Oct 19, 22, 24 (but Oct 24 poll closes at 4pm?).
+  In-person voting Oct 19, 22, 24.
   Internet voting from Oct 11 to Oct 24.
 - [Waterloo](https://www.waterloo.ca/en/government/when-and-where-to-vote.aspx):
   In-person voting Oct 8, 11-16, and 24. You can vote
   by mail, but must pre-register to do so.
-- [Woolwich](https://www.woolwich.ca/en/township-services/information-for-voters.aspx):
-  Internet, telephone, in-person voting. **Dates TBA.**
 - [Wellesley](https://www.wellesley.ca/en/township-services/elections.aspx):
-  Internet and phone voting only from Oct 10 to Oct 24. **There is no in-person
+  Internet and phone voting only from Oct 14 to Oct 24. **There is no in-person
   voting.**
 - [Wilmot](https://www.wilmot.ca/en/township-office/whats-new-for-2022.aspx):
   In-person voting Oct 15, 16, 22, 23. **There is no in-person voting Oct 24.**
+  Internet and phone voting from Oct 14 to Oct 24.
+- [Woolwich](https://www.woolwich.ca/en/township-services/information-for-voters.aspx):
+  Internet, telephone, in-person voting. In-person on Oct 24 only.
   Internet and phone voting from Oct 14 to Oct 24.
 
 

@@ -31,8 +31,8 @@ identification](https://www.ontario.ca/laws/regulation/130304).
   Dumfries](https://www.northdumfries.ca/en/township-services/information-for-voters-.aspx):
   Register at the Township office at 2958
   Greenfield Road, Ayr between 8:30am-4:30pm. You will need to bring
-  acceptable ID. It is possible you will not be able to register on
-  election day.
+  acceptable ID. You will also be able to amend the voters' list at an
+  advance poll or at your polling station on Oct 24.
 
 - [Waterloo](https://www.waterloo.ca/en/government/register-to-vote.aspx):
   There is a form on the linked page which lets you look up and
