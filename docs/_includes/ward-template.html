@@ -11,6 +11,7 @@ This is gross but it works.
 {% assign ward-info = site.data.internal.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
 
+<h1>Who is Running? {{ ward-info.PositionDesc }}</h1>
 
 
 {% assign municipal-info = site.data.internal.municipality-map |
@@ -52,7 +53,6 @@ where:"PositionUniqueName",ward-id | first -%}
 
 
   <div class="main">
-  <h1>Who is Running? {{ ward-info.PositionDesc }}</h1>
 
     {% for race in races-split %}
       {% if race == "_SELF" %}
