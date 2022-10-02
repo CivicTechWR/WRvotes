@@ -165,15 +165,6 @@ identity. See the [voters' and
 identification](https://www.ontario.ca/document/2022-voters-guide-ontario-municipal-council-and-school-board-elections/voters-list-and)
 section of the 2022 Voters' Guide for more information.
 
-#### Why are there four different school boards listed? Which do I vote for?
-
-Everybody who is eligible to vote is assigned to a school board. By
-default this is the English public school board (WRDSB). 
-
-For more information, see our page containing [information about
-school board elections](/resources/school-boards-info).
-
-
 #### There are a lot of positions to vote for! Do I have to vote for all of them?
 
 No. You may refrain from voting for some positions if you wish; your
@@ -189,6 +180,15 @@ See our [Municipal Government Overview](./municipal-structure) for an
 explanation of the different positions and their responsibilities.
 
 
+#### Why are there four different school boards listed? Which do I vote for?
+
+Everybody who is eligible to vote is assigned to a school board. By
+default this is the English public school board (WRDSB). 
+
+For more information, see our page containing [information about
+school board elections](/resources/school-boards-info).
+
+
 #### I thought Cambridge had a referendum on ranked ballots. What happened with that?
 
 There was a minimum of 50% turnout in the election for the referendum
@@ -200,14 +200,6 @@ Ballot](https://www.cambridge.ca/en/learn-about/update-on-ranked-ballot.aspx)
 page on the Cambridge website for more details.
 
 ## Getting Informed
-
-#### What parties are running in this election?
-
-Unlike provincial or federal politics, municipal candidates in our
-municipality do not run under party banners.
-
-This has the advantage of potentially reducing partisanship, but it
-means that candidates must be evaluated on their individual merits.
 
 #### I don't feel informed enough to vote. Where do I start?
 
@@ -275,6 +267,14 @@ Local media provides lots of election coverage. Here are a few hubs:
 On Twitter you can track the
 [#wrvotes](https://twitter.com/hashtag/wrvotes) and
 [#wrpoli](https://twitter.com/hashtag/wrpoli) hashtags.
+
+#### What parties are running in this election?
+
+Unlike provincial or federal politics, municipal candidates in our
+municipality do not run under party banners.
+
+This has the advantage of potentially reducing partisanship, but it
+means that candidates must be evaluated on their individual merits.
 
 
 ## Getting More Involved
