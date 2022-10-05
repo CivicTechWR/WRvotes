@@ -54,9 +54,9 @@ SchoolBoard-Public-English-Cambridge-NorthDumfries,N/A,Waterloo Region District 
 SchoolBoard-Public-English-Kitchener,N/A,Waterloo Region District School Board (English Public) - Kitchener,4,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Public-English"
 SchoolBoard-Public-English-Waterloo-Wilmot,N/A,Waterloo Region District School Board (English Public) - Waterloo/Wilmot,3,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Public-English"
 SchoolBoard-Public-English-Woolwich-Wellesley,N/A,Waterloo Region District School Board (English Public) - Woolwich/Wellesley,1,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Public-English"
-SchoolBoard-Catholic-English-Waterloo-Wellesley-Woolwich,N/A,Waterloo Catholic District School Board (English Catholic) - Waterloo/Wellesley/Woolwich,2,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Catholic-English"
-SchoolBoard-Catholic-English-Kitchener-Wilmot,N/A,Waterloo Catholic District School Board (English Catholic) - Kitchener/Wilmot,4,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Catholic-English"
-SchoolBoard-Catholic-English-Cambridge-NorthDumfries,N/A,Waterloo Catholic District School Board (English Catholic) - Cambridge/North Dumfries,3,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Catholic-English"
+SchoolBoard-Catholic-English-Waterloo-Wellesley-Woolwich,N/A,Waterloo Catholic District School Board (English Catholic) - Waterloo/Wellesley/Woolwich,2,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Public-Catholic,Alias-SchoolBoard-Catholic-English"
+SchoolBoard-Catholic-English-Kitchener-Wilmot,N/A,Waterloo Catholic District School Board (English Catholic) - Kitchener/Wilmot,4,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Public-Catholic,Alias-SchoolBoard-Catholic-English"
+SchoolBoard-Catholic-English-Cambridge-NorthDumfries,N/A,Waterloo Catholic District School Board (English Catholic) - Cambridge/North Dumfries,3,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Public-Catholic,Alias-SchoolBoard-Catholic-English"
 SchoolBoard-Public-French,N/A,Conseil scolaire Viamonde (French Public),1,"Alias-Everything,Alias-All-SchoolBoards"
 SchoolBoard-Catholic-French,N/A,Conseil scolaire de district catholique Centre-Sud (French Catholic),1,"Alias-Everything,Alias-All-SchoolBoards"
 Election-Info,N/A,Election Information,0,
