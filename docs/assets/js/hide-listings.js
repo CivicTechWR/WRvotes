@@ -46,8 +46,7 @@ $( document ).ready(function() {
              + 'id="' + target + '-btn" '
              + 'class="toggle-button v04'
              + ' ' + target + ' ' + classes_to_add
-             + '" '
-             + '"targetul="' + target + '">'
+             + '" >'
              + 'Init '
              + get_description( '#' + target )
              + '</button>';
