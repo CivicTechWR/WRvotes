@@ -41,25 +41,22 @@
 
 /* ----------- COLLAPSABLE LISTS --------- */
 
-/* Make buttons inline with their headings */
-button.toggle-button {
-  float: right;
-}
 
-/* Style buttons to be less ugly */
+/* Make this button look like a regular link */
 button.toggle-button {
-  color: black;
-  background-color: Transparent;
-  border: 0.2em solid black;
+  color: $blue;
   font-size: smaller;
+  border-color: $blue;
+  border-left: none;
+  border-right: none;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  background: inherit;
 
-  /* Push button down a touch */
-  margin-top: 0.2em;
-}
-
-button.toggle-button:hover {
-  color: white;
-  background-color: black;
+  &:hover {
+    color: $pink;
+    
+  }
 }
 
 

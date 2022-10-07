@@ -62,12 +62,12 @@ $( document ).ready(function() {
 
     if ($(target).hasClass('hidden')) {
       $(target).removeClass('hidden');
-      $(target).text("Show Fewer " + div_description); 
+      $(target).text("⇧ Show Fewer " + div_description + " ⇧"); 
       // Select the ID with the given prefix
       $(target_ul).show();
     } else {
       $(target).addClass('hidden');
-      $(target).text("Show More " + div_description);
+      $(target).text("⇩ Show More " + div_description + " ⇩");
       $(target_ul).hide();
 
     }
