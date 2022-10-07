@@ -2,6 +2,7 @@
   {% assign news-list = site.empty-array %}
   {% assign survey-list = site.empty-array %}
   {% assign blog-list = site.empty-array %}
+  {% assign recording-list = site.empty-array %}
 
   {% for media-item in include.media-list %}
     {% if media-item 
@@ -10,11 +11,24 @@
     {% elsif media-item 
        and media-item.ComparisonOrOpinion == 'Opinion' %}
       {% assign blog-list = blog-list | push: media-item %}
+    {% elsif media-item
+       and media-item.ComparisonOrOpinion == 'Recording' %}
+       {% assign recording-list = recording-list | push: media-item %}
     {% else %}
       {% assign news-list = news-list | push: media-item %}
     {% endif %}
 
   {% endfor %}
+
+  {% if recording-list.size > 0 %}
+    {% include list-media-items.html 
+      item-list=recording-list
+      race-id=include.race-id 
+      type="recording" 
+      header="Meeting Recordings" 
+      teaser-limit=site.teaser_limit_recordings %}
+  {% endif %}
+
 
   {% if survey-list.size > 0 %}
 
@@ -22,7 +36,7 @@
       item-list=survey-list
       race-id=include.race-id 
       type="survey" 
-      header="Questionnaires, Meeting Recordings and Endorsement Lists" 
+      header="Questionnaires, Surveys, and Endorsement Lists" 
       teaser-limit=site.teaser_limit_surveys %}
   {% endif %}
 
