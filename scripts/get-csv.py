@@ -6,7 +6,7 @@ import tempfile
 import filecmp
 import time
 import datetime
-import argparse, sys, os
+import argparse, sys, os, os.path
 import pandas
 import yaml
 import shutil
@@ -37,7 +37,7 @@ parser.add_argument("--configfile",
   default = 'get-csv-config.yml',
   )
 parser.add_argument("--debuglevel",
-  help = "How verbose to be",
+  help = "How verbose to be. Higher is more verbose.",
   type = int,
   default = 2,
   )
@@ -52,6 +52,16 @@ def load_config():
         cfg = yaml.safe_load(c)
         return cfg
 
+
+# -----------------------------------
+def build_cached_filepath(filename):
+
+    origfile="{}/{}/{}".format(
+      config['gitdir'],
+      config['targetdir'],
+      filename)
+    return origfile
+
 # -----------------------------------
 def check_changes(filename, candidate, changed_files):
     """ Check if candidate is different than the original
@@ -62,10 +72,7 @@ def check_changes(filename, candidate, changed_files):
         changed_files: an array that gets modified
     """
 
-    origfile="{}/{}/{}".format(
-      config['gitdir'],
-      config['targetdir'],
-      filename)
+    origfile=build_cached_filepath(filename)
 
     if not filecmp.cmp(candidate, origfile):
         debug("Found different files: "
@@ -141,42 +148,63 @@ for syncfile in config['sources']:
     src = config['sources'][syncfile]
     debug("Fetching {}".format(src), 4)
     debug("src['url']: {}".format(src['url']), 4)
-    r = req.get(src['url'])
+    cached_file = build_cached_filepath(src['localfile'])
+    download_success = False
+
+    try:
+        r = req.get(src['url'])
 
 
-    # Check that we actually got the file. Otherwise 
-    # just continue.
+        # Check that we actually got the file. Otherwise 
+        # just continue.
 
-    # https://stackabuse.com/download-files-with-python/
-    if r.status_code == 200:
+        # https://stackabuse.com/download-files-with-python/
+        if r.status_code == 200:
 
-        candidate="{}/{}".format(
-            TMPDIR.name,
-            src['localfile'])
+            candidate="{}/{}".format(
+                TMPDIR.name,
+                src['localfile'])
 
-        with open(candidate, 'wb') as f:
-            f.write(r.content)
-            f.close()
-        srcdict[syncfile] = candidate
+            with open(candidate, 'wb') as f:
+                f.write(r.content)
+                f.close()
+            srcdict[syncfile] = candidate
+
+            download_success = True
+            
+            debug("Saved {} to {}".format(
+                src['url'],
+                candidate,
+                ), 3)
         
-        debug("Saved {} to {}".format(
-            src['url'],
-            candidate,
-            ), 3)
-    
 
-        # Fine. Copy source files too.
-        if not ('no_copy' in src) or (not src['no_copy']): 
-            check_changes(src['localfile'], candidate, changed_files)
+            # Fine. Copy source files too.
+            if not ('no_copy' in src) or (not src['no_copy']): 
+                check_changes(src['localfile'], candidate, changed_files)
 
-    else:
-        debug("Oops. Received status "
-              "{} when downloading {} ".format(
-                  r.status_code,
-                  src['url']
-                  ),
-             0,
-             )
+        else:
+            debug("Oops. Received status "
+                  "{} when downloading {} ".format(
+                      r.status_code,
+                      src['url']
+                      ), 0,)
+
+
+
+    except (requests.Timeout, requests.ConnectionError) as e:
+        debug("Failed to fetch {}. Error: {}".format(src['url'], e), 0)
+        
+
+    if not download_success:
+        if os.path.isfile(cached_file):
+            debug("Using {} as cached version instead".format(
+              cached_file
+              ),0)
+            srcdict[syncfile] = cached_file
+        else:
+            debug("Oops. No cached file available."
+                  " I guess we crash?",
+                  0)
 
 debug("srcdict is {}".format(srcdict),4)
 
@@ -189,6 +217,7 @@ for syncdest in config['dests']:
         syncdest)
 
     # This will crash if the read failed, which is fine.
+    # No it is not fine. 
     src = srcdict[dest['source']]
     
     if dest['format'] == 'ods':
