@@ -209,6 +209,10 @@ def sync_poliblog(srcfile, overrides, mergefile):
                 if val == "DELETE":
                     mergedict[row_key][col] = None
                 elif val != "":
+                    if row_key not in mergedict:
+                        print("Uh oh! row_key \"{}\" not in "
+                          "mergedict. Has candidate name changed?".format(
+                          row_key))
                     mergedict[row_key][col] = val
 
 
