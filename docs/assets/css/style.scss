@@ -38,6 +38,47 @@
   margin: 0;
 }
 
+/* ----------- TOC BUTTONS --------------- */
+
+button.toggle-toc { 
+  background: inherit;
+  float: right;
+  font-size: 2em;
+  font-family: $primary-font;
+  color: $light;
+  border-width: 1px;
+  border-color: $light;
+  min-width: 1em;
+  margin-top: 10px; /* align with H2 */
+
+} 
+
+@media screen and (min-width: $sidebar-breakpoint) {
+  button.toggle-toc { 
+    display: none;
+  }
+
+  #toc-list { 
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: $sidebar-breakpoint) {
+  button.toggle-toc { 
+    display: inline;
+  }
+
+  #toc-list.hidden { 
+    display: none;
+  } 
+
+  #toc-list { 
+    display: block;
+
+  }
+}
+
 
 /* ----------- COLLAPSABLE LISTS --------- */
 
@@ -421,7 +462,7 @@ p.bigtext {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: $sidebar-breakpoint) {
   .grid-item {
     flex: 1 0 50%;
   }

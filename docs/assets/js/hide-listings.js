@@ -4,6 +4,7 @@
  */
 
 $( document ).ready(function() {
+  var WIDESCREEN = 1100;
 
   /* Compute a button label based upon the classes
    * in a particular ID.
@@ -73,10 +74,49 @@ $( document ).ready(function() {
     }
   }; // end toggle_listing
 
+  /* ----- TOC TOGGLE ----- */
+
+  function add_toc_toggle_button ( ) { 
+    var target =  $(this).attr('id');
+
+    retval = '<button data-toc="' + target + '" '
+             + 'id="' + target + '-btn" '
+             + 'class="toggle-toc" title="Toggle table of contents">'
+             + 'Init'
+             + '</button>';
+    $(this).parent().prepend(retval);
+  };
+
+
+  function toggle_toc ( target_button ) { 
+
+    var target_ul = "#toc-list";
+
+    if ($(target_ul).hasClass('hidden')) {
+      $(target_ul).removeClass('hidden');
+      $(target_button).text("–");
+      // Select the ID with the given prefix
+      $(target_ul).slideDown();
+    } else {
+      $(target_ul).addClass('hidden');
+      $(target_button).text("+");
+      $(target_ul).slideUp();
+    }
+  }; // end toggle_listing
+
   /* ----- INIT CODE ------ */
 
   // Insert buttons everywhere!
   $(".togglable").each( add_toggle_button );
+  $("#toc-list").each( add_toc_toggle_button );
+
+  // Will only appear hidden in mobile mode now
+  toggle_toc("#toc-list-btn");
+      
+
+  $(".toggle-toc").on("click", function (e) { 
+      toggle_toc ("#" + e.target.id);
+  });
 
   $(".toggle-button").each( function() {
     toggle_listing ("#" + this.id );

@@ -23,7 +23,7 @@ where:"PositionUniqueName",ward-id | first -%}
     <aside class="aside-box blue" data-aos="fade-left">
 
         <header><h2 id="toc">On This Page</h2></header>
-        <ul>
+        <ul id="toc-list">
           {% for race in races-split %}
             {% if race == "_SELF" %}
               {% assign race-id = ward-id %}
@@ -39,7 +39,7 @@ where:"PositionUniqueName",ward-id | first -%}
         </ul>
     </aside>
 
-    <aside class="aside-box green" data-aos="fade-left">
+    <aside class="aside-box green">
         <p>
         Learn about what this election is about, and
         how to vote in it on the
@@ -73,6 +73,4 @@ where:"PositionUniqueName",ward-id | first -%}
   </div>
 
 </div>
-<script src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
 
