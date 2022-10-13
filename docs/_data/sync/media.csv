@@ -267,8 +267,8 @@ PubDate,URL,Title,Publication,PositionIDList,ComparisonOrOpinion
 2022-09-23,https://www.newhamburgindependent.ca/news-story/10711228-wilmot-votes-reginald-simpson-wilmot-township-ward-2-candidate/,"WILMOT VOTES: Reginald Simpson, Wilmot Township Ward 2 candidate",New Hamburg Independent,Wilmot-Ward-02,
 2022-09-23,https://www.newhamburgindependent.ca/news-story/10715501-waterloo-region-votes-madan-dheer-waterloo-region-district-school-board-trustee-candidate/,"WATERLOO REGION VOTES: Madan Dheer, Waterloo Region District School Board trustee candidate",New Hamburg Independent,SchoolBoard-Public-English-Waterloo-Wilmot,
 2022-09-27,https://www.waterloochronicle.ca/opinion-story/10718880-elections-ontario-can-do-a-much-better-job-getting-the-word-out/,Elections Ontario can do a much better job getting the word out,Waterloo Chronicle,Election-Info,
-2022-09-28,https://old.reddit.com/r/waterloo/comments/xqioau/ama_blayr_hogg_here_candidate_for_ward_5_waterloo/,Blayr Hogg AMA,Reddit,Waterloo-Ward-05,Opinion
-2022-09-28,https://old.reddit.com/r/waterloo/comments/xq6c4l/connecting_with_regional_candidate_colleen/,Colleen James AMA,Reddit,Regional-Kitchener,Opinion
+2022-09-28,https://old.reddit.com/r/waterloo/comments/xqioau/ama_blayr_hogg_here_candidate_for_ward_5_waterloo/,Blayr Hogg AMA (Ask Me Anything),Reddit,Waterloo-Ward-05,Opinion
+2022-09-28,https://old.reddit.com/r/waterloo/comments/xq6c4l/connecting_with_regional_candidate_colleen/,Colleen James AMA (Ask Me Anything),Reddit,Regional-Kitchener,Opinion
 2022-09-28,https://www.youtube.com/watch?v=8p6Q2XL53sc,The Local Campaign: Councillor Candidate Q&A – Kitchener (Wards 7-10),Rogers tv,"Kitchener-Ward-07, Kitchener-Ward-08, Kitchener-Ward-09, Kitchener-Ward-10",Recording
 2022-09-28,https://www.youtube.com/watch?v=UzLYvRifA4E,The Local Campaign: Councillor Candidate Q&A - Cambridge (Wards 5-8),Rogers tv,"Cambridge-Ward-05, Cambridge-Ward-06, Cambridge-Ward-07, Cambridge-Ward-08",Recording
 2022-09-28,https://globalnews.ca/news/9159024/2022-ontario-municipal-election-waterloo-ward-3-council-candidates/,2022 Ontario municipal election: Meet the Waterloo Ward 3 council candidates,Global News,Waterloo-Ward-03,Comparison
@@ -364,3 +364,35 @@ PubDate,URL,Title,Publication,PositionIDList,ComparisonOrOpinion
 2022-10-06,https://old.reddit.com/r/waterloo/comments/xww12s/does_jonathan_cassels_have_a_platform/,Does Jonathan Cassels have a platform?,Reddit,Waterloo-Ward-06,Opinion
 2022-10-07,https://old.reddit.com/r/kitchener/comments/xy728k/kitcheners_mayoral_candidates_outline_their_ideas/,Kitchener's mayoral candidates outline their ideas on housing and homelessness ,Reddit,Kitchener-Mayor,Opinion
 2022-10-08,https://sites.google.com/view/fabwr/home,FABWR Candidate Survey Results,For a Better Waterloo Region,"Alias-All-Regional, Alias-All-Municipal",Comparison
+2022-10-10,https://www.gren.ca/activities.php?id=18,GREN Survey on Environmental Issues,Grand River Environmental Network,"Alias-All-Regional, Alias-All-Municipal",Comparison
+2022-10-11,https://cyclewr.ca/2022-municipal-elections#Survey,CycleWR Survey,CycleWR,"Alias-All-Regional, Alias-All-Municipal",Comparison
+2022-10-01,https://www.facebook.com/groups/355885149172210/posts/657434045683984/,Cheryle Baker response to Save Middlebrook Bridge Survey,Save Middlebrook  Bridge Facebook Group,Woolwich-Ward-01,
+2022-09-19,https://www.facebook.com/groups/355885149172210/posts/647726596654729/?comment_id=649044569856265,Paul Bolger response to Save Middlebrook Bridge Group,Save Middlebrook  Bridge Facebook Group,Woolwich-Ward-03,
+2022-09-22,https://www.facebook.com/groups/355885149172210/posts/651168352977220/,Fred Redekop response to Save Middlebrook Bridge Group,Save Middlebrook  Bridge Facebook Group,Woolwich-Ward-02,
+2022-09-12,https://www.facebook.com/groups/355885149172210/posts/644706973623358/,Patrick Merlihan response to Save Middlebrook Bridge Group,Save Middlebrook  Bridge Facebook Group,Woolwich-Mayor,
+2022-09-15,https://www.facebook.com/groups/355885149172210/posts/646496243444431/,Evan Burgess response to Save Middlebrook Bridge Group,Save Middlebrook  Bridge Facebook Group,Woolwich-Ward-01,
+2022-09-11,https://www.facebook.com/groups/355885149172210/posts/644098710350851/,Bonnie Bryant response to Save Middlebrook Bridge Group,Save Middlebrook  Bridge Facebook Group,Woolwich-Ward-03,
+2022-09-10,https://www.facebook.com/groups/355885149172210/posts/643404977086891/,Dan Holt post to Save Middlebrook Bridge Group,Save Middlebrook  Bridge Facebook Group,Woolwich-Ward-01,
+2022-09-10,https://www.facebook.com/groups/355885149172210/posts/643150110445711/,Nathan Cadeau post to Save Middlebrook Bridge Group,Save Middlebrook  Bridge Facebook Group,Woolwich-Ward-01,
+2022-10-10,https://old.reddit.com/r/kitchener/comments/y0fnjb/hi_everyone_im_brooklin_wallis_im_running_against/,Brooklin Wallis AMA (Ask Me Anything),Reddit,Kitchener-Ward-09,Opinion
+2022-10-10,https://old.reddit.com/r/kitchener/comments/y0h70q/who_to_vote_for_ward_10/,Who to Vote for in Ward 10?,Reddit,Kitchener-Ward-10,Opinion
+2022-10-11,https://old.reddit.com/r/waterloo/comments/y1a22w/im_matthew_schwarze_and_im_running_to_be_your/,Matthew Schwarze AMA (Ask Me Anything),Reddit,Waterloo-Ward-06,Opinion
+2022-10-11,https://old.reddit.com/r/kitchener/comments/y1cxzr/wrds_trustees_summary_those_that_support_parental/,"WRDS Trustees summary - those that support ""parental values"" are in green (ie, banning LGBT books, fighting against imaginary CRT in elementary school); those that support acknowledging LGBT people exist in yellow. Please vote",Reddit,Alias-SchoolBoard-Public-English ,Opinion
+2022-10-11,https://globalnews.ca/news/9190174/2022-ontario-municipal-election-meet-the-kitchener-mayoral-candidates/,2022 Ontario municipal election: Meet the Kitchener mayoral candidates,Global News,Kitchener-Mayor,Comparison
+2022-10-11,https://www.therecord.com/waterloo_chronicle/news/2022/10/11/cast-an-informed-ballot-civictechwr-creates-one-stop-hub-to-inform-voters-in-waterloo-region.html,‘Cast an informed ballot’: CivicTechWR creates one-stop hub to inform voters in Waterloo Region,Waterloo Chronicle,Self-Promotion,
+2022-10-07,https://www.youtube.com/watch?v=GXDPmlZ7jko,"Waterloo Candidate Forums (Regional Council, Mayor, Regional Chair)",Greater KW Chamber of Commerce and CityNews 570),"Regional-Waterloo, Regional-Chair, Waterloo-Mayor",Recording
+2022-10-07,https://www.youtube.com/watch?v=WqqcKS1IVqo,"Kitchener Candidate Forums (Regional Council, Mayor, Regional Chair)",Greater KW Chamber of Commerce and CityNews 570),"Regional-Kitchener, Regional-Chair, Kitchener-Mayor",Recording
+2022-10-07,https://www.youtube.com/watch?v=uHldeTQkbVQ,"Cambridge Candidate Forums (Regional Council, Mayor, Regional Chair)",Greater KW Chamber of Commerce and CityNews 570),"Regional-Cambridge, Cambridge-Mayor, Regional-Chair",Recording
+2022-10-07,https://www.youtube.com/watch?v=xw4nym5n1Ys,"Township of Woolwich Candidate Forums (Mayor, Regional Chair)",Greater KW Chamber of Commerce and CityNews 570),"Woolwich-Mayor, Regional-Chair",Recording
+2022-10-08,https://twitter.com/blackparentckw/status/1578869236621283328,Black Parent Council KW Endorsements,Black Parent Council KW,Alias-SchoolBoard-Public-English ,Comparison
+2022-10-11,https://globalnews.ca/news/9190296/2022-ontario-municipal-election-waterloo-ward-7-council-candidates/,2022 Ontario municipal election: Meet the Waterloo Ward 7 council candidates,Global News,Waterloo-Ward-07,Comparison
+2022-10-11,https://kitchener.ctvnews.ca/long-time-regional-councillor-provides-insight-into-why-competition-is-so-high-for-waterloo-regional-council-1.6104886?cid=sm%3Atrueanthem%3Actvkitchener%3Atwitterpost&taid=6345fca58e99c600015229e8&utm_campaign=trueAnthem%3A+Trending+Content&utm_medium=trueAnthem&utm_source=twitter,Long-time regional councillor provides insight into why competition is so high for Waterloo regional council ,CTV Kitchener,Alias-All-Regional,
+2022-10-11,https://old.reddit.com/r/kitchener/comments/y1unnf/hey_there_ward_1s_scott_davey_here_aka_the/,Scott Davey AMA (Ask Me Anything),Reddit,Kitchener-Ward-01,Opinion
+2022-10-12,https://www.youtube.com/watch?v=UzYVDfYfvZA,Berry Vrbanovic Interview,Centre for Family Business,Kitchener-Mayor,
+2022-10-11,https://www.youtube.com/watch?v=gxWfDAyqZ3k,Val Neekman Interview,Centre for Family Business,Kitchener-Mayor,
+2022-10-11,https://www.youtube.com/watch?v=E4kMCd9WgVg,Mani Nair Interview,Centre for Family Business,Kitchener-Mayor,
+2022-10-08,https://www.youtube.com/watch?v=isr5nYmW5vM,Shannon Weber Interview,Centre for Family Business,Waterloo-Mayor,
+2022-10-05,https://www.youtube.com/watch?v=ULotwQcWmZ0,Dorothy McCabe Interview,Centre for Family Business,Waterloo-Mayor,
+2022-09-29,https://www.youtube.com/watch?v=Duf51aSDa8c,Rob Evans Interview,Centre for Family Business,Waterloo-Mayor,
+2022-09-28,https://www.youtube.com/watch?v=iMFViE92_0g,Kypp Saunders Interview,Centre for Family Business,Waterloo-Mayor,
+2022-10-12,https://www.50by30wr.ca/2022election,50 by 2030 WR Survey,50 by 2030 Waterloo Region,"Alias-All-Regional, Alias-All-Municipal",Comparison
