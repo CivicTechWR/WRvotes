@@ -336,7 +336,7 @@ at <https://citified.substack.com/> . Although the blog is relatively
 even-handed the blog reflects Bowman's own views.
 
 The Region of Waterloo links to election information for the different
-municipalities at <http://wrvotes.com> .
+municipalities at <https://wrvotes.com> .
 
 A group called the [Waterloo Region Women's Municipal Campaign
 School](https://learnhowtorun.com) held workshops on how to run for
@@ -356,7 +356,7 @@ meeting for potential candidates.
 
 #### I don't trust your candidate listings. Where can I find the real ones?
 
-Official candidate listing pages are listed on <http://wrvotes.com> .
+Official candidate listing pages are listed on <https://wrvotes.com> .
 For convenience, here they are again:
 
 - [Region of
