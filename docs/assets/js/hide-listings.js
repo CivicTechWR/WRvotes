@@ -82,7 +82,7 @@ $( document ).ready(function() {
     retval = '<button data-toc="' + target + '" '
              + 'id="' + target + '-btn" '
              + 'class="toggle-toc" title="Toggle table of contents">'
-             + 'Init'
+             + '–'
              + '</button>';
     $(this).parent().prepend(retval);
   };
@@ -110,9 +110,6 @@ $( document ).ready(function() {
   $(".togglable").each( add_toggle_button );
   $("#toc-list").each( add_toc_toggle_button );
 
-  // Will only appear hidden in mobile mode now
-  toggle_toc("#toc-list-btn");
-      
 
   $(".toggle-toc").on("click", function (e) { 
       toggle_toc ("#" + e.target.id);
