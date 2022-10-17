@@ -16,26 +16,70 @@
     max-width: 1366px;
     padding: 0 2%;
   }
+
+  .inner::after { 
+    /* Clearfix hack so menu button shows */
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  a {
+    color: $light;
+  }
+
+  a.current {
+    text-decoration: underline;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  li {
+    display: inline-block;
+    padding-right: 3em;
+    margin: 0;
+  }
+
 }
 
-#main-menu a {
+button.toggle-menu { 
+  background: inherit;
+  font-size: 1.5em;
+  font-family: $primary-font;
   color: $light;
+  min-width: 1em;
+  border: 0;
+} 
+
+
+@media screen and (min-width: $menu-breakpoint) {
+  button.toggle-menu { 
+    display: none;
+  }
+
+  #main-menu-ul { 
+    display: block;
+  }
 }
 
-#main-menu a.current {
-  text-decoration: underline;
-}
+@media screen and (max-width: $menu-breakpoint) {
+  button.toggle-menu { 
+    display: block;
+    float: right;
+  }
 
-#main-menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-}
+  #main-menu-ul.hidden { 
+    display: none;
+  } 
 
-#main-menu li {
-  display: inline-block;
-  padding-right: 3em;
-  margin: 0;
+  #main-menu-ul { 
+    display: block;
+
+  }
 }
 
 /* ----------- TOC BUTTONS --------------- */
@@ -62,7 +106,6 @@ button.toggle-toc {
     display: block;
   }
 }
-
 
 @media screen and (max-width: $sidebar-breakpoint) {
   button.toggle-toc { 
