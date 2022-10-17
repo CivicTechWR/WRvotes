@@ -106,7 +106,6 @@ $( document ).ready(function() {
     var target =  $(this).attr('id');
     add_ul_toggle_button(target, "toggle-menu", "toggle main menu", 
       '<i class="fas fa-bars"></i>');
-    $("#main-menu-ul").addClass('hidden');
   };
 
   // ------------------------
