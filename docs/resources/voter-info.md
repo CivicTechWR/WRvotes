@@ -250,7 +250,9 @@ council candidates. Other influential positions are mayors and
 regional chair.
 
 Spending an hour watching or listening to one all-candidates meeting
-can help you select the best candidates quickly.
+can help you select the best candidates quickly. Skip the
+introductions and start listening to one of the questions in the
+middle of the debate.
 
 Alternatively, you can follow one or two races by reading the campaign
 literature (in printed form or on the Internet) from the contenders,
@@ -261,8 +263,13 @@ and choosing the candidates that match your views most closely.
 Local media provides lots of election coverage. Here are a few hubs:
 - [CBC KW: Waterloo Region
   Votes](https://www.cbc.ca/news/canada/kw/topic/Tag/Waterloo%20Region%20Votes%202022)
+- [Waterloo Region Record Municipal Election News](https://www.therecord.com/news/municipal-election.html)
 - [New Hamburg Independent Municipal Election
   Hub](https://www.newhamburgindependent.ca/newhamburg-on-news/municipal-election/)
+- [Global News Candidate
+  Profiles](https://globalnews.ca/news/9151237/meet-candidates-cambridge-kitchener-waterloo-council/)
+- [Cambridge Today Municipal Election
+  News](https://www.cambridgetoday.ca/2022-municipal-election-news)
 
 On Twitter you can track the
 [#wrvotes](https://twitter.com/hashtag/wrvotes) and
