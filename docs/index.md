@@ -20,7 +20,10 @@ use-leaflet: true
     </div>
     <div class="content" data-aos="fade-up">
      <p>Type your address to identify your ward, or click your
-     location on the map.</p>
+     location on the map. (Note that although the address lookup is
+     pretty good, it is not 100% accurate, especially near ward
+     boundaries. If in doubt consult your <a
+     href="https://wrvotes.com" target="_blank">municipality</a>.)</p>
      <div id="map-searchbar"></div>
      <div id="map"></div>
      <p><strong>Note:</strong> The map loads more slowly than the rest
