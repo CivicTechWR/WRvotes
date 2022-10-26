@@ -1,11 +1,9 @@
 {% assign full_name = winner["Given_Names"] | append:" " | append:winner["Last_Name"] %}
-{% if winner["Nominated_Office"] == "Councillor" %}
-    {% assign position_title = "Councillor for Ward " | append:winner["Ward"] %}
-{% elsif winner["Nominated_Office"] == "Regional Councillor" %}
-    {% assign position_title = winner["Nominated_Office"] | append: " for " | append: winner["Ward"] %}
-{% else %}
-    {% assign position_title = winner["Nominated_Office"] %}
-{% endif %}
+
+{% assign race-info = site.data.internal.position-tags |
+where:"PositionUniqueName",winner["PositionUniqueName"] | first -%}
+
+{% assign position_title = race-info["ShortLocalDesc"] %}
 
 <div class="grid-item">
     <div class="candidate-card">
@@ -33,7 +31,8 @@
             <div class="contact-item">
                 <div class="contact-item-inner">
                     <a href="mailto:{{ winner['Email'] }}">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope" aria-hidden="true" title="Email"></i>
+                        <span class="fa-sr-only">Email</span>
                     </a>
                 </div>
             </div>
@@ -43,7 +42,8 @@
             <div class="contact-item">
                 <div class="contact-item-inner">
                     <a href="{{ winner['Website'] }}">
-                        <i class="fas fa-link"></i>
+                        <i class="fas fa-link" aria-hidden="true" title="Website"></i>
+                        <span class="fa-sr-only">Website</span>
                     </a>
                 </div>
             </div>
@@ -53,8 +53,9 @@
             {% assign twitter_page = "https://twitter.com/" | append:winner['Twitter'] %}
             <div class="contact-item">
                 <div class="contact-item-inner">
-                    <a href="{{ twitter_page }}">
-                        <i class="fab fa-twitter"></i>
+                    <a href="{{ twitter_page }}" >
+                        <i class="fab fa-twitter" aria-hidden="true" title="Twitter"></i>
+                        <span class="fa-sr-only">Twitter</span>
                 </a>
                 </div>
             </div>
@@ -64,7 +65,8 @@
             <div class="contact-item">
                 <div class="contact-item-inner">
                     <a href="{{ winner['Facebook'] }}">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-facebook" aria-hidden="true" title="Facebook"></i>
+                        <span class="fa-sr-only">Facebook</span>
                     </a>
                 </div>
             </div>
