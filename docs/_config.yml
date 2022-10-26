@@ -32,7 +32,7 @@ contact_email: "civictechwr.wrvotes@gmail.com"
 
 # events_newsletter: "https://off-topic.kwlug.org/mailman/listinfo/waterlooregionvotes-events_off-topic.kwlug.org"
 
-election_over: false
+election_over: true 
 
 # Use ISO notation. This is used by countdown.js
 election_date: "2022-10-24T09:00"
