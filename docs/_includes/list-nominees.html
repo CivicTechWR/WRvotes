@@ -18,12 +18,19 @@
     {% assign num-to-elect = race-info.NumberToElect | plus: 0 %}
 
 
-    {% unless page.hide-details %}
+    {% unless page.hide-details  %}
       {% if site.election_over %}
-        {% include list-results.html nominees=these-nominees 
-           valid-nominees=valid-nominees
-           num-to-elect=num-to-elect
-           race-id=include.race-id %}
+        {% if race-info.ShowResults == 'Y' %}
+          {% include list-results.html nominees=these-nominees 
+             valid-nominees=valid-nominees
+             num-to-elect=num-to-elect
+             race-id=include.race-id %}
+          <h4 class="inline">Candidates</h4>  
+        {% else %}
+          <p>
+          (No results published yet.)
+          </p>
+        {% endif %}
       {% endif %}
     {% endunless %}
 
