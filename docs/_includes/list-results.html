@@ -37,7 +37,7 @@
       {%- elsif candidate.Votes -%}
         : {{ candidate.Votes | floor }} votes. 
       {%- else -%}
-        : no votes.
+        {% comment %}Blank means no data, not no votes.{% endcomment %}
       {%- endif -%}
       :split:
     {%- endfor -%}
