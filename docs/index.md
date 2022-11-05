@@ -18,7 +18,13 @@ use-leaflet: true
     Board election for Cambridge/North Dumfries was <a
     href="https://www.cambridge.ca/Modules/News/index.aspx?newsId=fdad4279-400c-407a-8f88-beb6958b2363">suspended</a>
     due to a printing error with the ballots. This election will be
-    re-run in November 2022. 
+    re-run via online voting, from <strong>Nov 7 to Nov 18,
+    2022</strong>. See <a
+    href="https://www.cambridge.ca/elections">the Cambridge Elections
+    page</a> for full details.
+    </p><p>
+    <strong>Update, Nov 5:</strong> Added voting period for WCDSB
+    election.
     </p><p>
     <strong>Update, Oct 25:</strong> We have updated the site with
     unofficial vote counts and winners for many races, excluding the
