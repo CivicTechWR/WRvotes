@@ -14,14 +14,11 @@ use-leaflet: true
     Use this site for information about the election, and the
     candidates asking for your vote!
     {% endcomment %}
-    <p><strong>Note:</strong> The WCDSB (Catholic English) School
-    Board election for Cambridge/North Dumfries was <a
-    href="https://www.cambridge.ca/Modules/News/index.aspx?newsId=fdad4279-400c-407a-8f88-beb6958b2363">suspended</a>
-    due to a printing error with the ballots. This election will be
-    re-run via online voting, from <strong>Nov 7 to Nov 18,
-    2022</strong>. See <a
-    href="https://www.cambridge.ca/elections">the Cambridge Elections
-    page</a> for full details.
+    <p>
+    <strong>Update, Dec 7:</strong> Added results of Cambridge/North
+    Dumfries WCDSB election, and tallies for the French school boards
+    as certified by the City of Kitchener (Catholic Board) and City of
+    London (Public Board).
     </p><p>
     <strong>Update, Nov 5:</strong> Added voting period for WCDSB
     election.

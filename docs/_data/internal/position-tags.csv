@@ -56,8 +56,8 @@ SchoolBoard-Public-English-Waterloo-Wilmot,N/A,Waterloo Region District School B
 SchoolBoard-Public-English-Woolwich-Wellesley,N/A,Waterloo Region District School Board (English Public) - Woolwich/Wellesley,English Public Trustee (Woolwich/Wellesley),Y,1,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Public-English"
 SchoolBoard-Catholic-English-Waterloo-Wellesley-Woolwich,N/A,Waterloo Catholic District School Board (English Catholic) - Waterloo/Wellesley/Woolwich,English Catholic Trustee (Waterloo/Wellesley/Woolwich),Y,2,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Public-Catholic,Alias-SchoolBoard-Catholic-English"
 SchoolBoard-Catholic-English-Kitchener-Wilmot,N/A,Waterloo Catholic District School Board (English Catholic) - Kitchener/Wilmot,English Catholic Trustee (Kitchener/Wilmot),Y,4,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Public-Catholic,Alias-SchoolBoard-Catholic-English"
-SchoolBoard-Catholic-English-Cambridge-NorthDumfries,N/A,Waterloo Catholic District School Board (English Catholic) - Cambridge/North Dumfries,English Catholic Trustee (Cambridge/North Dumfries),,3,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Public-Catholic,Alias-SchoolBoard-Catholic-English"
-SchoolBoard-Public-French,N/A,Conseil scolaire Viamonde (French Public),French Public Trustee,,1,"Alias-Everything,Alias-All-SchoolBoards"
+SchoolBoard-Catholic-English-Cambridge-NorthDumfries,N/A,Waterloo Catholic District School Board (English Catholic) - Cambridge/North Dumfries,English Catholic Trustee (Cambridge/North Dumfries),Y,3,"Alias-Everything,Alias-All-SchoolBoards,Alias-SchoolBoard-Public-Catholic,Alias-SchoolBoard-Catholic-English"
+SchoolBoard-Public-French,N/A,Conseil scolaire Viamonde (French Public),French Public Trustee,Y,1,"Alias-Everything,Alias-All-SchoolBoards"
 SchoolBoard-Catholic-French,N/A,Conseil scolaire de district catholique Centre-Sud (French Catholic),French Catholic Trustee,Y,1,"Alias-Everything,Alias-All-SchoolBoards"
 Election-Info,N/A,Election Information,Election Info,,0,
 Self-Promotion,N/A,Information About This Website,Website Publicity,,0,
