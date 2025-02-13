@@ -1,7 +1,8 @@
 # Waterloo Region Votes 
 
-This repository is published to
-https://civictechwr.github.io/WRVotesMunicipal2022
+This repository is published to:
+* https://civictechwr.github.io/WRVotesMunicipal2022
+* https://2022-municipal.waterlooregionvotes.org
 
 It is updated for the 2022 municipal election in Waterloo Region. 
 
