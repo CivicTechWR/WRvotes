@@ -52,6 +52,28 @@ position_num_to_elect = {}
 position_ward = {} # ugh
 position_acclaimed = {}
 
+# Ugh I hate nested structures
+pos_data = {}
+
+"""
+  'desc' => '',
+  'candidates' => [],
+  'num_to_elect' => 1,
+  'ward' => '',
+  'acclaimed' => False,
+"""
+
+
+static_text = {
+  'intro': "Use this handy sheet to figure out the candidates"
+      " you want to vote for. ",
+  'datestamp': "Worksheet generated on {}".format(
+        datetime.now().strftime("%A, %B %e, %Y, %l:%M%P")
+        ),
+}
+ 
+
+
 with open (os.path.join(DATADIR,"internal/position-tags.csv")) as r:
     pos_csv = csv.DictReader(r)
 
@@ -61,12 +83,21 @@ with open (os.path.join(DATADIR,"internal/position-tags.csv")) as r:
         position_num_to_elect[row['PositionUniqueName']] = row['NumberToElect']
         position_ward[row['PositionUniqueName']] = row['WardMunicipality']
 
+        pos_name = row['PositionUniqueName']
+        pos_data[pos_name] = {}
+        pos_data[pos_name]['desc'] = row['PositionDesc']
+        pos_data[pos_name]['candidates'] = []
+        pos_data[pos_name]['num_to_elect'] = int(row['NumberToElect'])
+        pos_data[pos_name]['ward_municipality'] = row['WardMunicipality']
+
 
 with open(os.path.join(DATADIR,"sync/nominees.csv")) as r:
     nom_csv = csv.DictReader(r)
 
     for row in nom_csv:
         position_candidates[row['PositionUniqueName']].append(row)
+        
+        pos_data[row['PositionUniqueName']]['candidates'].append(row)
 
 municipality_map = []
 with open (os.path.join(DATADIR,"internal/municipality-map.csv")) as r:
@@ -77,6 +108,18 @@ with open (os.path.join(DATADIR,"internal/municipality-map.csv")) as r:
 
 
 # Need to sort nominees by last name? 
+for pos in pos_data:
+  pos_data[pos]['candidates'].sort(
+      key = lambda x: "{},{}".format(x['Last_Name'],x['Given_Names'])
+      )
+  pos_data[pos]['num_candidates'] = len(pos_data[pos]['candidates'])
+
+  pos_data[pos]['acclaimed'] = (
+      pos_data[pos]['num_candidates'] <= pos_data[pos]['num_to_elect']
+      )
+      
+
+
 for pos in position_candidates:
     position_candidates[pos].sort(
       key = lambda x: "{},{}".format(x['Last_Name'],x['Given_Names'])
@@ -92,17 +135,14 @@ for pos in position_candidates:
 # ---- GEN DOCX
 
 
-for pos,title in position_names.items():
-    if position_ward[pos] == 'N/A':
+for ward in pos_data:
+    if pos_data[ward]['ward_municipality'] == 'N/A':
         continue
-
-    ward = pos
-    ward_municipality = position_ward[pos]
 
     races = "NOT-FOUND"
 
     for m in municipality_map:
-        if m['Name'] == ward_municipality:
+        if m['Name'] == pos_data[ward]['ward_municipality']:
             races = m['Races']
             break
       
@@ -112,12 +152,8 @@ for pos,title in position_names.items():
     d = Document()
 
     d.add_heading("Municipal Election Candidate Sheet", 0)
-    d.add_paragraph("List generated on {}".format(
-        datetime.now().strftime("%A, %B %e, %Y, %l:%M%P")
-        ))
-    d.add_paragraph("Use this handy sheet to figure out the candidates"
-       " you want to vote for. "
-       )
+    d.add_paragraph(static_text['datestamp'])
+    d.add_paragraph(static_text['intro'])
 
     race_list = races.split(",")
 
@@ -125,10 +161,10 @@ for pos,title in position_names.items():
         if r == '_SELF':
             r = ward
 
-        d.add_heading("{}".format( position_names[r]))
+        d.add_heading("{}".format( pos_data[r]['desc']))
 
         elected_text = "{} to be elected".format(
-            position_num_to_elect[r]
+            pos_data[r]['num_to_elect']
             )
         if position_acclaimed[r]:
             elected_text = "{} : ACCLAIMED".format(elected_text)
@@ -142,7 +178,7 @@ for pos,title in position_names.items():
         make_rows_vertically_centred(t.rows[0])
         make_rows_bold(t.rows[0])
 
-        for nom in position_candidates[r]:
+        for nom in pos_data[r]['candidates']:
             row = t.add_row()
             row_cells = row.cells
             row_cells[0].text = "{} {}".format(
@@ -152,13 +188,9 @@ for pos,title in position_names.items():
             row_cells[1].text = ""
             make_rows_vertically_centred(row)
 
-
     d.save(os.path.join(OUTDIR,"docx","{}.docx".format(ward)))
 
 
-
-
-    
 
 
 
