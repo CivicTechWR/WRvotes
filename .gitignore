@@ -2,6 +2,8 @@
 .DS_Store
 docs/_site
 docs/.sass-cache
+docs/worksheets/docx/*.docx
+docs/worksheets/xslx/*.xlsx
 docs/Gemfile
 docs/Gemfile.lock
 venv
