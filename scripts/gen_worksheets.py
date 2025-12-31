@@ -46,11 +46,6 @@ def make_rows_vertically_centred(*rows):
 # --- READ DATA 
 
 
-position_names = {}
-position_candidates = {}
-position_num_to_elect = {}
-position_ward = {} # ugh
-position_acclaimed = {}
 
 # Ugh I hate nested structures
 pos_data = {}
@@ -78,11 +73,6 @@ with open (os.path.join(DATADIR,"internal/position-tags.csv")) as r:
     pos_csv = csv.DictReader(r)
 
     for row in pos_csv:
-        position_names[ row['PositionUniqueName']] = row['PositionDesc']
-        position_candidates[row['PositionUniqueName']] = []
-        position_num_to_elect[row['PositionUniqueName']] = row['NumberToElect']
-        position_ward[row['PositionUniqueName']] = row['WardMunicipality']
-
         pos_name = row['PositionUniqueName']
         pos_data[pos_name] = {}
         pos_data[pos_name]['desc'] = row['PositionDesc']
@@ -95,8 +85,6 @@ with open(os.path.join(DATADIR,"sync/nominees.csv")) as r:
     nom_csv = csv.DictReader(r)
 
     for row in nom_csv:
-        position_candidates[row['PositionUniqueName']].append(row)
-        
         pos_data[row['PositionUniqueName']]['candidates'].append(row)
 
 municipality_map = []
@@ -112,25 +100,14 @@ for pos in pos_data:
   pos_data[pos]['candidates'].sort(
       key = lambda x: "{},{}".format(x['Last_Name'],x['Given_Names'])
       )
-  pos_data[pos]['num_candidates'] = len(pos_data[pos]['candidates'])
 
+  pos_data[pos]['num_candidates'] = len(pos_data[pos]['candidates'])
   pos_data[pos]['acclaimed'] = (
       pos_data[pos]['num_candidates'] <= pos_data[pos]['num_to_elect']
       )
       
 
 
-for pos in position_candidates:
-    position_candidates[pos].sort(
-      key = lambda x: "{},{}".format(x['Last_Name'],x['Given_Names'])
-      )
-
-    num_candidates = len(position_candidates[pos])
-    num_seats = int(position_num_to_elect[pos])
-
-    position_acclaimed[pos] = (num_candidates <= num_seats)
-
-    
 
 # ---- GEN DOCX
 
@@ -166,7 +143,7 @@ for ward in pos_data:
         elected_text = "{} to be elected".format(
             pos_data[r]['num_to_elect']
             )
-        if position_acclaimed[r]:
+        if pos_data[r]['acclaimed']:
             elected_text = "{} : ACCLAIMED".format(elected_text)
 
         d.add_paragraph(elected_text)
@@ -192,17 +169,13 @@ for ward in pos_data:
 
 
 
-
-
 # ---- BAD TESTING
 
 """
-print(position_candidates[TEST_POSITION])
-print(len(position_candidates[TEST_POSITION'))
+print(pos_data[TEST_POSITION])
 
-for nom in position_candidates[TEST_POSITION]:
+for nom in pos_data[TEST_POSITION]['candidates']:
     print("{} {}".format(nom['Given_Names'],nom['Last_Name']))
-
 """
 
 
