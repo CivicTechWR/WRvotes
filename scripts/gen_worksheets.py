@@ -120,12 +120,24 @@ def gen_xlsx(ward, pos_data, races):
     h2 = workbook.add_format({'font_size': 15, 'bold': True})
     table_header = workbook.add_format({
         'bold': True,
-        'bottom': 1,  # solid
-        'top': 1,
+        'border': 1,  # solid
         })
+    table_cell = workbook.add_format({
+        'left': 1,  # solid
+        'right': 1,  # solid
+        })
+    table_bottom = workbook.add_format({
+        'bottom': 1,
+        'left': 1,  # solid
+        'right': 1,  # solid
+        })
+
 
     spreadsheet = workbook.add_worksheet('Candidates')
     row = 0
+
+    spreadsheet.set_column(0, 0, 25)
+    spreadsheet.set_column(1, 1, 50)
     
     spreadsheet.write(row, 0, static_text['title'], h1)
     row += 2
@@ -155,8 +167,6 @@ def gen_xlsx(ward, pos_data, races):
         spreadsheet.write(row, 0, elected_text)
         row += 1
 
-        # TODO: Replace with static_text, because I will regret it if 
-        #   I don't
         spreadsheet.write(
             row, 
             0, 
@@ -171,7 +181,18 @@ def gen_xlsx(ward, pos_data, races):
             )
         row += 1
 
+        candidates_so_far = 0
+        num_candidates = pos_data[r]['num_candidates']
+
         for nom in pos_data[r]['candidates']:
+
+            # We cannot set the format of a cell later without 
+            # knowing its contents. 
+            if candidates_so_far + 1 == num_candidates:
+                format = table_bottom
+            else:
+                format = table_cell
+
             spreadsheet.write(
                 row, 
                 0, 
@@ -179,8 +200,52 @@ def gen_xlsx(ward, pos_data, races):
                     nom['Given_Names'],
                     nom['Last_Name'],
                     ),
+                format,
+                )
+            spreadsheet.write_blank(
+                row,
+                1,
+                "",
+                format,
                 )
             row += 1 
+            candidates_so_far += 1
+
+
+        spreadsheet.add_table(
+            row, 
+            0, 
+            row + pos_data[r]['num_candidates'],
+            1,
+            {   'banded_rows': False,
+                'columns':[
+                    {'header': static_text['candidate_name']},
+                    {'header': static_text['candidate_notes']},
+                 ]
+            },
+            )
+
+        row += 1
+
+        for nom in pos_data[r]['candidates']:
+            spreadsheet.write_row(
+                row, 
+                0, 
+                [
+                    "{} {}".format(
+                        nom['Given_Names'],
+                        nom['Last_Name'],
+                        ),
+                    "",
+                    ]
+                )
+            row += 1 
+
+
+
+         
+
+
 
     workbook.close()
 
