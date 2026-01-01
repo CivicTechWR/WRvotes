@@ -6,10 +6,15 @@
 import csv
 from docx import Document
 from docx.enum.table import WD_ALIGN_VERTICAL
+import docx.shared
 import os, sys
 from datetime import datetime
 import xlsxwriter
+import copy
 
+# For formatting docx cells
+CANDIDATE_NAME_INCHES = 2.0
+CANDIDATE_NOTE_INCHES = 5.0
 
 DATADIR="../docs/_data"
 TEST_POSITION='SchoolBoard-Public-English-Kitchener'
@@ -46,13 +51,32 @@ def make_rows_bold(*rows):
                     run.font.bold = True
 
 
-
 # Doesn't work?
 def make_rows_vertically_centred(*rows):
     for row in rows:
         for cell in row.cells:
             cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
 
+
+# https://stackoverflow.com/questions/43051462/python-docx-how-to-set-cell-width-in-tables
+def set_column_width_in_inches(column, length_in_inches):
+    column.width = docx.shared.Inches(length_in_inches)
+
+    for cell in column.cells:
+        cell.width = docx.shared.Inches(length_in_inches)
+
+
+# https://stackoverflow.com/questions/41578438/how-do-you-keep-table-rows-together-in-python-docx
+# SO UGLY
+def keep_tables_on_one_page(doc):
+    tags = doc.element.xpath('//w:tr[position() < last()]/w:tc/w:p')
+    for tag in tags:
+        ppr = tag.get_or_add_pPr()
+        ppr.keepNext_val = True
+
+
+
+# ---- GENERATE DOCUMENT FUNCTIONS 
 
 # ward: unique identifier (eg 'Kitchener-Ward-09')
 # pos_data: big complicated structure
@@ -71,7 +95,8 @@ def gen_docx(ward, pos_data, races):
         if r == '_SELF':
             r = ward
 
-        d.add_heading("{}".format( pos_data[r]['desc']))
+        head = d.add_heading("{}".format( pos_data[r]['desc']))
+        head.paragraph_format.keep_with_next = True
 
         elected_text = "{} to be elected".format(
             pos_data[r]['num_to_elect']
@@ -79,7 +104,8 @@ def gen_docx(ward, pos_data, races):
         if pos_data[r]['acclaimed']:
             elected_text = "{} : ACCLAIMED".format(elected_text)
 
-        d.add_paragraph(elected_text)
+        p = d.add_paragraph(elected_text)
+        p.paragraph_format.keep_with_next = True
 
         t = d.add_table(rows=1, cols=2)
         header_cells = t.rows[0].cells
@@ -97,6 +123,11 @@ def gen_docx(ward, pos_data, races):
                 )
             row_cells[1].text = ""
             make_rows_vertically_centred(row)
+
+        set_column_width_in_inches(t.columns[0], CANDIDATE_NAME_INCHES)
+        set_column_width_in_inches(t.columns[1], CANDIDATE_NOTE_INCHES)
+
+    keep_tables_on_one_page(d)
 
     d.save(os.path.join(OUTDIR,"docx","{}.docx".format(ward)))
 
@@ -122,21 +153,28 @@ def gen_xlsx(ward, pos_data, races):
         'bold': True,
         'border': 1,  # solid
         })
+
+    # This will be bad when I want to use strikeout. 
     table_cell = workbook.add_format({
         'left': 1,  # solid
         'right': 1,  # solid
+        'text_wrap': True,
+        'valign': 'vcenter',
         })
+
     table_bottom = workbook.add_format({
         'bottom': 1,
         'left': 1,  # solid
         'right': 1,  # solid
+        'text_wrap': True,
+        'valign': 'vcenter',
         })
 
 
     spreadsheet = workbook.add_worksheet('Candidates')
     row = 0
 
-    spreadsheet.set_column(0, 0, 25)
+    spreadsheet.set_column(0, 0, 30)
     spreadsheet.set_column(1, 1, 50)
     
     spreadsheet.write(row, 0, static_text['title'], h1)
@@ -165,7 +203,7 @@ def gen_xlsx(ward, pos_data, races):
             elected_text = "{} : ACCLAIMED".format(elected_text)
 
         spreadsheet.write(row, 0, elected_text)
-        row += 1
+        row += 2
 
         spreadsheet.write(
             row, 
@@ -208,6 +246,7 @@ def gen_xlsx(ward, pos_data, races):
                 "",
                 format,
                 )
+            
             row += 1 
             candidates_so_far += 1
 
@@ -227,6 +266,7 @@ pos_data = {}
   'num_to_elect' => 1,
   'ward' => '',
   'acclaimed' => False,
+  'num_candidates' => 1,
 """
 
 
@@ -273,7 +313,7 @@ for pos in pos_data:
 
 
 
-# ---- GEN DOCX
+# ---- GEN DOCS
 
 
 for ward in pos_data:
