@@ -3,7 +3,7 @@
 docs/_site
 docs/.sass-cache
 docs/worksheets/docx/*.docx
-docs/worksheets/xslx/*.xlsx
+docs/worksheets/xlsx/*.xlsx
 docs/Gemfile
 docs/Gemfile.lock
 venv

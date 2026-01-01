@@ -8,6 +8,7 @@ from docx import Document
 from docx.enum.table import WD_ALIGN_VERTICAL
 import os, sys
 from datetime import datetime
+import xlsxwriter
 
 
 DATADIR="../docs/_data"
@@ -22,6 +23,17 @@ OUTDIR="../docs/worksheets"
 # Pandas would probably be better but I can't use NumPy on this
 # laptop without yak-shaving. 
 
+static_text = {
+  'intro': "Use this handy sheet to figure out the candidates"
+      " you want to vote for. ",
+  'datestamp': "Worksheet generated on {}".format(
+        datetime.now().strftime("%A, %B %e, %Y, %l:%M%P")
+        ),
+  'title': "Municipal Election Candidate Sheet",
+  'candidate_name': "Candidate Name",
+  'candidate_notes': "My Notes",
+
+}
 
 # ---- HELPER FUNCTIONS
 
@@ -42,6 +54,136 @@ def make_rows_vertically_centred(*rows):
             cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
 
 
+# ward: unique identifier (eg 'Kitchener-Ward-09')
+# pos_data: big complicated structure
+# races: list of positions, including _SELF
+
+def gen_docx(ward, pos_data, races):
+    d = Document()
+
+    d.add_heading(static_text['title'], 0)
+    d.add_paragraph(static_text['datestamp'])
+    d.add_paragraph(static_text['intro'])
+
+    race_list = races.split(",")
+
+    for r in race_list:
+        if r == '_SELF':
+            r = ward
+
+        d.add_heading("{}".format( pos_data[r]['desc']))
+
+        elected_text = "{} to be elected".format(
+            pos_data[r]['num_to_elect']
+            )
+        if pos_data[r]['acclaimed']:
+            elected_text = "{} : ACCLAIMED".format(elected_text)
+
+        d.add_paragraph(elected_text)
+
+        t = d.add_table(rows=1, cols=2)
+        header_cells = t.rows[0].cells
+        header_cells[0].text = "{}".format(static_text['candidate_name'])
+        header_cells[1].text = "{}".format(static_text['candidate_notes'])
+        make_rows_vertically_centred(t.rows[0])
+        make_rows_bold(t.rows[0])
+
+        for nom in pos_data[r]['candidates']:
+            row = t.add_row()
+            row_cells = row.cells
+            row_cells[0].text = "{} {}".format(
+                nom['Given_Names'],
+                nom['Last_Name'],
+                )
+            row_cells[1].text = ""
+            make_rows_vertically_centred(row)
+
+    d.save(os.path.join(OUTDIR,"docx","{}.docx".format(ward)))
+
+
+
+
+# ward: unique identifier (eg 'Kitchener-Ward-09')
+# pos_data: big complicated structure
+# races: list of positions, including _SELF
+
+def gen_xlsx(ward, pos_data, races):
+
+    workbook = xlsxwriter.Workbook(os.path.join(
+        OUTDIR,
+        "xlsx",
+        "{}.xlsx".format(ward)
+        ))
+    # Add a bold format to use to highlight cells.
+    bold = workbook.add_format({'bold': True})
+    h1 = workbook.add_format({'font_size': 18, 'bold': True})
+    h2 = workbook.add_format({'font_size': 15, 'bold': True})
+    table_header = workbook.add_format({
+        'bold': True,
+        'bottom': 1,  # solid
+        'top': 1,
+        })
+
+    spreadsheet = workbook.add_worksheet('Candidates')
+    row = 0
+    
+    spreadsheet.write(row, 0, static_text['title'], h1)
+    row += 2
+
+    spreadsheet.write(row, 0, static_text['datestamp'])
+    row += 1
+    spreadsheet.write(row, 0, static_text['intro'])
+    row += 1 
+
+    race_list = races.split(",")
+
+    for r in race_list:
+        row += 2
+
+        if r == '_SELF':
+            r = ward
+
+        spreadsheet.write(row, 0, "{}".format( pos_data[r]['desc']), h2)
+        row += 1
+
+        elected_text = "{} to be elected".format(
+            pos_data[r]['num_to_elect']
+            )
+        if pos_data[r]['acclaimed']:
+            elected_text = "{} : ACCLAIMED".format(elected_text)
+
+        spreadsheet.write(row, 0, elected_text)
+        row += 1
+
+        # TODO: Replace with static_text, because I will regret it if 
+        #   I don't
+        spreadsheet.write(
+            row, 
+            0, 
+            "{}".format(static_text['candidate_name']),
+            table_header,
+            )
+        spreadsheet.write(
+            row, 
+            1, 
+            "{}".format(static_text['candidate_notes']),
+            table_header,
+            )
+        row += 1
+
+        for nom in pos_data[r]['candidates']:
+            spreadsheet.write(
+                row, 
+                0, 
+                "{} {}".format(
+                    nom['Given_Names'],
+                    nom['Last_Name'],
+                    ),
+                )
+            row += 1 
+
+    workbook.close()
+
 
 # --- READ DATA 
 
@@ -59,13 +201,6 @@ pos_data = {}
 """
 
 
-static_text = {
-  'intro': "Use this handy sheet to figure out the candidates"
-      " you want to vote for. ",
-  'datestamp': "Worksheet generated on {}".format(
-        datetime.now().strftime("%A, %B %e, %Y, %l:%M%P")
-        ),
-}
  
 
 
@@ -126,46 +261,10 @@ for ward in pos_data:
     if races == 'NOT-FOUND':
         raise NameError
 
-    d = Document()
+    gen_docx(ward, pos_data, races)
+    gen_xlsx(ward, pos_data, races)
 
-    d.add_heading("Municipal Election Candidate Sheet", 0)
-    d.add_paragraph(static_text['datestamp'])
-    d.add_paragraph(static_text['intro'])
 
-    race_list = races.split(",")
-
-    for r in race_list:
-        if r == '_SELF':
-            r = ward
-
-        d.add_heading("{}".format( pos_data[r]['desc']))
-
-        elected_text = "{} to be elected".format(
-            pos_data[r]['num_to_elect']
-            )
-        if pos_data[r]['acclaimed']:
-            elected_text = "{} : ACCLAIMED".format(elected_text)
-
-        d.add_paragraph(elected_text)
-
-        t = d.add_table(rows=1, cols=2)
-        header_cells = t.rows[0].cells
-        header_cells[0].text = "Candidate Name"
-        header_cells[1].text = "Notes"
-        make_rows_vertically_centred(t.rows[0])
-        make_rows_bold(t.rows[0])
-
-        for nom in pos_data[r]['candidates']:
-            row = t.add_row()
-            row_cells = row.cells
-            row_cells[0].text = "{} {}".format(
-                nom['Given_Names'],
-                nom['Last_Name'],
-                )
-            row_cells[1].text = ""
-            make_rows_vertically_centred(row)
-
-    d.save(os.path.join(OUTDIR,"docx","{}.docx".format(ward)))
 
 
 
