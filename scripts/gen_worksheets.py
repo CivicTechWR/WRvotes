@@ -211,42 +211,6 @@ def gen_xlsx(ward, pos_data, races):
             row += 1 
             candidates_so_far += 1
 
-
-        spreadsheet.add_table(
-            row, 
-            0, 
-            row + pos_data[r]['num_candidates'],
-            1,
-            {   'banded_rows': False,
-                'columns':[
-                    {'header': static_text['candidate_name']},
-                    {'header': static_text['candidate_notes']},
-                 ]
-            },
-            )
-
-        row += 1
-
-        for nom in pos_data[r]['candidates']:
-            spreadsheet.write_row(
-                row, 
-                0, 
-                [
-                    "{} {}".format(
-                        nom['Given_Names'],
-                        nom['Last_Name'],
-                        ),
-                    "",
-                    ]
-                )
-            row += 1 
-
-
-
-         
-
-
-
     workbook.close()
 
 
