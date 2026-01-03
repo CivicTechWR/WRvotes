@@ -10,7 +10,6 @@ import docx.shared
 import os, sys
 from datetime import datetime
 import xlsxwriter
-import copy
 
 # For formatting docx cells
 CANDIDATE_NAME_INCHES = 2.0
@@ -37,7 +36,6 @@ static_text = {
   'title': "Municipal Election Candidate Sheet",
   'candidate_name': "Candidate Name",
   'candidate_notes': "My Notes",
-
 }
 
 # ---- HELPER FUNCTIONS
@@ -73,6 +71,12 @@ def keep_tables_on_one_page(doc):
     for tag in tags:
         ppr = tag.get_or_add_pPr()
         ppr.keepNext_val = True
+
+
+# Write a line to the given file descriptor, with given number of
+# newlines
+def writeln(fd, str, num_newlines = 1):
+    fd.write("{}{}".format(str, (num_newlines * "\n")))
 
 
 
@@ -253,6 +257,56 @@ def gen_xlsx(ward, pos_data, races):
     workbook.close()
 
 
+# ward: unique identifier (eg 'Kitchener-Ward-09')
+# pos_data: big complicated structure
+# races: list of positions, including _SELF
+
+def gen_plaintext(ward, pos_data, races):
+
+    with open (
+        os.path.join(OUTDIR,"text","{}.txt".format(ward)),
+        'w',
+        encoding="utf-8",
+        ) as d: 
+
+        writeln(d, static_text['title'])
+        writeln(d, ("=" * len(static_text['title'])), 2)
+
+
+        writeln(d, static_text['datestamp'], 2)
+        writeln(d, static_text['intro'], 2)
+
+        race_list = races.split(",")
+
+        for r in race_list:
+            if r == '_SELF':
+                r = ward
+
+            writeln(d, pos_data[r]['desc'])
+            writeln(d, ("-" * len(pos_data[r]['desc'])), 2)
+
+
+            elected_text = "{} to be elected".format(
+                pos_data[r]['num_to_elect']
+                )
+            if pos_data[r]['acclaimed']:
+                elected_text = "{} : ACCLAIMED".format(elected_text)
+
+            writeln(d, elected_text, 2)
+
+            for nom in pos_data[r]['candidates']:
+                writeln(d, 
+                    "- {} {} ".format(
+                    nom['Given_Names'],
+                    nom['Last_Name'],
+                    ))
+
+            writeln(d, "", 2)
+
+    d.close()
+
+
+
 # --- READ DATA 
 
 
@@ -330,6 +384,7 @@ for ward in pos_data:
     if races == 'NOT-FOUND':
         raise NameError
 
+    gen_plaintext(ward, pos_data, races)
     gen_docx(ward, pos_data, races)
     gen_xlsx(ward, pos_data, races)
 
