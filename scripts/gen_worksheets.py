@@ -79,6 +79,18 @@ def writeln(fd, str, num_newlines = 1):
     fd.write("{}{}".format(str, (num_newlines * "\n")))
 
 
+# Get candidate name including withdrawn status. Does not bold
+# anything.
+def get_candidate_name(nom):
+    candidate_text = "{} {}".format(
+        nom['Given_Names'],
+        nom['Last_Name'],
+        )
+    if nom['Withdrawn']:
+        candidate_text = "{} (WITHDRAWN)".format(candidate_text)
+
+    return candidate_text
+
 
 # ---- GENERATE DOCUMENT FUNCTIONS 
 
@@ -121,10 +133,8 @@ def gen_docx(ward, pos_data, races):
         for nom in pos_data[r]['candidates']:
             row = t.add_row()
             row_cells = row.cells
-            row_cells[0].text = "{} {}".format(
-                nom['Given_Names'],
-                nom['Last_Name'],
-                )
+
+            row_cells[0].text = get_candidate_name(nom)
             row_cells[1].text = ""
             make_rows_vertically_centred(row)
 
@@ -238,10 +248,7 @@ def gen_xlsx(ward, pos_data, races):
             spreadsheet.write(
                 row, 
                 0, 
-                "{} {}".format(
-                    nom['Given_Names'],
-                    nom['Last_Name'],
-                    ),
+                get_candidate_name(nom),
                 format,
                 )
             spreadsheet.write_blank(
@@ -295,11 +302,7 @@ def gen_plaintext(ward, pos_data, races):
             writeln(d, elected_text, 2)
 
             for nom in pos_data[r]['candidates']:
-                writeln(d, 
-                    "- {} {} ".format(
-                    nom['Given_Names'],
-                    nom['Last_Name'],
-                    ))
+                writeln(d, "- {}".format(get_candidate_name(nom)))
 
             writeln(d, "", 2)
 
