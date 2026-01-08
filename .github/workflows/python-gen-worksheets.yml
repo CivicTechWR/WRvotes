@@ -28,7 +28,6 @@ jobs:
       - name: Upload worksheets to Github Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'docs/worksheets/'
-          retention_days: 3650
+          path: 'docs/worksheets'
           
 
