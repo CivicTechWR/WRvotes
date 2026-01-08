@@ -32,7 +32,7 @@ jobs:
         with:
           # Creates a glob that matches only [s]. Then the
           # artifact maybe will begin at 'worksheets'
-          path: docs/worksheet[s]
+          path: docs/worksheet*
           overwrite: true
           
 
