@@ -32,6 +32,6 @@ jobs:
         with:
           # Creates a glob that matches only [s]. Then the
           # artifact maybe will begin at 'worksheets'
-          path: 'doc[s]/worksheets'
+          path: doc?/worksheets
           
 
