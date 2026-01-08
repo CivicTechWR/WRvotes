@@ -6,7 +6,9 @@ on:
       - 'docs/_data/sync/nominees.csv'
       - 'docs/_data/internal/municipality-map.csv'
       - 'docs/_data/internal/position-tags.csv'
+      - 'scripts/gen_worksheets.py'
       - 'docs/_data/internal/regen-worksheets.txt'
+      
 
 jobs:
   build:
@@ -28,6 +30,8 @@ jobs:
       - name: Upload worksheets to Github Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'docs/worksheets'
+          # Creates a glob that matches only [s]. Then the
+          # artifact maybe will begin at 'worksheets'
+          path: 'doc[s]/worksheets'
           
 
