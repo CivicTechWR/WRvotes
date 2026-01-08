@@ -28,10 +28,11 @@ jobs:
       - name: Generate worksheets already
         run: python scripts/gen_worksheets.py
       - name: Upload worksheets to Github Pages
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
           # Creates a glob that matches only [s]. Then the
           # artifact maybe will begin at 'worksheets'
           path: doc?/worksheets
+          overwrite: true
           
 
