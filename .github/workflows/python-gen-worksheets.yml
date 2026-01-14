@@ -12,6 +12,8 @@ on:
 
 jobs:
   build:
+    # DISABLE RUN
+    if: false
     runs-on: ubuntu-latest
 
     steps:
