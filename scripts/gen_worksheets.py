@@ -7,7 +7,7 @@ import csv
 from docx import Document
 from docx.enum.table import WD_ALIGN_VERTICAL
 import docx.shared
-import os, sys
+import os, sys, os.path
 from datetime import datetime
 import xlsxwriter
 
@@ -18,7 +18,7 @@ CANDIDATE_NOTE_INCHES = 5.0
 DATADIR="docs/_data"
 TEST_POSITION='SchoolBoard-Public-English-Kitchener'
 TEST_WARD='Kitchener-Ward-09'
-OUTDIR="docs/worksheets"
+OUTDIR="_site/worksheets"
 
 # I am not happy with reading and appending into a giant list, but
 # whatever. The numbers are small enough that inefficiencies should
@@ -310,9 +310,8 @@ def gen_plaintext(ward, pos_data, races):
 
 
 
-# --- READ DATA 
 
-
+# --- START SCRIPT
 
 # Ugh I hate nested structures
 pos_data = {}
@@ -326,9 +325,17 @@ pos_data = {}
   'num_candidates' => 1,
 """
 
+# --- ENSURE OUTPUT FOLDERS EXIST
+
 print("Current directory is: {}".format(os.getcwd()))
  
+outfolders = ["docx", "text", "xlsx"]
 
+for d in outfolders:
+    if not os.path.isdir(os.path.join(OUTDIR, d)):
+        os.makedirs(os.path.join(OUTDIR, d))
+
+# --- READ DATA 
 
 with open (os.path.join(DATADIR,"internal/position-tags.csv")) as r:
     pos_csv = csv.DictReader(r)
