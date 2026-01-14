@@ -18,7 +18,7 @@ CANDIDATE_NOTE_INCHES = 5.0
 DATADIR="docs/_data"
 TEST_POSITION='SchoolBoard-Public-English-Kitchener'
 TEST_WARD='Kitchener-Ward-09'
-OUTDIR="_site/worksheets"
+OUTDIR="docs/worksheets"
 
 # I am not happy with reading and appending into a giant list, but
 # whatever. The numbers are small enough that inefficiencies should

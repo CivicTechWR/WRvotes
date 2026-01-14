@@ -5,6 +5,9 @@ show_downloads: false
 plugins:
   - jekyll-sitemap
 
+include:
+  - worksheets
+
 defaults:
   -
    values:
