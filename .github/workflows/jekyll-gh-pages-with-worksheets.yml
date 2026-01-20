@@ -2,10 +2,8 @@
 # Modified from: 
 name: Deploy Jekyll and Worksheets together
 
-on:
-  # Runs on pushes targeting the default branch
+on: 
   push:
-    branches: ["worksheets"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
