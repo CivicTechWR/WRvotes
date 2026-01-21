@@ -6,14 +6,20 @@
       <h4 class="inline">{{ include.header }}</h4>
     {% endif %}
 
+    {% if include.desc %}
+      <p>
+      {{ include.desc | newline_to_br }} 
+      </p>
+    {% endif %}
+
     {% assign item-list-sorted = (include.item-list | sort: "PubDate")
       | reverse %}
 
     {% assign item-count = 0 %}
-
+    {% assign teaser-limit = include.teaser-limit | plus:0 %}
 
     <ul id="{{ include.race-id | slugify }}-{{ include.type }}"
-        class="{{ include.type }}-list {% if include.teaser-limit == 0 -%}
+        class="{{ include.type }}-list {% if teaser-limit == 0 -%}
         togglable{%- endif -%}">
 
     {% for item in item-list-sorted %}
@@ -21,12 +27,12 @@
       <li>
       <a href="{{ item.URL }}">{{ item.Title }}</a>,
       {{ item.Publication }},
-      {{ item.PubDate | date: "%B %-d, %Y" }}.
+      {{ item.PubDate | date: "%B %-d, %Y" }}. 
       </li>
 
       {% assign item-count = item-count | plus:1 %}
-      {% if item-count == include.teaser-limit
-            and include.item-list.size > include.teaser-limit %}
+      {% if item-count == teaser-limit
+            and include.item-list.size > teaser-limit %}
         </ul>
         <ul id="{{ include.race-id | slugify }}-{{ include.type }}-toggle"
            class="togglable {{ include.type }}-list continue">

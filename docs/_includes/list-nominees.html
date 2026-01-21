@@ -46,82 +46,20 @@
     {%- endif -%}
 
     {% if sorted-nominees.size > 0 or num-to-elect == 0 %}
+      {% for n in sorted-nominees %}
+        {% include candidate-card.html
+          winner=n
+          position_id=include.race-id
+        %}
+      {% endfor %}
+
+
+
       <ul>
-      {% for nominee in sorted-nominees %}
-        <li>
-        {% if nominee.Withdrawn == 'Y' -%}
-          <span class="withdrawn"><strong>WITHDRAWN: </strong></span>
-        {%- endif -%}
-
-        <span class="name">{{ nominee.Given_Names}} {{ nominee.Last_Name }}</span>
-
-        {%- if nominee.Party %}
-          {{ }}<span class="party">({{ nominee.Party }})</span>
-        {%- endif -%}
-
-        {%- unless nominee.Withdrawn == 'Y' -%}
-          {% assign num-seps = 0 %}
-
-          {%- if nominee.Website -%}
-            {%- include punctuate.html num-sofar=num-seps -%}
-            {%- assign num-seps = num-seps | plus: 1 -%}
-
-            <a class="website" href="{%- include get-website.html 
-            site=nominee.Website -%}">Website</a>
-          {%- endif -%}
-
-          {%- if nominee.Phone -%}
-              {%- include punctuate.html num-sofar=num-seps -%}
-              {%- assign num-seps = num-seps | plus: 1 -%}
-
-              <span class="phone">{{ nominee.Phone }}</span>
-          {%- endif -%}
-
-          {%- if nominee.Email -%}
-              {%- include punctuate.html num-sofar=num-seps -%}
-              {%- assign num-seps = num-seps | plus: 1 -%}
-
-              <span class="email">{{ nominee.Email }}</span>
-          {%- endif -%}
-
-          {%- if nominee.Facebook -%}
-            {%- include punctuate.html num-sofar=num-seps -%}
-            {%- assign num-seps = num-seps | plus: 1 -%}
-
-            <a class="facebook" href="{%- include
-            get-website.html site=nominee.Facebook
-            -%}">Facebook</a>
-          {%- endif -%}
-
-          {%- if nominee.Twitter -%}
-            
-           {%- include punctuate.html num-sofar=num-seps -%}
-           {%- assign num-seps = num-seps | plus: 1 -%}
-
-            <a class="twitter" href="{%- include get-website.html site=nominee.Twitter -%}">Twitter</a>
-
-          {%- endif -%}
-
-          {%- if nominee.Instagram -%}
-            
-           {%- include punctuate.html num-sofar=num-seps -%}
-           {%- assign num-seps = num-seps | plus: 1 -%}
-
-            <a class="instagram" href="{%- include get-website.html
-            site=nominee.Instagram -%}">Instagram</a>
-          {%- endif -%}
-
-          {%- if nominee.LinkedIn -%}
-            
-           {%- include punctuate.html num-sofar=num-seps -%}
-           {%- assign num-seps = num-seps | plus: 1 -%}
-
-            <a class="linkedin" href="{%- include get-website.html
-            site=nominee.LinkedIn -%}">LinkedIn</a>
-          {%- endif -%}
-        {%- endunless -%}
-
-        </li>
+      {% for n in sorted-nominees %}
+        {% include individual-nominee-ul.html 
+          nominee=n
+        %}
       {% endfor %}
       </ul>
 
