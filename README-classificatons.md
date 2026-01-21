@@ -12,7 +12,7 @@ If it is not important that this event be listed for every single race
 most general position. 
 
 For example, articles about all of Cambridge can be tagged 
-"Cambridge-Maypr" and articles about all of Waterloo Region can be
+"Cambridge-Mayor" and articles about all of Waterloo Region can be
 tagged "Regional-Chair"
 
 If it is important that this event be listed in all races (most
