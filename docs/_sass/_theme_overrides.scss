@@ -40,6 +40,10 @@ body {
     }
   }
 
+  br.textonly { 
+    display: none;
+  }
+
   #header_wrap {
     background: $light;
 
