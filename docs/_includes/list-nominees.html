@@ -46,12 +46,14 @@
     {%- endif -%}
 
     {% if sorted-nominees.size > 0 or num-to-elect == 0 %}
-      {% for n in sorted-nominees %}
-        {% include candidate-card.html
-          winner=n
-          position_id=include.race-id
-        %}
-      {% endfor %}
+      <div class="candidate-list-grid">
+          {% for n in sorted-nominees %}
+            {% include candidate-card.html
+              winner=n
+              position_id=include.race-id
+            %}
+          {% endfor %}
+      </div>
 
 
 

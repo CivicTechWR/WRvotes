@@ -390,6 +390,11 @@ p.bigtext {
 
 /* ------ RESULTS PAGE ------ */
 
+.candidate-list-grid { 
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .jurisdiction {
   display: flex;
   flex-wrap: wrap;
@@ -443,7 +448,7 @@ p.bigtext {
       padding-top: 0;
 
       .contact-item {
-        flex: 1 0 25%;
+        flex: 1 0;
 
         .contact-item-inner {
           padding: 6px;
