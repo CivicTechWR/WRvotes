@@ -23,7 +23,7 @@ Map]({{site.url}}).
 
     <ul>
     {% for ward in wards-sorted %}
-      <li><a href="./{{ ward.PositionUniqueName }}">{{ ward.PositionDesc }}</a></li>
+      <li><a href="./{{ ward.PositionUniqueName }}">{{ ward.ShortLocalDesc }}</a></li>
     {% endfor %}
     </ul>
   </div>
