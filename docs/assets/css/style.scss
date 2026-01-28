@@ -403,7 +403,7 @@ p.bigtext {
 }
 
 .grid-item {
-  flex: 0 0 25%;
+  flex: 1 0;
   min-width: 200px;
 
   .candidate-card {
@@ -446,6 +446,7 @@ p.bigtext {
       display: flex;
       padding: 1em;
       padding-top: 0;
+      flex-wrap: wrap;
 
       .contact-item {
         flex: 1 0;
