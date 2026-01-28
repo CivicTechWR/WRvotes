@@ -7,6 +7,14 @@
     <h3 class="medium-text">{{ race-info.PositionDesc }}</h3>
   {% endunless %}
 
+
+  {% capture introtext %}
+  {% include desc-positions-gross.html
+    category=race-info.PositionCategory
+  %} 
+  {% endcapture %}
+  {{ introtext | markdownify }}
+
   <div class="candidate-list" id="{{ include.race-id | slugify }}" >
 
     {% assign these-nominees = site.data.sync.nominees
