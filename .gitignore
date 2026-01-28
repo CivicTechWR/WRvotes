@@ -7,4 +7,5 @@ docs/worksheets/xlsx/*.xlsx
 docs/worksheets/text/*.txt
 docs/Gemfile
 docs/Gemfile.lock
+*.~lock.*
 venv
