@@ -68,7 +68,7 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
             {% if include.winner["Twitter"] %}
             {% capture twitter_page %}
                 {%- include get-website.html
-                site=include.winner.Twitter
+                account=include.winner.Twitter
                 network="twitter"
                 -%}
             {% endcapture %}

@@ -1,14 +1,19 @@
 {%- comment -%}
-Assume @name means Twitter and not Instagram.
-This should probably be its own function.
-Or we should prohibit this!
+include.network is 'twitter' (or maybe 'instagram' or other accounts
+eventually)
+
+include.account is the handle or the URL. We prefer URLs.
+
+I don't know what 'first-char-website' is for. Maybe it was 
+intended to look for an '@' symbol? We do not turn accountnames like
+@elonmusk to their Twitter handles.
 {%- endcomment -%}
 
-{%- assign first-char-website = include.site
-  | slice: 0 -%}
-{%- if include.site contains '://' -%}
-  {%- assign website-url = include.site -%}
+{%- assign first-char-website = include.account | slice: 0 -%}
+
+{%- if include.account contains '://' -%}
+  {%- assign website-url = include.account -%}
 {%- else -%}
-  {%- capture website-url -%}https://{{ include.site }}{%- endcapture -%}
+  {%- capture website-url -%}https://{{ include.account }}{%- endcapture -%}
 {%- endif -%}
 {{- website-url -}}

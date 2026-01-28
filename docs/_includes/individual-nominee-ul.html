@@ -17,7 +17,7 @@
             {%- assign num-seps = num-seps | plus: 1 -%}
 
             <a class="website" href="{%- include get-website.html 
-            site=include.nominee.Website -%}">Website</a>
+            account=include.nominee.Website network='website' -%}">Website</a>
           {%- endif -%}
 
           {%- if include.nominee.Phone -%}
@@ -39,7 +39,7 @@
             {%- assign num-seps = num-seps | plus: 1 -%}
 
             <a class="facebook" href="{%- include
-            get-website.html site=include.nominee.Facebook
+            get-website.html account=include.nominee.Facebook network='facebook'
             -%}">Facebook</a>
           {%- endif -%}
 
@@ -48,7 +48,9 @@
            {%- include punctuate.html num-sofar=num-seps -%}
            {%- assign num-seps = num-seps | plus: 1 -%}
 
-            <a class="twitter" href="{%- include get-website.html site=include.nominee.Twitter -%}">Twitter</a>
+            <a class="twitter" href="{%- include get-website.html 
+              account=include.nominee.Twitter
+              network='twitter' -%}">Twitter</a>
 
           {%- endif -%}
 
@@ -58,7 +60,8 @@
            {%- assign num-seps = num-seps | plus: 1 -%}
 
             <a class="instagram" href="{%- include get-website.html
-            site=include.nominee.Instagram -%}">Instagram</a>
+            account=include.nominee.Instagram 
+            network='instagram' -%}">Instagram</a>
           {%- endif -%}
 
           {%- if include.nominee.LinkedIn -%}
@@ -67,7 +70,7 @@
            {%- assign num-seps = num-seps | plus: 1 -%}
 
             <a class="linkedin" href="{%- include get-website.html
-            site=include.nominee.LinkedIn -%}">LinkedIn</a>
+            account=include.nominee.LinkedIn network='linkedin' -%}">LinkedIn</a>
           {%- endif -%}
         {%- endunless -%}
 
