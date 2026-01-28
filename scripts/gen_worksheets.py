@@ -124,6 +124,7 @@ def gen_docx(ward, pos_data, races):
         p.paragraph_format.keep_with_next = True
 
         t = d.add_table(rows=1, cols=2)
+        t.style = 'Table Grid'
         header_cells = t.rows[0].cells
         header_cells[0].text = "{}".format(static_text['candidate_name'])
         header_cells[1].text = "{}".format(static_text['candidate_notes'])
