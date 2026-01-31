@@ -49,7 +49,7 @@ here](https://support.google.com/tagmanager/answer/9323295?hl=en). To enhance pr
   addresses.
 
 You can see how we call Google Analytics/Tag Manager [in the source
-code](https://github.com/CivicTechWR/WRVotesMunicipal2022/blob/master/docs/_includes/google-analytics.html). 
+code](https://github.com/CivicTechWR/{{ site.repository_name }}/blob/master/docs/_includes/google-analytics.html). 
 
 Many ad blocking plugins (such as [UBlock
 Origin](https://ublockorigin.com/)) will block Google Analytics and

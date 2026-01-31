@@ -6,11 +6,11 @@ layout: page
 ## Open Data for this site
 
 The source code for this site is hosted on GitHub:
-<https://github.com/CivicTechWR/WRvotesMunicipal2022> .
+<https://github.com/CivicTechWR/{{ site.repository_name }}>
 
 Even if the waterlooregionvotes.org domain expires, you should be able
 to access the site via
-<https://civictechwr.github.io/WRVotesMunicipal2022>.
+<https://civictechwr.github.io/{{ site.repository_name }}>.
 
 
 The nomination data for this site is courtesy of Bob Jonkman. He has a
