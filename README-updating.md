@@ -62,6 +62,7 @@ out.
    * `docs/_data/sync/events.csv`
    * `docs/_data/sync/media.csv`
    * `docs/_data/sync/nominees.csv`
+   * `docs/assets/images/nominees/`
    * copy the right position file into place
      - `docs/_data/sync/fedprov-position-tags.csv`
      - `docs/_data/sync/municipality-position-tags.csv`
