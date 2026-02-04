@@ -92,7 +92,8 @@ See the [Issues list](https://github.com/CivicTechWR/WRVotesMunicipal2022/issues
 
 ## Project Status
 
-This project began as an initiative of [CivicTechWR](https://civictechwr.org) but as of August 2022, that group is dormant. The repository serves as an archive of the 2022 municipal election analysis.
+This project began as an initiative of [CivicTechWR](https://civictechwr.org).
+It is being modified for the October 2026 election.
 
 ## Contributing
 
