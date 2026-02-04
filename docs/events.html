@@ -6,34 +6,14 @@ title: All Events
 <p>
 This listing includes both upcoming and past events, including events
 specific to individual candidates (meet and greets, etc) and general
-information events. You can get a more specific listing of
-all-candidates meetings relevant to your area on the <a
-href="./wards/">information page for your ward</a>.
-</p><p>
-{% if site.google_calendar_id -%}
-  <h2>Embedded Calendar</h2>
+information events. 
 
-  <p>
-  You can also view this calendar <a href="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}&hl=en">on
-  its own page</a>.
-  </p>
-
-  {% if site.events_newsletter -%}
-    <p>
-    Instead of forgetting to visit this page and missing events, you
-    can <a href="{{ site.events_newsletter }}">sign up for event
-    listings</a> and get a weekly summary emailed to you.
-    </p>
-  {% endif %}
-
-<div class="embedContainer">
-  <iframe src="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}&hl=en" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-</div>
-
-{%- endif %}
-
+Is there a local election-related event that is not on this calendar?
+Please email us about it!
 
 </p>
+
+
 
 {% assign all-events = site.data.sync.events %}
 {% assign date-now = site.time | date: "%F" %}
@@ -80,6 +60,43 @@ href="./wards/">information page for your ward</a>.
 {% endif %}
 
 
+
+{% if site.google_calendar_id -%}
+  <h2>Embedded Calendar</h2>
+
+  <p>
+  You can also view this calendar <a href="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}&hl=en">on
+  its own page</a>.
+  </p></p>
+  <p>You can subscribe to this calendar's events using its <a
+  href="https://www.google.com/calendar/ical/{{
+  site.google_calendar_id }}/public/basic.ics">iCal
+  feed</a>
+
+  {%- if site.google_calendar_rss -%}
+  &nbsp; or its <a href="{{ site.google_calendar_rss }}">RSS feed</a>
+  {%- endif -%}
+  . (Learn more about <a
+  href="https://feeds.off-topic.kwlug.org/pages/what-are-feeds.html">how
+  to use feeds.</a>)
+  </p>
+
+  {% if site.events_newsletter -%}
+    <p>
+    Instead of forgetting to visit this page and missing events, you
+    can <a href="{{ site.events_newsletter }}">sign up for event
+    listings</a> and get a weekly summary emailed to you.
+    </p>
+  {% endif %}
+
+<div class="embedContainer">
+  <iframe src="https://calendar.google.com/calendar/embed?src={{site.google_calendar_id }}&ctz={{ site.google_calendar_timezone | cgi_escape }}&hl=en" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+{%- endif %}
+
+
+
 {% assign events-past = all-events
   | where_exp:"ev", "ev.DateTimeStart < date-now" %}
 
@@ -93,10 +110,8 @@ href="./wards/">information page for your ward</a>.
       big-header=true
       reverse-sort=true
     %}
-  <div>
+  </div>
 {% endif %}
 
 
-<script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
 

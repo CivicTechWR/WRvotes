@@ -1,16 +1,16 @@
-# Waterloo Region Votes
+# Waterloo Region Votes - Municipal 2022
 
 Voter information platform for Waterloo Region elections.
 
-🌐 **Site:** https://waterlooregionvotes.org
 
-## Why?
+## Published Sites
 
-As a citizen in Waterloo Region, it can be a lot of work to try to figure out who's going to be on the ballot for municipal elections. You need to check the regional site, your local ward, and then try to figure out which list of school board trustees applies to you. Each municipality in the region is on a different page. The sites are all linked from wrvotes.com, but it's still a lot of back and forth, and the municipal sites do not list all candidate meetings. Getting to the ballot box fully informed isn't easy. We want to make it easier.
+This repository is published to:
+* https://civictechwr.github.io/WRVotes
+* https://development.waterlooregionvotes.org
 
-## Goals
 
-Encourage greater municipal election participation through candidacy, campaign volunteership and increased voter turnout.
+## About
 
 ## What Are We Building?
 
@@ -29,6 +29,8 @@ Encourage greater municipal election participation through candidacy, campaign v
 
 4. **Get out the vote**
    - **help wanted:** promotion, information on how & when to vote, information on how to ensure you're registered, etc.
+
+This project provides voter information and election data analysis for the 2026 municipal elections in Waterloo Region, helping residents make informed decisions by providing candidate information, polling locations, and election results.
 
 ## Tech Stack
 
@@ -67,14 +69,54 @@ Encourage greater municipal election participation through candidacy, campaign v
    bundle exec jekyll serve
    ```
 
+### Getting Started on macOS
+
+1. Install [homebrew](https://brew.sh/) package manager
+
+2. Install ruby:
+   ```bash
+   brew install ruby
+   ```
+
+3. Install bundler:
+   ```bash
+   gem install bundler
+   ```
+
+4. Clone the repo:
+   ```bash
+   git clone https://github.com/CivicTechWR/WRVotesMunicipal2022.git
+   ```
+
+5. Go into the WRVotesMunicipal2022 directory and install the gems:
+   ```bash
+   cd WRVotesMunicipal2022
+   bundle install
+   ```
+
+6. Start the jekyll server:
+   ```bash
+   cd docs
+   bundle exec jekyll server
+   ```
+
+7. You should now be able to follow the URL which is displayed and you should see the site.
+
+   **Note:** Some elements which are dependent upon the GitHub API may not be displayed locally.
+
 ## How Can I Help?
 
-See the [Wiki](https://github.com/CivicTechWR/WRvotes/wiki), [Issues list](https://github.com/CivicTechWR/WRvotes/issues), or join the #project_region_vote channel on our Slack: https://civictechwrslack.herokuapp.com/
+See the [Issues list](https://github.com/CivicTechWR/WRVotesMunicipal2022/issues) for current tasks and opportunities to contribute.
 
-Or come to one of [our meetups](https://www.meetup.com/CivicTechWR/)!
+## Project Status
 
-## Status
+This project began as an initiative of [CivicTechWR](https://civictechwr.org).
+It is being modified for the October 2026 election.
 
-Historical project (2018-2019) that provided voter information for past Waterloo Region elections. For current civic engagement projects, see our active repositories.
+## Contributing
 
-A CivicTechWR community project.
+For current CivicTechWR projects, visit:
+
+- **Website:** https://civictechwr.org
+- **Email:** civictechwr@gmail.com
+- **GitHub:** https://github.com/CivicTechWR

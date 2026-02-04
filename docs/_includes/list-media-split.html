@@ -1,0 +1,25 @@
+
+{% assign categories = site.data.internal.media-categories %}
+
+{% comment %} Liquid does not let you assign to hashes, it seems. I wanted to
+iterate through the media and assign to arrays. Instead it looks like 
+we need to filter each category from the whole media list, and then
+call the subroutine. 
+{% endcomment %}
+
+{% for c in categories %}
+  {% assign items = include.media-list | where: "Category", c.CategoryName %}
+
+  {% if items.size > 0 %}
+    {% include list-media-items.html 
+      item-list=items 
+      race-id=include.race-id 
+      type=c.CategoryName 
+      header=c.CategoryDesc
+      teaser-limit=c.Limit 
+      desc=c.LongDesc
+     %}
+  {% endif %}
+
+{% endfor %}
+

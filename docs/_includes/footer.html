@@ -30,7 +30,7 @@
         <div class="minicaps">{{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></div>
         <ul>
           <li><a href="https://civictechwr.org/">Website</a></li>
-          <li><a href="{{ site.github.owner_url }}">Github</a></li>
+          <li><a href="{{ site.github.repository_url }}">Github</a></li>
           <li><a href="https://twitter.com/civictechwr">Twitter</a></li>
         </ul>
       </div>
@@ -39,18 +39,18 @@
         <div class="minicaps">Links</div>
         <ul>
           <li><a href="{{ site.baseurl }}/all-nominees">Candidates</a></li>
-          <li><a href="{{ site.baseurl }}/wards/">Wards</a></li>
-          <li><a href="{{ site.baseurl }}/positions/">Positions</a></li>
-          <li><a href="{{ site.baseurl }}/all-news">News</a></li>
+          <li><a href="{{ site.baseurl }}/all-news">News and Media</a></li>
           <li><a href="{{ site.baseurl }}/all-meetings">Meetings</a></li>
-          <li><a href="{{ site.baseurl }}/resources/open-data">Open data</a></li>
+          <li><a href="{{ site.baseurl }}/privacy">Privacy</a></li>
+          <li><a href="{{ site.baseurl }}/resources/open-data">Open Data</a></li>
+          <li><a href="{{ site.baseurl }}/archive">Past Elections</a></li>
           <li><a href="{{ site.baseurl }}/sitemap">Site Map</a></li>
         </ul>
       </div>
     </div>
 
     <div class="email">
-      <div class="minicaps">Are we missing information? Did we make a mistake? Please let us know: <a href="mailto:civictechwr.wrvotes@gmail.com">civictechwr.wrvotes@gmail.com</a></div>
+      <div class="minicaps">Are we missing information? Did we make a mistake? Please let us know: <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></div>
     </div>
 
   </footer>

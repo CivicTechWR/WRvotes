@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 2018 Election Winners
+title: Election Winners
 ---
 <h1>{{ page.title }}</h1>
 
@@ -18,7 +18,7 @@ title: 2018 Election Winners
             {% assign winners = site.data.sync.nominees | where:"PositionUniqueName",position_id | where:"Winner", "Y" %}
             {% if position["NumberToElect"] != "0" %}
               {% for winner in winners %}
-                {% include candidate-card.html position_id=position_id winner=winner %}
+                {% include candidate-card.html heading="yes" position_id=position_id winner=winner %}
               {% endfor %}
             {% endif %}
           {% endif %}

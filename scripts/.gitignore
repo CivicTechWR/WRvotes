@@ -1,3 +1,5 @@
 update-google-calendar.config.py
+gdocs-get-csv.config.py
+*config.yml
 venv
 __pycache__

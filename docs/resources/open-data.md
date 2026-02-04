@@ -5,19 +5,23 @@ layout: page
 
 ## Open Data for this site
 
-The source code for this site is hosted on Github:
-<https://github.com/CivicTechWR/WRvotes> .
+The source code for this site is hosted on GitHub:
+<https://github.com/CivicTechWR/{{ site.repository_name }}>
 
 Even if the waterlooregionvotes.org domain expires, you should be able
-to access the site via <https://civictechwr.github.io/WRvotes>.
+to access the site via
+<https://civictechwr.github.io/{{ site.repository_name }}>.
 
-Data for this site comes via a pauper's database constructed via CSV
-files:
 
-- [nominees.csv](https://github.com/CivicTechWR/WRvotes/blob/master/docs/_data/sync/nominees.csv)
-- [media.csv](https://github.com/CivicTechWR/WRvotes/blob/master/docs/_data/sync/media.csv)
-- [events.csv](https://github.com/CivicTechWR/WRvotes/blob/master/docs/_data/sync/events.csv)
-- [position-tags.csv](https://github.com/CivicTechWR/WRvotes/blob/master/docs/_data/internal/position-tags.csv)
+The nomination data for this site is courtesy of Bob Jonkman. He has a
+slightly-different listing of this data at
+<https://poliblog.jonkman.ca/Poliblog-Elections/2022-10-24-Municipal-Election/>
+. He released this data under a CC-BY-SA Creative Commons license but
+has allowed us to use the data for this site under our default MIT
+license. 
 
-Read `README-updating.md` on the Github site for information about the
+Other data for this site comes in the form of NextCloud synchronized
+to the git repository.
+
+Read `README-updating.md` on the GitHub site for information about the
 structure of these files.

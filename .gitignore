@@ -2,5 +2,11 @@
 .DS_Store
 docs/_site
 docs/.sass-cache
+docs/worksheets/docx/*.docx
+docs/worksheets/xlsx/*.xlsx
+docs/worksheets/text/*.txt
 docs/Gemfile
 docs/Gemfile.lock
+*.~lock.*
++.jekyll-metadata
+venv

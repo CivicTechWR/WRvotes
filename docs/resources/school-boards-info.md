@@ -5,11 +5,18 @@ layout: page
 
 Information About School Board Elections
 ----------------------------------------
-{:.no_toc}
 
+{::options parse_block_html="true" /}
+<div class="flex gutters">
+
+<div class="aside">
+<aside class="aside-box" data-aos="fade-left">
 * table of contents
 {:toc}
+</aside>
+</div>
 
+<div class="main">
 ### What is even happening?
 
 In addition to voting for members of municipal government, you may
@@ -22,8 +29,8 @@ elect anywhere from one to four representatives for your school board.
 ### What are school board trustees? What do they do?
 
 School board trustees are elected representatives from the community.
-School board trustees set
-policy for their school board via policies, provide oversight of the
+They set
+policies for their school board, provide oversight of the
 board's Director of Education, and serve as community advocates for
 education.
 
@@ -38,7 +45,8 @@ Martin](./ted-martin-on-being-a-trustee).
 Trustee Scott McMillan [identifies the role of school
 trustees](https://www.kitchenertoday.com/kitchenervotes/get-to-know-the-responsibilities-of-a-school-board-trustee-before-you-vote-1064230) as
 managing the budget and facilitating communication between parents
-and school staff. 
+and school staff. (Note that this article is from 2018, and so lists
+all-candidates meetings for that election, not this one.)
 
 ### There are so many school board positions listed! What do I vote for?
 
@@ -55,8 +63,6 @@ However, if you qualify then you may choose to register with one of
 the other three systems. You may only vote for the school board
 nominees in your school board.
 
-[How does this relate to the schools your children attend?]
-
 In our candidate listings we list nominees for all four school boards.
 Pay attention only to the school board that applies to you.
 
@@ -70,4 +76,7 @@ school board.
 ### May I change what school board I vote for?
 
 If you are eligible to support a different school board, you may do so
-by changing your information on the voter list.
+by changing your information on the voters' list.
+
+</div>
+</div>

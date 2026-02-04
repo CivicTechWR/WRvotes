@@ -1,9 +1,12 @@
 theme: jekyll-theme-slate
 title: Waterloo Region Votes
-description: Your Information Hub for the 2018 Municipal Election
+description: Information About the 2022 Municipal Election
 show_downloads: false
 plugins:
   - jekyll-sitemap
+
+include:
+  - worksheets
 
 defaults:
   -
@@ -14,19 +17,28 @@ empty-array: []
 
 teaser_limit_events_multi_candidate: 7
 teaser_limit_events_specific: 2
-teaser_limit_events_generic: 5
-teaser_limit_news: 5
-teaser_limit_surveys: 5
+teaser_limit_events_generic: 2
+teaser_limit_news: 3
+teaser_limit_surveys: 3
+teaser_limit_recordings: 5
 
-google_calendar_id: atv3446s9ii5mq5873qh3i94qo@group.calendar.google.com
+google_calendar_id: gnjujonnivepneq5mikitis6ms@group.calendar.google.com
 
 google_calendar_timezone: America/Toronto
 
-google_analytics: UA-102439664-2
+google_calendar_rss: 'https://feeds.off-topic.kwlug.org/feeds/wrv-events.rss'
+
+#google_analytics: UA-102439664-2
+google_analytics: G-N6Y15Y5FRN
+
+contact_email: "civictechwr.wrvotes@gmail.com"
 
 # events_newsletter: "https://off-topic.kwlug.org/mailman/listinfo/waterlooregionvotes-events_off-topic.kwlug.org"
 
-election_over: true
+election_over: false
+
+# Use ISO notation. This is used by countdown.js
+election_date: "2022-10-24T09:00"
 
 # This should be a number strictly greater than the number of votes
 # received by any candidate in any race. 

@@ -55,6 +55,22 @@ def get_datetime(datetime_str):
    d = dateutil.parser.parse(datetime_str)
    return d.strftime("%FT%T")
 
+# -------------------------------
+def get_localized_datetime_obj(datetime_str):
+   """ Get a localized datetime object from a string. 
+       This is different than get_datetime because it does 
+       not produce a string.
+   """
+   d = dateutil.parser.parse(datetime_str)
+   # Make date timezone-aware (sigh)
+   try:
+       tz = pytz.timezone(config.TIMEZONE)
+       d = tz.localize(d)
+   except ValueError:
+       print("ERROR: already localized: {}".format(d))
+
+   return d
+
 # ------------------------------
 def load_config(configfile=None):
     """ Load configuration definitions.
@@ -133,12 +149,17 @@ def load_csv_dicts():
         reader_events = csv.DictReader(events_csv)
 
         for row in reader_events:
-            # Make a key that will be unique but is easily 
-            # sorted by start date.
-            new_key = "{}--{}".format(row['DateTimeStart'],
-                                      row['RowID'],
-                                      )
-            events_dict[new_key] = row
+            # Ignore anything that does not have a RowID and 
+            # a starting time. There are some blank events in the
+            # file. 
+            if row['DateTimeStart'] and row['RowID']:
+
+                # Make a key that will be unique but is easily 
+                # sorted by start date.
+                new_key = "{}--{}".format(row['DateTimeStart'],
+                                          row['RowID'],
+                                          )
+                events_dict[new_key] = row
 
     with open(config.POSITIONS_CSV, encoding='utf-8-sig') as positions_csv:
         reader_events = csv.DictReader(positions_csv)
@@ -179,10 +200,15 @@ def get_position_description(pos_id):
         or an alias) produce the verbal description.
     """
 
-    if config.ALIAS_SIGNIFIER in pos_id:
-        return alias_dict[pos_id]['Description']
-    else:
-        return positions_dict[pos_id]['PositionDesc']
+    try: 
+        if config.ALIAS_SIGNIFIER in pos_id:
+            return alias_dict[pos_id]['Description']
+        else:
+            return positions_dict[pos_id]['PositionDesc']
+
+    except:
+        print("Error! Unknown Position '{}'".format(pos_id))
+        return "UNKNOWN DEBUG"
 
 
 # ------------------------------
@@ -217,19 +243,24 @@ def sync_calendar(cal, include_all=False):
     for k in sorted(events_dict.keys()):
         ev = events_dict[k]
 
-        datetime_end = dateutil.parser.parse(ev['DateTimeEnd'])
-        # Make date timezone-aware (sigh)
-        try:
-            tz = pytz.timezone(config.TIMEZONE)
-            datetime_end = tz.localize(datetime_end)
-        except ValueError:
-            print(ev['Title'])
-            print("ERROR: already localized: {}".format(datetime_end))
-
+        datetime_end = get_localized_datetime_obj(ev['DateTimeEnd'])
+        datetime_start = get_localized_datetime_obj(ev['DateTimeStart'])
+        
         # If the event is in the past, then 
         if datetime_end < since_when:
             # print("IGNORED: {}".format(ev['Title']))
             continue
+
+        # If date is screwed up then ignore the element
+        if datetime_end < datetime_start:
+            print("ERROR: {} ends before it begins."
+                  "Start: {}, End: {}".format(
+                    ev['Title'],
+                    ev['DateTimeStart'],
+                    ev['DateTimeEnd'],
+                    ))
+            continue
+         
 
         desc = ""
            
@@ -246,18 +277,31 @@ def sync_calendar(cal, include_all=False):
         position_list = ev['PositionIDList'].split(",")
         
         if len(position_list) == 1:
-            desc += '<p>For position: {}'.format(
-                get_position_description(position_list[0].strip())) 
-            desc += '</p>'
+            # DEBUG
+            if position_list[0].strip() == '':
+                #print("WARNING: empty element in single element position_list {}".format(position_list))
+                #print("ev is {}".format(ev))
+                pass
+            else:
+                desc += '<p>For position: {}'.format(
+                    get_position_description(position_list[0].strip())) 
+                desc += '</p>'
                 
 
         elif len(position_list) > 1:
             desc += '<p>For positions:<ul>'
             for pos in position_list:
                 p_key = pos.strip()
-                desc += '<li>{}</li>'.format(
-                    get_position_description(p_key),
-                    )
+                # DEBUG
+                if p_key == '':
+                    #print("WARNING: empty element in multiple position_list {}".format(position_list))
+                    #print("ev is {}".format(ev))
+                    pass
+
+                else:
+                    desc += '<li>{}</li>'.format(
+                        get_position_description(p_key),
+                        )
             desc += "</ul></p>"
             
         bodydict = {}
@@ -279,7 +323,7 @@ def sync_calendar(cal, include_all=False):
         if ev['URL']:
             bodydict['source'] = { 'url' : ev['URL']}
         
-        if ev['CancelledOrRescheduled'] == "Cancelled":
+        if 'CancelledOrRescheduled' in ev and ev['CancelledOrRescheduled'] == "Cancelled":
             bodydict['status'] = 'cancelled'
 
         # If the entry exists then update, else create

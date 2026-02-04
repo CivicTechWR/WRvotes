@@ -12,7 +12,7 @@
 
       {%- if candidate.Votes -%}
         {%- assign padded-votes = candidate.Votes 
-          | plus: 0 | plus: site.big_number -%}
+          | floor | plus: 0 | plus: site.big_number -%}
       {%- else -%}
         {{ assign padded-votes = site.big_number }}
       {%- endif -%}
@@ -35,9 +35,9 @@
       {%- elsif candidate.Votes == '0' -%}
         : no votes.
       {%- elsif candidate.Votes -%}
-        : {{ candidate.Votes }} votes. 
+        : {{ candidate.Votes | floor }} votes. 
       {%- else -%}
-        : no votes.
+        {% comment %}Blank means no data, not no votes.{% endcomment %}
       {%- endif -%}
       :split:
     {%- endfor -%}

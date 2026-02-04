@@ -1,0 +1,80 @@
+{% comment %}
+This is gross. You should have one entry per CategoryName in
+media-categories.csv . 
+
+Write descriptions in Markdown. 
+{% endcomment %}
+
+{% assign categories = site.data.internal.media-categories %}
+
+{% if include.category == "AllCandidates" %}
+
+All-candidates meetings are the best and quickest way to choose candidates (really!). 
+They allow you to evaluate candidates **side by side**, responding to
+the **same questions**. 
+
+If you don't have time to watch an entire recording, watch 2-3 rounds
+of questions in the middle of the meeting. This will take 10-15
+minutes.
+
+Questions to ask yourself:
+- Who attended the meeting? Who did not?
+- Which candidates answered the questions directly? Which ones avoided
+  the question(s) or pivoted to talking points?
+
+{% elsif include.category == "Questionnaire" %}
+
+Questionnaires allow you to compare candidate responses side by side.
+Ask yourself whether you agree with the candidate positions, and
+whether the candidates demonstrate good understanding of the
+underlying issues. 
+
+{% elsif include.category == "EndorsementList" %}
+
+Some advocacy groups release endorsements of particular candidates.
+Look at the advocacy group's positions and philosophies, and see
+whether they align with your own. 
+
+Questions to ask yourself:
+- What political outcomes does this group advocate for? Do you agree
+  with their goals?
+- On what basis did this group make their endorsement? Did they gather
+  statements from the candidates? 
+- How transparent was their selection process?
+
+
+{% elsif include.category == "ProfileList" %}
+
+Candidate profiles allow you to read responses from different candidates side by side.
+
+{% elsif include.category == "Article" %}
+
+Articles can highlight issues of importance to the election and the electorate.
+
+{% elsif include.category == "Opinion" %}
+
+Opinions, blog posts and discussions can be biased but useful. 
+Sometimes people closely
+aligned with particular candidates write opinions without disclosing
+their relationships to the candidate.
+
+Questions to ask yourself:
+
+- Can you identify where the writer(s) are coming from? Do you agree
+  with their positions?
+- Do the posters offer evidence for their opinions? Is that evidence
+  credible? Is it proportionate, or blown out of proportion?
+
+{% elsif include.category == "SingleProfile" %}
+
+
+These posts cover specific candidates in depth. Sometimes the
+candidates are asked specific questions and sometime they are allowed
+to talk about whatever interests them. These profiles can offer more
+in-depth coverage than you might get from a candidate's website.
+
+{% else %}
+
+Oops! No description found for {{ include.category }}!
+
+{% endif %}

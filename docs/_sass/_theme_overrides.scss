@@ -40,6 +40,10 @@ body {
     }
   }
 
+  br.textonly { 
+    display: none;
+  }
+
   #header_wrap {
     background: $light;
 
@@ -130,20 +134,20 @@ body {
     border-left: 6px solid $blue;
     padding: 0.5em 2em 0 2em;
     color: $dark;
-    margin-bottom: 2em; 
+    margin-bottom: 2em;
     overflow-wrap: break-word;
   }
 
-  .content-box .spacer { 
+  .content-box .spacer {
     padding-left: 1em;
     border-left: 6px solid $blue;
     margin-top: 2em;
-  } 
+  }
 
-  .toc-link { 
+  .toc-link {
     margin-top: 3em;
     font-size: smaller;
-  } 
+  }
 
   .aside-box {
     background-color: $blue;
@@ -156,7 +160,7 @@ body {
     }
 
     a {
-      color: $yellow;
+      color: $light;
       font-weight: bold;
     }
 
@@ -165,10 +169,14 @@ body {
       font-weight: normal;
     }
 
-    &.green { 
+    &.green {
       background-color: $green;
+
+      a { 
+        color: $yellow;
+      } 
     }
-  } 
+  }
 
   .standout-box {
     background: $light;
@@ -187,6 +195,16 @@ body {
     }
 
 
+    &.purple {
+      .content {
+        border-left: 4px solid $purple;
+      }
+
+      a {
+        color: $purple;
+      }
+    }
+
     &.pink {
       .content {
         border-left: 4px solid $pink;
@@ -204,6 +222,16 @@ body {
 
       a {
         color: $yellow;
+      }
+    }
+
+     &.deepYellow {
+      .content {
+        border-left: 4px solid $deepYellow;
+      }
+
+      a {
+        color: $purple;
       }
     }
 
@@ -284,6 +312,10 @@ body {
     background-color: $mint;
   }
 
+  .bg-purple {
+    background-color: $purple;
+  }
+
   .blue-text {
     color: $blue;
   }
@@ -304,10 +336,13 @@ body {
     color: $mint;
   }
 
+  .purple-text {
+    color: $purple;
+  }
+
   .big-text {
     font-size: 3em;
     line-height: 1.2;
-    margin-bottom: 20px;
   }
 
   .medium-text {
@@ -315,6 +350,12 @@ body {
     font-weight: 900;
     line-height: 1.2;
     margin-bottom: 20px;
+  }
+
+  .countdown-container {
+    .countdown-days {
+      font-size: 2rem;
+    }
   }
 
   .no-margin-top {
@@ -351,7 +392,6 @@ body {
     .big-text {
       font-size: 2em;
       line-height: 1.2;
-      margin-bottom: 10px;
     }
   }
 }

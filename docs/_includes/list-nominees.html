@@ -3,7 +3,18 @@
   where:"PositionUniqueName",include.race-id | first -%}
 
 <div class="content-box" >
-  <h3 class="medium-text">{{ race-info.PositionDesc }}</h3>
+  {% unless include.hide-position-desc %}
+    <h3 class="medium-text">{{ race-info.PositionDesc }}</h3>
+  {% endunless %}
+
+
+  {% capture introtext %}
+  {% include desc-positions-gross.html
+    category=race-info.PositionCategory
+  %} 
+  {% endcapture %}
+  {{ introtext | markdownify }}
+
   <div class="candidate-list" id="{{ include.race-id | slugify }}" >
 
     {% assign these-nominees = site.data.sync.nominees
@@ -15,19 +26,21 @@
     {% assign num-to-elect = race-info.NumberToElect | plus: 0 %}
 
 
-    {% unless page.hide-details %}
+    {% unless page.hide-details  %}
       {% if site.election_over %}
-        {% include list-results.html nominees=these-nominees 
-           valid-nominees=valid-nominees
-           num-to-elect=num-to-elect
-           race-id=include.race-id %}
+        {% if race-info.ShowResults == 'Y' %}
+          {% include list-results.html nominees=these-nominees 
+             valid-nominees=valid-nominees
+             num-to-elect=num-to-elect
+             race-id=include.race-id %}
+          <h4 class="inline">Candidates</h4>  
+        {% else %}
+          <p>
+          (No results published yet.)
+          </p>
+        {% endif %}
       {% endif %}
     {% endunless %}
-
-
-    {%- if num-to-elect > 0 -%}
-      <h4 class="inline">Candidates</h4>
-    {%- endif -%}
 
     {%- if num-to-elect == 1 and valid-nominees.size == 1 -%}
       <p><strong>(This position is acclaimed.)</strong></p>
@@ -41,59 +54,14 @@
     {%- endif -%}
 
     {% if sorted-nominees.size > 0 or num-to-elect == 0 %}
-      <ul>
-      {% for nominee in sorted-nominees %}
-        <li>
-        {% if nominee.Withdrawn == 'Y' -%}
-          <strong>WITHDRAWN: </strong>
-        {%- endif -%}
-
-        {{ nominee.Given_Names}} {{ nominee.Last_Name }}
-
-        {%- unless nominee.Withdrawn == 'Y' -%}
-          {% assign num-seps = 0 %}
-
-          {%- if nominee.Website -%}
-            {%- include punctuate.html num-sofar=num-seps -%}
-            {%- assign num-seps = num-seps | plus: 1 -%}
-
-            <a href="{%- include get-website.html site=nominee.Website -%}">Website</a>
-          {%- endif -%}
-
-          {%- if nominee.Phone1 -%}
-              {%- include punctuate.html num-sofar=num-seps -%}
-              {%- assign num-seps = num-seps | plus: 1 -%}
-
-              {{ nominee.Phone1 }}
-          {%- endif -%}
-
-          {%- if nominee.Email -%}
-              {%- include punctuate.html num-sofar=num-seps -%}
-              {%- assign num-seps = num-seps | plus: 1 -%}
-
-              {{ nominee.Email }}
-          {%- endif -%}
-
-          {%- if nominee.Facebook -%}
-            {%- include punctuate.html num-sofar=num-seps -%}
-            {%- assign num-seps = num-seps | plus: 1 -%}
-
-            <a href="{%- include get-website.html site=nominee.Facebook -%}">Facebook</a>
-          {%- endif -%}
-
-          {%- if nominee.Twitter -%}
-            
-           {%- include punctuate.html num-sofar=num-seps -%}
-           {%- assign num-seps = num-seps | plus: 1 -%}
-
-           Twitter: <a href="{%- include get-website.html
-           site=nominee.Twitter -%}">{{ nominee.Twitter }}</a>
-          {%- endif -%}
-        {%- endunless -%}
-
-        </li>
-      {% endfor %}
-      </ul>
+      <div class="candidate-list-grid">
+          {% for n in sorted-nominees %}
+            {% include candidate-card.html
+              winner=n
+              position_id=include.race-id
+            %}
+          {% endfor %}
+      </div>
 
     {% else %}
       <p>
@@ -103,7 +71,6 @@
     {% endif %}
 
     {% unless page.hide-details %}
-
       {% include list-events.html race-id=include.race-id
         alias-string=race-info.Aliases %}
 
@@ -116,6 +83,6 @@
   {% if include.show-toc-link %}
     <p class="toc-link">
     <a href="#toc">&#x2B06; Go back to position list.</a>
+    </p>
   {% endif %}
-  </p>
 </div>

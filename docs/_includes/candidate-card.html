@@ -1,74 +1,123 @@
-{% assign full_name = winner["Given_Names"] | append:" " | append:winner["Last_Name"] %}
-{% if winner["Nominated_Office"] == "Councillor" %}
-    {% assign position_title = "Councillor for Ward " | append:winner["Ward"] %}
-{% elsif winner["Nominated_Office"] == "Regional Councillor" %}
-    {% assign position_title = winner["Nominated_Office"] | append: " for " | append: winner["Ward"] %}
-{% else %}
-    {% assign position_title = winner["Nominated_Office"] %}
-{% endif %}
+{% assign full_name = include.winner["Given_Names"] | append:" " | append:include.winner["Last_Name"] %}
+
+{% assign race-info = site.data.internal.position-tags |
+where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
+
+{% assign position_title = race-info["ShortLocalDesc"] %}
 
 <div class="grid-item">
     <div class="candidate-card">
-        <div class="title">
-            {{ position_title }}
-        </div>
+        {% if include.heading and include.heading == "yes" %}
+            <div class="title">
+                {{ position_title }}
+            </div>
+        {% endif %}
         <div class="card-content">
             <div class="image">
-                {% if winner["ImageTitle"] %}
-                <img src="{{ site.url }}/assets/images/nominees/{{ winner['ImageTitle'] }}" alt="{{ full_name }}">
+                {% if include.winner["ImageTitle"] %}
+                <img src="{{ site.url }}/assets/images/nominees/{{ include.winner['ImageTitle'] }}" alt="{{ full_name }}">
                 {% endif %}
             </div>
             <div class="name">
                 <h3>{{ full_name }}</h3>
             </div>
-            {% if winner["Votes"] and winner["Percentage"] %}
-            {% assign percentage = winner["Percentage"] | append:"%" %}
+            {% if include.winner["Votes"] and include.winner["Percentage"] %}
+            {% assign percentage = include.winner["Percentage"] | append:"%" %}
             <div class="voting-result">
-                <p>{{ winner["Votes"] }} votes - {{ percentage }}</p>
+                <p>{{ include.winner["Votes"] }} votes - {{ percentage }}</p>
             </div>
             {% endif %}
         </div>
         <div class="contact">
-            {% if winner["Email"] %}
+            {% if include.winner["Email"] %}
             <div class="contact-item">
                 <div class="contact-item-inner">
-                    <a href="mailto:{{ winner['Email'] }}">
-                        <i class="fas fa-envelope"></i>
+                    <a href="mailto:{{ include.winner['Email'] }}">
+                        <i class="fas fa-envelope" aria-hidden="true"
+                        title="Email"></i>
+                        <span class="fa-sr-only">Email: {{
+                        include.winner['Email'] }}</span>
                     </a>
                 </div>
             </div>
             {% endif %}
 
-            {% if winner["Website"] %}
+            {% if include.winner["Website"] %}
             <div class="contact-item">
                 <div class="contact-item-inner">
-                    <a href="{{ winner['Website'] }}">
-                        <i class="fas fa-link"></i>
+                    <a href="{{ include.winner['Website'] }}">
+                        <i class="fas fa-link" aria-hidden="true" title="Website"></i>
+                        <span class="fa-sr-only">Website: {{ include.winner['Website'] }}</span>
                     </a>
                 </div>
             </div>
             {% endif %}
 
-            {% if winner["Twitter"] %}
-            {% assign twitter_page = "https://twitter.com/" | append:winner['Twitter'] %}
+            {% if include.winner["Phone"] %}
             <div class="contact-item">
                 <div class="contact-item-inner">
-                    <a href="{{ twitter_page }}">
-                        <i class="fab fa-twitter"></i>
+                    <a href="tel:{{ include.winner['Phone'] }}">
+                        <i class="fas fa-phone" aria-hidden="true" title="Phone"></i>
+                        <span class="fa-sr-only">Phone: {{ include.winner['Phone'] }}</span>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+
+
+            {% if include.winner["Twitter"] %}
+            {% capture twitter_page %}
+                {%- include get-website.html
+                account=include.winner.Twitter
+                network="twitter"
+                -%}
+            {% endcapture %}
+            <div class="contact-item">
+                <div class="contact-item-inner">
+                    <a href="{{ twitter_page }}" >
+                        <i class="fab fa-twitter" aria-hidden="true" title="Twitter"></i>
+                        <span class="fa-sr-only">Twitter: {{
+                        twitter_page }}</span>
                 </a>
                 </div>
             </div>
             {% endif %}
 
-            {% if winner["Facebook"] %}
+            {% if include.winner["Facebook"] %}
             <div class="contact-item">
                 <div class="contact-item-inner">
-                    <a href="{{ winner['Facebook'] }}">
-                        <i class="fab fa-facebook"></i>
+                    <a href="{{ include.winner['Facebook'] }}">
+                        <i class="fab fa-facebook" aria-hidden="true" title="Facebook"></i>
+                        <span class="fa-sr-only">Facebook: {{ include.winner['Facebook'] }}</span>
                     </a>
                 </div>
             </div>
             {% endif %}
+
+            {% if include.winner["Instagram"] %}
+            <div class="contact-item">
+                <div class="contact-item-inner">
+                    <a href="{{ include.winner['Instagram'] }}">
+                        <i class="fab fa-instagram" aria-hidden="true" title="Instagram"></i>
+                        <span class="fa-sr-only">Instagram: {{ include.winner['Instagram'] }}</span>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if include.winner["LinkedIn"] %}
+            <div class="contact-item">
+                <div class="contact-item-inner">
+                    <a href="{{ include.winner['LinkedIn'] }}">
+                        <i class="fab fa-linkedin" aria-hidden="true" title="LinkedIn"></i>
+                        <span class="fa-sr-only">LinkedIn: {{ include.winner['LinkedIn'] }}</span>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+
+
         </div>
+        <br class="textonly" /><br class="textonly" />
     </div>
 </div>

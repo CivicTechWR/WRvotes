@@ -1,12 +1,11 @@
 ---
 layout: page
-title: News
+title: News and Media
 ---
 
 <h1>{{ page.title }}</h1>
 <p>
-These listings include every news item across all positions. They mix
-up news items with surveys.
+These listings include every media item across all positions. 
 </p>
 
 
@@ -36,16 +35,14 @@ up news items with surveys.
 
 {% if media-list.size > 0 %}
   <div class="content-box">
-    {% include list-media-items.html
-      item-list=media-list
+  <h2>All Media Items</h2>
+
+    {% include list-media-split.html
+      media-list=media-list
       race-id="news"
-      type="news"
-      header="All News Items, Surveys, and Recordings"
       teaser-limit=-1
-      big-header=true %}
+      %}
   </div>
 {% endif %}
 
-<script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
 

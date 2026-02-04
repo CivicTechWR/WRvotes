@@ -1,0 +1,40 @@
+name: Generate WRV Worksheets
+
+on: 
+  push:
+    paths:
+      - 'docs/_data/sync/nominees.csv'
+      - 'docs/_data/internal/municipality-map.csv'
+      - 'docs/_data/internal/position-tags.csv'
+      - 'scripts/gen_worksheets.py'
+      - 'docs/_data/internal/regen-worksheets.txt'
+      
+
+jobs:
+  build:
+    # DISABLE RUN
+    if: false
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+      - name: Install requirements-worksheets.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements-worksheets.txt
+      - name: Generate worksheets already
+        run: python scripts/gen_worksheets.py
+      - name: Upload worksheets to Github Pages
+        uses: actions/upload-artifact@v6
+        with:
+          # Creates a glob that matches only [s]. Then the
+          # artifact maybe will begin at 'worksheets'
+          path: docs/worksheet*
+          overwrite: true
+          
+

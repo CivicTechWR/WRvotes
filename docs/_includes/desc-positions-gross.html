@@ -1,0 +1,70 @@
+{% comment %}
+This is gross. You should have one entry per PositionCategory in
+position-tags.csv
+
+Write descriptions in Markdown. 
+{% endcomment %}
+
+{% if include.category == "RegionalChair" %}
+
+The **Regional Chair** sits on regional council. 
+
+The region deals with such issues as **garbage collection**, **police
+services**, and **public transit**. Read more on the [Municipal
+Government Overview](../resources/municipal-structure) page. 
+
+
+{% elsif include.category == "RegionalCouncillor" %}
+
+**Regional Councillors** sit on regional
+council to provide extra representation for the cities, in addition to
+the mayor of that city.
+
+The region deals with such issues as **garbage collection**, **police
+services**, and **public transit**. Read more on the [Municipal
+Government Overview](../resources/municipal-structure) page. 
+
+{% elsif include.category == "MunicipalMayor" %}
+
+The **mayor** is the head of your local municipality (city or
+township) and sits on that council. The mayor also sits on Regional
+Council. 
+
+Local municipalities deal with issues such as **public parks**,
+**fire departments**, and **building inspections**. Read more on the 
+[Muncipal Government Overview](../resources/municipal-structure) page.
+
+{% elsif include.category == "CityCouncillor" %}
+
+Your **ward councillor** sits on your city 
+council. 
+
+Local municipalities deal with issues such as **public parks**,
+**fire departments**, and **building inspections**. Read more on the 
+[Muncipal Government Overview](../resources/municipal-structure) page.
+
+
+{% elsif include.category == "TownshipCouncillor" %}
+
+Your **ward councillor** sits on your township council. 
+
+Local municipalities deal with issues such as **public parks**,
+**fire departments**, and **building inspections**. Read more on the 
+[Muncipal Government Overview](../resources/municipal-structure) page.
+
+
+{% elsif include.category == "SchoolBoardTrustee" %}
+
+**School Board Trustees** set policies for their school board, provide
+oversight of the board’s Director of Education, and serve as community
+advocates for education.
+
+There are four school boards in Waterloo Region. You will vote for
+trustees in one board. Learn more on the [School Trustee
+information](../resources/school-boards-info) page. 
+
+{% else %}
+
+Oops! No description found for {{ include.category }}!
+
+{% endif %}

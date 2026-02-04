@@ -1,5 +1,5 @@
 Name,MunicipalityType,Races
-Cambridge,City,"_SELF,Cambridge-Mayor,Cambridge-Referendum,Regional-Chair,Regional-Cambridge,SchoolBoard-Public-English-Cambridge-NorthDumfries,SchoolBoard-Catholic-English-Cambridge-NorthDumfries,SchoolBoard-Public-French,SchoolBoard-Catholic-French"
+Cambridge,City,"_SELF,Cambridge-Mayor,Regional-Chair,Regional-Cambridge,SchoolBoard-Public-English-Cambridge-NorthDumfries,SchoolBoard-Catholic-English-Cambridge-NorthDumfries,SchoolBoard-Public-French,SchoolBoard-Catholic-French"
 North Dumfries,Township,"_SELF,NorthDumfries-Mayor,Regional-Chair,SchoolBoard-Public-English-Cambridge-NorthDumfries,SchoolBoard-Catholic-English-Cambridge-NorthDumfries,SchoolBoard-Public-French,SchoolBoard-Catholic-French"
 Kitchener,City,"_SELF,Kitchener-Mayor,Regional-Chair,Regional-Kitchener,SchoolBoard-Public-English-Kitchener,SchoolBoard-Catholic-English-Kitchener-Wilmot,SchoolBoard-Public-French,SchoolBoard-Catholic-French"
 Waterloo,City,"_SELF,Waterloo-Mayor,Regional-Chair,Regional-Waterloo,SchoolBoard-Public-English-Waterloo-Wilmot,SchoolBoard-Catholic-English-Waterloo-Wellesley-Woolwich,SchoolBoard-Public-French,SchoolBoard-Catholic-French"

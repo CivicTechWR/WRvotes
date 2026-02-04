@@ -1,3 +1,84 @@
+Updating for a new election
+---------------------------
+
+Because we want to keep old election sites available as archives,
+updating the site for a new election involves forking the repo and
+launching it as a new site. 
+
+Going forward: 
+
+- The development version of the site lives at
+  <https://github.com/CivicTechWR/WRVotes> . This will contain the
+  latest changes, but not necessarily the data from the most recent
+  election. This version lives at
+  <https://development.waterlooregionvotes.org> . 
+
+- The last "live" version of the site lives in a specific
+  repo (eg <https://github.com/CivicTechWR/WRVotesMunicipal2026> ).
+  This site will have the primary CNAME of
+  <https://waterlooregionvotes.org> . 
+
+
+
+With this in mind, here are the steps to enable the codebase for
+another election: 
+
+1. Do development in the `WRVotes` development repo. Including the
+CSV files from previous elections can be helpful for testing things
+out.
+
+2. When you are ready to launch a new site: 
+  
+  1. Make a new CNAME for the last live site (eg
+  <https://municipal-2026.waterlooregionvotes.org> )
+  2. Fork the `WRVotes` repo to a new live site (eg
+  <https://github.com/CivicTechWR/WRVotesMunicipal2030> )
+  3. Set the CNAME for the new repo to <waterlooregionvotes.org>
+  4. Set the CNAME for the archived site to the new CNAME you made.
+  5. Make sure "Enforce HTTPS" is checked
+  6. Use Github Actions to regenerate the pages on the site.
+
+
+3. In the new site, set up Github Actions:
+  
+  1. Enable "Actions" on the new repo
+  2. Enable "Pages" on the forked repository
+     * Settings
+     * Pages
+     * Enable for "Github Actions"
+
+4. Update README.md
+   * Update the year
+   * Update the repo to the new one (there are several instances)
+   * Update the election type (municipal, federal, provincial)
+
+5. Update `docs/_config.yml`
+   * update `description`
+   * select the correct `election_type`
+   * set `election_over` to `false`
+   * set `election_date` to the date of this election
+
+6. Clear out existing candidates, new, media.
+   * `docs/_data/sync/events.csv`
+   * `docs/_data/sync/media.csv`
+   * `docs/_data/sync/nominees.csv`
+   * `docs/assets/images/nominees/`
+   * copy the right position file into place
+     - `docs/_data/sync/fedprov-position-tags.csv`
+     - `docs/_data/sync/municipality-position-tags.csv`
+     - `docs/_data/sync/position-tags.csv`
+7. Update the candidate information
+   * `docs/_data/sync/nominees.csv`
+8. Update `docs/resources/open-data.md` with OpenData nomineed source links.
+
+How to Finish the Election
+--------------------------
+
+1. Flag all the winners in `docs/_data/sync/nominees.csv`
+2. Update `docs/_config.yml`
+  * set `election_over` to `true`
+
+
 CSV File Notes
 --------------
 
@@ -172,32 +253,11 @@ https://github.com/stefanocudini/leaflet-search
 
 https://unpkg.com/leaflet@1.3.0/dist/leaflet.js
 
-Travis CI
----------
-
-Travis-CI is a continuous integration service that is free for open source 
-projects like ours. It will run a series of basic tests on the CivicTechWR
-website after building it with Jekyll. They will run on every build for 
-any repository that is connected to their service and configured approprately.
-Currently, travis will only run tests on branches named "master" and "dev".
-
-To get started:
-- Go to travis-ci.com and click "Sign up with GitHub"
-- Accept the authorization from the Travis CI service. You will be redirected 
-to Github
-- Click the green Activate button, and select your CivicTechWR repository.
-
-Now you should be able to check in to your dev branch and watch the CI
-pipeline do it's thing. We suggest always doing your work in a feature branch
-and periodically integrating into your dev branch whenever you want to ensure
-you haven't broken things.
-
-Configuration for Travis is all in the .travis.yml file. It runs the bash
-scripts "scripts/build_site" and "scripts/travis_test" to do the actual
-work of building and testing.
-
 Tests
 -----
+
+The old tests on Travis CI are in `scripts/travis_test`. These need to
+be ported to Github Actions.
 
 We currently are running html-proofer in the CI pipline. It will test for
 - broken internal links
