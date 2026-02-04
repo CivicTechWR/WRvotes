@@ -11,6 +11,8 @@ use-leaflet: true
     </div>
     <div class="content">
     <p>
+    This is the <strong>development site!</strong>
+    </p><p>
     Here are unofficial results from the municipalities.
     <ul>
       <li><a
