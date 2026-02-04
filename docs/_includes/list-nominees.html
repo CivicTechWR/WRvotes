@@ -63,16 +63,6 @@
           {% endfor %}
       </div>
 
-
-
-      <ul>
-      {% for n in sorted-nominees %}
-        {% include individual-nominee-ul.html 
-          nominee=n
-        %}
-      {% endfor %}
-      </ul>
-
     {% else %}
       <p>
       Whoops! Nobody appears to be running for this position!
