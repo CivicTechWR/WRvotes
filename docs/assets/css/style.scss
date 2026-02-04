@@ -391,8 +391,10 @@ p.bigtext {
 /* ------ RESULTS PAGE ------ */
 
 .candidate-list-grid { 
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  /* 450px */
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  grid-auto-rows: 1fr;
 }
 
 .jurisdiction {
@@ -403,8 +405,9 @@ p.bigtext {
 }
 
 .grid-item {
-  flex: 1 0;
-  min-width: 200px;
+  /* flex: 1 0;
+     min-width: 200px;
+  */
 
   .candidate-card {
     border: 1px solid $dark;
@@ -426,11 +429,13 @@ p.bigtext {
       text-align: center;
 
       .image {
-          display: flex;
+          /* display: flex; */
           justify-content: center;
           align-items: center;
+          height: 120px;
 
         img {
+          /* FIXME: Should this be pix? */
           height: 120px;
           width: 120px;
           border-radius: 120px;
