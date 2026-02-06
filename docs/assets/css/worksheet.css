@@ -1,0 +1,158 @@
+.worksheet-container { 
+    padding: 20px; 
+}
+
+.worksheet-race-section { 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+    background: #fff; 
+}
+
+.worksheet-race-title {
+    margin-top: 0;
+    color: #333;
+}
+
+.worksheet-nominees-list { 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: space-evenly;
+}
+
+.worksheet-nominee-item { 
+    border-bottom: 1px solid #eee; 
+    padding: 10px 0; 
+}
+
+.worksheet-nominee-item:last-child { 
+    border-bottom: none; 
+}
+
+.nominee-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 5px; 
+}
+
+.nominee-name { 
+    font-weight: bold; 
+    font-size: 1.1em; 
+}
+
+.worksheet-note-area { 
+    width: 400px; 
+    height: 100px; 
+    margin-top: 10px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    resize: vertical; 
+    font-family: inherit; 
+}
+
+.nominee-link { 
+    color: #007bff; 
+    text-decoration: none; 
+    font-size: 0.9em; 
+}
+
+.nominee-link:hover { 
+    text-decoration: underline; 
+}
+
+.worksheet-controls { 
+    margin-bottom: 20px; 
+    display: flex; 
+    gap: 10px; 
+}
+
+.control-btn { 
+    padding: 8px 16px; 
+    cursor: pointer; 
+    background: #f0f0f0; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.control-btn:hover { 
+    background: #e0e0e0; 
+}
+
+.emoji-selector {
+    display: flex;
+    gap: 6px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #888;
+    border-radius: 4px;
+    padding: 2px 10px;
+}
+
+.emoji-selector-button { 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.emoji-selector-button-selected { 
+    background-color: #e3f2fd; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transform: scale(1.1);
+    animation: pulse-animation 0.3s ease-in-out;
+}
+
+@keyframes pulse-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1.1); }
+}
+
+@media print {
+    #header_wrap, #main-menu, #footer_wrap, .worksheet-controls, .print-hidden {
+        display: none !important;
+    }
+    body, .worksheet-container, #main_content_wrap {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: white;
+        font-family: sans-serif;
+    }
+    .worksheet-race-section {
+        break-inside: auto;
+        border: none;
+        padding: 0;
+        page-break-after: always;
+    }
+    .worksheet-race-section:last-child {
+        page-break-after: auto;
+    }
+    .worksheet-nominees-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .worksheet-nominee-item {
+        break-inside: avoid;
+        width: 100%;
+    }
+    .worksheet-note-area {
+        border: 1px solid #000;
+        height: 160px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
