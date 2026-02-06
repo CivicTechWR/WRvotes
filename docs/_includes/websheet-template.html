@@ -1,0 +1,177 @@
+---
+layout: "default"
+hide-details: false
+---
+
+{% comment %}
+Try to eat up all leading slashes and the trailing .html .
+This is gross but it works.
+{% endcomment %}
+{% assign ward-id = page.url | replace: '.html', '' | split: '/' | last -%}
+{% assign ward-info = site.data.internal.position-tags |
+where:"PositionUniqueName",ward-id | first -%}
+
+<h1>Who is Running? {{ ward-info.PositionDesc }}</h1>
+
+
+{% assign municipal-info = site.data.internal.municipality-map |
+  where:"Name",ward-info.WardMunicipality | first %}
+{% assign races-split = municipal-info.Races | split: ',' %}
+
+<div class="flex gutters">
+
+
+<style>
+  .worksheet-container { padding: 20px; font-family: sans-serif; }
+  .worksheet-race-section { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-bottom: 20px; background: #fff; }
+  .worksheet-race-title { margin-top: 0; color: #333; }
+  .worksheet-nominee-item { border-bottom: 1px solid #eee; padding: 10px 0; }
+  .worksheet-nominee-item:last-child { border-bottom: none; }
+  .nominee-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+  .nominee-name { font-weight: bold; font-size: 1.1em; }
+  .worksheet-note-area { width: 100%; height: 80px; margin-top: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical; font-family: inherit; }
+  .nominee-link { color: #007bff; text-decoration: none; font-size: 0.9em; }
+  .nominee-link:hover { text-decoration: underline; }
+  .worksheet-controls { margin-bottom: 20px; display: flex; gap: 10px; }
+  .control-btn { padding: 8px 16px; cursor: pointer; background: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; }
+  .control-btn:hover { background: #e0e0e0; }
+</style>
+
+<div class="worksheet-container">
+  <div class="worksheet-controls">
+    <button class="control-btn" id="export-btn">Export CSV</button>
+    <button class="control-btn" id="import-btn">Import CSV</button>
+    <input type="file" id="import-file" style="display: none" accept=".csv">
+  </div>
+
+  
+
+
+  {% for race in races-split %}
+    {% if race == "_SELF" %}
+      {% assign race-id = ward-id %}
+
+    {% else %}
+      {% assign race-id = race %}
+    {% endif %}
+
+
+
+
+    {% assign race-info = site.data.internal.position-tags | where:"PositionUniqueName",race-id | first %}
+    
+    <div class="worksheet-race-section" id="{{ race-id }}">
+      <h2 class="worksheet-race-title">{{ race-info.PositionDesc }}</h2>
+      
+      {% assign these-nominees = site.data.sync.nominees | where:"PositionUniqueName",race-id | sort:"Last_Name" %}
+      
+      {% if these-nominees.size > 0 %}
+        <div class="worksheet-nominees-list">
+          {% for nominee in these-nominees %}
+            <div class="worksheet-nominee-item">
+              <div class="nominee-header">
+                <span class="nominee-name">{{ nominee.Given_Names }} {{ nominee.Last_Name }}</span>
+              </div>
+              <textarea 
+                class="worksheet-note-area" 
+                data-nominee-id="{{ nominee.UniqueID }}"
+                data-nominee-name="{{ nominee.Given_Names }} {{ nominee.Last_Name }}"
+                placeholder="Write your notes here..."></textarea>
+            </div>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p class="no-nominees">No nominees found for this race.</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const wardId = "{{ ward-id }}";
+    const storageKey = `vote_demo_worksheet_notes_${wardId}`;
+    
+    // Load notes
+    let notes = {};
+    try {
+      const saved = localStorage.getItem(storageKey);
+      if (saved) notes = JSON.parse(saved);
+    } catch (e) { console.error("Could not load notes", e); }
+
+    const textareas = document.querySelectorAll('.worksheet-note-area');
+    
+    // Apply initial notes
+    textareas.forEach(ta => {
+      const id = ta.getAttribute('data-nominee-id');
+      if (notes[id]) ta.value = notes[id];
+      
+      ta.addEventListener('input', (e) => {
+        notes[id] = e.target.value;
+        localStorage.setItem(storageKey, JSON.stringify(notes));
+      });
+    });
+
+    // Handle Export
+    document.getElementById('export-btn').addEventListener('click', () => {
+      if (Object.keys(notes).length === 0) {
+        alert("No notes to export!");
+        return;
+      }
+
+      let csvContent = "NomineeID,Name,Note\n";
+      textareas.forEach(ta => {
+        const id = ta.getAttribute('data-nominee-id');
+        const name = ta.getAttribute('data-nominee-name');
+        if (notes[id]) {
+          const safeNote = `"${notes[id].replace(/"/g, '""')}"`;
+          csvContent += `${id},"${name}",${safeNote}\n`;
+        }
+      });
+
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.setAttribute("href", url);
+      link.setAttribute("download", `worksheet_notes_${wardId}.csv`);
+      link.click();
+    });
+
+    // Handle Import
+    const importFile = document.getElementById('import-file');
+    document.getElementById('import-btn').addEventListener('click', () => importFile.click());
+    
+    importFile.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = (evt) => {
+        const lines = evt.target.result.split('\n');
+        let importedCount = 0;
+        lines.forEach((line, idx) => {
+          if (idx === 0 || !line.trim()) return;
+          const parts = line.split(',');
+          if (parts.length >= 3) {
+            const id = parts[0];
+            let note = parts.slice(2).join(',');
+            if (note.startsWith('"') && note.endsWith('"')) {
+              note = note.substring(1, note.length - 1).replace(/""/g, '"');
+            }
+            notes[id] = note;
+            
+            const ta = document.querySelector(`.worksheet-note-area[data-nominee-id="${id}"]`);
+            if (ta) ta.value = note;
+            importedCount++;
+          }
+        });
+        localStorage.setItem(storageKey, JSON.stringify(notes));
+        alert(`Successfully imported ${importedCount} notes.`);
+      };
+      reader.readAsText(file);
+    });
+  });
+</script>
+
+</div>
+
