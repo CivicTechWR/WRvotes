@@ -415,7 +415,7 @@ p.bigtext {
 
     .title {
       background-color: $dark;
-      padding: 1em;
+      padding: 0.65em 0.75em;
       color: $white;
       margin: 0;
       font-weight: bold;
@@ -424,41 +424,88 @@ p.bigtext {
     }
 
     .card-content {
-      padding: 1em;
-      padding-bottom: 0;
-      text-align: center;
+      padding: 0.6em 0.65em;
+      text-align: left;
 
-      .image {
-          /* display: flex; */
-          justify-content: center;
-          align-items: center;
-          height: 120px;
+      .identity {
+        display: flex;
+        align-items: center;
+        gap: 0.65em;
 
-        img {
-          /* FIXME: Should this be pix? */
-          height: 120px;
-          width: 120px;
-          border-radius: 120px;
-          background: $light;
-          padding: 0;
-          border: 1px solid $dark;
-          object-fit: cover;
+        .image {
+          flex: 0 0 64px;
+          width: 64px;
+          min-height: 64px;
+
+          img,
+          .image-placeholder {
+            height: 64px;
+            width: 64px;
+            border-radius: 64px;
+            background: $light;
+            padding: 0;
+            border: 1px solid #8b8b8b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          img {
+            object-fit: cover;
+          }
+
+          .image-placeholder {
+            color: $dark;
+            font-size: 1.45em;
+          }
         }
+
+        .meta {
+          min-width: 0;
+          flex: 1 1 auto;
+        }
+      }
+
+      .name h3 {
+        margin: 0 0 0.2em;
+        font-size: 1.15em;
+        line-height: 1.25;
+      }
+
+      .voting-result p {
+        margin: 0.2em 0;
+        font-size: 0.95em;
       }
     }
 
     .contact {
       display: flex;
-      padding: 1em;
-      padding-top: 0;
+      padding: 0.15em 0 0.35em;
+      gap: 0.1em;
       flex-wrap: wrap;
 
       .contact-item {
-        flex: 1 0;
+        flex: 0 0 auto;
 
         .contact-item-inner {
-          padding: 6px;
-          text-align: center;
+          padding: 0;
+          text-align: left;
+        }
+
+        a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 1.8em;
+          min-height: 1.8em;
+          font-size: 0.95em;
+          line-height: 1;
+          text-decoration: none;
+
+          &:hover,
+          &:focus {
+            text-decoration: none;
+          }
         }
       }
     }
@@ -526,5 +573,9 @@ p.bigtext {
 @media screen and (max-width: 768px) {
   .grid-item {
     flex: 1 0 100%;
+  }
+
+  .grid-item .candidate-card .card-content .identity {
+    gap: 0.55em;
   }
 }
