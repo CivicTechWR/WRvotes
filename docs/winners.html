@@ -8,7 +8,7 @@ title: Election Winners
 {% for alias in site.data.internal.results-aliases %}
   {% assign title = site.data.internal.aliases | where: "Alias", alias | first %}
   <div class="accordion-ward">
-    <a class="toggle">{{ title["Description"] }}</a>
+    <a class="toggleable">{{ title["Description"] }}</a>
     <div class="content">
       <div class="jurisdiction">
         {% for position in site.data.internal.position-tags %}

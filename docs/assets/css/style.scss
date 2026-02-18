@@ -143,7 +143,6 @@ button.toggle-button {
   }
 }
 
-
 h2.inline, h3.inline, h4.inline {
   display: inline;
 }
@@ -151,6 +150,7 @@ h2.inline, h3.inline, h4.inline {
 /* h4 and h3 do not look sufficiently different. */
 h4.race-wrapper, h4.inline {
   font-size: 1.2em;
+  
 }
 
 /* Stop buttons from crashing into each other */
@@ -165,6 +165,30 @@ div.spacer {
 ul.continue {
   margin-top: -15px;
 }
+
+.media-list { 
+  margin-bottom: 1em;
+}
+
+.toggleable:hover { 
+  cursor: pointer;
+  border-bottom: 3px solid; 
+}
+
+.toggle-content { 
+  display: none;
+  max-height: 0;
+  transition: all 0.2s ease 0.15s;
+  
+  &.active { 
+    max-height: 100%;
+    display: block;
+
+    transition: all 0.35s ease 0.15s;
+    margin-bottom: 3em;
+  } 
+
+} 
 
 
 /* ------------ FOOTER STYLING ----------- */
@@ -395,6 +419,7 @@ p.bigtext {
   /* 450px */
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   grid-auto-rows: 1fr;
+  margin-bottom: 2em;
 }
 
 .jurisdiction {
@@ -514,7 +539,7 @@ p.bigtext {
 }
 
 .wrv-accordion {
-  a.toggle {
+  a.toggleable {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;

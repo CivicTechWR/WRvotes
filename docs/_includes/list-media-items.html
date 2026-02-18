@@ -1,22 +1,25 @@
+<div class="media-list" id="media-{{ include.type | slugify }}"> 
 
- <div class="spacer">
-    {% if include.big-header %}
-      <h2 class="inline">{{ include.header }}</h2>
-    {% else %}
-      <h4 class="inline">{{ include.header }}</h4>
+    {% comment %} 
+    Ugh. This should be handled with some kind of list
+    or lookup and not be hardcoded.
+    {% endcomment %}
+    {% assign isactive = "" %}
+    {% if include.type == "AllCandidates" %}
+        {% assign isactive = "active" %}
     {% endif %}
 
-    {% capture introtext %}
-    {% include desc-categories-gross.html
-      category=include.type
-    %} 
-    {% endcapture %}
-    {{ introtext | markdownify }}
+    {% if include.big-header %}
+      <h2 class="inline toggleable {{ isactive }}">{{ include.header }}</h2>
+    {% else %}
+      <h4 class="inline toggleable {{ isactive }}">{{ include.header }}</h4>
+    {% endif %}
+
+    <div class="toggle-content {{ isactive }}">
 
     <div class="spacer">
 
-        {% assign item-list-sorted = (include.item-list | sort: "PubDate")
-          | reverse %}
+        <div class="spacer">
 
         {% assign item-count = 0 %}
         {% assign teaser-limit = include.teaser-limit | plus:0 %}
@@ -50,4 +53,4 @@
             </ul>
         </div>
     </div>
-  </div>
+</div>
