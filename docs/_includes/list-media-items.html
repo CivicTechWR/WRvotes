@@ -17,18 +17,24 @@
 
     <div class="toggle-content {{ isactive }}">
 
-    <div class="spacer">
+        {% capture introtext %}
+        {% include desc-categories-gross.html
+          category=include.type
+        %} 
+        {% endcapture %}
+        {{ introtext | markdownify }}
 
         <div class="spacer">
 
-        {% assign item-count = 0 %}
-        {% assign teaser-limit = include.teaser-limit | plus:0 %}
+            {% assign item-list-sorted = (include.item-list | sort: "PubDate")
+              | reverse %}
 
-        <ul id="{{ include.race-id | slugify }}-{{ include.type }}"
-            class="{{ include.type }}-list {% if teaser-limit == 0 -%}
-            togglable{%- endif -%}">
+            {% assign item-count = 0 %}
+            {% assign teaser-limit = include.teaser-limit | plus:0 %}
 
-        {% for item in item-list-sorted %}
+            <ul id="{{ include.race-id | slugify }}-{{ include.type }}"
+                class="{{ include.type }}-list {% if teaser-limit == 0 -%}
+                togglable{%- endif -%}">
 
             {% for item in item-list-sorted %}
 
