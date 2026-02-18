@@ -1,0 +1,27 @@
+{% comment %}
+Attempt to embed media in iframes, given a URL.
+The code is deliberately violating DRY for readability.
+{% endcomment %}
+
+{% assign service = "notfound" %}
+
+{% assign chopped = include.url | split: "watch?v=" | last | split: "&" | first %}
+{% if chopped == include.url %}
+  {% assign service = "notfound" %}
+{% else %}
+  {% assign service = "youtube" %}
+{% endif %}
+
+{% if service == "notfound" %}
+    {% assign chopped = include.url | split: "youtu.be/" | last | split: "&" | first %}
+    {% if chopped == include.url %}
+      {% assign service = "notfound" %}
+    {% else %}
+      {% assign service = "youtube" %}
+    {% endif %}
+{% endif %}
+
+{% if service=="youtube" %}
+<br/>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{ chopped }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% endif %}
