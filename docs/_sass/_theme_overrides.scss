@@ -130,8 +130,9 @@ body {
   }
 
   .content-box {
-    background: transparentize($blue, 0.95);
+    /* background: transparentize($blue, 0.95);
     border-left: 6px solid $blue;
+    */
     padding: 0.5em 2em 0 2em;
     color: $dark;
     margin-bottom: 2em;
