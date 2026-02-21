@@ -163,21 +163,7 @@ lists on the website should be auto-updated.
 Adding Media Entries
 --------------------
 
-There are three kinds of media. One is news items, which are of interest
-to people exploring deep into the election. One is opinion pieces. 
-
-One is called "Questionnaires and Recorded Meetings" which is intended
-to serve as side-by-side comparisons of candidates. These are the
-resources that people hoping to make up their minds in a hurry should
-use.
-
-In `media.csv` these two types are distinguished by the
-`ComparisonOrOpinion`
-field. If this field is set to 'Comparison' then the entry will be included in
-"Questionnaires and Recorded Meetings". If it is 'Opinion' it will be
-marked as an opinion piece. Otherwise it is a regular news item. 
-
-Note that capitals count!
+See `README-classifications.md` for more information about this. 
 
 Adding Event Entries
 --------------------
@@ -213,6 +199,8 @@ modified in a GeoJSON editor -- Todd suggests geojson.io, but Google
 
 Collapsing Sections with Buttons
 --------------------------------
+
+[THIS NEEDS TO CHANGE]
 
 If you add a class `togglable` to a `div` or `ul` or any other
 element, and you include the `hide-listings.js` in your page, then
@@ -272,6 +260,7 @@ component, for example) talk to us on Slack.
 Populating symlinks
 -------------------
 
-positions=`cat position-tags.csv | cut --field=1 --delimiter=,`
+We no longer use symlinks, because Windows. There is a script
+`scripts/set-alias-includes.sh` which can help copy the template files
+to specific ward/position templates. 
 
-for i in $positions; do ln -s ../_includes/position-template.html $i.html; done
