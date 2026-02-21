@@ -25,6 +25,6 @@ layout: page
 - Site for the [2018 Municipal
   Election](https://2018-municipal.waterlooregionvotes.org) (
   [Alternate
-  link](https://civictechwr.github.io/WRVotesMunicipal2018)
+  link](https://civictechwr.github.io/WRvotesMunicipal2018)
   )
 
