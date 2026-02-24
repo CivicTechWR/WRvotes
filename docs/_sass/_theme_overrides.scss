@@ -408,3 +408,22 @@ body {
     }
   }
 }
+
+.vote-bar {
+  display: inline-block;
+  border: 2px solid $green;
+  width: 10em;
+  height: 1.5em;
+  color: white;
+}
+
+.vote-bar span {
+  display: inline-block;
+  height: 100%;
+  background-color: $green;
+}
+
+.vote-count { 
+  color: $green;
+  vertical-align: top;
+ }
