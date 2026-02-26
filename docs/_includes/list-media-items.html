@@ -15,14 +15,16 @@
       <h4 class="inline toggleable {{ isactive }}">{{ include.header }}</h4>
     {% endif %}
 
+    {% capture introtext %}
+    {% include desc-categories-gross.html
+      category=include.type
+      length="Brief"
+    %} 
+    {% endcapture %}
+    {{ introtext | markdownify }}
+
     <div class="toggle-content {{ isactive }}">
 
-        {% capture introtext %}
-        {% include desc-categories-gross.html
-          category=include.type
-        %} 
-        {% endcapture %}
-        {{ introtext | markdownify }}
 
         <div class="spacer">
 
