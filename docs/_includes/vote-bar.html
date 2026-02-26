@@ -1,6 +1,8 @@
 {% assign vote-width = include.votes | times: 100.0 | divided_by: include.total-votes | round %}
 <div>
     <div class="vote-bar">
-        <span style="width: {{ vote-width }}%"></span>
-    </div><span class="vote-count"> {{include.votes}}</span>
+        <span class="vote-amount" style="width: {{ vote-width }}%"></span>
+        <span class="total">{{ vote-width }} %</span>
+        <span class="vote-count"> {{include.votes}}</span>
+    </div>
 </div>

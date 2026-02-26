@@ -411,19 +411,41 @@ body {
 
 .vote-bar {
   display: inline-block;
+  position: relative;
   border: 2px solid $green;
   width: 10em;
-  height: 1.5em;
+  height: 2em;
   color: white;
 }
 
 .vote-bar span {
   display: inline-block;
-  height: 100%;
-  background-color: $green;
 }
 
-.vote-count { 
-  color: $green;
-  vertical-align: top;
+.vote-bar span.vote-amount {
+  background-color: $green;
+  height: 100%;
+}
+
+.vote-bar span.total {
+  background-color: #FFFFFF55;
+  backdrop-filter: blur(5px);
+  color: $dark;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  transform: translateY(-50%);
+}
+
+.vote-bar span.vote-count {
+  color: $white;
+  position: absolute;
+  left: calc(100% + 10px);
+  top: 50%;
+  background: $green;
+  padding: 2px 8px;
+  border-radius: 10px;
+  transform: translateY(-50%);
  }

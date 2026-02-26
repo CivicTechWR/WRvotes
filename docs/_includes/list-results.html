@@ -1,12 +1,4 @@
 {% comment %}
-Ugh. You cannot sort numerically and cannot (easily) add a custom
-field to an existing array. Let's generate a long string of (key,
-val) pairs, sort that, and then split everything again.
-See: https://stackoverflow.com/questions/6387540/
-Also: https://github.com/Shopify/liquid/issues/980
-{% endcomment %}
-
-{% comment %}
 Collect total votes
 {% endcomment %}
 {%- assign total-votes = 0 %}
@@ -15,6 +7,14 @@ Collect total votes
 {%- assign total-votes = total-votes | plus: candidate.Votes %}
 {%- endif -%}
 {%- endfor -%}
+
+{% comment %}
+Ugh. You cannot sort numerically and cannot (easily) add a custom
+field to an existing array. Let's generate a long string of (key,
+val) pairs, sort that, and then split everything again.
+See: https://stackoverflow.com/questions/6387540/
+Also: https://github.com/Shopify/liquid/issues/980
+{% endcomment %}
 
 {% capture tuples -%}
 {%- for candidate in include.nominees -%}
