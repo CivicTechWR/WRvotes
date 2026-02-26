@@ -122,6 +122,38 @@ button.toggle-toc {
   }
 }
 
+/* ----------- TOC TABS ------------- */
+
+/* From: https://stackoverflow.com/a/79854195 */
+
+.tab-content {
+  display:none;
+}
+
+body:not(:has(:target)) .tab-content:first-of-type, /* default display (no hash) */
+.tab-content:target {
+  display: block;
+}
+
+ul.toc-tabs { 
+  list-style-type: none;
+
+  li { 
+    display: inline-block;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    a:active { 
+      bg-color: $green;
+    } 
+
+  } 
+} 
+
+
 
 /* ----------- COLLAPSABLE LISTS --------- */
 
