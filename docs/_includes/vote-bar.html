@@ -1,8 +1,13 @@
-{% assign vote-width = include.votes | times: 100.0 | divided_by: include.total-votes | round %}
-<div>
-    <div class="vote-bar">
-        <span class="vote-amount" style="width: {{ vote-width }}%"></span>
-        <span class="total">{{ vote-width }} %</span>
-        <span class="vote-count"> {{include.votes}}</span>
-    </div>
+{% assign vote-width = include.candidate.Votes | times: 100.0 | divided_by: include.total-votes | round %}
+<div class="vote-bar-name">
+    <h3 class="name">{{ include.candidate.Given_Names }}
+        {{ include.candidate.Last_Name -}}</h3>
+</div>
+<div class="vote-bar-progress">
+    <span class="vote-amount" style="width: {{ vote-width }}%"></span>
+    <span class="total">{{ vote-width }} %</span>
+</div>
+<div class="vote-bar-after"><span class="vote-count"> {{ include.candidate.Votes }} </span>
+    {%- if include.candidate.Winner == "Y" -%}<img class="vote-winner"
+        src="{{ site.baseurl }}/assets/images/favicon.png" />{%- endif -%}
 </div>

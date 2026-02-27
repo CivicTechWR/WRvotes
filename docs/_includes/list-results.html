@@ -28,23 +28,22 @@ Also: https://github.com/Shopify/liquid/issues/980
 
 {{ padded-votes }} :field:
 
-{%- if include.num-to-elect == include.valid-nominees.size -%}
-<strong>(Acclaimed) </strong>
-{%- elsif candidate.Winner == 'Y' -%}
-<strong>(Winner) </strong>
-{%- elsif candidate.Withdrawn == 'Y' -%}
+{%- if candidate.Withdrawn == 'Y' -%}
 <strong>(Withdrawn) </strong>
 {%- endif -%}
 
-{{ candidate.Given_Names }}
-{{ candidate.Last_Name -}}
 
 {%- if include.num-to-elect == include.valid-nominees.size -%}
+<div>
+  <h3 class="name">{{ candidate.Given_Names }}
+    {{ candidate.Last_Name -}}</h3>
+  (Acclaimed)
+</div>
 {%- elsif candidate.Withdrawn == 'Y' and candidate.Votes == '0' -%}
 {%- elsif candidate.Votes == '0' -%}
-{%- include vote-bar.html votes=0 total-votes=total-votes %}
+{%- include vote-bar.html candidate=candidate votes=0 total-votes=total-votes %}
 {%- elsif candidate.Votes -%}
-{%- include vote-bar.html votes=candidate.Votes total-votes=total-votes %}
+{%- include vote-bar.html candidate=candidate votes=candidate.Votes total-votes=total-votes %}
 {%- else -%}
 {% comment %}Blank means no data, not no votes.{% endcomment %}
 {%- endif -%}
@@ -54,15 +53,14 @@ Also: https://github.com/Shopify/liquid/issues/980
 
 <ul>
   {% assign tuple-split = tuples | split:':split:'| sort | reverse %}
-
 </ul>
 
 <div class="results-list">
   <h4 class="inline">Results</h4>
-  <ul>
+  <div class="vote-bar">
     {%- for candidate in tuple-split -%}
     {%- assign candidate-split = candidate | split:':field:' -%}
-    <li>{{ candidate-split[1] }}</li>
+    {{ candidate-split[1] }}
     {%- endfor -%}
-  </ul>
+  </div>
 </div>
