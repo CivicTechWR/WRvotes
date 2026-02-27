@@ -28,10 +28,6 @@ Also: https://github.com/Shopify/liquid/issues/980
 
 {{ padded-votes }} :field:
 
-{%- if candidate.Withdrawn == 'Y' -%}
-<strong>(Withdrawn) </strong>
-{%- endif -%}
-
 
 {%- if include.num-to-elect == include.valid-nominees.size -%}
 <div>

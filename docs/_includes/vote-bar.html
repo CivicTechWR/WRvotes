@@ -2,6 +2,9 @@
 <div class="vote-bar-name">
     <h3 class="name">{{ include.candidate.Given_Names }}
         {{ include.candidate.Last_Name -}}</h3>
+    {%- if candidate.Withdrawn == 'Y' -%}
+    <strong>(Withdrawn) </strong>
+    {%- endif -%}
 </div>
 <div class="vote-bar-progress">
     <span class="vote-amount" style="width: {{ vote-width }}%"></span>
