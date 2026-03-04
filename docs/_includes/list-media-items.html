@@ -18,13 +18,20 @@
     {% capture introtext %}
     {% include desc-categories-gross.html
       category=include.type
-      length="Brief"
+      length="Head"
     %} 
     {% endcapture %}
     {{ introtext | markdownify }}
 
     <div class="toggle-content {{ isactive }}">
 
+        {% capture resttext %}
+        {% include desc-categories-gross.html
+          category=include.type
+          length="Rest"
+        %} 
+        {% endcapture %}
+        {{ resttext | markdownify }}
 
         <div class="spacer">
 
