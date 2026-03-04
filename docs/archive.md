@@ -10,7 +10,8 @@ layout: page
 </div>
 
 - Site for the [2025 Provincial
-  Election](https://civictechwr.github.io/WRVotesProv2025)
+  Election](https://2025-provincial.waterlooregionvotes.org)
+  [Alternate link](https://civictechwr.github.io/WRVotesProv2025)
 
 - Site for the [2022 Municipal
   Election](https://2022-municipal.waterlooregionvotes.org) (
