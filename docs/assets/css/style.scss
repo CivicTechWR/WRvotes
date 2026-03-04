@@ -575,16 +575,14 @@ p.bigtext {
     flex: 1 0 100%;
   }
 
-  .ward-page {
-    $mobile-avatar-size: 50px;
-
-    .candidate-list-grid {
-      grid-auto-rows: auto;
-    }
+  .candidate-list-grid {
+    $mobile-avatar-size: 3em;
+    grid-auto-rows: auto;
 
     .grid-item .candidate-card {
       .card-content {
         padding-bottom: 0.3em;
+
         .identity {
           display: grid;
           grid-template-columns: $mobile-avatar-size minmax(0, 1fr);
@@ -630,14 +628,14 @@ p.bigtext {
             padding: 0.15em 0 0.1em;
           }
         }
-      }
 
-      .card-content .name h3 {
-        font-size: 1rem;
-        line-height: 1.25;
-        min-height: 2.5em;
-        padding-right: 0.08em;
-        overflow-wrap: anywhere;
+        .name h3 {
+          font-size: 1em;
+          line-height: 1.25;
+          min-height: 2.5em;
+          padding-right: 0.08em;
+          overflow-wrap: anywhere;
+        }
       }
     }
   }
