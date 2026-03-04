@@ -618,8 +618,69 @@ p.bigtext {
     flex: 1 0 100%;
   }
 
-  .grid-item .candidate-card .card-content .identity {
-    gap: 0.55em;
+  .candidate-list-grid {
+    $mobile-avatar-size: 3em;
+    grid-auto-rows: auto;
+
+    .grid-item .candidate-card {
+      .card-content {
+        padding-bottom: 0.3em;
+
+        .identity {
+          display: grid;
+          grid-template-columns: $mobile-avatar-size minmax(0, 1fr);
+          grid-template-areas:
+            "image name"
+            "contact contact";
+          column-gap: 0.55em;
+          row-gap: 0.2em;
+          align-items: center;
+
+          .image {
+            grid-area: image;
+            width: $mobile-avatar-size;
+            height: $mobile-avatar-size;
+            min-height: $mobile-avatar-size;
+            line-height: 0;
+
+            img,
+            .image-placeholder {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+
+            img {
+              display: block;
+            }
+          }
+
+          .meta {
+            display: contents;
+          }
+
+          .name {
+            grid-area: name;
+            min-height: $mobile-avatar-size;
+            display: flex;
+            align-items: center;
+          }
+
+          .contact {
+            grid-area: contact;
+            padding: 0.15em 0 0.1em;
+          }
+        }
+
+        .name h3 {
+          font-size: 1em;
+          line-height: 1.25;
+          min-height: 2.5em;
+          padding-right: 0.08em;
+          overflow-wrap: anywhere;
+        }
+      }
+    }
   }
 }
 
