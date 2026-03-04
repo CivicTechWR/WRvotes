@@ -4,8 +4,6 @@
 @import "{{ site.theme }}";
 @import "variables";
 @import "typography";
-@import "theme_overrides";
-
 
 /* ---------- MAIN MENU STYLING --------- */
 #main-menu {
@@ -17,7 +15,7 @@
     padding: 0 2%;
   }
 
-  .inner::after { 
+  .inner::after {
     /* Clearfix hack so menu button shows */
     content: "";
     clear: both;
@@ -43,48 +41,45 @@
     padding-right: 3em;
     margin: 0;
   }
-
 }
 
-button.toggle-menu { 
+button.toggle-menu {
   background: inherit;
   font-size: 1.5em;
   font-family: $primary-font;
   color: $light;
   min-width: 1em;
   border: 0;
-} 
-
+}
 
 @media screen and (min-width: $menu-breakpoint) {
-  button.toggle-menu { 
+  button.toggle-menu {
     display: none;
   }
 
-  #main-menu-ul { 
+  #main-menu-ul {
     display: block;
   }
 }
 
 @media screen and (max-width: $menu-breakpoint) {
-  button.toggle-menu { 
+  button.toggle-menu {
     display: block;
     float: right;
   }
 
-  #main-menu-ul.hidden { 
+  #main-menu-ul.hidden {
     display: none;
-  } 
+  }
 
-  #main-menu-ul { 
+  #main-menu-ul {
     display: block;
-
   }
 }
 
 /* ----------- TOC BUTTONS --------------- */
 
-button.toggle-toc { 
+button.toggle-toc {
   background: inherit;
   float: right;
   font-size: 2em;
@@ -94,37 +89,33 @@ button.toggle-toc {
   border-color: $light;
   min-width: 1em;
   margin-top: 10px; /* align with H2 */
-
-} 
+}
 
 @media screen and (min-width: $sidebar-breakpoint) {
-  button.toggle-toc { 
+  button.toggle-toc {
     display: none;
   }
 
-  #toc-list { 
+  #toc-list {
     display: block;
   }
 }
 
 @media screen and (max-width: $sidebar-breakpoint) {
-  button.toggle-toc { 
+  button.toggle-toc {
     display: inline;
   }
 
-  #toc-list.hidden { 
+  #toc-list.hidden {
     display: none;
-  } 
+  }
 
-  #toc-list { 
+  #toc-list {
     display: block;
-
   }
 }
 
-
 /* ----------- COLLAPSABLE LISTS --------- */
-
 
 /* Make this button look like a regular link */
 button.toggle-button {
@@ -139,17 +130,18 @@ button.toggle-button {
 
   &:hover {
     color: $pink;
-    
   }
 }
 
-
-h2.inline, h3.inline, h4.inline {
+h2.inline,
+h3.inline,
+h4.inline {
   display: inline;
 }
 
 /* h4 and h3 do not look sufficiently different. */
-h4.race-wrapper, h4.inline {
+h4.race-wrapper,
+h4.inline {
   font-size: 1.2em;
 }
 
@@ -165,7 +157,6 @@ div.spacer {
 ul.continue {
   margin-top: -15px;
 }
-
 
 /* ------------ FOOTER STYLING ----------- */
 
@@ -194,7 +185,8 @@ p.sharing a {
 
     a {
       color: $light;
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         color: $pink;
       }
     }
@@ -244,7 +236,8 @@ p.sharing a {
       }
     }
 
-    .contact, .links {
+    .contact,
+    .links {
       padding: 1em 0;
 
       ul {
@@ -280,7 +273,6 @@ p.sharing a {
   }
 }
 
-
 /* ---------- EMAIL OBFUSCATION ----------- */
 
 /* Email obfuscation, stolen from CivicTechWR page. */
@@ -306,91 +298,89 @@ p.bigtext {
  * See: embedresponsively.com
  */
 .embedContainer {
-    position: relative;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    max-width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
 
-    /* This should probably be rex, but that
+  /* This should probably be rex, but that
      * does not exist. It is not clear whether
      * rem or em is more appropriate.
      */
-    /* height: 20em; */
-    height: 0;
+  /* height: 20em; */
+  height: 0;
 }
 
 .embedContainer iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* ------ REDO SEARCHABLE MAP ----- */
 
 #map {
-    /* float:left; */
-    width:100%;
-    height:40em;
+  /* float:left; */
+  width: 100%;
+  height: 40em;
 }
 
 #map img {
-    margin:0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #map-searchbar {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    margin-bottom: 1em;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  margin-bottom: 1em;
 
-    .search-input {
-      flex-grow: 1;
-      padding: 3px 6px;
-      font-family: $primary-font;
+  .search-input {
+    flex-grow: 1;
+    padding: 3px 6px;
+    font-family: $primary-font;
+    font-size: inherit;
+
+    &:placeholder {
       font-size: inherit;
-
-      &:placeholder {
-        font-size: inherit;
-        text-overflow: ellipsis;
-      }
+      text-overflow: ellipsis;
     }
+  }
 
-    .leaflet-control-search {
-      .search-button {
-        /* margin: 0;
+  .leaflet-control-search {
+    .search-button {
+      /* margin: 0;
          * margin-right: 6px;
          */
-        /* the cancel and the magnifying glass are both useless.
+      /* the cancel and the magnifying glass are both useless.
          * They also overlap each other. The magnifying glass is 
          * more useless?? So we drop that one.
          */
-        display: none !important; 
-      }
-
-      /* You need this to prevent overflow on mobile */
-      .search-tooltip {
-        max-width: inherit;
-      }
-
+      display: none !important;
     }
 
-
-    .leaflet-control-search.search-exp {
-      flex-grow: 1;
-      display: flex;
-      position: relative;
-      align-items: center;
-      border: none;
-      max-width: 100%;
+    /* You need this to prevent overflow on mobile */
+    .search-tooltip {
+      max-width: inherit;
     }
+  }
+
+  .leaflet-control-search.search-exp {
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border: none;
+    max-width: 100%;
+  }
 }
 
 /* ------ RESULTS PAGE ------ */
 
-.candidate-list-grid { 
+.candidate-list-grid {
   display: grid;
   /* 450px */
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
@@ -400,7 +390,7 @@ p.bigtext {
 .jurisdiction {
   display: flex;
   flex-wrap: wrap;
-  background: #FEFEFE;
+  background: #fefefe;
   margin: -0.5em;
 }
 
@@ -510,7 +500,6 @@ p.bigtext {
       }
     }
   }
-
 }
 
 .wrv-accordion {
@@ -563,12 +552,66 @@ p.bigtext {
   }
 }
 
+.results-list {
+  padding-bottom: 30px;
+
+  .vote-bar {
+    display: grid;
+    grid-template-columns: max-content 11em auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .vote-bar h3.name {
+    margin: 0 0 0.2em;
+    font-size: 1.15em;
+    line-height: 1.25;
+  }
+
+  .vote-bar img.vote-winner {
+    height: 2em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .vote-bar-progress {
+    position: relative;
+    border: 2px solid $green;
+    height: 2em;
+    color: white;
+  }
+
+  .vote-bar-progress span {
+    display: inline-block;
+  }
+
+  .vote-bar-progress span.vote-amount {
+    background-color: $green;
+    height: 100%;
+  }
+
+  .vote-bar-after {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+  }
+
+  .vote-bar-after .vote-count {
+    color: $white;
+    background: $green;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+}
+
 @media screen and (max-width: $sidebar-breakpoint) {
   .grid-item {
     flex: 1 0 50%;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .grid-item {
@@ -577,5 +620,421 @@ p.bigtext {
 
   .grid-item .candidate-card .card-content .identity {
     gap: 0.55em;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 18px;
+  min-height: 100%;
+  position: relative;
+  background: $light;
+  overflow-wrap: break-word;
+
+  a {
+    color: $blue;
+
+    &:hover,
+    &:focus {
+      color: $pink;
+    }
+  }
+
+  img {
+    border: none;
+    box-shadow: none;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    background: none;
+  }
+
+  ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    li {
+      margin: 0.4rem 0;
+    }
+  }
+
+  br.textonly {
+    display: none;
+  }
+
+  #header_wrap {
+    background: $light;
+
+    header.inner {
+      max-width: 1366px;
+      padding: 1% 2%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .titles {
+        #project_title {
+          font-size: 28px;
+          margin: 0;
+          padding: 0;
+        }
+
+        #project_tagline {
+          font-size: 20px;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .header-logo {
+        img {
+          height: 100px;
+          width: auto;
+          margin: 0;
+          padding: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  #project_title,
+  #project_tagline {
+    color: $dark;
+    text-shadow: none;
+  }
+
+  #main_content_wrap {
+    border-top: none;
+    border-bottom: none;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background: $light;
+
+    .inner {
+      max-width: 1366px;
+      padding: 1% 2%;
+    }
+  }
+
+  .flex {
+    display: flex;
+
+    &.gutters {
+      margin-left: -1em;
+      margin-right: -1em;
+    }
+
+    &.justify-center {
+      justify-content: center;
+    }
+
+    &.justify-right {
+      justify-content: flex-end;
+    }
+
+    .main {
+      flex-grow: 2;
+      order: 1;
+      margin: 1em;
+      flex-basis: 66%;
+    }
+
+    .aside {
+      flex-grow: 1;
+      order: 2;
+      margin: 1em;
+      flex-basis: 33%;
+    }
+  }
+
+  .content-box {
+    background: transparentize($blue, 0.95);
+    border-left: 6px solid $blue;
+    padding: 0.5em 2em 0 2em;
+    color: $dark;
+    margin-bottom: 2em;
+    overflow-wrap: break-word;
+  }
+
+  .content-box .spacer {
+    padding-left: 1em;
+    border-left: 6px solid $blue;
+    margin-top: 2em;
+  }
+
+  .toc-link {
+    margin-top: 3em;
+    font-size: smaller;
+  }
+
+  .aside-box {
+    background-color: $blue;
+    color: $light;
+    padding: 2rem;
+    margin-bottom: 1rem;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $light;
+    }
+
+    a {
+      color: $light;
+      font-weight: bold;
+    }
+
+    ul > li > ul > li a {
+      color: $light;
+      font-weight: normal;
+    }
+
+    &.green {
+      background-color: $green;
+
+      a {
+        color: $yellow;
+      }
+    }
+  }
+
+  .standout-box {
+    background: $light;
+    color: $dark;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    .header {
+      padding: 20px 0;
+    }
+
+    .content {
+      padding: 0px;
+      padding-left: 20px;
+      border-left: 4px solid $dark;
+    }
+
+    &.purple {
+      .content {
+        border-left: 4px solid $purple;
+      }
+
+      a {
+        color: $purple;
+      }
+    }
+
+    &.pink {
+      .content {
+        border-left: 4px solid $pink;
+      }
+
+      a {
+        color: $pink;
+      }
+    }
+
+    &.yellow {
+      .content {
+        border-left: 4px solid $yellow;
+      }
+
+      a {
+        color: $yellow;
+      }
+    }
+
+    &.deepYellow {
+      .content {
+        border-left: 4px solid $deepYellow;
+      }
+
+      a {
+        color: $purple;
+      }
+    }
+
+    &.blue {
+      .content {
+        border-left: 4px solid $blue;
+      }
+
+      a {
+        color: $blue;
+      }
+    }
+
+    &.green {
+      .content {
+        border-left: 4px solid $green;
+      }
+
+      a {
+        color: $green;
+      }
+    }
+
+    &.mint {
+      .content {
+        border-left: 4px solid $mint;
+      }
+
+      a {
+        color: $mint;
+      }
+    }
+
+    &.light {
+      .content {
+        border-left: 4px solid transparentize($blue, 0.8);
+      }
+
+      a {
+        color: $blue;
+      }
+    }
+
+    &.small {
+      max-width: 380px;
+    }
+
+    &.medium {
+      max-width: 640px;
+    }
+
+    &.large {
+      max-width: 960px;
+    }
+
+    &.full-width {
+      max-width: 100%;
+    }
+  }
+
+  .bg-blue {
+    background-color: $blue;
+  }
+
+  .bg-green {
+    background-color: $green;
+  }
+
+  .bg-yellow {
+    background-color: $yellow;
+  }
+
+  .bg-pink {
+    background-color: $pink;
+  }
+
+  .bg-mint {
+    background-color: $mint;
+  }
+
+  .bg-purple {
+    background-color: $purple;
+  }
+
+  .blue-text {
+    color: $blue;
+  }
+
+  .green-text {
+    color: $green;
+  }
+
+  .yellow-text {
+    color: $yellow;
+  }
+
+  .pink-text {
+    color: $pink;
+  }
+
+  .mint-text {
+    color: $mint;
+  }
+
+  .purple-text {
+    color: $purple;
+  }
+
+  .big-text {
+    font-size: 3em;
+    line-height: 1.2;
+  }
+
+  .medium-text {
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .countdown-container {
+    .countdown-days {
+      font-size: 2rem;
+    }
+  }
+
+  .no-margin-top {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    #main_content_wrap {
+      .flex {
+        flex-direction: column;
+
+        &.gutters {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        .main {
+          flex-grow: 1;
+          order: 2;
+          margin: 1em 0;
+        }
+
+        .aside {
+          flex-grow: 1;
+          order: 1;
+          margin: 1em 0;
+        }
+      }
+    }
+
+    .big-text {
+      font-size: 2em;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    h1 {
+      font-size: 2em;
+    }
+
+    #main-menu ul {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
