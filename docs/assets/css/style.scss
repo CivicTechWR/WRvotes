@@ -578,7 +578,6 @@ p.bigtext {
 
   .vote-bar-progress {
     position: relative;
-    border: 2px solid $green;
     height: 2em;
     color: white;
   }
@@ -590,6 +589,7 @@ p.bigtext {
   .vote-bar-progress span.vote-amount {
     background-color: $green;
     height: 100%;
+    border: 2px solid $green;
   }
 
   .vote-bar-after {

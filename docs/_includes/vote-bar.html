@@ -14,6 +14,6 @@
     <span class="vote-amount" style="width: {{ vote-width }}%"></span>
 </div>
 <div class="vote-bar-after"><span class="vote-count"> {{ include.candidate.Votes }}</span>
-    {%- if include.candidate.Winner == "Y" -%}<img class="vote-winner" alt="Elected checkmark" title="Winner"
+    {%- if include.candidate.Winner == "Y" -%}&nbsp;<img class="vote-winner" alt="Elected checkmark" title="Elected"
         src="{{ site.baseurl }}/assets/images/favicon.png" />{%- endif -%}
 </div>
