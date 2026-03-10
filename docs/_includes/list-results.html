@@ -56,6 +56,7 @@ winners=include.num-to-elect -%}
   {% assign tuple-split = tuples | split:':split:'| sort | reverse %}
 </ul>
 
+{%- unless include.num-to-elect == include.valid-nominees.size -%}
 <div class="results-list">
   <h4 class="inline"></h4>
   <div class="vote-bar">
@@ -73,3 +74,4 @@ winners=include.num-to-elect -%}
     {%- endfor -%}
   </div>
 </div>
+{%- endunless %}
