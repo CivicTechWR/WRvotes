@@ -202,7 +202,7 @@ ul.continue {
   margin-bottom: 1em;
 }
 
-.toggleable:hover { 
+.toggletop:hover { 
   cursor: pointer;
   border-bottom: 3px solid; 
 }
@@ -571,7 +571,7 @@ p.bigtext {
 }
 
 .wrv-accordion {
-  a.toggleable {
+  a.toggletop {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;

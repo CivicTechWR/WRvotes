@@ -20,5 +20,5 @@ function toggleAccordion(){
     target.classList.toggle('active');
 }
 
-const toggles = document.querySelectorAll(".toggleable");
+const toggles = document.querySelectorAll(".toggletop");
 toggles.forEach(toggles => toggles.addEventListener('click', toggleAccordion));
