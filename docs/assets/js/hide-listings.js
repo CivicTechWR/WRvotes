@@ -65,15 +65,12 @@ $( document ).ready(function() {
 
     if ($(target).hasClass('hidden')) {
       $(target).removeClass('hidden');
-      // $(target).text("⇧ Show Fewer " + div_description + " ⇧"); 
+      $(target_ul).removeClass('hidden');
       $(target).text("Show Fewer " + div_description + " ▲"); 
-      // Select the ID with the given prefix
-      $(target_ul).show();
     } else {
       $(target).addClass('hidden');
-      // $(target).text("⇩ Show More " + div_description + " ⇩");
+      $(target_ul).addClass('hidden');
       $(target).text("Show More " + div_description + " ▼");
-      $(target_ul).hide();
 
     }
   }; // end toggle_listing
@@ -82,7 +79,7 @@ $( document ).ready(function() {
 
   // ------------------------
   function add_ul_toggle_button (target, classname, title, inittext ) { 
-    console.log("add_ul_target_button: Target is " + target);
+    // console.log("add_ul_target_button: Target is " + target);
 
     retval = '<button data-toc="' + target + '" '
              + 'id="' + target + '-btn" '
@@ -154,9 +151,8 @@ $( document ).ready(function() {
       toggle_main_menu ("#" + e.target.id );
   });
 
-
-
   $(".toggle-button").each( function() {
+    toggle_listing ("#" + this.id );
     toggle_listing ("#" + this.id );
   }); 
 
