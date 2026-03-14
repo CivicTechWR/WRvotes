@@ -15,8 +15,8 @@ where:"PositionUniqueName",ward-id | first -%}
 {% assign races-split = municipal-info.Races | split: ',' %}
 
 
-  <nav>
-    <ul id="toc-list" class="toc-tabs">
+  <nav id="toc-tabs-container">
+    <ul id="toc-list" class="toc-tabs" role="tablist">
       {% for race in races-split %}
         {% if race == "_SELF" %}
           {% assign race-id = ward-id %}
@@ -26,8 +26,9 @@ where:"PositionUniqueName",ward-id | first -%}
 
         {% assign race-info = site.data.internal.position-tags |
           where:"PositionUniqueName",race-id | first -%}
-        <li><a href="#{{ race-id | slugify }}-wrapper">{{
-          race-info.PositionCategory }}</a></li>
+        <li role="presentation">
+          <a href="#{{ race-id | slugify }}-wrapper" role="tab">{{ race-info.PositionCategory }}</a>
+          </li>
       {% endfor %}
     </ul>
   </nav>
@@ -44,7 +45,7 @@ where:"PositionUniqueName",ward-id | first -%}
       {% assign race-info = site.data.internal.position-tags |
       where:"PositionUniqueName",race-id | first -%}
 
-      <div class="race-wrapper tab-content" id="{{ race-id | slugify }}-wrapper">
+      <div class="race-wrapper tab-content" role="tabpanel" id="{{ race-id | slugify }}-wrapper">
 
         {% include list-nominees.html race-id=race-id
            show-toc-link=true hide-details=false
