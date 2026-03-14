@@ -126,8 +126,12 @@ button.toggle-toc {
 
 /* From: https://stackoverflow.com/a/79854195 */
 
+#toc-tabs-container { 
+  background: $white;
+}
+
 .tab-content {
-  display:none;
+  display: none;
 }
 
 body:not(:has(:target)) .tab-content:first-of-type, /* default display (no hash) */
@@ -149,6 +153,10 @@ ul.toc-tabs {
     a:active { 
       bg-color: $green;
     } 
+
+    &:target { 
+      bg-color: $pink;
+    }
 
   } 
 } 
