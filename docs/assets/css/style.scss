@@ -130,6 +130,17 @@ button.toggle-toc {
   background: $white;
 }
 
+html.pad-scrolling { 
+  /* See: https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html
+  * Unfortunately we need to apply this to an element that scrolls,
+  * and that is the html tag. So we use a class to not mess up menus
+  * on other pages. 
+  * This makes the tabs not jump out of the viewport when you click
+  * one. 
+  */
+  scroll-padding-top: 30rem;
+}
+
 .tab-content {
   display: none;
 }
