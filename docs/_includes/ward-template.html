@@ -14,9 +14,30 @@ where:"PositionUniqueName",ward-id | first -%}
   where:"Name",ward-info.WardMunicipality | first %}
 {% assign races-split = municipal-info.Races | split: ',' %}
 
+  {% assign select-first-race = "checked" %}
+  {% for race in races-split %}
+    {% if race == "_SELF" %}
+      {% assign race-id = ward-id %}
+    {% else %}
+      {% assign race-id = race %}
+    {% endif %}
+    <style>
+      #{{ race-id | slugify }}:checked ~ nav#toc-tabs label.{{ race-id | slugify }} 
+      {
+        background: var(--green);
+        color: var(--white);
+      }
 
-  <nav id="toc-tabs-container">
-    <ul id="toc-list" class="toc-tabs" role="tablist">
+      #{{ race-id | slugify }}:checked ~ .main #{{ race-id | slugify }}-wrapper {
+        display: block;
+      }
+    </style>
+    <input inert class="tab-radio" type="radio" name="tabs" id="{{ race-id | slugify }}" {{ select-first-race }}/>
+    {% assign select-first-race = "" %}
+  {% endfor %}
+
+  <nav id="toc-tabs">
+    <div class="tab-strip">
       {% for race in races-split %}
         {% if race == "_SELF" %}
           {% assign race-id = ward-id %}
@@ -26,11 +47,9 @@ where:"PositionUniqueName",ward-id | first -%}
 
         {% assign race-info = site.data.internal.position-tags |
           where:"PositionUniqueName",race-id | first -%}
-        <li role="presentation">
-          <a href="#{{ race-id | slugify }}-wrapper" role="tab">{{ race-info.PositionCategory }}</a>
-          </li>
+          <label class="tab-label {{ race-id | slugify }}" for="{{ race-id | slugify  }}">{{ race-info.PositionCategory }}</label>
       {% endfor %}
-    </ul>
+    </div>
   </nav>
 
   <div class="main">
