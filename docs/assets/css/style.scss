@@ -6,7 +6,6 @@
 @import "typography";
 @import "theme_overrides";
 
-
 /* ---------- MAIN MENU STYLING --------- */
 #main-menu {
   background: $green;
@@ -17,7 +16,7 @@
     padding: 0 2%;
   }
 
-  .inner::after { 
+  .inner::after {
     /* Clearfix hack so menu button shows */
     content: "";
     clear: both;
@@ -43,48 +42,45 @@
     padding-right: 3em;
     margin: 0;
   }
-
 }
 
-button.toggle-menu { 
+button.toggle-menu {
   background: inherit;
   font-size: 1.5em;
   font-family: $primary-font;
   color: $light;
   min-width: 1em;
   border: 0;
-} 
-
+}
 
 @media screen and (min-width: $menu-breakpoint) {
-  button.toggle-menu { 
+  button.toggle-menu {
     display: none;
   }
 
-  #main-menu-ul { 
+  #main-menu-ul {
     display: block;
   }
 }
 
 @media screen and (max-width: $menu-breakpoint) {
-  button.toggle-menu { 
+  button.toggle-menu {
     display: block;
     float: right;
   }
 
-  #main-menu-ul.hidden { 
+  #main-menu-ul.hidden {
     display: none;
-  } 
+  }
 
-  #main-menu-ul { 
+  #main-menu-ul {
     display: block;
-
   }
 }
 
 /* ----------- TOC BUTTONS --------------- */
 
-button.toggle-toc { 
+button.toggle-toc {
   background: inherit;
   float: right;
   font-size: 2em;
@@ -94,88 +90,87 @@ button.toggle-toc {
   border-color: $light;
   min-width: 1em;
   margin-top: 10px; /* align with H2 */
-
-} 
+}
 
 @media screen and (min-width: $sidebar-breakpoint) {
-  button.toggle-toc { 
+  button.toggle-toc {
     display: none;
   }
 
-  #toc-list { 
+  #toc-list {
     display: block;
   }
 }
 
 @media screen and (max-width: $sidebar-breakpoint) {
-  button.toggle-toc { 
+  button.toggle-toc {
     display: inline;
   }
 
-  #toc-list.hidden { 
+  #toc-list.hidden {
     display: none;
-  } 
+  }
 
-  #toc-list { 
+  #toc-list {
     display: block;
-
   }
 }
 
 /* ----------- TOC TABS ------------- */
-
-/* From: https://stackoverflow.com/a/79854195 */
-
-#toc-tabs-container { 
+#toc-tabs-container {
   background: $white;
-}
-
-html.pad-scrolling { 
-  /* See: https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html
-  * Unfortunately we need to apply this to an element that scrolls,
-  * and that is the html tag. So we use a class to not mess up menus
-  * on other pages. 
-  * This makes the tabs not jump out of the viewport when you click
-  * one. 
-  */
-  scroll-padding-top: 30rem;
 }
 
 .tab-content {
   display: none;
 }
 
-body:not(:has(:target)) .tab-content:first-of-type, /* default display (no hash) */
-.tab-content:target {
-  display: block;
+.tab-panel {
+  display: none;
+  padding: 10px;
 }
 
-ul.toc-tabs { 
-  list-style-type: none;
+.tab-radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
 
-  li { 
-    display: inline-block;
+nav#toc-tabs {
+  .tab-strip {
+    display: flex;
+    border-bottom: 1.5px solid var(--rule);
+    gap: 2px;
+  }
+
+  .tab-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 50px;
+    padding: 0 22px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+
+    border-color: $dark !important;
     border-top: solid;
     border-left: solid;
     border-right: solid;
     padding-left: 0.5em;
     padding-right: 0.5em;
+  }
 
-    a:active { 
-      bg-color: $green;
-    } 
-
-    &:target { 
-      bg-color: $pink;
-    }
-
-  } 
-} 
-
-
+  .tab-panels {
+    background: whitesmoke;
+    border: 2px solid var(--rule);
+    border-top: none;
+  }
+}
 
 /* ----------- COLLAPSABLE LISTS --------- */
-
 
 /* Make this button look like a regular link */
 button.toggle-button {
@@ -190,26 +185,27 @@ button.toggle-button {
 
   &:hover {
     color: $pink;
-    
   }
 }
 
-.togglable { 
+.togglable {
   display: block;
 
-  &.hidden { 
+  &.hidden {
     display: none;
   }
 }
 
-h2.inline, h3.inline, h4.inline {
+h2.inline,
+h3.inline,
+h4.inline {
   display: inline;
 }
 
 /* h4 and h3 do not look sufficiently different. */
-h4.race-wrapper, h4.inline {
+h4.race-wrapper,
+h4.inline {
   font-size: 1.2em;
-  
 }
 
 /* Stop buttons from crashing into each other */
@@ -225,30 +221,28 @@ ul.continue {
   margin-top: -15px;
 }
 
-.media-list { 
+.media-list {
   margin-bottom: 1em;
 }
 
-.toggletop:hover { 
+.toggletop:hover {
   cursor: pointer;
-  border-bottom: 3px solid; 
+  border-bottom: 3px solid;
 }
 
-.toggle-content { 
+.toggle-content {
   display: none;
   max-height: 0;
   transition: all 0.2s ease 0.15s;
-  
-  &.active { 
+
+  &.active {
     max-height: 100%;
     display: block;
 
     transition: all 0.35s ease 0.15s;
     margin-bottom: 3em;
-  } 
-
-} 
-
+  }
+}
 
 /* ------------ FOOTER STYLING ----------- */
 
@@ -277,7 +271,8 @@ p.sharing a {
 
     a {
       color: $light;
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         color: $pink;
       }
     }
@@ -327,7 +322,8 @@ p.sharing a {
       }
     }
 
-    .contact, .links {
+    .contact,
+    .links {
       padding: 1em 0;
 
       ul {
@@ -363,7 +359,6 @@ p.sharing a {
   }
 }
 
-
 /* ---------- EMAIL OBFUSCATION ----------- */
 
 /* Email obfuscation, stolen from CivicTechWR page. */
@@ -389,91 +384,89 @@ p.bigtext {
  * See: embedresponsively.com
  */
 .embedContainer {
-    position: relative;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    max-width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
 
-    /* This should probably be rex, but that
+  /* This should probably be rex, but that
      * does not exist. It is not clear whether
      * rem or em is more appropriate.
      */
-    /* height: 20em; */
-    height: 0;
+  /* height: 20em; */
+  height: 0;
 }
 
 .embedContainer iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* ------ REDO SEARCHABLE MAP ----- */
 
 #map {
-    /* float:left; */
-    width:100%;
-    height:40em;
+  /* float:left; */
+  width: 100%;
+  height: 40em;
 }
 
 #map img {
-    margin:0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #map-searchbar {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    margin-bottom: 1em;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  margin-bottom: 1em;
 
-    .search-input {
-      flex-grow: 1;
-      padding: 3px 6px;
-      font-family: $primary-font;
+  .search-input {
+    flex-grow: 1;
+    padding: 3px 6px;
+    font-family: $primary-font;
+    font-size: inherit;
+
+    &:placeholder {
       font-size: inherit;
-
-      &:placeholder {
-        font-size: inherit;
-        text-overflow: ellipsis;
-      }
+      text-overflow: ellipsis;
     }
+  }
 
-    .leaflet-control-search {
-      .search-button {
-        /* margin: 0;
+  .leaflet-control-search {
+    .search-button {
+      /* margin: 0;
          * margin-right: 6px;
          */
-        /* the cancel and the magnifying glass are both useless.
+      /* the cancel and the magnifying glass are both useless.
          * They also overlap each other. The magnifying glass is 
          * more useless?? So we drop that one.
          */
-        display: none !important; 
-      }
-
-      /* You need this to prevent overflow on mobile */
-      .search-tooltip {
-        max-width: inherit;
-      }
-
+      display: none !important;
     }
 
-
-    .leaflet-control-search.search-exp {
-      flex-grow: 1;
-      display: flex;
-      position: relative;
-      align-items: center;
-      border: none;
-      max-width: 100%;
+    /* You need this to prevent overflow on mobile */
+    .search-tooltip {
+      max-width: inherit;
     }
+  }
+
+  .leaflet-control-search.search-exp {
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border: none;
+    max-width: 100%;
+  }
 }
 
 /* ------ RESULTS PAGE ------ */
 
-.candidate-list-grid { 
+.candidate-list-grid {
   display: grid;
   /* 450px */
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
@@ -484,7 +477,7 @@ p.bigtext {
 .jurisdiction {
   display: flex;
   flex-wrap: wrap;
-  background: #FEFEFE;
+  background: #fefefe;
   margin: -0.5em;
 }
 
@@ -594,7 +587,6 @@ p.bigtext {
       }
     }
   }
-
 }
 
 .wrv-accordion {
@@ -652,7 +644,6 @@ p.bigtext {
     flex: 1 0 50%;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .grid-item {
