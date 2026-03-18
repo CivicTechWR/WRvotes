@@ -127,7 +127,8 @@ button.toggle-toc {
 /* From: https://stackoverflow.com/a/79854195 */
 
 #toc-tabs-container { 
-  background: $white;
+  overflow-x: scroll;
+  text-wrap: nowrap;
 }
 
 html.pad-scrolling { 
@@ -161,12 +162,12 @@ ul.toc-tabs {
     padding-left: 0.5em;
     padding-right: 0.5em;
 
-    a:active { 
-      bg-color: $green;
-    } 
+    &:focus { 
+      background: $blue;
+    }
 
-    &:target { 
-      bg-color: $pink;
+    &:hover { 
+      background: $green;
     }
 
   } 
