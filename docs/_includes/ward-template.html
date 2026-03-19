@@ -21,6 +21,8 @@ where:"PositionUniqueName",ward-id | first -%}
     {% else %}
       {% assign race-id = race %}
     {% endif %}
+
+
     <style>
       #{{ race-id | slugify }}:checked ~ nav#toc-tabs label.{{ race-id | slugify }} 
       {
@@ -44,10 +46,12 @@ where:"PositionUniqueName",ward-id | first -%}
         {% else %}
           {% assign race-id = race %}
         {% endif %}
-
         {% assign race-info = site.data.internal.position-tags |
           where:"PositionUniqueName",race-id | first -%}
-          <label class="tab-label {{ race-id | slugify }}" for="{{ race-id | slugify  }}">{{ race-info.PositionCategory }}</label>
+
+          <a href="#{{ race-id | slugify }}-wrapper"><label class="tab-label {{ race-id | slugify }}" for="{{ race-id | slugify  }}">{{ race-info.PositionCategory
+          }}</label></a>
+          <br class="textonly"/>
       {% endfor %}
     </div>
   </nav>

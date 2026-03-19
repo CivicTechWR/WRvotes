@@ -138,6 +138,10 @@ button.toggle-toc {
   pointer-events: none;
 }
 
+.textonly { 
+  display: none;
+}
+
 nav#toc-tabs {
   .tab-strip {
     display: flex;
