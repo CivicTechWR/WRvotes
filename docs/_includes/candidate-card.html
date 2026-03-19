@@ -80,8 +80,8 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                         <div class="contact-item">
                             <div class="contact-item-inner">
                                 <a href="{{ twitter_page }}" >
-                                    <i class="fab fa-twitter" aria-hidden="true" title="Twitter"></i>
-                                    <span class="fa-sr-only">Twitter: {{
+                                    <i class="fa-brands fa-x-twitter" aria-hidden="true" title="X"></i>
+                                    <span class="fa-sr-only">X: {{
                                     twitter_page }}</span>
                             </a>
                             </div>
@@ -92,7 +92,7 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                         <div class="contact-item">
                             <div class="contact-item-inner">
                                 <a href="{{ include.winner['Facebook'] }}">
-                                    <i class="fab fa-facebook" aria-hidden="true" title="Facebook"></i>
+                                    <i class="fa-brands fa-facebook" aria-hidden="true" title="Facebook"></i>
                                     <span class="fa-sr-only">Facebook: {{ include.winner['Facebook'] }}</span>
                                 </a>
                             </div>
@@ -116,6 +116,61 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                                 <a href="{{ include.winner['LinkedIn'] }}">
                                     <i class="fab fa-linkedin" aria-hidden="true" title="LinkedIn"></i>
                                     <span class="fa-sr-only">LinkedIn: {{ include.winner['LinkedIn'] }}</span>
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if include.winner["TikTok"] %}
+                        <div class="contact-item">
+                            <div class="contact-item-inner">
+                                <a href="{{ include.winner['TikTok'] }}">
+                                    <i class="fab fa-tiktok" aria-hidden="true" title="TikTok"></i>
+                                    <span class="fa-sr-only">TikTok: {{ include.winner['TikTok'] }}</span>
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if include.winner["Bluesky"] %}
+                        <div class="contact-item">
+                            <div class="contact-item-inner">
+                                <a href="{{ include.winner['Bluesky'] }}">
+                                    <i class="fa-brands fa-bluesky" aria-hidden="true" title="Bluesky"></i>
+                                    <span class="fa-sr-only">Bluesky: {{ include.winner['Bluesky'] }}</span>
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if include.winner["Mastodon"] %}
+                        <div class="contact-item">
+                            <div class="contact-item-inner">
+                                <a href="{{ include.winner['Mastodon'] }}">
+                                    <i class="fa-brands fa-mastodon" aria-hidden="true" title="Mastodon"></i>
+                                    <span class="fa-sr-only">Mastodon: {{ include.winner['Mastodon'] }}</span>
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if include.winner["Threads"] %}
+                        <div class="contact-item">
+                            <div class="contact-item-inner">
+                                <a href="{{ include.winner['Threads'] }}">
+                                    <i class="fa-brands fa-square-threads" aria-hidden="true" title="Threads"></i>
+                                    <span class="fa-sr-only">Threads: {{ include.winner['Threads'] }}</span>
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if include.winner["VoteMate"] %}
+                        <div class="contact-item">
+                            <div class="contact-item-inner">
+                                <a href="{{ include.winner['VoteMate'] }}">
+                                    <span class="votemate-icon" aria-hidden="true" title="VoteMate"></span>
+                                    <span class="fa-sr-only">VoteMate: {{ include.winner['VoteMate'] }}</span>
                                 </a>
                             </div>
                         </div>
