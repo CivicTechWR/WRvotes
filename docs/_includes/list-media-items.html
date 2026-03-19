@@ -1,4 +1,4 @@
-<div class="media-list" id="media-{{ include.type | slugify }}"> 
+<div class="media-list" id="media-{{ include.race-id | slugify}}-{{ include.type | slugify }}"> 
 
     {% comment %} 
     Ugh. This should be handled with some kind of list
@@ -21,7 +21,7 @@
     {{ introtext | markdownify }}
 
     <!-- toggle-content -->
-    <div id="media-{{ include.type | slugify }}-body" class="togglable hidden">
+    <div id="media-{{ include.race-id | slugify}}-{{ include.type | slugify }}-body" class="togglable">
 
         {% capture resttext %}
         {% include desc-categories-gross.html
