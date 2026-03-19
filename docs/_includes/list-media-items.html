@@ -21,7 +21,7 @@
     {{ introtext | markdownify }}
 
     <!-- toggle-content -->
-    <div id="media-{{ include.race-id | slugify}}-{{ include.type | slugify }}-body" class="togglable">
+    <div id="media-{{ include.race-id | slugify}}-{{ include.type | slugify }}-body" class="togglable hidden">
 
         {% capture resttext %}
         {% include desc-categories-gross.html
