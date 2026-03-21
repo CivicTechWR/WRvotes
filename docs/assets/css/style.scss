@@ -843,6 +843,35 @@ body {
     margin-top: 2em;
   }
 
+  .issue-backgrounder.collapsed {
+    display: none;
+  }
+
+  .issue-backgrounder-btn {
+    margin-bottom: 1em;
+  }
+
+  li.issue-news-new {
+    border-left: 6px solid $blue;
+    background: transparentize($blue, 0.95);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    list-style: none;
+  }
+
+  li.issue-news-old {
+    border-left: 6px solid #ccc;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    list-style: none;
+  }
+
   .toc-link {
     margin-top: 3em;
     font-size: smaller;
