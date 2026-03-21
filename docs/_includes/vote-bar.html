@@ -1,11 +1,11 @@
-{%- if include.winners > 1 -%}
-{% assign vote-width = include.candidate.Votes | times: 100.0 | divided_by: include.max-votes | times: 0.9 | round %}
-{%- else -%}
-{% assign vote-width = include.candidate.Votes | times: 100.0 | divided_by: include.total-votes | round %}
-{%- endif -%}
+{% assign vote-width = include.candidate.Votes |
+times: 100.0 |
+divided_by: include.candidate.Max_votes |
+times: 0.9 |
+round
+%}
 <div class="vote-bar-name">
-    <h3 class="name">{{ include.candidate.Given_Names }}
-        {{ include.candidate.Last_Name -}}</h3>
+    <h3 class="name">{{ include.candidate.Given_Names }} {{ include.candidate.Last_Name -}}</h3>
     {%- if candidate.Withdrawn == 'Y' -%}
     <strong>(Withdrawn) </strong>
     {%- endif -%}

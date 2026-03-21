@@ -1,62 +1,11 @@
-{% comment %}
-Collect max votes
-{% endcomment %}
-{%- assign total-votes = 0 %}
-{%- assign max-votes = 0 %}
-{%- for candidate in include.nominees -%}
-{%- assign cvotes = candidate.Votes | plus: 0 -%}
-{%- assign total-votes = total-votes | plus: cvotes -%}
-{%- if cvotes > max-votes -%}
-{%- assign max-votes = cvotes -%}
-{%- endif -%}
-{%- endfor -%}
-
-{% comment %}
-Ugh. You cannot sort numerically and cannot (easily) add a custom
-field to an existing array. Let's generate a long string of (key,
-val) pairs, sort that, and then split everything again.
-See: https://stackoverflow.com/questions/6387540/
-Also: https://github.com/Shopify/liquid/issues/980
-{% endcomment %}
-
-{% capture tuples -%}
-{%- for candidate in include.nominees -%}
-
-{%- if candidate.Votes -%}
-{%- assign padded-votes = candidate.Votes
-| floor | plus: 0 | plus: site.big_number -%}
-{%- else -%}
-{%- assign padded-votes = site.big_number %}
-{%- endif -%}
-
-{{ padded-votes }} :field:
-
-
 {%- if include.num-to-elect == include.valid-nominees.size -%}
 <div>
-  <h3 class="name">{{ candidate.Given_Names }}
-    {{ candidate.Last_Name -}}</h3>
+  <h3 class="name">{{ include.valid-nominees[0].Given_Names }}
+    {{ include.valid-nominees[0].Last_Name -}}</h3>
   (Acclaimed)
 </div>
-{%- elsif candidate.Withdrawn == 'Y' and candidate.Votes == '0' -%}
-{%- elsif candidate.Votes == '0' -%}
-{%- include vote-bar.html candidate=candidate votes=0 total-votes=total-votes max-votes=max-votes
-winners=include.num-to-elect -%}
-{%- elsif candidate.Votes -%}
-{%- include vote-bar.html candidate=candidate votes=candidate.Votes total-votes=total-votes max-votes=max-votes
-winners=include.num-to-elect -%}
+
 {%- else -%}
-{% comment %}Blank means no data, not no votes.{% endcomment %}
-{%- endif -%}
-:split:
-{%- endfor -%}
-{%- endcapture %}
-
-<ul>
-  {% assign tuple-split = tuples | split:':split:'| sort | reverse %}
-</ul>
-
-{%- unless include.num-to-elect == include.valid-nominees.size -%}
 <div class="results-list">
   <h4 class="inline"></h4>
   <div class="vote-bar">
@@ -68,10 +17,9 @@ winners=include.num-to-elect -%}
       <h4>Votes</h4>
     </div>
 
-    {%- for candidate in tuple-split -%}
-    {%- assign candidate-split = candidate | split:':field:' -%}
-    {{ candidate-split[1] }}
+    {%- for candidate in site.data.sorted_nominees_results[include.race-id] -%}
+    {%- include vote-bar.html candidate=candidate winners=include.num-to-elect -%}
     {%- endfor -%}
   </div>
 </div>
-{%- endunless %}
+{%- endif %}
