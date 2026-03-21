@@ -147,6 +147,15 @@ nav#toc-tabs {
     display: flex;
     border-bottom: 1.5px solid var(--rule);
     gap: 2px;
+
+    a { 
+
+      color: inherit;
+
+      a:hover { 
+        color: inherit;
+      } 
+    } 
   }
 
   .tab-label {
