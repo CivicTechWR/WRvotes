@@ -18,7 +18,9 @@ layout: page
 
 <div class="main" data-issue-tag="budgets">
 
-<div class="issue-backgrounder">
+<div>
+
+<div id="issue-backgrounder" class="issue-backgrounder background togglable">
 
 ### Where does my property tax go?
 
@@ -84,6 +86,7 @@ Running down reserves to keep taxes low can shift costs to future taxpayers.
 - Are there services where you would raise user fees, and are there services
   where you think user fees are too high?
 
+</div>
 </div>
 
 ## Media coverage

@@ -18,7 +18,9 @@ layout: page
 
 <div class="main" data-issue-tag="transportation">
 
-<div class="issue-backgrounder">
+<div>
+
+<div id="issue-backgrounder" class="issue-backgrounder background togglable">
 
 ### Who is responsible for transportation in Waterloo Region?
 
@@ -55,8 +57,8 @@ service levels.
 
 ### What about the other modes of transit?
 
-Bike paths, sidewalks and multi-use trails are also split between the regional 
-government and municipal governments, based on the ownership of the road. One 
+Bike paths, sidewalks and multi-use trails are also split between the regional
+government and municipal governments, based on the ownership of the road. One
 of the reasons signage, road layout and quality of other infrastructure can be
 different and sometimes confusing is this dual ownership.
 
@@ -69,6 +71,7 @@ different and sometimes confusing is this dual ownership.
 - How do you weigh road expansion against other uses of the transportation
   budget?
 
+</div>
 </div>
 
 ## Media coverage

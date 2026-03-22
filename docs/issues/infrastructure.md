@@ -18,7 +18,9 @@ layout: page
 
 <div class="main" data-issue-tag="infrastructure">
 
-<div class="issue-backgrounder">
+<div>
+
+<div id="issue-backgrounder" class="issue-backgrounder background togglable">
 
 ### What counts as "infrastructure" in municipal government?
 
@@ -37,10 +39,10 @@ green bin collection, and waste management sites. The city municipalities are re
 and stormwater collection.
 
 The region is also responsible for regional buildings for health care, police, social services
-and ambulance, garbage and green bin collection and the waste management sites. 
+and ambulance, garbage and green bin collection and the waste management sites.
 
-The cities are also responsible for parks, and city buildings such as libraries, community centres and 
-fire halls. 
+The cities are also responsible for parks, and city buildings such as libraries, community centres and
+fire halls.
 
 ### Who pays for infrastructure?
 
@@ -67,6 +69,7 @@ to prioritize in capital budgets.
 - How should the municipality prioritize competing infrastructure needs when
   there is not enough money to do everything?
 
+</div>
 </div>
 
 ## Media coverage

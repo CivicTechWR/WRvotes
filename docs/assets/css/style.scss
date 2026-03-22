@@ -118,7 +118,8 @@ button.toggle-toc {
 /* ----------- COLLAPSABLE LISTS --------- */
 
 /* Make this button look like a regular link */
-button.toggle-button {
+button.toggle-button,
+button.toggle-button-background {
   color: $blue;
   font-size: smaller;
   border-color: $blue;
@@ -504,7 +505,8 @@ p.bigtext {
             display: block;
             margin: 0;
             background-color: currentColor;
-            -webkit-mask: url("../icons/svg/votemate.svg") no-repeat center / contain;
+            -webkit-mask: url("../icons/svg/votemate.svg") no-repeat center /
+              contain;
             mask: url("../icons/svg/votemate.svg") no-repeat center / contain;
           }
         }

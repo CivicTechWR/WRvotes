@@ -18,7 +18,9 @@ layout: page
 
 <div class="main" data-issue-tag="housing">
 
-<div class="issue-backgrounder">
+<div>
+
+<div id="issue-backgrounder" class="issue-backgrounder background togglable">
 
 ### Why does housing come up so much during municipal elections?
 
@@ -65,6 +67,7 @@ City councils also set policies on things like:
   accessory dwelling units) in residential neighbourhoods?
 - How can the municipality respond to the increasing cost of housing?
 
+</div>
 </div>
 
 ## Media coverage

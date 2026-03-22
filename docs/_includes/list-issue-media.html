@@ -7,42 +7,9 @@
 {% if issue-media.size > 0 %}
 <ul>
   {% for item in issue-media %}
-  <li class="issue-news-item" data-pubdate="{{ item.PubDate }}"><a href="{{ item.URL }}">{{ item.Title }}</a>, {{ item.Publication }}, {{ item.PubDate | date: "%B %-d, %Y" }}.
+  <li class="issue-news-item" data-pubdate="{{ item.PubDate }}"><a href="{{ item.URL }}">{{ item.Title }}</a>, {{
+    item.Publication }}, {{ item.PubDate | date: "%B %-d, %Y" }}.
   </li>
   {% endfor %}
 </ul>
 {% endif %}
-
-<script>
-(function() {
-  var mainEl = document.querySelector('[data-issue-tag]');
-  if (!mainEl) return;
-
-  var tag = mainEl.getAttribute('data-issue-tag');
-  var storageKey = 'wrv-issue-visited-' + tag;
-  var lastVisit = localStorage.getItem(storageKey);
-  var today = new Date().toISOString().slice(0, 10);
-
-  document.querySelectorAll('.issue-news-item').forEach(function(li) {
-    var pubdate = li.getAttribute('data-pubdate');
-    li.classList.add(lastVisit && pubdate > lastVisit ? 'issue-news-new' : 'issue-news-old');
-  });
-
-  if (lastVisit) {
-    var backgrounder = mainEl.querySelector('.issue-backgrounder');
-    if (backgrounder) {
-      backgrounder.classList.add('collapsed');
-      var btn = document.createElement('button');
-      btn.className = 'toggle-button issue-backgrounder-btn';
-      btn.textContent = 'Show background \u25bc';
-      btn.addEventListener('click', function() {
-        var isCollapsed = backgrounder.classList.toggle('collapsed');
-        btn.textContent = isCollapsed ? 'Show background \u25bc' : 'Hide background \u25b2';
-      });
-      backgrounder.parentNode.insertBefore(btn, backgrounder);
-    }
-  }
-
-  localStorage.setItem(storageKey, today);
-}());
-</script>
