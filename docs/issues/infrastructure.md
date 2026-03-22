@@ -37,8 +37,6 @@ to deliver services. For Waterloo Region municipalities, this includes:
 For water, the regional/municipal split is subtle. The regional municipality is responsible for
 
 - water pumping and treatment
-- garbage
-- green bin collection
 - waste management sites
 
 The city municipalities are responsible for

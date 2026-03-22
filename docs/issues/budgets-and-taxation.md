@@ -59,8 +59,7 @@ parking charges).
 
 **Capital budget**: Covers large, long-lived investments — repaving roads,
 replacing water mains, building new facilities. Capital spending is often
-funded through borrowing
-government grants, or reserve funds built up over time.
+funded through borrowing, government grants, or reserve funds built up over time.
 
 ### What are reserve funds?
 

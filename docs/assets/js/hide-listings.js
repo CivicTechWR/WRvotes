@@ -67,7 +67,7 @@ $(document).ready(function () {
   ) {
     // How the buttons should be labelled, with
     // "More" or "Fewer" prepended.
-    var target_ul = "#" + $(target).attr("data-ul");
+    var target_ul = target.attr("data-ul");
 
     if ($(target).hasClass("hidden")) {
       $(target).removeClass("hidden");

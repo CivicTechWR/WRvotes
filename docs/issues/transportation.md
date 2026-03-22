@@ -48,7 +48,7 @@ and roads, such as
 - Active transportation infrastructure in capital budgets
 - Snow clearing and maintenence
 
-### Is transit in Waterloo Region funded other tiers of government?
+### Is transit in Waterloo Region funded by other tiers of government?
 
 Provincial and federal governments do contribute to major capital projects —
 the ION, for example, received significant funding from both levels. But
