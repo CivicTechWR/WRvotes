@@ -1,8 +1,10 @@
 {%- if include.num-to-elect == include.valid-nominees.size -%}
 <div>
-  <h3 class="name">{{ include.valid-nominees[0].Given_Names }}
-    {{ include.valid-nominees[0].Last_Name -}}</h3>
-  (Acclaimed)
+  {%- for candidate in include.valid-nominees -%}
+  <p>
+  <h3 class="name">{{ candidate.Given_Names }} {{ candidate.Last_Name -}}</h3> (Acclaimed)
+  </p>
+  {%- endfor -%}
 </div>
 
 {%- else -%}

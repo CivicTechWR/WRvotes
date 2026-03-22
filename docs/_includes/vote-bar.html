@@ -1,6 +1,6 @@
 {% assign vote-width = include.candidate.Votes |
 times: 100.0 |
-divided_by: include.candidate.Max_votes |
+divided_by: include.candidate.Vote_scale |
 times: 0.9 |
 round
 %}
