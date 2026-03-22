@@ -6,7 +6,7 @@ round
 %}
 <div class="vote-bar-name">
     <h3 class="name">{{ include.candidate.Given_Names }} {{ include.candidate.Last_Name -}}</h3>
-    {%- if candidate.Withdrawn == 'Y' -%}
+    {%- if includecandidate.Withdrawn == 'Y' -%}
     <strong>(Withdrawn) </strong>
     {%- endif -%}
 </div>
