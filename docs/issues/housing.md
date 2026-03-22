@@ -38,7 +38,7 @@ or more.
 
 The Region is also the upper-tier planning authority, meaning it sets rules
 about how land can be developed through the **Regional Official Plan**. This
-document guides where growth goes — whether outward into greenfield areas or
+document guides where growth goes, either outward into greenfield areas or
 inward through intensification of existing neighbourhoods.
 
 ### What do area municipalities do on housing?

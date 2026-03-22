@@ -31,12 +31,12 @@ province and is distributed to school boards.
 
 Roughly speaking:
 
-- **Regional portion**: This is the largest portion, and funds regional services
-  health, housing, ambulance, waste collection)
+- **Regional portion**: This is the largest portion, and funds regional services: police,
+  health, housing, ambulance, waste collection
 - **City municipality portion**: Depends on the municipality, but is generally half to 2/3 as much
   as the regional amount. It funds everything the municipality is responsible for.
 - **Education portion**: This is set by the province, but collected locally and
-  remitted to school boards
+  distributed to school boards
 
 ### How is the property tax rate set?
 
@@ -59,7 +59,7 @@ parking charges).
 
 **Capital budget**: Covers large, long-lived investments — repaving roads,
 replacing water mains, building new facilities. Capital spending is often
-funded through borrowing (called **debentures** in municipal finance),
+funded through borrowing
 government grants, or reserve funds built up over time.
 
 ### What are reserve funds?

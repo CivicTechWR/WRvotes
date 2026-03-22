@@ -34,15 +34,23 @@ to deliver services. For Waterloo Region municipalities, this includes:
 
 ### Who is responsible for what infrastructure in Waterloo Region?
 
-For water, the regional/municipal split is subtle. The regional municipality is responsible for water pumping and treatment, garbage and
-green bin collection, and waste management sites. The city municipalities are responsible for water retail and local delivery, wastewater
-and stormwater collection.
+For water, the regional/municipal split is subtle. The regional municipality is responsible for
+
+- water pumping and treatment
+- garbage
+- green bin collection
+- waste management sites
+
+The city municipalities are responsible for
+
+- water retail
+- local delivery
+- wastewater and stormwater collection
 
 The region is also responsible for regional buildings for health care, police, social services
 and ambulance, garbage and green bin collection and the waste management sites.
 
-The cities are also responsible for parks, and city buildings such as libraries, community centres and
-fire halls.
+The cities are also responsible for parks, and city buildings such as community centres and fire halls.
 
 ### Who pays for infrastructure?
 

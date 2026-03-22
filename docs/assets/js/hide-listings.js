@@ -35,10 +35,9 @@ $(document).ready(function () {
   function add_toggle_button() {
     var target = $(this).attr("id");
     var classes = $(this).attr("class").split(/\s+/);
+    var toggle_button_cls = "toggle-button";
     if (classes.includes("background")) {
       toggle_button_cls = "toggle-button-background";
-    } else {
-      toggle_button_cls = "toggle-button";
     }
 
     var classes_to_add = "";
@@ -125,7 +124,7 @@ $(document).ready(function () {
   }
 
   // ------------------------
-  function toggle_main_menu(target_button) {
+  function toggle_main_menu() {
     var target_ul = "#main-menu-ul";
 
     if ($(target_ul).hasClass("hidden")) {
@@ -179,7 +178,7 @@ $(document).ready(function () {
   $(".toggle-button-background").each(function () {
     toggle_listing(this, "Background", "Show", "Hide");
     $(this).on("click", () => {
-      toggle_listing(this, "Background", "Show", "Show");
+      toggle_listing(this, "Background", "Show", "Hide");
     });
   });
 

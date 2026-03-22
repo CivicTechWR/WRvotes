@@ -27,25 +27,26 @@ layout: page
 Transportation is split between the Region and the area municipalities,
 which can make it confusing. As a general rule:
 
-- **Regional roads** (major arterials and connectors) are maintained by the
-  Region of Waterloo
-- **Local roads** are maintained by the individual city or township
 - **Grand River Transit (GRT)** — including buses and the ION light rail —
   is a regional service
+- **Local roads** are maintained by the individual city or township
+- **Regional roads** (major arterials and connectors) are maintained by the
+  Region of Waterloo
 
-You can find the
+To identify which road belongs to the Region, see the
 [list of regional roads](https://www.regionofwaterloo.ca/en/living-here/resources/Roads-and-Traffic/Regional-Roads-By-Name.pdf)
 on the Region's website.
 
 ### What does transit have to do with the election?
 
 Regional Council and area councils both approve **budgets** that fund transit
-and roads. Council members vote on:
+and roads, such as
 
 - Fare levels and service changes for GRT
 - Capital spending on road construction and repair
 - Whether to approve new transit projects or expansions
 - Active transportation infrastructure in capital budgets
+- Snow clearing and maintenence
 
 ### Is transit in Waterloo Region funded other tiers of government?
 
