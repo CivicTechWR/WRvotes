@@ -29,11 +29,11 @@ province and is distributed to school boards.
 
 Roughly speaking:
 
-- **Area municipality portion**: funds local services (fire, parks,
-  recreation, local roads, libraries in cities)
-- **Regional portion**: funds regional services (transit, police, public
+- **Regional portion**: This is the largest portion, and funds regional services
   health, housing, ambulance, waste collection)
-- **Education portion**: set by the province; collected locally and
+- **City municipality portion**: Depends on the municipality, but is generally half to 2/3 as much
+  as the regional amount. It funds everything the municipality is responsible for.
+- **Education portion**: This is set by the province, but collected locally and
   remitted to school boards
 
 ### How is the property tax rate set?

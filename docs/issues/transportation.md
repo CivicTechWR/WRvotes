@@ -45,13 +45,20 @@ and roads. Council members vote on:
 - Whether to approve new transit projects or expansions
 - Active transportation infrastructure in capital budgets
 
-### Is transit in Waterloo Region funded by the province?
+### Is transit in Waterloo Region funded other tiers of government?
 
 Provincial and federal governments do contribute to major capital projects —
 the ION, for example, received significant funding from both levels. But
 **day-to-day operating costs** for transit come primarily from fares and
 municipal property taxes. This means council decisions directly affect
 service levels.
+
+### What about the other modes of transit?
+
+Bike paths, sidewalks and multi-use trails are also split between the regional 
+government and municipal governments, based on the ownership of the road. One 
+of the reasons signage, road layout and quality of other infrastructure can be
+different and sometimes confusing is this dual ownership.
 
 ### What can I ask candidates about transportation?
 

@@ -3,10 +3,10 @@ title: Infrastructure in Waterloo Region
 layout: page
 ---
 
-Infrastructure in Waterloo Region
------------------------------------
+## Infrastructure in Waterloo Region
 
 {::options parse_block_html="true" /}
+
 <div class="flex gutters">
 
 <div class="aside">
@@ -27,14 +27,20 @@ to deliver services. For Waterloo Region municipalities, this includes:
 
 - **Water and wastewater systems** (pipes, treatment plants, pumping stations)
 - **Roads, bridges, and sidewalks**
-- **Buildings** (city halls, fire stations, transit facilities, recreation
-  centres, libraries)
 - **Stormwater management** (drainage, retention ponds, flood control)
 - **Waste management** (collection vehicles, transfer stations)
 
-Keeping these systems in good working order is one of the largest ongoing
-obligations of local government.
+### Who is responsible for what infrastructure in Waterloo Region?
 
+For water, the regional/municipal split is subtle. The regional municipality is responsible for water pumping and treatment, garbage and
+green bin collection, and waste management sites. The city municipalities are responsible for water retail and local delivery, wastewater
+and stormwater collection.
+
+The region is also responsible for regional buildings for health care, police, social services
+and ambulance, garbage and green bin collection and the waste management sites. 
+
+The cities are also responsible for parks, and city buildings such as libraries, community centres and 
+fire halls. 
 
 ### Who pays for infrastructure?
 
@@ -49,7 +55,6 @@ Infrastructure is paid for in a few ways:
 
 Councils decide how much to set aside in reserves each year and which projects
 to prioritize in capital budgets.
-
 
 ### What can I ask candidates about infrastructure?
 
