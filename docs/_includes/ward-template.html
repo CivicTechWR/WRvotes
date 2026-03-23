@@ -64,23 +64,24 @@ you can vote for.
         background: var(--green);
         color: var(--white);
       }
+
+      {% assign grouping-sib = "" %}
       {% if in-group %}
-      {% comment %}
-      If this button is in a group, it should only make the tab active if its
-      grouping button is also checked.
-      {% endcomment %}
-   
-      #{{ race-id | slugify }}:checked ~ #{{ race-info.Grouping | slugify}}:checked ~ .main #{{ race-id | slugify }}-wrapper {
-        display: block;
-      }
+        {% comment %}
+        If this button is in a group, it should only make the tab active if its
+        grouping button is also checked.
+        {% endcomment %}
 
-      {% else %}
-
-      #{{ race-id | slugify }}:checked ~ .main #{{ race-id | slugify }}-wrapper {
-        display: block;
-      }
+        {% capture grouping-sib -%}
+        #{{ race-info.Grouping | slugify}}:checked ~
+        {%- endcapture %}
 
       {% endif %}
+
+      #{{ race-id | slugify }}:checked ~ {{ grouping-sib }} .main #{{ race-id | slugify }}-wrapper {
+        display: block;
+      }
+
     </style>
 
     {% assign is-checked="" %}
