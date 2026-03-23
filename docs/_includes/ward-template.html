@@ -71,7 +71,7 @@ you can vote for.
       }
     </style>
 
-    <input inert class="tab-radio" type="radio" name="{{ tabname }}" id="{{ race-id | slugify }}" {{ select-first-race }}/>
+    <input inert class="tab-radio" type="radio" name="{{ tabname }}" id="{{ race-id | slugify }}" {{ substrip-first-race }} {{ select-first-race }}/>
 
    {% if substrip-first-race.size == 0 %}
      {% assign select-first-race = "" %}
