@@ -30,6 +30,7 @@ you can vote for.
 
     {% assign tabname = "tabs" %}
     {% assign substrip-first-race = "" %}
+    {% assign in-group = false %}
 
     {% if race-info.Grouping %}
       {% assign groupings-orig = groupings %}
@@ -40,12 +41,10 @@ you can vote for.
       {% endif %}
 
       {% assign tabname = "tabs-" | append: race-info.Grouping | slugify %}
-      {% comment %}
-      This is kind of gross. It means that if a subtab element is
-      the first in the list it will have TWO checked elements, and
-      the next thing will have none. 
+      {% assign in-group = true %}
 
-      The comparison below is also group. If is is the first instance
+      {% comment %}
+      The comparison below is gross. If is is the first instance
       of this group, then splitting on race-info.Grouping will give us
       the original string, so we can make this element checked.
       {% endcomment %}
@@ -65,17 +64,35 @@ you can vote for.
         background: var(--green);
         color: var(--white);
       }
+      {% if in-group %}
+      {% comment %}
+      If this button is in a group, it should only make the tab active if its
+      grouping button is also checked.
+      {% endcomment %}
+   
+      #{{ race-id | slugify }}:checked ~ #{{ race-info.Grouping | slugify}}:checked ~ .main #{{ race-id | slugify }}-wrapper {
+        display: block;
+      }
+
+      {% else %}
 
       #{{ race-id | slugify }}:checked ~ .main #{{ race-id | slugify }}-wrapper {
         display: block;
       }
+
+      {% endif %}
     </style>
 
-    <input inert class="tab-radio" type="radio" name="{{ tabname }}" id="{{ race-id | slugify }}" {{ substrip-first-race }} {{ select-first-race }}/>
+    {% assign is-checked="" %}
+    {% if substrip-first-race.size > 0 %}
+      {% assign is-checked="checked" %}
+    {% elsif select-first-race.size > 0 %}
+      {% assign is-checked="checked" %}
+      {% assign select-first-race = "" %}
+    {% endif %}
+      
 
-   {% if substrip-first-race.size == 0 %}
-     {% assign select-first-race = "" %}
-   {% endif %}
+    <input inert class="tab-radio" type="radio" name="{{ tabname }}" value="{{ race-id | slugify }}" id="{{ race-id | slugify }}" {{ is-checked }}/>
 
   {% endfor %}
 
@@ -94,7 +111,7 @@ you can vote for.
       }
     </style>
 
-    <input inert class="tab-radio" type="radio" name="tabs" id="{{ group | slugify }}" {{ select-first-race }}/>
+    <input inert class="tab-radio" type="radio" name="tabs" value="{{ group | slugify}}" id="{{ group | slugify }}" {{ select-first-race }}/>
    {% assign select-first-race = "" %}
 
   {% endfor %}
