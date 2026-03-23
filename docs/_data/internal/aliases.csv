@@ -1,15 +1,17 @@
-Alias,Description
-Alias-Everything,"Every single position (regional, area municipal, school board)"
-Alias-SchoolBoard-Public-English,All English Public (WRDSB) school board positions
-Alias-SchoolBoard-Public-Catholic,All English Catholic (WCDSB) school board positions
-Alias-SchoolBoard-Catholic-English,All English Catholic (WCDSB) school board positions
-Alias-All-SchoolBoards,"All school boards (English/French, Public/Catholic)"
-Alias-All-AreaMunicipal,All municipal positions in all seven area muncipalities
-Alias-All-Regional,All Regional positions
-Alias-Cambridge,All municipal positions in the City of Cambridge
-Alias-Kitchener,All municipal positions in the City of Kitchener
-Alias-CityWaterloo,All municipal positions in the City of Waterloo
-Alias-Wellesley,All municipal positions in the Township of Wellesley
-Alias-Wilmot,All municipal positions in the Township of Wilmot
-Alias-Woolwich,All municipal positions in the Township of Woolwich
-Alias-NorthDumfries,All municipal positions in the Township of North Dumfries
+Alias,Description,ShortDesc
+Alias-Everything,"Every single position (regional, area municipal, school board)",All Positions
+Alias-SchoolBoard-Public-English,All English Public (WRDSB) school board positions,English Public (WRDSB)
+Alias-SchoolBoard-Public-Catholic,All English Catholic (WCDSB) school board positions,English Separate (WCDSB)
+Alias-SchoolBoard-Catholic-English,All English Catholic (WCDSB) school board positions,English Separate (WCDSB)
+Alias-All-SchoolBoards,"All school boards (English/French, Public/Catholic)",School Boards
+Alias-All-AreaMunicipal,All municipal positions in all seven area muncipalities,Municipalities
+Alias-All-Regional,All Regional positions,Region of Waterloo
+Alias-Cambridge,All municipal positions in the City of Cambridge,Cambridge
+Alias-Kitchener,All municipal positions in the City of Kitchener,Kitchener
+Alias-CityWaterloo,All municipal positions in the City of Waterloo,City of Waterloo
+Alias-Wellesley,All municipal positions in the Township of Wellesley,Wellesley
+Alias-Wilmot,All municipal positions in the Township of Wilmot,Wilmot
+Alias-Woolwich,All municipal positions in the Township of Woolwich,Woolwich
+Alias-NorthDumfries,All municipal positions in the Township of North Dumfries,North Dumfries
+Alias-SchoolBoard-English,All English-language school boards,English School Boards
+Alias-SchoolBoard-French,All French-language school boards,French School Boards
