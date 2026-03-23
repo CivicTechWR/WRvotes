@@ -64,17 +64,6 @@ Infrastructure is paid for in a few ways:
 Councils decide how much to set aside in reserves each year and which projects
 to prioritize in capital budgets.
 
-### What can I ask candidates about infrastructure?
-
-- How do you plan to address the backlog of deferred infrastructure
-  maintenance?
-- How should the municipality fund large infrastructure projects: borrowing,
-  reserves, or grants?
-- Are development charges set at the right level to cover the real cost of
-  growth?
-- How should the municipality prioritize competing infrastructure needs when
-  there is not enough money to do everything?
-
 </div>
 </div>
 

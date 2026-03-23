@@ -57,16 +57,6 @@ City councils also set policies on things like:
 - **Community improvement plans**: targeting investment and incentives in
   specific areas
 
-### What can I ask candidates about housing?
-
-- Do you support increasing the supply of social housing, and how would you
-  fund it?
-- How should the Region balance housing growth with protecting farmland and
-  green space?
-- What is your view on allowing more housing types (duplexes, triplexes,
-  accessory dwelling units) in residential neighbourhoods?
-- How can the municipality respond to the increasing cost of housing?
-
 </div>
 </div>
 

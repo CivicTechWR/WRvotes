@@ -63,15 +63,6 @@ government and municipal governments, based on the ownership of the road. One
 of the reasons signage, road layout and quality of other infrastructure can be
 different and sometimes confusing is this dual ownership.
 
-### What can I ask candidates about transportation?
-
-- Do you support expanding ION Stage 2 to Cambridge, and on what timeline?
-- How should GRT balance service to lower-density areas with the cost of
-  running those routes?
-- What is your priority for cycling and pedestrian infrastructure in this term?
-- How do you weigh road expansion against other uses of the transportation
-  budget?
-
 </div>
 </div>
 

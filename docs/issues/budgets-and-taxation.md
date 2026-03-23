@@ -74,17 +74,6 @@ Building up reserves requires setting aside money in each operating budget —
 which can feel like a tax increase without a visible immediate benefit.
 Running down reserves to keep taxes low can shift costs to future taxpayers.
 
-### What can I ask candidates about budgets and taxation?
-
-- What is your approach to setting the property tax rate — do you prioritize
-  keeping increases low, or investing in services?
-- How will you ensure that development charges reflect the real cost of
-  growth?
-- What is your view on the current level of reserve funds, and how would you
-  manage them?
-- Are there services where you would raise user fees, and are there services
-  where you think user fees are too high?
-
 </div>
 </div>
 
