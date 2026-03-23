@@ -156,7 +156,14 @@ nav#toc-tabs {
         color: inherit;
       } 
     } 
+
+    &.substrip { 
+      display: none;
+    }
+
   }
+
+  
 
   .tab-label {
     display: flex;
