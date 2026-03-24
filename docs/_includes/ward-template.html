@@ -135,8 +135,8 @@ you can vote for.
         {% assign alias-info = site.data.internal.aliases | 
           where:"Alias",group | first %}
 
-        <label class="tab-label {{ group | slugify }}" for="{{ group
-        | slugify }}">{{ alias-info.ShortDesc }}</label>
+        <a><label class="tab-label {{ group | slugify }}" for="{{ group
+        | slugify }}">{{ alias-info.ShortDesc }}</label></a>
         <br class="textonly"/>
       {% endfor %}
     </div>
