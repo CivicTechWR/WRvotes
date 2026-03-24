@@ -61,8 +61,7 @@ you can vote for.
     <style>
       #{{ race-id | slugify }}:checked ~ nav#toc-tabs label.{{ race-id | slugify }} 
       {
-        background: var(--green);
-        color: var(--white);
+        {% include tabs-css.html %}
       }
 
       {% assign grouping-sib = "" %}
@@ -103,8 +102,7 @@ you can vote for.
     <style>
       #{{ group | slugify }}:checked ~ nav#toc-tabs label.{{ group | slugify }} 
       {
-        background: var(--green);
-        color: var(--white);
+        {% include tabs-css.html %}
       }
 
       #{{ group | slugify }}:checked ~  nav#toc-tabs .substrip.{{ group | slugify }}-tabstrip {
