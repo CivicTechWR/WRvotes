@@ -67,15 +67,17 @@ $(document).ready(function () {
   ) {
     // How the buttons should be labelled, with
     // "More" or "Fewer" prepended.
-    var target_ul = target.attr("data-ul");
+    var target_ul = "#" + $(target).attr("data-ul");
 
     if ($(target).hasClass("hidden")) {
       $(target).removeClass("hidden");
+      $(target_ul).removeClass("hidden");
       $(target).text(show_fewer_text + " " + div_description + " ▲");
       // Select the ID with the given prefix
       $(target_ul).show();
     } else {
       $(target).addClass("hidden");
+      $(target_ul).addClass("hidden");
       $(target).text(show_more_text + " " + div_description + " ▼");
       $(target_ul).hide();
     }
@@ -169,6 +171,7 @@ $(document).ready(function () {
 
   $(".toggle-button").each(function () {
     var div_description = get_description(`#${this.id}`);
+    toggle_listing(this, div_description, "Show More", "Show Fewer");
     toggle_listing(this, div_description, "Show More", "Show Fewer");
     $(this).on("click", () => {
       toggle_listing(this, div_description, "Show More", "Show Fewer");
