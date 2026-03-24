@@ -7,12 +7,7 @@ This is gross but it works.
 {% assign race-info = site.data.internal.position-tags |
 where:"PositionUniqueName",race-id | first -%}
 
-  <div class="main">
-    <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
 
-        {% include list-nominees.html race-id=race-id %}
+{% include list-nominees.html race-id=race-id %}
 
-    </div>
-  </div>
-</div>
 

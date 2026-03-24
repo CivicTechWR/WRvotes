@@ -115,6 +115,93 @@ button.toggle-toc {
   }
 }
 
+/* ----------- TOC TABS ------------- */
+
+
+#toc-tabs-container { 
+  background: $white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-panel {
+  display: none;
+  padding: 10px;
+}
+
+.tab-radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.textonly { 
+  display: none;
+}
+
+nav#toc-tabs {
+   margin-top: 2.5em;
+
+  .tab-strip {
+    display: flex;
+    gap: 2px;
+
+    a { 
+
+      color: inherit;
+      text-decoration: none;
+
+      a:hover { 
+        color: inherit;
+      } 
+    } 
+
+    &.substrip { 
+      display: none;
+    }
+
+  }
+
+  .substrip .tab-label { 
+    font-size: 0.8em;
+    margin-top: 0.5em;
+  } 
+
+  .tab-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 1.5em;
+    height: auto; 
+    padding: 0 1em;
+    font-size: 0.875em;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    background: $light;
+    color: $gray;
+
+    /* 
+    border-color: $dark !important;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    */
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .tab-panels {
+    background: whitesmoke;
+    border: 2px solid var(--rule);
+    border-top: none;
+  }
+}
+
 /* ----------- COLLAPSABLE LISTS --------- */
 
 /* Make this button look like a regular link */
@@ -131,6 +218,14 @@ button.toggle-button-background {
 
   &:hover {
     color: $pink;
+  }
+}
+
+.togglable {
+  display: block;
+
+  &.hidden {
+    display: none;
   }
 }
 
@@ -157,6 +252,29 @@ div.spacer {
  */
 ul.continue {
   margin-top: -15px;
+}
+
+.media-list {
+  margin-bottom: 1em;
+}
+
+.toggletop:hover {
+  cursor: pointer;
+  border-bottom: 3px solid;
+}
+
+.toggle-content {
+  display: none;
+  max-height: 0;
+  transition: all 0.2s ease 0.15s;
+
+  &.active {
+    max-height: 100%;
+    display: block;
+
+    transition: all 0.35s ease 0.15s;
+    margin-bottom: 3em;
+  }
 }
 
 /* ------------ FOOTER STYLING ----------- */
@@ -386,6 +504,7 @@ p.bigtext {
   /* 450px */
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   grid-auto-rows: 1fr;
+  margin-bottom: 2em;
 }
 
 .jurisdiction {
@@ -516,7 +635,7 @@ p.bigtext {
 }
 
 .wrv-accordion {
-  a.toggle {
+  a.toggletop {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;

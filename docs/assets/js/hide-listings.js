@@ -84,8 +84,8 @@ $(document).ready(function () {
   /* ----- TOC TOGGLE ----- */
 
   // ------------------------
-  function add_ul_toggle_button(target, classname, title, inittext) {
-    console.log("add_ul_target_button: Target is " + target);
+  function add_ul_toggle_button (target, classname, title, inittext ) { 
+    // console.log("add_ul_target_button: Target is " + target);
 
     retval =
       '<button data-toc="' +

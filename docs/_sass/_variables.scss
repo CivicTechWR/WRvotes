@@ -1,19 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Chivo:400,700|Roboto:400,400i,700');
+@import url("https://fonts.googleapis.com/css?family=Chivo:400,700|Roboto:400,400i,700");
 
 $secondary-font: "Chivo", Georgia, serif;
 $primary-font: "Roboto", Helvetica, Arial, sans-serif;
 
 $blue: #096ab4;
-$purple: #BB6BD9;
+$purple: #bb6bd9;
 $green: #157130;
-$yellow: #EAC435;
+$yellow: #eac435;
 $deepYellow: #d4ae00;
-$pink: #E40066;
-$mint: #03CEA4;
+$pink: #e40066;
+$mint: #03cea4;
 $dark: #000;
-$light: #FEFEFE;
-$white: #FFF;
+$light: #fefefe;
+$white: #fff;
 $purple: #8a00ff;
+$gray: #555555;
 
 $sidebar-breakpoint: 1100px;
 $menu-breakpoint: 770px;
+
+:root {
+  --green: #157130;
+  --light: #fefefe;
+  --white: #fff;
+  --blue: #096ab4;
+  --black: #000;
+}

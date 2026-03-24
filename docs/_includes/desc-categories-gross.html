@@ -3,75 +3,138 @@ This is gross. You should have one entry per CategoryName in
 media-categories.csv . 
 
 Write descriptions in Markdown. 
+Don't indent too much or you will get <pre> tags.
 {% endcomment %}
 
 {% assign categories = site.data.internal.media-categories %}
 
 {% if include.category == "AllCandidates" %}
 
-All-candidates meetings are the best and quickest way to choose candidates (really!). 
-They allow you to evaluate candidates **side by side**, responding to
-the **same questions**. 
+  {% if include.length=="Head" or include.length=="Full" %}
 
-If you don't have time to watch an entire recording, watch 2-3 rounds
-of questions in the middle of the meeting. This will take 10-15
-minutes.
+  All-candidates meetings allow you to evaluate candidates **side by
+  side**, responding to the **same questions**. They are the **most
+  effective way** to quickly compare candidates.
 
-Questions to ask yourself:
-- Who attended the meeting? Who did not?
-- Which candidates answered the questions directly? Which ones avoided
-  the question(s) or pivoted to talking points?
+  {% endif %}
+  {% if include.length=="Rest" or include.length=="Full" %}
+
+  If you don't have time to watch an entire recording, watch 2-3 rounds
+  of questions in the middle of the meeting. This will take 10-15
+  minutes.
+
+  Questions to ask yourself:
+  - Who attended the meeting? Who did not?
+  - Which candidates answered the questions directly? Which ones avoided
+    the question(s) or pivoted to talking points?
+  - Which candidates demonstrated that they understand the complexities
+    of the underlying issues? Which candidates offered overly-simplistic
+    answers?
+
+  {% endif %}
 
 {% elsif include.category == "Questionnaire" %}
 
-Questionnaires allow you to compare candidate responses side by side.
-Ask yourself whether you agree with the candidate positions, and
-whether the candidates demonstrate good understanding of the
-underlying issues. 
+  {% if include.length=="Head" or include.length=="Full" %}
+
+  Questionnaires allow you to compare candidate responses side by side.
+  They are often published by advocacy groups promoting specific policy
+  positions. 
+
+  {% endif %}
+  {% if include.length=="Rest" or include.length=="Full" %}
+
+  Questions to ask yourself:
+  - Who sent the questionnaire? What were they advocating for?
+  - To what extent do you agree with the positions of the group running
+    the questionnaire?
+  - Which candidates responded to the survey?
+  - In what ways did the candidates spin their answers to try and appeal
+    to the organization asking the questions?
+  - Which candidates demonstrated a good understanding of the underlying
+    issues?
+
+  {% endif %}
 
 {% elsif include.category == "EndorsementList" %}
 
-Some advocacy groups release endorsements of particular candidates.
-Look at the advocacy group's positions and philosophies, and see
-whether they align with your own. 
+  {% if include.length=="Head" or include.length=="Full" %}
 
-Questions to ask yourself:
-- What political outcomes does this group advocate for? Do you agree
-  with their goals?
-- On what basis did this group make their endorsement? Did they gather
-  statements from the candidates? 
-- How transparent was their selection process?
+  Some advocacy groups release endorsements of particular candidates.
+  You can look at the advocacy group's positions and philosophies, and see
+  whether they align with your own. 
+
+  {% endif %}
+  {% if include.length=="Rest" or include.length=="Full" %}
+
+  Questions to ask yourself:
+  - What political outcomes does this group advocate for? Do you agree
+    with their goals?
+  - On what basis did this group make their endorsements?
+  - How did the group gather information about the candidates before
+    making their endorsements?
+  - How transparent was their selection process?
+
+  Also see the **Opinions** section for discussions and articles
+  that contain endorsements.
+
+  {% endif %}
 
 
 {% elsif include.category == "ProfileList" %}
 
-Candidate profiles allow you to read responses from different candidates side by side.
+  {% if include.length=="Head" or include.length=="Full" %}
+
+  Candidate profiles allow you to read responses from different candidates side by side.
+  They allow you to compare candidates based on their **backgrounds and
+  experiences**. Often they will not tell you how candidates would address
+  specific issues. 
+
+  {% endif %}
 
 {% elsif include.category == "Article" %}
 
-Articles can highlight issues of importance to the election and the electorate.
+  {% if include.length=="Head" or include.length=="Full" %}
+
+  Articles can highlight issues of importance to the election and the electorate.
+  These items are (mostly) published by **established news
+  organizations**.
+
+  {% endif %}
 
 {% elsif include.category == "Opinion" %}
 
-Opinions, blog posts and discussions can be biased but useful. 
-Sometimes people closely
-aligned with particular candidates write opinions without disclosing
-their relationships to the candidate.
 
-Questions to ask yourself:
+  {% if include.length=="Head" or include.length=="Full" %}
 
-- Can you identify where the writer(s) are coming from? Do you agree
-  with their positions?
-- Do the posters offer evidence for their opinions? Is that evidence
-  credible? Is it proportionate, or blown out of proportion?
+  Opinions, blog posts and discussions **can be partisan**, but
+  sometimes can be helpful in bringing attention to election issues.
+
+  Sometimes discussions on forums like Reddit can give you a **range
+  of opinions** about candidates and campaign issues.
+
+  {% endif %}
+  {% if include.length=="Rest" or include.length=="Full" %}
+
+  Questions to ask yourself:
+
+  - Can you identify where the writer(s) are coming from? Do you agree
+    with their positions?
+  - Do the posters offer evidence for their opinions? Is that evidence
+    credible? Is it proportionate, or blown out of proportion?
+
+  {% endif %}
 
 {% elsif include.category == "SingleProfile" %}
 
+  {% if include.length=="Head" or include.length=="Full" %}
 
-These posts cover specific candidates in depth. Sometimes the
-candidates are asked specific questions and sometime they are allowed
-to talk about whatever interests them. These profiles can offer more
-in-depth coverage than you might get from a candidate's website.
+  These posts cover **individual candidates in depth**. Sometimes the
+  candidates are asked specific questions and sometime they are allowed
+  to talk about whatever interests them. These profiles can offer more
+  in-depth coverage than you might get from a candidate's website.
+
+  {% endif %}
 
 {% else %}
 
