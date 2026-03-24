@@ -6,43 +6,181 @@ This is gross but it works.
 {% assign ward-id = page.url | replace: '.html', '' | split: '/' | last -%}
 {% assign ward-info = site.data.internal.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
-<h1>Who is Running? {{ ward-info.PositionDesc }}</h1>
 
+<h1>Learn About Your Candidates</h1>
+
+<p>
+If you are eligible to vote in the  
+{{ ward-info.PositionDesc }}, here are the 
+candidates running for <strong>regional</strong>,
+<strong>municipal</strong> and <strong>school board</strong> positions
+you can vote for. 
+</p>
 
 {% assign municipal-info = site.data.internal.municipality-map |
   where:"Name",ward-info.WardMunicipality | first %}
-{% assign races-split = municipal-info.Races | split: ',' %}
+{% assign races-split = municipal-info.Races | replace: "_SELF", ward-id | split: ',' %}
 
-<div class="flex gutters">
-  <div class="aside">
-    <aside class="aside-box blue" data-aos="fade-left">
+  {% assign groupings = "" %}
+  {% assign select-first-race = "checked" %}
+  {% for race-id in races-split %}
 
-        <header><h2 id="toc">On This Page</h2></header>
-        <ul id="toc-list">
-          {% for race in races-split %}
-            {% if race == "_SELF" %}
-              {% assign race-id = ward-id %}
-            {% else %}
-              {% assign race-id = race %}
-            {% endif %}
+    {% assign race-info = site.data.internal.position-tags |
+       where:"PositionUniqueName",race-id | first -%}
 
+    {% assign tabname = "tabs" %}
+    {% assign substrip-first-race = "" %}
+    {% assign in-group = false %}
+
+    {% if race-info.Grouping %}
+      {% assign groupings-orig = groupings %}
+      {% if groupings.size == 0 %}
+        {% assign groupings = race-info.Grouping %}
+      {% else %}
+        {% assign groupings = groupings | append: "," | append: race-info.Grouping %}
+      {% endif %}
+
+      {% assign tabname = "tabs-" | append: race-info.Grouping | slugify %}
+      {% assign in-group = true %}
+
+      {% comment %}
+      The comparison below is gross. If is is the first instance
+      of this group, then splitting on race-info.Grouping will give us
+      the original string, so we can make this element checked.
+      {% endcomment %}
+
+      {% assign groupings-without-race = groupings-orig | split: race-info.Grouping | first %}
+
+      {% if groupings-orig.size == 0 or groupings-without-race == groupings-orig %}
+        {% assign substrip-first-race = "checked" %}
+      {% endif %}
+
+
+    {% endif %}
+
+    <style>
+      #{{ race-id | slugify }}:checked ~ nav#toc-tabs label.{{ race-id | slugify }} 
+      {
+        {% include tabs-css.html %}
+      }
+
+      {% assign grouping-sib = "" %}
+      {% if in-group %}
+        {% comment %}
+        If this button is in a group, it should only make the tab active if its
+        grouping button is also checked.
+        {% endcomment %}
+
+        {% capture grouping-sib -%}
+        #{{ race-info.Grouping | slugify}}:checked ~
+        {%- endcapture %}
+
+      {% endif %}
+
+      #{{ race-id | slugify }}:checked ~ {{ grouping-sib }} .main #{{ race-id | slugify }}-wrapper {
+        display: block;
+      }
+
+    </style>
+
+    {% assign is-checked="" %}
+    {% if substrip-first-race.size > 0 %}
+      {% assign is-checked="checked" %}
+    {% elsif select-first-race.size > 0 %}
+      {% assign is-checked="checked" %}
+      {% assign select-first-race = "" %}
+    {% endif %}
+      
+
+    <input inert class="tab-radio" type="radio" name="{{ tabname }}" value="{{ race-id | slugify }}" id="{{ race-id | slugify }}" {{ is-checked }}/>
+
+  {% endfor %}
+
+  {% assign groupings = groupings | split: "," | uniq  %}
+
+  {% for group in groupings %}
+    <style>
+      #{{ group | slugify }}:checked ~ nav#toc-tabs label.{{ group | slugify }} 
+      {
+        {% include tabs-css.html %}
+      }
+
+      #{{ group | slugify }}:checked ~  nav#toc-tabs .substrip.{{ group | slugify }}-tabstrip {
+        display: flex;
+      }
+    </style>
+
+    <input inert class="tab-radio" type="radio" name="tabs" value="{{ group | slugify}}" id="{{ group | slugify }}" {{ select-first-race }}/>
+   {% assign select-first-race = "" %}
+
+  {% endfor %}
+
+  <nav id="toc-tabs">
+    <div class="tab-strip">
+      {% for race-id in races-split %}
+
+        {% assign race-info = site.data.internal.position-tags |
+          where:"PositionUniqueName",race-id | first -%}
+
+        {% if race-info.Grouping %}
+        {% else %}
+
+          <a href="#{{ race-id | slugify }}-wrapper" id="{{ race-id | slugify }}-href" ><label class="tab-label {{ race-id | slugify }}" for="{{ race-id | slugify  }}">{{ race-info.PositionCategory
+          }}</label></a>
+          <br class="textonly"/>
+        {% endif %}
+      {% endfor %}
+
+      {% for group in groupings %}
+        {% assign alias-info = site.data.internal.aliases | 
+          where:"Alias",group | first %}
+
+        <label class="tab-label {{ group | slugify }}" for="{{ group
+        | slugify }}">{{ alias-info.ShortDesc }}</label>
+        <br class="textonly"/>
+      {% endfor %}
+    </div>
+
+    {% for group in groupings %}
+        {% assign alias-info = site.data.internal.aliases | 
+          where:"Alias",group | first %}
+        <div class="tab-strip substrip {{ group | slugify }}-tabstrip">
+          
+          {% for race-id in races-split %}
             {% assign race-info = site.data.internal.position-tags |
               where:"PositionUniqueName",race-id | first -%}
-            <li><a href="#{{ race-id | slugify }}-wrapper">{{
-              race-info.PositionDesc }}</a></li>
+
+            {% if race-info.Grouping and race-info.Grouping == group %}
+              <a href="#{{ race-id | slugify }}-wrapper" id="{{ race-id | slugify }}-href" ><label class="tab-label {{ race-id | slugify }}" for="{{ race-id | slugify  }}">{{ race-info.PositionCategory
+              }}</label></a>
+              <br class="textonly"/>
+              
+            {% endif %}
           {% endfor %}
-        </ul>
-    </aside>
+        </div>
+    {% endfor %}
 
-    <aside class="aside-box green">
-        <p>
-        Learn about what this election is about, and
-        how to vote in it on the
-        <a target="_blank" href="/resources/voter-info">general voter
-        information</a> page.
-        </p>
 
-    </aside>
+  </nav>
+
+  <div class="main">
+    {% for race-id in races-split %}
+
+
+      {% assign race-info = site.data.internal.position-tags |
+      where:"PositionUniqueName",race-id | first -%}
+
+      <div class="race-wrapper tab-content" role="tabpanel" id="{{ race-id | slugify }}-wrapper">
+
+        {% include list-nominees.html race-id=race-id
+           show-toc-link=true hide-details=false
+           hide-position-desc=false %} 
+
+      </div>
+
+    {% endfor %}
+  </div>
+  <div class="flex gutters">
 
     <aside class="aside-box blue">
         <header><h2 id="worksheets">Worksheets</h2></header>
@@ -62,27 +200,6 @@ where:"PositionUniqueName",ward-id | first -%}
           processor or text editor)</li>
         </p>
     </aside>
-  </div>
-
-
-  <div class="main">
-
-    {% for race in races-split %}
-      {% if race == "_SELF" %}
-        {% assign race-id = ward-id %}
-      {% else %}
-        {% assign race-id = race %}
-      {% endif %}
-
-      <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
-
-        {% include list-nominees.html race-id=race-id
-           show-toc-link=true hide-details=false
-           hide-position-desc=false %} 
-
-      </div>
-
-    {% endfor %}
   </div>
 
 </div>

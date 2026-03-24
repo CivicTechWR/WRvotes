@@ -5,7 +5,7 @@ position-tags.csv
 Write descriptions in Markdown. 
 {% endcomment %}
 
-{% if include.category == "RegionalChair" %}
+{% if include.category == "Regional Chair" %}
 
 The **Regional Chair** sits on regional council. 
 
@@ -14,7 +14,7 @@ services**, and **public transit**. Read more on the [Municipal
 Government Overview](../resources/municipal-structure) page. 
 
 
-{% elsif include.category == "RegionalCouncillor" %}
+{% elsif include.category == "Regional Council" %}
 
 **Regional Councillors** sit on regional
 council to provide extra representation for the cities, in addition to
@@ -24,7 +24,7 @@ The region deals with such issues as **garbage collection**, **police
 services**, and **public transit**. Read more on the [Municipal
 Government Overview](../resources/municipal-structure) page. 
 
-{% elsif include.category == "MunicipalMayor" %}
+{% elsif include.category == "Mayor" %}
 
 The **mayor** is the head of your local municipality (city or
 township) and sits on that council. The mayor also sits on Regional
@@ -32,9 +32,9 @@ Council.
 
 Local municipalities deal with issues such as **public parks**,
 **fire departments**, and **building inspections**. Read more on the 
-[Muncipal Government Overview](../resources/municipal-structure) page.
+[Municipal Government Overview](../resources/municipal-structure) page.
 
-{% elsif include.category == "CityCouncillor" %}
+{% elsif include.category == "City Council" %}
 
 Your **ward councillor** sits on your city 
 council. 
@@ -44,7 +44,7 @@ Local municipalities deal with issues such as **public parks**,
 [Muncipal Government Overview](../resources/municipal-structure) page.
 
 
-{% elsif include.category == "TownshipCouncillor" %}
+{% elsif include.category == "Township Council" %}
 
 Your **ward councillor** sits on your township council. 
 
@@ -53,7 +53,7 @@ Local municipalities deal with issues such as **public parks**,
 [Muncipal Government Overview](../resources/municipal-structure) page.
 
 
-{% elsif include.category == "SchoolBoardTrustee" %}
+{% elsif include.category contains "School Board" %}
 
 **School Board Trustees** set policies for their school board, provide
 oversight of the board’s Director of Education, and serve as community
