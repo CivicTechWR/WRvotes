@@ -288,6 +288,13 @@ ul.continue {
   }
 }
 
+/* ------------ CANDIDATE LISTS ---------- */
+
+.readable-widths p,
+.readable-widths ul { 
+    max-width: 45em; /* about 100 chars, which seems typical */
+}
+
 /* ------------ FOOTER STYLING ----------- */
 
 div.footer {
