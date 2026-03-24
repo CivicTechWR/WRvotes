@@ -10,6 +10,8 @@
   url: /wards/
 - text: Resources
   url: /resources/
+- text: Issues
+  url: /issues/
 - text: Events
   url: /events
 - text: About Us

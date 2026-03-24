@@ -205,7 +205,8 @@ nav#toc-tabs {
 /* ----------- COLLAPSABLE LISTS --------- */
 
 /* Make this button look like a regular link */
-button.toggle-button {
+button.toggle-button,
+button.toggle-button-background {
   color: $blue;
   font-size: smaller;
   border-color: $blue;
@@ -623,7 +624,8 @@ p.bigtext {
             display: block;
             margin: 0;
             background-color: currentColor;
-            -webkit-mask: url("../icons/svg/votemate.svg") no-repeat center / contain;
+            -webkit-mask: url("../icons/svg/votemate.svg") no-repeat center /
+              contain;
             mask: url("../icons/svg/votemate.svg") no-repeat center / contain;
           }
         }
@@ -960,6 +962,35 @@ body {
     padding-left: 1em;
     border-left: 6px solid $blue;
     margin-top: 2em;
+  }
+
+  .issue-backgrounder.collapsed {
+    display: none;
+  }
+
+  .issue-backgrounder-btn {
+    margin-bottom: 1em;
+  }
+
+  li.issue-news-new {
+    border-left: 6px solid $blue;
+    background: transparentize($blue, 0.95);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    list-style: none;
+  }
+
+  li.issue-news-old {
+    border-left: 6px solid #ccc;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    list-style: none;
   }
 
   .toc-link {
