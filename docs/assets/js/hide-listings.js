@@ -12,7 +12,9 @@ $(document).ready(function () {
   function get_description(id) {
     var desc = "Results";
 
-    if ($(id).hasClass("candidate-list")) {
+    if ($(id).attr('title') !== undefined) { 
+      desc = $(id).attr('title');
+    } else if ($(id).hasClass("candidate-list")) {
       desc = "This Listing";
     } else if ($(id).hasClass("event-list")) {
       desc = "Events";
@@ -36,6 +38,14 @@ $(document).ready(function () {
     var target = $(this).attr("id");
     var classes = $(this).attr("class").split(/\s+/);
     var toggle_button_cls = "toggle-button";
+
+    var expandtext = "Show More";
+    var contracttext = "Show Fewer";
+    var desc = get_description("#" + target);
+    var inittext = expandtext;
+    var target_button_id =  target + "-btn";
+    var target_button_hash = "#" + target_button_id;
+
     if (classes.includes("background")) {
       toggle_button_cls = "toggle-button-background";
     }
@@ -51,11 +61,27 @@ $(document).ready(function () {
 
     retval =
       `<button data-ul="${target}"` +
-      ` id="${target}-btn"` +
+      ` id="${target_button_id}"` +
       ` class="${toggle_button_cls} v04 ${target} ${classes_to_add}" >` +
-      `Init ${get_description("#" + target)}` +
+      ` ${inittext} ${desc} ` + 
       "</button>";
     $(this).parent().append(retval);
+
+
+    // Initialize listener
+    $(target_button_hash).on("click", () => {
+      var param = $(target_button_hash);
+      console.log("Before call: " + JSON.stringify(param));
+      toggle_listing(param, desc, expandtext, contracttext);
+    }); 
+
+    $(".toggle-button-background").each(function () {
+      toggle_listing(this, "Background", "Show", "Hide");
+      $(this).on("click", () => {
+        toggle_listing(this, "Background", "Show", "Hide");
+      });
+    });
+    
   }
 
   // ------------------------
@@ -67,7 +93,9 @@ $(document).ready(function () {
   ) {
     // How the buttons should be labelled, with
     // "More" or "Fewer" prepended.
+    console.log("target is " + JSON.stringify(target));
     var target_ul = "#" + $(target).attr("data-ul");
+    console.log("target_ul is " + target_ul);
 
     if ($(target).hasClass("hidden")) {
       $(target).removeClass("hidden");
@@ -169,14 +197,15 @@ $(document).ready(function () {
     toggle_main_menu("#" + e.target.id);
   });
 
+/*
   $(".toggle-button").each(function () {
-    var div_description = get_description(`#${this.id}`);
     toggle_listing(this, div_description, "Show More", "Show Fewer");
     toggle_listing(this, div_description, "Show More", "Show Fewer");
     $(this).on("click", () => {
       toggle_listing(this, div_description, "Show More", "Show Fewer");
     });
   });
+*/
 
   $(".toggle-button-background").each(function () {
     toggle_listing(this, "Background", "Show", "Hide");

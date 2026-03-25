@@ -21,7 +21,12 @@
     {{ introtext | markdownify }}
 
     <!-- toggle-content -->
-    <div id="media-{{ include.race-id | slugify}}-{{ include.type | slugify }}-body" class="togglable hidden">
+    <div id="media-{{ include.race-id | slugify}}-{{ include.type |
+    slugify }}-body" 
+      title="{{ include.header | escape_once }}" 
+      class="togglable media-toggle hidden"
+      opentext="Explore"
+      closetext="Collapse">
 
         {% capture resttext %}
         {% include desc-categories-gross.html
