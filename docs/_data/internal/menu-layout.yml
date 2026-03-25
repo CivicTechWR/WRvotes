@@ -4,10 +4,8 @@
 
 - text: Home
   url: /
-- text: 2022 Winners
-  url: /winners
 - text: Find Your Candidates
-  url: /wards/
+  url: /by-ward/
 - text: Resources
   url: /resources/
 - text: Issues
