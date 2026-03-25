@@ -34,6 +34,17 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                     </div>
                     {% endif %}
                     <div class="contact">
+                        {% if include.winner["Website"] %}
+                        <div class="contact-item">
+                            <div class="contact-item-inner">
+                                <a href="{{ include.winner['Website'] }}">
+                                    <i class="fas fa-link" aria-hidden="true" title="Website"></i>
+                                    <span class="fa-sr-only">Website: {{ include.winner['Website'] }}</span>
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+
                         {% if include.winner["Email"] %}
                         <div class="contact-item">
                             <div class="contact-item-inner">
@@ -47,23 +58,23 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                         </div>
                         {% endif %}
 
-                        {% if include.winner["Website"] %}
-                        <div class="contact-item">
-                            <div class="contact-item-inner">
-                                <a href="{{ include.winner['Website'] }}">
-                                    <i class="fas fa-link" aria-hidden="true" title="Website"></i>
-                                    <span class="fa-sr-only">Website: {{ include.winner['Website'] }}</span>
-                                </a>
-                            </div>
-                        </div>
-                        {% endif %}
-
                         {% if include.winner["Phone"] %}
                         <div class="contact-item">
                             <div class="contact-item-inner">
                                 <a href="tel:{{ include.winner['Phone'] }}">
                                     <i class="fas fa-phone" aria-hidden="true" title="Phone"></i>
                                     <span class="fa-sr-only">Phone: {{ include.winner['Phone'] }}</span>
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if include.winner["VoteMate"] %}
+                        <div class="contact-item">
+                            <div class="contact-item-inner">
+                                <a href="{{ include.winner['VoteMate'] }}">
+                                    <span class="votemate-icon" aria-hidden="true" title="VoteMate"></span>
+                                    <span class="fa-sr-only">VoteMate: {{ include.winner['VoteMate'] }}</span>
                                 </a>
                             </div>
                         </div>
@@ -165,16 +176,6 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                         </div>
                         {% endif %}
 
-                        {% if include.winner["VoteMate"] %}
-                        <div class="contact-item">
-                            <div class="contact-item-inner">
-                                <a href="{{ include.winner['VoteMate'] }}">
-                                    <span class="votemate-icon" aria-hidden="true" title="VoteMate"></span>
-                                    <span class="fa-sr-only">VoteMate: {{ include.winner['VoteMate'] }}</span>
-                                </a>
-                            </div>
-                        </div>
-                        {% endif %}
                     </div>
                 </div>
             </div>
