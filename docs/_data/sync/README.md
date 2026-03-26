@@ -1,6 +1,6 @@
-Do not edit the files in this repo directly! For the 2022 municipal
-election we are editing the files on the web using NextCloud
-repositories. Contact us if you want access.
 
-If you edit and commit these files then they will be overwritten by
-the NextCloud versions.
+Be careful about editing the files in this folder directly! If this is
+for a live election then the files might be synchronized with
+NextCloud or Google Sheets. Please check with the project maintainers
+before manually submitting changes to files in this folder. 
+
