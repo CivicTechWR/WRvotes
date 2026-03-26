@@ -25,8 +25,8 @@
     slugify }}-body" 
       title="{{ include.header | escape_once }}" 
       class="togglable media-toggle hidden"
-      opentext="Explore"
-      closetext="Collapse">
+      show_more_text="Explore"
+      show_fewer_text="Collapse">
 
         {% capture resttext %}
         {% include desc-categories-gross.html
