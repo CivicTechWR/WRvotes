@@ -9,8 +9,8 @@ Your city or township is divided into **wards**. If you know your ward
 we can show you all the candidates running for **regional**, **school
 board** and **local municipality** positions where you live. 
 
-If you would prefer a more graphical approach, use the [Ward
-Map]({{site.url}}).
+If you would prefer a more graphical approach, use the
+[map]({{site.url}}) on our homepage.
 
 {% for municipality in site.data.internal.municipality-map %}
   <div class="content-box" data-aos="fade-up">

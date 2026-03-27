@@ -7,7 +7,7 @@ use-leaflet: true
 <section class="flex justify-center">
   <article class="standout-box blue large">
     <div class="big-text header" id="map-box" data-aos="fade-left">
-    Election Day <strong>was</strong> October 24, 2022.
+    Welcome to the user testing site!
     </div>
     <div data-aos="fade-left">
     {% comment %}
@@ -15,7 +15,8 @@ use-leaflet: true
     candidates asking for your vote!
     {% endcomment %}
     <p>
-    This is the <strong>development site!</strong>
+    The data on this site is from the 2022 election, but we can
+    pretend it is for the upcoming election.
     </p>
     </div>
     <div class="countdown-container" style="font-size: 1.5rem; margin-bottom: 48px;" data-aos="fade-left">
@@ -25,7 +26,12 @@ use-leaflet: true
     </div>
     <div class="content" data-aos="fade-up">
      <p>Type your address to identify your ward, or click your
-     location on the map. (Note that although the address lookup is
+     location on the map. Once you have identified your ward you will
+     be able to see the <strong>regional</strong>,
+     <strong>municipality</strong> and <strong>school board</strong>
+     candidates you can vote for.
+     </p><p>
+     (Note that although the address lookup is
      pretty good, it is not 100% accurate, especially near ward
      boundaries. If in doubt consult your <a
      href="https://wrvotes.com" target="_blank">municipality</a>.)</p>
