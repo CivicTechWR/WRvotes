@@ -2,7 +2,7 @@
   {% assign race-info = site.data.internal.position-tags |
   where:"PositionUniqueName",include.race-id | first -%}
 
-<div class="readable-widths" > <!-- was content-box -->
+<div class="readable-widths left-edge-solid" > <!-- was content-box -->
   {% unless include.hide-position-desc %}
     <h2 class="medium-text space-top">{{ race-info.PositionDesc }}</h2>
   {% endunless %}

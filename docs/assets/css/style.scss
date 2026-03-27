@@ -170,8 +170,7 @@ nav#toc-tabs {
   }
 
   .substrip { 
-    margin-bottom: 2em;
-    margin-top: 0.7em;
+    margin-top: 1em;
     height: auto;
 
     .tab-label { 
@@ -193,20 +192,10 @@ nav#toc-tabs {
     background: $light;
     color: black;
     border: 0.2em solid var(--blue);
-    border-radius: 0.7em;
+    border-top-left-radius: 0.7em;
+    border-top-right-radius: 0.7em;
     text-align: center;
 
-    /* 
-    border-color: $dark !important;
-    border-top: solid;
-    border-left: solid;
-    border-right: solid;
-    */
-    /* 
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    */
-    /* margin-bottom: 0.5em; */
   }
 
   .tab-panels {
@@ -295,11 +284,20 @@ ul.continue {
 
 .readable-widths p,
 .readable-widths ul { 
-    max-width: 45em; /* about 100 chars, which seems typical */
+  max-width: 45em; /* about 100 chars, which seems typical */
+}
+
+.line-top {
+}
+
+.left-edge-solid { 
+  border-top: 0.5em solid var(--blue);
+  border-left: 0.5em solid var(--blue);
+  padding-left: 1.5em;
 }
 
 .space-top { 
-    margin-top: 1em;
+  padding-top: 1em;
 }
 
 /* ------------ FOOTER STYLING ----------- */
