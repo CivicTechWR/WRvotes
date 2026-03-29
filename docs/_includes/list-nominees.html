@@ -44,7 +44,7 @@
     {% unless page.hide-details  %}
       {% if site.election_over %}
         {% if race-info.ShowResults == 'Y' %}
-          {% include list-results.html nominees=these-nominees 
+          {% include list-results.html 
              valid-nominees=valid-nominees
              num-to-elect=num-to-elect
              race-id=include.race-id %}
