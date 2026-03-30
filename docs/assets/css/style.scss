@@ -291,7 +291,8 @@ ul.continue {
 /* ------------ CANDIDATE LISTS ---------- */
 
 .readable-widths p,
-.readable-widths ul { 
+.readable-widths ul,
+p.readable-widths { 
     max-width: 45em; /* about 100 chars, which seems typical */
 }
 
