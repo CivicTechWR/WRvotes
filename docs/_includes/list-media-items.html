@@ -28,14 +28,6 @@
       show_more_text="Explore"
       show_fewer_text="Collapse">
 
-        {% capture resttext %}
-        {% include desc-categories-gross.html
-          category=include.type
-          length="Rest"
-        %} 
-        {% endcapture %}
-        {{ resttext | markdownify }}
-
         <div class="spacer">
 
             {% assign item-list-sorted = (include.item-list | sort: "PubDate")

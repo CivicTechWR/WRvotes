@@ -16,12 +16,13 @@ Don't indent too much or you will get <pre> tags.
   side**, responding to the **same questions**. They are the **most
   effective way** to quickly compare candidates.
 
-  {% endif %}
-  {% if include.length=="Rest" or include.length=="Full" %}
-
   If you don't have time to watch an entire recording, watch 2-3 rounds
   of questions in the middle of the meeting. This will take 10-15
   minutes.
+
+  {% endif %}
+  {% if include.length=="Rest" or include.length=="Full" %}
+
 
   Questions to ask yourself:
   - Who attended the meeting? Who did not?
@@ -33,13 +34,15 @@ Don't indent too much or you will get <pre> tags.
 
   {% endif %}
 
-{% elsif include.category == "Questionnaire" %}
+{% elsif include.category == "QuestionnairesEndorsements" %}
 
   {% if include.length=="Head" or include.length=="Full" %}
 
-  Questionnaires allow you to compare candidate responses **side by
-  side**.
-  They are often **published by advocacy groups**.
+  Advocacy groups often publish questionnaires that allow you to
+  compare candidates **side by side**. In addition some groups make
+  explicit endorsements.  Pay **careful attention** to how
+  questions are framed, and how this reflects the **positions and
+  philosophies** of the advocacy groups. 
 
   {% endif %}
   {% if include.length=="Rest" or include.length=="Full" %}
@@ -81,7 +84,7 @@ Don't indent too much or you will get <pre> tags.
   {% endif %}
 
 
-{% elsif include.category == "ProfileList" %}
+{% elsif include.category == "CandidateProfiles" %}
 
   {% if include.length=="Head" or include.length=="Full" %}
 
@@ -126,14 +129,11 @@ Don't indent too much or you will get <pre> tags.
 
   {% endif %}
 
-{% elsif include.category == "SingleProfile" %}
+{% elsif include.category == "ElectionResults" %}
 
   {% if include.length=="Head" or include.length=="Full" %}
 
-  These posts cover **individual candidates in depth**. Sometimes the
-  candidates are asked specific questions and sometime they are allowed
-  to talk about whatever interests them. These profiles can offer more
-  in-depth coverage than you might get from a candidate's website.
+  These are news items about how the election turned out.
 
   {% endif %}
 
