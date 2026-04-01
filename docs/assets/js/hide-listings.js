@@ -215,6 +215,36 @@ $(document).ready(function () {
     });
   });
 
+  /* ----- WORKSHEETS PANEL ----- */
+
+  (function() {
+    var btn = document.getElementById('worksheets-btn');
+    var panel = document.getElementById('worksheets-panel');
+    if (!btn || !panel) return;
+
+
+    function openPanel() {
+      var rect = btn.getBoundingClientRect();
+      panel.style.top = rect.top + 'px';
+      panel.style.right = (window.innerWidth - rect.right) + 'px';
+      panel.hidden = false;
+      btn.setAttribute('aria-expanded', 'true');
+    }
+
+    function closePanel() {
+      panel.hidden = true;
+      btn.setAttribute('aria-expanded', 'false');
+    }
+
+    btn.addEventListener('click', function() {
+      if (panel.hidden) { openPanel(); } else { closePanel(); }
+    });
+
+    panel.querySelectorAll('.worksheets-close').forEach(function(el) {
+      el.addEventListener('click', closePanel);
+    });
+  }());
+
   // The togglable init collapses everything by default.
   // On issue pages: re-show the backgrounder on first visit; leave collapsed on return visits.
   var issueMain = document.querySelector("[data-issue-tag]");
