@@ -1,6 +1,4 @@
-{% assign full_name = include.winner["Given_Names"] | append:" " | append:include.winner["Last_Name"] %}
-{% assign name_id = full_name | slugify %}
-
+{% assign full_name = include.winner["Given_Names"] | append:" " | append:include.winner["Last_Name"] %} {% assign name_id = full_name | slugify %}
 {% assign race-info = site.data.internal.position-tags |
 where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
 
@@ -30,8 +28,7 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                         <h3><a href="{{ include.winner['Website'] }}">{{ full_name }}</a></h3>
                         {% else %}
                         <h3 class="no-website" aria-describedby='{{ name_id }}-tooltip'>{{ full_name }}</h3>
-                        <div class="tooltip hidden" role="tooltip" id="{{ name_id }}-tooltip">This candidate does not have a listed website.
-                        </div>
+                        <div class="tooltip hidden" role="tooltip" id="{{ name_id }}-tooltip">{{ full_name }} does not have a listed website yet.</div>
                         {% endif %}
                     </div>
                     {% if include.winner["Votes"] and include.winner["Percentage"] %}
