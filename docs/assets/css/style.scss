@@ -611,6 +611,7 @@ p.bigtext {
 
       .name h3 a:hover {
         text-decoration: underline;
+        text-decoration-thickness: 0.25em;
       }
 
       .name h3 .no-website {
@@ -631,6 +632,7 @@ p.bigtext {
         visibility: visible;
         transition: opacity 0.6s ease;
         height: auto;
+        font-size: 0.75em;
       }
 
       .name .tooltip {
