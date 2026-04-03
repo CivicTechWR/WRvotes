@@ -617,7 +617,7 @@ p.bigtext {
         color: inherit;
       }
 
-      .name .tooltip {
+      h3.no-website:hover + .tooltip {
         position: absolute;
         top: 2rem;
         left: 2rem;
@@ -628,12 +628,15 @@ p.bigtext {
         border: 1px solid black;
         border-radius: 10px;
         opacity: 1;
-        transition: opacity 0.6s ease, visibility 0.6s ease;
+        visibility: visible;
+        transition: opacity 0.6s ease;
+        height: auto;
       }
 
-      .name .hidden {
+      .name .tooltip {
         opacity: 0;
         visibility: hidden;
+        height: 0;
       }
 
       .voting-result p {
