@@ -26,7 +26,25 @@ Depending on which school board you are registered for, you might
 elect anywhere from one to four representatives for your school board.
 
 
-### What are school board trustees? What do they do?
+### There are so many school board positions listed! What do I vote for?
+
+There are four school boards in Waterloo Region:
+
+- English Public (the Waterloo Region District School Board)
+- English Catholic (the Waterloo Catholic District School Board)
+- French Public (Conseil scolaire Viamonde)
+- French Catholic (Conseil scolaire catholique MonAvenir)
+
+When you register to vote you are associated with a school board. By
+default you are registered to vote in the English Public system.
+However, if you qualify then you may choose to register with one of
+the other three systems. You may only vote for the school board
+nominees in your school board.
+
+In our candidate listings we list nominees for all four school boards.
+Pay attention only to the school board that applies to you.
+
+### What do school board trustees do?
 
 School board trustees are elected representatives from the community.
 They set
@@ -47,25 +65,6 @@ trustees](https://www.kitchenertoday.com/kitchenervotes/get-to-know-the-responsi
 managing the budget and facilitating communication between parents
 and school staff. (Note that this article is from 2018, and so lists
 all-candidates meetings for that election, not this one.)
-
-### There are so many school board positions listed! What do I vote for?
-
-There are four school boards in Waterloo Region:
-
-- English Public (the Waterloo Region District School Board)
-- English Catholic (the Waterloo Catholic District School Board)
-- French Public (Conseil scolaire Viamonde)
-- French Catholic (Conseil scolaire catholique MonAvenir)
-
-When you register to vote you are associated with a school board. By
-default you are registered to vote in the English Public system.
-However, if you qualify then you may choose to register with one of
-the other three systems. You may only vote for the school board
-nominees in your school board.
-
-In our candidate listings we list nominees for all four school boards.
-Pay attention only to the school board that applies to you.
-
 
 ### I don't have kids in school. May I still vote for school trustees?
 
