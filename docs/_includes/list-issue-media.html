@@ -7,7 +7,7 @@
 {% if issue-media.size > 0 %}
 <ul>
   {% for item in issue-media %}
-  <li class="issue-news-item" data-pubdate="{{ item.PubDate }}"><a href="{{ item.URL }}">{{ item.Title }}</a>, {{
+  <li class="issue-news-item" data-pubdate="{{ item.PubDate }}"><a href="{{ item.URL }}" target="_blank">{{ item.Title }}</a>, {{
     item.Publication }}, {{ item.PubDate | date: "%B %-d, %Y" }}.
   </li>
   {% endfor %}

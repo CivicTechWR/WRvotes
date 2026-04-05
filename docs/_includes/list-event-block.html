@@ -28,7 +28,7 @@
         {% endif %}
         {{ event.DateTimeStart | date: "%a, %b %-d, %l:%M%P" }}:
         {% if event.URL -%}
-          <a href="{{ event.URL }}">{{ event.Title }}</a>
+          <a href="{{ event.URL }}" target="_blank">{{ event.Title }}</a>
         {%- else -%}
           <strong>{{ event.Title }}</strong>
         {%- endif -%}
