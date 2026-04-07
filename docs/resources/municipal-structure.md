@@ -74,6 +74,8 @@ Also on the Region of Waterloo website you can find a more detailed list of
 [who does
 what](https://www.regionofwaterloo.ca/en/regional-government/regional-responsibilities---who-does-what-in-government.aspx).
 
+#### Regional Responsibilities
+
 Some of the more prominent roles the Region is responsible for
 include:
 
@@ -90,6 +92,8 @@ include:
 - Wastewater Treatment
 - Water Disribution
 - The Waterloo Region Airport
+
+#### City/Township Responsibilities
 
 Some of the prominent roles played by the cities and townships include:
 
@@ -108,6 +112,8 @@ Some of the prominent roles played by the cities and townships include:
   Act](https://www.ola.org/en/legislative-business/bills/parliament-43/session-1/bill-185)
   )
 
+#### Shared responsibilities
+
 Several responsibilities are shared across the two levels of
 government. Some of these include: 
 
@@ -116,8 +122,6 @@ government. Some of these include:
   townships).
 - Ambulance services
 
-
-That's a long list of things that have a direct impact on your daily life.
 
 ### Is the Regional Chair like the Premier or the Prime Minister of Waterloo Region?
 
@@ -130,6 +134,26 @@ majority votes by Regional Council in some circumstances. For more
 information, see the following article: [Ontario announces plan to
 slash Niagara Region, Simcoe County councils and add 'strong chair'
 powers](https://www.cbc.ca/news/canada/hamilton/ontario-governance-structure-announcement-9.7151746)
+
+
+### What about health care? Immigration?
+
+In addition to municipal governments there is also a provincial
+(Ontario) government and a federal (Canadian) government. They have
+different responsibilities. 
+
+Here are some websites that break down the responsibilities across
+levels of government: 
+
+- [Which government is responsible: municipal, provincial or
+  federal?](https://opencouncil.ca/level-of-government-responsibilities/)
+  published by the Open Council website.
+- [The constitutional distribution of legislative
+  powers](https://www.canada.ca/en/intergovernmental-affairs/services/federation/distribution-legislative-powers.html)
+  published by the Government of Canada?
+
+You will not be voting for provincial or federal representatives in
+this election. 
 
 </div></div>
 
