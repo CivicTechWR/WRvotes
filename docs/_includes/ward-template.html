@@ -121,7 +121,7 @@ you can vote for.
     {% endif %}
       
 
-    <input inert class="tab-radio" type="radio" name="{{ tabname }}" value="{{ race-id | slugify }}" id="{{ race-id | slugify }}" {{ is-checked }}/>
+    <input class="tab-radio" type="radio" name="{{ tabname }}" value="{{ race-id | slugify }}" id="{{ race-id | slugify }}" {{ is-checked }}/>
 
   {% endfor %}
 
@@ -139,7 +139,7 @@ you can vote for.
       }
     </style>
 
-    <input inert class="tab-radio" type="radio" name="tabs" value="{{ group | slugify}}" id="{{ group | slugify }}" {{ select-first-race }}/>
+    <input class="tab-radio" type="radio" name="tabs" value="{{ group | slugify}}" id="{{ group | slugify }}" {{ select-first-race }}/>
    {% assign select-first-race = "" %}
 
   {% endfor %}
