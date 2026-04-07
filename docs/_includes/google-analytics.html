@@ -2,7 +2,7 @@
 
 
   <script>
-    if (!navigator.doNotTrack) {
+    if ((!navigator.doNotTrack) && (!navigator.globalPrivacyControl)) {
       // https://stackoverflow.com/questions/3973441/conditionally-load-javascript-external-and-internal-and-keep-execution-order
       script = document.createElement('script');
       script.type = "text/javascript";
@@ -15,7 +15,7 @@
   <script>
     // Respect DNT
     // This should work even if navigator.doNotTrack is not defined?
-    if (!navigator.doNotTrack) { 
+    if ((!navigator.doNotTrack) && (!navigator.globalPrivacyControl)) { 
 
       // 
       // https://medium.com/swlh/how-to-use-google-tag-manager-and-google-analytics-without-cookies-7d041c73cc76
