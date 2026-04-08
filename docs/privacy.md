@@ -31,14 +31,18 @@ Somewhat reluctantly, we use Google Analytics 4 to track website
 usage. You can read its [privacy policy
 here](https://support.google.com/tagmanager/answer/9323295?hl=en). To enhance privacy, we have taken the following steps:
 
+- We respect the [Global Privacy
+  Control](https://globalprivacycontrol.org/) standard. Many browsers
+  have support for this standard built-in, except for Google Chrome.
+  On that browser, there are some extensions such as [Privacy
+  Badger](https://privacybadger.org/) which provide Global Privacy
+  Control functionality.
+
 - We respect the [Do Not
   Track](https://en.wikipedia.org/wiki/Do_Not_Track) header. This is
   considered deprecated but 
   still supported in [many web
   browsers](https://developer.mozilla.org/en-US/docs/Web/API/navigator/doNotTrack).
-  It appears that there is a replacement standard called [Global
-  Privacy Control](https://globalprivacycontrol.org/) that is in
-  development, but as of October 2022 nobody supports it yet. 
 
 - We have disabled local cookie storage for Google Tag Manager.
   This means we can [no longer track unique
@@ -55,9 +59,24 @@ Many ad blocking plugins (such as [UBlock
 Origin](https://ublockorigin.com/)) will block Google Analytics and
 Google Tag Manager automatically. 
 
-A more extreme solution is to
-disable JavaScript, which will break the front-page map but not affect
-the rest of the website dramatically.
+A more extreme solution is to disable JavaScript. This will break the
+following: 
+
+- The front-page map will not work.
+- Some JavaScript is used to hide and expand content. This content
+  will be expanded without JavaScript.
+- Favouriting candidates will not work. 
+
+However, all of the site content should remain accessible.
+
+
+Local Storage and Cookies
+-------------------------
+
+Some functionality (such as favouriting candidates) uses JavaScript
+[Local Storage](https://en.wikipedia.org/wiki/Web_storage) to remember
+your selections when you close your browser. This information is never
+transmitted to us. 
 
 
 Third-Party Services
