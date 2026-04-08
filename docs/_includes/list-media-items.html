@@ -44,6 +44,9 @@
 
               <li>
               <a href="{{ item.URL }}" target="_blank">{{ item.Title }}</a>,
+              {%- if item.Paywalled and item.Paywalled == "Y" -%}
+                  &nbsp; <i class="fa-solid fa-lock" title="May Require Subscription"></i>
+              {%- endif %}
               {{ item.Publication }},
               {{ item.PubDate | date: "%B %-d, %Y" }}. 
               {% include embed-media.html 
