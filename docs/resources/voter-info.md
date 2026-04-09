@@ -21,17 +21,17 @@ layout: page
 
 #### What is this all about?
 
-On October 24nd, 2022, are the Ontario municipal elections, including here in Waterloo
+On October 26nd, 2026, are the Ontario municipal elections, including here in Waterloo
 Region. Representatives for three areas of government will be elected:
 
-- Regional government (Regional Chair and Councillors)
+- Regional government (Regional Councillors)
 - Municipal governments (Mayors and Ward Councillors)
 - School boards (Trustees)
 
 There is an easy to understand voter's guide for the Ontario municipal election 
 published by the province:
-[2022 Voters'
-Guide](https://www.ontario.ca/document/2022-voters-guide-ontario-municipal-council-and-school-board-elections).
+[2026 Voters'
+Guide](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-council-and-school-board-elections).
 
 There is an easier to understand summary [published by
 settlement.org](https://settlement.org/ontario/immigration-citizenship/canadian-government/voting/a-guide-to-voting-in-your-municipal-election/).
@@ -50,12 +50,6 @@ The Region of Waterloo has also created [a series of
 videos](https://www.youtube.com/playlist?list=PLRVDwi_WScLn5k-iSrXjSRAM14iA5Ltgc)
 in which local voters explain their reasons to vote.
 
-#### I thought we just had an election?
-
-On June 2 2022 Ontario had a provincial election. This is a municipal
-election. Both sets of elections are currently held every four years.
-
-
 ## Voter Eligibility
 
 #### Am I permitted to vote?
@@ -68,36 +62,25 @@ There are some exceptions to these guidelines that may prohibit you
 from voting. There are also situations where you may vote in more than
 one municipal election.
 
-For more details, see the [Voter
-Eligibility](https://www.ontario.ca/document/2022-voters-guide-ontario-municipal-council-and-school-board-elections/eligibility-vote)
-section of the provincial voter guide.
-
-
 #### How do I register to vote?
 
-MPAC (the Municipal Property Assessment Association) maintains an
+Elections Ontario maintains an
 online tool for checking your voter registration at
-<https://www.voterlookup.ca> . This is the place to start.
+<https://vreg.registertovoteon.ca/en/home>. This is the place to start.
 If your information is correct you will probably receive a voter card
 in the mail.
 
 If your information is not correct or you are not present on the site
 then life gets complicated. Different municipalities have different
-procedures for amending your information on the Voters' List. See the
-[Registering on the Voters' List](/resources/amend-voters-list) page
-for information specific to your municipality.
+procedures for amending your information on the Voters' List. Update
+your information at <https://vreg.registertovoteon.ca/en/home>, or see 
+our [Registering on the Voters' List](./amend-voters-list) page.
 
 
 #### I voted provincially. Am I registered to vote?
 
-Not necessarily. The provincial register of electors is distinct from
-the municipal one. The municipal List of Electors is managed by MPAC,
-the Municipal Property Assessment Corporation (MPAC).
-
-This will change in 2024. At that time [Elections Ontario will maintain the voter list](https://www.ontario.ca/document/2022-voters-guide-ontario-municipal-council-and-school-board-elections/voters-list-and#section-0)
-both municipally and provincially.
-
-
+Elections Ontario maintains the voter list for both the Provincial and Municipal elections, 
+so it is possible you are already registered to vote based on your registration for the Provincial election. You can check on the voter registration website <https://vreg.registertovoteon.ca/en/home> to see what municipality you may be registered to vote in already.
 
 #### I am a student. Do I get to vote?
 
@@ -123,28 +106,26 @@ Kitchener-Waterloo has [published a comprehensive
 guide](https://www.cbc.ca/news/canada/kitchener-waterloo/waterloo-region-fall-municipal-election-need-to-know-vote-1.6589958).
 Below is a summary and links to official municipality information:
 
-
-- [Cambridge](https://www.cambridge.ca/en/learn-about/Elections.aspx):
-  In-person voting Oct 6, 7, 11, 12, 15 and 24.
-  Internet voting between Oct 7 to Oct 24.
-- [Kitchener](https://www.kitchener.ca/en/council-and-city-administration/voting-in-kitchener.aspx):
-  In-person voting Oct 12-15 and 24. 
-- [North
-  Dumfries](https://www.northdumfries.ca/en/township-services/information-for-voters-.aspx):
-  In-person voting Oct 19, 22, 24.
-  Internet voting from Oct 11 to Oct 24.
-- [Waterloo](https://www.waterloo.ca/en/government/when-and-where-to-vote.aspx):
-  In-person voting Oct 8, 11-16, and 24. You can vote
+- [Cambridge](https://www.cambridge.ca/mayor-city-council-government/elections/voting-in-the-municipal-election/)
+  In-person voting **TBD**.
+  Internet voting **TBD**.
+- [Kitchener](https://www.kitchener.ca/council-and-city-administration/election/voter-information/)
+  In-person voting **TBD**.
+- [North Dumfries](https://www.northdumfries.ca/township-services/municipal-elections/information-for-voters/)
+  In-person voting **TBD**.
+  Internet voting **TBD**.
+- [Waterloo](https://www.waterloo.ca/council-and-committees/municipal-elections/vote-in-the-municipal-election)
+  In-person voting **TBD**. You can vote
   by mail, but must pre-register to do so.
-- [Wellesley](https://www.wellesley.ca/en/township-services/elections.aspx):
-  Internet and phone voting only from Oct 14 to Oct 24. **There is no in-person
-  voting.**
-- [Wilmot](https://www.wilmot.ca/en/township-office/whats-new-for-2022.aspx):
-  In-person voting Oct 15, 16, 22, 23. **There is no in-person voting Oct 24.**
-  Internet and phone voting from Oct 14 to Oct 24.
-- [Woolwich](https://www.woolwich.ca/en/township-services/information-for-voters.aspx):
-  Internet, telephone, in-person voting. In-person on Oct 24 only.
-  Internet and phone voting from Oct 14 to Oct 24.
+- [Wellesley](https://www.wellesley.ca/council-and-administration/election/)
+  Internet and phone voting **TBD**. **There was no in-person
+  voting in the previous election.**
+- [Wilmot](https://www.wilmot.ca/township-office/elections/)
+  In-person voting **TBD**
+  Internet and phone voting **TBD**
+- [Woolwich](https://www.woolwich.ca/learn-about/election/)
+  In-person voting **TBD**
+  Internet and phone voting from **TBD**
 
 
 #### Do I need a voter card to vote? Do I need identification?
@@ -157,13 +138,13 @@ to you.
 In general you need to bring identification with you in order to
 vote. The Ministry of Municipal Affairs and Housing publishes a list
 of [acceptable documents for voter
-identification](https://www.ontario.ca/document/2022-voters-guide-ontario-municipal-council-and-school-board-elections/acceptable).
+identification](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-council-and-school-board-elections/acceptable).
 
 If you do not have identification you may still vote, but you must be
 registered on the voter's list and you must sign a declaration of your
 identity. See the [voters' and
-identification](https://www.ontario.ca/document/2022-voters-guide-ontario-municipal-council-and-school-board-elections/voters-list-and)
-section of the 2022 Voters' Guide for more information.
+identification](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-council-and-school-board-elections/voters-list-and)
+section of the 2026 Voters' Guide for more information.
 
 #### There are a lot of positions to vote for! Do I have to vote for all of them?
 
@@ -188,16 +169,6 @@ default this is the English public school board (WRDSB).
 For more information, see our page containing [information about
 school board elections](/resources/school-boards-info).
 
-
-#### I thought Cambridge had a referendum on ranked ballots. What happened with that?
-
-There was a minimum of 50% turnout in the election for the referendum
-to be binding, and only 27% of eligible Cambridge electors voted on
-the question. More people voted in favour than against, but it did not
-matter, because the provincial government banned ranked ballots with
-Bill 218 in 2020. See the [Update on Ranked
-Ballot](https://www.cambridge.ca/en/learn-about/update-on-ranked-ballot.aspx)
-page on the Cambridge website for more details.
 
 ## Getting Informed
 
@@ -247,7 +218,7 @@ If you are stretched for time, you can follow one or two races and
 cast informed votes for those. The regional level of government is
 important, and many people do not pay sufficient attention to regional
 council candidates. Other influential positions are mayors and
-regional chair.
+regional chair, though this year the regional chair will be appointed.
 
 Spending an hour watching or listening to one all-candidates meeting
 can help you select the best candidates quickly. Skip the
