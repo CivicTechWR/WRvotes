@@ -64,23 +64,32 @@ If you have printed this page, check that candidates have not been added or with
                 <table class="candidate-worksheet">
                   <tr>
                     <th class="cell"><i class="fa-solid fa-heart" aria-label="Is
-                    candidate favourited?"></th>
+                    candidate favourited?">?</th>
                     <th class="cell">Candidate Name</th>
                     <th class="cell">My Notes</th>
                   </tr>
                     {% for n in sorted-nominees %}
                       <tr>
                         <td class="cell">
-                        <i class="fa-regular fa-heart" aria-label="Not favourited"></i>
+                        <i class="fa-regular fa-heart unselected" aria-label="Not favourited"></i>
                         </td>
-                        <td class="cell">{{ n["Given_Names"] }} {{ n["Last_Name"]
-                        }}</td>
+                        <td class="cell">
+                          {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
+                            <s>
+                          {%- endif -%}
+                          {{ n["Given_Names"] }} {{ n["Last_Name"] }}</td>
+                          {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
+                            </s>
+                          {%- endif -%}
                         <td class="cell">
                           <div class="auto-resize-textarea"
                             contenteditable="true"
                             role="textbox"
                             aria-multiline="true"
                           >
+                            {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
+                              Candidate withdrawn.
+                            {%- endif -%}
                           </div>
                         </td>
                       </tr>

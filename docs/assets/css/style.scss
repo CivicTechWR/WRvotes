@@ -309,6 +309,10 @@ table.candidate-worksheet {
   table-layout: fixed;
   width: 90%;
 
+  s { 
+    text-decoration-thickness: 0.15em;
+  } 
+
 
   /* The "of .cell" is so that these rules do not apply 
      to the lower divs
@@ -316,7 +320,7 @@ table.candidate-worksheet {
 
   /* heart */
   tr :nth-child(1 of .cell) { 
-    width: 1em;
+    width: 1.5em;
   } 
 
   /* candidate name */
@@ -324,7 +328,9 @@ table.candidate-worksheet {
     width: 25%;
     
     td { 
+      /* Ensure there is enough space for the name.*/
       white-space: nowrap;
+
     }
   } 
 
@@ -1438,6 +1444,8 @@ body {
       padding-bottom: 0;
     }
 
+    font-size: 0.7em;
+
   }
 
 
@@ -1447,7 +1455,12 @@ body {
     border-collapse: collapse;
     border: 0.25em solid black;
 
-    font-size: 0.8em;
+    font-size: 1em;
+
+    .fa-heart.unselected { 
+      display: none;
+    } 
+
     
     /* my notes */
     tr :nth-child(3) {
