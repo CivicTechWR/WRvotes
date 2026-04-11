@@ -8,5 +8,5 @@ docs/worksheets/text/*.txt
 docs/Gemfile
 docs/Gemfile.lock
 *.~lock.*
-+.jekyll-metadata
+.jekyll-metadata
 venv
