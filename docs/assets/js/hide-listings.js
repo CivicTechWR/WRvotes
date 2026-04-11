@@ -229,6 +229,9 @@ $(document).ready(function () {
       panel.style.right = (window.innerWidth - rect.right) + 'px';
       panel.hidden = false;
       btn.setAttribute('aria-expanded', 'true');
+      window.addEventListener("scroll", function () {
+        closePanel();
+      });
     }
 
     function closePanel() {
