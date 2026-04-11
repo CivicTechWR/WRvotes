@@ -62,20 +62,17 @@ There are some exceptions to these guidelines that may prohibit you
 from voting. There are also situations where you may vote in more than
 one municipal election.
 
+[NEED LINK TO THE EXCEPTIONS]
+
 #### How do I register to vote?
 
 Elections Ontario maintains an
 online tool for checking your voter registration at
 <https://vreg.registertovoteon.ca/en/home>. This is the place to start.
-If your information is correct you will probably receive a voter card
-in the mail.
+You can also update your voter information at that site. 
 
-If your information is not correct or you are not present on the site
-then life gets complicated. Different municipalities have different
-procedures for amending your information on the Voters' List. Update
-your information at <https://vreg.registertovoteon.ca/en/home>, or see 
-our [Registering on the Voters' List](./amend-voters-list) page.
-
+For more information about how to vote, see the [Registering on the
+Voters' List](amend-voters-list) page.
 
 #### I voted provincially. Am I registered to vote?
 
