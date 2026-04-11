@@ -603,10 +603,50 @@ p.bigtext {
         }
       }
 
+      .name {
+        position: relative;
+      }
+
       .name h3 {
         margin: 0 0 0.2em;
         font-size: 1.15em;
         line-height: 1.25;
+      }
+
+      .name h3 a {
+        color: inherit;
+      }
+
+      .name h3 a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 0.25em;
+      }
+
+      .name h3 .no-website {
+        color: inherit;
+      }
+
+      h3.no-website:hover + .tooltip {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        background: $blue;
+        color: white;
+        width: 100%;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.6s ease;
+        height: auto;
+        font-size: 0.75em;
+      }
+
+      .name .tooltip {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
       }
 
       .voting-result p {
