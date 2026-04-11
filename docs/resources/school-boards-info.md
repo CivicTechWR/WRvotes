@@ -75,7 +75,8 @@ school board.
 ### May I change what school board I vote for?
 
 If you are eligible to support a different school board, you may do so
-by changing your information on the voters' list.
+by changing your information with the Muncipal Property Assesment Corporation (MPAC).
+Update your school support designation by June 1, 2026, on MPAC's website <https://www.mpac.ca/en/MakingChangesUpdates/SchoolSupportDesignation> for the October 2026 municipal and school board elections.
 
 </div>
 </div>
