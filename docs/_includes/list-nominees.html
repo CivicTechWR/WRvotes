@@ -15,16 +15,11 @@
     | where_exp:"nom", "nom.Withdrawn != 'Y'" %}
   {% assign num-to-elect = race-info.NumberToElect | plus: 0 %}
 
-  {%- if num-to-elect == 1 and valid-nominees.size == 1 -%}
-    <p><strong>(This position is acclaimed.)</strong></p>
-  {% elsif num-to-elect == 0 %}
-  {% elsif num-to-elect == valid-nominees.size %}
-    <p><strong>(These {{ num-to-elect }} positions are
-    acclaimed.)</strong></p>
-  {%- elsif num-to-elect > 1 %}
-    <p><strong>(Elect {{ num-to-elect }}; vote for
-    up to {{ num-to-elect }})</strong></p>
-  {%- endif -%}
+
+  {% include num-to-elect.html
+     valid-nominees=valid-nominees
+     num-to-elect=num-to-elect
+  %}
 
   {% capture introtext %}
   {% include desc-positions-gross.html

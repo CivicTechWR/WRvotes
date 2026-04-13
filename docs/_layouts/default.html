@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" media="print" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fa-all.min.css">
@@ -21,7 +22,7 @@
         href="{{ site.baseurl }}/assets/css/leaflet-search.mobile.min.css">
     {% endif %}
 
-{% seo title=false %}
+  {% seo title=false %}
   {% if page.title -%}
     <title>{{ page.title }} | {{ site.title }}</title>
   {%- else -%}

@@ -303,6 +303,58 @@ p.readable-widths {
     margin-top: 1em;
 }
 
+/* ------------ CANDIDATE WORKSHEETS ------- */
+
+table.candidate-worksheet { 
+  table-layout: fixed;
+  width: 90%;
+
+  s { 
+    text-decoration-thickness: 0.15em;
+  } 
+
+
+  /* The "of .cell" is so that these rules do not apply 
+     to the lower divs
+   */
+
+  /* heart */
+  tr :nth-child(1 of .cell) { 
+    width: 1.5em;
+  } 
+
+  /* candidate name */
+  tr :nth-child(2 of .cell) { 
+    width: 25%;
+    
+    td { 
+      /* Ensure there is enough space for the name.*/
+      white-space: nowrap;
+
+    }
+  } 
+
+  /* my notes */
+  tr :nth-child(3 of .cell) { 
+    .auto-resize-textarea { 
+      width: 100%;
+      font-size: inherit;
+      font: inherit;
+    }
+
+    td { 
+      padding: 0;
+    }
+  } 
+
+  th,td { 
+    vertical-align: middle;
+  }
+
+} 
+
+
+
 /* ------------ FOOTER STYLING ----------- */
 
 div.footer {
@@ -1343,6 +1395,8 @@ body {
 
 }
 
+/* ---- Responsive Design ---- */
+
 @media screen and (max-width: 1080px) {
   body {
     #main_content_wrap {
@@ -1387,3 +1441,81 @@ body {
     }
   }
 }
+
+/* ---- Print CSS ---- */
+
+
+@media print {
+
+  /* Suppress extra blank page? 
+   * https://stackoverflow.com/questions/7846346/how-can-i-avoid-an-extra-blank-page-at-the-end-while-printing
+   */
+  body { 
+    height: auto;
+    padding-bottom: 0 !important;
+  }
+
+  html { 
+    height: auto;
+  }
+
+  #header_wrap,
+  #main-menu,
+  #footer_wrap { 
+    display: none;
+  }
+
+  .race-wrapper { 
+    break-inside: avoid-page;
+  }
+
+  body { 
+    h1 { 
+      font-size: 1.5em;
+    }
+
+    h2,
+    h2.medium-text { 
+      font-size: 1.25em;
+    }
+
+    h1,h2,h3 { 
+      margin-bottom: 0.2em;
+      padding-bottom: 0;
+    }
+
+    font-size: 0.7em;
+
+  }
+
+
+  table.candidate-worksheet { 
+    
+    width: 100%;
+    border-collapse: collapse;
+    border: 0.25em solid black;
+
+    font-size: 1em;
+
+    .fa-heart.unselected { 
+      display: none;
+    } 
+
+    
+    /* my notes */
+    tr :nth-child(3) {
+
+      .auto-resize-textarea { 
+      }
+    }
+    
+    th,td { 
+      vertical-align: middle;
+      border: 0.25em solid black;
+      padding: 0.1em;
+      margin: 0;
+    }
+
+  } 
+
+} 
