@@ -1,4 +1,3 @@
-
 {% comment %}
 Try to eat up all leading slashes and the trailing .html .
 This is gross but it works.
@@ -10,111 +9,109 @@ where:"PositionUniqueName",ward-id | first -%}
 
 <h1>Candidate Worksheet</h1>
 
-<p>If you are eligible to vote in 
-<strong>{{ ward-info.WardMunicipality }} {{ ward-info.ShortLocalDesc }}</strong>, 
-here are the regional, municipal and school board candidates you can vote
-for. 
-</p><p>
-You can print this page and make notes there, or make notes in
-your browser. 
-</p><p>
-Note that all four school boards are included in this list, but you
-will only vote for one. See the <a
-href="../../resources/school-boards-info.html" target="_blank">School Board
-Information</a> page  for more details.
-</p><p>
-This worksheet was generated {{ 'now' | date: "%A, %B %d, %Y, %I:%M %P" }}. 
-If you have printed this page, check that candidates have not been added or withdrawn since then. 
+<p>If you are eligible to vote in
+  <strong>{{ ward-info.WardMunicipality }} {{ ward-info.ShortLocalDesc }}</strong>,
+  here are the regional, municipal and school board candidates you can vote
+  for.
+</p>
+<p>
+  You can print this page and make notes there, or make notes in
+  your browser.
+</p>
+<p>
+  Note that all four school boards are included in this list, but you
+  will only vote for one. See the <a href="../../resources/school-boards-info.html" target="_blank">School Board
+    Information</a> page for more details.
+</p>
+<p>
+  This worksheet was generated {{ 'now' | date: "%A, %B %d, %Y, %I:%M %P" }}.
+  If you have printed this page, check that candidates have not been added or withdrawn since then.
 </p>
 
 {% assign municipal-info = site.data.internal.municipality-map |
-  where:"Name",ward-info.WardMunicipality | first %}
+where:"Name",ward-info.WardMunicipality | first %}
 {% assign races-split = municipal-info.Races | replace: "_SELF", ward-id | split: ',' %}
 
-  <div class="main">
-    {% for race-id in races-split %}
+<div class="main">
+  {% for race-id in races-split %}
 
-      {% assign race-info = site.data.internal.position-tags |
-      where:"PositionUniqueName",race-id | first -%}
+  {% assign race-info = site.data.internal.position-tags |
+  where:"PositionUniqueName",race-id | first -%}
 
-      <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
+  <div class="race-wrapper" id="{{ race-id | slugify }}-wrapper">
 
-          <div class="readable-widths" > <!-- was content-box -->
-            {% unless include.hide-position-desc %}
-              <h2 class="medium-text space-top">{{ race-info.PositionDesc }}</h2>
-            {% endunless %}
+    <div class="readable-widths"> <!-- was content-box -->
+      {% unless include.hide-position-desc %}
+      <h2 class="medium-text space-top">{{ race-info.PositionDesc }}</h2>
+      {% endunless %}
 
-            {% assign these-nominees = site.data.sync.nominees
-              | where:"PositionUniqueName",race-id %}
-            {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
+      {% assign these-nominees = site.data.sync.nominees
+      | where:"PositionUniqueName",race-id %}
+      {% assign sorted-nominees = these-nominees | sort_natural: "Last_Name" %}
 
 
-            {% assign valid-nominees = these-nominees
-              | where_exp:"nom", "nom.Withdrawn != 'Y'" %}
-            {% assign num-to-elect = race-info.NumberToElect | plus: 0 %}
+      {% assign valid-nominees = these-nominees
+      | where_exp:"nom", "nom.Withdrawn != 'Y'" %}
+      {% assign num-to-elect = race-info.NumberToElect | plus: 0 %}
 
-            {% include num-to-elect.html
-               valid-nominees=valid-nominees
-               num-to-elect=num-to-elect
-            %}
+      {% include num-to-elect.html
+      valid-nominees=valid-nominees
+      num-to-elect=num-to-elect
+      %}
 
-            <div class="candidate-list" id="{{ race-id | slugify }}" >
+      <div class="candidate-list" id="{{ race-id | slugify }}">
 
-              {% if sorted-nominees.size > 0 or num-to-elect == 0 %}
-                <table class="candidate-worksheet">
-                  <tr>
-                    <th class="cell"><i class="fa-solid fa-heart" aria-label="Is
+        {% if sorted-nominees.size > 0 or num-to-elect == 0 %}
+        <table class="candidate-worksheet">
+          <tr>
+            <th class="cell"><i class="fa-solid fa-heart" aria-label="Is
                     candidate favourited?">?</th>
-                    <th class="cell">Candidate Name</th>
-                    <th class="cell">My Notes</th>
-                  </tr>
-                    {% for n in sorted-nominees %}
-                      {% capture n_id %}{% include candidate-id.html nominee=n %}{% endcapture %}
-                      <tr>
-                        <td class="cell">
-                        <button class="favourite-btn" data-candidate-id="{{ n_id }}" aria-label="Favourite {{ n["Given_Names"] }} {{ n["Last_Name"] }}">
-                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
-                        </button>
-                        </td>
-                        <td class="cell">
-                          {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
-                            <s>
-                          {%- endif -%}
-                          {{ n["Given_Names"] }} {{ n["Last_Name"] }}</td>
-                          {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
-                            </s>
-                          {%- endif -%}
-                        <td class="cell">
-                          <div class="auto-resize-textarea"
-                            contenteditable="true"
-                            role="textbox"
-                            aria-multiline="true"
-                            data-candidate-id="{{ n_id }}"
-                          >
-                            {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
-                              Candidate withdrawn.
-                            {%- endif -%}
-                          </div>
-                        </td>
-                      </tr>
-                    {% endfor %}
-                </table>
+            <th class="cell">Candidate Name</th>
+            <th class="cell">My Notes</th>
+          </tr>
+          {% for n in sorted-nominees %}
+          <tr>
+            <td class="cell">
+              <button class="favourite-btn" data-candidate-id="{{ n.UniqueID }}" aria-label="Favourite {{ n["
+                Given_Names"] }} {{ n["Last_Name"] }}">
+                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+              </button>
+            </td>
+            <td class="cell">
+              {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
+              <s>
+                {%- endif -%}
+                {{ n["Given_Names"] }} {{ n["Last_Name"] }}
+            </td>
+            {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
+            </s>
+            {%- endif -%}
+            <td class="cell">
+              <div class="auto-resize-textarea" contenteditable="true" role="textbox" aria-multiline="true"
+                data-candidate-id="{{ n.UniqueID }}">
+                {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
+                Candidate withdrawn.
+                {%- endif -%}
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        </table>
 
-              {% else %}
-                <p>
-                Whoops! Nobody appears to be running for this position!
-                Has democracy failed or are our records out of date?
-                </p>
-              {% endif %}
-
-            </div>
-          </div>
-
+        {% else %}
+        <p>
+          Whoops! Nobody appears to be running for this position!
+          Has democracy failed or are our records out of date?
+        </p>
+        {% endif %}
 
       </div>
+    </div>
 
-    {% endfor %}
+
   </div>
 
+  {% endfor %}
 </div>
 
+</div>

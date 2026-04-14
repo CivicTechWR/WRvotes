@@ -1,5 +1,4 @@
 {% assign full_name = include.winner["Given_Names"] | append:" " | append:include.winner["Last_Name"] %}
-{% capture name_id %}{% include candidate-id.html nominee=include.winner %}{% endcapture %}
 {% assign race-info = site.data.internal.position-tags |
 where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
 
@@ -29,11 +28,11 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                         {% if include.winner["Website"] %}
                         <h3><a href="{{ include.winner['Website'] }}">{{ full_name }}</a></h3>
                         {% else %}
-                        <h3 class="no-website" aria-describedby='{{ name_id }}-tooltip'>{{ full_name }}</h3>
-                        <div class="tooltip hidden" role="tooltip" id="{{ name_id }}-tooltip">{{ full_name }} does not
+                        <h3 class="no-website" aria-describedby="{{ include.winner['UniqueID'] }}-tooltip">{{ full_name }}</h3>
+                        <div class="tooltip hidden" role="tooltip" id="{{ include.winner['UniqueID'] }}-tooltip">{{ full_name }} does not
                             have a listed website yet.</div>
                         {% endif %}
-                        <button class="favourite-btn" data-candidate-id="{{ name_id }}"
+                        <button class="favourite-btn" data-candidate-id="{{ include.winner['UniqueID'] }}"
                             aria-label="Favourite {{ full_name }}">
                             <i class="fa-regular fa-heart" aria-hidden="true"></i>
                         </button>
@@ -188,7 +187,7 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
 
                     </div>
 
-                    <div class="auto-resize-textarea" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Notes for {{ full_name }}" data-candidate-id="{{ name_id }}"></div>
+                    <div class="auto-resize-textarea" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Notes for {{ full_name }}" data-candidate-id="{{ include.winner['UniqueID'] }}"></div>
                 </div>
             </div>
         </div>
