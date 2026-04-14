@@ -69,9 +69,12 @@ If you have printed this page, check that candidates have not been added or with
                     <th class="cell">My Notes</th>
                   </tr>
                     {% for n in sorted-nominees %}
+                      {% capture n_id %}{% include candidate-id.html nominee=n %}{% endcapture %}
                       <tr>
                         <td class="cell">
-                        <i class="fa-regular fa-heart unselected" aria-label="Not favourited"></i>
+                        <button class="favourite-btn" data-candidate-id="{{ n_id }}" aria-label="Favourite {{ n["Given_Names"] }} {{ n["Last_Name"] }}">
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                        </button>
                         </td>
                         <td class="cell">
                           {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
@@ -86,6 +89,7 @@ If you have printed this page, check that candidates have not been added or with
                             contenteditable="true"
                             role="textbox"
                             aria-multiline="true"
+                            data-candidate-id="{{ n_id }}"
                           >
                             {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
                               Candidate withdrawn.
