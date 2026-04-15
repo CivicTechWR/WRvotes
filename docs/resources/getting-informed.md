@@ -194,8 +194,7 @@ sometimes newer candidates can represent you better than the existing
 seat holder.
 
 
-### Why not vote for candidates with lots of lawn signs? Or the ones
-that visited my house? Or the ones that run campaign ads?
+### Why not vote for candidates with lots of lawn signs? Or the ones that visited my house? Or the ones that run campaign ads?
 
 Candidates spend a lot of time and energy canvassing (visiting voters
 door-to-door) and putting up lawn signs. These are signals that a
