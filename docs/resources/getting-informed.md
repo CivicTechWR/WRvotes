@@ -18,32 +18,14 @@ layout: page
 
 <div class="main">
 
-## What makes municipal elections so overwhelming?
-
-In provincial and federal elections, you effectively have to make **one
-decision**: how to cast one vote in one local riding. You can do this by
-selecting the party leader you like, or the party you like, or maybe
-the local candidate you like best. The parties publish policy
-statements and there is lots of provincial and national news coverage. 
-
-Muncipal elections are more complicated, because you have to make **more
-decisions**: 
-
-- There are many different positions to vote for (mayors, school
-  board trustees, local councillors...)
-- Candidates do not run in parties
-- There are often many more candidates running for a position than
-  there would be running for MP or MPP
-- There are no party leaders
-- News about municipal elections is more scattered and difficult to
-  fine (which is the problem this website is trying to solve!)
-
-If you are feeling overwhelmed, you are not alone. But there are ways
-to break down the problem and make it more manageable. 
+If you are feeling overwhelmed by this election, you are not alone.
+Fortunately, there are ways to break down the problem and make it more
+manageable. 
 
 If you would like some inspiration for why you should bother voting at
 all, see the [Voter
 Information](voter-info#why-should-i-vote-in-municipal-elections) page.
+
 
 ## Choosing Candidates, Step by Step
 
@@ -307,5 +289,25 @@ Having said this, there are some dangers to watch out:
 
 [Need to update for 2026. CBC? Record? New Hamburg Independent?
 Cambridge Today?]
+
+## What makes municipal elections so overwhelming?
+
+In provincial and federal elections, you effectively have to make **one
+decision**: how to cast one vote in one local riding. You can do this by
+selecting the party leader you like, or the party you like, or maybe
+the local candidate you like best. The parties publish policy
+statements and there is lots of provincial and national news coverage. 
+
+Muncipal elections are more complicated, because you have to make **more
+decisions**: 
+
+- There are many different positions to vote for (mayors, school
+  board trustees, local councillors...)
+- Candidates do not run in parties
+- There are often many more candidates running for a position than
+  there would be running for MP or MPP
+- There are no party leaders
+- News about municipal elections is more scattered and difficult to
+  fine (which is the problem this website is trying to solve!)
 
 </div>
