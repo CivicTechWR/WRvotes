@@ -7,30 +7,25 @@ use-leaflet: true
 <section class="flex justify-center">
   <article class="standout-box blue large">
     <div class="big-text header" id="map-box" data-aos="fade-left">
-    Welcome to the user testing site!
+    The Municipal Election was October 22, 2022
     </div>
-    <div data-aos="fade-left">
-    {% comment %}
-    Use this site for information about the election, and the
-    candidates asking for your vote!
-    {% endcomment %}
-    <p>
-    The data on this site is from the 2022 election, but we can
-    pretend it is for the upcoming election.
+    <p>Use this website to learn about the municipal election, and the
+    candidates asking for your vote. If you are feeling overwhelmed or
+    confused you can start by reading the 
+     <a href="./resources/getting-informed" target="_blank">getting
+     informed</a> page for step-by-step guidance.
     </p>
-    </div>
-    <div class="countdown-container" style="font-size: 1.5rem; margin-bottom: 48px;" data-aos="fade-left">
-      <div class="countdown-days">
-      </div>
-    <!--Today is Election Day-->
-    </div>
-    <div class="content" data-aos="fade-up">
+    <div data-aos="fade-left">
      <p>Type your address to identify your ward, or click your
      location on the map. Once you have identified your ward you will
      be able to see the <strong>regional</strong>,
      <strong>municipality</strong> and <strong>school board</strong>
      candidates you can vote for.
-     </p><p>
+     </p>
+    </div>
+
+    <div class="content" data-aos="fade-up">
+     <p>
      (Note that although the address lookup is
      pretty good, it is not 100% accurate, especially near ward
      boundaries. If in doubt consult your <a

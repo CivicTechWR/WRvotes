@@ -12,6 +12,8 @@ Voters](./voter-info) page.
 
 - [Information for Voters](./voter-info): Information about this
   election, how to vote, and how to get informed.
+- [Getting Informed](./getting-informed): How to quickly and
+  effectively research candidates.
 - [Registering on the Voters' List](./amend-voters-list): You need to
   be on the Voters' List in order to vote.
 - [Information About School Board Elections](./school-boards-info):
@@ -19,4 +21,5 @@ Voters](./voter-info) page.
   for?
 - [Municipal Government Overview](./municipal-structure): About roles
   in the Region's two-tier government.
-- [What is it like to be a Politician?](./being-a-politician)
+- [What is it like to be a Politician?](./being-a-politician):
+  Perspectives from the other side.

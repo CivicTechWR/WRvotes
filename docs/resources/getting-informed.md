@@ -120,7 +120,7 @@ Once you know the candidates you can vote for, the next task is to
 There are several strategies people can use to pick candidates. Here
 are a few of them: 
 
-### (Reasonably) Quick and Effective
+### Recommended Strategy
 
 This strategy for selecting candidates is intended to narrow down your
 choices quickly, so that you can focus on the candidates that interest
