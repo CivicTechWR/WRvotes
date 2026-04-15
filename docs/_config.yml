@@ -8,6 +8,11 @@ plugins:
 include:
   - worksheets
 
+# Make Github Pages stop compressing :nth-child(1 of .cell) to 
+#   :nth-child(1of.cell)
+sass:
+  style: expanded
+
 defaults:
   -
    values:
