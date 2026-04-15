@@ -65,7 +65,8 @@ following:
 - The front-page map will not work.
 - Some JavaScript is used to hide and expand content. This content
   will be expanded without JavaScript.
-- Favouriting candidates will not work. 
+- Favouriting candidates will not work. Notes you make about
+  candidates will disappear if you close the page.
 
 However, all of the site content should remain accessible.
 
@@ -76,7 +77,10 @@ Local Storage and Cookies
 Some functionality (such as favouriting candidates) uses JavaScript
 [Local Storage](https://en.wikipedia.org/wiki/Web_storage) to remember
 your selections when you close your browser. This information is never
-transmitted to us. 
+transmitted over the Internet. 
+
+You can clear the notes and favourites you have made by clearing your
+local storage. [CLICK HERE?]
 
 
 Third-Party Services
