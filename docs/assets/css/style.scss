@@ -325,6 +325,11 @@ table.candidate-worksheet {
     margin: auto;
   }
 
+  .notes-btn {
+    display: block;
+    margin: auto;
+  }
+
   /* candidate name */
   tr :nth-child(2 of .cell) {
     width: 25%;
@@ -357,6 +362,10 @@ table.candidate-worksheet {
   font: inherit;
   min-height: 1.2em;
   cursor: text;
+
+  &.hidden {
+    display: none;
+  }
 
   &:focus {
     outline: 1px solid $gray;
@@ -620,6 +629,25 @@ p.bigtext {
   }
 }
 
+.notes-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1.25;
+  font-size: 1em;
+  color: $dark;
+
+  &.opened {
+    color: $blue;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $blue;
+    border-radius: 2px;
+  }
+}
+
 .grid-item {
   /* flex: 1 0;
      min-width: 200px;
@@ -645,7 +673,7 @@ p.bigtext {
 
       .identity {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 0.65em;
 
         .image {
@@ -685,17 +713,18 @@ p.bigtext {
 
       .name {
         position: relative;
-        padding-right: 1.5em;
+        display: flex;
+        align-items: flex-start;
       }
 
-      .favourite-btn {
-        position: absolute;
-        top: 0;
-        right: 0;
+      .interaction-buttons {
+        flex: 0 0 auto;
       }
 
       .name h3 {
-        margin: 0 0 0.2em;
+        flex: 1 1 auto;
+        min-width: 0;
+        margin: 0 10px 0.2em;
         font-size: 1.15em;
         line-height: 1.25;
       }
@@ -1530,7 +1559,7 @@ body {
     font-size: 0.7em;
   }
 
-  #worksheet-no-js-warning { 
+  #worksheet-no-js-warning {
     display: none;
   }
 
@@ -1545,7 +1574,7 @@ body {
       display: block;
       margin: auto;
 
-      i.fa-regular { 
+      i.fa-regular {
         display: none;
       }
     }
