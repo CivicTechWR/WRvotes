@@ -42,9 +42,23 @@ Your municipal government is responsible for many of the services
 that directly impact your daily life. We've put together a
 [separate page](/resources/municipal-structure#what-do-the-different-levels-of-government-do)
 with information to explain the roles and responsibilities of the different positions. 
-Becoming engaged with municipal government is your choice -
-do you want to have input into who's making decisions about
-how your city functions?
+
+Here are some reasons to care about voting in municipal elections: 
+
+- They give you input into who is making decisions about how your
+  township or city functions.
+- Very few votes can make a huge difference in municipal elections.
+  Many positions are decided by fewer than a hundred votes. In the
+  2010 election the <a
+  href="https://kitchener.citynews.ca/2011/01/13/ward-9-will-stand/"
+  target="_blank">Kitchener
+  Ward 9 councillor won by 1 vote</a>, and the <a
+  href="https://www.ctvnews.ca/kitchener/article/no-recount-in-cambridge-ward-6/"
+  target="_blank">Cambridge
+  Ward 6 councillor won by 2 votes</a>.
+- Democracy is hard-fought and easily lost. 
+- Municipal politics affects your life more directly than many other
+  forms of government. 
 
 The Region of Waterloo has also created [a series of
 videos](https://www.youtube.com/playlist?list=PLRVDwi_WScLn5k-iSrXjSRAM14iA5Ltgc)
@@ -116,7 +130,7 @@ Below is a summary and links to official municipality information:
   by mail, but must pre-register to do so.
 - [Wellesley](https://www.wellesley.ca/council-and-administration/election/)
   Internet and phone voting **TBD**. **There was no in-person
-  voting in the previous election.**
+  voting in the 2022 election.**
 - [Wilmot](https://www.wilmot.ca/township-office/elections/)
   In-person voting **TBD**
   Internet and phone voting **TBD**
@@ -165,66 +179,6 @@ default this is the English public school board (WRDSB).
 
 For more information, see our page containing [information about
 school board elections](/resources/school-boards-info).
-
-
-## Getting Informed
-
-#### I don't feel informed enough to vote. Where do I start?
-
-Start by finding your municipal ward on the [ward map](/) or by
-finding your ward in the [list of wards](/wards). There you
-can find the candidates running for each position in your area, their
-websites, news articles about them, and events where they will be
-appearing.
-
-Once you know your candidates, it is time to figure out who deserves
-your vote. Here are some strategies for becoming informed relatively
-quickly:
-
-
-- Attend all-candidates meetings for the races, or watch/listen to
-  recordings of all-candidates meetings. This will cost you 2-4 hours
-  per meeting, but is an effective way of comparing candidates against
-  each other.
-
-- Visit candidate websites and/or social media presences. This can
-  give you a sense of what candidates stand for and whether their
-  views correspond to yours, but is not great for comparing
-  candidates.
-
-- Read the answers to surveys posted by special interest groups.
-  Reading responses from different (especially opposed) groups is a
-  good way to assess how candidates respond differently to different
-  audiences.
-
-- Read news coverage of candidates. Beware that some news coverage on
-  social media feeds are written by advocates for particular
-  candidates, and thus will be biased towards that candidate (and away
-  from the competition).
-
-There are also less effective strategies, such as voting for whatever
-candidate comes to your house and shakes your hand. Politicians know
-this strategy is effective, and they devote a lot of time to this, but
-other than identifying candidates who put time into door-knocking it
-does not give you much information about which candidates are best for
-their jobs.
-
-#### I don't feel informed enough to vote and there is not much time left.  What do I do?
-
-If you are stretched for time, you can follow one or two races and
-cast informed votes for those. The regional level of government is
-important, and many people do not pay sufficient attention to regional
-council candidates. Other influential positions are mayors and
-regional chair, though this year the regional chair will be appointed.
-
-Spending an hour watching or listening to one all-candidates meeting
-can help you select the best candidates quickly. Skip the
-introductions and start listening to one of the questions in the
-middle of the debate.
-
-Alternatively, you can follow one or two races by reading the campaign
-literature (in printed form or on the Internet) from the contenders,
-and choosing the candidates that match your views most closely.
 
 #### How do I follow what is going on during the election?
 
@@ -277,7 +231,7 @@ and in the 2022 Ontario provincial election [was
 These turnout numbers were much lower than previous federal and
 provincial elections, but still were much higher than municipal ones.
 
-
+[NEED TO UPDATE WITH 2022 RESULTS]
 
 #### I want to organize an all-candidates meeting. What do I do?
 
