@@ -1530,6 +1530,10 @@ body {
     font-size: 0.7em;
   }
 
+  #worksheet-no-js-warning { 
+    display: none;
+  }
+
   table.candidate-worksheet {
     width: 100%;
     border-collapse: collapse;
@@ -1540,6 +1544,7 @@ body {
     .favourite-btn {
       display: block;
       margin: auto;
+
     }
 
     th,

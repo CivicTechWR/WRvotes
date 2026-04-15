@@ -73,4 +73,6 @@ $(document).ready(function () {
             btn.find("i").removeClass("fa-regular").addClass("fa-solid");
         }
     }
+
+    $("#worksheet-no-js-warning").hide();
 });
