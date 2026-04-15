@@ -9,31 +9,23 @@ where:"PositionUniqueName",ward-id | first -%}
 
 <button class="worksheets-btn aside-box blue" id="worksheets-btn" aria-expanded="false"
   aria-controls="worksheets-panel">
-  <h3>Worksheets</h3>
+  <h3>Worksheet!</h3>
 </button>
 
 <div id="worksheets-panel" class="worksheets-panel aside-box blue" hidden>
   <button class="worksheets-close" aria-label="Close worksheets panel">&times;</button>
   <header>
-    <h2>Worksheets</h2>
+    <h2>Candidate Worksheet</h2>
   </header>
   <p>
-    You can download lists of these candidates here, and use them
-    to keep track of your research and decisions.
+    Click here for a <a target="_blank" href="../worksheets/worksheet-{{
+    ward-id }}.html">worksheet</a> to help you keep track of which
+    candidates you can vote for. 
+  </p><p>
+    You can take notes and mark candidates you like interactively in
+    your web browser, or print the worksheet out and take notes by
+    hand.
   </p>
-  <ul>
-    <li><a target="_blank" href="../worksheets/docx/{{ ward-id
-    }}.docx">docx document</a> (Microsoft Word, Google Docs,
-      LibreOffice Write)</li>
-    <li><a target="_blank" href="../worksheets/xlsx/{{ ward-id
-    }}.xlsx">xlsx spreadsheet</a> (Microsoft Excel, Google
-      Sheets, LibreOffice Calc)</li>
-    <li><a target="_blank" href="../worksheets/text/{{ ward-id
-    }}.txt">txt plain text</a> (Any word
-      processor or text editor)</li>
-    <li><a target="_blank" href="../worksheets/web/worksheet-{{ ward-id
-    }}.html">HTML</a> (This web browser.)</li>
-  </ul>
   <button class="worksheets-close worksheets-collapse-hint" aria-label="Close worksheets panel">&#x25B2;</button>
 </div>
 
