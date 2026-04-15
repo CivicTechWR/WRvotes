@@ -30,6 +30,7 @@ teaser_limit_recordings: 5
 google_calendar_id: gnjujonnivepneq5mikitis6ms@group.calendar.google.com
 
 google_calendar_timezone: America/Toronto
+timezone: America/Toronto
 
 google_calendar_rss: 'https://feeds.off-topic.kwlug.org/feeds/wrv-events.rss'
 
