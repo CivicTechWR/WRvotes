@@ -1,5 +1,8 @@
+var WRV_FAVOURITE_KEY = "wrv-favourited";
+var WRV_NOTE_PREFIX = "wrv-note-";
+
 function parseFavourites() {
-    var favouritesRaw = localStorage.getItem("wrv-favourited");
+    var favouritesRaw = localStorage.getItem(WRV_FAVOURITE_KEY);
     return favouritesRaw ? JSON.parse(favouritesRaw) : [];
 }
 
@@ -7,32 +10,48 @@ function saveFavourite(candidate) {
     var favourites = parseFavourites();
     if (!favourites.includes(candidate)) {
         favourites.push(candidate);
-        localStorage.setItem('wrv-favourited', JSON.stringify(favourites));
+        localStorage.setItem(WRV_FAVOURITE_KEY, JSON.stringify(favourites));
     }
 }
 
 function removeFavourite(candidate) {
     var favourites = parseFavourites();
     favourites = favourites.filter(x => x != candidate);
-    localStorage.setItem('wrv-favourited', JSON.stringify(favourites));
+    localStorage.setItem(WRV_FAVOURITE_KEY, JSON.stringify(favourites));
 }
 
+function updateFavourites() {
+    var favouritedCandidates = parseFavourites();
+    $(".favourite-btn[data-candidate-id]").each(function () {
+        var btn = $(this);
+        if (favouritedCandidates.includes(btn.attr("data-candidate-id"))) {
+            btn.addClass("favourited");
+            btn.find("i").removeClass("fa-regular").addClass("fa-solid");
+        } else {
+            btn.removeClass("favourited");
+            btn.find("i").removeClass("fa-solid").addClass("fa-regular");
+        }
+    });
+}
+ 
 function saveNote(candidate, content) {
-    localStorage.setItem('wrv-note-' + candidate, content);
+    localStorage.setItem(WRV_NOTE_PREFIX + candidate, content);
 }
 
 function loadNote(candidate) {
-    return localStorage.getItem('wrv-note-' + candidate) || '';
+    return localStorage.getItem(WRV_NOTE_PREFIX + candidate) || '';
 }
 
-$(document).ready(function () {
+function updateNotes() {
     $(".auto-resize-textarea[data-candidate-id]").each(function () {
         var saved = loadNote($(this).attr("data-candidate-id"));
         if (saved) {
             $(this).html(saved);
         }
     });
+}
 
+$(document).ready(function () {
     var debounce;
     $(".auto-resize-textarea[data-candidate-id]").on("input", function () {
         var el = $(this);
@@ -66,13 +85,16 @@ $(document).ready(function () {
         }
     });
 
-    for (var candidate of parseFavourites()) {
-        var btn = $(".favourite-btn[data-candidate-id='" + candidate + "']");
-        if (btn.length) {
-            btn.addClass("favourited");
-            btn.find("i").removeClass("fa-regular").addClass("fa-solid");
+    updateNotes();
+    updateFavourites();
+
+    window.addEventListener("storage", (event) => {
+        if (event.key === WRV_FAVOURITE_KEY) {
+            updateFavourites();
+        } else if (event.key.startsWith(WRV_NOTE_PREFIX)) {
+            updateNotes();
         }
-    }
+    });
 
     $("#worksheet-no-js-warning").hide();
 });
