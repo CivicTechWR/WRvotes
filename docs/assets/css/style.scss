@@ -1545,6 +1545,9 @@ body {
       display: block;
       margin: auto;
 
+      i.fa-regular { 
+        display: none;
+      }
     }
 
     th,
