@@ -1,36 +1,97 @@
-/*** 
- * Implement tabbed interface using Javascript 
+/***
+ * Keep the ward race tabs keyboard- and screen-reader-friendly.
  */
 
-$( document ).ready(function() {
+$(document).ready(function() {
+  function getRadioForTab(tab) {
+    return document.getElementById(tab.getAttribute("for"));
+  }
 
-  function select_tab (evt) { 
-    var target = evt.target
-    // console.log("Target is " + JSON.stringify(target));
-    console.log("Href is " + JSON.stringify(target.href));
+  function syncTabs(nav) {
+    nav.querySelectorAll('[role="tab"]').forEach(function(tab) {
+      var radio = getRadioForTab(tab);
+      var isSelected = radio ? radio.checked : false;
+      tab.setAttribute("aria-selected", String(isSelected));
+      tab.setAttribute("tabindex", isSelected ? "0" : "-1");
 
-    
-    // var target_href = target.split('#').pop();
-    // console.log("Target href is " + target_href);
+      var controlledId = tab.getAttribute("aria-controls");
+      if (!controlledId) {
+        return;
+      }
 
-    var anchor = target.href.split('#').pop();
-    console.log("Anchor is " + anchor);
+      var controlledElement = document.getElementById(controlledId);
+      if (!controlledElement) {
+        return;
+      }
 
-    // STOP from actually visiting the link! Yikes!
-    evt.preventDefault();
+      if (controlledElement.getAttribute("role") === "tabpanel") {
+        controlledElement.setAttribute(
+          "aria-hidden",
+          String(window.getComputedStyle(controlledElement).display === "none"),
+        );
+      } else {
+        controlledElement.setAttribute("aria-hidden", String(!isSelected));
+      }
+    });
+  }
 
-    // Change URL to set new target. Now CSS should work?
-    // NOPE. This does NOT update the target!
-    // https://www.codegenes.net/blog/how-to-prevent-jump-on-an-anchor-click/#51-updating-the-url-hash-without-jumping
-    history.pushState({}, '', '#' + anchor);
+  function selectTab(tab, shouldFocus) {
+    var radio = getRadioForTab(tab);
+    var nav = tab.closest("nav#toc-tabs");
 
-  }; // end select_tab
+    if (!radio || !nav) {
+      return;
+    }
 
+    radio.checked = true;
+    syncTabs(nav);
 
+    if (shouldFocus) {
+      tab.focus();
+    }
+  }
 
-  /* ---- INIT CODE --- */
-  $("[role='tab']").on("click", function (e) { 
-      select_tab ( e );
+  document.querySelectorAll("nav#toc-tabs").forEach(function(nav) {
+    syncTabs(nav);
+
+    nav.querySelectorAll('[role="tab"]').forEach(function(tab) {
+      tab.addEventListener("click", function() {
+        window.requestAnimationFrame(function() {
+          syncTabs(nav);
+        });
+      });
+
+      tab.addEventListener("keydown", function(event) {
+        var tablist = tab.closest('[role="tablist"]');
+        var tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
+        var currentIndex = tabs.indexOf(tab);
+        var targetTab = null;
+
+        if (event.key === "ArrowRight") {
+          targetTab = tabs[(currentIndex + 1) % tabs.length];
+        } else if (event.key === "ArrowLeft") {
+          targetTab = tabs[(currentIndex - 1 + tabs.length) % tabs.length];
+        } else if (event.key === "Home") {
+          targetTab = tabs[0];
+        } else if (event.key === "End") {
+          targetTab = tabs[tabs.length - 1];
+        } else if (event.key === " " || event.key === "Enter") {
+          targetTab = tab;
+        }
+
+        if (!targetTab) {
+          return;
+        }
+
+        event.preventDefault();
+        selectTab(targetTab, true);
+      });
+    });
+
+    nav.parentElement.querySelectorAll(".tab-radio").forEach(function(radio) {
+      radio.addEventListener("change", function() {
+        syncTabs(nav);
+      });
+    });
   });
-
 });

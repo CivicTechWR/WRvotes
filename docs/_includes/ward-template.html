@@ -139,8 +139,8 @@ you can vote for.
 
   {% endfor %}
 
-  <nav id="toc-tabs">
-    <div class="tab-strip">
+  <nav id="toc-tabs" aria-label="Candidate races">
+    <div class="tab-strip" role="tablist" aria-label="Candidate races">
       {% for race-id in races-split %}
 
         {% assign race-info = site.data.internal.position-tags |
@@ -149,8 +149,11 @@ you can vote for.
         {% if race-info.Grouping %}
         {% else %}
 
-          <a href="#{{ race-id | slugify }}-wrapper" id="{{ race-id | slugify }}-href" ><label class="tab-label {{ race-id | slugify }}" for="{{ race-id | slugify  }}">{{ race-info.PositionCategory
-          }}</label></a>
+          <label class="tab-label {{ race-id | slugify }}" id="{{ race-id | slugify }}-tab"
+            role="tab" tabindex="-1" aria-selected="false"
+            aria-controls="{{ race-id | slugify }}-wrapper"
+            for="{{ race-id | slugify  }}">{{ race-info.PositionCategory
+          }}</label>
           <br class="textonly"/>
         {% endif %}
       {% endfor %}
@@ -159,8 +162,10 @@ you can vote for.
         {% assign alias-info = site.data.internal.aliases | 
           where:"Alias",group | first %}
 
-        <a><label class="tab-label {{ group | slugify }}" for="{{ group
-        | slugify }}">{{ alias-info.ShortDesc }}</label></a>
+        <label class="tab-label {{ group | slugify }}" id="{{ group | slugify }}-tab"
+          role="tab" tabindex="-1" aria-selected="false"
+          aria-controls="{{ group | slugify }}-tabstrip"
+          for="{{ group | slugify }}">{{ alias-info.ShortDesc }}</label>
         <br class="textonly"/>
       {% endfor %}
     </div>
@@ -168,15 +173,20 @@ you can vote for.
     {% for group in groupings %}
         {% assign alias-info = site.data.internal.aliases | 
           where:"Alias",group | first %}
-        <div class="tab-strip substrip {{ group | slugify }}-tabstrip">
+        <div class="tab-strip substrip {{ group | slugify }}-tabstrip"
+          id="{{ group | slugify }}-tabstrip" role="tablist"
+          aria-label="{{ alias-info.ShortDesc }}">
           
           {% for race-id in races-split %}
             {% assign race-info = site.data.internal.position-tags |
               where:"PositionUniqueName",race-id | first -%}
 
             {% if race-info.Grouping and race-info.Grouping == group %}
-              <a href="#{{ race-id | slugify }}-wrapper" id="{{ race-id | slugify }}-href" ><label class="tab-label {{ race-id | slugify }}" for="{{ race-id | slugify  }}">{{ race-info.PositionCategory
-              }}</label></a>
+              <label class="tab-label {{ race-id | slugify }}" id="{{ race-id | slugify }}-tab"
+                role="tab" tabindex="-1" aria-selected="false"
+                aria-controls="{{ race-id | slugify }}-wrapper"
+                for="{{ race-id | slugify  }}">{{ race-info.PositionCategory
+              }}</label>
               <br class="textonly"/>
               
             {% endif %}
@@ -194,7 +204,8 @@ you can vote for.
       {% assign race-info = site.data.internal.position-tags |
       where:"PositionUniqueName",race-id | first -%}
 
-      <div class="race-wrapper tab-content" role="tabpanel" id="{{ race-id | slugify }}-wrapper">
+      <div class="race-wrapper tab-content" role="tabpanel" id="{{ race-id | slugify }}-wrapper"
+        aria-labelledby="{{ race-id | slugify }}-tab" tabindex="-1">
 
         {% include list-nominees.html race-id=race-id
            show-toc-link=true hide-details=false
