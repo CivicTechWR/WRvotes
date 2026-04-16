@@ -7,11 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" type="text/css" media="print" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fa-all.min.css">
+    {% assign uses-candidate-card = false %}
+    {% if page.url contains '/by-ward/' or page.url contains '/worksheets/' or page.url == '/all-nominees.html' or page.url == '/winners.html' %}
+      {% assign uses-candidate-card = true %}
+    {% endif %}
+    {% if uses-candidate-card %}
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fa-all.min.css">
+    {% endif %}
 
     {% if page.use-leaflet %}
       <link rel="stylesheet" type="text/css" media="screen"
@@ -78,9 +86,11 @@
         {% include google-analytics.html %}
     {% endif %}
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      document.addEventListener("DOMContentLoaded", function() {
+        AOS.init();
+      });
     </script>
 
     <script>
@@ -90,10 +100,11 @@
       }())
     </script>
 
-    <script src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/accordion.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/candidate-card.js"></script>
+    <script defer src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>
+    <script defer src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
+    {% if uses-candidate-card %}
+      <script defer src="{{ site.baseurl }}/assets/js/candidate-card.js"></script>
+    {% endif %}
   </body>
 </html>
 
