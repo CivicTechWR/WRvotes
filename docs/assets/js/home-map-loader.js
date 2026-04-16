@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var button = document.getElementById("load-map-button");
+  var loader = document.querySelector(".map-loader[data-baseurl]");
   var status = document.getElementById("map-loader-status");
 
-  if (!button || !status) {
+  if (!loader || !status) {
     return;
   }
 
-  var baseUrl = button.getAttribute("data-baseurl") || "";
+  var baseUrl = loader.getAttribute("data-baseurl") || "";
   var isLoading = false;
 
   function loadScript(src) {
@@ -28,8 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     isLoading = true;
-    button.disabled = true;
-    button.textContent = "Loading map...";
     status.textContent = "Loading the ward map and search tools.";
 
     try {
@@ -38,16 +36,27 @@ document.addEventListener("DOMContentLoaded", function() {
       await loadScript("https://unpkg.com/leaflet-pip@1.1.0/leaflet-pip.js");
       await loadScript(baseUrl + "/assets/js/show-map.js");
       await window.WRVotesInitMap(baseUrl);
-      button.hidden = true;
-      status.textContent = "The interactive map is ready.";
+      loader.hidden = true;
     } catch (error) {
       isLoading = false;
-      button.disabled = false;
-      button.textContent = "Try loading the map again";
       status.textContent = "The map could not be loaded right now.";
       console.error(error);
     }
   }
 
-  button.addEventListener("click", loadMap);
+  function scheduleLoad() {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(loadMap, { timeout: 2000 });
+      return;
+    }
+
+    window.requestAnimationFrame(loadMap);
+  }
+
+  if (document.readyState === "complete") {
+    scheduleLoad();
+    return;
+  }
+
+  window.addEventListener("load", scheduleLoad, { once: true });
 });

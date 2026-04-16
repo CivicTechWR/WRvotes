@@ -30,17 +30,13 @@ use-leaflet: true
      pretty good, it is not 100% accurate, especially near ward
      boundaries. If in doubt consult your <a
      href="https://wrvotes.com" target="_blank">municipality</a>.)</p>
-     <div class="map-loader" aria-live="polite">
-       <button id="load-map-button" class="load-map-button" type="button"
-         data-baseurl="{{ site.baseurl }}">
-         Load the interactive ward map
-       </button>
+     <div class="map-loader" aria-live="polite" data-baseurl="{{ site.baseurl }}">
        <p id="map-loader-status" class="map-loader-status">
-         The map is loaded on demand to keep the homepage fast.
+         Loading the interactive ward map.
        </p>
      </div>
-     <div id="map-searchbar" hidden></div>
-     <div id="map" hidden></div>
+     <div id="map-searchbar"></div>
+     <div id="map"></div>
      <p><strong>Note:</strong> The map loads more slowly than the rest
      of the page, so be patient, or use the <a href="/wards/">ward listing</a>.</p>
     </div>
