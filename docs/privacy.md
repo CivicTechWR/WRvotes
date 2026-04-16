@@ -1,6 +1,7 @@
 ---
 title: Privacy 
 layout: page
+readable-widths: true
 ---
 
 Privacy
