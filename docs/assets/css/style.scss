@@ -357,15 +357,30 @@ table.candidate-worksheet {
   }
 }
 
+.notes-container {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 200ms ease;
+
+  &.open {
+    grid-template-rows: 1fr;
+  }
+
+  > * {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .auto-resize-textarea {
+    min-height: 0;
+  }
+}
+
 .auto-resize-textarea {
   font-size: inherit;
   font: inherit;
   min-height: 1.2em;
   cursor: text;
-
-  &.hidden {
-    display: none;
-  }
 
   &:focus {
     outline: 1px solid $gray;

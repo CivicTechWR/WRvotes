@@ -194,7 +194,9 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                     </div>
                 </div>
             </div>
-            <div class="auto-resize-textarea hidden" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Notes for {{ full_name }}" data-candidate-id="{{ include.winner['UniqueID'] }}"></div>
+            <div class="notes-container">
+                <div class="auto-resize-textarea" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Notes for {{ full_name }}" data-candidate-id="{{ include.winner['UniqueID'] }}"></div>
+            </div>
         </div>
         <br class="textonly" /><br class="textonly" />
     </div>
