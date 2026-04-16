@@ -156,12 +156,53 @@ $(document).ready(function () {
   // ------------------------
   function add_menu_toggle_button() {
     var target = $(this).attr("id");
+    if ($("#main-menu-toggle").length) {
+      return;
+    }
+
     add_ul_toggle_button(
       target,
       "toggle-menu",
-      "toggle main menu",
-      '<i class="fas fa-bars"></i>',
+      "Open main menu",
+      '<i class="fas fa-bars" aria-hidden="true"></i>',
     );
+
+    $("#main-menu-toggle").attr({
+      "aria-controls": target,
+      "aria-expanded": "false",
+      "aria-label": "Open main menu",
+      type: "button",
+    });
+  }
+
+  // ------------------------
+  function set_menu_button_state(isExpanded) {
+    $("#main-menu-toggle").attr({
+      "aria-expanded": String(isExpanded),
+      "aria-label": isExpanded ? "Close main menu" : "Open main menu",
+    });
+    $("#main-menu-ul").attr("aria-hidden", String(!isExpanded));
+  }
+
+  // ------------------------
+  function sync_main_menu_state() {
+    var target_ul = "#main-menu-ul";
+    var toggleButton = document.getElementById("main-menu-toggle");
+    var isDesktop = toggleButton
+      && window.getComputedStyle(toggleButton).display === "none";
+
+    if (isDesktop) {
+      $(target_ul).removeClass("hidden");
+      $(target_ul).show();
+      set_menu_button_state(true);
+      return;
+    }
+
+    if ($(target_ul).hasClass("hidden")) {
+      set_menu_button_state(false);
+    } else {
+      set_menu_button_state(true);
+    }
   }
 
   // ------------------------
@@ -171,9 +212,11 @@ $(document).ready(function () {
     if ($(target_ul).hasClass("hidden")) {
       $(target_ul).removeClass("hidden");
       $(target_ul).slideDown();
+      set_menu_button_state(true);
     } else {
       $(target_ul).addClass("hidden");
       $(target_ul).slideUp();
+      set_menu_button_state(false);
     }
   }
 
@@ -199,6 +242,7 @@ $(document).ready(function () {
   $("#toc-list").each(add_toc_toggle_button);
   $("#main-menu-ul").each(add_menu_toggle_button);
   $(".togglable").each(add_toggle_button);
+  sync_main_menu_state();
 
   $(".toggle-toc").on("click", function (e) {
     toggle_toc("#" + e.target.id);
@@ -207,6 +251,8 @@ $(document).ready(function () {
   $(".toggle-menu").on("click", function (e) {
     toggle_main_menu("#" + e.target.id);
   });
+
+  window.addEventListener("resize", sync_main_menu_state);
 
   $(".toggle-button-background").each(function () {
     toggle_listing(this, "Background", "Show", "Hide");
@@ -220,27 +266,46 @@ $(document).ready(function () {
   (function() {
     var btn = document.getElementById('worksheets-btn');
     var panel = document.getElementById('worksheets-panel');
+    var lastFocusedElement = null;
+    var closeOnScroll = function () {
+      closePanel();
+    };
     if (!btn || !panel) return;
 
 
     function openPanel() {
       var rect = btn.getBoundingClientRect();
+      var closeButton = panel.querySelector('.worksheets-close');
       panel.style.top = rect.top + 'px';
       panel.style.right = (window.innerWidth - rect.right) + 'px';
       panel.hidden = false;
       btn.setAttribute('aria-expanded', 'true');
-      window.addEventListener("scroll", function () {
-        closePanel();
-      });
+      lastFocusedElement = document.activeElement;
+      window.addEventListener("scroll", closeOnScroll);
+      if (closeButton) {
+        closeButton.focus();
+      } else {
+        panel.focus();
+      }
     }
 
     function closePanel() {
       panel.hidden = true;
       btn.setAttribute('aria-expanded', 'false');
+      window.removeEventListener("scroll", closeOnScroll);
+      if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+        lastFocusedElement.focus();
+      }
     }
 
     btn.addEventListener('click', function() {
       if (panel.hidden) { openPanel(); } else { closePanel(); }
+    });
+
+    panel.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closePanel();
+      }
     });
 
     panel.querySelectorAll('.worksheets-close').forEach(function(el) {

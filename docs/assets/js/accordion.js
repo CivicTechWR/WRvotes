@@ -4,20 +4,18 @@
 
 
 function toggleAccordion(){
-    this.classList.toggle('active');
+    var targetId = this.getAttribute("aria-controls");
+    var target = targetId ? document.getElementById(targetId) : this.nextElementSibling;
+    var isExpanded = this.getAttribute("aria-expanded") === "true";
 
-    // Sigh. Maybe I want some elements in between.
-    curr  = this.nextElementSibling;
-    while (curr) { 
-      if (curr.classList.contains("toggle-content")) { 
-         target = curr;
-         break;
-      } 
-      curr = curr.nextElementSibling;
+    if (!target) {
+      return;
+    }
 
-    } // end while
-
-    target.classList.toggle('active');
+    this.classList.toggle('active', !isExpanded);
+    this.setAttribute("aria-expanded", String(!isExpanded));
+    target.hidden = isExpanded;
+    target.classList.toggle('active', !isExpanded);
 }
 
 const toggles = document.querySelectorAll(".toggletop");
