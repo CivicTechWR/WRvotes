@@ -156,11 +156,15 @@ $(document).ready(function () {
   // ------------------------
   function add_menu_toggle_button() {
     var target = $(this).attr("id");
+    if ($("#main-menu-toggle").length) {
+      return;
+    }
+
     add_ul_toggle_button(
       target,
       "toggle-menu",
-      "toggle main menu",
-      '<i class="fas fa-bars"></i>',
+      "Open main menu",
+      "Menu",
     );
   }
 
