@@ -85,6 +85,22 @@ $(document).ready(function () {
         }
     });
 
+    $(".notes-btn").on("click", function () {
+        var candidate = $(this).attr("data-candidate-id");
+        $(this).toggleClass("opened");
+        var icon = $(this).find("i");
+        var notes = $(`.auto-resize-textarea[data-candidate-id='${candidate}']`);
+        if (notes) { 
+            if ($(this).hasClass("opened")) {
+                icon.removeClass("fa-regular").addClass("fa-solid");
+                notes.closest(".notes-container").addClass("open");
+            } else {
+                icon.removeClass("fa-solid").addClass("fa-regular");
+                notes.closest(".notes-container").removeClass("open");
+            }
+        }
+    });
+
     updateNotes();
     updateFavourites();
 

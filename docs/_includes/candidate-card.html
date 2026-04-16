@@ -32,11 +32,17 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                         <div class="tooltip hidden" role="tooltip" id="{{ include.winner['UniqueID'] }}-tooltip">{{ full_name }} does not
                             have a listed website yet.</div>
                         {% endif %}
+                        <div class="interaction-buttons">
+                        <button class="notes-btn" data-candidate-id="{{ include.winner['UniqueID'] }}"
+                            aria-label="Edit notes for {{ full_name }}">
+                            <i class="fa-regular fa-clipboard" aria-hidden="true"></i>
+                        </button>
                         <button class="favourite-btn" data-candidate-id="{{ include.winner['UniqueID'] }}"
                             aria-label="Favourite {{ full_name }}">
                             <i class="fa-regular fa-heart" aria-hidden="true"></i>
                         </button>
-                    </div>
+                        </div>
+                   </div>
                     {% if include.winner["Votes"] and include.winner["Percentage"] %}
                     {% assign percentage = include.winner["Percentage"] | append:"%" %}
                     <div class="voting-result">
@@ -186,9 +192,10 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                         {% endif %}
 
                     </div>
-
-                    <div class="auto-resize-textarea" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Notes for {{ full_name }}" data-candidate-id="{{ include.winner['UniqueID'] }}"></div>
                 </div>
+            </div>
+            <div class="notes-container">
+                <div class="auto-resize-textarea" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Notes for {{ full_name }}" data-candidate-id="{{ include.winner['UniqueID'] }}"></div>
             </div>
         </div>
         <br class="textonly" /><br class="textonly" />
