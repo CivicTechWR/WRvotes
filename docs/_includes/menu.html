@@ -2,8 +2,13 @@
 From: https://christianspecht.de/2014/06/18/building-a-pseudo-dynamic-tree-menu-with-jekyll/
 {% endcomment %}
 {% assign navurl = page.url | remove: '.html' %}
-<div id="main-menu">
+<nav id="main-menu" aria-label="Main">
   <div class="inner">
+    <button id="main-menu-toggle" class="toggle-menu" type="button"
+      aria-controls="main-menu-ul" aria-expanded="false"
+      aria-label="Open main menu">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
     <ul id="main-menu-ul" class="hidden">
       {%- for item in site.data.internal.menu-layout %}
         <li><a href="{{ site.baseurl }}{{ item.url }}"
@@ -13,4 +18,4 @@ From: https://christianspecht.de/2014/06/18/building-a-pseudo-dynamic-tree-menu-
       {% endfor -%}
     </ul>
   </div>
-</div>
+</nav>

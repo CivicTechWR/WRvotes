@@ -42,6 +42,8 @@
 
   <body>
 
+    <a class="skip-link" href="#main_content">Skip to main content</a>
+
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
@@ -66,9 +68,9 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+      <main id="main_content" class="inner" tabindex="-1">
         {{ content }}
-      </section>
+      </main>
     </div>
 
     {% include footer.html %}

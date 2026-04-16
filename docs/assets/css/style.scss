@@ -5,6 +5,21 @@
 @import "variables";
 @import "typography";
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  background: $light;
+  color: $dark;
+  border: 2px solid $blue;
+
+  &:focus {
+    top: 1rem;
+  }
+}
+
 /* ---------- MAIN MENU STYLING --------- */
 #main-menu {
   background: $green;
@@ -797,7 +812,7 @@ p.bigtext {
 }
 
 .wrv-accordion {
-  a.toggletop {
+  button.toggletop {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -809,9 +824,12 @@ p.bigtext {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 1rem 3rem 1rem 1rem;
+    width: 100%;
     color: black;
     font-size: 1.15rem;
     font-weight: 400;
+    text-align: left;
+    border: none;
     border-bottom: 3px solid #156cb2;
     background: #f2f7fa;
     &:hover {

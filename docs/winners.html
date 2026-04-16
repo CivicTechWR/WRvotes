@@ -8,8 +8,11 @@ title: Election Winners
 {% for alias in site.data.internal.results-aliases %}
   {% assign title = site.data.internal.aliases | where: "Alias", alias | first %}
   <div class="accordion-ward">
-    <a class="toggletop">{{ title["Description"] }}</a>
-    <div class="content">
+    <button class="toggletop" type="button" aria-expanded="false"
+      aria-controls="{{ alias | slugify }}-results">
+      {{ title["Description"] }}
+    </button>
+    <div class="content" id="{{ alias | slugify }}-results" hidden>
       <div class="jurisdiction">
         {% for position in site.data.internal.position-tags %}
           {% assign position_aliases = position["Aliases"] | split: "," %}
