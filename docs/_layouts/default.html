@@ -65,8 +65,14 @@
     {% include menu.html %}
 
     <!-- MAIN CONTENT -->
+    {% if page.readable-widths -%}
+      {% assign width-flag="readable-widths"%} 
+    {% else %}
+      {% assign width-flag="" %}
+    {% endif -%}
+
     <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+      <section id="main_content" class="inner {{ width-flag }}">
         {{ content }}
       </section>
     </div>

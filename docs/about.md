@@ -1,6 +1,7 @@
 ---
 title: About WaterlooRegionVotes
 layout: page
+readable-widths: true
 ---
 
 <div class="standout-box blue full-width no-margin-top">
@@ -35,9 +36,10 @@ KW](https://www.cbc.ca/news/canada/kitchener-waterloo/waterloo-region-votes-why-
 
 ## Who is responsible for this?
 
-Waterloo Region Votes  is a project of [CivicTechWR](https://civictechwr.org), a
-local group that attempts to improve the lives of residents in
-Waterloo Region through civic technology.
+Waterloo Region Votes is a volunteer project of
+[CivicTechWR](https://civictechwr.org), a local group that attempts to
+improve the lives of residents in Waterloo Region through civic
+technology.
 
 
 You can join us! 
@@ -45,6 +47,9 @@ Email us at
 <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
  and we will get you connected to our Slack.
 
+Waterloo Region Votes and CivictechWR are **not** official
+government websites. For official municipal government information
+visit <a href="https://wrvotes.com" target="_blank">https://wrvotes.com</a> .
 
 ## Are you a third party advertiser?
 
@@ -88,23 +93,24 @@ If we do not see a particular resource we won't be able to link to it. If you se
 
 ## How to Help
 
-Use the site! Learn about the election so you can cast an informed
+**Use the site!** Learn about the election so you can cast an informed
 vote. If there are aspects of the site that are confusing or
 misleading, let us know.
 
-Spread the word! Encourage your friends, family, and social media
+**Spread the word!** Encourage your friends, family, and social media
 contacts to use this site, especially if they are not engaged in
 municipal politics already. There are convenient sharing links at the
 bottom of each page on the site.
 
-Improve the content! Are we missing information about candidates, events,
+**Improve the content!** Are we missing information about candidates, events,
 questionnaires or news coverage? Contact us at
 {{ contact_email}} and submit it to
 the site. Crowdsourcing resources helps improve the site for everyone.
+
 We currently could really use help with:
 
 - Monitoring local news media
-- Monitoring Facebook and Twitter for election-related news and events
+- Monitoring Facebook, Instagram, Tiktok and X for election-related news and events
 - Tracking down candidate information (especially websites)
 - Contacting neighbourhood associations and other local groups
 - Helping with promotion
