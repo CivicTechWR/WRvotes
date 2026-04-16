@@ -12,10 +12,12 @@ where:"PositionUniqueName",ward-id | first -%}
   <h3>Worksheet!</h3>
 </button>
 
-<div id="worksheets-panel" class="worksheets-panel aside-box blue" hidden>
+<div id="worksheets-panel" class="worksheets-panel aside-box blue" hidden
+  role="dialog" aria-modal="false" aria-labelledby="worksheets-panel-title"
+  tabindex="-1">
   <button class="worksheets-close" aria-label="Close worksheets panel">&times;</button>
   <header>
-    <h2>Candidate Worksheet</h2>
+    <h2 id="worksheets-panel-title">Candidate Worksheet</h2>
   </header>
   <p>
     <a target="_blank" href="../worksheets/worksheet-{{ ward-id }}.html">Click here</a> for a worksheet to help you keep track of

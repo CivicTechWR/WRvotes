@@ -266,27 +266,46 @@ $(document).ready(function () {
   (function() {
     var btn = document.getElementById('worksheets-btn');
     var panel = document.getElementById('worksheets-panel');
+    var lastFocusedElement = null;
+    var closeOnScroll = function () {
+      closePanel();
+    };
     if (!btn || !panel) return;
 
 
     function openPanel() {
       var rect = btn.getBoundingClientRect();
+      var closeButton = panel.querySelector('.worksheets-close');
       panel.style.top = rect.top + 'px';
       panel.style.right = (window.innerWidth - rect.right) + 'px';
       panel.hidden = false;
       btn.setAttribute('aria-expanded', 'true');
-      window.addEventListener("scroll", function () {
-        closePanel();
-      });
+      lastFocusedElement = document.activeElement;
+      window.addEventListener("scroll", closeOnScroll);
+      if (closeButton) {
+        closeButton.focus();
+      } else {
+        panel.focus();
+      }
     }
 
     function closePanel() {
       panel.hidden = true;
       btn.setAttribute('aria-expanded', 'false');
+      window.removeEventListener("scroll", closeOnScroll);
+      if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+        lastFocusedElement.focus();
+      }
     }
 
     btn.addEventListener('click', function() {
       if (panel.hidden) { openPanel(); } else { closePanel(); }
+    });
+
+    panel.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closePanel();
+      }
     });
 
     panel.querySelectorAll('.worksheets-close').forEach(function(el) {

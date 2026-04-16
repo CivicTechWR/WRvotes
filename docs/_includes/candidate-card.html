@@ -33,6 +33,7 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                             have a listed website yet.</div>
                         {% endif %}
                         <button class="favourite-btn" data-candidate-id="{{ include.winner['UniqueID'] }}"
+                            aria-pressed="false"
                             aria-label="Favourite {{ full_name }}">
                             <i class="fa-regular fa-heart" aria-hidden="true"></i>
                         </button>

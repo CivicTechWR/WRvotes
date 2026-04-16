@@ -32,6 +32,11 @@ var map = new L.Map('map', {
     center: new L.latLng([43.45850, -80.51511]),
     scrollWheelZoom:false,
   });
+document.getElementById("map").setAttribute("role", "region");
+document.getElementById("map").setAttribute(
+  "aria-label",
+  "Interactive map of Waterloo Region wards",
+);
 
 var baseLayer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     { attribution: attrib });     //base layer
@@ -82,5 +87,11 @@ $.getJSON("./assets/data/WardBoundaries.geojson", function(data) {
     map.addLayer(geojson);
 
     map.addControl(searchControl);
+
+    var searchInput = document.querySelector("#map-searchbar input");
+    if (searchInput) {
+        searchInput.setAttribute("aria-label", "Search by address to find your ward");
+        searchInput.setAttribute("autocomplete", "street-address");
+    }
 });
 
