@@ -7,36 +7,19 @@ This is gross but it works.
 {% assign ward-info = site.data.internal.position-tags |
 where:"PositionUniqueName",ward-id | first -%}
 
-<button class="worksheets-btn aside-box blue" id="worksheets-btn" aria-expanded="false"
-  aria-controls="worksheets-panel">
-  <h3><i class="fa-regular fa-clipboard" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp; Worksheet! </h3>
-</button>
-
-<div id="worksheets-panel" class="worksheets-panel aside-box blue" hidden>
-  <button class="worksheets-close" aria-label="Close worksheets panel">&times;</button>
-  <header>
-    <h2>Candidate Worksheet</h2>
-  </header>
-  <p>
-    <a target="_blank" href="../worksheets/worksheet-{{ ward-id }}.html">Click here</a> for a worksheet to help you keep track of
-    the candidates you can vote for. 
-  </p><p>
-    You can take notes and mark candidates you like interactively in
-    your web browser, or print the worksheet out and take notes by
-    hand.
-  </p>
-  <button class="worksheets-close worksheets-collapse-hint" aria-label="Close worksheets panel">&#x25B2;</button>
-</div>
-
 
 <h1>Learn About Your Candidates</h1>
 
 <p class="readable-widths"> 
 If you are eligible to vote in   {{
-ward-info.WardMunicipality }} {{ ward-info.ShortLocalDesc }}, here are
+ward-info.WardMunicipality }} {{ ward-info.ShortLocalDesc }}, below are
 the candidates running for <strong>regional</strong>,
 <strong>municipal</strong> and <strong>school board</strong> positions
 you can vote for.  
+</p><p class="readable-widths">
+You can use this <a target="_blank" href="../worksheets/worksheet-{{
+ward-id }}.html">Candidate Worksheet</a> to make notes and mark your
+favourites. You can also print the worksheet for use offline.
 </p>
 
 {% assign municipal-info = site.data.internal.municipality-map |
