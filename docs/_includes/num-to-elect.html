@@ -7,4 +7,6 @@
             {%- elsif num-to-elect > 1 %}
               <p><strong>(Elect {{ num-to-elect }}; vote for
               up to {{ num-to-elect }})</strong></p>
+            {%- else -%}
+              <p><strong>(Elect 1)</strong></p>
             {%- endif -%}
