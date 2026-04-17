@@ -240,7 +240,7 @@ questions:
 - 
 
 
-## Why Do You Recommend Debates and All-Candidates Meetings?
+## Why do you recommend Debates and All-Candidates Meetings?
 
 On this website we frequently recommend people watch debates and
 all-candidates meetings? Why?
