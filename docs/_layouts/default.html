@@ -26,13 +26,21 @@
     <title>{{ page.title }} | {{ site.title }}</title>
   {%- else -%}
 
-    {% assign ward-id = page.url | replace: '.html', ''
+    {%- assign ward-id = page.url | replace: 'worksheet-','' | replace: '.html', ''
        | split: '/' | last -%}
-    {% assign ward-info-list = site.data.internal.position-tags
+    {%- assign worksheet-chopped = page.url | split: "worksheet-" | last -%}
+    {%- if worksheet-chopped == page.url -%}
+      {%- assign insert = "" -%}
+    {%- else -%}
+      {%- assign insert = "Worksheet: " -%}
+    {%- endif -%}
+
+    {%- assign ward-info-list = site.data.internal.position-tags
        | where:"PositionUniqueName",ward-id -%}
+
     {%- if ward-info-list.size > 0 -%}
       {%- assign ward-info = ward-info-list | first -%}
-      <title>Candidates for those vote in {{ ward-info.WardMunicipality }} {{ ward-info.ShortLocalDesc }} | {{ site.title }}</title>
+        <title>{{ insert }}Candidates for those in {{ ward-info.WardMunicipality }} {{ ward-info.ShortLocalDesc }} | {{ site.title }}</title>
     {%- else -%}
       <title>{{ site.title }} | boo! no title!</title>
     {%- endif -%}
