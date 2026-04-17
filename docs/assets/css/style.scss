@@ -672,6 +672,12 @@ p.bigtext {
     border: 1px solid $dark;
     margin: 0.5em;
 
+    /* undo target icon */
+    a[target="_blank"]::after { 
+      content: '';
+      margin-left: 0;
+    } 
+
     .title {
       background-color: $dark;
       padding: 0.65em 0.75em;
@@ -1050,6 +1056,16 @@ body {
       color: $pink;
     }
   }
+
+  a[target="_blank"]::after { 
+    /* https://docs.fontawesome.com/web/add-icons/pseudo-elements/ */
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: '\f35d';
+    margin-left: 0.25em;
+  } 
 
   img {
     border: none;
