@@ -20,13 +20,6 @@ defaults:
 
 empty-array: []
 
-teaser_limit_events_multi_candidate: 7
-teaser_limit_events_specific: 2
-teaser_limit_events_generic: 2
-teaser_limit_news: 3
-teaser_limit_surveys: 3
-teaser_limit_recordings: 5
-
 google_calendar_id: gnjujonnivepneq5mikitis6ms@group.calendar.google.com
 
 google_calendar_timezone: America/Toronto
