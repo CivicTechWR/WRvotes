@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fa-all.min.css">
-
     {% if page.use-leaflet %}
       <link rel="stylesheet" type="text/css" media="screen"
         href="{{ site.baseurl }}/assets/css/leaflet.css">
@@ -33,7 +32,7 @@
        | where:"PositionUniqueName",ward-id -%}
     {%- if ward-info-list.size > 0 -%}
       {%- assign ward-info = ward-info-list | first -%}
-      <title>{{ ward-info.PositionDesc }} | {{ site.title }}</title>
+      <title>Candidates for those vote in {{ ward-info.WardMunicipality }} {{ ward-info.ShortLocalDesc }} | {{ site.title }}</title>
     {%- else -%}
       <title>{{ site.title }} | boo! no title!</title>
     {%- endif -%}
