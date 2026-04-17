@@ -803,8 +803,11 @@ p.bigtext {
       }
 
       .notes-container.open { 
-        border: 0.1em solid black;
-        padding: inherit;
+
+        .auto-resize-textarea { 
+          border: 0.1em solid black;
+          padding: 0.25em;
+        } 
       } 
     }
 
