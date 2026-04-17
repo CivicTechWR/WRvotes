@@ -18,6 +18,9 @@ defaults:
    values:
      layout: "default"
 
+# For Youtube and other video embeds
+embed-media: true
+
 empty-array: []
 
 google_calendar_id: gnjujonnivepneq5mikitis6ms@group.calendar.google.com
