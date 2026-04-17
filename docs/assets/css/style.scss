@@ -635,7 +635,7 @@ p.bigtext {
   color: $dark;
 
   &.favourited {
-    color: $pink;
+    color: red;
   }
 
   &:focus-visible {
@@ -779,6 +779,7 @@ p.bigtext {
         opacity: 0;
         visibility: hidden;
         height: 0;
+        width: 0;
       }
 
       .voting-result p {
@@ -794,6 +795,11 @@ p.bigtext {
           color: $dark;
         }
       }
+
+      .notes-container.open { 
+        border: 0.1em solid black;
+        padding: inherit;
+      } 
     }
 
     .contact {
