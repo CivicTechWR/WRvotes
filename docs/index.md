@@ -22,8 +22,7 @@ use-leaflet: true
       candidates you can vote for.
      </p>
       <p>
-      If you are feeling overwhelmed or
-      confused you can start by reading the 
+      Overwhelmed? Not sure where to start? Read the 
        <a href="./resources/getting-informed" target="_blank">getting
        informed</a> page for step-by-step guidance.
       </p>
