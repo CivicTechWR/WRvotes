@@ -15,7 +15,7 @@ use-leaflet: true
       <strong>candidates</strong> asking for your vote. 
       </p>
       <p>To find your candidates, first find your township or city
-      ward on the map below. You can type your address or click your
+      ward on the <strong>map below</strong>. You can type your address or click your
       location. Then you will 
       be able to find the <strong>regional</strong>,
       <strong>municipality</strong> and <strong>school board</strong>
