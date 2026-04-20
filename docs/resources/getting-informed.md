@@ -55,7 +55,7 @@ know about. In the introductory paragraph there is also a link to a
 "Candidate Worksheet" you can open. This page **lists all the
 candidates**.
 
-You can print this worksheet or take notes in your web browser as you
+You can print the worksheet or take notes in your web browser as you
 do your research. 
 
 
@@ -107,7 +107,7 @@ you the most. In our experience it is fairly effective.
 
 - If there are **debates or all-candidates meetings** scheduled for the
   position in question, attend them or watch recordings.
-  [Why?](#why-do-you-recommend-debates-and-all-candidates-meetings) . Use
+  [Why?](#why-do-you-recommend-debates-and-all-candidates-meetings) Use
   this to narrow down your candidate options quickly.
 - If there are candidates that interest you and they are holding
   **meet and greets**, you can prepare questions in advance and ask
@@ -116,8 +116,9 @@ you the most. In our experience it is fairly effective.
   **questionnaires** about these issues and read responses from the
   candidates you are considering. Be aware of the ways these
   questionnaires can be biased.
-- In addition, read some **questionnaires** from advocacy groups who hold positions
-  you oppose. See how the candidates you are considering respond to
+- In addition, read some questionnaires from advocacy groups who hold
+  **positions
+  you oppose**. See how the candidates you are considering respond to
   these.
 - If you are trying to select between 2-3 candidates for a position,
   start looking at **profiles** and **candidate websites** to see
@@ -210,37 +211,36 @@ vote for them.
 
 When evaluating published media, you can ask the following questions: 
 
-- Which candidates responded and which did not? Why?
-- Why was this media published? What motivations did the publishers
+- Which candidates **responded** and which did not? Why?
+- Why was this media published? **What motivations** did the publishers
   have in publishing this item?
-- How did the author publishing the media spin their questions? How
+- How did the author publishing the media **spin their questions**? How
   did the candidates respond?
-- Did the candidates answer questions directly, or did they deflect
+- Did the candidates **answer questions directly**, or did they deflect
   the questions?
-- To what extent are the candidates aware of the complexities of
+- To what extent are the candidates aware of the **complexities** of
   municipal politics? 
 - For candidates offering simple solutions to difficult problems: if
   the solutions are so easy then why did previous politicians not
-  implement them already?
-- Which candidates demonstrate good understandings of underlying
-  issues?
-- How transparent are publishers about their processes? For example,
+  **implement them already**?
+- Which candidates demonstrate good understandings of **underlying
+  issues**?
+- How **transparent** are publishers about their processes? For example,
   if an organization endorses candidates, on what basis do they make
   those endorsements?
 
 When evaluating contentious issues, you can ask the following
 questions:
 
-- Who are the different stakeholders in this issue? What outcomes do
+- Who are the **different stakeholders** in this issue? What outcomes do
   they want? Why?
-- What factors have made this issue difficult to solve in the past?
-- What has been tried so far? How has this worked out?
-- What tradeoffs would be required to implement various solutions? How
+- What factors have made this issue **difficult to solve**?
+- What has been **tried so far**? How has this worked out?
+- What **tradeoffs** would be required to implement various solutions? How
   much will the solutions cost? Who will be hurt and who will benefit?
-- 
 
 
-## Why do you recommend Debates and All-Candidates Meetings?
+## Why do you recommend debates and all-candidates Meetings?
 
 On this website we frequently recommend people watch debates and
 all-candidates meetings? Why?
@@ -253,23 +253,13 @@ set of questions**.
 On the surface this seems slow and ineffective (who has time to watch
 boring debate videos??) but it is much faster and often more effective
 to judge candidates using side by side comparisons than by reading
-text or watching campaign videos. Often you will be able to answer
-questions like: 
+text or watching campaign videos. 
 
-- Who attended the event and who didn't? Why?
-- Who is serious about running and who isn't?
-- Who is familiar with the issues and their complexities and who
-  isn't?
-- What different approaches to the candidates take? Which candidates
-  are largely in agreement and which ones disagree with each other?
-- Which candidates answered questions directly and which ones
-  deflected and pivoted to other talking points?
-
-Even listening to a few rounds of questions will often answer these
-questions well. You can then research the candidates that appealed to
+Even listening to a few rounds of questions will narrow the field
+quickly.  You can then research the candidates that appealed to
 you more deeply. 
 
-Having said this, there are some dangers to watch out: 
+Having said this, there are some dangers to watch out for: 
 
 - Some candidates are polished and slick, but are not substantive.
 - Being articulate is part of the job of a politician, but it is not
@@ -285,25 +275,5 @@ Having said this, there are some dangers to watch out:
 
 [Need to update for 2026. CBC? Record? New Hamburg Independent?
 Cambridge Today?]
-
-## What makes municipal elections so overwhelming?
-
-In provincial and federal elections, you effectively have to make **one
-decision**: how to cast one vote in one local riding. You can do this by
-selecting the party leader you like, or the party you like, or maybe
-the local candidate you like best. The parties publish policy
-statements and there is lots of provincial and national news coverage. 
-
-Muncipal elections are more complicated, because you have to make **more
-decisions**: 
-
-- There are many different positions to vote for (mayors, school
-  board trustees, local councillors...)
-- Candidates do not run in parties
-- There are often many more candidates running for a position than
-  there would be running for MP or MPP
-- There are no party leaders
-- News about municipal elections is more scattered and difficult to
-  fine (which is the problem this website is trying to solve!)
 
 </div>

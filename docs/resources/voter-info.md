@@ -19,7 +19,7 @@ layout: page
 <div class="main">
 ## Overview
 
-#### What is this all about?
+### What is this all about?
 
 On October 26nd, 2026, are the Ontario municipal elections, including here in Waterloo
 Region. Representatives for three areas of government will be elected:
@@ -36,7 +36,7 @@ Guide](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-counc
 There is an easier to understand summary [published by
 settlement.org](https://settlement.org/ontario/immigration-citizenship/canadian-government/voting/a-guide-to-voting-in-your-municipal-election/).
 
-#### Why should I vote in municipal elections?
+### Why should I vote in municipal elections?
 
 Your municipal government is responsible for many of the services
 that directly impact your daily life. We've put together a
@@ -64,9 +64,36 @@ The Region of Waterloo has also created [a series of
 videos](https://www.youtube.com/playlist?list=PLRVDwi_WScLn5k-iSrXjSRAM14iA5Ltgc)
 in which local voters explain their reasons to vote.
 
+
+### What makes municipal elections so overwhelming?
+
+In provincial and federal elections, you effectively have to make **one
+decision**: how to cast one vote in one local riding. You can do this by
+selecting the party leader you like, or the party you like, or maybe
+the local candidate you like best. The parties publish policy
+statements and there is lots of provincial and national news coverage. 
+
+Muncipal elections are more complicated, because you have to make **more
+decisions**: 
+
+- There are many different positions to vote for (mayors, school
+  board trustees, local councillors...)
+- Candidates do not run in parties
+- There are often many more candidates running for a position than
+  there would be running for MP or MPP
+- There are no party leaders
+- Municipal issues usually make the news less than provincial and
+  national issues
+- News about municipal elections is more scattered and difficult to
+  find (which is the problem this website is trying to solve!)
+
+Although municipal elections are more complicated than federal and
+provincial ones, they are manageable if you break them down step by
+step.
+
 ## Voter Eligibility
 
-#### Am I permitted to vote?
+### Am I permitted to vote?
 
 You may vote if you are a Canadian citizen who resides in Waterloo
 Region, owns property here, or has a spouse who owns property here.
@@ -78,7 +105,7 @@ one municipal election.
 
 [NEED LINK TO THE EXCEPTIONS]
 
-#### How do I register to vote?
+### How do I register to vote?
 
 Elections Ontario maintains an
 online tool for checking your voter registration at
@@ -88,12 +115,12 @@ You can also update your voter information at that site.
 For more information about how to vote, see the [Registering on the
 Voters' List](amend-voters-list) page.
 
-#### I voted provincially. Am I registered to vote?
+### I voted provincially. Am I registered to vote?
 
 Elections Ontario maintains the voter list for both the Provincial and Municipal elections, 
 so it is possible you are already registered to vote based on your registration for the Provincial election. You can check on the voter registration website <https://vreg.registertovoteon.ca/en/home> to see what municipality you may be registered to vote in already.
 
-#### I am a student. Do I get to vote?
+### I am a student. Do I get to vote?
 
 Yes. Depending on where your home address is, you may be eligible to
 vote twice! See the Ontario [2022 Voters'
@@ -101,7 +128,7 @@ Guide](https://www.ontario.ca/document/2022-voters-guide-ontario-municipal-counc
 for more information.
 
 
-#### I am homeless or have no fixed address. Do I get to vote?
+### I am homeless or have no fixed address. Do I get to vote?
 
 Yes. Your voting address is considered to be the place where you ate
 or slept most frequently during the last five weeks.
@@ -109,9 +136,9 @@ or slept most frequently during the last five weeks.
 
 ## About Voting
 
-#### How do I vote? May I vote using the Internet?
+### How do I vote? May I vote using the Internet?
 
-This depends on the area municipality in which you live. Different
+This depends on the township or city in which you live. Different
 municipalities have different procedures. For the 2022 election, CBC
 Kitchener-Waterloo has [published a comprehensive
 guide](https://www.cbc.ca/news/canada/kitchener-waterloo/waterloo-region-fall-municipal-election-need-to-know-vote-1.6589958).
@@ -139,10 +166,10 @@ Below is a summary and links to official municipality information:
   Internet and phone voting from **TBD**
 
 
-#### Do I need a voter card to vote? Do I need identification?
+### Do I need a voter card to vote? Do I need identification?
 
-If your area municipality allows voting in person then you do not need
-a voter card. If your area municipality allows only Internet and
+If your township or city allows voting in person then you do not need
+a voter card. If your township or city allows only Internet and
 telephone voting then you will need a PIN, which is ordinarily mailed
 to you.
 
@@ -157,7 +184,7 @@ identity. See the [voters' and
 identification](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-council-and-school-board-elections/voters-list-and)
 section of the 2026 Voters' Guide for more information.
 
-#### There are a lot of positions to vote for! Do I have to vote for all of them?
+### There are a lot of positions to vote for! Do I have to vote for all of them?
 
 No. You may refrain from voting for some positions if you wish; your
 vote will count for the positions you did vote for.
@@ -166,13 +193,13 @@ Similarly, if a position elects more than one representative (for
 example, there are four Kitchener Regional Council representatives)
 then you are not obligated to cast four votes for that position.
 
-#### What are all the different positions for? What do these people do?
+### What are all the different positions for? What do these people do?
 
 See our [Municipal Government Overview](./municipal-structure) for an
 explanation of the different positions and their responsibilities.
 
 
-#### Why are there four different school boards listed? Which do I vote for?
+### Why are there four different school boards listed? Which do I vote for?
 
 Everybody who is eligible to vote is assigned to a school board. By
 default this is the English public school board (WRDSB). 
@@ -180,7 +207,7 @@ default this is the English public school board (WRDSB).
 For more information, see our page containing [information about
 school board elections](/resources/school-boards-info).
 
-#### How do I follow what is going on during the election?
+### How do I follow what is going on during the election?
 
 Local media provides lots of election coverage. Here are a few hubs:
 - [CBC KW: Waterloo Region
@@ -197,7 +224,7 @@ On Twitter you can track the
 [#wrvotes](https://twitter.com/hashtag/wrvotes) and
 [#wrpoli](https://twitter.com/hashtag/wrpoli) hashtags.
 
-#### What parties are running in this election?
+### What parties are running in this election?
 
 Unlike provincial or federal politics, municipal candidates in our
 municipality do not run under party banners.
@@ -208,7 +235,7 @@ means that candidates must be evaluated on their individual merits.
 
 ## Getting More Involved
 
-#### How high is voter turnout in municipal elections?
+### How high is voter turnout in municipal elections?
 
 Voter turnout tends to be significantly lower than for provincial or
 federal elections. For the 2018 election, the Region of Waterloo [published
@@ -233,7 +260,7 @@ provincial elections, but still were much higher than municipal ones.
 
 [NEED TO UPDATE WITH 2022 RESULTS]
 
-#### I want to organize an all-candidates meeting. What do I do?
+### I want to organize an all-candidates meeting. What do I do?
 
 If there are not enough all-candidates meetings for the positions that
 interest you (spoiler: there probably aren't) then you can organize
@@ -254,7 +281,7 @@ Once you have started organizing your meeting, be sure to let us know
 about it so we can publish it on this website!
 
 
-#### What other groups are working on election education?
+### What other groups are working on election education?
 
 Bob Jonkman posts a candidate listing on his [poliblog
 site](https://poliblog.jonkman.ca/Poliblog-Elections/2022-10-24-Municipal-Election/).
@@ -283,7 +310,7 @@ advocacy group for progressive causes, but did hold one information
 meeting for potential candidates.
 
 
-#### I don't trust your candidate listings. Where can I find the real ones?
+### I don't trust your candidate listings. Where can I find the real ones?
 
 Official candidate listing pages are listed on <https://wrvotes.com> .
 For convenience, here they are again:
