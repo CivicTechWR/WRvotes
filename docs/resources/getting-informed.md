@@ -240,7 +240,7 @@ questions:
   much will the solutions cost? Who will be hurt and who will benefit?
 
 
-## Why do you recommend debates and all-candidates Meetings?
+## Why do you recommend debates and all-candidates meetings?
 
 On this website we frequently recommend people watch debates and
 all-candidates meetings? Why?
