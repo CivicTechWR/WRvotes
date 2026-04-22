@@ -628,6 +628,8 @@ p.bigtext {
   .candidate-card {
     border: 1px solid $dark;
     margin: 0.5em;
+    position: relative;
+    overflow: hidden;
 
     .title {
       background-color: $dark;
@@ -792,6 +794,23 @@ p.bigtext {
           }
         }
       }
+    }
+
+    .withdrawn-stamp {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-18deg);
+      padding: 0.1em 0.7em;
+      border: 3px solid currentColor;
+      color: rgba(203, 8, 24, 0.86);
+      background: rgba(255, 255, 255, 0.6);
+      font-size: 1em;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      z-index: 1;
     }
   }
 }
