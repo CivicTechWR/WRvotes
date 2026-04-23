@@ -3,13 +3,17 @@
 where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
 
 {% assign position_title = race-info["ShortLocalDesc"] %}
+{% assign is_withdrawn = include.winner["Withdrawn"] == "Y" %}
 
 <div class="grid-item">
-    <div class="candidate-card">
+    <div class="candidate-card{% if is_withdrawn %} withdrawn{% endif %}">
+        {% if is_withdrawn %}
+            <div class="withdrawn-stamp" aria-hidden="true">Withdrawn</div>
+        {% endif %}
         {% if include.heading and include.heading == "yes" %}
-        <div class="title">
-            {{ position_title }}
-        </div>
+            <div class="title">
+                {{ position_title }}
+            </div>
         {% endif %}
         <div class="card-content">
             <div class="identity">
