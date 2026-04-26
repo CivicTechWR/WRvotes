@@ -392,12 +392,22 @@ table.candidate-worksheet {
 
 div.footer {
   font-size: smaller;
+
+  .sharing { 
+    /* undo target icon */
+    a[target="_blank"]::after { 
+      content: '';
+      margin-left: 0;
+    } 
+  }
+
 }
 
 p.sharing a {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
+
 
 #footer_wrap {
   background: $dark;
