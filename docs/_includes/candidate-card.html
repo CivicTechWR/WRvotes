@@ -8,7 +8,7 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
 <div class="grid-item">
     <div class="candidate-card{% if is_withdrawn %} withdrawn{% endif %}">
         {% if is_withdrawn %}
-            <div class="withdrawn-stamp" aria-hidden="true">Withdrawn</div>
+            <div class="withdrawn-stamp">Candidate withdrawn</div>
         {% endif %}
         {% if include.heading and include.heading == "yes" %}
             <div class="title">
