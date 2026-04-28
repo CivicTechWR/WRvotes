@@ -388,6 +388,20 @@ table.candidate-worksheet {
   }
 }
 
+
+/* ------------ HIDE/SHOW IF NO JS -------- */
+
+/* https://www.amityweb.co.uk/blog/flash-of-jquery-hidden-content-before-js-is-called-to-hide-it
+ */
+.js-enabled .show-no-js { 
+  display: none;
+} 
+
+/* Why would AOS turn this off? Undo it. */
+.no-js [data-aos] { 
+  pointer-events: auto;
+}
+
 /* ------------ FOOTER STYLING ----------- */
 
 div.footer {
@@ -412,7 +426,6 @@ p.sharing a {
 #footer_wrap {
   background: $dark;
   color: $light;
-  position: absolute;
   bottom: 0;
 
   footer.inner {
@@ -1278,7 +1291,7 @@ body {
     }
 
     a {
-      color: $light;
+      color: $light !important;
       font-weight: bold;
     }
 
@@ -1564,7 +1577,8 @@ body {
 
   #header_wrap,
   #main-menu,
-  #footer_wrap {
+  #footer_wrap,
+  #worksheet-no-js-warning {
     display: none;
   }
 
@@ -1590,10 +1604,6 @@ body {
     }
 
     font-size: 0.7em;
-  }
-
-  #worksheet-no-js-warning {
-    display: none;
   }
 
   table.candidate-worksheet {

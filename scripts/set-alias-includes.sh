@@ -23,7 +23,9 @@ usage() {
 
   echo Copy template-file for each alias in the alias-file to the
   echo CURRENT folder.
+  echo ""
 
+  echo 'for i in `/bin/ls *.html | grep -v "Ward"`; do echo $i; rm $i; done'
 }
 
 die() { 
