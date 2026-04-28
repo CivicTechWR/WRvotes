@@ -28,6 +28,14 @@ use-leaflet: true
       </p>
     </div>
 
+    <div id="map-no-js-warning" class="show-no-js aside-box blue"> 
+    You
+    appear to have JavaScript disabled. This means you will not be
+    able to use the interactive map to find your township or city
+    ward. Instead, you can use the <a href="/by-ward/">text
+    listing</a>.  
+    </div>
+
     <div class="content" data-aos="fade-up">
      <p style="font-size: smaller">
      (Note that although the address lookup is
