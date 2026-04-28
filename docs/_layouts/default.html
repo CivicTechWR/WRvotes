@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}" 
-  class="{%- if page.pad-scrolling -%}pad-scrolling{%- endif -%}">
+<html lang="{{ site.lang | default: "en-US" }}" class="no-js">
 
   <head>
     <meta charset='utf-8'>
@@ -46,7 +45,12 @@
     {%- endif -%}
   {%- endif -%}
   </head>
-
+  <script type="text/javascript">
+    var h = document.querySelector('html');
+    console.log("h is " + h);
+    h.classList.add('js-enabled');
+    h.classList.remove('no-js');
+  </script>
   <body>
 
     <!-- HEADER -->
@@ -104,7 +108,9 @@
     </script>
 
     <script src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
+    {%- if page.hide-listings -%}
+      <script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
+    {%- endif -%}
     <script src="{{ site.baseurl }}/assets/js/accordion.js"></script>
     <script src="{{ site.baseurl }}/assets/js/candidate-card.js"></script>
   </body>

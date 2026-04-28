@@ -388,6 +388,15 @@ table.candidate-worksheet {
   }
 }
 
+
+/* ------------ HIDE/SHOW IF NO JS -------- */
+
+/* https://www.amityweb.co.uk/blog/flash-of-jquery-hidden-content-before-js-is-called-to-hide-it
+ */
+.js-enabled .show-no-js { 
+  display: none;
+} 
+
 /* ------------ FOOTER STYLING ----------- */
 
 div.footer {
@@ -1564,7 +1573,8 @@ body {
 
   #header_wrap,
   #main-menu,
-  #footer_wrap {
+  #footer_wrap,
+  #worksheet-no-js-warning {
     display: none;
   }
 
@@ -1590,10 +1600,6 @@ body {
     }
 
     font-size: 0.7em;
-  }
-
-  #worksheet-no-js-warning {
-    display: none;
   }
 
   table.candidate-worksheet {
