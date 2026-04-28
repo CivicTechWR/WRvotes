@@ -397,6 +397,11 @@ table.candidate-worksheet {
   display: none;
 } 
 
+/* Why would AOS turn this off? Undo it. */
+.no-js [data-aos] { 
+  pointer-events: auto;
+}
+
 /* ------------ FOOTER STYLING ----------- */
 
 div.footer {
@@ -421,7 +426,6 @@ p.sharing a {
 #footer_wrap {
   background: $dark;
   color: $light;
-  position: absolute;
   bottom: 0;
 
   footer.inner {

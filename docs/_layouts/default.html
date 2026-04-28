@@ -47,7 +47,6 @@
   </head>
   <script type="text/javascript">
     var h = document.querySelector('html');
-    console.log("h is " + h);
     h.classList.add('js-enabled');
     h.classList.remove('no-js');
   </script>
@@ -98,13 +97,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-
-    <script>
-      (function() {
-        var footerHeight = document.getElementById('footer_wrap').getBoundingClientRect().height;
-        document.getElementsByTagName("body")[0].style.paddingBottom = footerHeight + 'px';
-      }())
     </script>
 
     <script src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>

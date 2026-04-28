@@ -37,6 +37,17 @@ $(document).ready(function () {
   function add_toggle_button() {
     var target = $(this).attr("id");
     var classes = $(this).attr("class").split(/\s+/);
+    // Convert js-hidden to hidden
+    const hidden_loc = classes.indexOf("js-hidden");
+    if (hidden_loc > -1) { 
+      classes.splice(hidden_loc, 1);
+      classes.push("hidden");  
+
+      $(this).addClass("hidden");
+      $(this).removeClass("js-hidden");
+    } 
+
+
     var toggle_button_cls = "toggle-button";
 
     var show_more_text = "Show More";
