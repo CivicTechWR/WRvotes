@@ -71,8 +71,7 @@ If you provide a larger or uncropped photo then we can assist in
 cropping and shrinking it down.
 
 
-(These guidelines are adapted from the [candidate submission
-policies](https://docs.google.com/document/d/1HHNGglM7NyPo2GSshK0ER1-1MfkCkNp6pYkSB5-8vqo/edit?tab=t.0)
+(These guidelines are adapted from the [Content Inclusion Policy](https://docs.google.com/document/d/1HHNGglM7NyPo2GSshK0ER1-1MfkCkNp6pYkSB5-8vqo/edit?tab=t.0)
 from the [Know Your Vote TO](https://www.knowyourvote.to/) project in
 Toronto.)
 
