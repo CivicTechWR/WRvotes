@@ -1,6 +1,7 @@
 ---
 title: Information for Voters
 layout: page
+readable-widths: true
 ---
 
 # Information for Voters
