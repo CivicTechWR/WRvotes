@@ -9,8 +9,8 @@
 source $1/bin/activate
 # Yikes.
 cd $2
-python3 get-csv.py --configfile $3
-python3 update-google-calendar.py --configfile $4
+python3 gdocs-get-csv.py --configfile $3
+#python3 update-google-calendar.py --configfile $4
 
 
 # Sample crontab entry
