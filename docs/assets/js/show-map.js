@@ -1,7 +1,17 @@
+---
+layout: none
+---
+
+
 window.WRVotesInitMap = async function(baseUrl) {
   var geojsonLayer = null;
   var mapRoot = document.getElementById("map");
-  var searchRoot = document.getElementById("map-searchbar");
+
+
+  {% if site.enable-map-search-nominatim %}
+      var searchRoot = document.getElementById("map-searchbar");
+      searchRoot.hidden = false;
+  {% endif %}
 
   function getPopupText(feature) {
     return feature.properties["Name"] + ": "
@@ -26,7 +36,34 @@ window.WRVotesInitMap = async function(baseUrl) {
     });
   }
 
-  searchRoot.hidden = false;
+  function clickSearchLocation(e) {
+    // console.log(e.latlng);
+    var foundLayers = leafletPip.pointInLayer(e.latlng, geojsonLayer);
+
+    foundLayers.forEach(function(layer) {
+      layer.fire("click", {
+        latlng: e.latlng,
+      });
+    });
+  }
+
+  function photonClick(e) { 
+    this.map.setView([e.geometry.coordinates[1], e.geometry.coordinates[0]], 16);
+    maybe_latlong = L.latLng(
+      [e["geometry"]["coordinates"][1],
+       e["geometry"]["coordinates"][0]
+       ]);
+    var foundLayers =
+    leafletPip.pointInLayer(e["geometry"]["coordinates"], geojsonLayer);
+
+    foundLayers.forEach(function(layer) {
+      layer.fire("click", {
+        latlng: maybe_latlong,
+      });
+    });
+  } 
+
+
   mapRoot.hidden = false;
   mapRoot.setAttribute("role", "region");
   mapRoot.setAttribute("aria-label", "Interactive map of Waterloo Region wards");
@@ -36,7 +73,13 @@ window.WRVotesInitMap = async function(baseUrl) {
     zoom: 10,
     center: new L.latLng([43.45850, -80.51511]),
     scrollWheelZoom: false,
+    zoomControl: false,
   });
+
+  var zoomControl = L.control.zoom({
+    position: 'topright',
+  });
+  zoomControl.addTo(map);
 
   document.getElementById("map").setAttribute("role", "region");
   document.getElementById("map").setAttribute(
@@ -56,37 +99,51 @@ window.WRVotesInitMap = async function(baseUrl) {
 
   geojsonLayer = geojson;
 
-  var searchControl = new L.Control.Search({
-    url: "https://nominatim.openstreetmap.org/search?format=json&countrycodes=ca&viewbox=-80.7907,43.2281,-80.0834,43.6032&bounded=1&q={s}",
-    jsonpParam: "json_callback",
-    propertyLoc: ["lat", "lon"],
-    propertyName: "display_name",
-    marker: false,
-    autoCollapse: false,
-    collapsed: false,
-    initial: true,
-    autoType: false,
-    delayType: 100,
-    container: "map-searchbar",
-    zoom: 15,
-    firstTipSubmit: true,
-    textPlaceholder: "Search by address",
-    minLength: 3,
-  });
-
-  searchControl.on("search:locationfound", function(e) {
-    var foundLayers = leafletPip.pointInLayer(e.latlng, geojsonLayer);
-
-    foundLayers.forEach(function(layer) {
-      layer.fire("click", {
-        latlng: e.latlng,
+  {% if site.enable-map-search-nominatim %}
+      var searchControl = new L.Control.Search({
+        url: "https://nominatim.openstreetmap.org/search?format=json&countrycodes=ca&viewbox=-80.7907,43.2281,-80.0834,43.6032&bounded=1&q={s}",
+        jsonpParam: "json_callback",
+        propertyLoc: ["lat", "lon"],
+        propertyName: "display_name",
+        marker: false,
+        autoCollapse: false,
+        collapsed: false,
+        initial: true,
+        autoType: false,
+        delayType: 100,
+        container: "map-searchbar",
+        zoom: 15,
+        firstTipSubmit: true,
+        textPlaceholder: "Search by address",
+        minLength: 3,
       });
-    });
-  });
+      searchControl.on('search:locationfound', clickSearchLocation);
+  {% endif %}
+
+
+  {% if site.enable-map-search-photon %}
+      var searchPhotonControl = new L.control.photon({ 
+        url: "https://photon.komoot.io/api/?",
+        placeholder: "Search by address",
+        minChar: 3,
+        includePosition: true,
+        bbox: [-80.7907,43.2281,-80.0834,43.6032],
+        lang: "en",
+        onSelected: photonClick,
+        position: 'topleft',
+      });
+  {% endif %}
+
 
   map.addLayer(baseLayer);
   map.addLayer(geojson);
-  map.addControl(searchControl);
+  {% if site.enable-map-search-nominatim %}
+      map.addControl(searchControl);
+  {% endif %}
+
+  {% if site.enable-map-search-photon %}
+      map.addControl(searchPhotonControl);
+  {% endif %}
 
   var searchInput = document.querySelector("#map-searchbar input");
   if (searchInput) {

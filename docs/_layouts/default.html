@@ -17,10 +17,18 @@
     {% if page.use-leaflet %}
       <link rel="stylesheet" type="text/css" media="screen"
         href="{{ site.baseurl }}/assets/css/leaflet.css">
-      <link rel="stylesheet" type="text/css" media="screen"
-        href="{{ site.baseurl }}/assets/css/leaflet-search.min.css">
-      <link rel="stylesheet" type="text/css" media="screen"
-        href="{{ site.baseurl }}/assets/css/leaflet-search.mobile.min.css">
+
+      {% if site.enable-map-search-nominatim %}
+          <link rel="stylesheet" type="text/css" media="screen"
+            href="{{ site.baseurl }}/assets/css/leaflet-search.min.css">
+          <link rel="stylesheet" type="text/css" media="screen"
+            href="{{ site.baseurl }}/assets/css/leaflet-search.mobile.min.css">
+      {% endif %}
+
+      {% if site.enable-map-search-photon %}
+          <link rel="stylesheet" type="text/css" media="screen"
+            href="{{ site.baseurl }}/assets/css/leaflet.photon.css">
+      {% endif %}
     {% endif %}
 
   {% seo title=false %}

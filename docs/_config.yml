@@ -21,6 +21,11 @@ defaults:
 # For Youtube and other video embeds
 embed-media: true
 
+# Enable map searchbars. Generally one should be enabled 
+# and one should be disabled.
+enable-map-search-nominatim: false
+enable-map-search-photon: true 
+
 empty-array: []
 
 google_calendar_id: gnjujonnivepneq5mikitis6ms@group.calendar.google.com

@@ -1,3 +1,7 @@
+---
+layout: none
+---
+
 document.addEventListener("DOMContentLoaded", function() {
   var loader = document.querySelector(".map-loader[data-baseurl]");
   var status = document.getElementById("map-loader-status");
@@ -31,9 +35,19 @@ document.addEventListener("DOMContentLoaded", function() {
     status.textContent = "Loading the ward map and search tools.";
 
     try {
+      // TODO: Split this based on whether we want photon or nominatim
+
       await loadScript(baseUrl + "/assets/js/leaflet.js");
-      await loadScript(baseUrl + "/assets/js/leaflet-search.min.js");
       await loadScript("https://unpkg.com/leaflet-pip@1.1.0/leaflet-pip.js");
+
+      {% if site.enable-map-search-nominatim %}
+          await loadScript(baseUrl + "/assets/js/leaflet-search.min.js");
+      {% endif %}
+
+      {% if site.enable-map-search-photon %}
+          await loadScript(baseUrl + "/assets/js/photon/leaflet.photon.js");
+      {% endif %}
+
       await loadScript(baseUrl + "/assets/js/show-map.js");
       await window.WRVotesInitMap(baseUrl);
       loader.hidden = true;
