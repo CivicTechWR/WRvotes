@@ -37,7 +37,6 @@ window.WRVotesInitMap = async function(baseUrl) {
   }
 
   function clickSearchLocation(e) {
-    // console.log(e.latlng);
     var foundLayers = leafletPip.pointInLayer(e.latlng, geojsonLayer);
 
     foundLayers.forEach(function(layer) {
@@ -52,8 +51,7 @@ window.WRVotesInitMap = async function(baseUrl) {
     var maybe_latlong = L.latLng(
       [e["geometry"]["coordinates"][1],
        e["geometry"]["coordinates"][0]
-       ]);
-    var foundLayers =
+       ]); var foundLayers =
     leafletPip.pointInLayer(e["geometry"]["coordinates"], geojsonLayer);
 
     foundLayers.forEach(function(layer) {
@@ -71,7 +69,7 @@ window.WRVotesInitMap = async function(baseUrl) {
   var attrib = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
   var map = new L.Map("map", {
     zoom: 10,
-    center: new L.latLng([43.45850, -80.51511]),
+    center: new L.latLng([{{ site.map.center[1] }}, {{ site.map.center[0] }}]),
     scrollWheelZoom: false,
     zoomControl: false,
   });
@@ -99,9 +97,12 @@ window.WRVotesInitMap = async function(baseUrl) {
 
   geojsonLayer = geojson;
 
+  {% assign bboxarray = site.map.bbox | join: ',' %}
+
   {% if site.enable-map-search-nominatim %}
       var searchControl = new L.Control.Search({
-        url: "https://nominatim.openstreetmap.org/search?format=json&countrycodes=ca&viewbox=-80.7907,43.2281,-80.0834,43.6032&bounded=1&q={s}",
+        url:
+        "https://nominatim.openstreetmap.org/search?format=json&countrycodes=ca&viewbox={{ bboxarray }}&bounded=1&q={s}",
         jsonpParam: "json_callback",
         propertyLoc: ["lat", "lon"],
         propertyName: "display_name",
@@ -127,7 +128,7 @@ window.WRVotesInitMap = async function(baseUrl) {
         placeholder: "Search by address",
         minChar: 3,
         includePosition: true,
-        bbox: [-80.7907,43.2281,-80.0834,43.6032],
+        bbox: [{{ bboxarray }}],
         lang: "en",
         onSelected: photonClick,
         position: 'topleft',

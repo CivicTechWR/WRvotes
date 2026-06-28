@@ -26,6 +26,19 @@ embed-media: true
 enable-map-search-nominatim: false
 enable-map-search-photon: true 
 
+# Used for centering the map in show-map.js
+map:
+  # Use longitude, latitude as order even though this is backwards
+  center:
+    - -80.51511
+    - 43.45850
+  bbox:
+    - -80.7907
+    - 43.2281
+    - -80.0834
+    - 43.6032
+
+
 empty-array: []
 
 google_calendar_id: gnjujonnivepneq5mikitis6ms@group.calendar.google.com
