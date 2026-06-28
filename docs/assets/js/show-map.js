@@ -49,7 +49,7 @@ window.WRVotesInitMap = async function(baseUrl) {
 
   function photonClick(e) { 
     this.map.setView([e.geometry.coordinates[1], e.geometry.coordinates[0]], 16);
-    maybe_latlong = L.latLng(
+    var maybe_latlong = L.latLng(
       [e["geometry"]["coordinates"][1],
        e["geometry"]["coordinates"][0]
        ]);
@@ -139,16 +139,17 @@ window.WRVotesInitMap = async function(baseUrl) {
   map.addLayer(geojson);
   {% if site.enable-map-search-nominatim %}
       map.addControl(searchControl);
+
+      var searchInput = document.querySelector("#map-searchbar input");
+      if (searchInput) {
+          searchInput.setAttribute("aria-label", "Search by address to find your ward");
+          searchInput.setAttribute("autocomplete", "street-address");
+      }
   {% endif %}
 
   {% if site.enable-map-search-photon %}
       map.addControl(searchPhotonControl);
   {% endif %}
 
-  var searchInput = document.querySelector("#map-searchbar input");
-  if (searchInput) {
-      searchInput.setAttribute("aria-label", "Search by address to find your ward");
-      searchInput.setAttribute("autocomplete", "street-address");
-  }
 };
 
