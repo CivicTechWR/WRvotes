@@ -87,26 +87,27 @@ include:
 - Housing
 - Child Care
 - Seniors' Services
-- Transportation (Roads, Signals, Grand River Transit & ION)
-- Libraries in the townships
+- Transportation (Regional Roads, Signals, Grand River Transit & ION)
+- Library operations in the townships
 - Wastewater Treatment
-- Water Disribution
+- Water Supply
 - The Waterloo Region Airport
 
 #### City/Township Responsibilities
 
 Some of the prominent roles played by the cities and townships include:
 
-- Fire services (in the cities)
-- Libraries in the cities
+- Fire services
+- Libraries in the cities, library facilities in the townships
 - Most parks & recreation services
 - Parking
 - Building Inspections and Permits
 - Animal Control
-- Roads & Sidewalks
+- Local Roads & Sidewalks
 - Wastewater Collection
+- Water Distribution
 - Tax collection 
-- Planning (this used to be a regional responsibility, but the
+- Planning (this used to be a shared responsibility, but the
   provincial government changed this in the Bill 185, the 2024
   [Cutting Red Tape to Build More Homes
   Act](https://www.ola.org/en/legislative-business/bills/parliament-43/session-1/bill-185)
@@ -114,13 +115,15 @@ Some of the prominent roles played by the cities and townships include:
 
 #### Shared responsibilities
 
-Several responsibilities are shared across the two levels of
+Several responsibilities are shared across levels of
 government. Some of these include: 
 
 - Road maintenance (many major roads -- the ones with numbers -- are
   regional, and smaller roads are the responsibility of cities and
   townships).
-- Ambulance services
+- Ambulance services (shared with region and the province)
+- Libraries in the townships (townships own the buildings, the Region
+  operates library services)
 
 
 ### Is the Regional Chair like the Premier or the Prime Minister of Waterloo Region?
