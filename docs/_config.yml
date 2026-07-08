@@ -21,6 +21,25 @@ defaults:
 # For Youtube and other video embeds
 embed-media: true
 
+# Enable map searchbars. Generally one should be enabled 
+# and one should be disabled.
+enable-map-search-nominatim: false
+enable-map-search-photon: true 
+
+# Used for centering the map in show-map.js
+map:
+  # Use latitude,longitude as order for center. bbox seems to want a
+  # different standard.
+  center:
+    - 43.45850
+    - -80.51511
+  bbox:
+    - -80.7907
+    - 43.2281
+    - -80.0834
+    - 43.6032
+
+
 empty-array: []
 
 google_calendar_id: gnjujonnivepneq5mikitis6ms@group.calendar.google.com

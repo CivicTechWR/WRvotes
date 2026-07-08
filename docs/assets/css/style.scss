@@ -659,6 +659,15 @@ p.bigtext {
   margin: 0;
 }
 
+.photon-input { 
+  font-size: 1.5em;
+}
+
+.photon-input:focus { 
+  width: 25em;
+  max-width: 90% !important;
+}
+
 /* ------ RESULTS PAGE ------ */
 
 .candidate-list-grid {

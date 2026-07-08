@@ -35,10 +35,12 @@ use-leaflet: true
          Loading the interactive ward map.
        </p>
      </div>
+     {% if site.enable-map-search-nominatim %}
      <div id="map-searchbar"></div>
+     {% endif %}
      <div id="map"></div>
-     <p><strong>Note:</strong> The map loads more slowly than the rest
-     of the page, so be patient, or use the <a href="/by-ward/">ward listing</a>.</p>
+     <p><strong>Note:</strong> If the map is loading slowly or does
+     not load, please use the <a href="/by-ward/">text ward listings</a>.</p>
     </div>
   </article>
 </section>
