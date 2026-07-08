@@ -69,7 +69,7 @@ window.WRVotesInitMap = async function(baseUrl) {
   var attrib = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
   var map = new L.Map("map", {
     zoom: 10,
-    center: new L.latLng([{{ site.map.center[1] }}, {{ site.map.center[0] }}]),
+    center: new L.latLng([{{ site.map.center | join: ',' }}]),
     scrollWheelZoom: false,
     zoomControl: false,
   });

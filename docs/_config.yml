@@ -28,10 +28,11 @@ enable-map-search-photon: true
 
 # Used for centering the map in show-map.js
 map:
-  # Use longitude, latitude as order even though this is backwards
+  # Use latitude,longitude as order for center. bbox seems to want a
+  # different standard.
   center:
-    - -80.51511
     - 43.45850
+    - -80.51511
   bbox:
     - -80.7907
     - 43.2281
