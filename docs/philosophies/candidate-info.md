@@ -1,25 +1,45 @@
 ---
 title: Information for Candidates
-layout: page
-readable-widths: true
+layout: page-toc
 ---
 
 # Information for Candidates
-{:.no_toc}
-
-{::options parse_block_html="true" /}
-<div class="flex gutters">
-
-<div class="aside">
-<aside class="aside-box" data-aos="fade-left">
-* table of contents
-{:toc}
-</aside>
-</div>
-
-<div class="main">
 
 ## Interacting with waterlooregionvotes.org
+
+### Candidate entries on the site
+
+Waterloo Region Votes aims attempts to collect information about every
+candidate running for a position in Waterloo Region this municipal
+election. 
+
+We pre-populate an entry for every candidate using official candidate
+lists published by municipal clerks. We supplement this list with
+online research to find social media profiles. 
+
+#### Verifying your entry
+
+If you are a candidate, we will contact you to review and verify your
+information. We are also requesting a profile photo to include with
+their information. 
+
+#### How we will reach out
+
+We hope to begin contacting candidates soon after the registration
+deadline of August 24, 2026. We will contact candidates using
+information on the official candidate lists: emails, phone calls, or
+postal mail, in that order of preference. 
+
+Given our volunteer capacity, we will attempt to reach each candidate
+up to three times by the end of September. 
+
+#### If we do not hear back
+
+We will publish entries for all candidates, whether or not they
+respond to our outreach. We do not remove candidates from the site for
+not responding, and not responding has no bearing on how candidates
+are otherwise presented. 
+
 
 ### Candidate profile photo guidelines
 
@@ -37,7 +57,7 @@ crop/resize them as necessary. You can grant us this permission in
 your email. 
 
 Candidates can submit photos to us by emailing us an appropriate PNG
-or JPEG file, or send us a link to a photo we may copy and use on our
+or JPEG file, or sending us a link to a photo we may copy and use on our
 website. 
 
 
@@ -86,7 +106,3 @@ we listed in your candidate card.
 
 
 
-
-</div>
-
-</div>

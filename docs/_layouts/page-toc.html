@@ -1,0 +1,22 @@
+---
+layout: page 
+readable-widths: true
+---
+
+<div class="flex gutters">
+
+<div class="aside">
+<aside class="aside-box" data-aos="fade-left">
+{% include toc.html html=content sanitize=true %}
+</aside>
+</div>
+
+<div class="main">
+
+<div class="page-div" data-aos="fade-up" markdown="block">
+  {{ content }}
+</div>
+
+</div>
+
+</div>

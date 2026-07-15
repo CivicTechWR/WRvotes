@@ -38,28 +38,24 @@ Events
 Media
 -----
 
-The field `ComparisonOrOpinion` has been renamed to `Category`. All
-media pieces should have one of the following classifications:
+The field `ComparisonOrOpinion` has been renamed to `Category`. 
+
+We are now public with how we classify media items. See
+`docs/philosophies/media-inclusion.md` for these criteria. 
+
+All media pieces should have one of the following classifications:
 
 - `AllCandidates` for debate and all-candidate meeting recordings
 
-- `QuestionnairesEndorsements` for questionnaires and endorsements.
-  Questionnaires are standard questions for all candidates, answered
-  by the candidates in their own words. Endorsements are made by
-  advocacy groups. (Technically any endorsements should be listed as
-  third party advertisers, but we have not abided by this.) 
-  There is some fuzziness between endorsements and opinions. 
+- `Questionnaires` for questionnaires. We no longer include
+  endorsement lists in this category. 
 
 - `CandidateProfiles` for publications that include one or more
-  candidates for a race. Often these are published by established
-  organizations.  The distinction between these and
-  `Questionnaires` is that the reporters paraphrase reponses from the
-  candidates, or the pieces do not consist of structured questions.
+  candidates for a race. 
 
 - `Opinion` for opinion pieces, which can include group discussions
-  like Reddit threads, or newspaper articles by opinion columnists.
-  (Some opinion columnists also write `SingleProfile` pieces on
-  individual candidates.)
+  like Reddit threads, newspaper articles by opinion columnists, and
+  endorsement lists. 
 
 - `Article` for everything else, which includes news items produced by
   established news media. These are usually about election-related
@@ -69,9 +65,9 @@ media pieces should have one of the following classifications:
   election turned out. 
 
 - News items that are about election issues (safe injection sites,
-  intensification) but not about the election directly are probably
-  not fair game. We should find a way to publish these somewhere,
-  maybe. There is a page `issues-overview.md` which publishes A FEW
+  intensification) but not about the election directly usually do not
+  belong here. 
+  There is a page `issues-overview.md` which publishes A FEW
   (2-4) links per issue. Tag these articles with `Issue` as the
   PositionIDList and one of the tags in `issues-categories.csv` as the
   Category.

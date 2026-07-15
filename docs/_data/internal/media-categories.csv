@@ -1,7 +1,7 @@
 CategoryName,CategoryDesc,Limit
 AllCandidates,Debates and All Candidate Meeting Recordings,5
-QuestionnairesEndorsements,Questionnaires and Endorsements,2
+Questionnaires,Questionnaires,2
 Article,Articles and News Items,3
-Opinion,Opinions and Group Discussions,4
+Opinion,"Opinions, Endorsements, and Group Discussions",4
 CandidateProfiles,Candidate Profiles,3
 ElectionResults,Election Results,3
