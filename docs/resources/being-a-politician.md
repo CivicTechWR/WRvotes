@@ -1,11 +1,10 @@
 ---
 title: Being a Politician
-layout: page
+layout: page-toc 
 ---
 
 Being a Politician
-----------------------
-{:.no_toc}
+==================
 
 Sometimes it is not clear what our elected representatives do or why
 they are necessary. This page offers some insight into these
@@ -17,18 +16,19 @@ had put together in the past:
 
 - School trustee Ted Martin [on being a
   trustee](./ted-martin-on-being-a-trustee)
-- Kitchener ward Councillor Sarah Marsh [podcast
-  interview](https://soundcloud.com/theglobalshuffle/city-councillor-sarah-marsh-learnings-in-the-nonpartisan-level-of-govt)
+- Former Kitchener City Councillor Sarah Marsh on [Learnings in the
+  Nonpartisan Level of
+  Government](https://tunein.com/podcasts/Podcasts/The-Global-Shuffle-p826135/?topicId=125299196)
 
-There is also a good [Civics 101
-recording](https://soundcloud.com/user-216833142/communitech-summer-school-civics-101) put on by 
-Communitech that featured past Regional Chair Ken Seiling. 
+
+The [Old Grey Mayors](https://oldgreymayors.carrd.co/), hosted by
+former mayor and regional councillor Rob Deutschmann, is an excellent
+archive of politician interviews. 
+
 
 If you have other accounts, or if you are/were a sitting politician
 and would like to add your experiences, contact us.
 
-* table of contents
-{:toc}
 
 ### Why do politicians run for office?
 
