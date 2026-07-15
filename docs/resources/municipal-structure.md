@@ -51,13 +51,6 @@ In 2026, the provincial [Better Regional Governance Act,
 converted the Regional Chair from an elected position to one appointed
 by the provincial Municipal Affairs and Housing. 
 
-For a deeper exploration of this municipal structure, listen to this
-recording of the
-[Communitech Summer School: Civics
-101](https://soundcloud.com/user-216833142/communitech-summer-school-civics-101)
-panel discussion with outgoing chair Ken Seiling and political science
-professor Robert J. Williams.
-
 
 ### What do the different levels of government do?
 
