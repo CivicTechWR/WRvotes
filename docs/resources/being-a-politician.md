@@ -21,7 +21,7 @@ had put together in the past:
   Government](https://tunein.com/podcasts/Podcasts/The-Global-Shuffle-p826135/?topicId=125299196)
 
 
-The [Old Grey Mayors](https://oldgreymayors.carrd.co/), hosted by
+The [Old Grey Mayors](https://oldgreymayors.carrd.co/) podcast, hosted by
 former mayor and regional councillor Rob Deutschmann, is an excellent
 archive of politician interviews. 
 
