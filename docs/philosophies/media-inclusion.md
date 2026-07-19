@@ -28,7 +28,7 @@ Here are our rules of thumb:
 
 ## Issues Pages
 
-We publish a brief [Issues](/issues-overview) page. This page links to
+We now have a brief [Issues](/issues-overview) page. This page links to
 background articles for some of the issues that have come up during
 the election campaign. The purpose of this page is to help voters get
 a broad overview of the issue, and to dig deeper if they so choose. 
@@ -47,7 +47,7 @@ consider the following:
 - Does the organization produce original, independent journalism, as opposed
   to reposts, opinion pieces, or promotional pieces?
 
-- Is the organization accountable to someone other than itself? does it have a
+- Is the organization accountable to someone other than itself? Does it have a
   named editorial structure? Does it have a corrections policy? Is it
   part of a recognised press body?
 
@@ -107,6 +107,14 @@ Some of the opinions we are more interested in include:
 - Selected opinion pieces published in established media.
 - Selected blog posts that add context to election issues.
 
+We will tend to link to opinions that add something new to the
+conversation. When groups use grassroots/astroturf campaign to flood
+the internet with many identical opinions we will not link to all of
+them. 
+
+Linking to an opinion (or a set of opinions) **does not reflect how
+popular it is among voters overall**. Some groups are noisy online but
+do not hold widespread views.
 
 ### Endorsement Lists 
 
@@ -124,18 +132,13 @@ not permitted, because those groups have not registered as
 Advertisers](https://www.ontario.ca/document/2026-third-party-advertisers-guide)
 with the municipalities where they are making endorsements. 
 
-The rules around third-party advertisers are usually not
-straightforward. In general, if money is used to produce and/or
-promote the endorsement list, it falls under third-party advertiser
-rules. Having said that, we do not consider allowed vs
-disallowed endorsements when deciding whether to link to a particular
-endorsement list. 
+We consider most endorsement lists to be like any other opinion, and
+will consider linking to them. 
 
 Voters who feel that a particular endorsement violates third-party
-advertiser rules should contact the Municipal Clerk for the
-municipality where candidates are being endorsed. The Region of
-Waterloo publishes contact information for all Municipal Clerk on its
-[Municipal Elections Compliance Audit
+advertiser rules should contact the relevant Municipal Clerk(s).  The
+Region of Waterloo publishes contact information for all Municipal
+Clerk on its [Municipal Elections Compliance Audit
 Committee](https://www.waterloo.ca/council-and-committees/municipal-elections/)
 page. 
 
