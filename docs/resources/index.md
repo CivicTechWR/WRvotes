@@ -28,5 +28,8 @@ Voters](./voter-info) page.
     + [Housing](./housing): About municipal roles in housing.
     + [Infrastructure](./infrastructure): About water, roads, and waste
       management.
+- [Information for Organizations](./organization-info): If you are a
+  member of an organization or advocacy group, this page includes
+  resources and advice for you. 
 - [What is it like to be a Politician?](./being-a-politician):
   Perspectives from the other side.
