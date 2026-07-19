@@ -87,7 +87,7 @@ questionnaires or news coverage? Contact us at
 {{ contact_email}} and submit it to
 the site. Crowdsourcing resources helps improve the site for everyone.
 
-We currently could really use help with:
+We currently could use help with:
 
 - Monitoring local news media
 - Monitoring Facebook, Instagram, Tiktok and X for election-related news and events
