@@ -71,7 +71,8 @@ sure of how to go about it, here are some guides:
   Comprehensive. Not every group will want to follow every
   recommendation, but it is worth being alert to the issues this guide
   raises.
-- [Organizing an All Candidates Meeting] published by the Canadian
+- [Organizing an All Candidates
+  Meeting](https://cfuwontcouncil.org/wp-content/uploads/2017/11/Organizing-an-All-Candidates-Meeting-2017-1.pdf) published by the Canadian
   Federation of University Women Ontario Council: A concise outline of
   what to organize.
 
