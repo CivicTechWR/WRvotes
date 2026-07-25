@@ -81,9 +81,9 @@ where:"Name",ward-info.WardMunicipality | first %}
         <table class="candidate-worksheet">
           <tr>
             <th class="cell"><i class="fa-solid fa-heart" aria-label="Is
-                    candidate favourited?">?</th>
+                    candidate favourited?"></i>?</th>
             <th class="cell">Candidate Name</th>
-            <th class="cell">My Notes</th>
+            <th class="cell">My Notes &nbsp;<i class="fa-regular fa-note-sticky"></i>  </th>
           </tr>
           {% for n in sorted-nominees %}
           <tr>
@@ -96,20 +96,20 @@ where:"Name",ward-info.WardMunicipality | first %}
             </td>
             <td class="cell">
               {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
-              <s>
-                {%- endif -%}
+                <s>
+              {%- endif -%}
                 {{ n["Given_Names"] }} {{ n["Last_Name"] }}
+              {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
+                </s>
+              {%- endif -%}
             </td>
-            {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
-            </s>
-            {%- endif -%}
             <td class="cell">
               <div class="auto-resize-textarea" contenteditable="true" role="textbox" 
                 aria-multiline="true"
-                aria-label="Notes for {{ n[" Given_Names"] }} {{ n["Last_Name"] }}"
+                aria-label="Notes for {{ n["Given_Names"] }} {{ n["Last_Name"] }}"
                 data-candidate-id="{{ n.UniqueID }}">
                 {%- if n.Withdrawn and n.Withdrawn == 'Y' %}
-                Candidate withdrawn.
+                  Candidate withdrawn.
                 {%- endif -%}
               </div>
             </td>
