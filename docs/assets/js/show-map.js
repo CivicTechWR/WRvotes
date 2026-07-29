@@ -125,7 +125,7 @@ window.WRVotesInitMap = async function(baseUrl) {
   {% if site.enable-map-search-photon %}
       var searchPhotonControl = new L.control.photon({ 
         url: "https://photon.komoot.io/api/?",
-        placeholder: "Search by address",
+        placeholder: "Type your address",
         minChar: 3,
         includePosition: true,
         bbox: [{{ bboxarray }}],

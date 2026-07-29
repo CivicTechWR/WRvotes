@@ -80,8 +80,9 @@ Some functionality (such as favouriting candidates) uses JavaScript
 your selections when you close your browser. This information is never
 transmitted over the Internet. 
 
-You can clear the notes and favourites you have made by clearing your
-local storage. [CLICK HERE?]
+You can clear the notes and favourites you have made by 
+<a href="#" class="clear-saved-candidate-data">clearing your local
+storage</a>.
 
 
 Third-Party Services
@@ -95,3 +96,8 @@ As far as we know we have no access to these logs.
 We use OpenStreetMap for the front page map. They also [collect logs
 and some user
 data](https://wiki.osmfoundation.org/wiki/Privacy_Policy#Data_we_receive_automatically).
+
+For searching in the map, we use the Photon library [hosted
+here](https://photon.komoot.io/). It is run by a German company named
+[Komoot](https://www.komoot.com/). Find their privacy policy here:
+<https://www.komoot.com/privacy> . 

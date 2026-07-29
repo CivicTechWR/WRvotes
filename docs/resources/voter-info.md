@@ -24,6 +24,11 @@ Guide](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-counc
 There is an easier to understand summary [published by
 settlement.org](https://settlement.org/ontario/immigration-citizenship/canadian-government/voting/a-guide-to-voting-in-your-municipal-election/){:target="_blank"}.
 
+### Help! I am overwhelmed! Where do I start?
+
+Read the [Getting Informed](getting-informed) page for step-by-step
+guidance on how to research candidates to vote for. 
+
 ### Why should I vote in municipal elections?
 
 Your municipal government is responsible for many of the services
