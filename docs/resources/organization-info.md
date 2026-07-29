@@ -43,7 +43,7 @@ All-Candidate Meeting Recordings
 --------------------------------
 
 If you are organizing an all-candidates meeting or debate, please try
-to *record the meeting** and upload it to a multimedia sharing
+to **record the meeting** and upload it to a multimedia sharing
 platform like YouTube or archive.org . Then send us a link to the
 meeting recording.
 

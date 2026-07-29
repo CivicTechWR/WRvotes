@@ -21,7 +21,9 @@ The first step is to figure out which candidates you are eligible to
 vote for. 
 
 1. Make sure you are eligible to vote, and that you are on the voters
-list. See the [Registering on the Voters' List](amend-voters-list) page  for guidance on this. 
+list. See the [How Do I Register to
+Vote?](voter-info#how-do-i-register-to-vote) section in the Voter Info
+page.
 
 2. Find out what **township or city ward** you are eligible to vote in. You can
 use the map on the [front page](/) of this site for that, or check with
