@@ -1,23 +1,13 @@
 ---
 title: Information About School Board Elections
-layout: page
+layout: page-toc
 ---
 
 Information About School Board Elections
-----------------------------------------
+========================================
 
-{::options parse_block_html="true" /}
-<div class="flex gutters">
 
-<div class="aside">
-<aside class="aside-box" data-aos="fade-left">
-* table of contents
-{:toc}
-</aside>
-</div>
-
-<div class="main">
-### What is even happening?
+## What is even happening?
 
 In addition to voting for members of municipal government, you may
 cast ballots for **school board trustees**.
@@ -26,7 +16,7 @@ Depending on which school board you are registered for, you might
 elect anywhere from one to four representatives for your school board.
 
 
-### There are so many school board positions listed! What do I vote for?
+## There are so many school board positions listed! What do I vote for?
 
 There are four school boards in Waterloo Region:
 
@@ -44,7 +34,7 @@ nominees in your school board.
 In our candidate listings we list nominees for all four school boards.
 Pay attention only to the school board that applies to you.
 
-### What do school board trustees do?
+## What do school board trustees do?
 
 School board trustees are elected representatives from the community.
 They set
@@ -52,31 +42,42 @@ policies for their school board, provide oversight of the
 board's Director of Education, and serve as community advocates for
 education.
 
-For a more in-depth explanation, see the [What Do Trustees
-Do?](http://elections.ontarioschooltrustees.org/WhatDoTrusteesDo/SchoolBoardTrustees.aspx)
-page on ontarioschooltrustees.org
+Nokhra Dakroub from the Peel District School Board trustee describes
+some of the responsibilities (and non-responsibilities) in that school
+board [in this CBC
+article](http://www.cbc.ca/news/canada/school-elected-trustees-role-9.7116535){:target="_blank"}.
 
 For a more personal take on the duties of a school board trustee, see
 the transcript of [this speech by Ted
 Martin](./ted-martin-on-being-a-trustee).
 
 Trustee Scott McMillan [identifies the role of school
-trustees](https://www.kitchenertoday.com/kitchenervotes/get-to-know-the-responsibilities-of-a-school-board-trustee-before-you-vote-1064230) as
+trustees](https://web.archive.org/web/20211015193643/https://www.kitchenertoday.com/kitchenervotes/get-to-know-the-responsibilities-of-a-school-board-trustee-before-you-vote-1064230){:target="_blank"} as
 managing the budget and facilitating communication between parents
 and school staff. (Note that this article is from 2018, and so lists
 all-candidates meetings for that election, not this one.)
 
-### I don't have kids in school. May I still vote for school trustees?
+## I don't have kids in school. May I still vote for school trustees?
 
 Yes. All eligible electors may vote for trustees in their assigned
 school board.
 
 
-### May I change what school board I vote for?
+## May I change what school board I vote for?
 
 If you are eligible to support a different school board, you may do so
-by changing your information with the Muncipal Property Assesment Corporation (MPAC).
-Update your school support designation by June 1, 2026, on MPAC's website <https://www.mpac.ca/en/MakingChangesUpdates/SchoolSupportDesignation> for the October 2026 municipal and school board elections.
+by changing your information with the Muncipal Property Assesment
+Corporation (MPAC).  
 
-</div>
-</div>
+After June 1, 2026, you must update your school board designation in
+two steps. First, visit the MPAC [School Suppport
+Designation](https://www.mpac.ca/en/MakingChangesUpdates/SchoolSupportDesignation){:target="_blank"}
+page and register your school support (as a homeowner or tenant)
+there. Next, you must take the receipt of that registration and share
+it with your municipality. Visit the link above for full instructions.
+
+
+
+
+
+

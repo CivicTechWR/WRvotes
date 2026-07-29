@@ -1,6 +1,7 @@
 ---
 title: "Ted Martin: On Being a Trustee"
 layout: page
+readable-widths: true
 ---
 
 Ted Martin: On Being a Trustee

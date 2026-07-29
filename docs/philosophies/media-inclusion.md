@@ -5,7 +5,7 @@ layout: page-toc
 
 # Information About Media Sources
 
-As part of our mission to help voters make informed decisions in the
+To help voters make informed decisions in the
 municipal election, we link to many external resources. This page
 describes our approach to including media on the site.
 
@@ -13,10 +13,7 @@ Here are our rules of thumb:
 
 - We link to media items that help voters decide who they support. Our
   goal is to do this in a nonpartisan way. 
-- We focus on candidate races. We include short summaries of issues
-  that have come up during the election on the
-  [Issues](/issues-overview) page, but this is not the primary focus
-  of the site. 
+- We focus on candidate races. 
 - We reserve the right to refrain from linking to any particular
   media.
 - We are a manually-curated site, and only link to things we know
@@ -28,10 +25,10 @@ Here are our rules of thumb:
 
 ## Issues Pages
 
-We now have a brief [Issues](/issues-overview) page. This page links to
-background articles for some of the issues that have come up during
-the election campaign. The purpose of this page is to help voters get
-a broad overview of the issue, and to dig deeper if they so choose. 
+We now have a brief [Issues](/issues-overview) page. 
+The purpose of this page is to help voters get
+a broad overview of a few widely-discussed issues in the campaign, so 
+voters can dig deeper if they choose.
 
 On this page we attempt to link only to official pages (such as those
 published on municipal websites) and to established news sites. 
@@ -40,7 +37,7 @@ published on municipal websites) and to established news sites.
 ## "Established" News Sites 
 
 The question of whether a news site is "established" arises on the
-[Issues](/issues-overview) page and for media items we classify as
+Issues page and for media items we classify as
 "Articles". When considering what media outlets to treat as news, we
 consider the following:
 
@@ -76,10 +73,11 @@ considered an all-candidates meeting are:
 
 We link to most questionnaires. We define a questionnaire as a survey
 that is posed to all candidates for a particular position, where all
-the questions are the same and the responses are published verbatim.
+the questions are the same and the candidate responses are published
+(preferably verbatim).
 
 Many questionnaires are published by advocacy groups, but established
-news media sometimes publish surveys as well.
+news media sometimes publish them as well.
 
 ## Opinion Pieces
 
@@ -90,18 +88,18 @@ item.
 There are good reasons to consider opinion pieces skeptically. They
 are often authored by pseudo-anonymous authors. Sometimes they are
 written by people associated with a particular candidate's campaign,
-or somebody who claims to be neutral but has a strong partisan agenda.
-Sometimes they contain statements that are hyperbolic or incorrect.
-Despite this, they can be useful to illustrate conversations and
-controversies that come up during the campaign. 
+or people who claim to be neutral but have strong partisan agendas.
+Sometimes opinion pieces contain statements that are hyperbolic or
+incorrect.  Despite this, they can be useful to illustrate
+conversations and controversies that come up during the campaign. 
 
 Linking to an opinion piece is not an endorsement of its views. We
 sometimes link to opinion pieces that disagree with each other. 
 
 Some of the opinions we are more interested in include:
 
-- Discussions on forums like Reddit, which present a range of
-  views.
+- Discussions on forums like Reddit that offer a variety of
+  perspectives.
 - Endorsements of candidates by advocacy groups (but see the caveats
   below).
 - Selected opinion pieces published in established media.
@@ -112,19 +110,16 @@ conversation. When groups use grassroots/astroturf campaign to flood
 the internet with many identical opinions we will not link to all of
 them. 
 
-Linking to an opinion (or a set of opinions) **does not reflect how
-popular it is among voters overall**. Some groups are noisy online but
-do not hold widespread views.
+Linking to an opinion (or a set of opinions) does not reflect how
+popular it is among voters overall. Some groups are noisy online but
+do not hold widespread views. 
 
 ### Endorsement Lists 
 
-Endorsement lists are a specific type of opinion. Usually they are
+Endorsement lists recommend specific candidates to vote for. Usually they are
 offered by advocacy groups pursuing a particular agenda. 
-
-We link to most (although not necessarily all) endorsement lists
-published by advocacy groups. Sometimes an "advocacy group" consists
-of a single individual, and we do not go out of our way to distinguish
-these. 
+We consider endorsement lists to be like any other opinion, and
+will consider linking to them. 
 
 In principle, many endorsement lists published by organizations are
 not permitted, because those groups have not registered as
@@ -132,14 +127,11 @@ not permitted, because those groups have not registered as
 Advertisers](https://www.ontario.ca/document/2026-third-party-advertisers-guide)
 with the municipalities where they are making endorsements. 
 
-We consider most endorsement lists to be like any other opinion, and
-will consider linking to them. 
-
 Voters who feel that a particular endorsement violates third-party
 advertiser rules should contact the relevant Municipal Clerk(s).  The
 Region of Waterloo publishes contact information for all Municipal
-Clerk on its [Municipal Elections Compliance Audit
-Committee](https://www.waterloo.ca/council-and-committees/municipal-elections/)
+Clerks on its [Municipal Elections Compliance Audit
+Committee](https://www.regionofwaterloo.ca/government-and-council/elections/compliance-audit-committee/)
 page. 
 
 ## Candidate Profiles
@@ -179,4 +171,25 @@ Here are some background articles about this decision:
 + [Are Hyperlinks
 Defamatory?](https://www.mcgill.ca/definetheline/media-and-news-updates/legal-line/are-hyperlinks-defamatory) 
 
+## Paywalled sites
 
+Some of the media sources we link (most notably the Waterloo Region
+Record) keep their content behind paywalls or registration walls, and
+ask you to subscribe to read to their content. 
+
+Local journalism is important, and if you can afford it we recommend
+subscribing to some local news sources. However, it is also possible
+to read the articles on some of these paywalled sites using the
+[PressReader](https://www.pressreader.com) website.
+
+All four local library
+systems (Cambridge Public Library, Kitchener Public Library, Waterloo
+Public Library and the Region of Waterloo Public Library) subscribe to
+this service. In order to use their subscription you will need a
+library card and your library PIN (which you can set at the library).
+
+Click the link above and at the login screen choose
+**Libraries & Groups**. Then find your local library system. Log in
+with your library card number and your PIN. You can then find
+paywalled articles we have linked by publication, publication date and
+title. [CHECK]

@@ -1,24 +1,13 @@
 ---
 title: Municipal Govermment Overview
-layout: page
+layout: page-toc
 ---
 
 Municipal Government Overview
-----------------------
+=============================
 
-{::options parse_block_html="true" /}
-<div class="flex gutters">
 
-<div class="aside">
-<aside class="aside-box" data-aos="fade-left">
-* table of contents
-{:toc}
-</aside>
-</div>
-
-<div class="main">
-
-### How is the Region of Waterloo structured?
+## How is the Region of Waterloo structured?
 
 The Region of Waterloo is a **two-tier** government. The upper tier is
 the **Region of Waterloo**. The lower tier consists of seven
@@ -29,7 +18,7 @@ Woolwich).
 The elected body that governs the upper-tier Region of Waterloo is
 called **Regional Council**. Its membership consists of:
 
-- The **Regional Chair**
+- The (provincially appointed) **Regional Chair**
 - The mayors of the seven area municipalities
 - Extra **Regional Councillors** allocated to each city. Kitchener
   gets four regional councillors. Cambridge and Waterloo get two each.
@@ -46,28 +35,25 @@ following positions municipally:
 - (for residents of Kitchener, Waterloo, and Cambridge) regional
   councillors
 
-In 2026, the provincial [Better Regional Governance Act,
-2026](https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-100)
-converted the Regional Chair from an elected position to one appointed
-by the provincial Municipal Affairs and Housing. 
 
-
-### What do the different levels of government do?
+## What do the different levels of government do?
 
 The regional and area municipal governments each have their own
 jurdisdictions, and understanding who does what can get complicated.
+
 For example, some roads (usually major and arterial roads) are
 designated as regional roads and are controlled by the Region, while
-other roads are controlled by the municipality. You can find a [list
-of regional
-roads](https://www.regionofwaterloo.ca/en/living-here/resources/Roads-and-Traffic/Regional-Roads-By-Name.pdf)
-on the Region of Waterloo website. 
+other roads are controlled by the municipality. 
+The Region links to a [list of regional
+roads](https://www.regionofwaterloo.ca/media/5elhytke/docs_admin-5249991-v1-regional_roads_by_name_revised_october_2025.pdf){:target="_blank"}
+from their [Roads and
+Transportation](https://www.regionofwaterloo.ca/programs-and-services/roads-and-transportation/){:target="_blank"}
+page. 
 
-Also on the Region of Waterloo website you can find a more detailed list of
-[who does
-what](https://www.regionofwaterloo.ca/en/regional-government/regional-responsibilities---who-does-what-in-government.aspx).
+The City of Kitchener publishes a breakdown of [regional vs city
+reponsibilities](https://www.kitchener.ca/council-and-city-administration/city-and-regional-services/){:target="_blank"}.
 
-#### Regional Responsibilities
+### Regional Responsibilities
 
 Some of the more prominent roles the Region is responsible for
 include:
@@ -86,7 +72,7 @@ include:
 - Water Supply
 - The Waterloo Region Airport
 
-#### City/Township Responsibilities
+### City/Township Responsibilities
 
 Some of the prominent roles played by the cities and townships include:
 
@@ -103,10 +89,9 @@ Some of the prominent roles played by the cities and townships include:
 - Planning (this used to be a shared responsibility, but the
   provincial government changed this in the Bill 185, the 2024
   [Cutting Red Tape to Build More Homes
-  Act](https://www.ola.org/en/legislative-business/bills/parliament-43/session-1/bill-185)
-  )
+  Act](https://www.ola.org/en/legislative-business/bills/parliament-43/session-1/bill-185){:target="_blank"})
 
-#### Shared responsibilities
+### Shared responsibilities
 
 Several responsibilities are shared across levels of
 government. Some of these include: 
@@ -129,10 +114,10 @@ Chair will have "strong chair" powers that allow them to override
 majority votes by Regional Council in some circumstances. For more
 information, see the following article: [Ontario announces plan to
 slash Niagara Region, Simcoe County councils and add 'strong chair'
-powers](https://www.cbc.ca/news/canada/hamilton/ontario-governance-structure-announcement-9.7151746)
+powers](https://www.cbc.ca/news/canada/hamilton/ontario-governance-structure-announcement-9.7151746){:target="_blank"}
 
 
-### What about health care? Immigration?
+## What about health care? Immigration?
 
 In addition to municipal governments there is also a provincial
 (Ontario) government and a federal (Canadian) government. They have
@@ -142,14 +127,14 @@ Here are some websites that break down the responsibilities across
 levels of government: 
 
 - [Which government is responsible: municipal, provincial or
-  federal?](https://opencouncil.ca/level-of-government-responsibilities/)
+  federal?](https://opencouncil.ca/level-of-government-responsibilities/){:target="_blank"}
   published by the Open Council website.
 - [The constitutional distribution of legislative
-  powers](https://www.canada.ca/en/intergovernmental-affairs/services/federation/distribution-legislative-powers.html)
+  powers](https://www.canada.ca/en/intergovernmental-affairs/services/federation/distribution-legislative-powers.html){:target="_blank"}
   published by the Government of Canada?
 
 You will not be voting for provincial or federal representatives in
 this election. 
 
-</div></div>
+
 

@@ -1,28 +1,11 @@
 ---
 title: Budgets and Taxation in Waterloo Region
-layout: page
+layout: page-toc
 ---
 
-## Budgets and Taxation in Waterloo Region
+# Budgets and Taxation in Waterloo Region
 
-{::options parse_block_html="true" /}
-
-<div class="flex gutters">
-
-<div class="aside">
-<aside class="aside-box" data-aos="fade-left">
-* table of contents
-{:toc}
-</aside>
-</div>
-
-<div class="main" data-issue-tag="budgets">
-
-<div>
-
-<div id="issue-backgrounder" class="issue-backgrounder background togglable">
-
-### Where does my property tax go?
+## Where does my property tax go?
 
 Your property tax bill funds both the Region of Waterloo and your area
 municipality (the city or township you live in). In Waterloo Region, your
@@ -38,7 +21,7 @@ Roughly speaking:
 - **Education portion**: This is set by the province, but collected locally and
   distributed to school boards
 
-### How is the property tax rate set?
+## How is the property tax rate set?
 
 Each year, both the Region and your area municipality go through a **budget
 process**. Staff propose a budget; council debates it, may make changes, and
@@ -50,7 +33,7 @@ The rate is expressed as an amount per $1,000 of **assessed value** —
 the value assigned to your property by the **Municipal Property Assessment
 Corporation (MPAC)**, a provincial agency.
 
-### What is the difference between the operating and capital budgets?
+## What is the difference between the operating and capital budgets?
 
 **Operating budget**: Covers the day-to-day costs of running the municipality
 — salaries, fuel, supplies, contracted services, and the like. This is funded
@@ -61,7 +44,7 @@ parking charges).
 replacing water mains, building new facilities. Capital spending is often
 funded through borrowing, government grants, or reserve funds built up over time.
 
-### What are reserve funds?
+## What are reserve funds?
 
 Reserve funds are money set aside for future spending. A well-managed
 municipality maintains reserves to:
@@ -74,9 +57,3 @@ Building up reserves requires setting aside money in each operating budget —
 which can feel like a tax increase without a visible immediate benefit.
 Running down reserves to keep taxes low can shift costs to future taxpayers.
 
-</div>
-</div>
-
-
-</div>
-</div>

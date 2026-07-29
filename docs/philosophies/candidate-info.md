@@ -9,26 +9,25 @@ layout: page-toc
 
 ### Candidate entries on the site
 
-Waterloo Region Votes aims attempts to collect information about every
-candidate running for a position in Waterloo Region this municipal
-election. 
+Waterloo Region Votes attempts to collect information about every
+candidate running for a position in Waterloo Region this election.
 
-We pre-populate an entry for every candidate using official candidate
+We populate an entry for every candidate using official candidate
 lists published by municipal clerks. We supplement this list with
 online research to find social media profiles. 
 
 #### Verifying your entry
 
 If you are a candidate, we will contact you to review and verify your
-information. We are also requesting a profile photo to include with
-their information. 
+information. We will also request a profile photo to include with your
+listing.
 
 #### How we will reach out
 
 We hope to begin contacting candidates soon after the registration
 deadline of August 24, 2026. We will contact candidates using
-information on the official candidate lists: emails, phone calls, or
-postal mail, in that order of preference. 
+information on the official candidate lists: emails or phone calls
+in that order of preference. 
 
 Given our volunteer capacity, we will attempt to reach each candidate
 up to three times by the end of September. 
@@ -48,13 +47,12 @@ photo of themselves that will be posted on their candidate listing. We
 request that photos adhere to the guidelines below. We will usually
 reject photos that do not adhere to these guidelines.
 
-Submitting a photo is not mandatory but is probably helpful.
-Candidates cards without photos will display a generic icon. 
+Candidate cards without photos will display a generic icon. 
 
 We store photos on our website's servers, and thus require explicit
 permission from candidates in order to get a copy, store them, and
-crop/resize them as necessary. You can grant us this permission in
-your email. 
+crop/resize them as necessary. We will ask for this permission when we
+contact candidates.
 
 Candidates can submit photos to us by emailing us an appropriate PNG
 or JPEG file, or sending us a link to a photo we may copy and use on our

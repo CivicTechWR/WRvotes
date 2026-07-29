@@ -1,22 +1,8 @@
 ---
 title: Getting Informed
-layout: page
+layout: page-toc
 ---
 
-# Getting Informed 
-{:.no_toc}
-
-{::options parse_block_html="true" /}
-<div class="flex gutters">
-
-<div class="aside">
-<aside class="aside-box" data-aos="fade-left">
-* table of contents
-{:toc}
-</aside>
-</div>
-
-<div class="main">
 
 If you are feeling overwhelmed by this election, you are not alone.
 Fortunately, there are ways to break down the problem and make it more
@@ -51,8 +37,8 @@ school boards.
 
 4. Visit the page on our website corresponding to your township or
 city ward. This will list all the candidates for all positions that we
-know about. In the introductory paragraph there is also a link to a
-**candidate worksheet** you can open and use for taking notes.
+know about. This page also links to a 
+**candidate worksheet** you can use for taking notes.
 
 You can print the worksheet or take notes in your web browser as you
 do your research. 
@@ -104,6 +90,9 @@ This strategy for selecting candidates is intended to narrow down your
 choices quickly, so that you can focus on the candidates that interest
 you the most. In our experience it is fairly effective.
 
+- Before you start, ask some questions **about your values**. What
+  issues are most important to you? What distinguishes a good
+  politician from a bad one? 
 - If there are **debates or all-candidates meetings** scheduled for the
   position in question, attend them or watch recordings.
   [Why?](#why-do-you-recommend-debates-and-all-candidates-meetings) Use
@@ -272,7 +261,9 @@ Having said this, there are some dangers to watch out for:
 
 ## How do I follow what is going on during the election?
 
-[Need to update for 2026. CBC? Record? New Hamburg Independent?
-Cambridge Today?]
+We link to some local media hubs on the [Voter
+Information](voter-info#how-do-i-follow-what-is-going-on-during-the-election)
+page. 
 
-</div>
+
+
