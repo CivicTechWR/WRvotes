@@ -1,28 +1,11 @@
 ---
 title: Transportation in Waterloo Region
-layout: page
+layout: page-toc
 ---
 
-## Transportation in Waterloo Region
+# Transportation in Waterloo Region
 
-{::options parse_block_html="true" /}
-
-<div class="flex gutters">
-
-<div class="aside">
-<aside class="aside-box" data-aos="fade-left">
-* table of contents
-{:toc}
-</aside>
-</div>
-
-<div class="main" data-issue-tag="transportation">
-
-<div>
-
-<div id="issue-backgrounder" class="issue-backgrounder background togglable">
-
-### Who is responsible for transportation in Waterloo Region?
+## Who is responsible for transportation in Waterloo Region?
 
 Transportation is split between the Region and the area municipalities,
 which can make it confusing. As a general rule:
@@ -33,11 +16,16 @@ which can make it confusing. As a general rule:
 - **Regional roads** (major arterials and connectors) are maintained by the
   Region of Waterloo
 
-To identify which road belongs to the Region, see the
-[list of regional roads](https://www.regionofwaterloo.ca/en/living-here/resources/Roads-and-Traffic/Regional-Roads-By-Name.pdf)
-on the Region's website.
+Other organizations manage other transportation options that operate
+in Waterloo Region.
 
-### What does transit have to do with the election?
+- GO Transit is managed by the Government of Ontario. 
+- VIA Rail is a federal crown corporation.
+- Some coach services such as Flixbus are operated by private
+  corporations.
+
+
+## What does transit have to do with the election?
 
 Regional Council and area councils both approve **budgets** that fund transit
 and roads, such as
@@ -48,7 +36,7 @@ and roads, such as
 - Active transportation infrastructure in capital budgets
 - Snow clearing and maintenence
 
-### Is transit in Waterloo Region funded by other tiers of government?
+## Is transit in Waterloo Region funded by other tiers of government?
 
 Provincial and federal governments do contribute to major capital projects —
 the ION, for example, received significant funding from both levels. But
@@ -56,16 +44,10 @@ the ION, for example, received significant funding from both levels. But
 municipal property taxes. This means council decisions directly affect
 service levels.
 
-### What about the other modes of transit?
+## What about the other modes of transit?
 
 Bike paths, sidewalks and multi-use trails are also split between the regional
 government and municipal governments, based on the ownership of the road. One
 of the reasons signage, road layout and quality of other infrastructure can be
 different and sometimes confusing is this dual ownership.
 
-</div>
-</div>
-
-
-</div>
-</div>

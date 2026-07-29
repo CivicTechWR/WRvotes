@@ -60,7 +60,7 @@ councils.
 Serving as an elected official means balancing competing interests,
 and the nature of the job means that politicians cannot please
 everybody. With social media, the [pressure has gotten
-intense](https://www.cbc.ca/news/canada/kitchener-waterloo/waterloo-region-kitchener-cambridge-municipal-election-campaign-1.6559468).
+intense](https://www.cbc.ca/news/canada/kitchener-waterloo/waterloo-region-kitchener-cambridge-municipal-election-campaign-1.6559468){:target="_blank"}.
 
 In addition, elected officials get frustrated when the press
 misrepresents their statements or actions. 
@@ -86,8 +86,9 @@ as-is the Regional Chair. Other positions are not. Many elected
 officials hold other jobs in addition to their offices. 
 
 For context, [according to the New Hamburg
-Independent](https://www.newhamburgindependent.ca/news-story/7767503-wilmot-increases-council-salaries-to-keep-them-the-same) 
-the Mayor of Wilmot earned $28 222, and ward councillors earned $14 112.
+Independent](https://www.newhamburgindependent.ca/news-story/7767503-wilmot-increases-council-salaries-to-keep-them-the-same){:target="_blank"}
+the Mayor of Wilmot earned $28 222, and ward councillors earned $14
+112 in 2017.
 
 ### What do politicians wish voters understood about their jobs?
 

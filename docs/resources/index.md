@@ -14,8 +14,6 @@ Voters](./voter-info) page.
   election, how to vote, and how to get informed.
 - [Getting Informed](./getting-informed): How to quickly and
   effectively research candidates.
-- [Registering on the Voters' List](./amend-voters-list): You need to
-  be on the Voters' List in order to vote.
 - [Information About School Board Elections](./school-boards-info):
   What are trustees? What do they do? Which school board do you vote
   for?
@@ -33,3 +31,10 @@ Voters](./voter-info) page.
   resources and advice for you. 
 - [What is it like to be a Politician?](./being-a-politician):
   Perspectives from the other side.
+
+We also publish some information about our philosophies in running
+this site: 
+
+- [About Us](/about)
+- [Information for Candidates](/philosophies/candidate-info)
+- [Information about Media Sources](/philosophies/media-inclusion)

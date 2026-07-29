@@ -4,6 +4,9 @@ layout: page
 readable-widths: true
 ---
 
+About Us
+========
+
 <div class="standout-box blue full-width no-margin-top">
   <div class="header big-text" data-aos="fade-left">
     Waterloo Region Votes is a nonpartisan initiative to
@@ -14,8 +17,8 @@ readable-widths: true
     In particular, this
     project aims to make it easy for our community:
     <ul>
-      <li>to find out who is running in their geographic area.</li>
-      <li>to learn more about candidates by linking to candidate
+      <li>to find out who is running where they live.</li>
+      <li>to learn more about candidates. We do this by linking to candidate
       websites and social media, upcoming all-candidates meetings and
       events</li>
       <li>to learn more about voting and the election by linking to
@@ -27,12 +30,13 @@ readable-widths: true
 
 
 Over 9000 people used the municipal iteration of the site during the
-2018 election and the project was featured in the [Waterloo Region
-Record](https://www.therecord.com/news-story/8847728-techies-mobilizing-for-this-fall-s-municipal-elections-in-waterloo-region/),
+2018 election, and was featured in the [Waterloo Region
+Record](https://web.archive.org/web/20230206222138/https://www.therecord.com/news-story/8847728-techies-mobilizing-for-this-fall-s-municipal-elections-in-waterloo-region/),
 [CBC
 KW](https://www.cbc.ca/news/canada/kitchener-waterloo/waterloo-region-votes-why-we-dont-vote-1.4867100),
 [CBC News Network](https://www.youtube.com/watch?v=qEiy_tiN41w) and
-[Code for Canada’s 2019 Showcase](https://codefor.ca/showcase-2019/).
+[Code for Canada’s 2019
+Showcase](https://www.youtube.com/watch?v=P6dbSsYuhVM).
 
 ## Who is responsible for this?
 
@@ -90,7 +94,12 @@ the site. Crowdsourcing resources helps improve the site for everyone.
 We currently could use help with:
 
 - Monitoring local news media
-- Monitoring Facebook, Instagram, Tiktok and X for election-related news and events
+- Monitoring social media such as Facebook, Instagram, Tiktok and X for election-related news and events
 - Tracking down candidate information (especially websites)
 - Contacting neighbourhood associations and other local groups
-- Helping with promotion
+- Promoting the site 
+
+You can also initiate your own election resources, such as holding an
+all-candidates meeting or putting out a questionnaire. See the
+[Information for Organizations](/resources/organization-info) page for
+more.

@@ -1,41 +1,28 @@
 ---
 title: Information for Voters
-layout: page
-readable-widths: true
+layout: page-toc
 ---
 
 # Information for Voters
-{:.no_toc}
 
-{::options parse_block_html="true" /}
-<div class="flex gutters">
-
-<div class="aside">
-<aside class="aside-box" data-aos="fade-left">
-* table of contents
-{:toc}
-</aside>
-</div>
-
-<div class="main">
 ## Overview
 
 ### What is this all about?
 
-On October 26nd, 2026, are the Ontario municipal elections, including here in Waterloo
-Region. Representatives for three areas of government will be elected:
+Municipal elections will be held in Ontario on October 26, 2026.
+Voters will elect representatives for three levels of government: 
 
 - Regional government (Regional Councillors)
 - Municipal governments (Mayors and Ward Councillors)
 - School boards (Trustees)
 
 There is an easy to understand voter's guide for the Ontario municipal election 
-published by the province:
-[2026 Voters'
-Guide](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-council-and-school-board-elections).
+published by the province. The link to the guide PDF is here: 
+[Ontario 2026 Voters'
+Guide](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-council-and-school-board-elections){:target="_blank"}.
 
 There is an easier to understand summary [published by
-settlement.org](https://settlement.org/ontario/immigration-citizenship/canadian-government/voting/a-guide-to-voting-in-your-municipal-election/).
+settlement.org](https://settlement.org/ontario/immigration-citizenship/canadian-government/voting/a-guide-to-voting-in-your-municipal-election/){:target="_blank"}.
 
 ### Why should I vote in municipal elections?
 
@@ -61,16 +48,17 @@ Here are some reasons to care about voting in municipal elections:
 - Municipal politics affects your life more directly than many other
   forms of government. 
 
-The Region of Waterloo has also created [a series of
-videos](https://www.youtube.com/playlist?list=PLRVDwi_WScLn5k-iSrXjSRAM14iA5Ltgc)
-in which local voters explain their reasons to vote.
+For the 2018 election, the Region of Waterloo created <a
+href="https://www.youtube.com/playlist?list=PLRVDwi_WScLn5k-iSrXjSRAM14iA5Ltgc"
+target="_blank">a series of videos</a>
+in which local voters explained their reasons to vote.
 
 
 ### What makes municipal elections so overwhelming?
 
 In provincial and federal elections, you effectively have to make **one
 decision**: how to cast one vote in one local riding. You can do this by
-selecting the party leader you like, or the party you like, or maybe
+selecting the party leader you like, or the party you like, or
 the local candidate you like best. The parties publish policy
 statements and there is lots of provincial and national news coverage. 
 
@@ -102,31 +90,59 @@ You must also be on the voter's list.
 
 There are some exceptions to these guidelines that may prohibit you
 from voting. There are also situations where you may vote in more than
-one municipal election.
-
-[NEED LINK TO THE EXCEPTIONS]
+one municipal election. For details, read the province's 2026 Voters'
+Guide [linked above](#what-is-this-all-about).
 
 ### How do I register to vote?
 
-Elections Ontario maintains an
-online tool for checking your voter registration at
-<https://vreg.registertovoteon.ca/en/home>. This is the place to start.
-You can also update your voter information at that site. 
+Elections Ontario maintains an online tool for checking your voter
+registration at <a href="https://vreg.registertovoteon.ca/en/home"
+target="_blank">Register to Vote website</a>. This is
+the place to start.  You can also update your voter information at
+that site.  Alternatively, the website offers a paper application form
+that you can mail in. 
 
-For more information about how to vote, see the [Registering on the
-Voters' List](amend-voters-list) page.
+In order to amend your information on the voters' list you
+will have to provide appropriate [voter
+identification](https://www.ontario.ca/laws/regulation/130304). 
+
+The Register To Vote website also allows you to add yourself to the
+Register of Absentee Voters. If you are 16 or 17 you can add yourself
+to the Register of Future Voters. 
+
+You can use the Register to Vote website until August 12. After this,
+your local municipality (city or township) gets the voter lists, and
+you must update your voter list information there.
+
+If you have registered to vote in time you will likely receive a voter
+card in the mail, but you may vote even if you do not receive this
+card in time.
+
+For further information from the municipalities, refer to their voting information pages:
+- [Cambridge](https://www.cambridge.ca/mayor-city-council-government/elections/voting-in-the-municipal-election/)
+- [Kitchener](https://www.kitchener.ca/council-and-city-administration/election/voter-information/)
+- [North Dumfries](https://www.northdumfries.ca/township-services/municipal-elections/information-for-voters/)
+- [Waterloo](https://www.waterloo.ca/council-and-committees/municipal-elections/vote-in-the-municipal-election)
+- [Wellesley](https://www.wellesley.ca/council-and-administration/election/)
+- [Wilmot](https://www.wilmot.ca/township-office/elections/)
+- [Woolwich](https://www.woolwich.ca/learn-about/election/)
+
 
 ### I voted provincially. Am I registered to vote?
 
-Elections Ontario maintains the voter list for both the Provincial and Municipal elections, 
-so it is possible you are already registered to vote based on your registration for the Provincial election. You can check on the voter registration website <https://vreg.registertovoteon.ca/en/home> to see what municipality you may be registered to vote in already.
+Elections Ontario maintains the voter list for both the Provincial and
+Municipal elections, so it is possible you are already registered to
+vote based on your registration for the Provincial election. You can
+check on the Register to Vote website [linked
+above](#how-do-i-register-to-vote) to check.
+
 
 ### I am a student. Do I get to vote?
 
-Yes. Depending on where your home address is, you may be eligible to
-vote twice! See the Ontario [2022 Voters'
-Guide](https://www.ontario.ca/document/2022-voters-guide-ontario-municipal-council-and-school-board-elections/eligibility-vote)
-for more information.
+Yes. Depending on where your home address is and whether you are
+returning back home after your studies, you may be eligible to
+vote twice! See the province's Voters' Guide [linked
+above](#what-is-this-all-about) for details.
 
 
 ### I am homeless or have no fixed address. Do I get to vote?
@@ -140,31 +156,37 @@ or slept most frequently during the last five weeks.
 ### How do I vote? May I vote using the Internet?
 
 This depends on the township or city in which you live. Different
-municipalities have different procedures. For the 2022 election, CBC
-Kitchener-Waterloo has [published a comprehensive
-guide](https://www.cbc.ca/news/canada/kitchener-waterloo/waterloo-region-fall-municipal-election-need-to-know-vote-1.6589958).
-Below is a summary and links to official municipality information:
+municipalities have different procedures. You can read full details on
+the website for your city or township, linked below.
 
-- [Cambridge](https://www.cambridge.ca/mayor-city-council-government/elections/voting-in-the-municipal-election/)
-  In-person voting **TBD**.
-  Internet voting **TBD**.
-- [Kitchener](https://www.kitchener.ca/council-and-city-administration/election/voter-information/)
-  In-person voting **TBD**.
-- [North Dumfries](https://www.northdumfries.ca/township-services/municipal-elections/information-for-voters/)
-  In-person voting **TBD**.
-  Internet voting **TBD**.
-- [Waterloo](https://www.waterloo.ca/council-and-committees/municipal-elections/vote-in-the-municipal-election)
-  In-person voting **TBD**. You can vote
-  by mail, but must pre-register to do so.
-- [Wellesley](https://www.wellesley.ca/council-and-administration/election/)
-  Internet and phone voting **TBD**. **There was no in-person
-  voting in the 2022 election.**
-- [Wilmot](https://www.wilmot.ca/township-office/elections/)
-  In-person voting **TBD**
-  Internet and phone voting **TBD**
-- [Woolwich](https://www.woolwich.ca/learn-about/election/)
-  In-person voting **TBD**
-  Internet and phone voting from **TBD**
+
+- [Cambridge](https://www.cambridge.ca/mayor-city-council-government/elections/voting-in-the-municipal-election/){:target="_blank"}:
+  In-person and online voting. There is also an at-home voting program
+  people can apply for. Advanced voting are on Sept 26, Oct 6 to Oct
+  10, and Oct 17.
+
+- [Kitchener](https://www.kitchener.ca/council-and-city-administration/election/where-to-vote/){:target="_blank"}:
+  In-person voting only. Advanced voting days are Oct 13 through Oct
+  17 at various locations. 
+
+- [North
+  Dumfries](https://www.northdumfries.ca/township-services/municipal-elections/information-for-voters/){:target="_blank"}:
+  In-person and online voting. Details are to be announced. 
+
+- [Waterloo](https://www.waterloo.ca/council-and-committees/municipal-elections/vote-in-the-municipal-election){:target="_blank"}: 
+  In-person voting only. Advanced voting days are Oct 10 and Oct 16 through
+  Oct 18.
+
+- [Wellesley](https://www.wellesley.ca/council-and-administration/election/){:target="_blank"}:
+  Online and telephone voting early. Voting period from Oct 16 through
+  Oct 26.
+
+- [Wilmot](https://www.wilmot.ca/township-office/elections/){:target="_blank"}:
+  In-person voting on Oct 26, online voting from Oct 16 through Oct 26. 
+
+- [Woolwich](https://www.woolwich.ca/learn-about/election/){:target="_blank"}: 
+  In-person voting on Oct 17, Oct
+  18 and Oct 26. Online voting from Oct 16 through Oct 26.
 
 
 ### Do I need a voter card to vote? Do I need identification?
@@ -177,12 +199,12 @@ to you.
 In general you need to bring identification with you in order to
 vote. The Ministry of Municipal Affairs and Housing publishes a list
 of [acceptable documents for voter
-identification](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-council-and-school-board-elections/acceptable).
+identification](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-council-and-school-board-elections/acceptable){:target="_blank"}.
 
 If you do not have identification you may still vote, but you must be
 registered on the voter's list and you must sign a declaration of your
 identity. See the [voters' and
-identification](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-council-and-school-board-elections/voters-list-and)
+identification](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-council-and-school-board-elections/voters-list-and){:target="_blank"}
 section of the 2026 Voters' Guide for more information.
 
 ### There are a lot of positions to vote for! Do I have to vote for all of them?
@@ -211,19 +233,15 @@ school board elections](/resources/school-boards-info).
 ### How do I follow what is going on during the election?
 
 Local media provides lots of election coverage. Here are a few hubs:
-- [CBC KW: Waterloo Region
-  Votes](https://www.cbc.ca/news/canada/kw/topic/Tag/Waterloo%20Region%20Votes%202022)
-- [Waterloo Region Record Municipal Election News](https://www.therecord.com/news/municipal-election.html)
-- [New Hamburg Independent Municipal Election
-  Hub](https://www.newhamburgindependent.ca/newhamburg-on-news/municipal-election/)
-- [Global News Candidate
-  Profiles](https://globalnews.ca/news/9151237/meet-candidates-cambridge-kitchener-waterloo-council/)
-- [Cambridge Today Municipal Election
-  News](https://www.cambridgetoday.ca/2022-municipal-election-news)
 
-On Twitter you can track the
-[#wrvotes](https://twitter.com/hashtag/wrvotes) and
-[#wrpoli](https://twitter.com/hashtag/wrpoli) hashtags.
+- [Waterloo Region Record Municipal Election
+  News](https://www.therecord.com/news/municipal-elections/){:target="_blank"}
+- [New Hamburg Independent Municipal Election
+  Hub](https://www.newhamburgindependent.ca/newhamburg-on-news/municipal-election/){:target="_blank"}
+- [Cambridge Today Municipal Election
+  News](https://www.cambridgetoday.ca/municipal-election){:target="_blank"}
+
+On social media you can track #wrvotes and #wrpoli hashtags.
 
 ### What parties are running in this election?
 
@@ -233,105 +251,63 @@ municipality do not run under party banners.
 This has the advantage of potentially reducing partisanship, but it
 means that candidates must be evaluated on their individual merits.
 
-
 ## Getting More Involved
 
 ### How high is voter turnout in municipal elections?
 
 Voter turnout tends to be significantly lower than for provincial or
-federal elections. For the 2018 election, the Region of Waterloo [published
-results](https://www.regionofwaterloo.ca/en/regional-government/past-results.aspx)
+federal elections. 
+
+For the 2022 election, the Region of Waterloo [published
+results](https://www.regionofwaterloo.ca/government-and-council/elections/election-results/#VoterTurnout){:target="_blank"}
+indicating that overall turnout was 25.3%, ranging from a low of 18.5%
+in North Dumfries to a high of 40.4% in Wilmot. 
+
+For the 2018 election, the Region of Waterloo [published
+results](https://web.archive.org/web/20210217200433/https://www.regionofwaterloo.ca/en/regional-government/results.aspx){:target="_blank"}
+indicating that the overall turnout was 30.8%, ranging from a low of
+27.1% in Kitchener to a high of 37.8% in Wilmot.
+
+For the 2014 election, the Region of Waterloo [published
+results](https://web.archive.org/web/20190214195616/https://www.regionofwaterloo.ca/en/regional-government/past-results.aspx){:target="_blank"}
 indicating that overall turnout was 31%, ranging from 
 a low of 29.7% in Cambridge to a high of 40.5%
-in Wilmot township. 
+in Wilmot. 
 
-In 2014, they
-[ranged](http://www.cbc.ca/news/canada/kitchener-waterloo/voter-turnout-in-waterloo-region-stagnant-overall-1.2815625) from a low
-of 29.3% in Wellesley township to a high of 40.6% in Wilmot township.
 
 Voter turnout in provincial and federal elections tends to be much
 higher.
-Overall turnout for the 2021
-federal election [was
-62%](https://www.therecord.com/news/waterloo-region/2021/09/22/election-turnout-plunges-in-waterloo-region-and-across-the-nation.html),
-and in the 2022 Ontario provincial election [was
-45%](https://www.therecord.com/news/provincial-election/2022/06/03/most-in-waterloo-region-did-not-vote-with-voter-turnout-hitting-just-45-per-cent.html).
-These turnout numbers were much lower than previous federal and
-provincial elections, but still were much higher than municipal ones.
+Overall turnout for the 2025
+federal election [was 69.5%](https://www.elections.ca/content.aspx?section=med&dir=pre&document=apr2925&lang=e){:target="_blank"}
+and in the 2025 Ontario provincial election [was
+45%](https://results.elections.on.ca/en/graphics-charts){:target="_blank"}.
 
-[NEED TO UPDATE WITH 2022 RESULTS]
+
 
 ### I want to organize an all-candidates meeting. What do I do?
 
-If there are not enough all-candidates meetings for the positions that
-interest you (spoiler: there probably aren't) then you can organize
-your own. This is not difficult, but does take some time and planning.
-
-The City of Toronto had a [guide to ward all-candidates
-meetings](https://web.archive.org/web/20180127004940/https://www.toronto.ca/city-government/accountability-operations-customer-service/get-involved-how-government-works/how-the-city-works/learning-guides/ward-all-candidate-meetings/).
-This was written pre-pandemic, and contains some Toronto-specific
-information, but remains a good guide to the structure of an
-all-candidates meeting.
-
-
-Some of the volunteers on this website also have experience in
-organizing all-candidates meetings, and would be happy to offer
-guidance. Contact us using the email at the bottom of this page.
-
-Once you have started organizing your meeting, be sure to let us know
-about it so we can publish it on this website!
-
+We have advice for organizing all-candidates meetings and candidate
+questionnaires on the [Information for
+Organizations](organization-info) page.
 
 ### What other groups are working on election education?
 
-Bob Jonkman posts a candidate listing on his [poliblog
-site](https://poliblog.jonkman.ca/Poliblog-Elections/2022-10-24-Municipal-Election/).
-We use his data in our candidate listings -- thanks, Bob!
+The Region of Waterloo links to election information for the different
 
+municipalities at <https://wrvotes.com> .
 Melissa Bowman publishes a blog about urban issues and local politics
 at <https://citified.substack.com/> . Although the blog is relatively
 even-handed the blog reflects Bowman's own views.
 
-The Region of Waterloo links to election information for the different
-municipalities at <https://wrvotes.com> .
-
 A group called the [Waterloo Region Women's Municipal Campaign
 School](https://learnhowtorun.com) held workshops on how to run for
 political office. Several election candidates during this election
-credit the campaign school for inspiring them to run for office. They
-have a Twitter account here:
-[@wrwomenrun](https://twitter.com/wrwomenrun).
-
-There is a related initiative called [The Kitchen
-Cabinet](https://thekitchencabinet.ca/) which aims to support women,
-trans and non-binary candidates in the election.
-
-[For a Better Waterloo Region](https://linktr.ee/FABWR) is largely an
-advocacy group for progressive causes, but did hold one information
-meeting for potential candidates.
+credit the campaign school for inspiring them to run for office. 
 
 
 ### I don't trust your candidate listings. Where can I find the real ones?
 
-Official candidate listing pages are listed on <https://wrvotes.com> .
-For convenience, here they are again:
-
-- [Region of
-  Waterloo](https://www.regionofwaterloo.ca/en/regional-government/2022-regional-candidate-listing.aspx)
-- [City of
-  Cambridge](https://www.cambridge.ca/en/learn-about/Elections.aspx)
-- [City of
-  Kitchener](https://www.kitchener.ca/en/council-and-city-administration/find-your-candidates.aspx)
-- [Township of North
-  Dumfries](https://www.northdumfries.ca/en/township-services/list-of-candidates.aspx)
-- [City of
-  Waterloo](https://www.waterloo.ca/en/government/find-election-candidates.aspx)
-- [Township of
-  Wellesley](https://www.wellesley.ca/en/township-services/elections.aspx)
-- [Township of
-  Wilmot](https://www.wilmot.ca/en/township-office/list-of-candidates.aspx)
-- [Township of
-  Woolwich](https://www.woolwich.ca/en/township-services/list-of-candidates.aspx)
+Official candidate listing pages are linked from <https://wrvotes.com> .
 
 </div>
 

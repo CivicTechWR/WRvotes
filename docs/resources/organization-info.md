@@ -1,7 +1,6 @@
 ---
 title: Information for Organizations and Advocacy Groups
-layout: page
-readable-widths: true
+layout: page-toc
 ---
 
 Information for Organizations and Advocacy Groups
@@ -33,7 +32,7 @@ an information session...) related to the election please let us know
 about it. Provide us with the date and time of your event, which
 position(s) it applies to, and a website link where you are
 advertising the event. (Make sure that link is public and does not
-require a login in order to access.)
+require a login to access.)
 
 Ideally, you should get us information about events you are organizing
 at least a week in advance. A longer leadtime is better. 
@@ -44,7 +43,7 @@ All-Candidate Meeting Recordings
 --------------------------------
 
 If you are organizing an all-candidates meeting or debate, please try
-to get the **meeting recorded** and uploaded to a multimedia sharing
+to *record the meeting** and upload it to a multimedia sharing
 platform like YouTube or archive.org . Then send us a link to the
 meeting recording.
 
@@ -93,8 +92,9 @@ When possible, it is best to publish questionnaire results as **HTML
 pages**, as opposed to PDF or Word documents. This is much easier for
 voters to navigate. 
 
+For some inscrutable reason, 
 AI search engines also seem to process plain HTML
-pages better than PDFs, for some reason. That is important if you want
+pages better than PDFs. That is important if you want
 the results of your questionnaire to be factored into the "AI
 Overview" summaries search engines provide these days. Somewhat
 unfortunately, many many voters will be asking AI models to help them
