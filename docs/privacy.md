@@ -81,8 +81,7 @@ your selections when you close your browser. This information is never
 transmitted over the Internet. 
 
 You can clear the notes and favourites you have made by 
-<a href="#" class="clear-saved-candidate-data">clearing your local
-storage</a>.
+<a href="#" class="clear-saved-candidate-data">clicking this link</a>.
 
 
 Third-Party Services
