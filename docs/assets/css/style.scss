@@ -1675,6 +1675,12 @@ body {
     #toc-tabs {
       margin-left: -2%;
       margin-right: -2%;
+
+      
+      // Prevent scrollbars from hiding label text
+      .tab-label { 
+        padding-bottom: 1.25em;
+      }
     }
 
     .main {
