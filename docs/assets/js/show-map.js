@@ -115,7 +115,7 @@ window.WRVotesInitMap = async function(baseUrl) {
         container: "map-searchbar",
         zoom: 15,
         firstTipSubmit: true,
-        textPlaceholder: "Search by address",
+        textPlaceholder: "Type your address",
         minLength: 3,
       });
       searchControl.on('search:locationfound', clickSearchLocation);
