@@ -298,8 +298,13 @@ Organizations](organization-info) page.
 ### What other groups are working on election education?
 
 The Region of Waterloo links to election information for the different
-
 municipalities at <https://wrvotes.com> .
+
+The group [Cambridge
+Elects](https://www.cambridgeelects.ca/){:target="_blank"} is doing a
+fantastic job of covering candidates running in Cambridge. They are
+linking to candidate profiles and running town hall events.
+
 Melissa Bowman publishes a blog about urban issues and local politics
 at <https://citified.substack.com/> . Although the blog is relatively
 even-handed the blog reflects Bowman's own views.
@@ -308,6 +313,11 @@ A group called the [Waterloo Region Women's Municipal Campaign
 School](https://learnhowtorun.com) held workshops on how to run for
 political office. Several election candidates during this election
 credit the campaign school for inspiring them to run for office. 
+
+Bob Jonkman maintains listings of candidates and social media on his
+[2026 Municipal Election
+Poliblog](https://poliblog.jonkman.ca/Poliblog-Elections/2026-10-26-Municipal-Election/){:target="_blank"}
+site. We benefit from his research on our site.
 
 
 ### I don't trust your candidate listings. Where can I find the real ones?
