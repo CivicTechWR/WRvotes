@@ -174,8 +174,8 @@ nav#toc-tabs {
 
       &:not(:last-of-type)::after {
         content: "";
-        flex: 0 0 0.5em;
-        border-bottom: 0.2em solid var(--blue);
+        width: 0.75em;
+        border-bottom: 5px solid var(--blue);
       }
     }
 
@@ -183,19 +183,16 @@ nav#toc-tabs {
       display: none;
     }
 
-    label {
-    }
-
     &::before {
       content: "";
-      flex: 0 0 1em;
-      border-bottom: 0.3em solid var(--blue);
+      width: 0.75em;
+      border-bottom: 5px solid var(--blue);
     }
 
     &::after {
       content: "";
       flex-grow: 1;
-      border-bottom: 0.3em solid var(--blue);
+      border-bottom: 5px solid var(--blue);
     }
   }
 
@@ -220,10 +217,10 @@ nav#toc-tabs {
     user-select: none;
     background: transparentize($blue, 0.95);
     color: black;
-    border-left: 0.2em solid var(--blue);
-    border-top: 0.2em solid var(--blue);
-    border-right: 0.2em solid var(--blue);
-    border-bottom: 0.3em solid var(--blue);
+    border-left: 3px solid var(--blue);
+    border-top: 3px solid var(--blue);
+    border-right: 3px solid var(--blue);
+    border-bottom: 5px solid var(--blue);
     border-radius: 0.7em 0.7em 0px 0px;
     text-align: center;
 
