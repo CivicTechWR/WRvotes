@@ -130,7 +130,7 @@ button.toggle-toc {
 /* ----------- TOC TABS ------------- */
 
 #toc-tabs-container {
-  background: $white;
+  background: $light;
 }
 
 .tab-content {
@@ -159,10 +159,9 @@ nav#toc-tabs {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    gap: 2px;
     min-height: 2em;
     height: auto;
-    scrollbar-color: var(--blue) $white;
+    scrollbar-color: var(--blue) $light;
 
     a {
       display: flex;
@@ -172,6 +171,12 @@ nav#toc-tabs {
       a:hover {
         color: inherit;
       }
+
+      &:not(:last-of-type)::after {
+        content: "";
+        flex: 0 0 0.5em;
+        border-bottom: 0.2em solid var(--blue);
+      }
     }
 
     &.substrip {
@@ -180,10 +185,21 @@ nav#toc-tabs {
 
     label {
     }
+
+    &::before {
+      content: "";
+      flex: 0 0 1em;
+      border-bottom: 0.3em solid var(--blue);
+    }
+
+    &::after {
+      content: "";
+      flex-grow: 1;
+      border-bottom: 0.3em solid var(--blue);
+    }
   }
 
   .substrip {
-    margin-bottom: 2em;
     margin-top: 0.7em;
     height: auto;
 
@@ -202,28 +218,19 @@ nav#toc-tabs {
     cursor: pointer;
     position: relative;
     user-select: none;
-    background: $light;
+    background: transparentize($blue, 0.95);
     color: black;
-    border: 0.2em solid var(--blue);
-    border-radius: 0.7em;
+    border-left: 0.2em solid var(--blue);
+    border-top: 0.2em solid var(--blue);
+    border-right: 0.2em solid var(--blue);
+    border-bottom: 0.3em solid var(--blue);
+    border-radius: 0.7em 0.7em 0px 0px;
     text-align: center;
 
     &:focus-visible {
       outline: 0.2em solid $blue;
       outline-offset: 0.2em;
     }
-
-    /* 
-    border-color: $dark !important;
-    border-top: solid;
-    border-left: solid;
-    border-right: solid;
-    */
-    /* 
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    */
-    /* margin-bottom: 0.5em; */
   }
 
   .tab-panels {
@@ -663,12 +670,15 @@ p.bigtext {
   font-size: 2.0em;
 }
 
-.photon-input:focus { 
+.photon-input:focus {
   width: 25em;
   max-width: 90% !important;
 }
 
 /* ------ RESULTS PAGE ------ */
+.candidate-list {
+  padding-bottom: 20px;
+}
 
 .candidate-list-grid {
   display: grid;
@@ -730,6 +740,7 @@ p.bigtext {
 
   .candidate-card {
     border: 1px solid $dark;
+    background: $light;
     margin: 0.5em;
     position: relative;
     overflow: hidden;
@@ -744,7 +755,7 @@ p.bigtext {
     .title {
       background-color: $dark;
       padding: 0.65em 0.75em;
-      color: $white;
+      color: $light;
       margin: 0;
       font-weight: bold;
       text-transform: uppercase;
@@ -1033,7 +1044,7 @@ p.bigtext {
   }
 
   .vote-bar-after .vote-count {
-    color: $white;
+    color: $light;
     background: $green;
     padding: 2px 8px;
     border-radius: 10px;
@@ -1178,7 +1189,7 @@ body {
   }
 
   #header_wrap {
-    background: $light;
+    background: $white;
 
     header.inner {
       max-width: 1366px;
@@ -1395,7 +1406,7 @@ body {
 
     .open-worksheet-btn {
       background: $blue;
-      color: $light;
+      color: $white;
       padding: 0.6em 1.2em;
       border-radius: 6px;
       white-space: nowrap;
@@ -1404,7 +1415,7 @@ body {
       &:hover,
       &:focus {
         background: darken($blue, 8%);
-        color: $light;
+        color: $white;
       }
 
       .fa-up-right-from-square {
@@ -1540,6 +1551,10 @@ body {
     background-color: $yellow;
   }
 
+  .bg-yellow {
+    background-color: $yellow;
+  }
+
   .bg-pink {
     background-color: $pink;
   }
@@ -1597,9 +1612,25 @@ body {
   .no-margin-top {
     margin-top: 0;
   }
+
+  .main {
+    padding: 0px 2%;
+    background: $white;
+  }
+
+  .main-top {
+    padding-top: 1em;
+  }
 }
 
 /* ---- Responsive Design ---- */
+@media screen and (min-width: 768px) {
+  .main {
+    border-left: 0.3em solid $blue;
+    border-right: 0.3em solid $blue;
+    border-bottom: 0.3em solid $blue;
+  }
+}
 
 @media screen and (max-width: 1080px) {
   body {
@@ -1642,6 +1673,17 @@ body {
     #main-menu ul {
       display: flex;
       flex-direction: column;
+    }
+
+    #toc-tabs {
+      margin-left: -2%;
+      margin-right: -2%;
+    }
+
+    .main {
+      margin-left: -2%;
+      margin-right: -2%;
+      border-bottom: 0.3em solid $blue;
     }
 
     #footer_wrap .footer-columns ul li {
