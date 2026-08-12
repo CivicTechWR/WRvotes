@@ -1,0 +1,35 @@
+# Format is: wrv-header: poliblog header
+# Candidate name is hardcoded in the script
+csv_map:
+  Phone: Phone
+  Email: Email
+  Website: Website
+  Twitter: 'Twitter(X)'
+  Facebook: Facebook
+  LinkedIn: LinkedIn
+  Instagram: Instagram
+  TikTok: TikTok
+  Bluesky: Bluesky
+  Mastodon: Fediverse
+  Threads: Threads
+  Withdrawn: Not_Running
+
+
+# Used for parsing dates
+timezone: 'America/Toronto'
+
+# Assorted debugging parameters. 
+# Higher thresholds are more verbose.
+debug:
+  screen:
+    enable: true
+    threshold: 4
+  log: 
+    enable: true
+    logfile: /tmp/poliblog-diff.log
+    threshold: 1
+  default:
+    level: 3
+  errors:
+    level: 1
+
