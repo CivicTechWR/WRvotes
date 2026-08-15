@@ -7,7 +7,7 @@ use-leaflet: true
 <section class="flex justify-center">
   <article class="standout-box blue large">
     <div class="big-text header" id="map-box" >
-    The Municipal Election was October 22, 2022
+    The Municipal Election is October 26, 2026
     </div>
     <p>Use this website to learn about the municipal election, and the
     candidates asking for your vote.
