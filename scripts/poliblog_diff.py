@@ -169,12 +169,30 @@ def find_missing_candidates(lookup_src, target_src):
 
     for row_key in d[lookup_src]:
         if not row_key in d[target_src]:
-            err(target_src,
-              "Candidate {} is in {} but is missing from {}".format(
+            
+            errmsg = "Candidate {} is in {} but is missing from {}".format(
                 row_key,
                 lookup_src,
                 target_src,
-                ),
+                )
+
+            if lookup_src == 'poliblog':
+                if d[lookup_src][row_key]['Not_Running']:
+                    # No problem here. 
+                    continue
+                if d[lookup_src][row_key]['Incumbent']:
+                    errmsg = "Candidate {} is missing but may be an " \
+                             "incumbent: {}. Found in {} but " \
+                             "not {}".format(
+                        row_key,
+                        d[lookup_src][row_key]['Incumbent'],
+                        lookup_src,
+                        target_src,
+                        )
+                 
+
+            err(target_src,
+              errmsg,
               d[lookup_src][row_key])
 
 
