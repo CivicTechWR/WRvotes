@@ -1,6 +1,6 @@
 theme: jekyll-theme-slate
 title: Waterloo Region Votes
-description: Information About the 2022 Municipal Election
+description: Information About the 2026 Municipal Election
 show_downloads: false
 plugins:
   - jekyll-sitemap
@@ -19,7 +19,7 @@ defaults:
      layout: "default"
 
 # For Youtube and other video embeds
-embed-media: true
+embed-media: false
 
 # Enable map searchbars. Generally one should be enabled 
 # and one should be disabled.
