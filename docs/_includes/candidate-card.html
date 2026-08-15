@@ -152,6 +152,17 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                         </div>
                         {% endif %}
 
+                        {% if include.winner["YouTube"] %}
+                        <div class="contact-item">
+                            <div class="contact-item-inner">
+                                <a href="{{ include.winner['YouTube'] }}" target="_blank">
+                                    <i class="fab fa-youtube" aria-hidden="true" title="YouTube"></i>
+                                    <span class="fa-sr-only">YouTube: {{ include.winner['YouTube'] }}</span>
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+
                         {% if include.winner["TikTok"] %}
                         <div class="contact-item">
                             <div class="contact-item-inner">
