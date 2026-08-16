@@ -22,10 +22,7 @@
     <!-- toggle-content -->
     <div id="media-{{ include.race-id | slugify}}-{{ include.type |
     slugify }}-body" 
-      title="{{ include.header | escape_once }}" 
-      class="togglable media-toggle js-hidden"
-      show_more_text="Explore"
-      show_fewer_text="Collapse">
+      title="{{ include.header | escape_once }}">
 
         <div class="spacer">
 
@@ -55,7 +52,8 @@
                     and include.item-list.size > teaser-limit %}
                 </ul>
                 <ul id="{{ include.race-id | slugify }}-{{ include.type }}-toggle"
-                   class="togglable {{ include.type }}-list continue">
+                   class="togglable {{ include.type }}-list continue js-hidden"
+                   title="{{ include.header }}">
               {% endif %}
 
             {% endfor %}

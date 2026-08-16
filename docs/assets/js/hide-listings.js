@@ -10,22 +10,18 @@ $(document).ready(function () {
    * in a particular ID.
    */
   function get_description(id) {
-    var desc = "Results";
+    var desc = "Items";
 
     if ($(id).attr('title') !== undefined) { 
       desc = $(id).attr('title');
     } else if ($(id).hasClass("candidate-list")) {
       desc = "This Listing";
+    } else if ($(id).hasClass("electionresult-list")) {
+      desc = "Election Results";
     } else if ($(id).hasClass("event-list")) {
       desc = "Events";
-    } else if ($(id).hasClass("survey-list")) {
-      desc = "Questionnaires";
     } else if ($(id).hasClass("news-list")) {
       desc = "News Items";
-    } else if ($(id).hasClass("blogs-list")) {
-      desc = "Opinions";
-    } else if ($(id).hasClass("recordings-list")) {
-      desc = "Recordings";
     } else if ($(id).hasClass("background")) {
       desc = "Background";
     }
@@ -52,11 +48,17 @@ $(document).ready(function () {
 
     var show_more_text = "Show More";
     var show_fewer_text = "Show Fewer";
-    var desc = get_description("#" + target);
     var inittext = show_more_text;
     var target_button_id =  target + "-btn";
     var target_button_hash = "#" + target_button_id;
     var arrow = " ▼";
+
+    var desc = get_description("#" + target);
+    /* 
+    if (hasAttribute("desc") { 
+      desc = $(this).attr("desc");
+    }
+    */
 
     if (classes.includes("media-toggle")) { 
       show_more_text = $(this).attr("show_more_text");
