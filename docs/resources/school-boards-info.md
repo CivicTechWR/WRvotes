@@ -74,7 +74,7 @@ two steps. First, visit the MPAC [School Suppport
 Designation](https://www.mpac.ca/en/MakingChangesUpdates/SchoolSupportDesignation){:target="_blank"}
 page and register your school support (as a homeowner or tenant)
 there. Next, you must take the receipt of that registration and share
-it with your municipality. Visit the link above for full instructions.
+it with your municipality. 
 
 
 
