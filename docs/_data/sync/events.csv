@@ -1,4 +1,4 @@
-RowID,DateTimeStart,DateTimeEnd,Title,Location,ForMultipleCandidates,CancelledOrRescheduled,PositionIDList,URL,Notes
+RowID,DateTimeStart,DateTimeEnd,Title,Location,IsAllCandidates,CancelledOrRescheduled,PositionIDList,URL,Notes
 9001,2026-05-02T13:00:00,2026-05-02T16:00:00,Day 1: 2026 Waterloo Region Women's Municipal Campaign School,"RIM Park, 2001 University Ave E, Waterloo, ON",N,,Alias-Everything,https://www.eventbrite.ca/e/day-1-2026-waterloo-region-womens-municipal-campaign-school-tickets-1987433324574,
 9002,2026-06-13T10:00:00,2026-06-13T16:00:00,Day 2: 2026 Waterloo Region Women's Municipal Campaign School,"150 Frederick St, Kitchener, ON",N,,Alias-Everything,https://www.eventbrite.ca/e/day-2-2026-waterloo-region-womens-municipal-campaign-school-tickets-1988687411582,
 9003,2026-06-09T18:30:00,2026-06-09T20:00:00,AMO – Running for Municipal Office-Everything You Need to Know as an Underrepresented Candidate,Online,N,,Alias-Everything,https://amo-on-ca.zoom.us/meeting/register/uJkrINbXTDqYtfZZqVmv6g#/registration,
