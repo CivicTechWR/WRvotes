@@ -3,6 +3,14 @@ title: Information for Voters
 layout: page-toc
 ---
 
+{%- capture voter-guide-url -%}
+<a href="https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-council-and-school-board-elections"
+target="_blank">Ontario 2026 Voters' Guide</a>
+{% endcapture %}
+{%- capture register-to-vote-url -%} 
+<a href="https://vreg.registertovoteon.ca/en/home" target="_blank">Register to Vote</a>
+{% endcapture %}
+
 # Information for Voters
 
 ## Overview
@@ -18,8 +26,7 @@ Voters will elect representatives for three levels of government:
 
 There is an easy to understand voter's guide for the Ontario municipal election 
 published by the province. The link to the guide PDF is here: 
-[Ontario 2026 Voters'
-Guide](https://www.ontario.ca/document/2026-voters-guide-ontario-municipal-council-and-school-board-elections){:target="_blank"}.
+{{ voter-guide-url }}.
 
 There is an easier to understand summary [published by
 settlement.org](https://settlement.org/ontario/immigration-citizenship/canadian-government/voting/a-guide-to-voting-in-your-municipal-election/){:target="_blank"}.
@@ -95,14 +102,13 @@ You must also be on the voter's list.
 
 There are some exceptions to these guidelines that may prohibit you
 from voting. There are also situations where you may vote in more than
-one municipal election. For details, read the province's 2026 Voters'
-Guide [linked above](#what-is-this-all-about).
+one municipal election. For details, read the {{ voter-guide-url }}.
 
 ### How do I register to vote?
 
 Elections Ontario maintains an online tool for checking your voter
-registration at <a href="https://vreg.registertovoteon.ca/en/home"
-target="_blank">Register to Vote website</a>. This is
+registration at the {{ register-to-vote-url }} website.
+This is
 the place to start.  You can also update your voter information at
 that site.  Alternatively, the website offers a paper application form
 that you can mail in. 
@@ -138,16 +144,14 @@ For further information from the municipalities, refer to their voting informati
 Elections Ontario maintains the voter list for both the Provincial and
 Municipal elections, so it is possible you are already registered to
 vote based on your registration for the Provincial election. You can
-check on the Register to Vote website [linked
-above](#how-do-i-register-to-vote) to check.
+check on the {{ register-to-vote-url }} website to check.
 
 
 ### I am a student. Do I get to vote?
 
 Yes. Depending on where your home address is and whether you are
 returning back home after your studies, you may be eligible to
-vote twice! See the province's Voters' Guide [linked
-above](#what-is-this-all-about) for details.
+vote twice! See the province's {{ voter-guide-url }} for details.
 
 
 ### I am homeless or have no fixed address. Do I get to vote?
@@ -324,6 +328,3 @@ site. We benefit from his research on our site.
 
 Official candidate listing pages are linked from <https://wrvotes.com> .
 
-</div>
-
-</div>
