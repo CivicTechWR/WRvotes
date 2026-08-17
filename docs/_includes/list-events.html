@@ -22,9 +22,9 @@
   {% assign events-upcoming = (events-list 
     | where_exp:"ev", "ev.DateTimeStart >= date-now") %}
   {% assign events-multicandidate = events-upcoming
-    | where_exp:"ev", "ev.ForMultipleCandidates == 'Y'" %}
+    | where_exp:"ev", "ev.IsAllCandidates == 'Y'" %}
   {% assign events-other = events-upcoming
-    | where_exp:"ev", "ev.ForMultipleCandidates != 'Y'" %}
+    | where_exp:"ev", "ev.IsAllCandidates != 'Y'" %}
 
 
   {% if events-multicandidate.size > 0 %}
