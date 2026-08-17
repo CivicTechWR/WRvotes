@@ -64,6 +64,11 @@ Don't indent too much or you will get <pre> tags.
 
   These are news items about how the election turned out.
 
+{% elsif include.category == "news" %}
+  
+  General news items about the election, not specific to any
+  position.
+
 {% else %}
 
 Oops! No description found for {{ include.category }}!
