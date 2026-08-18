@@ -652,6 +652,28 @@ p.bigtext {
   }
 }
 
+@keyframes ward-throbber { 
+  0% { 
+    scale: 100%;
+  }
+
+  80% { 
+    scale: 100%;
+  }
+
+  100% { 
+    scale: 110%;
+  }
+} 
+
+.leaflet-popup-content-wrapper { 
+  font-size: 1.25em;
+  animation: 2s infinite alternate ward-throbber;
+}
+
+
+
+
 .map-loader {
   margin-bottom: 1rem;
   padding: 1rem;
