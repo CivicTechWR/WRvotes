@@ -1657,6 +1657,8 @@ body {
       .flex {
         flex-direction: column;
 
+        display: block;
+
         &.gutters {
           margin-left: 0;
           margin-right: 0;
