@@ -1256,6 +1256,9 @@ body {
     padding-bottom: 2vh;
     background: $light;
 
+    // Stop floating hamburger menu from shrinking viewport
+    clear: both;
+
     .inner {
       max-width: 1366px;
       padding: 1vh 2%;
@@ -1656,8 +1659,6 @@ body {
     #main_content_wrap {
       .flex {
         flex-direction: column;
-
-        display: block;
 
         &.gutters {
           margin-left: 0;
