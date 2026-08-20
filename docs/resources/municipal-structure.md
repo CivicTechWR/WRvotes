@@ -36,7 +36,7 @@ following positions municipally:
 ## What do the different levels of government do?
 
 The regional and area municipal governments each have their own
-jurdisdictions, and understanding who does what can get complicated.
+responsibilities, and understanding who does what can get complicated.
 
 For example, some roads (usually major and arterial roads) are
 designated as regional roads and are controlled by the Region, while
