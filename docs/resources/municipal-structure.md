@@ -1,10 +1,7 @@
 ---
-title: Municipal Govermment Overview
+title: Municipal Government Overview
 layout: page-toc
 ---
-
-Municipal Government Overview
-=============================
 
 
 ## How is the Region of Waterloo structured?

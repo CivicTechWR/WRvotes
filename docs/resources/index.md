@@ -12,7 +12,7 @@ Voters](./voter-info) page.
 
 - [Information for Voters](./voter-info): Information about this
   election, how to vote, and how to get informed.
-- [Getting Informed](./getting-informed): How to quickly and
+- [Choosing Candidates, Step by Step](./getting-informed): How to quickly and
   effectively research candidates.
 - [Information About School Board Elections](./school-boards-info):
   What are trustees? What do they do? Which school board do you vote

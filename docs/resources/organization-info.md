@@ -3,8 +3,6 @@ title: Information for Organizations and Advocacy Groups
 layout: page-toc
 ---
 
-Information for Organizations and Advocacy Groups
-=================================================
 
 If you belong to an organization or advocacy group active during
 the municipal election, there are several ways waterlooregionvotes.org

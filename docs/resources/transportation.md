@@ -3,8 +3,6 @@ title: Transportation in Waterloo Region
 layout: page-toc
 ---
 
-# Transportation in Waterloo Region
-
 ## Who is responsible for transportation in Waterloo Region?
 
 Transportation is split between the Region and the area municipalities,

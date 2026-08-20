@@ -11,8 +11,6 @@ target="_blank">Ontario 2026 Voters' Guide</a>
 <a href="https://vreg.registertovoteon.ca/en/home" target="_blank">Register to Vote</a>
 {% endcapture %}
 
-# Information for Voters
-
 ## Overview
 
 ### What is this all about?
@@ -224,6 +222,12 @@ vote will count for the positions you did vote for.
 Similarly, if a position elects more than one representative (for
 example, there are four Kitchener Regional Council representatives)
 then you are not obligated to cast four votes for that position.
+
+### How do I choose who to vote for?
+
+We have some guidance on how to select the candidates that appeal most
+to you on the [Choosing Candidates, Step by Step](./getting-informed)
+page.
 
 ### What are all the different positions for? What do these people do?
 

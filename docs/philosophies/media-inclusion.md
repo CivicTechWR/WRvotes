@@ -3,7 +3,6 @@ title: Information About Media Sources
 layout: page-toc
 ---
 
-# Information About Media Sources
 
 To help voters make informed decisions in the
 municipal election, we link to many external resources. This page

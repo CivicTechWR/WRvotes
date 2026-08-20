@@ -3,8 +3,6 @@ title: Budgets and Taxation in Waterloo Region
 layout: page-toc
 ---
 
-# Budgets and Taxation in Waterloo Region
-
 ## Where does my property tax go?
 
 Your property tax bill funds both the Region of Waterloo and your area

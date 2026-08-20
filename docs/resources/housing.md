@@ -3,7 +3,6 @@ title: Housing in Waterloo Region
 layout: page-toc
 ---
 
-# Housing in Waterloo Region
 
 ## Why does housing come up so much during municipal elections?
 

@@ -3,8 +3,6 @@ title: Infrastructure in Waterloo Region
 layout: page-toc
 ---
 
-# Infrastructure in Waterloo Region
-
 ## What counts as "infrastructure" in municipal government?
 
 Infrastructure covers the physical assets that government owns and maintains

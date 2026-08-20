@@ -1,5 +1,5 @@
 ---
-title: Getting Informed
+title: Choosing Candidates, Step by Step
 layout: page-toc
 ---
 
@@ -9,8 +9,7 @@ Fortunately, there are ways to break down the problem and make it more
 manageable. 
 
 If you would like some inspiration for why you should bother voting at
-all, see the [Voter
-Information](voter-info#why-should-i-vote-in-municipal-elections) page.
+all, see the [Information for Voters](voter-info#why-should-i-vote-in-municipal-elections) page.
 
 
 ## Choosing Candidates, Step by Step
@@ -22,8 +21,8 @@ vote for.
 
 1. Make sure you are eligible to vote, and that you are on the voters
 list. See the [How Do I Register to
-Vote?](voter-info#how-do-i-register-to-vote) section in the Voter Info
-page.
+Vote?](voter-info#how-do-i-register-to-vote) section in the
+Information for Voters page.
 
 2. Find out what **township or city ward** you are eligible to vote in. You can
 use the map on the [front page](/) of this site for that, or check with
@@ -263,8 +262,7 @@ Having said this, there are some dangers to watch out for:
 
 ## How do I follow what is going on during the election?
 
-We link to some local media hubs on the [Voter
-Information](voter-info#how-do-i-follow-what-is-going-on-during-the-election)
+We link to some local media hubs on the [Information for Voters](voter-info#how-do-i-follow-what-is-going-on-during-the-election)
 page. 
 
 

@@ -3,8 +3,6 @@ title: Being a Politician
 layout: page-toc 
 ---
 
-Being a Politician
-==================
 
 Sometimes it is not clear what our elected representatives do or why
 they are necessary. This page offers some insight into these

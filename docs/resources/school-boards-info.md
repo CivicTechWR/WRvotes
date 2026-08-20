@@ -3,9 +3,6 @@ title: Information About School Board Elections
 layout: page-toc
 ---
 
-Information About School Board Elections
-========================================
-
 
 ## What is even happening?
 

@@ -3,7 +3,6 @@ title: Information for Candidates
 layout: page-toc
 ---
 
-# Information for Candidates
 
 ## Interacting with waterlooregionvotes.org
 
