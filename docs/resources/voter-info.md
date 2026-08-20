@@ -31,7 +31,7 @@ settlement.org](https://settlement.org/ontario/immigration-citizenship/canadian-
 
 ### Help! I am overwhelmed! Where do I start?
 
-Read the [Getting Informed](getting-informed) page for step-by-step
+Read the [Choosing Candidates, Step by Step](getting-informed) page for step-by-step
 guidance on how to research candidates to vote for. 
 
 ### Why should I vote in municipal elections?
@@ -223,11 +223,6 @@ Similarly, if a position elects more than one representative (for
 example, there are four Kitchener Regional Council representatives)
 then you are not obligated to cast four votes for that position.
 
-### How do I choose who to vote for?
-
-We have some guidance on how to select the candidates that appeal most
-to you on the [Choosing Candidates, Step by Step](./getting-informed)
-page.
 
 ### What are all the different positions for? What do these people do?
 
