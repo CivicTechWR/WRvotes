@@ -2,14 +2,16 @@
 From: https://christianspecht.de/2014/06/18/building-a-pseudo-dynamic-tree-menu-with-jekyll/
 {% endcomment %}
 {% assign navurl = page.url | remove: '.html' %}
-<nav id="main-menu" class="closed" aria-label="Main menu">
-  <div class="inner">
-    <ul id="main-menu-ul" class="hidden">
-      {%- for item in site.data.internal.menu-layout %}
-      <li><a href="{{ site.baseurl }}{{ item.url }}" {%- if item.url==navurl %} class="current" {% endif -%}>
-          {{- item.text -}}
-        </a></li>
-      {% endfor -%}
-    </ul>
-  </div>
-</nav>
+<div id="main-menu-wrapper">
+  <nav id="main-menu" class="closed" aria-label="Main menu">
+    <div class="inner">
+      <ul id="main-menu-ul" class="hidden">
+        {%- for item in site.data.internal.menu-layout %}
+        <li><a href="{{ site.baseurl }}{{ item.url }}" {%- if item.url==navurl %} class="current" {% endif -%}>
+            {{- item.text -}}
+          </a></li>
+        {% endfor -%}
+      </ul>
+    </div>
+  </nav>
+</div>
