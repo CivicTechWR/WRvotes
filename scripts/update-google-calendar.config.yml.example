@@ -1,0 +1,53 @@
+# Should be generated as a service account .json file
+# in console.developers.google.com .
+#
+# This account needs access to the Google Calendar API. 
+# It needs the ability to edit the calendar in question.
+service_credentials: '/home/pnijjar/secrets/service-account-credentials.json'
+
+# Look in your calendar URLs to figure this out (src= parameter)
+# This is NOT a list. 
+calendar_id: 'some-calendar@group.calendar.google.com'
+
+# For datetime nonsense 
+timezone: 'America/Toronto'
+
+# Source files for looking up data
+sources:
+  'events': 
+    folder: sync
+    filename: 'events.csv'
+  'positions':
+    folder: internal
+    filename: 'position-tags.csv'
+  'aliases':
+    folder: internal
+    filename: 'aliases.csv'
+
+# The root of the git config file
+gitdir: /home/pnijjar/src/wrvotes
+
+# The path to the CSV files, relative to GITDIR
+targetdir: docs/_data/
+
+
+# Alias signifier. All aliases should contain this string,
+# and no non-aliases should.
+alias_signifier: 'Alias-'
+
+
+# Assorted debugging parameters.
+# Higher thresholds are more verbose.
+debug:
+  screen:
+    enable: true
+    threshold: 0
+  log:
+    enable: true
+    logfile: /tmp/update-google-calendar.log
+    threshold: 1
+  errors:
+    level: 0
+  default:
+    level: 3
+
