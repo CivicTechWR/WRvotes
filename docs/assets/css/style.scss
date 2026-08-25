@@ -979,6 +979,18 @@ p.bigtext {
       }
     }
 
+    .contact.fulltext { 
+        display: block;
+        word-break: break-all;
+        /* overflow: visible; */
+        /* whitespace: nowrap; */
+        /* text-overflow: ellipsis; */
+
+        .contact-item { 
+          display: flex ;
+        } 
+    }
+
     .contact {
       display: flex;
       padding: 0.15em 0 0.35em;
