@@ -34,7 +34,6 @@ def parse_args_linter():
     parser.add_argument("--debuglevel",
       help = "How verbose to be. Higher is more verbose.",
       type = int,
-      default = 2,
       )
     return parser.parse_args()
 
@@ -64,6 +63,10 @@ def setup_debug_log():
 
     if 'level' in dbg['default']:
         DEBUG_DEFAULT_LEVEL = dbg['default']['level']
+
+    if config['debuglevel']:
+        dbg['screen']['threshold'] = config['debuglevel']
+        dbg['log']['threshold'] = config['debuglevel']
 
     i_set_debug_filehandle = True
 
