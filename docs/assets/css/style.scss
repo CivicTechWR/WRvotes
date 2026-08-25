@@ -1153,11 +1153,20 @@ html {
   height: 100%;
 }
 
+body.use-tabbed-interface { 
+  background: $light;
+
+  #main_content_wrap { 
+    background: $light;
+  }
+
+} 
+
 body {
   font-size: 18px;
   min-height: 100%;
   position: relative;
-  background: $light;
+  background: $white;
   overflow-wrap: break-word;
 
   a {
@@ -1254,7 +1263,7 @@ body {
     border-bottom: none;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    background: $light;
+    background: $white;
 
     // Stop floating hamburger menu from shrinking viewport
     clear: both;
@@ -1452,6 +1461,7 @@ body {
     color: $dark;
     margin-top: 2em;
     margin-bottom: 2em;
+    padding-left: 1em;
 
     .header {
       padding: 20px 0;
@@ -1647,7 +1657,7 @@ body {
 
 /* ---- Responsive Design ---- */
 @media screen and (min-width: 768px) {
-  .main {
+  .use-tabbed-interface .main {
     border-left: 0.3em solid $blue;
     border-right: 0.3em solid $blue;
     border-bottom: 0.3em solid $blue;
@@ -1711,8 +1721,11 @@ body {
     .main {
       margin-left: -2%;
       margin-right: -2%;
-      border-bottom: 0.3em solid $blue;
     }
+
+    .use-tabbed-interface .main { 
+      border-bottom: 0.3em solid $blue;
+    } 
 
     #footer_wrap .footer-columns ul li {
       /* increase spacing on mobile */

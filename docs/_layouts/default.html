@@ -61,7 +61,8 @@
     h.classList.add('js-enabled');
     h.classList.remove('no-js');
   </script>
-  <body>
+  <body {%- if page.use-tabbed-interface %}
+    class="use-tabbed-interface"{% endif -%}>
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
