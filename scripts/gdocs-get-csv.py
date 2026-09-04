@@ -131,7 +131,7 @@ def sync_folders():
     committed_changes = False
 
     if not 'foldersync' in config:
-        return
+        return False
 
     sources = config['foldersync']
 
