@@ -7,10 +7,14 @@ import sys
 import time
 import datetime
 import argparse, sys, os
+import shutil
 import yaml
 from git import Repo
 from google.oauth2 import service_account
-import googleapiclient.discovery
+from googleapiclient.discovery import build
+import googleapiclient.errors
+from googleapiclient.http import MediaIoBaseDownload
+import io
 import csv_lint
 
 """ Grab data files from Google docs
@@ -25,7 +29,7 @@ DEBUG_DEFAULT_LEVEL = 2
 def parse_args():
     parser = argparse.ArgumentParser(
       description = "Pull WaterlooRegionVotes files from the INTERNET and"
-          " convert to csv files"
+          " convert (some of them) to csv files"
       )
 
     parser.add_argument("--configfile",
@@ -35,7 +39,6 @@ def parse_args():
     parser.add_argument("--debuglevel",
       help = "How verbose to be. Higher is more verbose.",
       type = int,
-      default = 2,
       )
     parser.add_argument("--no-download",
       help = "Do not download CSVs from Google Docs",
@@ -67,15 +70,19 @@ def load_config(args):
 # ------------------------------
 def auth_to_google():
     # From: https://developers.google.com/api-client-library/python/auth/service-accounts
-    SCOPES=['https://www.googleapis.com/auth/calendar']
+    SCOPES= [
+      'https://www.googleapis.com/auth/calendar',
+      'https://www.googleapis.com/auth/drive.metadata.readonly',
+      'https://www.googleapis.com/auth/drive.readonly',
+      ]
 
     credentials = service_account.Credentials.from_service_account_file(
         config['service_credentials'],
-        scopes=[],
+        scopes=SCOPES,
         )
 
-    cal_object = googleapiclient.http.build_http()
-    return cal_object
+    # cal_object = googleapiclient.http.build_http()
+    return credentials
 
 
 # ------------------------------------
@@ -95,6 +102,10 @@ def setup_debug_log():
     if 'level' in dbg['default']:
         DEBUG_DEFAULT_LEVEL = dbg['default']['level']
 
+    if config['debuglevel']:
+        config['debug']['screen']['threshold'] = config['debuglevel']
+        config['debug']['log']['threshold'] = config['debuglevel']
+
 
 # ------------------------------------
 def debug(msg,level=DEBUG_DEFAULT_LEVEL):
@@ -111,6 +122,113 @@ def debug(msg,level=DEBUG_DEFAULT_LEVEL):
           )
         DEBUG_FILEHANDLE.write(msg)
         DEBUG_FILEHANDLE.write('\n')
+
+# ------------------------------------
+def sync_folders():
+    creds = auth_to_google()
+
+    changed_files = []
+    committed_changes = False
+
+    sources = config['foldersync']
+
+    for folder in sources:
+        localfolder = os.path.join(
+          config['gitdir'],
+          sources[folder]['localfolder'],
+          )
+        # Ensure local folder exists
+        if not (os.path.isdir(localfolder)):
+            debug(
+              "{}: local folder {} does not exist."
+              "Skipping".format(
+                folder,
+                localfolder,
+                ), 0)
+            continue
+      
+        # Connect to Google Drive
+        # Plagiarized from 
+        # https://www.pythontutorials.net/blog/list-of-files-in-a-google-drive-folder-with-python/
+
+        try: 
+            service = build("drive", "v3", credentials=creds)
+
+            page_token = 'fake-value'
+            all_files = []
+
+            while page_token:
+
+                # List files
+                results = service.files().list(
+                  q="'{}' in parents".format(sources[folder]['remoteid']),
+                  fields="nextPageToken, files(id, name)",
+                  pageSize=100,
+                  ).execute()
+
+                page_token = results.get('nextPageToken')
+
+                filelist = results.get("files", [])
+                all_files.extend(filelist)
+
+
+            debug("sync_folders: got {} files for ID {}".format(
+              len(all_files),
+              sources[folder]['remoteid'],
+              ), 3)
+
+        except googleapiclient.errors.HttpError:
+            debug("sync_folders:  exception:\n{}".format(e), 0)
+            
+
+        # Download each file to a cached folder.
+        # Plagiarized from: https://stackoverflow.com/a/63568558
+        with tempfile.TemporaryDirectory() as cachedir:
+            for src in all_files:
+                cached_target = os.path.join(cachedir, src['name'])
+                local_target = os.path.join(localfolder, src['name'])
+
+                try:
+                    drivefile = service.files().get_media(fileId=src['id'])
+
+                    f = io.FileIO(cached_target, 'wb')
+                    downloader = MediaIoBaseDownload(f, drivefile)
+                    done = False
+                    while done is False:
+                        status, done = downloader.next_chunk()
+
+                except Exception as e:
+                    debug("sync_folders: {} failed with exception {}".format(
+                      cached_target,
+                      e), 0)
+
+                # If files are different or local_target is missing,
+                # then we want to add this to the changed_files to submit
+                if os.path.isfile(local_target):
+
+                    if not filecmp.cmp(cached_target, local_target):
+                        debug("Found different files: "
+                              "{}. Overwriting.".format(local_target),
+                             2)
+                        changed_files.append(local_target)
+
+                    else:
+                        debug("{}: files are the same".format(local_target),3)
+
+                else:
+                    # File does not exist. Copy it and add to files to
+                    # change.
+                    shutil.copy2(cached_target, local_target)
+                    debug("New file: {}".format(local_target), 2)
+                    changed_files.append(local_target)
+
+        if changed_files:
+            return commit_files(changed_files)
+            return False
+        else:
+            debug("No changes to sync. Not committing.", 2)
+            return False
+            
 
 # ------------------------------------
 def download_csvs():
@@ -176,39 +294,50 @@ def download_csvs():
                      )
 
     if changed_files:
-        if config['no_commit']:
-            debug("--no-commit specified, so not committing.", 2)
-        else: 
-            try: 
-                ssh_cmd = "ssh -i {}".format(config['github_ssh_key'])
-                repo = Repo(config['gitdir'])
-                with repo.git.custom_environment(GIT_SSH_COMMAND=ssh_cmd):
-
-                    origin = repo.remote('origin')
-                    origin.pull()
-
-                    changed_filenames = map(
-                      lambda x: os.path.basename(x),
-                      changed_files
-                      )
-
-                    commit_msg = "Auto-commit: updated "
-                    commit_msg += "{} from Google Docs".format( 
-                                     ", ".join(changed_filenames))
-
-                    debug(commit_msg, 1)
-
-                    repo.index.add(changed_files)
-                    repo.index.commit(commit_msg)
-                    origin.push()
-                    committed_changes = True
-            except Exception as e: 
-                debug("Git exception:\n{}".format(e), 0)
-                raise
+        return commit_files(changed_files)
     else:
         debug("All files are the same. Not committing.", 2)
+        return False
 
+
+# ------------------------------------
+def commit_files(changed_files):
+    """ Commit set of changed_files to Git. Return True iff 
+        files are committed.
+    """
+    committed_changes = False
+
+    if config['no_commit']:
+        debug("--no-commit specified, so not committing.", 2)
+    else:
+        try: 
+            ssh_cmd = "ssh -i {}".format(config['github_ssh_key'])
+            repo = Repo(config['gitdir'])
+            with repo.git.custom_environment(GIT_SSH_COMMAND=ssh_cmd):
+
+                origin = repo.remote('origin')
+                origin.pull()
+
+                changed_filenames = map(
+                  lambda x: os.path.basename(x),
+                  changed_files
+                  )
+
+                commit_msg = "Auto-commit: updated "
+                commit_msg += "{} from Google Docs".format( 
+                                 ", ".join(changed_filenames))
+
+                debug(commit_msg, 1)
+
+                repo.index.add(changed_files)
+                repo.index.commit(commit_msg)
+                origin.push()
+                committed_changes = True
+        except Exception as e: 
+                    debug("Git exception:\n{}".format(e), 0)
+                    raise
     return committed_changes
+
 
 
 # ------------------------------------
@@ -228,9 +357,13 @@ try:
     debug("---- Beginning run ----",1)
 
     did_push = False
+    did_sync = False
 
     if not config['no_download']:
         did_push = download_csvs()
+
+        did_sync = sync_folders()
+        
 
     # Check only on changed files, so that we do not get super-spammed with errors
     if did_push and not config['no_lint']:

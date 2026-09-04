@@ -51,6 +51,18 @@ sources:
     folder: internal
     key: Alias
 
+# remotesrc is the ID of the Google Drive folder to sync
+# For example
+#   https://drive.google.com/drive/folders/19_hz3s7nDPW8ljot4DjQZBYj1Yua3SmZ
+# has an ID of 
+#   '19_hz3s7nDPW8ljot4DjQZBYj1Yua3SmZ'
+# 
+# localfolder is relative to gitdir
+foldersync:
+  'candidate-images':
+    remoteid: '19_hz3s7nDPW8ljot4DjQZBYj1Yua3SmZ'
+    localfolder: 'docs/assets/images/nominees'
+
 # Used for parsing dates
 timezone: 'America/Toronto'
 

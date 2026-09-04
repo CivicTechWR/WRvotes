@@ -9,6 +9,7 @@ calendar, and syncing from Drive.
   + <https://console.developers.google.com>
   + Make a project
   + Make a service account
+  + Visit <https://console.cloud.google.com/apis/dashboard>
   + Give the service account access to:
     + the Calendar API
     + the Drive API
@@ -18,6 +19,9 @@ calendar, and syncing from Drive.
 
   + In the Google Calendar, give the email address of the service
   account "Make Changes to Events" permissions
+
+  + In the Google Drive, give the email address of the service viewer
+  permissions to the folders that are to be synced.
 
 
 Deployment (update-google-calendar)
