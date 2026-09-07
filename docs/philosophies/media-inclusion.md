@@ -22,16 +22,6 @@ Here are our rules of thumb:
 
 
 
-## Issues Pages
-
-We now have a brief [Issues](/issues-overview) page. 
-The purpose of this page is to help voters get
-a broad overview of a few widely-discussed issues in the campaign, so 
-voters can dig deeper if they choose.
-
-On this page we attempt to link only to official pages (such as those
-published on municipal websites) and to established news sites. 
-
 
 ## "Established" News Sites 
 
