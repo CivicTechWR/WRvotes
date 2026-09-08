@@ -92,6 +92,46 @@ cropping and shrinking it down.
 from the [Know Your Vote TO](https://www.knowyourvote.to/) project in
 Toronto.)
 
+### Social Media Listings
+
+We include the following social media profiles for candidates:
+
+- Facebook
+- X/Twitter
+- Bluesky
+- Mastodon or similar microblogs on the Fediverse
+- Threads
+- LinkedIn
+- Instagram
+- TikTok
+- YouTube
+
+If you provide us with links to your profiles (or list them on your campaign
+website) then we will include them. Sometimes we source links
+independently too. 
+
+### Event Listings
+
+We are eager to include events related to the municipal election in
+our listings. Broadly, our guidelines for including an event are:
+
+- People have an opportunity to interact with a candidate
+- The event is open to the public, including members of the public who
+  do not support the candidate
+
+Examples of events we are happy to list include:
+
+- All-candidates meetings or debates
+- Meet-and-greets with candidates
+- Community "town hall" events
+- Fundraising events, provided they are open to the public
+
+Examples of events that are not a good fit include:
+
+- Canvassing opportunities (since people who do not support the
+  candidate should not be canvassing for that candidate)
+- Election watch parties and celebrations (since these are typically
+  only open to those who support the candidate)
 
 
 ### Missing or incorrect information
