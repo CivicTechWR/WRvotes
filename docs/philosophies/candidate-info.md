@@ -24,7 +24,7 @@ listing.
 #### How we will reach out
 
 We hope to begin contacting candidates soon after the registration
-deadline of August 24, 2026. We will contact candidates by email
+deadline of August 24, 2026. We will contact candidates by 
 email.
 
 Given our volunteer capacity, we will attempt to reach each candidate
