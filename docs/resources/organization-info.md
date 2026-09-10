@@ -62,6 +62,9 @@ to help.
 If you would like to organize an all-candidates meeting but are not
 sure of how to go about it, here are some guides: 
 
+- VisionWR has published a [How to Host an All Candidates
+  Meeting](https://visionwr.org/all-candidates-meeting-playbook/)
+  playbook, including a seminar recording.
 - [Your Guide to Hosting an All-Candidates
   Meeting](https://cuc.ca/wp-content/uploads/2019/09/Your-Guide-to-Hosting-an-All-Candidates-Meeting-.pdf)
   published by the Canadian Unitarian Council: 
