@@ -180,5 +180,5 @@ library card and your library PIN (which you can set at the library).
 Click the link above and at the login screen choose
 **Libraries & Groups**. Then find your local library system. Log in
 with your library card number and your PIN. You can then find
-paywalled articles we have linked by publication, publication date and
-title. [CHECK]
+paywalled articles we have linked by publication date: first find the
+publication and then narrow the results using "Date Range".
