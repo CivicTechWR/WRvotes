@@ -778,7 +778,7 @@ p.bigtext {
 .candidate-list-grid {
   display: grid;
   /* 450px */
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
   grid-auto-rows: 1fr;
   margin-bottom: 2em;
 }
