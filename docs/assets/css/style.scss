@@ -865,6 +865,7 @@ p.bigtext {
         display: flex;
         align-items: flex-start;
         gap: 0.65em;
+        padding-bottom: 0.65em;
 
         .image {
           flex: 0 0 64px;
@@ -986,9 +987,29 @@ p.bigtext {
         /* whitespace: nowrap; */
         /* text-overflow: ellipsis; */
 
-        .contact-item { 
-          display: flex ;
-        } 
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 0.35em;
+      }
+
+      .contact-item-icon {
+        display: inline-flex;
+        justify-content: center;
+        min-width: 1.8em;
+      }
+
+      .contact-item-inner {
+        flex: 1 1 auto;
+        min-width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .contact-item a {
+        display: inline;
+      }
     }
 
     .contact {
@@ -1185,6 +1206,7 @@ p.bigtext {
             "contact contact";
           column-gap: 0.55em;
           row-gap: 0.2em;
+          padding-bottom: 0.2em;
           align-items: center;
 
           .image {
@@ -1266,7 +1288,7 @@ body {
     }
   }
 
-  a[target="_blank"]::after {
+  a.external::after {
     /* https://docs.fontawesome.com/web/add-icons/pseudo-elements/ */
     display: inline-block;
     text-rendering: auto;

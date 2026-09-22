@@ -65,29 +65,29 @@ where:"PositionUniqueName",include.winner["PositionUniqueName"] | first -%}
                 | split: "://" | last 
                 | split: "/" | join: "/" %}
             <div class="contact fulltext">
-                <div class="contact-item">
-                    <div class="contact-item-icon"><i class="fas
-                    fa-link" title="Website"></i>
-                    </div>
-                    <div class="contact-item-inner">
-                        <a href="{{ include.winner['Website'] }}" target="_blank">
+                <a href="{{ include.winner['Website'] }}" target="_blank" title="{{ bareurl }}">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-link" title="Website"></i>
+                        </div>
+                        <div class="contact-item-inner">
                             {{ bareurl }}
-                        </a>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             {% endif %}
 
             {% if include.winner["Email"] %}
             <div class="contact fulltext">
-                <div class="contact-item">
-                    <div class="contact-item-inner">
-                        <a href="mailto:{{ include.winner['Email'] }}">
-                            <i class="fas fa-envelope" title="Email"></i> 
-                            &nbsp; {{ include.winner['Email'] }}
-                        </a>
+                <a href="mailto:{{ include.winner['Email'] }}" title="{{ include.winner['Email'] }}">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-envelope" title="Email"></i>
+                        </div>
+                        <div class="contact-item-inner">{{ include.winner['Email'] }}</div>
                     </div>
-                </div>
+                </a>
             </div> <!-- contact -->
             {% endif %}
 

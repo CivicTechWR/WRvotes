@@ -43,7 +43,7 @@ use-leaflet: true
      (Note that although the address lookup is
      pretty good, it is not 100% accurate, especially near ward
      boundaries. If in doubt consult your <a href="https://wrvotes.com" 
-     target="_blank">municipality</a>.)
+     target="_blank" class="external">municipality</a>.)
      </p>
 
     </div> <!-- Data AOS -->
