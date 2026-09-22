@@ -80,11 +80,10 @@ website.
 
 - must be PNG or JPEG;
 - must be a flat static image (without animations);
-- be cropped to a square image that will display well in a circle
-- be about 200 x 200 pixels in size
 
-If you provide a larger or uncropped photo then we can assist in
-cropping and shrinking it down.
+We will crop your image to a 200x200 pixel square that will display
+well in a circle, focused on your face.
+
 
 
 (These guidelines are adapted from the [Content Inclusion Policy](https://docs.google.com/document/d/1HHNGglM7NyPo2GSshK0ER1-1MfkCkNp6pYkSB5-8vqo/edit?tab=t.0)
