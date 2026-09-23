@@ -983,6 +983,8 @@ p.bigtext {
     .contact.fulltext { 
         display: block;
         word-break: break-all;
+        padding-top: 0;
+        padding-bottom: 0;
         /* overflow: visible; */
         /* whitespace: nowrap; */
         /* text-overflow: ellipsis; */
