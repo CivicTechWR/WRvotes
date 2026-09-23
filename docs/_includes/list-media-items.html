@@ -39,7 +39,7 @@
             {% for item in item-list-sorted %}
 
               <li>
-              <a href="{{ item.URL }}" target="_blank">{{ item.Title }}</a>,
+              <a href="{{ item.URL }}"  class="external">{{ item.Title }}</a>,
               {{ item.Publication }},
               {{ item.PubDate | date: "%B %-d, %Y" }}. 
               {% include embed-media.html 

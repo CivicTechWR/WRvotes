@@ -53,7 +53,7 @@ Email us at
 
 Waterloo Region Votes and CivictechWR are **not** official
 government websites. For official municipal government information
-visit <a href="https://wrvotes.com" target="_blank">https://wrvotes.com</a> .
+visit <a href="https://wrvotes.com" target="_blank" class="external">https://wrvotes.com</a> .
 
 ## Are you a third party advertiser?
 
