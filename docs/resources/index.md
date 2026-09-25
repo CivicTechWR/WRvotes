@@ -38,3 +38,9 @@ this site:
 - [About Us](/about)
 - [Information for Candidates](/philosophies/candidate-info)
 - [Information about Media Sources](/philosophies/media-inclusion)
+
+Here is some publicity material if you would like to spread the word
+about this website:
+
+- [Letter-sized
+  poster](/assets/marketing/2026/waterlooregionvotes-letter-sized-poster-2026.pdf)
