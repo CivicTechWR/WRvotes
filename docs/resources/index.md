@@ -43,4 +43,7 @@ Here is some publicity material if you would like to spread the word
 about this website:
 
 - [Letter-sized
-  poster](/assets/marketing/2026/waterlooregionvotes-letter-sized-poster-2026.pdf)
+  poster PDF](/assets/marketing/2026/waterlooregionvotes-letter-sized-poster-2026.pdf)
+- [Letter-sized poster 
+  PNG](/assets/marketing/2026/waterlooregionvotes-letter-sized-poster-2026.png)
+- [Half-sized PNG](/assets/marketing/2026/waterlooregionvotes-mini-2026.png)
