@@ -16,15 +16,15 @@ across all positions, every survey, and every meeting recording.
 
 
 {% assign media-list = site.data.sync.media
-    | where_exp:"item", "item.ComparisonOrOpinion == 'Comparison'" %}
+    | where_exp:"item", "item.Category == 'AllCandidates'" %}
 
 {% if media-list.size > 0 %}
   <div class="content-box">
     {% include list-media-items.html
       item-list=media-list
       race-id="surveys"
-      type="survey"
-      header="Questionnaires and Meeting Recordings"
+      type="AllCandidates"
+      header="All-Candidate Meeting Recordings"
       teaser-limit=-1
       big-header=true %}
   </div>
@@ -32,14 +32,14 @@ across all positions, every survey, and every meeting recording.
 
 
 {% assign events-allcandidates = events-upcoming
-    | where_exp:"ev", "ev.ForMultipleCandidates == 'Y'" %}
+    | where_exp:"ev", "ev.IsAllCandidates == 'Y'" %}
 
 {% if events-allcandidates.size > 0 %}
   <div class="event-wrapper content-box" id="event-wrapper-allcandidates">
 
     {% include list-event-block.html
       event-list=events-allcandidates
-      header="Every All-Candidates Meeting"
+      header="Upcoming All-Candidates Meetings"
       teaser-limit=-1
       race-id="all-candidates"
       big-header=true %}
