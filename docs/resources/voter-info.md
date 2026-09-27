@@ -248,6 +248,8 @@ Local media provides lots of election coverage. Here are a few hubs:
   Hub](https://www.newhamburgindependent.ca/newhamburg-on-news/municipal-election/){:target="_blank"}
 - [Cambridge Today Municipal Election
   News](https://www.cambridgetoday.ca/municipal-election){:target="_blank"}
+- [CBC Kitchener Waterloo Municipal Election
+  2026](https://www.cbc.ca/news/canada/kitchener-waterloo/topic/Tag/Waterloo%20Region%20Votes%202026){:target="_blank"}
 
 On social media you can track #wrvotes and #wrpoli hashtags.
 
