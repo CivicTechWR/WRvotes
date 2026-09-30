@@ -180,7 +180,7 @@ def sync_folders():
               sources[folder]['remoteid'],
               ), 3)
 
-        except googleapiclient.errors.HttpError:
+        except googleapiclient.errors.HttpError as e:
             debug("sync_folders:  exception:\n{}".format(e), 0)
             
 
