@@ -16,6 +16,7 @@ import googleapiclient.errors
 from googleapiclient.http import MediaIoBaseDownload
 import io
 import csv_lint
+import socket
 
 """ Grab data files from Google docs
     Paul "Worthless" Nijjar, 2019-09-22
@@ -149,16 +150,22 @@ def sync_folders():
                 localfolder,
                 ), 0)
             continue
+
+        debug("sync_folders: attempting to sync local folder {}".format(
+          localfolder,
+          ))
       
         # Connect to Google Drive
         # Plagiarized from 
         # https://www.pythontutorials.net/blog/list-of-files-in-a-google-drive-folder-with-python/
 
         try: 
+            # https://stackoverflow.com/questions/48969145/how-to-set-the-request-timeout-in-google-ml-api-python-client
             service = build("drive", "v3", credentials=creds)
 
             page_token = 'fake-value'
             all_files = []
+
 
             while page_token:
 
@@ -182,6 +189,8 @@ def sync_folders():
 
         except googleapiclient.errors.HttpError as e:
             debug("sync_folders:  exception:\n{}".format(e), 0)
+        except Exception as e2: 
+            debug("sync_folders:  non-HttpError exception:\n{}".format(e2), 0)
             
 
         # Download each file to a cached folder.
@@ -355,6 +364,8 @@ args = parse_args()
 global config
 config = load_config(args)
 setup_debug_log()
+
+socket.setdefaulttimeout(30)
 
 try: 
     debug("---- Beginning run ----",1)
