@@ -167,7 +167,7 @@ def sync_folders():
                   q="'{}' in parents".format(sources[folder]['remoteid']),
                   fields="nextPageToken, files(id, name)",
                   pageSize=100,
-                  ).execute()
+                  ).execute(num_retries = 0)
 
                 page_token = results.get('nextPageToken')
 
