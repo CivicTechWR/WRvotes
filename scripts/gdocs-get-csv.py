@@ -17,6 +17,7 @@ from googleapiclient.http import MediaIoBaseDownload
 import io
 import csv_lint
 import socket
+import signal, errno
 
 """ Grab data files from Google docs
     Paul "Worthless" Nijjar, 2019-09-22
@@ -24,6 +25,29 @@ import socket
 
 TMPDIR=tempfile.TemporaryDirectory()
 DEBUG_DEFAULT_LEVEL = 2
+
+
+# ------- TIMEOUT CLASS ------
+class timeout:
+    """ Try adding forced timeout functionality. See: 
+        https://stackoverflow.com/questions/2281850/timeout-function-if-it-takes-too-long-to-finish
+       
+        This means the script is UNIX-only. Sorry, Windows.
+    """
+
+    def __init__(self, seconds=30, error_message=os.strerror(errno.ETIMEDOUT)):
+        self.seconds = seconds
+        self.error_message = error_message
+
+    def handle_timeout(self, signum, frame):
+        raise TimeoutError(self.error_message)
+
+    def __enter__(self):
+        signal.signal(signal.SIGALRM, self.handle_timeout)
+        signal.alarm(self.seconds)
+
+    def __exit__(self, type, value, traceback):
+        signal.alarm(0)
 
 
 # ------ PARSE ARGS -------
@@ -160,32 +184,45 @@ def sync_folders():
         # https://www.pythontutorials.net/blog/list-of-files-in-a-google-drive-folder-with-python/
 
         try: 
-            # https://stackoverflow.com/questions/48969145/how-to-set-the-request-timeout-in-google-ml-api-python-client
-            service = build("drive", "v3", credentials=creds)
 
-            page_token = 'fake-value'
-            all_files = []
+            with timeout(
+              config['network_timeout'], 
+              "Network timeout syncing local folder {}".format(localfolder),
+              ):
+                service = build("drive", "v3", credentials=creds)
+
+                page_token = None
+                first_iteration = True
+                all_files = []
+
+                while page_token or first_iteration:
+                    first_iteration = False
+
+                    # List files
+                    results = service.files().list(
+                      q="'{}' in parents".format(sources[folder]['remoteid']),
+                      fields="nextPageToken, files(id, name)",
+                      pageSize=100,
+                      pageToken=page_token,
+                      ).execute(num_retries = 0)
+
+                    page_token = results.get('nextPageToken')
+
+                    filelist = results.get("files", [])
+
+                    all_files.extend(filelist)
+
+                    debug("len(filelist) = {}, len(all_files) = {}, page_token is {}".format(
+                      len(filelist),
+                      len(all_files),
+                      page_token,
+                      ))
 
 
-            while page_token:
-
-                # List files
-                results = service.files().list(
-                  q="'{}' in parents".format(sources[folder]['remoteid']),
-                  fields="nextPageToken, files(id, name)",
-                  pageSize=100,
-                  ).execute(num_retries = 0)
-
-                page_token = results.get('nextPageToken')
-
-                filelist = results.get("files", [])
-                all_files.extend(filelist)
-
-
-            debug("sync_folders: got {} files for ID {}".format(
-              len(all_files),
-              sources[folder]['remoteid'],
-              ), 3)
+                debug("sync_folders: got {} files for ID {}".format(
+                  len(all_files),
+                  sources[folder]['remoteid'],
+                  ), 3)
 
         except googleapiclient.errors.HttpError as e:
             debug("sync_folders:  exception:\n{}".format(e), 0)
@@ -196,6 +233,7 @@ def sync_folders():
         # Download each file to a cached folder.
         # Plagiarized from: https://stackoverflow.com/a/63568558
         with tempfile.TemporaryDirectory() as cachedir:
+            debug("sync_folders: Temp folder is {}".format(cachedir))
             for src in all_files:
                 cached_target = os.path.join(cachedir, src['name'])
                 local_target = os.path.join(localfolder, src['name'])
@@ -365,7 +403,8 @@ global config
 config = load_config(args)
 setup_debug_log()
 
-socket.setdefaulttimeout(30)
+# https://stackoverflow.com/questions/48969145/how-to-set-the-request-timeout-in-google-ml-api-python-client
+socket.setdefaulttimeout(config['network_timeout'])
 
 try: 
     debug("---- Beginning run ----",1)
