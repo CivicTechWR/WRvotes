@@ -74,7 +74,7 @@ targetdir: docs/_data/
 
 # How long a network transaction should run before it times out.
 # This is because the Google API can hang otherwise.
-network_timeout: 30
+network_timeout: 60
 
 # Assorted debugging parameters. 
 # Higher thresholds are more verbose.
