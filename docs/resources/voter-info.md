@@ -163,7 +163,12 @@ or slept most frequently during the last five weeks.
 ### How do I vote? May I vote using the Internet?
 
 This depends on the township or city in which you live. Different
-municipalities have different procedures. You can read full details on
+municipalities have different procedures. For the 2026 election, the
+CBC has [published a summary of the different rules
+here](https://www.cbc.ca/news/canada/kitchener-waterloo/how-to-vote-municipal-election-waterloo-region-guelph-wellington-9.7357107){:target="_blank"}.
+
+
+You can read full details on
 the website for your city or township, linked below.
 
 
@@ -178,14 +183,14 @@ the website for your city or township, linked below.
 
 - [North
   Dumfries](https://www.northdumfries.ca/township-services/municipal-elections/information-for-voters/){:target="_blank"}:
-  In-person and online voting. Details are to be announced. 
+  In-person and online voting. Online voting starts Oct 13. 
 
 - [Waterloo](https://www.waterloo.ca/council-and-committees/municipal-elections/vote-in-the-municipal-election){:target="_blank"}: 
   In-person voting only. Advanced voting days are Oct 10 and Oct 16 through
   Oct 18.
 
 - [Wellesley](https://www.wellesley.ca/council-and-administration/election/){:target="_blank"}:
-  Online and telephone voting early. Voting period from Oct 16 through
+  Online and telephone voting only. Voting period from Oct 16 through
   Oct 26.
 
 - [Wilmot](https://www.wilmot.ca/township-office/elections/){:target="_blank"}:
