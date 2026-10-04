@@ -18,6 +18,13 @@ window.WRVotesInitMap = async function(baseUrl) {
       + feature.properties["information-link"];
   }
 
+  function focusPopupLink(e) {
+    var link = e.popup.getElement().querySelector("a");
+    if (link) {
+      link.focus();
+    }
+  }
+
   function onEachFeature(feature, layer) {
     if (!feature.properties) {
       return;
@@ -25,6 +32,7 @@ window.WRVotesInitMap = async function(baseUrl) {
 
     if (feature.properties["information-link"] && feature.properties["Name"]) {
       layer.bindPopup(getPopupText(feature));
+      layer.on("popupopen", focusPopupLink);
     }
 
     layer.setStyle({
