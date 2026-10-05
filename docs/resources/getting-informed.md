@@ -94,6 +94,11 @@ you the most. In our experience it is fairly effective.
 - Before you start, ask some questions **about your values**. What
   issues are most important to you? What distinguishes a good
   politician from a bad one? 
+- If you live in one of the cities (as opposed to a township) then you
+  can use [Vote Compass](https://votecompass.therecord.com) to
+  **determine political alignment** between you and the candidates.
+  (But see the [caveats about Vote
+  Compass](#why-not-just-use-vote-compass) below.)
 - If there are **debates or all-candidates meetings** scheduled for the
   position in question, attend them or watch recordings.
   [Why?](#why-do-you-recommend-debates-and-all-candidates-meetings) Use
@@ -125,7 +130,12 @@ If the election is fast approaching and you don't have much time left,
 life gets harder. However, you can get a quicker overview for your
 research with the following workflow: 
 
-- Start with looking at **group discussions** and **opinion pieces**
+
+- If you live in one of the cities (as opposed to a township) then you
+  can use [Vote Compass](https://votecompass.therecord.com) to
+  determine political alignment between you and the candidates.
+  (But see the [caveats about Vote Compass](#why-not-just-use-vote-compass) below.)
+- Look at **group discussions** and **opinion pieces**
   to get a broad overview of the election. But be careful -- many
   opinion writers have their own biases and partisan leanings.
 - Then, if there are **debates and all-candidate** recordings
@@ -136,6 +146,57 @@ research with the following workflow:
 Looking through individual candidate websites and social media can be
 useful but is often fairly time consuming. Do this when you are trying
 to decide between a couple of candidates.
+
+
+### Why Not Just Use Vote Compass?
+
+Torstar and Vox Pop Labs have released [Vote
+Compass](https://votecompass.therecord.com) to help voters quickly
+find the candidates that align most closely with their political
+values. Vote Compass is a great tool and very helpful for determining
+which candidates come closest to matching your political views, but it
+has a number of limitations:
+
+- In 2026, Vote Compass only covered the 50 most populous cities in
+  Ontario. That includes the cities in Waterloo Region, but **not the
+  townships**. 
+
+- Vote Compass only covers **regional and municipal candidates**. It does
+  not help you decide between school board candidates.
+
+- Vote Compass helps you determine the candidates that come closest to
+  matching your political views, but it does not assess how **qualified
+  and experienced** the candidates are. There can be candidates who match
+  your views closely but are still poor choices because they have not
+  developed the skills necessary to do a good job.
+
+- Similarly, Vote Compass does not assess **how serious candidates are
+  about winning their positions**. Some candidates run as a form of
+  awareness raising or political protest. Some candidates put
+  their names on the ballot but do not campaign seriously and do not
+  intend to win. These candidates may match your political views
+  closely, but that does not mean you should vote for them.
+
+- Unfortunately, in our current voting system **vote-splitting is a real
+  concern**: candidates who are closely aligned politically can split the
+  vote between them, allowing another candidate who does not share
+  those values to win instead. Vote Compass does not determine who is
+  a serious contender to win their position. If a candidate matches
+  you very closely but is unlikely to win, it might be smarter to vote
+  for a candidate that is a little less aligned but is more likely to
+  win.
+
+- Some candidates **may not have registered** with Vote Compass. This is
+  partially their fault (all eligible candidates were eligible to
+  participate) but there may be candidates who did not register, but
+  who align closely with your values. 
+
+- The questions asked in the Vote Compass survey **assume a particular
+  framing** that may not map to your beliefs very well. 
+
+If you do use Vote Compass, be sure to look at candidate responses to
+each question. Some candidates wrote text explanations for their
+positions.
 
 ### Why Not Just Use AI?
 
