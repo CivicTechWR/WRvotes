@@ -39,6 +39,11 @@ this site:
 - [Information for Candidates](/philosophies/candidate-info)
 - [Information about Media Sources](/philosophies/media-inclusion)
 
+There are some aggregation pages that present data in different ways:
+
+- [All all-candidates meetings and recordings](/all-meetings)
+- [All nominees across all positions](/all-nominees)
+
 Here is some publicity material if you would like to spread the word
 about this website:
 

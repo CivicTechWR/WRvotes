@@ -46,3 +46,24 @@ across all positions, every survey, and every meeting recording.
     </div>
 {% endif %}
 
+
+{% assign events-past = all-events
+  | where_exp:"ev", "ev.DateTimeStart < date-now" %}
+
+{% assign events-pastallcandidates = events-past
+    | where_exp:"ev", "ev.IsAllCandidates == 'Y'" %}
+
+
+{% if events-pastallcandidates.size > 0 %}
+  <div class="event-wrapper content-box" id="event-wrapper-allcandidates">
+
+    {% include list-event-block.html
+      event-list=events-pastallcandidates
+      header="Past All-Candidates Meetings"
+      teaser-limit=-1
+      race-id="all-candidates"
+      reverse-sort=true
+      big-header=true %}
+    </div>
+{% endif %}
+
