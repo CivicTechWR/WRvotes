@@ -6,36 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
 
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:image" content="{{ site.baseurl }}/assets/images/wrvotes-logo-og.png" />
+    <meta property="og:image" content="{{ site.url }}/assets/images/wrvotes-logo-og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="484" />
     <meta property="og:image:alt" content="WaterlooRegionVotes Logo: Blue WR with a green checkmark" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Waterloo Region Votes" />
 
     <link rel="preconnect" href="https://unpkg.com" crossorigin>
 
-    <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="{{ site.url }}/assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" type="text/css" media="print" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fa-all.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/fa-all.min.css">
     {% if page.use-leaflet %}
       <link rel="stylesheet" type="text/css" media="screen"
-        href="{{ site.baseurl }}/assets/css/leaflet.css">
+        href="{{ site.url }}/assets/css/leaflet.css">
 
       {% if site.enable-map-search-nominatim %}
           <link rel="stylesheet" type="text/css" media="screen"
-            href="{{ site.baseurl }}/assets/css/leaflet-search.min.css">
+            href="{{ site.url }}/assets/css/leaflet-search.min.css">
           <link rel="stylesheet" type="text/css" media="screen"
-            href="{{ site.baseurl }}/assets/css/leaflet-search.mobile.min.css">
+            href="{{ site.url }}/assets/css/leaflet-search.mobile.min.css">
       {% endif %}
 
       {% if site.enable-map-search-photon %}
           <link rel="stylesheet" type="text/css" media="screen"
-            href="{{ site.baseurl }}/assets/css/leaflet.photon.css">
+            href="{{ site.url }}/assets/css/leaflet.photon.css">
       {% endif %}
     {% endif %}
 
@@ -74,8 +71,8 @@
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-          <a href="{{ site.baseurl }}/" class="header-logo">
-            <img src="{{ site.baseurl }}/assets/images/wrvotes-logo.svg" alt="Waterloo Region Votes logo" />
+          <a href="{{ site.url }}/" class="header-logo">
+            <img src="{{ site.url }}/assets/images/wrvotes-logo.svg" alt="Waterloo Region Votes logo" />
           </a>
 
           <div class="titles">
@@ -122,17 +119,17 @@
       AOS.init();
     </script>
 
-    <script src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/menu.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/candidate-card.js"></script>
+    <script src="{{ site.url }}/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="{{ site.url }}/assets/js/menu.js"></script>
+    <script src="{{ site.url }}/assets/js/candidate-card.js"></script>
     {% if page.hide-listings -%}
-      <script src="{{ site.baseurl }}/assets/js/hide-listings.js"></script>
+      <script src="{{ site.url }}/assets/js/hide-listings.js"></script>
     {%- endif -%}
     {%- if page.use-accordion -%}
-      <script src="{{ site.baseurl }}/assets/js/accordion.js"></script>
+      <script src="{{ site.url }}/assets/js/accordion.js"></script>
     {%- endif -%}
     {%- if page.use-tabbed-interface -%}
-      <script src="{{ site.baseurl }}/assets/js/tabbed-interface.js"></script>
+      <script src="{{ site.url }}/assets/js/tabbed-interface.js"></script>
     {%- endif -%}
   </body>
 </html>
