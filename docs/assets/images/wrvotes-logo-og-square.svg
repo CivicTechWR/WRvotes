@@ -6,16 +6,16 @@
    id="Layer_1"
    x="0px"
    y="0px"
-   width="1200"
-   height="630"
-   viewBox="0 0 1199.9999 630"
+   width="800"
+   height="800"
+   viewBox="0 0 799.99999 800"
    enable-background="new 0 0 694.893 280"
    xml:space="preserve"
-   sodipodi:docname="wrvotes-logo-og.svg"
+   sodipodi:docname="wrvotes-logo-og-square.svg"
    inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
-   inkscape:export-filename="wrvotes-logo-og.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
+   inkscape:export-filename="wrvotes-logo-og-square.png"
+   inkscape:export-xdpi="75.599998"
+   inkscape:export-ydpi="75.599998"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -29,23 +29,19 @@
    inkscape:pageopacity="0.0"
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1"
-   inkscape:zoom="0.79166667"
-   inkscape:cx="600"
-   inkscape:cy="314.52632"
+   inkscape:zoom="0.73926932"
+   inkscape:cx="337.49541"
+   inkscape:cy="403.10073"
    inkscape:window-width="1598"
    inkscape:window-height="875"
    inkscape:window-x="0"
    inkscape:window-y="23"
-   inkscape:window-maximized="0"
+   inkscape:window-maximized="1"
    inkscape:current-layer="Layer_1"
    inkscape:export-bgcolor="#ffffffff" />
-
-
 <g
-   id="g5"
-   transform="translate(35.393189,100.87525)"><g
-     id="g2"
-     transform="matrix(1.6720113,0,0,1.6720113,-14.043692,-20.99425)">
+   id="g2"
+   transform="matrix(1.6565885,0,0,1.6565885,53.823529,-46.878448)">
 	<path
    fill="#096ab4"
    d="M 105.55,231.372 H 65.672 L 20.898,71.397 h 37.545 c 9.328,34.98 18.889,69.96 28.217,104.707 h 1.166 c 9.561,-34.747 18.889,-69.727 28.45,-104.707 h 36.146 c 9.328,34.98 18.889,69.96 28.217,104.707 h 1.166 c 9.328,-34.747 18.889,-69.727 28.217,-104.707 h 34.047 l -45.007,159.975 h -39.411 l -26.118,-96.079 h -1.399 z"
@@ -54,18 +50,21 @@
    fill="#096ab4"
    d="m 376.986,233.005 c -13.759,0 -26.818,-5.598 -26.818,-25.419 0,-23.32 -4.197,-42.442 -24.952,-42.442 h -27.052 v 66.229 H 262.718 V 71.397 h 71.593 c 26.352,0 53.869,9.328 53.869,39.644 0,17.023 -12.359,34.747 -28.684,37.778 v 1.166 c 11.427,3.731 25.652,16.324 25.652,42.676 0,10.261 1.399,26.118 11.893,29.383 v 7.929 c -5.363,2.098 -13.292,3.032 -20.055,3.032 z M 351.801,119.436 v -1.632 c 0,-10.028 -7.696,-17.723 -18.656,-17.723 h -34.98 v 36.846 h 34.98 c 10.26,-0.001 18.656,-7.697 18.656,-17.491 z"
    id="path2" />
-</g><rect
-     x="703.07025"
-     y="80.998436"
+</g>
+
+<g
+   id="g5"
+   transform="matrix(1.6565885,0,0,1.6565885,-456.96995,329.58364)"><rect
+     x="428.89301"
+     y="61"
      fill="none"
      stroke="#000000"
-     stroke-width="33.4402"
+     stroke-width="20"
      stroke-miterlimit="10"
-     width="300.96204"
-     height="299.29004"
+     width="180"
+     height="179"
      id="rect2" /><g
-     id="g4"
-     transform="matrix(1.6720113,0,0,1.6720113,-14.043692,-20.99425)">
+     id="g4">
 	<g
    id="g3">
 		<path
