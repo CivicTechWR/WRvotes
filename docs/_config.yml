@@ -23,7 +23,7 @@ embed-media: false
 
 # Enable map searchbars. Generally one should be enabled 
 # and one should be disabled.
-enable-map-search-nominatim: false
+enable-map-search-nominatim: true
 enable-map-search-photon: true 
 
 # Used for centering the map in show-map.js
