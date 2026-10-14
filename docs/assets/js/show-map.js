@@ -111,12 +111,12 @@ window.WRVotesInitMap = async function(baseUrl) {
         collapsed: false,
         initial: true,
         autoType: false,
-        delayType: 100,
+        delayType: 1000,
         container: "map-searchbar",
         zoom: 15,
-        firstTipSubmit: true,
+        firstTipSubmit: false,
         textPlaceholder: "Type your address",
-        minLength: 3,
+        minLength: 5,
       });
       searchControl.on('search:locationfound', clickSearchLocation);
   {% endif %}
