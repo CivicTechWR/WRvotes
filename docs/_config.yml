@@ -26,6 +26,10 @@ embed-media: false
 enable-map-search-nominatim: true
 enable-map-search-photon: true 
 
+# Whether to ask search engines to not include this site in their
+# indices. Use for devel site, probably.
+hide-site-from-search-engines: false
+
 # Used for centering the map in show-map.js
 map:
   # Use latitude,longitude as order for center. bbox seems to want a

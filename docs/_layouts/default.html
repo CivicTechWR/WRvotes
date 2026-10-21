@@ -12,6 +12,10 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="WaterlooRegionVotes Logo: Blue WR with a green checkmark" />
 
+    {% if site.hide-site-from-search-engines %}
+    <meta name="robots" content="noindex" />
+    {% endif %}
+
     <link rel="preconnect" href="https://unpkg.com" crossorigin>
 
     <link rel="icon" href="{{ site.url }}/assets/images/favicon.png" type="image/x-icon">
