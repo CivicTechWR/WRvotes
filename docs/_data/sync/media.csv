@@ -206,7 +206,7 @@ PubDate,URL,Title,Publication,PositionIDList,Category
 2026-09-25,https://www.reddit.com/r/cambridgeont/comments/1wputiv/cambridge_municipal_election/,Cambridge Municipal Election,Reddit,"Cambridge-Mayor, Cambridge-Ward-02",Opinion
 2026-09-25,https://reddit.com/r/waterloo/comments/1wpju83/if_you_are_in_ward_3_woolwich_consider_voting_for/,"If you are in Ward 3, Woolwich, consider voting for Janet Cox. She is awesome.",Reddit,Woolwich-Ward-03,Opinion
 2026-09-26,https://www.therecord.com/news/municipal-elections/cambridge-mayoral-candidates-weigh-leaf-collection/article_0ed58e18-9428-5bb9-89f7-c650c687b6d9.html,Keep it or change it? Cambridge mayoral candidates debate leaf collection,Waterloo Region Record,Cambridge-Mayor,Article
-2026-09-26,https://onac.ca/elections/races/kitchener/,Ontarians Against Corruption Analysis - Kitchener Mayors,Ontarians Against Corruption,Kitchener-Mayor,CandidateProfiles
+2026-09-26,SchoolBoard-Public-English-Waterloo-Wilmot,Ontarians Against Corruption Analysis - Kitchener Mayors,Ontarians Against Corruption,Kitchener-Mayor,CandidateProfiles
 2026-09-26,https://onac.ca/elections/races/waterloo/,Ontarians Against Corruption Analysis - Waterloo Mayors,Ontarians Against Corruption,Waterloo-Mayor,CandidateProfiles
 2026-09-26,https://onac.ca/elections/races/cambridge/,Ontarians Against Corruption Analysis - Cambridge Mayors,Ontarians Against Corruption,Cambridge-Mayor,CandidateProfiles
 2026-09-24,https://youtu.be/y-lKc_R4nvw,Cambridge Mayor All-Candidates Meeting,Cambridge Elects,Cambridge-Mayor,AllCandidates
@@ -636,4 +636,21 @@ PubDate,URL,Title,Publication,PositionIDList,Category
 2026-10-20,https://www.instagram.com/p/Det497FkaKD/,Bird Friendly Kitchener Survey - Aalaa Rehman,Bird Friendly Kitchener,Kitchener-Ward-10,Questionnaires
 2026-10-19,https://www.instagram.com/p/DervqkeESw_/,Bird Friendly Kitchener Survey - Muhammad Miqdad Hudda,Bird Friendly Kitchener,Kitchener-Ward-05,Questionnaires
 2026-10-21,https://waterloolabour.ca/municipal-election-priorities-2026/,Municipal Election Priorities 2026,Waterloo Regional Labour Council,"Alias-Kitchener, Alias-Cambridge, Alias-CityWaterloo, Alias-All-Regional",Opinion
-2026-10-21,https://www.youtube.com/watch?v=dP_SMpT3VuY,"Vote October 26: Carlene Hawley, School Board Trustee, Woolwich-Wellesley | Candidate Interview ",Farwell Between Shows,,
+2026-10-21,https://www.youtube.com/watch?v=dP_SMpT3VuY,"Vote October 26: Carlene Hawley, School Board Trustee, Woolwich-Wellesley | Candidate Interview ",Farwell Between Shows,SchoolBoard-Public-English-Waterloo-Wilmot,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=_So7KWCFJO0,"Vote October 26: Matt Parker, Ward 3, Kitchener | Candidate Interview",Farwell Between Shows,Kitchener-Ward-03,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=whPjbru6aBc,"Vote October 26: Harry Scanlan, Ward 4, Kitchener | Candidate Interview",Farwell Between Shows,Kitchener-Ward-04,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=QP1KuZKv3BQ,"Vote October 26: Peter Varga, Ward 1, Wilmot Township | Candidate Interview",Farwell Between Shows,Wilmot-Ward-01,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=UT40twJQl4M,"Vote October 26: Anna Meksavanh, Regional Council Candidate, Kitchener | Candidate Interview",Farwell Between Shows,Regional-Kitchener,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=4TvPruW5fII,"Vote October 26: Hans Roach, Ward 3 Councillor, Waterloo | Candidate Interview",Farwell Between Shows,Waterloo-Ward-03,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=OoD-EJX9txA,"Vote October 26: Cindy Watson, School Board Trustee, Cambridge | Candidate Interview",Farwell Between Shows,SchoolBoard-Public-English-Cambridge-NorthDumfries,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=bXmDj1OnKVo,"Vote October 26: Geoff Horsman, School Board Trustee, Waterloo-Wilmot | Candidate Interview",Farwell Between Shows,SchoolBoard-Public-English-Waterloo-Wilmot,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=JImc4Ffqvuo,"Vote October 26: Christine Michaud, Ward 4 Councillor, Kitchener | Candidate Interview",Farwell Between Shows,Kitchener-Ward-04,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=fQ0e9HG6AxA,"Vote October 26: Janet Cox, Ward 3, Woolwich Township | Candidate Interview",Farwell Between Shows,Woolwich-Ward-03,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=uRjkwrsyTzk,"Vote October 26: Tim Willcox, Ward 9, Kitchener | Candidate Interview",Farwell Between Shows,Kitchener-Ward-09,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=Nwxlox_Lop8,"Vote October 26: Cristina Bairos Fernandes, School Board Trustee, Waterloo-Wilmot | Interview",Farwell Between Shows,SchoolBoard-Public-English-Waterloo-Wilmot,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=xCOzEERCWB0,"Vote October 26: Janice Moore, Ward 2, Waterloo | Candidate Interview",Farwell Between Shows,Waterloo-Ward-02,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=y0wgyjtZ07g,"Vote October 26: Tony Stevens, Ward 1, Woolwich Township | Candidate Interview",Farwell Between Shows,Woolwich-Ward-01,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=2cEwS5aqmUw,"Vote October 26: Eryn Koncir, Ward 3, Woolwich Township | Candidate Interview",Farwell Between Shows,Woolwich-Ward-03,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=hpxFxOE2Mho,"Vote October 26: Philip Molto, Ward 8, Kitchener | Candidate Interview",Farwell Between Shows,Kitchener-Ward-08,CandidateProfiles
+2026-10-21,https://www.youtube.com/watch?v=3tEpSq3G86U,"Vote October 26: Fitzroy Vanderpool, Ward 5, Kitchener | Candidate Interview",Farwell Between Shows,Kitchener-Ward-05,
+,https://www.youtube.com/watch?v=umnnPVHy9ug,"Vote October 26: Mac Graham, Regional Council Candidate, Kitchener | Candidate Interview",,,
