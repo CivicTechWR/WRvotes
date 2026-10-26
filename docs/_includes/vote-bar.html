@@ -1,19 +1,31 @@
-{%- if include.winners > 1 -%}
-{% assign vote-width = include.candidate.Votes | times: 100.0 | divided_by: include.max-votes | times: 0.9 | round %}
-{%- else -%}
-{% assign vote-width = include.candidate.Votes | times: 100.0 | divided_by: include.total-votes | round %}
+{%- if total-votes > 0 -%}
+    {%- if include.winners > 1 -%}
+        {% assign vote-width = include.candidate.Votes | times: 100.0 | divided_by: include.max-votes | times: 0.9 | round %}
+    {%- else -%}
+        {% assign vote-width = include.candidate.Votes | times: 100.0 | divided_by: include.total-votes | round %}
+    {%- endif -%}
 {%- endif -%}
+
+
 <div class="vote-bar-name">
-    <h3 class="name">{{ include.candidate.Given_Names }}
-        {{ include.candidate.Last_Name -}}</h3>
+    <strong class="name">{{ include.candidate.Given_Names }}
+        {{ include.candidate.Last_Name -}}</strong>
     {%- if candidate.Withdrawn == 'Y' -%}
-    <strong>(Withdrawn) </strong>
+    <strong> (Withdrawn) </strong>
     {%- endif -%}
 </div>
+
+{%- if total-votes > 0 -%}
 <div class="vote-bar-progress">
     <span class="vote-amount" style="width: {{ vote-width }}%"></span>
 </div>
 <div class="vote-bar-after"><span class="vote-count"> {{ include.candidate.Votes }}</span>
+{%- else -%}
+<div class="vote-bar-progress empty"></div>
+<div class="vote-bar-after empty">
+{%- endif -%}
+
+
     {%- if include.candidate.Winner == "Y" -%}&nbsp;<img class="vote-winner" alt="Elected checkmark" title="Elected"
         src="{{ site.baseurl }}/assets/images/favicon.png" />{%- endif -%}
 </div>
