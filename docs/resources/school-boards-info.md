@@ -39,6 +39,12 @@ policies for their school board, provide oversight of the
 board's Director of Education, and serve as community advocates for
 education.
 
+The Ontario Public School Boards' Association published a [Good
+Governance
+Guide](https://www.opsba.org/wp-content/uploads/2021/02/OPSBA_Good_Governance_Guide_2018-2022_Chapter3.pdf){:target="_blank"}
+which outlines the responsibilities of school trustee boards as of
+2021.
+
 Nokhra Dakroub from the Peel District School Board trustee describes
 some of the responsibilities (and non-responsibilities) in that school
 board [in this CBC
