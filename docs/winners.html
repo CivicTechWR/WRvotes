@@ -10,9 +10,8 @@ use-candidate-card: true
 {% for alias in site.data.internal.results-aliases %}
   {% assign title = site.data.internal.aliases | where: "Alias", alias | first %}
   <div class="accordion-ward">
-    <a class="toggletop">{{ title["Description"] }}</a>
-    <div class="content">
-      <div class="jurisdiction">
+    <h2>{{ title["Description"] }}</h2>
+      <div class="candidate-list-grid">
         {% for position in site.data.internal.position-tags %}
           {% assign position_aliases = position["Aliases"] | split: "," %}
           {% if position_aliases contains alias %}
@@ -26,9 +25,7 @@ use-candidate-card: true
           {% endif %}
         {% endfor %}
       </div>
-    </div>
   </div>
 {% endfor %}
 </div>
 
-<script src="{{ site.baseurl }}/assets/js/accordion.js"></script>
