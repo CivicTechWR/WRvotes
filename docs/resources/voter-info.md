@@ -315,6 +315,10 @@ Elects](https://www.cambridgeelects.ca/){:target="_blank"} is doing a
 fantastic job of covering candidates running in Cambridge. They are
 linking to candidate profiles and running town hall events.
 
+Another group called
+[VisionWR](https://visionwr.org){:target="_blank"} organize and
+publish many all-candidates meetings. 
+
 Melissa Bowman publishes a blog about urban issues and local politics
 at <https://citified.substack.com/> . Although the blog is relatively
 even-handed the blog reflects Bowman's own views.
@@ -329,6 +333,14 @@ Bob Jonkman maintains listings of candidates and social media on his
 Poliblog](https://poliblog.jonkman.ca/Poliblog-Elections/2026-10-26-Municipal-Election/){:target="_blank"}
 site. We benefit from his research on our site.
 
+
+Several people and organizations publish extensive candidate profiles:
+
+- [Tea with Hannah Marie](https://www.youtube.com/channel/UCZ-34Ccz_zNlUzTRDnt71Zw)
+- [Farwell Between
+  Shows](https://www.youtube.com/channel/UCNo_LhHQYw8_X0qliIlRrQg)
+- [CKMS Meet the
+  Candidate](https://radiowaterloo.ca/category/off-the-air/meet-the-candidate/meet-the-candidate-2026-municipal-election/)
 
 ### I don't trust your candidate listings. Where can I find the real ones?
 
