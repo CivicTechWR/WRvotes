@@ -24,8 +24,19 @@ calendar, and syncing from Drive.
   permissions to the folders that are to be synced.
 
 
-Deployment (update-google-calendar)
+Deployment (Google sync scrupts)
 -----------------------------------
+
+To deploy this we have been using a cronjob on a separate VPS, with
+the Github code checked out locally. There are other ways. You could
+probably sync with Github Actions but we did not do this. 
+
+- Make sure there is an appropriate SSH key in the VPS
+- Add SSH Deploy key to the project.
+- On the VPS, check out the code:
+  `git clone git@github.com:CivicTechWR/WRVotesMunicipal2022 wrvotes`
+- `cd wrvotes`
+
 
 - Use `virtualenv` to set up a Python 3 environment: `virtualenv -p
   /usr/bin/python3 venv`
@@ -34,26 +45,10 @@ Deployment (update-google-calendar)
 - Copy `update-google-calendar.config.yml.example` to
   `update-google-calendar.config.yml` and customize it to your
   needs.
+- Do the same with `gdocs-get-csv.config.yml`
 
-- Run `update-google-calendar.py --configfile
-  update-google-calendar.config.yml`
+- Set up a cronjob to run the scripts. See the source of
+  `run-update-scripts.sh` for an example. 
 
 
 
-Deployment With Cron onto Github
---------------------------------
-
-- Make a virtualenv and install the necessary Python packages:
-  ```
-  virtualenv -p python3 venv
-  source venv/bin/activate
-  pip install -r requirements.txt
-  ```
-- Make sure there is an appropriate SSH key in the VPS
-- Add SSH Deploy key to the project.
-- On the VPS, check out the code:
-  `git clone git@github.com:CivicTechWR/WRVotesMunicipal2022 wrvotes`
-- `cd wrvotes`
-- Add cronjob to force a rebuild every N minutes
-
-[ADD CRONJOB LINE]

@@ -29,7 +29,6 @@ This repository is published to:
    - **help wanted:** Do you have knowledge or experience in local politics? Can you explain what a school board trustee does?
 
 4. **Get out the vote**
-   - **help wanted:** promotion, information on how & when to vote, information on how to ensure you're registered, etc.
 
 This project provides voter information and election data analysis for the 2026 municipal elections in Waterloo Region, helping residents make informed decisions by providing candidate information, polling locations, and election results.
 
@@ -39,6 +38,15 @@ This project provides voter information and election data analysis for the 2026 
 - Ruby
 - Bundler
 - Jekyll (static site generator)
+
+## Deploying to Production
+
+WARNING: Every time you decide to run WRV for "one more year" you end
+up regretting it. YOU HAVE BEEN WARNED.
+
+If you are stupid and want to deploy this codebase to a production
+election, follow the instructions in
+[README-updating.md](./README-updating.md)
 
 ## Contributing
 
@@ -119,5 +127,4 @@ It is being modified for the October 2026 election.
 For current CivicTechWR projects, visit:
 
 - **Website:** https://civictechwr.org
-- **Email:** civictechwr@gmail.com
 - **GitHub:** https://github.com/CivicTechWR

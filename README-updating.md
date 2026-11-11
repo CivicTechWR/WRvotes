@@ -16,8 +16,8 @@ Going forward:
 - The last "live" version of the site lives in a specific
   repo (eg <https://github.com/CivicTechWR/WRVotesMunicipal2026> ).
   This site will have the primary CNAME of
-  <https://waterlooregionvotes.org> . 
-
+  <https://waterlooregionvotes.org> . To archive this site you need to
+  make a new CNAME and point the repo there.
 
 
 With this in mind, here are the steps to enable the codebase for
@@ -67,9 +67,19 @@ out.
      - `docs/_data/sync/fedprov-position-tags.csv`
      - `docs/_data/sync/municipality-position-tags.csv`
      - `docs/_data/sync/position-tags.csv`
+
 7. Update the candidate information
    * `docs/_data/sync/nominees.csv`
+
 8. Update `docs/resources/open-data.md` with OpenData nomineed source links.
+
+Optional: Instead of updating `.csv` files directly, you can use a
+Google Sheet and synchronize it. To do this, you need to set up a
+Google Sheet (there is an example in
+`docs/_data/internal/2026-municipal-data.ods` and then set up a
+cronjob that will do the synchronization (see the
+[README.md](./scripts/README.md) in the `scripts` folder).
+
 
 How to Finish the Election
 --------------------------
